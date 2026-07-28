@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="72" viewBox="0 0 300 72" role="img" aria-labelledby="title desc">
+  <title id="title">Tiếng Trung Cô Mai</title>
+  <desc id="desc">Logo tối giản của thương hiệu giáo dục Tiếng Trung Cô Mai</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d4ed8"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="8" width="56" height="56" rx="18" fill="url(#g)"/>
+  <circle cx="49" cy="19" r="7" fill="#f59e0b"/>
+  <text x="31" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#fff">文</text>
+  <text x="76" y="31" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Tiếng Trung</text>
+  <text x="76" y="54" font-family="Arial, sans-serif" font-size="23" font-weight="800" fill="#1d4ed8">CÔ MAI</text>
+</svg>

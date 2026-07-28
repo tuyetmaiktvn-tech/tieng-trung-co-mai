@@ -1,1 +1,15 @@
-document.addEventListener("DOMContentLoaded",()=>{const m=document.getElementById("mobileMenu"),n=document.getElementById("navLinks"),b=document.querySelectorAll("[data-dropdown]");if(m&&n)m.addEventListener("click",()=>n.classList.toggle("open"));b.forEach(x=>x.addEventListener("click",e=>{e.stopPropagation();const i=x.closest(".nav-item");document.querySelectorAll(".nav-item.open").forEach(y=>{if(y!==i)y.classList.remove("open")});i.classList.toggle("open")}));document.addEventListener("click",()=>document.querySelectorAll(".nav-item.open").forEach(i=>i.classList.remove("open")));document.querySelectorAll(".dropdown").forEach(d=>d.addEventListener("click",e=>e.stopPropagation()))});function showNotice(c){alert(c+" đang được xây dựng. Nội dung sẽ sớm được cập nhật.")}
+document.addEventListener("DOMContentLoaded",()=>{
+  const menuBtn=document.getElementById("mobileMenu");
+  const nav=document.getElementById("navLinks");
+  const dropdownBtns=document.querySelectorAll("[data-dropdown]");
+  if(menuBtn&&nav) menuBtn.addEventListener("click",()=>nav.classList.toggle("open"));
+  dropdownBtns.forEach(btn=>btn.addEventListener("click",e=>{
+    e.stopPropagation();
+    const current=btn.closest(".nav-item");
+    document.querySelectorAll(".nav-item.open").forEach(item=>{if(item!==current)item.classList.remove("open")});
+    current.classList.toggle("open");
+  }));
+  document.addEventListener("click",()=>document.querySelectorAll(".nav-item.open").forEach(item=>item.classList.remove("open")));
+  document.querySelectorAll(".dropdown").forEach(drop=>drop.addEventListener("click",e=>e.stopPropagation()));
+});
+function showNotice(name){alert(name+" đang được xây dựng. Nội dung sẽ sớm được cập nhật.");}
