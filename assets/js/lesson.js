@@ -1,5 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
+  console.info("Tiếng Trung Cô Mai - Lesson UI 3.3.1 Audio Hotfix loaded");
   const app = document.getElementById("lessonApp");
   if (!app) return;
 
@@ -21,7 +22,29 @@ document.addEventListener("DOMContentLoaded", async () => {
       <span class="audio-icon-v33">🔊</span>
       <span class="audio-label-v33">${esc(label)}</span>
     </button>`;
-  const bindAudio = () => window.AudioManager && window.AudioManager.bind(document);
+  const bindAudio = () => {
+    if (window.AudioManager) {
+      window.AudioManager.bind(document);
+      return;
+    }
+    document.querySelectorAll("[data-audio-text]").forEach(button => {
+      if (button.dataset.fallbackBound === "true") return;
+      button.dataset.fallbackBound = "true";
+      button.addEventListener("click", event => {
+        event.preventDefault();
+        event.stopPropagation();
+        if (!("speechSynthesis" in window)) {
+          alert("Trình duyệt này chưa hỗ trợ phát âm tự động.");
+          return;
+        }
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(button.dataset.audioText || "");
+        utterance.lang = "zh-CN";
+        utterance.rate = Number(button.dataset.audioRate || 0.85);
+        window.speechSynthesis.speak(utterance);
+      });
+    });
+  };
 
   document.getElementById("objectives").innerHTML = data.objectives.map((x,i) =>
     `<div class="objective-card-v32"><span>${i+1}</span><p>${esc(x)}</p></div>`).join("");

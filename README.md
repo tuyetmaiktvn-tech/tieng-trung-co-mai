@@ -1,39 +1,25 @@
-# Tiếng Trung Cô Mai – Version 3.3
+# Tiếng Trung Cô Mai – Version 3.3.1 Audio Hotfix
 
-## Cập nhật chính
+Bản sửa dứt điểm lỗi không thấy nút âm thanh.
 
-- Bổ sung `Audio Manager`.
-- Từ vựng có nút nghe.
-- Câu ví dụ có nút nghe.
-- Mẫu câu và ví dụ ngữ pháp có nút nghe.
-- Hội thoại có nút nghe toàn bài và từng câu.
-- Flashcards có nút nghe.
-- Bài luyện phát âm có nút nghe.
-- Ưu tiên phát MP3 nếu file đã được đặt đúng tên.
-- Tự động dùng giọng đọc tiếng Trung của trình duyệt nếu chưa có MP3.
-- Không cần sửa mã nguồn khi bổ sung âm thanh.
-- Có `audio-manifest.json` liệt kê toàn bộ tên file cần dùng.
+## Đã sửa
+- Gắn mã phiên bản vào CSS và JavaScript để trình duyệt không dùng file cũ trong bộ nhớ đệm.
+- Ép nút `🔊 Nghe` luôn hiển thị trên máy tính và điện thoại.
+- Bổ sung cơ chế đọc dự phòng ngay trong `lesson.js` nếu `audio-manager.js` không tải được.
+- Có nhãn `🔊 Audio 3.3.1` ở góc trái dưới trang Bài 1 để xác nhận bản mới đã lên.
 
-## Cách thêm MP3
-
-Xem:
-`assets/audio/hsk1/lesson01/README.md`
-
-## Cách cập nhật website
-
+## Cách cập nhật
 1. Giải nén ZIP.
 2. Chép toàn bộ nội dung vào:
    `Documents\GitHub\tieng-trung-co-mai`
 3. Chọn thay thế file trùng tên.
 4. GitHub Desktop:
-   - Summary: `Version 3.3 - Bổ sung Audio Manager`
+   - Summary: `Version 3.3.1 - Fix nút âm thanh`
    - Commit to main
    - Push origin
+5. Chờ GitHub Pages hoàn thành.
+6. Mở:
+   `https://tuyetmaiktvn-tech.github.io/tieng-trung-co-mai/hsk/hsk1-lesson01.html?v=3.3.1`
+7. Nhấn `Ctrl + F5`.
 
-
-## Cập nhật font chữ
-
-- Tiếng Việt: Times New Roman.
-- Pinyin: Times New Roman, không in nghiêng mặc định.
-- Chữ Hán: ưu tiên Noto Serif SC, Source Han Serif SC, Songti SC, SimSun hoặc font CJK serif có sẵn trên thiết bị.
-- Không cần cài thêm font để website hoạt động; trình duyệt sẽ tự chọn font phù hợp có sẵn.
+Nếu thấy nhãn `🔊 Audio 3.3.1` ở góc trái dưới, bản mới đã được tải đúng.

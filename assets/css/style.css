@@ -589,3 +589,63 @@ h1,h2,h3,h4,h5,h6 {
 .pattern-formula-v32 {
   line-height: 1.35;
 }
+
+
+/* ===== Version 3.3.1 Audio Hotfix ===== */
+.audio-btn-v33{
+  display:inline-flex !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  position:relative !important;
+  z-index:3 !important;
+  min-width:86px !important;
+  width:auto !important;
+  height:36px !important;
+  flex:0 0 auto !important;
+  padding:7px 12px !important;
+  border:1px solid #2563eb !important;
+  border-radius:999px !important;
+  background:#eff6ff !important;
+  color:#1d4ed8 !important;
+  font-family:"Times New Roman", Times, serif !important;
+  font-size:15px !important;
+  font-weight:700 !important;
+  line-height:1 !important;
+}
+.audio-btn-v33:hover{
+  background:#dbeafe !important;
+}
+.audio-btn-v33.is-playing{
+  background:#2563eb !important;
+  color:#fff !important;
+}
+.audio-icon-v33,
+.audio-label-v33{
+  display:inline !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+.vocab-pinyin-row-v33,
+.example-audio-row-v33,
+.pattern-formula-row-v33,
+.dialogue-title-row-v33{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:10px !important;
+}
+.vocab-pinyin-row-v33 .audio-btn-v33{
+  margin-left:auto !important;
+}
+@media(max-width:680px){
+  .audio-btn-v33{
+    min-width:76px !important;
+    width:auto !important;
+    height:34px !important;
+    padding:6px 9px !important;
+    font-size:14px !important;
+  }
+  .audio-label-v33{
+    display:inline !important;
+  }
+}
