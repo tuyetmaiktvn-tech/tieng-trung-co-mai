@@ -127,3 +127,221 @@ footer{padding:32px 0;background:#0f2746;color:rgba(255,255,255,.85)}
 }
 /* ===== Bổ sung liên hệ tuyển sinh ===== */
 .contact-strip{background:#0f3d75;color:#fff;font-size:14px}.contact-strip-inner{min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:16px}.contact-main{display:flex;align-items:center;gap:7px;font-weight:700}.contact-main a{font-weight:900}.contact-actions{display:flex;gap:10px}.contact-link{padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.12);font-weight:800}.contact-link.zalo{background:#0ea5e9}.header-cta{background:var(--orange);color:#fff;padding:11px 17px;border-radius:999px;font-weight:900;box-shadow:0 10px 22px rgba(245,158,11,.25)}.consult-section{padding:72px 0}.consult-box{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:38px 42px;border-radius:28px;color:#fff;background:linear-gradient(135deg,#0f3d75,#1d4ed8);box-shadow:var(--shadow)}.consult-kicker{font-size:12px;letter-spacing:1px;font-weight:900;color:#bfdbfe}.consult-box h2{margin:8px 0;font-size:34px}.consult-box p{margin:0;color:rgba(255,255,255,.86)}.consult-contact{display:flex;gap:12px;flex-wrap:wrap}.consult-phone,.consult-zalo{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:999px;font-weight:900}.consult-phone{background:#fff;color:var(--navy)}.consult-zalo{background:#0ea5e9;color:#fff}.floating-contact{position:fixed;right:18px;bottom:20px;z-index:120;display:grid;gap:10px}.floating-btn{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;box-shadow:0 12px 28px rgba(15,23,42,.22)}.floating-btn.phone{background:#10b981;font-size:23px}.floating-btn.zalo{background:#0ea5e9;font-size:13px}@media(max-width:900px){.contact-strip-inner{padding:8px 0}.contact-actions{display:none}.header-cta{text-align:center}}@media(max-width:680px){.consult-box{display:grid;padding:30px 24px}.consult-contact{display:grid}.contact-main{font-size:13px}}
+
+
+/* ===== Version 3.1: Trang Giới thiệu Cô Mai ===== */
+.about-hero-v31{
+  padding:72px 0;
+  color:#fff;
+  background:
+    radial-gradient(circle at 86% 12%,rgba(255,255,255,.16),transparent 24%),
+    linear-gradient(135deg,#0f3d75,#1d4ed8 62%,#38bdf8);
+}
+.about-hero-card-v31{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  align-items:center;
+  gap:36px;
+}
+.about-kicker-v31{
+  color:#60a5fa;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+.about-hero-v31 .about-kicker-v31{color:#bfdbfe}
+.about-hero-v31 h1{
+  margin:8px 0 12px;
+  font-size:clamp(42px,6vw,68px);
+  line-height:1.05;
+}
+.about-role-v31{
+  margin:0;
+  font-size:21px;
+  font-weight:800;
+}
+.about-school-v31{
+  margin:5px 0 0;
+  color:rgba(255,255,255,.86);
+}
+.about-slogan-v31{
+  display:inline-block;
+  margin-top:20px;
+  padding:9px 14px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.24);
+  background:rgba(255,255,255,.09);
+  font-weight:900;
+}
+.about-contact-v31{
+  padding:28px;
+  border-radius:24px;
+  color:var(--ink);
+  background:#fff;
+  box-shadow:var(--shadow-lg);
+}
+.about-phone-label-v31{
+  color:var(--muted);
+  font-size:13px;
+  font-weight:900;
+  text-transform:uppercase;
+}
+.about-phone-v31{
+  display:block;
+  margin:7px 0 18px;
+  color:var(--blue);
+  font-size:31px;
+  line-height:1.1;
+  font-weight:900;
+}
+.about-contact-actions-v31{
+  display:flex;
+  gap:10px;
+}
+.about-contact-actions-v31 a{
+  flex:1;
+  padding:12px 14px;
+  border-radius:999px;
+  text-align:center;
+  color:#fff;
+  background:var(--green);
+  font-weight:900;
+}
+.about-contact-actions-v31 a.zalo{background:#0ea5e9}
+.about-content-v31{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:30px;
+  align-items:start;
+}
+.about-story-v31{
+  padding:32px;
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:#fff;
+}
+.about-story-v31 h2{
+  margin:8px 0 18px;
+  color:var(--navy);
+  font-size:34px;
+}
+.about-story-v31 p{color:#475569}
+.about-summary-v31{
+  display:grid;
+  gap:14px;
+}
+.about-summary-item-v31{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+}
+.about-summary-item-v31>span{
+  width:42px;
+  height:42px;
+  flex:0 0 42px;
+  display:grid;
+  place-items:center;
+  border-radius:13px;
+  background:#eff6ff;
+  font-size:22px;
+}
+.about-summary-item-v31 strong{
+  display:block;
+  color:var(--navy);
+}
+.about-summary-item-v31 small{
+  display:block;
+  color:var(--muted);
+  margin-top:2px;
+}
+.teaching-grid-v31{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.teaching-grid-v31 article{
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:#fff;
+  text-align:center;
+}
+.teaching-icon-v31{
+  font-size:31px;
+  margin-bottom:9px;
+}
+.teaching-grid-v31 h3{
+  margin:0 0 6px;
+  color:var(--navy);
+}
+.teaching-grid-v31 p{
+  margin:0;
+  color:var(--muted);
+}
+.training-grid-v31{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.training-grid-v31 a{
+  padding:25px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 8px 22px rgba(15,23,42,.05);
+  transition:.2s;
+}
+.training-grid-v31 a:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
+}
+.training-grid-v31 span{font-size:31px}
+.training-grid-v31 h3{
+  margin:9px 0 5px;
+  color:var(--navy);
+}
+.training-grid-v31 p{
+  margin:0;
+  color:var(--muted);
+}
+.why-grid-v31{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  max-width:900px;
+  margin:0 auto;
+}
+.why-grid-v31 div{
+  padding:17px 19px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+  color:#334155;
+  font-weight:700;
+}
+
+@media(max-width:900px){
+  .about-hero-card-v31,
+  .about-content-v31{
+    grid-template-columns:1fr;
+  }
+  .teaching-grid-v31,
+  .training-grid-v31{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+@media(max-width:680px){
+  .about-contact-actions-v31,
+  .teaching-grid-v31,
+  .training-grid-v31,
+  .why-grid-v31{
+    grid-template-columns:1fr;
+    display:grid;
+  }
+  .about-phone-v31{font-size:26px}
+}
