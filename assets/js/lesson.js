@@ -10,6 +10,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const esc = s => String(s ?? "").replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
 
+  const audioBase = "../assets/audio/hsk1/lesson01";
+  const audioButton = (src, text, label = "Nghe phát âm", rate = 0.85) => `
+    <button type="button" class="audio-btn-v33"
+      data-audio-src="${esc(src)}"
+      data-audio-text="${esc(text)}"
+      data-audio-rate="${rate}"
+      aria-label="${esc(label)}"
+      title="${esc(label)}">
+      <span class="audio-icon-v33">🔊</span>
+      <span class="audio-label-v33">${esc(label)}</span>
+    </button>`;
+  const bindAudio = () => window.AudioManager && window.AudioManager.bind(document);
+
   document.getElementById("objectives").innerHTML = data.objectives.map((x,i) =>
     `<div class="objective-card-v32"><span>${i+1}</span><p>${esc(x)}</p></div>`).join("");
 
@@ -18,16 +31,27 @@ document.addEventListener("DOMContentLoaded", async () => {
     vocabBox.innerHTML = items.map(v => `
       <article class="vocab-card-v32">
         <div class="vocab-head-v32"><span class="vocab-hanzi-v32">${esc(v.hanzi)}</span><span class="vocab-type-v32">${esc(v.type)}</span></div>
-        <div class="vocab-pinyin-v32">${esc(v.pinyin)}</div>
+        <div class="vocab-pinyin-row-v33">
+          <div class="vocab-pinyin-v32">${esc(v.pinyin)}</div>
+          ${audioButton(`${audioBase}/vocabulary/vocab-${String(v.id).padStart(2,"0")}.mp3`, v.hanzi)}
+        </div>
         <h3>${esc(v.meaning)}</h3>
-        <div class="vocab-example-v32"><strong>${esc(v.example)}</strong><em>${esc(v.example_pinyin)}</em><span>${esc(v.example_vi)}</span></div>
+        <div class="vocab-example-v32">
+          <div class="example-audio-row-v33">
+            <strong>${esc(v.example)}</strong>
+            ${audioButton(`${audioBase}/examples/example-${String(v.id).padStart(2,"0")}.mp3`, v.example, "Nghe ví dụ")}
+          </div>
+          <em>${esc(v.example_pinyin)}</em><span>${esc(v.example_vi)}</span>
+        </div>
         <p class="vocab-note-v32">💡 ${esc(v.note)}</p>
       </article>`).join("");
   }
   renderVocab(data.vocabulary);
+  bindAudio();
   document.getElementById("vocabSearch").addEventListener("input", e => {
     const q = e.target.value.trim().toLowerCase();
     renderVocab(data.vocabulary.filter(v => [v.hanzi,v.pinyin,v.meaning].some(x => x.toLowerCase().includes(q))));
+    bindAudio();
   });
 
   let cardIndex = 0;
@@ -39,6 +63,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("cardPinyin").textContent = v.pinyin;
     document.getElementById("cardMeaning").textContent = v.meaning;
     document.getElementById("cardExample").textContent = `${v.example} — ${v.example_vi}`;
+    const cardAudio = document.getElementById("cardAudio");
+    cardAudio.dataset.audioSrc = `${audioBase}/vocabulary/vocab-${String(v.id).padStart(2,"0")}.mp3`;
+    cardAudio.dataset.audioText = v.hanzi;
+    cardAudio.dataset.audioBound = "false";
+    bindAudio();
     document.getElementById("cardCounter").textContent = `${cardIndex+1} / ${data.vocabulary.length}`;
   }
   flashcard.addEventListener("click",()=>flashcard.classList.toggle("flipped"));
@@ -47,20 +76,32 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("nextCard").addEventListener("click",()=>{cardIndex=(cardIndex+1)%data.vocabulary.length;renderCard()});
   renderCard();
 
-  document.getElementById("patterns").innerHTML = data.patterns.map(p => `
+  document.getElementById("patterns").innerHTML = data.patterns.map((p,pIndex) => `
     <article class="pattern-card-v32">
-      <div class="pattern-formula-v32">${esc(p.formula)}</div>
+      <div class="pattern-formula-row-v33">
+        <div class="pattern-formula-v32">${esc(p.formula)}</div>
+        ${audioButton(`${audioBase}/patterns/pattern-${String(pIndex+1).padStart(2,"0")}.mp3`, p.formula, "Nghe mẫu câu")}
+      </div>
       <h3>${esc(p.title)}</h3>
       <p>${esc(p.explanation)}</p>
-      <div class="pattern-examples-v32">${p.examples.map(x=>`<div><strong>${esc(x.zh)}</strong><em>${esc(x.py)}</em><span>${esc(x.vi)}</span></div>`).join("")}</div>
+      <div class="pattern-examples-v32">${p.examples.map((x,xIndex)=>`<div>
+        <div class="example-audio-row-v33"><strong>${esc(x.zh)}</strong>
+        ${audioButton(`${audioBase}/patterns/pattern-${String(pIndex+1).padStart(2,"0")}-example-${String(xIndex+1).padStart(2,"0")}.mp3`, x.zh, "Nghe ví dụ")}</div>
+        <em>${esc(x.py)}</em><span>${esc(x.vi)}</span></div>`).join("")}</div>
       <div class="pattern-warning-v32">⚠️ ${esc(p.mistake)}</div>
     </article>`).join("");
+  bindAudio();
 
-  document.getElementById("dialogues").innerHTML = data.dialogues.map(d => `
+  document.getElementById("dialogues").innerHTML = data.dialogues.map((d,dIndex) => `
     <article class="dialogue-card-v32">
-      <h3>${esc(d.title)}</h3><p class="dialogue-context-v32">${esc(d.context)}</p>
-      ${d.lines.map(l=>`<div class="dialogue-line-v32"><b>${esc(l.speaker)}</b><div><strong>${esc(l.zh)}</strong><em>${esc(l.py)}</em><span>${esc(l.vi)}</span></div></div>`).join("")}
+      <div class="dialogue-title-row-v33"><div><h3>${esc(d.title)}</h3><p class="dialogue-context-v32">${esc(d.context)}</p></div>
+      ${audioButton(`${audioBase}/dialogues/dialogue-${String(dIndex+1).padStart(2,"0")}.mp3`, d.lines.map(l=>l.zh).join(" "), "Nghe toàn bài")}</div>
+      ${d.lines.map((l,lIndex)=>`<div class="dialogue-line-v32"><b>${esc(l.speaker)}</b><div>
+        <div class="example-audio-row-v33"><strong>${esc(l.zh)}</strong>
+        ${audioButton(`${audioBase}/dialogues/dialogue-${String(dIndex+1).padStart(2,"0")}-line-${String(lIndex+1).padStart(2,"0")}.mp3`, l.zh, "Nghe câu")}</div>
+        <em>${esc(l.py)}</em><span>${esc(l.vi)}</span></div></div>`).join("")}
     </article>`).join("");
+  bindAudio();
 
   document.getElementById("teacherTips").innerHTML = `<ul>${data.teacher_tips.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
 
@@ -71,7 +112,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       <article class="pron-card-v32"><h3>Vận mẫu</h3><div class="sound-chips-v32">${data.pronunciation.finals.map(x=>`<span>${x}</span>`).join("")}</div></article>
     </div>
     <div class="tone-grid-v32">${data.pronunciation.tones.map(t=>`<div><strong>${esc(t.name)}</strong><span>${esc(t.example)}</span><small>${esc(t.shape)}</small></div>`).join("")}</div>
-    <div class="pron-practice-v32"><h3>Luyện đọc</h3>${data.pronunciation.practice.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`;
+    <div class="pron-practice-v32"><h3>Luyện đọc</h3>${data.pronunciation.practice.map((x,i)=>`<span class="pron-audio-chip-v33">${esc(x)}
+      ${audioButton(`${audioBase}/pronunciation/practice-${String(i+1).padStart(2,"0")}.mp3`, x, "Nghe", 0.72)}
+    </span>`).join("")}</div>`;
+  bindAudio();
+
 
   const quizBox = document.getElementById("quiz");
   quizBox.innerHTML = data.exercises.map((q,i) => {

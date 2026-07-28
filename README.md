@@ -1,26 +1,39 @@
-# Tiếng Trung Cô Mai – Version 3.2
+# Tiếng Trung Cô Mai – Version 3.3
 
-## Nội dung mới
-- Hoàn thiện HSK 1 – Bài 1: `hsk/hsk1-lesson01.html`
-- Dữ liệu bài học chuẩn hóa: `data/hsk1/lesson01.json`
-- 12 từ vựng có pinyin, nghĩa, ví dụ và lưu ý.
-- Flashcards lật thẻ.
-- 4 nhóm mẫu câu.
-- 3 hội thoại mới do Tiếng Trung Cô Mai biên soạn.
-- Phần phát âm: thanh mẫu, vận mẫu, bốn thanh điệu.
-- 15 bài tập tương tác, chấm điểm và lưu tiến độ trên trình duyệt.
-- Thanh tìm kiếm từ vựng.
-- Giao diện responsive.
+## Cập nhật chính
 
-## Cách cập nhật
-1. Giải nén file ZIP.
-2. Chép toàn bộ nội dung vào `Documents\GitHub\tieng-trung-co-mai`.
-3. Chọn Replace the files in the destination.
+- Bổ sung `Audio Manager`.
+- Từ vựng có nút nghe.
+- Câu ví dụ có nút nghe.
+- Mẫu câu và ví dụ ngữ pháp có nút nghe.
+- Hội thoại có nút nghe toàn bài và từng câu.
+- Flashcards có nút nghe.
+- Bài luyện phát âm có nút nghe.
+- Ưu tiên phát MP3 nếu file đã được đặt đúng tên.
+- Tự động dùng giọng đọc tiếng Trung của trình duyệt nếu chưa có MP3.
+- Không cần sửa mã nguồn khi bổ sung âm thanh.
+- Có `audio-manifest.json` liệt kê toàn bộ tên file cần dùng.
+
+## Cách thêm MP3
+
+Xem:
+`assets/audio/hsk1/lesson01/README.md`
+
+## Cách cập nhật website
+
+1. Giải nén ZIP.
+2. Chép toàn bộ nội dung vào:
+   `Documents\GitHub\tieng-trung-co-mai`
+3. Chọn thay thế file trùng tên.
 4. GitHub Desktop:
-   - Summary: `Version 3.2 - Hoàn thiện HSK 1 Bài 1`
+   - Summary: `Version 3.3 - Bổ sung Audio Manager`
    - Commit to main
    - Push origin
 
-## Kiểm tra
-Mở:
-`https://tuyetmaiktvn-tech.github.io/tieng-trung-co-mai/hsk/hsk1-lesson01.html`
+
+## Cập nhật font chữ
+
+- Tiếng Việt: Times New Roman.
+- Pinyin: Times New Roman, không in nghiêng mặc định.
+- Chữ Hán: ưu tiên Noto Serif SC, Source Han Serif SC, Songti SC, SimSun hoặc font CJK serif có sẵn trên thiết bị.
+- Không cần cài thêm font để website hoạt động; trình duyệt sẽ tự chọn font phù hợp có sẵn.

@@ -40,7 +40,7 @@
         <div class="lesson-meta-v32">
           <span>⏱ 60–90 phút</span>
           <span>📚 12 từ mới</span>
-          <span>✍️ 15 bài tập</span>
+          <span>✍️ 15 bài tập</span><span>🔊 Audio MP3 + TTS dự phòng</span>
         </div>
       </div>
       <div class="lesson-progress-card-v32">
@@ -48,6 +48,19 @@
         <div class="progress-track-v32"><div id="progressBar" class="progress-bar-v32"></div></div>
         <div id="progressText">0% hoàn thành</div>
         <button id="resetProgress" class="lesson-small-btn-v32">Học lại từ đầu</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="lesson-audio-info-v33">
+    <div class="container">
+      <div class="audio-info-box-v33">
+        <div class="audio-info-icon-v33">🔊</div>
+        <div>
+          <strong>Hệ thống Audio Manager</strong>
+          <p>Nút nghe sẽ ưu tiên phát MP3 của Tiếng Trung Cô Mai. Khi chưa có MP3, trình duyệt tự đọc bằng giọng tiếng Trung để người học vẫn kiểm tra được phát âm.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -81,7 +94,9 @@
         <div id="flashcard" class="flashcard-v32" tabindex="0" role="button" aria-label="Lật thẻ">
           <div class="flashcard-inner-v32">
             <div class="flashcard-front-v32"><div id="cardHanzi"></div><small>Nhấn để lật thẻ</small></div>
-            <div class="flashcard-back-v32"><div id="cardPinyin"></div><strong id="cardMeaning"></strong><p id="cardExample"></p></div>
+            <div class="flashcard-back-v32"><div id="cardPinyin"></div><strong id="cardMeaning"></strong><p id="cardExample"></p>
+      <button id="cardAudio" type="button" class="audio-btn-v33 audio-btn-card-v33" data-audio-src="" data-audio-text="" aria-label="Nghe từ">🔊 Nghe</button>
+    </div>
           </div>
         </div>
         <button id="nextCard" class="flash-nav-v32">→</button>
@@ -147,6 +162,7 @@
 </footer>
 <div class="floating-contact"><a class="floating-btn phone" href="tel:0985859968">📞</a><a class="floating-btn zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Zalo</a></div>
 <script src="../assets/js/app.js"></script>
+<script src="../assets/js/audio-manager.js"></script>
 <script src="../assets/js/lesson.js"></script>
 </body>
 </html>

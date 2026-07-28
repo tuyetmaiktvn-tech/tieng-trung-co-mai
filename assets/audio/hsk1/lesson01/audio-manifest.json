@@ -1,0 +1,263 @@
+{
+  "version": "3.3",
+  "lesson": "hsk1/lesson01",
+  "instructions": "Thả MP3 đúng tên và đúng thư mục. Website tự ưu tiên MP3; nếu thiếu sẽ dùng TTS.",
+  "vocabulary": [
+    {
+      "id": 1,
+      "text": "你好",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-01.mp3",
+      "example_text": "你好，我是小语。",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-01.mp3"
+    },
+    {
+      "id": 2,
+      "text": "大家",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-02.mp3",
+      "example_text": "大家好！",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-02.mp3"
+    },
+    {
+      "id": 3,
+      "text": "好",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-03.mp3",
+      "example_text": "老师好！",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-03.mp3"
+    },
+    {
+      "id": 4,
+      "text": "学生",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-04.mp3",
+      "example_text": "我是学生。",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-04.mp3"
+    },
+    {
+      "id": 5,
+      "text": "们",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-05.mp3",
+      "example_text": "你们好！",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-05.mp3"
+    },
+    {
+      "id": 6,
+      "text": "老师",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-06.mp3",
+      "example_text": "王老师，您好！",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-06.mp3"
+    },
+    {
+      "id": 7,
+      "text": "您",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-07.mp3",
+      "example_text": "老师，您好！",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-07.mp3"
+    },
+    {
+      "id": 8,
+      "text": "你们",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-08.mp3",
+      "example_text": "同学们，你们好！",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-08.mp3"
+    },
+    {
+      "id": 9,
+      "text": "谢谢",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-09.mp3",
+      "example_text": "谢谢老师！",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-09.mp3"
+    },
+    {
+      "id": 10,
+      "text": "不客气",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-10.mp3",
+      "example_text": "A：谢谢！B：不客气！",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-10.mp3"
+    },
+    {
+      "id": 11,
+      "text": "同学",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-11.mp3",
+      "example_text": "她是我的同学。",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-11.mp3"
+    },
+    {
+      "id": 12,
+      "text": "再见",
+      "mp3": "assets/audio/hsk1/lesson01/vocabulary/vocab-12.mp3",
+      "example_text": "老师，再见！",
+      "example_mp3": "assets/audio/hsk1/lesson01/examples/example-12.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "text": "你好！",
+      "mp3": "assets/audio/hsk1/lesson01/patterns/pattern-01.mp3",
+      "examples": [
+        {
+          "id": 1,
+          "text": "你好，小语！",
+          "mp3": "assets/audio/hsk1/lesson01/patterns/pattern-01-example-01.mp3"
+        },
+        {
+          "id": 2,
+          "text": "李老师，您好！",
+          "mp3": "assets/audio/hsk1/lesson01/patterns/pattern-01-example-02.mp3"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "大家好！ / 你们好！",
+      "mp3": "assets/audio/hsk1/lesson01/patterns/pattern-02.mp3",
+      "examples": [
+        {
+          "id": 1,
+          "text": "同学们，大家好！",
+          "mp3": "assets/audio/hsk1/lesson01/patterns/pattern-02-example-01.mp3"
+        },
+        {
+          "id": 2,
+          "text": "你们好，我是王老师。",
+          "mp3": "assets/audio/hsk1/lesson01/patterns/pattern-02-example-02.mp3"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "谢谢！— 不客气！",
+      "mp3": "assets/audio/hsk1/lesson01/patterns/pattern-03.mp3",
+      "examples": [
+        {
+          "id": 1,
+          "text": "A：谢谢你！B：不客气！",
+          "mp3": "assets/audio/hsk1/lesson01/patterns/pattern-03-example-01.mp3"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "再见！",
+      "mp3": "assets/audio/hsk1/lesson01/patterns/pattern-04.mp3",
+      "examples": [
+        {
+          "id": 1,
+          "text": "同学们，再见！",
+          "mp3": "assets/audio/hsk1/lesson01/patterns/pattern-04-example-01.mp3"
+        },
+        {
+          "id": 2,
+          "text": "老师，再见！",
+          "mp3": "assets/audio/hsk1/lesson01/patterns/pattern-04-example-02.mp3"
+        }
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-01.mp3",
+      "lines": [
+        {
+          "id": 1,
+          "text": "王老师，您好！",
+          "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-01-line-01.mp3"
+        },
+        {
+          "id": 2,
+          "text": "你好！欢迎你！",
+          "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-01-line-02.mp3"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-02.mp3",
+      "lines": [
+        {
+          "id": 1,
+          "text": "同学们，大家好！",
+          "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-02-line-01.mp3"
+        },
+        {
+          "id": 2,
+          "text": "老师，您好！",
+          "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-02-line-02.mp3"
+        },
+        {
+          "id": 3,
+          "text": "你们好！",
+          "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-02-line-03.mp3"
+        },
+        {
+          "id": 4,
+          "text": "你好，小语！",
+          "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-02-line-04.mp3"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-03.mp3",
+      "lines": [
+        {
+          "id": 1,
+          "text": "老师，谢谢！",
+          "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-03-line-01.mp3"
+        },
+        {
+          "id": 2,
+          "text": "不客气！",
+          "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-03-line-02.mp3"
+        },
+        {
+          "id": 3,
+          "text": "同学们，再见！",
+          "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-03-line-03.mp3"
+        },
+        {
+          "id": 4,
+          "text": "老师，再见！",
+          "mp3": "assets/audio/hsk1/lesson01/dialogues/dialogue-03-line-04.mp3"
+        }
+      ]
+    }
+  ],
+  "pronunciation": [
+    {
+      "id": 1,
+      "text": "mā – má – mǎ – mà",
+      "mp3": "assets/audio/hsk1/lesson01/pronunciation/practice-01.mp3"
+    },
+    {
+      "id": 2,
+      "text": "dā – dá – dǎ – dà",
+      "mp3": "assets/audio/hsk1/lesson01/pronunciation/practice-02.mp3"
+    },
+    {
+      "id": 3,
+      "text": "kē – ké – kě – kè",
+      "mp3": "assets/audio/hsk1/lesson01/pronunciation/practice-03.mp3"
+    },
+    {
+      "id": 4,
+      "text": "nǐ hǎo",
+      "mp3": "assets/audio/hsk1/lesson01/pronunciation/practice-04.mp3"
+    },
+    {
+      "id": 5,
+      "text": "péngyou",
+      "mp3": "assets/audio/hsk1/lesson01/pronunciation/practice-05.mp3"
+    },
+    {
+      "id": 6,
+      "text": "miànbāo",
+      "mp3": "assets/audio/hsk1/lesson01/pronunciation/practice-06.mp3"
+    },
+    {
+      "id": 7,
+      "text": "diànnǎo",
+      "mp3": "assets/audio/hsk1/lesson01/pronunciation/practice-07.mp3"
+    }
+  ]
+}

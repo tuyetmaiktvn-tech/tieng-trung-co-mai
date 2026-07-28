@@ -455,3 +455,137 @@ footer{padding:32px 0;background:#0f2746;color:rgba(255,255,255,.85)}
   .flashcard-v32{width:72vw;height:270px}
   .flashcard-front-v32>div{font-size:58px}
 }
+
+
+/* ===== Version 3.3: Audio Manager ===== */
+.lesson-audio-info-v33{padding:18px 0;background:#eff6ff;border-bottom:1px solid #dbeafe}
+.audio-info-box-v33{display:flex;align-items:center;gap:15px;padding:15px 18px;border:1px solid #bfdbfe;border-radius:16px;background:#fff}
+.audio-info-icon-v33{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;border-radius:14px;background:#dbeafe;font-size:23px}
+.audio-info-box-v33 strong{display:block;color:var(--navy);font-size:17px}
+.audio-info-box-v33 p{margin:2px 0 0;color:var(--muted);font-size:14px}
+.audio-btn-v33{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  min-height:34px;
+  padding:6px 10px;
+  border:1px solid #bfdbfe;
+  border-radius:999px;
+  background:#eff6ff;
+  color:var(--blue);
+  font-size:13px;
+  font-weight:900;
+  cursor:pointer;
+  transition:.18s;
+}
+.audio-btn-v33:hover{transform:translateY(-1px);background:#dbeafe}
+.audio-btn-v33.is-playing{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 0 0 4px rgba(37,99,235,.12)}
+.audio-btn-v33.is-playing .audio-icon-v33{animation:audioPulseV33 .8s infinite alternate}
+@keyframes audioPulseV33{from{transform:scale(.9)}to{transform:scale(1.18)}}
+.vocab-pinyin-row-v33,.example-audio-row-v33,.pattern-formula-row-v33,.dialogue-title-row-v33{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.example-audio-row-v33{align-items:flex-start}
+.dialogue-title-row-v33{align-items:flex-start;margin-bottom:10px}
+.dialogue-title-row-v33 h3,.dialogue-title-row-v33 p{margin-top:0}
+.audio-btn-card-v33{margin-top:14px}
+.pron-audio-chip-v33{
+  display:inline-flex !important;
+  align-items:center;
+  gap:6px;
+  padding:6px 8px !important;
+}
+.pron-audio-chip-v33 .audio-label-v33{display:none}
+.pron-audio-chip-v33 .audio-btn-v33{min-height:28px;padding:3px 7px}
+@media(max-width:680px){
+  .audio-label-v33{display:none}
+  .audio-btn-v33{width:34px;height:34px;padding:0;flex:0 0 34px}
+  .dialogue-title-row-v33 .audio-label-v33{display:inline}
+  .dialogue-title-row-v33 .audio-btn-v33{width:auto;padding:6px 10px}
+  .audio-info-box-v33{align-items:flex-start}
+}
+
+
+/* ===== Version 3.3 Font Update =====
+   - Tiếng Việt và pinyin: Times New Roman
+   - Chữ Hán: font chuyên dụng, ưu tiên font Song/Serif CJK
+*/
+html,
+body,
+button,
+input,
+select,
+textarea,
+.nav-link,
+.header-cta,
+.contact-strip,
+.button,
+.card,
+.section-heading,
+.lesson-section-v32,
+.quiz-question-v32,
+footer {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Pinyin và phần phiên âm */
+.vocab-pinyin-v32,
+.vocab-example-v32 em,
+.dialogue-line-v32 em,
+.pattern-examples-v32 em,
+.flashcard-back-v32 #cardPinyin,
+.lesson-meta-v32,
+.lesson-objectives-v32,
+.pronunciation-box-v32,
+.pron-practice-v32,
+.about-role-v31,
+.about-school-v31 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+/* Chữ Hán và câu tiếng Trung */
+.hanzi,
+.vocab-hanzi-v32,
+.vocab-example-v32 strong,
+.dialogue-line-v32 strong,
+.pattern-formula-v32,
+.pattern-examples-v32 strong,
+.flashcard-front-v32,
+#cardHanzi,
+.lesson-title-zh-v32,
+.pron-audio-chip-v33,
+[data-audio-text] {
+  font-family:
+    "Noto Serif SC",
+    "Source Han Serif SC",
+    "Songti SC",
+    "SimSun",
+    "STSong",
+    "Microsoft YaHei",
+    serif;
+}
+
+/* Tăng độ rõ của chữ Hán */
+.vocab-hanzi-v32,
+.flashcard-front-v32,
+#cardHanzi {
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+/* Tiêu đề vẫn trang trọng và dễ đọc */
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Riêng tiêu đề có chữ Hán dùng font Hán */
+.lesson-title-zh-v32,
+.vocab-hanzi-v32,
+.pattern-formula-v32 {
+  line-height: 1.35;
+}
