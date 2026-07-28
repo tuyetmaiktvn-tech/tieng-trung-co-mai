@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bài 2 - 我叫李文 | Tiếng Trung Cô Mai</title>
+<link rel="stylesheet" href="assets/css/lesson.css"></head>
+<body>
+<header><div class="header-inner"><div class="eyebrow">TIẾNG TRUNG CÔ MAI · HSK 1 · BÀI 02</div>
+<div id="titleZh" class="title-zh"></div><div id="titlePy" class="title-py pinyin"></div><div id="titleVi" class="title-vi"></div></div></header>
+<nav>
+<button onclick="go('muctieu')">Mục tiêu</button><button onclick="go('tuvung')">Từ vựng</button><button onclick="go('maucau')">Mẫu câu</button>
+<button onclick="go('hoithoai')">Hội thoại</button><button onclick="go('phatam')">Ngữ âm</button><button onclick="go('flashcards')">Flashcards</button><button onclick="go('baitap')">Bài tập</button>
+</nav>
+<main>
+<section id="muctieu" class="card"><h2>🎯 Mục tiêu</h2><ul id="objectives"></ul></section>
+<section id="tuvung" class="card"><h2>📘 Từ vựng</h2><div id="vocab" class="grid"></div></section>
+<section id="maucau" class="card"><h2>🧩 Mẫu câu và ngữ pháp</h2><div id="patterns" class="grid"></div></section>
+<section id="hoithoai"><h2>💬 Hội thoại</h2><div id="dialogues"></div></section>
+<section id="phatam" class="card"><h2>🎧 Ngữ âm</h2><div id="pronunciation"></div></section>
+<section class="card"><h2>🗣️ Cùng đọc bài vè</h2><div id="reading"></div></section>
+<section class="card"><h2>🌏 Góc văn hóa</h2><div id="culture"></div></section>
+<section id="flashcards" class="card"><h2>🃏 Flashcards</h2>
+<div id="flash" class="flashcard" onclick="flipFlash()"><div class="flash-inner"><div id="flashFront" class="flash-face"></div><div id="flashBack" class="flash-face flash-back"></div></div></div>
+<div class="controls"><button onclick="event.stopPropagation();nextFlash(-1)">← Trước</button><span id="flashCount"></span><button onclick="event.stopPropagation();nextFlash(1)">Sau →</button></div></section>
+<section id="baitap" class="card"><h2>✅ Bài tập tương tác</h2><div id="quiz" class="grid"></div><h3 id="quizResult"></h3><div class="controls"><button onclick="resetQuiz()">Làm lại</button></div></section>
+</main><footer>© Tiếng Trung Cô Mai · Version 3.3.2 – Lesson 02 Audio Hotfix</footer>
+<script src="assets/js/audio-manager.js"></script><script src="assets/js/lesson02.js"></script></body></html>

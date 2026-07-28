@@ -1,0 +1,731 @@
+{
+  "meta": {
+    "id": "hsk1-lesson02",
+    "lessonNumber": 2,
+    "titleZh": "我叫李文",
+    "titlePinyin": "Wǒ jiào Lǐ Wén",
+    "titleVi": "Mình tên là Lý Văn",
+    "level": "HSK 1",
+    "version": "3.3.2",
+    "audioMode": "MP3_FIRST_TTS_FALLBACK",
+    "fonts": {
+      "viPinyin": "Times New Roman",
+      "hanzi": "Noto Serif CJK SC"
+    }
+  },
+  "objectives": [
+    "Nghe hiểu và tự giới thiệu họ tên bằng tiếng Trung.",
+    "Hỏi tên người khác bằng mẫu 请问，你叫什么名字？",
+    "Dùng 对不起 để xin lỗi và 没关系 / 没事 để đáp lại.",
+    "Nắm trật tự cơ bản: Chủ ngữ + Vị ngữ + Tân ngữ.",
+    "Hiểu cấu trúc họ tên của người Trung Quốc: Họ + Tên."
+  ],
+  "vocabulary": [
+    {
+      "id": "v01",
+      "hanzi": "请问",
+      "pinyin": "qǐngwèn",
+      "pos": "động từ",
+      "meaning": "xin hỏi",
+      "exampleZh": "请问，你叫什么名字？",
+      "examplePinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+      "exampleVi": "Xin hỏi, bạn tên là gì?"
+    },
+    {
+      "id": "v02",
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "pos": "đại từ",
+      "meaning": "bạn, anh, chị, em",
+      "exampleZh": "你叫什么名字？",
+      "examplePinyin": "Nǐ jiào shénme míngzi?",
+      "exampleVi": "Bạn tên là gì?"
+    },
+    {
+      "id": "v03",
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "pos": "động từ",
+      "meaning": "gọi là; tên là",
+      "exampleZh": "我叫李文。",
+      "examplePinyin": "Wǒ jiào Lǐ Wén.",
+      "exampleVi": "Mình tên là Lý Văn."
+    },
+    {
+      "id": "v04",
+      "hanzi": "什么",
+      "pinyin": "shénme",
+      "pos": "đại từ",
+      "meaning": "gì, cái gì",
+      "exampleZh": "你叫什么？",
+      "examplePinyin": "Nǐ jiào shénme?",
+      "exampleVi": "Bạn tên là gì?"
+    },
+    {
+      "id": "v05",
+      "hanzi": "名字",
+      "pinyin": "míngzi",
+      "pos": "danh từ",
+      "meaning": "tên",
+      "exampleZh": "你的名字是什么？",
+      "examplePinyin": "Nǐ de míngzi shì shénme?",
+      "exampleVi": "Tên của bạn là gì?"
+    },
+    {
+      "id": "v06",
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "pos": "đại từ",
+      "meaning": "tôi, mình",
+      "exampleZh": "我是学生。",
+      "examplePinyin": "Wǒ shì xuésheng.",
+      "exampleVi": "Tôi là học sinh."
+    },
+    {
+      "id": "v07",
+      "hanzi": "不",
+      "pinyin": "bù",
+      "pos": "phó từ",
+      "meaning": "không",
+      "exampleZh": "我不是安妮。",
+      "examplePinyin": "Wǒ bú shì Ānnī.",
+      "exampleVi": "Tôi không phải là Annie."
+    },
+    {
+      "id": "v08",
+      "hanzi": "是",
+      "pinyin": "shì",
+      "pos": "động từ",
+      "meaning": "là",
+      "exampleZh": "我是白家月。",
+      "examplePinyin": "Wǒ shì Bái Jiāyuè.",
+      "exampleVi": "Tôi là Bạch Gia Nguyệt."
+    },
+    {
+      "id": "v09",
+      "hanzi": "对不起",
+      "pinyin": "duìbuqǐ",
+      "pos": "động từ",
+      "meaning": "xin lỗi",
+      "exampleZh": "对不起！",
+      "examplePinyin": "Duìbuqǐ!",
+      "exampleVi": "Xin lỗi!"
+    },
+    {
+      "id": "v10",
+      "hanzi": "没关系",
+      "pinyin": "méi guānxi",
+      "pos": "cụm từ",
+      "meaning": "không sao, không có gì",
+      "exampleZh": "没关系！",
+      "examplePinyin": "Méi guānxi!",
+      "exampleVi": "Không sao!"
+    },
+    {
+      "id": "v11",
+      "hanzi": "没事",
+      "pinyin": "méishì",
+      "pos": "cụm từ",
+      "meaning": "không sao, không có gì",
+      "exampleZh": "没事！",
+      "examplePinyin": "Méishì!",
+      "exampleVi": "Không sao đâu!"
+    },
+    {
+      "id": "v12",
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "pos": "phó từ",
+      "meaning": "rất",
+      "exampleZh": "我很高兴。",
+      "examplePinyin": "Wǒ hěn gāoxìng.",
+      "exampleVi": "Tôi rất vui."
+    },
+    {
+      "id": "v13",
+      "hanzi": "高兴",
+      "pinyin": "gāoxìng",
+      "pos": "tính từ",
+      "meaning": "vui, vui vẻ",
+      "exampleZh": "很高兴认识你。",
+      "examplePinyin": "Hěn gāoxìng rènshi nǐ.",
+      "exampleVi": "Rất vui được làm quen với bạn."
+    },
+    {
+      "id": "v14",
+      "hanzi": "认识",
+      "pinyin": "rènshi",
+      "pos": "động từ",
+      "meaning": "quen, làm quen, biết",
+      "exampleZh": "认识你，我很高兴。",
+      "examplePinyin": "Rènshi nǐ, wǒ hěn gāoxìng.",
+      "exampleVi": "Được làm quen với bạn, tôi rất vui."
+    },
+    {
+      "id": "v15",
+      "hanzi": "也",
+      "pinyin": "yě",
+      "pos": "phó từ",
+      "meaning": "cũng",
+      "exampleZh": "我也很高兴。",
+      "examplePinyin": "Wǒ yě hěn gāoxìng.",
+      "exampleVi": "Tôi cũng rất vui."
+    }
+  ],
+  "patterns": [
+    {
+      "id": "p01",
+      "title": "Hỏi và giới thiệu tên",
+      "formula": "A：请问，你叫什么名字？ B：我叫 + họ tên。",
+      "examples": [
+        {
+          "zh": "请问，你叫什么名字？",
+          "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+          "vi": "Xin hỏi, bạn tên là gì?"
+        },
+        {
+          "zh": "我叫陈天中。",
+          "pinyin": "Wǒ jiào Chén Tiānzhōng.",
+          "vi": "Mình tên là Trần Thiên Trung."
+        }
+      ],
+      "note": "请问 là cách mở lời lịch sự. Có thể trả lời trực tiếp bằng 我叫……"
+    },
+    {
+      "id": "p02",
+      "title": "Câu phán đoán với 是 / phủ định với 不是",
+      "formula": "Chủ ngữ + 是 / 不是 + danh từ.",
+      "examples": [
+        {
+          "zh": "我是白家月。",
+          "pinyin": "Wǒ shì Bái Jiāyuè.",
+          "vi": "Tôi là Bạch Gia Nguyệt."
+        },
+        {
+          "zh": "我不是安妮。",
+          "pinyin": "Wǒ bú shì Ānnī.",
+          "vi": "Tôi không phải là Annie."
+        }
+      ],
+      "note": "不 đứng trước âm tiết thanh 4 thường đọc biến điệu thành bú, ví dụ 不是 bú shì."
+    },
+    {
+      "id": "p03",
+      "title": "Xin lỗi và đáp lại",
+      "formula": "A：对不起！ B：没关系！ / 没事！",
+      "examples": [
+        {
+          "zh": "对不起！",
+          "pinyin": "Duìbuqǐ!",
+          "vi": "Xin lỗi!"
+        },
+        {
+          "zh": "没关系！",
+          "pinyin": "Méi guānxi!",
+          "vi": "Không sao!"
+        },
+        {
+          "zh": "没事！",
+          "pinyin": "Méishì!",
+          "vi": "Không sao đâu!"
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "Rất vui được làm quen",
+      "formula": "很高兴认识你。 / 认识你，我也很高兴。",
+      "examples": [
+        {
+          "zh": "很高兴认识你。",
+          "pinyin": "Hěn gāoxìng rènshi nǐ.",
+          "vi": "Rất vui được làm quen với bạn."
+        },
+        {
+          "zh": "认识你，我也很高兴。",
+          "pinyin": "Rènshi nǐ, wǒ yě hěn gāoxìng.",
+          "vi": "Được làm quen với bạn, tôi cũng rất vui."
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "Trật tự câu cơ bản",
+      "formula": "Chủ ngữ + Vị ngữ + Tân ngữ",
+      "examples": [
+        {
+          "zh": "我叫陈天中。",
+          "pinyin": "Wǒ jiào Chén Tiānzhōng.",
+          "vi": "Tôi tên là Trần Thiên Trung."
+        },
+        {
+          "zh": "我是学生。",
+          "pinyin": "Wǒ shì xuésheng.",
+          "vi": "Tôi là học sinh."
+        }
+      ],
+      "note": "Trong câu 我叫陈天中: 我 là chủ ngữ, 叫 là vị ngữ, 陈天中 là tân ngữ."
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "title": "Bài khóa 1 – Hỏi tên",
+      "context": "Trong lớp học, Vương Nhất Phi làm quen với học sinh.",
+      "lines": [
+        {
+          "speaker": "王一飞",
+          "zh": "请问，你叫什么名字？",
+          "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+          "vi": "Xin hỏi, em tên là gì?"
+        },
+        {
+          "speaker": "陈天中",
+          "zh": "我叫陈天中。",
+          "pinyin": "Wǒ jiào Chén Tiānzhōng.",
+          "vi": "Em tên là Trần Thiên Trung ạ."
+        }
+      ]
+    },
+    {
+      "id": "d02",
+      "title": "Bài khóa 2 – Nhận nhầm người",
+      "context": "Trong khuôn viên trường, Trần Thiên Trung nhận nhầm Bạch Gia Nguyệt là Annie.",
+      "lines": [
+        {
+          "speaker": "陈天中",
+          "zh": "你好，安妮！",
+          "pinyin": "Nǐ hǎo, Ānnī!",
+          "vi": "Chào Annie!"
+        },
+        {
+          "speaker": "白家月",
+          "zh": "你好，陈天中！我不是安妮，我是白家月。",
+          "pinyin": "Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānnī, wǒ shì Bái Jiāyuè.",
+          "vi": "Chào Trần Thiên Trung! Mình không phải là Annie, mình là Bạch Gia Nguyệt."
+        },
+        {
+          "speaker": "陈天中",
+          "zh": "对不起！",
+          "pinyin": "Duìbuqǐ!",
+          "vi": "Xin lỗi bạn!"
+        },
+        {
+          "speaker": "白家月",
+          "zh": "没关系！",
+          "pinyin": "Méi guānxi!",
+          "vi": "Không sao đâu!"
+        }
+      ]
+    },
+    {
+      "id": "d03",
+      "title": "Bài khóa 3 – Lần đầu làm quen",
+      "context": "Lý Văn và Bạch Gia Nguyệt lần đầu gặp nhau trong khuôn viên trường.",
+      "lines": [
+        {
+          "speaker": "李文",
+          "zh": "你好！我叫李文。",
+          "pinyin": "Nǐ hǎo! Wǒ jiào Lǐ Wén.",
+          "vi": "Chào bạn! Mình tên là Lý Văn."
+        },
+        {
+          "speaker": "白家月",
+          "zh": "你好！我叫白家月。",
+          "pinyin": "Nǐ hǎo! Wǒ jiào Bái Jiāyuè.",
+          "vi": "Xin chào! Mình tên là Bạch Gia Nguyệt."
+        },
+        {
+          "speaker": "李文",
+          "zh": "很高兴认识你。",
+          "pinyin": "Hěn gāoxìng rènshi nǐ.",
+          "vi": "Rất vui được làm quen với bạn."
+        },
+        {
+          "speaker": "白家月",
+          "zh": "认识你，我也很高兴。",
+          "pinyin": "Rènshi nǐ, wǒ yě hěn gāoxìng.",
+          "vi": "Được làm quen với bạn, mình cũng rất vui."
+        }
+      ]
+    }
+  ],
+  "pronunciation": {
+    "title": "Thanh mẫu và vận mẫu (2)",
+    "initials": [
+      "j",
+      "q",
+      "x"
+    ],
+    "finals": [
+      "i",
+      "ü",
+      "ia",
+      "ie",
+      "iao",
+      "iou (iu)",
+      "ian",
+      "in",
+      "iang",
+      "ing",
+      "iong",
+      "üe",
+      "üan",
+      "ün"
+    ],
+    "rules": [
+      "j, q, x chỉ ghép với i, ü và các vận mẫu bắt đầu bằng i, ü; không ghép trực tiếp với a, u.",
+      "Khi i, u, ü đứng độc lập tạo thành âm tiết, viết thành yi, wu, yu.",
+      "Khi j, q, x ghép với ü, hai dấu chấm trên ü được lược bỏ: ju, qu, xu.",
+      "iou đứng độc lập viết thành you; khi ghép với thanh mẫu viết gọn thành iu và dấu thanh đặt trên u."
+    ],
+    "practice": [
+      "jī",
+      "jí",
+      "jǐ",
+      "jì",
+      "qū",
+      "qú",
+      "qǔ",
+      "qù",
+      "xū",
+      "xú",
+      "xǔ",
+      "xù",
+      "jiā",
+      "jiàn",
+      "quán",
+      "qǐng",
+      "xiǎng",
+      "xīn",
+      "yǔ",
+      "wǔ",
+      "yī",
+      "yǐzi",
+      "jiǔ",
+      "péngyou",
+      "niúnǎi",
+      "xiūxi"
+    ]
+  },
+  "reading": {
+    "title": "Cùng đọc bài vè",
+    "zh": "七加一，再减一，加完减完等于几？加完减完还是七。",
+    "pinyin": "Qī jiā yī, zài jiǎn yī, jiāwán jiǎnwán děngyú jǐ? Jiāwán jiǎnwán háishi qī.",
+    "vi": "Bảy cộng một, lại trừ một. Cộng xong trừ xong thì bằng mấy? Cộng xong trừ xong vẫn là bảy."
+  },
+  "culture": {
+    "title": "Họ tên của người Trung Quốc",
+    "content": "Họ tên tiếng Trung thường theo thứ tự Họ + Tên. Ví dụ: 李文, trong đó 李 là họ, 文 là tên."
+  },
+  "flashcards": [
+    {
+      "front": "请问",
+      "pinyin": "qǐngwèn",
+      "back": "xin hỏi",
+      "audio": "assets/audio/lesson02/v01.mp3"
+    },
+    {
+      "front": "你",
+      "pinyin": "nǐ",
+      "back": "bạn, anh, chị, em",
+      "audio": "assets/audio/lesson02/v02.mp3"
+    },
+    {
+      "front": "叫",
+      "pinyin": "jiào",
+      "back": "gọi là; tên là",
+      "audio": "assets/audio/lesson02/v03.mp3"
+    },
+    {
+      "front": "什么",
+      "pinyin": "shénme",
+      "back": "gì, cái gì",
+      "audio": "assets/audio/lesson02/v04.mp3"
+    },
+    {
+      "front": "名字",
+      "pinyin": "míngzi",
+      "back": "tên",
+      "audio": "assets/audio/lesson02/v05.mp3"
+    },
+    {
+      "front": "我",
+      "pinyin": "wǒ",
+      "back": "tôi, mình",
+      "audio": "assets/audio/lesson02/v06.mp3"
+    },
+    {
+      "front": "不",
+      "pinyin": "bù",
+      "back": "không",
+      "audio": "assets/audio/lesson02/v07.mp3"
+    },
+    {
+      "front": "是",
+      "pinyin": "shì",
+      "back": "là",
+      "audio": "assets/audio/lesson02/v08.mp3"
+    },
+    {
+      "front": "对不起",
+      "pinyin": "duìbuqǐ",
+      "back": "xin lỗi",
+      "audio": "assets/audio/lesson02/v09.mp3"
+    },
+    {
+      "front": "没关系",
+      "pinyin": "méi guānxi",
+      "back": "không sao, không có gì",
+      "audio": "assets/audio/lesson02/v10.mp3"
+    },
+    {
+      "front": "没事",
+      "pinyin": "méishì",
+      "back": "không sao, không có gì",
+      "audio": "assets/audio/lesson02/v11.mp3"
+    },
+    {
+      "front": "很",
+      "pinyin": "hěn",
+      "back": "rất",
+      "audio": "assets/audio/lesson02/v12.mp3"
+    },
+    {
+      "front": "高兴",
+      "pinyin": "gāoxìng",
+      "back": "vui, vui vẻ",
+      "audio": "assets/audio/lesson02/v13.mp3"
+    },
+    {
+      "front": "认识",
+      "pinyin": "rènshi",
+      "back": "quen, làm quen, biết",
+      "audio": "assets/audio/lesson02/v14.mp3"
+    },
+    {
+      "front": "也",
+      "pinyin": "yě",
+      "back": "cũng",
+      "audio": "assets/audio/lesson02/v15.mp3"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "q01",
+      "type": "mcq",
+      "question": "“Xin hỏi” trong tiếng Trung là gì?",
+      "options": [
+        "请问",
+        "名字",
+        "认识",
+        "高兴"
+      ],
+      "answer": 0,
+      "explanation": "请问 qǐngwèn dùng để mở lời hỏi một cách lịch sự."
+    },
+    {
+      "id": "q02",
+      "type": "mcq",
+      "question": "Chọn câu hỏi đúng: “Bạn tên là gì?”",
+      "options": [
+        "你是谁？",
+        "你叫什么名字？",
+        "你好吗？",
+        "你认识谁？"
+      ],
+      "answer": 1,
+      "explanation": "你叫什么名字？ là mẫu hỏi tên cơ bản."
+    },
+    {
+      "id": "q03",
+      "type": "mcq",
+      "question": "Đáp án phù hợp với 对不起！",
+      "options": [
+        "你好！",
+        "谢谢！",
+        "没关系！",
+        "再见！"
+      ],
+      "answer": 2,
+      "explanation": "没关系！ nghĩa là Không sao!"
+    },
+    {
+      "id": "q04",
+      "type": "mcq",
+      "question": "Câu nào có nghĩa “Tôi không phải là Annie”?",
+      "options": [
+        "我是安妮。",
+        "我叫安妮。",
+        "我不是安妮。",
+        "你不是安妮。"
+      ],
+      "answer": 2,
+      "explanation": "Phủ định của 是 là 不是."
+    },
+    {
+      "id": "q05",
+      "type": "mcq",
+      "question": "Điền từ: 我___李文。",
+      "options": [
+        "叫",
+        "很",
+        "也",
+        "什么"
+      ],
+      "answer": 0,
+      "explanation": "我叫李文。 = Tôi tên là Lý Văn."
+    },
+    {
+      "id": "q06",
+      "type": "mcq",
+      "question": "Điền từ: 很高兴___你。",
+      "options": [
+        "名字",
+        "认识",
+        "请问",
+        "没事"
+      ],
+      "answer": 1,
+      "explanation": "很高兴认识你。 = Rất vui được làm quen với bạn."
+    },
+    {
+      "id": "q07",
+      "type": "mcq",
+      "question": "Chọn trật tự đúng.",
+      "options": [
+        "叫我李文",
+        "我李文叫",
+        "我叫李文",
+        "李文我叫"
+      ],
+      "answer": 2,
+      "explanation": "Trật tự cơ bản: Chủ ngữ + Vị ngữ + Tân ngữ."
+    },
+    {
+      "id": "q08",
+      "type": "mcq",
+      "question": "“Tôi cũng rất vui” là câu nào?",
+      "options": [
+        "我很高兴。",
+        "我也很高兴。",
+        "你也高兴。",
+        "我不是高兴。"
+      ],
+      "answer": 1,
+      "explanation": "也 đứng trước cụm 很高兴."
+    },
+    {
+      "id": "q09",
+      "type": "reorder",
+      "question": "Sắp xếp thành câu đúng: 名字 / 你 / 什么 / 叫",
+      "items": [
+        "名字",
+        "你",
+        "什么",
+        "叫"
+      ],
+      "answer": [
+        "你",
+        "叫",
+        "什么",
+        "名字"
+      ],
+      "explanation": "你叫什么名字？"
+    },
+    {
+      "id": "q10",
+      "type": "reorder",
+      "question": "Sắp xếp thành câu đúng: 也 / 我 / 高兴 / 很",
+      "items": [
+        "也",
+        "我",
+        "高兴",
+        "很"
+      ],
+      "answer": [
+        "我",
+        "也",
+        "很",
+        "高兴"
+      ],
+      "explanation": "我也很高兴。"
+    },
+    {
+      "id": "q11",
+      "type": "fill",
+      "question": "Điền từ còn thiếu: 对不起！— ____！",
+      "answerText": "没关系",
+      "accepted": [
+        "没关系",
+        "没事"
+      ],
+      "explanation": "Cả 没关系 và 没事 đều có thể dùng để đáp lại lời xin lỗi."
+    },
+    {
+      "id": "q12",
+      "type": "fill",
+      "question": "Dịch sang tiếng Trung: “Mình tên là Lý Văn.”",
+      "answerText": "我叫李文",
+      "accepted": [
+        "我叫李文",
+        "我叫李文。"
+      ],
+      "explanation": "Mẫu: 我叫 + họ tên."
+    }
+  ],
+  "audioManifest": {
+    "v01": "assets/audio/lesson02/v01.mp3",
+    "v01_ex": "assets/audio/lesson02/v01_ex.mp3",
+    "v02": "assets/audio/lesson02/v02.mp3",
+    "v02_ex": "assets/audio/lesson02/v02_ex.mp3",
+    "v03": "assets/audio/lesson02/v03.mp3",
+    "v03_ex": "assets/audio/lesson02/v03_ex.mp3",
+    "v04": "assets/audio/lesson02/v04.mp3",
+    "v04_ex": "assets/audio/lesson02/v04_ex.mp3",
+    "v05": "assets/audio/lesson02/v05.mp3",
+    "v05_ex": "assets/audio/lesson02/v05_ex.mp3",
+    "v06": "assets/audio/lesson02/v06.mp3",
+    "v06_ex": "assets/audio/lesson02/v06_ex.mp3",
+    "v07": "assets/audio/lesson02/v07.mp3",
+    "v07_ex": "assets/audio/lesson02/v07_ex.mp3",
+    "v08": "assets/audio/lesson02/v08.mp3",
+    "v08_ex": "assets/audio/lesson02/v08_ex.mp3",
+    "v09": "assets/audio/lesson02/v09.mp3",
+    "v09_ex": "assets/audio/lesson02/v09_ex.mp3",
+    "v10": "assets/audio/lesson02/v10.mp3",
+    "v10_ex": "assets/audio/lesson02/v10_ex.mp3",
+    "v11": "assets/audio/lesson02/v11.mp3",
+    "v11_ex": "assets/audio/lesson02/v11_ex.mp3",
+    "v12": "assets/audio/lesson02/v12.mp3",
+    "v12_ex": "assets/audio/lesson02/v12_ex.mp3",
+    "v13": "assets/audio/lesson02/v13.mp3",
+    "v13_ex": "assets/audio/lesson02/v13_ex.mp3",
+    "v14": "assets/audio/lesson02/v14.mp3",
+    "v14_ex": "assets/audio/lesson02/v14_ex.mp3",
+    "v15": "assets/audio/lesson02/v15.mp3",
+    "v15_ex": "assets/audio/lesson02/v15_ex.mp3",
+    "p01_ex1": "assets/audio/lesson02/p01_ex1.mp3",
+    "p01_ex2": "assets/audio/lesson02/p01_ex2.mp3",
+    "p02_ex1": "assets/audio/lesson02/p02_ex1.mp3",
+    "p02_ex2": "assets/audio/lesson02/p02_ex2.mp3",
+    "p03_ex1": "assets/audio/lesson02/p03_ex1.mp3",
+    "p03_ex2": "assets/audio/lesson02/p03_ex2.mp3",
+    "p03_ex3": "assets/audio/lesson02/p03_ex3.mp3",
+    "p04_ex1": "assets/audio/lesson02/p04_ex1.mp3",
+    "p04_ex2": "assets/audio/lesson02/p04_ex2.mp3",
+    "p05_ex1": "assets/audio/lesson02/p05_ex1.mp3",
+    "p05_ex2": "assets/audio/lesson02/p05_ex2.mp3",
+    "d01_line1": "assets/audio/lesson02/d01_line1.mp3",
+    "d01_line2": "assets/audio/lesson02/d01_line2.mp3",
+    "d02_line1": "assets/audio/lesson02/d02_line1.mp3",
+    "d02_line2": "assets/audio/lesson02/d02_line2.mp3",
+    "d02_line3": "assets/audio/lesson02/d02_line3.mp3",
+    "d02_line4": "assets/audio/lesson02/d02_line4.mp3",
+    "d03_line1": "assets/audio/lesson02/d03_line1.mp3",
+    "d03_line2": "assets/audio/lesson02/d03_line2.mp3",
+    "d03_line3": "assets/audio/lesson02/d03_line3.mp3",
+    "d03_line4": "assets/audio/lesson02/d03_line4.mp3",
+    "reading": "assets/audio/lesson02/reading.mp3"
+  }
+}
