@@ -1,1 +1,0 @@
-Đặt logo, banner và hình minh họa trong thư mục này.

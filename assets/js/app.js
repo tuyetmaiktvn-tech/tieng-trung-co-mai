@@ -1,18 +1,1 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const mobileMenu = document.getElementById("mobileMenu");
-  const navLinks = document.getElementById("navLinks");
-
-  if (mobileMenu && navLinks) {
-    mobileMenu.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
-    });
-
-    navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => navLinks.classList.remove("open"));
-    });
-  }
-});
-
-function showNotice(content) {
-  alert(content + " đang được xây dựng. Nội dung sẽ sớm được cập nhật.");
-}
+document.addEventListener("DOMContentLoaded",()=>{const m=document.getElementById("mobileMenu"),n=document.getElementById("navLinks"),b=document.querySelectorAll("[data-dropdown]");if(m&&n)m.addEventListener("click",()=>n.classList.toggle("open"));b.forEach(x=>x.addEventListener("click",e=>{e.stopPropagation();const i=x.closest(".nav-item");document.querySelectorAll(".nav-item.open").forEach(y=>{if(y!==i)y.classList.remove("open")});i.classList.toggle("open")}));document.addEventListener("click",()=>document.querySelectorAll(".nav-item.open").forEach(i=>i.classList.remove("open")));document.querySelectorAll(".dropdown").forEach(d=>d.addEventListener("click",e=>e.stopPropagation()))});function showNotice(c){alert(c+" đang được xây dựng. Nội dung sẽ sớm được cập nhật.")}
