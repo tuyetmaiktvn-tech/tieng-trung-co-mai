@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="HSK 1 Bài 2 - 我叫李文。 Học giới thiệu tên, hỏi tên, giao tiếp lịch sự, phát âm, flashcards và bài tập tương tác.">
+  <title>HSK 1 - Bài 2 | Tiếng Trung Cô Mai</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+</head>
+<body>
+<div class="contact-strip">
+  <div class="container contact-strip-inner">
+    <div class="contact-main"><span>📞 Hotline/Zalo:</span><a href="tel:0985859968">0985 859 968</a></div>
+    <div class="contact-actions"><a class="contact-link" href="tel:0985859968">Gọi tư vấn</a><a class="contact-link zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Nhắn Zalo</a></div>
+  </div>
+</div>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html"><img src="../assets/images/logo.svg" alt="Tiếng Trung Cô Mai"></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="nav-link" href="../index.html">Trang chủ</a>
+      <a class="nav-link active" href="hsk1.html">HSK 1</a>
+      <a class="nav-link" href="../resources/flashcards.html">Flashcards</a>
+      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      <a class="header-cta" href="tel:0985859968">Đăng ký học</a>
+    </nav>
+  </div>
+</header>
+
+<main id="lessonApp">
+  <section class="lesson-hero-v32">
+    <div class="container lesson-hero-grid-v32">
+      <div>
+        <div class="lesson-badge-v32">HSK 1 • BÀI 2</div>
+        <h1 id="lessonTitle">我叫李文</h1>
+        <p class="lesson-title-vi-v32" id="lessonTitleVi">Tôi tên là Lý Văn</p>
+        <p id="lessonTheme">Giới thiệu tên, hỏi tên và giao tiếp lịch sự</p>
+        <div class="lesson-meta-v32">
+          <span>⏱ 60–90 phút</span>
+          <span>📚 12 từ mới</span>
+          <span>✍️ 15 bài tập</span><span>🔊 Audio MP3 + TTS dự phòng</span>
+        </div>
+      </div>
+      <div class="lesson-progress-card-v32">
+        <strong>Tiến độ bài học</strong>
+        <div class="progress-track-v32"><div id="progressBar" class="progress-bar-v32"></div></div>
+        <div id="progressText">0% hoàn thành</div>
+        <button id="resetProgress" class="lesson-small-btn-v32">Học lại từ đầu</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="lesson-audio-info-v33">
+    <div class="container">
+      <div class="audio-info-box-v33">
+        <div class="audio-info-icon-v33">🔊</div>
+        <div>
+          <strong>Hệ thống Audio Manager</strong>
+          <p>Nút nghe sẽ ưu tiên phát MP3 của Tiếng Trung Cô Mai. Khi chưa có MP3, trình duyệt tự đọc bằng giọng tiếng Trung để người học vẫn kiểm tra được phát âm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lesson-sticky-nav-v32">
+    <div class="container lesson-nav-scroll-v32">
+      <a href="#muc-tieu">Mục tiêu</a><a href="#tu-vung">Từ vựng</a><a href="#flashcards">Flashcards</a><a href="#mau-cau">Mẫu câu</a><a href="#hoi-thoai">Hội thoại</a><a href="#phat-am">Phát âm</a><a href="#bai-tap">Bài tập</a><a href="#tong-ket">Tổng kết</a>
+    </div>
+  </div>
+
+  <section class="lesson-section-v32" id="muc-tieu">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>🎯</span><div><small>BẠN SẼ HỌC ĐƯỢC GÌ?</small><h2>Mục tiêu bài học</h2></div></div>
+      <div id="objectives" class="objective-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="tu-vung">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>词</span><div><small>TỪ VỰNG TRỌNG TÂM</small><h2>Học từ trong ngữ cảnh</h2></div></div>
+      <input id="vocabSearch" class="lesson-search-v32" placeholder="Tìm chữ Hán, pinyin hoặc nghĩa tiếng Việt...">
+      <div id="vocabulary" class="vocab-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="flashcards">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>🃏</span><div><small>LẬT THẺ ĐỂ GHI NHỚ</small><h2>Flashcards Bài 2</h2></div></div>
+      <div class="flashcard-stage-v32">
+        <button id="prevCard" class="flash-nav-v32">←</button>
+        <div id="flashcard" class="flashcard-v32" tabindex="0" role="button" aria-label="Lật thẻ">
+          <div class="flashcard-inner-v32">
+            <div class="flashcard-front-v32"><div id="cardHanzi"></div><small>Nhấn để lật thẻ</small></div>
+            <div class="flashcard-back-v32"><div id="cardPinyin"></div><strong id="cardMeaning"></strong><p id="cardExample"></p>
+      <button id="cardAudio" type="button" class="audio-btn-v33 audio-btn-card-v33" data-audio-src="" data-audio-text="" aria-label="Nghe từ">🔊 Nghe</button>
+    </div>
+          </div>
+        </div>
+        <button id="nextCard" class="flash-nav-v32">→</button>
+      </div>
+      <div id="cardCounter" class="card-counter-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="mau-cau">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>法</span><div><small>MẪU CÂU VÀ CÁCH DÙNG</small><h2>Dùng đúng trong giao tiếp</h2></div></div>
+      <div id="patterns" class="pattern-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="hoi-thoai">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>说</span><div><small>HỘI THOẠI DO CÔ MAI BIÊN SOẠN</small><h2>Luyện nói theo tình huống</h2></div></div>
+      <div id="dialogues" class="dialogue-grid-v32"></div>
+      <div class="teacher-tip-v32"><strong>💡 Mẹo của Cô Mai</strong><div id="teacherTips"></div></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="phat-am">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>声</span><div><small>NỀN TẢNG PHIÊN ÂM</small><h2>Thanh mẫu, vận mẫu và thanh điệu</h2></div></div>
+      <div id="pronunciation"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="bai-tap">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>考</span><div><small>LUYỆN TẬP TƯƠNG TÁC</small><h2>Kiểm tra ngay sau khi học</h2></div></div>
+      <div id="quiz" class="quiz-list-v32"></div>
+      <div class="quiz-actions-v32">
+        <button id="submitQuiz" class="button button-primary">Chấm bài</button>
+        <button id="showAnswers" class="button lesson-outline-btn-v32">Xem đáp án</button>
+      </div>
+      <div id="quizResult" class="quiz-result-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="tong-ket">
+    <div class="container">
+      <div class="lesson-summary-v32">
+        <div><small>HOÀN THÀNH BÀI 2</small><h2>Bạn đã có thể giới thiệu tên và hỏi tên người khác</h2><p>Ôn lại flashcards và làm lại bài tập đến khi đạt ít nhất 80%.</p></div>
+        <div class="summary-numbers-v32"><span><strong>12</strong>Từ mới</span><span><strong>4</strong>Mẫu câu</span><span><strong>3</strong>Hội thoại</span><span><strong>15</strong>Bài tập</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Tiếng Trung Cô Mai</h4><p>Học từ gốc – Vững mọi mốc.</p><p><strong>Hotline/Zalo: 0985 859 968</strong></p></div>
+      <div><h4>HSK 1</h4><a href="hsk1-lesson01.html">Bài 1</a><a href="hsk1-lesson02.html">Bài 2</a></div>
+      <div><h4>Học liệu</h4><a href="../resources/flashcards.html">Flashcards</a><a href="../resources/grammar.html">Ngữ pháp</a></div>
+      <div><h4>Liên hệ</h4><a href="tel:0985859968">Gọi 0985 859 968</a><a href="https://zalo.me/0985859968">Zalo</a></div>
+    </div>
+    <div class="copyright">© 2026 Tiếng Trung Cô Mai</div>
+  </div>
+</footer>
+<div class="floating-contact"><a class="floating-btn phone" href="tel:0985859968">📞</a><a class="floating-btn zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Zalo</a></div>
+<script src="../assets/js/app.js?v=3.3.1"></script>
+<script src="../assets/js/audio-manager.js?v=3.3.1"></script>
+
+
+<div id="audioVersionBadge" style="position:fixed;left:14px;bottom:14px;z-index:9999;
+background:#0f766e;color:white;padding:7px 11px;border-radius:999px;
+font:700 13px 'Times New Roman',serif;box-shadow:0 8px 24px rgba(0,0,0,.18)">
+🔊 Audio 3.3.1
+</div>
+
+
+<script>
+const data={
+objectives:[
+["👋","Giới thiệu tên","Dùng mẫu 我叫…… để giới thiệu tên của mình."],
+["❓","Hỏi tên","Biết hỏi 你叫什么名字？ trong tình huống làm quen."],
+["🙏","Giao tiếp lịch sự","Biết dùng 请问、对不起、没关系 đúng ngữ cảnh."],
+["🔊","Phát âm","Phân biệt và đọc đúng các thanh mẫu j, q, x."]
+],
+vocabulary:[
+["叫","jiào","gọi là, tên là","我叫李文。","Tôi tên là Lý Văn."],
+["什么","shénme","gì, cái gì","你叫什么名字？","Bạn tên là gì?"],
+["名字","míngzi","tên, họ tên","你的名字是什么？","Tên của bạn là gì?"],
+["请","qǐng","mời, xin","请坐。","Mời ngồi."],
+["请问","qǐngwèn","xin hỏi","请问，你叫什么名字？","Xin hỏi, bạn tên là gì?"],
+["对不起","duìbuqǐ","xin lỗi","对不起，我来晚了。","Xin lỗi, tôi đến muộn."],
+["没关系","méi guānxi","không sao","没关系。","Không sao."],
+["认识","rènshi","quen, biết, làm quen","很高兴认识你。","Rất vui được làm quen với bạn."],
+["很","hěn","rất","我很好。","Tôi rất khỏe."],
+["高兴","gāoxìng","vui, vui vẻ","我很高兴。","Tôi rất vui."],
+["也","yě","cũng","我也很高兴。","Tôi cũng rất vui."],
+["同学","tóngxué","bạn học","她是我的同学。","Cô ấy là bạn học của tôi."]
+],
+patterns:[
+["我叫 + tên","Dùng để giới thiệu tên của bản thân.",["我叫李文。","我叫玛丽。","我叫雪梅。"]],
+["你叫什么名字？","Dùng để hỏi tên người đối diện.",["你叫什么名字？","请问，你叫什么名字？"]],
+["很 + tính từ","很 đứng trước tính từ để biểu thị mức độ.",["我很好。","我很高兴。","她很忙。"]],
+["A 也……","也 có nghĩa là “cũng”, đứng trước động từ hoặc tính từ.",["我也很高兴。","她也是学生。"]]
+],
+dialogues:[
+["Tình huống 1: Làm quen",[
+["A","你好！请问，你叫什么名字？","Nǐ hǎo! Qǐngwèn, nǐ jiào shénme míngzi?","Xin chào! Xin hỏi, bạn tên là gì?"],
+["B","我叫李文。你呢？","Wǒ jiào Lǐ Wén. Nǐ ne?","Tôi tên là Lý Văn. Còn bạn?"],
+["A","我叫玛丽。","Wǒ jiào Mǎlì.","Tôi tên là Mary."],
+["B","很高兴认识你。","Hěn gāoxìng rènshi nǐ.","Rất vui được làm quen với bạn."]
+]],
+["Tình huống 2: Giới thiệu bạn học",[
+["A","她是谁？","Tā shì shéi?","Cô ấy là ai?"],
+["B","她是我的同学，她叫王月。","Tā shì wǒ de tóngxué, tā jiào Wáng Yuè.","Cô ấy là bạn học của tôi, cô ấy tên là Vương Nguyệt."],
+["A","你好，王月！","Nǐ hǎo, Wáng Yuè!","Xin chào, Vương Nguyệt!"],
+["B","你好！","Nǐ hǎo!","Xin chào!"]
+]],
+["Tình huống 3: Xin lỗi",[
+["A","对不起，我来晚了。","Duìbuqǐ, wǒ lái wǎn le.","Xin lỗi, tôi đến muộn."],
+["B","没关系。","Méi guānxi.","Không sao."],
+["A","谢谢！","Xièxie!","Cảm ơn!"],
+["B","不客气。","Bú kèqi.","Không có gì."]
+]]
+],
+pronunciation:[
+["j","jī、jiā、jiào","Không bật hơi mạnh."],
+["q","qī、qǐng、qián","Vị trí giống j nhưng bật hơi mạnh hơn."],
+["x","xī、xiè、xué","Luồng hơi ma sát nhẹ."],
+["ü sau j/q/x","jù、qù、xué","Hai chấm của ü được lược bỏ nhưng vẫn đọc là ü."]
+],
+quiz:[
+["“Tôi tên là Lý Văn” nói thế nào?",["我叫李文。","你叫李文。","他叫李文。"],0],
+["你叫什么名字？ nghĩa là gì?",["Bạn đi đâu?","Bạn tên là gì?","Bạn khỏe không?"],1],
+["Từ nào có nghĩa là “xin hỏi”?",["谢谢","请问","再见"],1],
+["Đáp lại 对不起 bằng câu nào?",["没关系","你好吗","请坐"],0],
+["“名字” đọc là gì?",["míngzi","míngzì","mǐngzi"],0],
+["Điền từ: 我___李文。",["叫","很","也"],0],
+["Câu nào đúng?",["我名字叫李文。","我叫李文。","叫我李文。"],1],
+["“Rất vui được làm quen với bạn” là câu nào?",["很高兴认识你。","你叫什么名字？","没关系。"],0],
+["也 có nghĩa là gì?",["đều","cũng","rất"],1],
+["Thanh mẫu nào bật hơi mạnh?",["j","q","x"],1],
+["Chọn pinyin đúng của 请问",["qǐngwèn","qīngwèn","qǐngwén"],0],
+["Câu nào dùng để giới thiệu một người khác?",["她叫王月。","我叫王月。","你叫王月吗？"],0],
+["Điền từ: 我___很高兴。",["叫","也","什么"],1],
+["“同学” nghĩa là gì?",["giáo viên","bạn học","đồng nghiệp"],1],
+["Chọn câu lịch sự hơn khi hỏi tên.",["你叫什么名字？","请问，你叫什么名字？","你名字？"],1]
+]
+};
+function speak(t){if("speechSynthesis"in window){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang="zh-CN";u.rate=.8;speechSynthesis.speak(u)}}
+objectives.innerHTML=data.objectives.map(x=>`<article class="objective-card-v32"><span>${x[0]}</span><h3>${x[1]}</h3><p>${x[2]}</p></article>`).join("");
+function rv(a){vocabulary.innerHTML=a.map(x=>`<article class="vocab-card-v32"><div class="vocab-top-v32"><h3>${x[0]}</h3><button class="audio-btn-v33" onclick="speak('${x[0]}')">🔊</button></div><div class="vocab-pinyin-v32">${x[1]}</div><strong>${x[2]}</strong><p>${x[3]}</p><small>${x[4]}</small><button class="audio-btn-v33" onclick="speak('${x[3]}')">🔊 Nghe ví dụ</button></article>`).join("")}
+rv(data.vocabulary);
+vocabSearch.oninput=e=>{let k=e.target.value.toLowerCase();rv(data.vocabulary.filter(x=>x.join(" ").toLowerCase().includes(k)))};
+patterns.innerHTML=data.patterns.map(x=>`<article class="pattern-card-v32"><h3>${x[0]}</h3><p>${x[1]}</p>${x[2].map(y=>`<div class="pattern-example-v32">${y} <button class="audio-btn-v33" onclick="speak('${y}')">🔊</button></div>`).join("")}</article>`).join("");
+dialogues.innerHTML=data.dialogues.map(d=>`<article class="dialogue-card-v32"><h3>${d[0]}</h3>${d[1].map(l=>`<div class="dialogue-line-v32"><strong>${l[0]}:</strong><div><div class="dialogue-hanzi-v32">${l[1]} <button class="audio-btn-v33" onclick="speak('${l[1]}')">🔊</button></div><div class="dialogue-pinyin-v32">${l[2]}</div><div>${l[3]}</div></div></div>`).join("")}</article>`).join("");
+teacherTips.innerHTML="<p>Hãy luyện theo cặp: một người hỏi tên, một người trả lời, sau đó đổi vai.</p><p>Khi hỏi người lạ hoặc người lớn tuổi, nên thêm <strong>请问</strong> ở đầu câu.</p>";
+pronunciation.innerHTML=`<div class="pattern-grid-v32">${data.pronunciation.map(x=>`<article class="pattern-card-v32"><h3>${x[0]}</h3><p>${x[1]}</p><p>${x[2]}</p><button class="audio-btn-v33" onclick="speak('${x[1].replaceAll("、","，")}')">🔊 Nghe</button></article>`).join("")}</div>`;
+let ci=0;function rc(){let x=data.vocabulary[ci];cardHanzi.textContent=x[0];cardPinyin.textContent=x[1];cardMeaning.textContent=x[2];cardExample.textContent=x[3]+" — "+x[4];cardCounter.textContent=(ci+1)+" / "+data.vocabulary.length}rc();
+prevCard.onclick=()=>{ci=(ci-1+data.vocabulary.length)%data.vocabulary.length;rc()};nextCard.onclick=()=>{ci=(ci+1)%data.vocabulary.length;rc()};flashcard.onclick=()=>flashcard.classList.toggle("is-flipped");cardAudio.onclick=e=>{e.stopPropagation();speak(data.vocabulary[ci][0])};
+quiz.innerHTML=data.quiz.map((q,i)=>`<article class="quiz-item-v32"><h3>Câu ${i+1}. ${q[0]}</h3>${q[1].map((o,j)=>`<label class="quiz-option-v32"><input type="radio" name="q${i}" value="${j}"> ${o}</label>`).join("")}<div id="a${i}" hidden>Đáp án: <strong>${q[1][q[2]]}</strong></div></article>`).join("");
+submitQuiz.onclick=()=>{let s=0;data.quiz.forEach((q,i)=>{let x=document.querySelector(`input[name=q${i}]:checked`);if(x&&+x.value===q[2])s++});let p=Math.round(s/data.quiz.length*100);quizResult.innerHTML=`Bạn đúng <strong>${s}/${data.quiz.length}</strong> câu — <strong>${p}%</strong>.`;progressBar.style.width=p+"%";progressText.textContent=p+"% hoàn thành";localStorage.setItem("hsk1Lesson02Progress",p)};
+showAnswers.onclick=()=>data.quiz.forEach((_,i)=>document.getElementById("a"+i).hidden=false);
+let p=+(localStorage.getItem("hsk1Lesson02Progress")||0);progressBar.style.width=p+"%";progressText.textContent=p+"% hoàn thành";
+resetProgress.onclick=()=>{localStorage.removeItem("hsk1Lesson02Progress");location.reload()};
+</script>
+
+</body>
+</html>
