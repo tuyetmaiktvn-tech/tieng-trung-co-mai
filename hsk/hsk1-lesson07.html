@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HSK1 Bài 7: 我晚上六点半下班 – học cách nói giờ, lịch học, lịch làm việc, trợ từ 吧 và 呢." />
+  <meta name="theme-color" content="#2563eb" />
+  <title>HSK1 Bài 7: 我晚上六点半下班 | Tiếng Trung Cô Mai</title>
+
+  <style>
+    :root{
+      --bg:#f6f8fc;
+      --surface:#ffffff;
+      --surface-2:#f8fafc;
+      --text:#172033;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --primary:#2563eb;
+      --primary-2:#7c3aed;
+      --success:#16a34a;
+      --warning:#d97706;
+      --danger:#dc2626;
+      --shadow:0 14px 40px rgba(15,23,42,.08);
+      --radius:20px;
+      --radius-sm:12px;
+      --max:1180px;
+    }
+
+    [data-theme="dark"]{
+      --bg:#0f172a;
+      --surface:#111827;
+      --surface-2:#1e293b;
+      --text:#f8fafc;
+      --muted:#cbd5e1;
+      --line:#334155;
+      --shadow:0 18px 45px rgba(0,0,0,.28);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+      transition:background .2s,color .2s;
+    }
+
+    button,input,textarea,select{font:inherit}
+    button{cursor:pointer}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(var(--max),calc(100% - 28px));margin:auto}
+
+    .topbar{
+      position:sticky;top:0;z-index:1000;
+      backdrop-filter:blur(14px);
+      background:color-mix(in srgb,var(--surface) 88%,transparent);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar-inner{
+      min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+    }
+    .brand{font-weight:900}
+    .brand span{color:var(--primary)}
+    .top-actions{display:flex;gap:8px;align-items:center}
+    .icon-btn{
+      width:42px;height:42px;border:1px solid var(--line);border-radius:12px;
+      background:var(--surface);color:var(--text);display:grid;place-items:center
+    }
+
+    .progress-shell{
+      position:sticky;top:68px;z-index:900;
+      background:var(--surface);border-bottom:1px solid var(--line)
+    }
+    .progress-wrap{padding:10px 0}
+    .progress-row{display:flex;justify-content:space-between;gap:16px;font-size:.9rem;color:var(--muted);margin-bottom:6px}
+    .progress-bar{height:10px;background:var(--surface-2);border-radius:999px;overflow:hidden}
+    .progress-fill{height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--primary-2));transition:width .35s ease}
+
+    .hero{padding:58px 0 30px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:stretch}
+    .hero-card,.lesson-meta,.section-card{
+      background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)
+    }
+    .hero-card{padding:30px}
+    .lesson-meta{padding:24px}
+    .eyebrow{
+      display:inline-flex;padding:8px 12px;border-radius:999px;background:#dbeafe;color:#1d4ed8;
+      font-weight:800;font-size:.9rem
+    }
+    [data-theme="dark"] .eyebrow{background:#1e3a8a;color:#dbeafe}
+    h1{font-size:clamp(2rem,5vw,4rem);line-height:1.08;margin:16px 0 10px}
+    h2{font-size:clamp(1.45rem,3vw,2.1rem);margin:0}
+    h3{margin-top:0}
+    .subtitle{font-size:1.08rem;color:var(--muted);margin:0}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .btn{
+      border:0;border-radius:12px;padding:12px 16px;font-weight:800;
+      background:var(--surface-2);color:var(--text)
+    }
+    .btn-primary{background:var(--primary);color:white}
+    .btn-success{background:var(--success);color:white}
+    .meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .meta-item{padding:14px;border-radius:14px;background:var(--surface-2)}
+    .meta-item strong{display:block;font-size:1.2rem}
+
+    .section{padding:18px 0}
+    .section-heading{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:14px}
+    .section-heading p{margin:4px 0 0;color:var(--muted)}
+    .section-card{padding:24px}
+    .complete-btn{
+      border:1px solid var(--line);background:var(--surface);color:var(--text);
+      border-radius:10px;padding:9px 12px;font-weight:700
+    }
+    .complete-btn.done{background:#dcfce7;color:#166534;border-color:#86efac}
+
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+    .objective,.memory-item,.grammar-card,.mistake-card,.summary-item{
+      padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)
+    }
+
+    .search-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+    .search-row input{
+      flex:1;min-width:220px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;
+      background:var(--surface);color:var(--text)
+    }
+
+    .vocab-card{
+      position:relative;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)
+    }
+    .vocab-actions{position:absolute;top:12px;right:12px;display:flex;gap:6px}
+    .mini-btn{
+      width:34px;height:34px;border-radius:10px;border:1px solid var(--line);
+      background:var(--surface-2);color:var(--text)
+    }
+    .mini-btn.active{background:#fef3c7;color:#92400e}
+    .hanzi{font-size:2rem;font-weight:900;color:var(--primary);padding-right:78px}
+    .pinyin{color:var(--primary-2);font-weight:800}
+    .meaning{font-weight:800;margin:6px 0}
+    .example{font-size:.94rem;color:var(--muted);margin-top:8px}
+
+    .formula{
+      padding:14px;text-align:center;border-radius:14px;background:var(--surface-2);
+      color:var(--primary);font-weight:900;margin:12px 0
+    }
+    .note{padding:12px 14px;border-left:4px solid var(--warning);background:var(--surface-2);border-radius:10px}
+    .wrong{color:var(--danger);font-weight:800}
+    .correct{color:var(--success);font-weight:800}
+
+    .mindmap{
+      display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:18px;align-items:center
+    }
+    .mind-col{display:grid;gap:12px}
+    .mind-node{padding:14px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);text-align:center;font-weight:800}
+    .mind-center{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:white;font-size:1.7rem;padding:26px}
+
+    .dialogue-list{display:grid;gap:12px}
+    .bubble{max-width:82%;padding:14px 16px;border-radius:18px;background:#dbeafe}
+    .bubble.right{margin-left:auto;background:#ede9fe}
+    [data-theme="dark"] .bubble{background:#1e3a8a}
+    [data-theme="dark"] .bubble.right{background:#4c1d95}
+    .speaker{font-weight:900}
+    .pinyin-line,.vi-line{font-size:.93rem;color:var(--muted)}
+    .hide{display:none!important}
+
+    .audio-block{
+      display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+      padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--surface-2)
+    }
+
+    .exercise,.quiz-question{padding:16px;border:1px solid var(--line);border-radius:14px;margin-bottom:12px}
+    .exercise input,.exercise textarea,.notes-area{
+      width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text)
+    }
+    .feedback{margin-top:8px;min-height:22px}
+    .quiz-question label{display:block;padding:8px;border-radius:9px}
+    .quiz-question label:hover{background:var(--surface-2)}
+    .score-box{display:none;margin-top:12px;padding:14px;border-radius:12px;background:#dcfce7;color:#166534;font-weight:900}
+
+    .flashcards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .flashcard{height:210px;perspective:1000px}
+    .flashcard-inner{position:relative;width:100%;height:100%;transition:transform .55s;transform-style:preserve-3d}
+    .flashcard.flipped .flashcard-inner{transform:rotateY(180deg)}
+    .flash-face{
+      position:absolute;inset:0;backface-visibility:hidden;border:1px solid var(--line);
+      border-radius:18px;background:var(--surface);display:flex;flex-direction:column;align-items:center;
+      justify-content:center;text-align:center;padding:18px;box-shadow:var(--shadow)
+    }
+    .flash-back{transform:rotateY(180deg)}
+    .flash-face strong{font-size:2rem;color:var(--primary)}
+    .flash-actions{display:flex;gap:8px;margin-top:12px}
+
+    .favorite-panel{display:none;margin-top:14px}
+    .favorite-panel.show{display:block}
+    .favorite-list{display:flex;gap:8px;flex-wrap:wrap}
+    .favorite-chip{padding:8px 10px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line)}
+
+    .completion{
+      text-align:center;padding:28px;border-radius:20px;background:linear-gradient(135deg,#dcfce7,#dbeafe)
+    }
+    [data-theme="dark"] .completion{background:linear-gradient(135deg,#14532d,#1e3a8a)}
+    footer{padding:38px 0;text-align:center;color:var(--muted)}
+
+    @media (max-width:900px){
+      .hero-grid,.grid-2,.grid-3,.grid-4,.mindmap{grid-template-columns:1fr}
+      .flashcards{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      .container{width:min(100% - 20px,var(--max))}
+      .hero{padding-top:34px}
+      .hero-card,.lesson-meta,.section-card{padding:18px}
+      .meta-grid,.flashcards{grid-template-columns:1fr}
+      .bubble{max-width:94%}
+      .progress-shell{top:68px}
+      .top-actions .text-label{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="../index.html">Tiếng Trung <span>Cô Mai</span></a>
+      <div class="top-actions">
+        <button class="icon-btn" id="favoritesToggle" title="Từ yêu thích">⭐</button>
+        <button class="icon-btn" id="themeToggle" title="Chế độ sáng/tối">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="progress-shell">
+    <div class="container progress-wrap">
+      <div class="progress-row">
+        <span>📊 Tiến độ bài học</span>
+        <strong id="progressText">0%</strong>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+  </div>
+
+  <main id="app"></main>
+
+  <footer>
+    <div class="container">© Tiếng Trung Cô Mai • Học từ gốc – Vững mọi mốc</div>
+  </footer>
+
+  <script>
+    /* =========================================================
+       1. DỮ LIỆU BÀI HỌC
+       Chỉ cần thay nội dung trong lessonData cho từng bài.
+       ========================================================= */
+    const lessonData = {
+      "id": "hsk1-lesson07",
+      "level": "HSK 1",
+      "lesson": 7,
+      "title": "我晚上六点半下班",
+      "titleVi": "Tôi tan làm lúc 6 giờ rưỡi tối",
+      "topic": "Cách nói giờ, lịch học, lịch làm việc và hẹn gặp",
+      "duration": "90–120 phút",
+      "difficulty": "Cơ bản",
+      "intro": "Bài 7 giúp học viên nghe, nói và mô tả thời gian diễn ra sự việc; sử dụng 吧 để đề nghị, 呢 để xác nhận sự việc, đồng thời nắm vững vị trí của phó từ và từ ngữ chỉ thời gian trong câu.",
+      "objectives": [
+            "Nghe hiểu và mô tả thời gian xảy ra sự việc",
+            "Nói đúng giờ chẵn, giờ có phút và giờ rưỡi",
+            "Dùng 吧 để đề nghị, bàn bạc, khuyên nhủ hoặc yêu cầu",
+            "Dùng 呢 để nhấn mạnh hoặc xác nhận một sự việc",
+            "Đặt phó từ và từ ngữ chỉ thời gian đúng vị trí trong câu"
+      ],
+      "vocabulary": [
+            {
+                  "id": "v1",
+                  "hanzi": "现在",
+                  "pinyin": "xiànzài",
+                  "meaning": "bây giờ, hiện tại",
+                  "type": "Danh từ thời gian",
+                  "example": "现在几点？",
+                  "examplePinyin": "Xiànzài jǐ diǎn?",
+                  "exampleVi": "Bây giờ là mấy giờ?",
+                  "audio": ""
+            },
+            {
+                  "id": "v2",
+                  "hanzi": "点",
+                  "pinyin": "diǎn",
+                  "meaning": "giờ",
+                  "type": "Lượng từ",
+                  "example": "现在八点。",
+                  "examplePinyin": "Xiànzài bā diǎn.",
+                  "exampleVi": "Bây giờ là 8 giờ.",
+                  "audio": ""
+            },
+            {
+                  "id": "v3",
+                  "hanzi": "早上",
+                  "pinyin": "zǎoshang",
+                  "meaning": "buổi sáng, sáng sớm",
+                  "type": "Danh từ thời gian",
+                  "example": "早上八点四十。",
+                  "examplePinyin": "Zǎoshang bā diǎn sìshí.",
+                  "exampleVi": "8 giờ 40 phút sáng.",
+                  "audio": ""
+            },
+            {
+                  "id": "v4",
+                  "hanzi": "上午",
+                  "pinyin": "shàngwǔ",
+                  "meaning": "buổi sáng",
+                  "type": "Danh từ thời gian",
+                  "example": "我上午十点有课。",
+                  "examplePinyin": "Wǒ shàngwǔ shí diǎn yǒu kè.",
+                  "exampleVi": "Tôi có tiết học lúc 10 giờ sáng.",
+                  "audio": ""
+            },
+            {
+                  "id": "v5",
+                  "hanzi": "分",
+                  "pinyin": "fēn",
+                  "meaning": "phút",
+                  "type": "Lượng từ",
+                  "example": "十点十分。",
+                  "examplePinyin": "Shí diǎn shí fēn.",
+                  "exampleVi": "10 giờ 10 phút.",
+                  "audio": ""
+            },
+            {
+                  "id": "v6",
+                  "hanzi": "课",
+                  "pinyin": "kè",
+                  "meaning": "tiết học, giờ học",
+                  "type": "Danh từ",
+                  "example": "我上午有课。",
+                  "examplePinyin": "Wǒ shàngwǔ yǒu kè.",
+                  "exampleVi": "Buổi sáng tôi có tiết học.",
+                  "audio": ""
+            },
+            {
+                  "id": "v7",
+                  "hanzi": "下午",
+                  "pinyin": "xiàwǔ",
+                  "meaning": "buổi chiều",
+                  "type": "Danh từ thời gian",
+                  "example": "我们下午两点见。",
+                  "examplePinyin": "Wǒmen xiàwǔ liǎng diǎn jiàn.",
+                  "exampleVi": "Chúng ta gặp nhau lúc 2 giờ chiều.",
+                  "audio": ""
+            },
+            {
+                  "id": "v8",
+                  "hanzi": "见",
+                  "pinyin": "jiàn",
+                  "meaning": "gặp, gặp mặt",
+                  "type": "Động từ",
+                  "example": "我们下午见。",
+                  "examplePinyin": "Wǒmen xiàwǔ jiàn.",
+                  "exampleVi": "Chiều chúng ta gặp nhau.",
+                  "audio": ""
+            },
+            {
+                  "id": "v9",
+                  "hanzi": "吧",
+                  "pinyin": "ba",
+                  "meaning": "nhé, đi, nào",
+                  "type": "Trợ từ ngữ khí",
+                  "example": "我们下午两点见吧。",
+                  "examplePinyin": "Wǒmen xiàwǔ liǎng diǎn jiàn ba.",
+                  "exampleVi": "Chúng ta gặp nhau lúc 2 giờ chiều nhé.",
+                  "audio": ""
+            },
+            {
+                  "id": "v10",
+                  "hanzi": "电影院",
+                  "pinyin": "diànyǐngyuàn",
+                  "meaning": "rạp chiếu phim",
+                  "type": "Danh từ",
+                  "example": "我想去电影院看电影。",
+                  "examplePinyin": "Wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng.",
+                  "exampleVi": "Tôi muốn đến rạp xem phim.",
+                  "audio": ""
+            },
+            {
+                  "id": "v11",
+                  "hanzi": "看",
+                  "pinyin": "kàn",
+                  "meaning": "xem, nhìn, đọc",
+                  "type": "Động từ",
+                  "example": "我下午看电影。",
+                  "examplePinyin": "Wǒ xiàwǔ kàn diànyǐng.",
+                  "exampleVi": "Chiều tôi xem phim.",
+                  "audio": ""
+            },
+            {
+                  "id": "v12",
+                  "hanzi": "电影",
+                  "pinyin": "diànyǐng",
+                  "meaning": "phim, điện ảnh",
+                  "type": "Danh từ",
+                  "example": "这个电影很好看。",
+                  "examplePinyin": "Zhège diànyǐng hěn hǎokàn.",
+                  "exampleVi": "Bộ phim này rất hay.",
+                  "audio": ""
+            },
+            {
+                  "id": "v13",
+                  "hanzi": "事",
+                  "pinyin": "shì",
+                  "meaning": "việc, sự việc",
+                  "type": "Danh từ",
+                  "example": "我下午还有事。",
+                  "examplePinyin": "Wǒ xiàwǔ hái yǒu shì.",
+                  "exampleVi": "Chiều tôi vẫn còn có việc.",
+                  "audio": ""
+            },
+            {
+                  "id": "v14",
+                  "hanzi": "上课",
+                  "pinyin": "shàngkè",
+                  "meaning": "lên lớp, đi học",
+                  "type": "Động từ",
+                  "example": "我下午两点上课。",
+                  "examplePinyin": "Wǒ xiàwǔ liǎng diǎn shàngkè.",
+                  "exampleVi": "Tôi lên lớp lúc 2 giờ chiều.",
+                  "audio": ""
+            },
+            {
+                  "id": "v15",
+                  "hanzi": "呢",
+                  "pinyin": "ne",
+                  "meaning": "thì sao; đấy, mà",
+                  "type": "Trợ từ ngữ khí",
+                  "example": "我明天下午两点还上课呢。",
+                  "examplePinyin": "Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne.",
+                  "exampleVi": "Ngày mai lúc 2 giờ chiều tôi vẫn còn phải lên lớp đấy.",
+                  "audio": ""
+            },
+            {
+                  "id": "v16",
+                  "hanzi": "半",
+                  "pinyin": "bàn",
+                  "meaning": "một nửa, rưỡi",
+                  "type": "Số từ",
+                  "example": "四点半下课。",
+                  "examplePinyin": "Sì diǎn bàn xiàkè.",
+                  "exampleVi": "Tan học lúc 4 giờ rưỡi.",
+                  "audio": ""
+            },
+            {
+                  "id": "v17",
+                  "hanzi": "下课",
+                  "pinyin": "xiàkè",
+                  "meaning": "tan học, hết giờ học",
+                  "type": "Động từ",
+                  "example": "我四点半下课。",
+                  "examplePinyin": "Wǒ sì diǎn bàn xiàkè.",
+                  "exampleVi": "Tôi tan học lúc 4 giờ rưỡi.",
+                  "audio": ""
+            },
+            {
+                  "id": "v18",
+                  "hanzi": "在",
+                  "pinyin": "zài",
+                  "meaning": "ở, tại",
+                  "type": "Động từ",
+                  "example": "我在家里呢。",
+                  "examplePinyin": "Wǒ zài jiā lǐ ne.",
+                  "exampleVi": "Tôi đang ở nhà.",
+                  "audio": ""
+            },
+            {
+                  "id": "v19",
+                  "hanzi": "家",
+                  "pinyin": "jiā",
+                  "meaning": "nhà",
+                  "type": "Danh từ",
+                  "example": "我在家。",
+                  "examplePinyin": "Wǒ zài jiā.",
+                  "exampleVi": "Tôi ở nhà.",
+                  "audio": ""
+            },
+            {
+                  "id": "v20",
+                  "hanzi": "里",
+                  "pinyin": "lǐ",
+                  "meaning": "trong, bên trong",
+                  "type": "Phương vị từ",
+                  "example": "我在家里。",
+                  "examplePinyin": "Wǒ zài jiā lǐ.",
+                  "exampleVi": "Tôi ở trong nhà.",
+                  "audio": ""
+            },
+            {
+                  "id": "v21",
+                  "hanzi": "晚上",
+                  "pinyin": "wǎnshang",
+                  "meaning": "buổi tối",
+                  "type": "Danh từ thời gian",
+                  "example": "我晚上六点半下班。",
+                  "examplePinyin": "Wǒ wǎnshang liù diǎn bàn xiàbān.",
+                  "exampleVi": "Tôi tan làm lúc 6 giờ rưỡi tối.",
+                  "audio": ""
+            },
+            {
+                  "id": "v22",
+                  "hanzi": "医院",
+                  "pinyin": "yīyuàn",
+                  "meaning": "bệnh viện",
+                  "type": "Danh từ",
+                  "example": "我八点去医院。",
+                  "examplePinyin": "Wǒ bā diǎn qù yīyuàn.",
+                  "exampleVi": "Tôi đến bệnh viện lúc 8 giờ.",
+                  "audio": ""
+            },
+            {
+                  "id": "v23",
+                  "hanzi": "上班",
+                  "pinyin": "shàngbān",
+                  "meaning": "đi làm, vào ca",
+                  "type": "Động từ",
+                  "example": "我八点上班。",
+                  "examplePinyin": "Wǒ bā diǎn shàngbān.",
+                  "exampleVi": "Tôi đi làm lúc 8 giờ.",
+                  "audio": ""
+            },
+            {
+                  "id": "v24",
+                  "hanzi": "店",
+                  "pinyin": "diàn",
+                  "meaning": "cửa hàng, cửa tiệm",
+                  "type": "Danh từ",
+                  "example": "你去店里买些菜吧。",
+                  "examplePinyin": "Nǐ qù diàn lǐ mǎi xiē cài ba.",
+                  "exampleVi": "Bạn ra cửa hàng mua ít thức ăn nhé.",
+                  "audio": ""
+            },
+            {
+                  "id": "v25",
+                  "hanzi": "菜",
+                  "pinyin": "cài",
+                  "meaning": "món ăn, thức ăn, rau",
+                  "type": "Danh từ",
+                  "example": "我去买菜。",
+                  "examplePinyin": "Wǒ qù mǎi cài.",
+                  "exampleVi": "Tôi đi mua thức ăn.",
+                  "audio": ""
+            },
+            {
+                  "id": "v26",
+                  "hanzi": "分钟",
+                  "pinyin": "fēnzhōng",
+                  "meaning": "phút",
+                  "type": "Lượng từ",
+                  "example": "我十分钟后去。",
+                  "examplePinyin": "Wǒ shí fēnzhōng hòu qù.",
+                  "exampleVi": "Mười phút nữa tôi đi.",
+                  "audio": ""
+            },
+            {
+                  "id": "v27",
+                  "hanzi": "后",
+                  "pinyin": "hòu",
+                  "meaning": "sau, sau đó",
+                  "type": "Phương vị từ",
+                  "example": "十分钟后见。",
+                  "examplePinyin": "Shí fēnzhōng hòu jiàn.",
+                  "exampleVi": "Mười phút nữa gặp nhé.",
+                  "audio": ""
+            }
+      ],
+      "memory": [
+            {
+                  "title": "Giờ chẵn",
+                  "text": "Số + 点: 九点 = 9 giờ"
+            },
+            {
+                  "title": "Giờ có phút",
+                  "text": "Số + 点 + số + 分: 十点十分"
+            },
+            {
+                  "title": "Giờ rưỡi",
+                  "text": "Số + 点半: 六点半"
+            },
+            {
+                  "title": "Dưới 10 phút",
+                  "text": "Thêm 零: 十点零五分"
+            },
+            {
+                  "title": "Khoảng thời gian",
+                  "text": "早上 / 上午 / 下午 / 晚上 đứng trước giờ"
+            },
+            {
+                  "title": "Đề nghị",
+                  "text": "Câu + 吧"
+            },
+            {
+                  "title": "Xác nhận",
+                  "text": "Câu + 呢"
+            },
+            {
+                  "title": "Trật tự",
+                  "text": "Chủ ngữ + thời gian + phó từ + động từ"
+            }
+      ],
+      "grammar": [
+            {
+                  "title": "1. Cách biểu đạt thời gian bằng 点 và 分",
+                  "explanation": "点 dùng để nói giờ; 分 dùng để nói phút. Với giờ chẵn chỉ cần dùng 点. Khi có phút, đặt số phút sau 点. Khi số phút dưới 10, cần đọc 零 trước số phút. Với 30 phút có thể dùng 半.",
+                  "formula": "Khoảng thời gian + số giờ + 点 + số phút + 分",
+                  "examples": [
+                        "九点",
+                        "十五点四十分",
+                        "二十一点十分",
+                        "二十二点零五分",
+                        "下午两点半"
+                  ],
+                  "note": "Khi phút là 10, không được bỏ 分; khi phút dưới 10 phải thêm 零."
+            },
+            {
+                  "title": "2. Danh từ chỉ khoảng thời gian",
+                  "explanation": "早上、上午、中午、下午、晚上 biểu thị khoảng thời gian trong ngày. Khi nói một thời điểm cụ thể, đặt chúng trước cụm giờ.",
+                  "formula": "早上 / 上午 / 中午 / 下午 / 晚上 + giờ cụ thể",
+                  "examples": [
+                        "上午十点",
+                        "中午十二点",
+                        "下午两点半",
+                        "晚上九点十分"
+                  ],
+                  "note": "Không nói 两点下午; phải nói 下午两点."
+            },
+            {
+                  "title": "3. Trợ từ ngữ khí 吧",
+                  "explanation": "吧 đứng cuối câu, đọc nhẹ, dùng để đề nghị, bàn bạc, khuyên nhủ hoặc yêu cầu một cách mềm mại.",
+                  "formula": "Câu đề nghị / yêu cầu + 吧",
+                  "examples": [
+                        "我们下午三点见吧。",
+                        "你去超市买吧。",
+                        "我们去西安饭店吃晚饭吧。"
+                  ],
+                  "note": "吧 làm câu nói nhẹ nhàng hơn, gần với “nhé / đi / nào” trong tiếng Việt."
+            },
+            {
+                  "title": "4. Vị trí của phó từ và từ ngữ chỉ thời gian",
+                  "explanation": "Trong câu tiếng Trung, phó từ và từ ngữ chỉ thời gian khi làm trạng ngữ thường đứng trước động từ hoặc tính từ.",
+                  "formula": "Chủ ngữ + thời gian + phó từ + động từ / tính từ",
+                  "examples": [
+                        "我下午还上课。",
+                        "妹妹很高兴。",
+                        "她上午十点半上课。"
+                  ],
+                  "note": "Không đặt thời gian tùy tiện sau động từ như trong tiếng Việt."
+            },
+            {
+                  "title": "5. Trợ từ ngữ khí 呢",
+                  "explanation": "Trong bài này, 呢 đứng cuối câu để nhấn mạnh hoặc xác nhận một sự việc đang được đề cập.",
+                  "formula": "Mệnh đề xác nhận + 呢",
+                  "examples": [
+                        "我明天下午两点还上课呢。",
+                        "妹妹会做两个菜呢。",
+                        "李文晚上还有事呢。"
+                  ],
+                  "note": "呢 có nhiều cách dùng; ở bài này cần hiểu là “đấy / mà / cơ” để nhấn mạnh sự thật."
+            }
+      ],
+      "mistakes": [
+            {
+                  "title": "Đảo sai vị trí buổi và giờ",
+                  "wrong": "两点下午见。",
+                  "correct": "下午两点见。",
+                  "tip": "Danh từ chỉ buổi đứng trước cụm giờ."
+            },
+            {
+                  "title": "Bỏ 零 khi phút dưới 10",
+                  "wrong": "十点五分。",
+                  "correct": "十点零五分。",
+                  "tip": "Phút từ 01–09 cần đọc 零 trước số phút."
+            },
+            {
+                  "title": "Bỏ 分 khi phút là 10",
+                  "wrong": "九点十。",
+                  "correct": "九点十分。",
+                  "tip": "Khi phút là 10, phải giữ 分."
+            },
+            {
+                  "title": "Đặt thời gian sau động từ",
+                  "wrong": "我上课下午两点。",
+                  "correct": "我下午两点上课。",
+                  "tip": "Thời gian thường đứng trước động từ."
+            },
+            {
+                  "title": "Dùng 吧 để kể sự việc chắc chắn",
+                  "wrong": "我下午两点上课吧。",
+                  "correct": "我下午两点上课呢。",
+                  "tip": "吧 dùng cho đề nghị; 呢 trong bài này dùng để xác nhận hoặc nhấn mạnh sự việc."
+            },
+            {
+                  "title": "Đặt phó từ 还 sai vị trí",
+                  "wrong": "我下午上课还。",
+                  "correct": "我下午还上课。",
+                  "tip": "还 đứng trước động từ 上课."
+            }
+      ],
+      "mindmap": {
+            "center": "说时间",
+            "left": [
+                  "现在几点？",
+                  "上午十点十分",
+                  "下午两点半",
+                  "晚上六点半"
+            ],
+            "right": [
+                  "见吧",
+                  "还上课呢",
+                  "十分钟后",
+                  "上班 / 下班"
+            ]
+      },
+      "dialogues": [
+            {
+                  "speaker": "白家月",
+                  "side": "left",
+                  "hanzi": "现在几点？",
+                  "pinyin": "Xiànzài jǐ diǎn?",
+                  "vi": "Bây giờ là mấy giờ rồi?",
+                  "audio": ""
+            },
+            {
+                  "speaker": "安妮",
+                  "side": "right",
+                  "hanzi": "早上八点四十。",
+                  "pinyin": "Zǎoshang bā diǎn sìshí.",
+                  "vi": "8 giờ 40 phút sáng.",
+                  "audio": ""
+            },
+            {
+                  "speaker": "白家月",
+                  "side": "left",
+                  "hanzi": "我上午十点十分有课。",
+                  "pinyin": "Wǒ shàngwǔ shí diǎn shí fēn yǒu kè.",
+                  "vi": "Mình có tiết học lúc 10 giờ 10 phút sáng.",
+                  "audio": ""
+            },
+            {
+                  "speaker": "安妮",
+                  "side": "right",
+                  "hanzi": "好的，我们下午两点见吧。",
+                  "pinyin": "Hǎo de, wǒmen xiàwǔ liǎng diǎn jiàn ba.",
+                  "vi": "Được, vậy chúng ta gặp nhau lúc 2 giờ chiều nhé.",
+                  "audio": ""
+            },
+            {
+                  "speaker": "李文",
+                  "side": "left",
+                  "hanzi": "下午我想去电影院看电影，你去吗？",
+                  "pinyin": "Xiàwǔ wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng, nǐ qù ma?",
+                  "vi": "Chiều nay mình muốn đi rạp xem phim, bạn có đi không?",
+                  "audio": ""
+            },
+            {
+                  "speaker": "白家月",
+                  "side": "right",
+                  "hanzi": "我不想去，下午还有事。",
+                  "pinyin": "Wǒ bù xiǎng qù, xiàwǔ hái yǒu shì.",
+                  "vi": "Mình không muốn đi, chiều nay mình còn có việc.",
+                  "audio": ""
+            },
+            {
+                  "speaker": "李文",
+                  "side": "left",
+                  "hanzi": "好的。明天呢？",
+                  "pinyin": "Hǎo de. Míngtiān ne?",
+                  "vi": "Được. Thế ngày mai thì sao?",
+                  "audio": ""
+            },
+            {
+                  "speaker": "白家月",
+                  "side": "right",
+                  "hanzi": "我明天下午两点还上课呢，四点半下课。",
+                  "pinyin": "Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne, sì diǎn bàn xiàkè.",
+                  "vi": "Ngày mai lúc 2 giờ chiều mình vẫn còn phải lên lớp, 4 giờ rưỡi tan học.",
+                  "audio": ""
+            },
+            {
+                  "speaker": "王一雪",
+                  "side": "left",
+                  "hanzi": "喂，你在哪儿呢？",
+                  "pinyin": "Wèi, nǐ zài nǎr ne?",
+                  "vi": "A lô, anh đang ở đâu thế?",
+                  "audio": ""
+            },
+            {
+                  "speaker": "刘明",
+                  "side": "right",
+                  "hanzi": "我在家里呢。",
+                  "pinyin": "Wǒ zài jiā lǐ ne.",
+                  "vi": "Anh đang ở nhà.",
+                  "audio": ""
+            },
+            {
+                  "speaker": "王一雪",
+                  "side": "left",
+                  "hanzi": "我晚上六点半下班。",
+                  "pinyin": "Wǒ wǎnshang liù diǎn bàn xiàbān.",
+                  "vi": "Em tan làm lúc 6 giờ rưỡi tối.",
+                  "audio": ""
+            },
+            {
+                  "speaker": "刘明",
+                  "side": "right",
+                  "hanzi": "我八点去医院上班。",
+                  "pinyin": "Wǒ bā diǎn qù yīyuàn shàngbān.",
+                  "vi": "8 giờ anh đến bệnh viện làm việc.",
+                  "audio": ""
+            },
+            {
+                  "speaker": "王一雪",
+                  "side": "left",
+                  "hanzi": "好的，你去店里买些菜吧。",
+                  "pinyin": "Hǎo de, nǐ qù diàn lǐ mǎi xiē cài ba.",
+                  "vi": "Vâng, anh ra cửa hàng mua ít thức ăn nhé.",
+                  "audio": ""
+            },
+            {
+                  "speaker": "刘明",
+                  "side": "right",
+                  "hanzi": "好，我十分钟后去。",
+                  "pinyin": "Hǎo, wǒ shí fēnzhōng hòu qù.",
+                  "vi": "Được, mười phút nữa anh đi.",
+                  "audio": ""
+            }
+      ],
+      "listening": {
+            "title": "Nghe và chọn đáp án đúng",
+            "instruction": "Nhấn nút nghe, sau đó chọn đáp án đúng.",
+            "audio": "",
+            "question": "王一雪几点下班？ Vương Nhất Tuyết tan làm lúc mấy giờ?",
+            "options": [
+                  "五点",
+                  "六点",
+                  "六点半"
+            ],
+            "answer": 2
+      },
+      "speaking": [
+            "现在几点？— 现在……点……分。",
+            "你几点上课？— 我上午 / 下午……点上课。",
+            "我们几点见？— 我们下午……点见吧。",
+            "你几点下班？— 我晚上……点半下班。",
+            "你什么时候去？— 我……分钟后去。"
+      ],
+      "exercises": [
+            {
+                  "id": "e1",
+                  "type": "text",
+                  "question": "Viết bằng chữ Hán: 9:00",
+                  "answers": [
+                        "九点"
+                  ]
+            },
+            {
+                  "id": "e2",
+                  "type": "text",
+                  "question": "Viết bằng chữ Hán: 15:40",
+                  "answers": [
+                        "下午三点四十分",
+                        "十五点四十分"
+                  ]
+            },
+            {
+                  "id": "e3",
+                  "type": "text",
+                  "question": "Viết bằng chữ Hán: 22:05",
+                  "answers": [
+                        "晚上十点零五分",
+                        "二十二点零五分"
+                  ]
+            },
+            {
+                  "id": "e4",
+                  "type": "text",
+                  "question": "Dịch sang tiếng Trung: Chúng ta gặp nhau lúc 2 giờ chiều nhé.",
+                  "answers": [
+                        "我们下午两点见吧"
+                  ]
+            },
+            {
+                  "id": "e5",
+                  "type": "text",
+                  "question": "Sắp xếp thành câu: 我 / 下午 / 还 / 有事",
+                  "answers": [
+                        "我下午还有事"
+                  ]
+            },
+            {
+                  "id": "e6",
+                  "type": "text",
+                  "question": "Dịch sang tiếng Trung: Tôi tan làm lúc 6 giờ rưỡi tối.",
+                  "answers": [
+                        "我晚上六点半下班"
+                  ]
+            }
+      ],
+      "quiz": [
+            {
+                  "id": "q1",
+                  "question": "Cách nói đúng của 10:05 là gì?",
+                  "options": [
+                        "十点五分",
+                        "十点零五分",
+                        "十零五点"
+                  ],
+                  "answer": 1
+            },
+            {
+                  "id": "q2",
+                  "question": "Câu nào có trật tự đúng?",
+                  "options": [
+                        "我上课下午两点。",
+                        "我下午两点上课。",
+                        "下午我上课两点。"
+                  ],
+                  "answer": 1
+            },
+            {
+                  "id": "q3",
+                  "question": "吧 trong bài này chủ yếu biểu thị điều gì?",
+                  "options": [
+                        "Đề nghị hoặc bàn bạc",
+                        "Phủ định",
+                        "Quá khứ"
+                  ],
+                  "answer": 0
+            },
+            {
+                  "id": "q4",
+                  "question": "Câu nào có nghĩa “Tôi tan làm lúc 6 giờ rưỡi tối”?",
+                  "options": [
+                        "我晚上六点半下班。",
+                        "我下午六点上课。",
+                        "我晚上六点半上班。"
+                  ],
+                  "answer": 0
+            },
+            {
+                  "id": "q5",
+                  "question": "Cách nói đúng của “2 giờ rưỡi chiều” là gì?",
+                  "options": [
+                        "两点半下午",
+                        "下午两点半",
+                        "下午半两点"
+                  ],
+                  "answer": 1
+            },
+            {
+                  "id": "q6",
+                  "question": "Trong câu 我下午还有事, 还 đứng ở đâu?",
+                  "options": [
+                        "Sau động từ",
+                        "Trước động từ 有",
+                        "Cuối câu"
+                  ],
+                  "answer": 1
+            },
+            {
+                  "id": "q7",
+                  "question": "十分钟后 có nghĩa là gì?",
+                  "options": [
+                        "10 phút trước",
+                        "Sau 10 giờ",
+                        "10 phút nữa / sau 10 phút"
+                  ],
+                  "answer": 2
+            },
+            {
+                  "id": "q8",
+                  "question": "呢 trong câu 我明天下午两点还上课呢 biểu thị gì?",
+                  "options": [
+                        "Nhấn mạnh hoặc xác nhận sự việc",
+                        "Mệnh lệnh",
+                        "So sánh"
+                  ],
+                  "answer": 0
+            },
+            {
+                  "id": "q9",
+                  "question": "Câu nào là lời đề nghị tự nhiên?",
+                  "options": [
+                        "我们下午三点见吧。",
+                        "我们下午三点见呢。",
+                        "我们吧下午三点见。"
+                  ],
+                  "answer": 0
+            },
+            {
+                  "id": "q10",
+                  "question": "医院 nghĩa là gì?",
+                  "options": [
+                        "Trường học",
+                        "Bệnh viện",
+                        "Rạp chiếu phim"
+                  ],
+                  "answer": 1
+            }
+      ],
+      "summary": [
+            {
+                  "title": "Từ vựng trọng tâm",
+                  "text": "现在、点、分、上午、下午、晚上、半、上课、下课、上班、下班、分钟、后"
+            },
+            {
+                  "title": "Cách nói giờ",
+                  "text": "九点；十点十分；十点零五分；下午两点半"
+            },
+            {
+                  "title": "Trợ từ ngữ khí",
+                  "text": "吧 dùng để đề nghị; 呢 dùng để nhấn mạnh hoặc xác nhận sự việc trong ngữ cảnh của bài"
+            },
+            {
+                  "title": "Trật tự câu",
+                  "text": "Chủ ngữ + thời gian + phó từ + động từ / tính từ"
+            },
+            {
+                  "title": "Kỹ năng giao tiếp",
+                  "text": "Hỏi giờ, hẹn gặp, nói lịch học, lịch làm việc và thời điểm thực hiện hành động"
+            }
+      ],
+      "flashcards": [
+            {
+                  "id": "f1",
+                  "front": "现在",
+                  "pinyin": "xiànzài",
+                  "back": "bây giờ, hiện tại",
+                  "example": "现在几点？"
+            },
+            {
+                  "id": "f2",
+                  "front": "点",
+                  "pinyin": "diǎn",
+                  "back": "giờ",
+                  "example": "现在八点。"
+            },
+            {
+                  "id": "f3",
+                  "front": "分",
+                  "pinyin": "fēn",
+                  "back": "phút",
+                  "example": "十点十分。"
+            },
+            {
+                  "id": "f4",
+                  "front": "上午",
+                  "pinyin": "shàngwǔ",
+                  "back": "buổi sáng",
+                  "example": "我上午有课。"
+            },
+            {
+                  "id": "f5",
+                  "front": "下午",
+                  "pinyin": "xiàwǔ",
+                  "back": "buổi chiều",
+                  "example": "下午两点见。"
+            },
+            {
+                  "id": "f6",
+                  "front": "吧",
+                  "pinyin": "ba",
+                  "back": "nhé, đi, nào",
+                  "example": "我们下午见吧。"
+            },
+            {
+                  "id": "f7",
+                  "front": "电影院",
+                  "pinyin": "diànyǐngyuàn",
+                  "back": "rạp chiếu phim",
+                  "example": "我想去电影院。"
+            },
+            {
+                  "id": "f8",
+                  "front": "上课",
+                  "pinyin": "shàngkè",
+                  "back": "lên lớp, đi học",
+                  "example": "我两点上课。"
+            },
+            {
+                  "id": "f9",
+                  "front": "呢",
+                  "pinyin": "ne",
+                  "back": "đấy, mà; thì sao",
+                  "example": "我还有课呢。"
+            },
+            {
+                  "id": "f10",
+                  "front": "半",
+                  "pinyin": "bàn",
+                  "back": "một nửa, rưỡi",
+                  "example": "六点半。"
+            },
+            {
+                  "id": "f11",
+                  "front": "下班",
+                  "pinyin": "xiàbān",
+                  "back": "tan làm",
+                  "example": "我六点半下班。"
+            },
+            {
+                  "id": "f12",
+                  "front": "医院",
+                  "pinyin": "yīyuàn",
+                  "back": "bệnh viện",
+                  "example": "我去医院上班。"
+            },
+            {
+                  "id": "f13",
+                  "front": "上班",
+                  "pinyin": "shàngbān",
+                  "back": "đi làm, vào ca",
+                  "example": "我八点上班。"
+            },
+            {
+                  "id": "f14",
+                  "front": "分钟",
+                  "pinyin": "fēnzhōng",
+                  "back": "phút",
+                  "example": "十分钟后见。"
+            },
+            {
+                  "id": "f15",
+                  "front": "后",
+                  "pinyin": "hòu",
+                  "back": "sau, sau đó",
+                  "example": "我十分钟后去。"
+            }
+      ]
+};
+
+    /* =========================================================
+       2. HỆ THỐNG LƯU TRỮ
+       ========================================================= */
+    const key = name => `${lessonData.id}:${name}`;
+
+    const state = {
+      theme: localStorage.getItem("site-theme") || "light",
+      favorites: JSON.parse(localStorage.getItem(key("favorites")) || "[]"),
+      completed: JSON.parse(localStorage.getItem(key("completed")) || "[]"),
+      notes: localStorage.getItem(key("notes")) || "",
+      quizScore: Number(localStorage.getItem(key("quizScore")) || 0),
+      hidePinyin: localStorage.getItem(key("hidePinyin")) === "true",
+      hideVi: localStorage.getItem(key("hideVi")) === "true"
+    };
+
+    document.documentElement.dataset.theme = state.theme;
+
+    function saveState(){
+      localStorage.setItem(key("favorites"),JSON.stringify(state.favorites));
+      localStorage.setItem(key("completed"),JSON.stringify(state.completed));
+      localStorage.setItem(key("notes"),state.notes);
+      localStorage.setItem(key("quizScore"),String(state.quizScore));
+      localStorage.setItem(key("hidePinyin"),String(state.hidePinyin));
+      localStorage.setItem(key("hideVi"),String(state.hideVi));
+    }
+
+    /* =========================================================
+       3. HÀM TIỆN ÍCH
+       ========================================================= */
+    const $ = selector => document.querySelector(selector);
+    const $$ = selector => [...document.querySelectorAll(selector)];
+
+    function esc(text=""){
+      return String(text).replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+      }[m]));
+    }
+
+    function normalize(text=""){
+      return text.toLowerCase().replace(/[，。！？,.!?]/g,"").replace(/\s+/g,"").trim();
+    }
+
+    function speak(text,audioUrl=""){
+      if(audioUrl){
+        const audio = new Audio(audioUrl);
+        audio.play().catch(()=>{});
+        return;
+      }
+      if("speechSynthesis" in window){
+        speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "zh-CN";
+        utterance.rate = 0.85;
+        speechSynthesis.speak(utterance);
+      } else {
+        alert("Trình duyệt chưa hỗ trợ phát âm tự động.");
+      }
+    }
+
+    function sectionShell(id,icon,title,subtitle,content){
+      const done = state.completed.includes(id);
+      return `
+        <section class="section" id="${id}">
+          <div class="container">
+            <div class="section-heading">
+              <div><h2>${icon} ${title}</h2><p>${subtitle}</p></div>
+              <button class="complete-btn ${done?"done":""}" data-complete="${id}">
+                ${done?"✓ Đã hoàn thành":"Đánh dấu hoàn thành"}
+              </button>
+            </div>
+            ${content}
+          </div>
+        </section>`;
+    }
+
+    /* =========================================================
+       4. RENDER TOÀN BỘ BÀI HỌC
+       ========================================================= */
+    function render(){
+      const app = $("#app");
+
+      const objectives = sectionShell(
+        "objectives","🎯","Mục tiêu","Học xong bài này, học viên có thể:",
+        `<div class="grid-4">${lessonData.objectives.map((x,i)=>`
+          <article class="objective"><strong>${i+1}</strong><p>${esc(x)}</p></article>`).join("")}</div>`
+      );
+
+      const vocab = sectionShell(
+        "vocabulary","📖","Từ mới","Tìm kiếm, nghe phát âm và đánh dấu từ yêu thích.",
+        `<div class="section-card">
+          <div class="search-row">
+            <input id="vocabSearch" placeholder="🔍 Tìm chữ Hán, pinyin hoặc nghĩa tiếng Việt...">
+            <button class="btn" id="clearSearch">Xóa tìm kiếm</button>
+          </div>
+          <div class="grid-4" id="vocabGrid"></div>
+          <div class="favorite-panel" id="favoritePanel">
+            <h3>⭐ Từ đã lưu</h3>
+            <div class="favorite-list" id="favoriteList"></div>
+          </div>
+        </div>`
+      );
+
+      const memory = sectionShell(
+        "memory","🧠","Ghi nhớ nhanh","Các công thức cần nhớ.",
+        `<div class="grid-4">${lessonData.memory.map(x=>`
+          <article class="memory-item"><strong>${esc(x.title)}</strong><p>${esc(x.text)}</p></article>`).join("")}</div>`
+      );
+
+      const grammar = sectionShell(
+        "grammar","📚","Ngữ pháp","Giải thích công thức, cách dùng và ví dụ.",
+        `<div class="grid-2">${lessonData.grammar.map(g=>`
+          <article class="grammar-card">
+            <h3>${esc(g.title)}</h3>
+            <p>${esc(g.explanation)}</p>
+            <div class="formula">${esc(g.formula)}</div>
+            <ul>${g.examples.map(e=>`<li>${esc(e)} <button class="mini-btn speak-btn" data-speak="${esc(e)}">🔊</button></li>`).join("")}</ul>
+            <div class="note">${esc(g.note)}</div>
+          </article>`).join("")}</div>`
+      );
+
+      const mistakes = sectionShell(
+        "mistakes","⚠️","Lỗi người Việt thường mắc","Nhận diện lỗi và ghi nhớ cách sửa.",
+        `<div class="grid-2">${lessonData.mistakes.map(m=>`
+          <article class="mistake-card">
+            <h3>${esc(m.title)}</h3>
+            <p class="wrong">✘ ${esc(m.wrong)}</p>
+            <p class="correct">✔ ${esc(m.correct)}</p>
+            <p><strong>Mẹo:</strong> ${esc(m.tip)}</p>
+          </article>`).join("")}</div>`
+      );
+
+      const mindmap = sectionShell(
+        "mindmap","🗺️","Mindmap","Sơ đồ liên kết kiến thức của bài.",
+        `<div class="section-card mindmap">
+          <div class="mind-col">${lessonData.mindmap.left.map(x=>`<div class="mind-node">${esc(x)}</div>`).join("")}</div>
+          <div class="mind-node mind-center">${esc(lessonData.mindmap.center)}</div>
+          <div class="mind-col">${lessonData.mindmap.right.map(x=>`<div class="mind-node">${esc(x)}</div>`).join("")}</div>
+        </div>`
+      );
+
+      const dialogue = sectionShell(
+        "dialogue","🎭","Hội thoại","Nghe từng câu, ẩn pinyin hoặc bản dịch để luyện.",
+        `<div class="section-card">
+          <div class="hero-actions" style="margin-top:0;margin-bottom:16px">
+            <button class="btn" id="togglePinyin">${state.hidePinyin?"Hiện pinyin":"Ẩn pinyin"}</button>
+            <button class="btn" id="toggleVi">${state.hideVi?"Hiện bản dịch":"Ẩn bản dịch"}</button>
+          </div>
+          <div class="dialogue-list">${lessonData.dialogues.map(d=>`
+            <div class="bubble ${d.side==="right"?"right":""}">
+              <div class="speaker">${esc(d.speaker)} <button class="mini-btn dialogue-speak" data-text="${esc(d.hanzi)}" data-audio="${esc(d.audio)}">🔊</button></div>
+              <div>${esc(d.hanzi)}</div>
+              <div class="pinyin-line ${state.hidePinyin?"hide":""}">${esc(d.pinyin)}</div>
+              <div class="vi-line ${state.hideVi?"hide":""}">${esc(d.vi)}</div>
+            </div>`).join("")}</div>
+        </div>`
+      );
+
+      const listening = sectionShell(
+        "listening","🎧","Luyện nghe","Nghe và trả lời câu hỏi.",
+        `<div class="section-card">
+          <div class="audio-block">
+            <div><strong>${esc(lessonData.listening.title)}</strong><p>${esc(lessonData.listening.instruction)}</p></div>
+            <button class="btn btn-primary" id="listenPlay">▶ Phát âm thanh</button>
+          </div>
+          <div class="quiz-question" style="margin-top:14px">
+            <h3>${esc(lessonData.listening.question)}</h3>
+            ${lessonData.listening.options.map((o,i)=>`<label><input type="radio" name="listenQ" value="${i}"> ${esc(o)}</label>`).join("")}
+            <button class="btn" id="checkListening">Kiểm tra</button>
+            <div id="listeningFeedback" class="feedback"></div>
+          </div>
+        </div>`
+      );
+
+      const speaking = sectionShell(
+        "speaking","🗣️","Luyện nói","Nói theo khung và thay bằng thông tin cá nhân.",
+        `<div class="grid-3">${lessonData.speaking.map((x,i)=>`
+          <article class="objective"><strong>Khung ${i+1}</strong><p>${esc(x)}</p>
+          <button class="mini-btn speaking-speak" data-text="${esc(x.split("—")[0])}">🔊</button></article>`).join("")}</div>`
+      );
+
+      const exercises = sectionShell(
+        "exercises","✍️","Bài tập","Nhập đáp án và kiểm tra ngay.",
+        `<div class="section-card">
+          ${lessonData.exercises.map((e,i)=>`
+            <div class="exercise">
+              <strong>${i+1}. ${esc(e.question)}</strong>
+              <input id="${e.id}" placeholder="Nhập đáp án">
+              <div class="feedback" id="${e.id}-feedback"></div>
+            </div>`).join("")}
+          <button class="btn btn-primary" id="checkExercises">Kiểm tra bài tập</button>
+        </div>`
+      );
+
+      const quiz = sectionShell(
+        "quiz","🎮","Quiz","Chấm điểm tự động và lưu kết quả cao nhất.",
+        `<div class="section-card">
+          ${lessonData.quiz.map((q,qi)=>`
+            <div class="quiz-question">
+              <h3>${qi+1}. ${esc(q.question)}</h3>
+              ${q.options.map((o,oi)=>`<label><input type="radio" name="${q.id}" value="${oi}"> ${esc(o)}</label>`).join("")}
+            </div>`).join("")}
+          <button class="btn btn-primary" id="gradeQuiz">Chấm điểm</button>
+          <div class="score-box" id="scoreBox"></div>
+        </div>`
+      );
+
+      const summary = sectionShell(
+        "summary","📑","Tổng kết","Ôn lại nội dung cốt lõi.",
+        `<div class="grid-3">${lessonData.summary.map(x=>`
+          <article class="summary-item"><strong>${esc(x.title)}</strong><p>${esc(x.text)}</p></article>`).join("")}</div>`
+      );
+
+      const flashcards = sectionShell(
+        "flashcards","📥","Flashcard","Bấm để lật; đánh dấu từ đã nhớ hoặc chưa nhớ.",
+        `<div class="flashcards">${lessonData.flashcards.map(f=>`
+          <div class="flashcard" data-card="${f.id}" tabindex="0">
+            <div class="flashcard-inner">
+              <div class="flash-face">
+                <strong>${esc(f.front)}</strong>
+                <span>${esc(f.pinyin)}</span>
+                <small>Bấm để lật</small>
+              </div>
+              <div class="flash-face flash-back">
+                <strong>${esc(f.back)}</strong>
+                <span>${esc(f.example)}</span>
+                <div class="flash-actions">
+                  <button class="btn remembered-btn" data-id="${f.id}">😊 Đã nhớ</button>
+                  <button class="btn review-btn" data-id="${f.id}">🤔 Chưa nhớ</button>
+                </div>
+              </div>
+            </div>
+          </div>`).join("")}</div>`
+      );
+
+      const notes = sectionShell(
+        "notes","📝","Ghi chú cá nhân","Nội dung được tự động lưu trên trình duyệt.",
+        `<div class="section-card">
+          <textarea class="notes-area" id="notesArea" rows="7" placeholder="Viết ghi chú của bạn tại đây...">${esc(state.notes)}</textarea>
+          <p id="noteStatus" style="color:var(--muted)">Đã bật tự động lưu.</p>
+        </div>`
+      );
+
+      app.innerHTML = `
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-card">
+              <span class="eyebrow">🎬 ${esc(lessonData.level)} • BÀI ${lessonData.lesson}</span>
+              <h1>${esc(lessonData.title)}</h1>
+              <p class="subtitle">${esc(lessonData.titleVi)}</p>
+              <p>${esc(lessonData.intro)}</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#objectives">Bắt đầu học</a>
+                <a class="btn" href="#flashcards">Ôn flashcard</a>
+              </div>
+            </div>
+            <aside class="lesson-meta">
+              <div class="meta-grid">
+                <div class="meta-item"><strong>${esc(lessonData.topic)}</strong><span>Chủ đề</span></div>
+                <div class="meta-item"><strong>${esc(lessonData.duration)}</strong><span>Thời lượng</span></div>
+                <div class="meta-item"><strong>${lessonData.vocabulary.length}</strong><span>Từ mới</span></div>
+                <div class="meta-item"><strong>${esc(lessonData.difficulty)}</strong><span>Mức độ</span></div>
+              </div>
+            </aside>
+          </div>
+        </section>
+        ${objectives}${vocab}${memory}${grammar}${mistakes}${mindmap}${dialogue}
+        ${listening}${speaking}${exercises}${quiz}${summary}${flashcards}${notes}
+        <section class="section">
+          <div class="container">
+            <div class="completion" id="completionBox">
+              <h2>🏆 Hoàn thành bài học</h2>
+              <p>Hoàn thành các phần và đạt ít nhất 80% quiz để kết thúc bài.</p>
+              <button class="btn btn-success" id="finishLesson">Kiểm tra hoàn thành</button>
+            </div>
+          </div>
+        </section>`;
+    }
+
+    /* =========================================================
+       5. RENDER TỪ VỰNG + YÊU THÍCH
+       ========================================================= */
+    function renderVocabulary(filter=""){
+      const grid = $("#vocabGrid");
+      const q = normalize(filter);
+      const items = lessonData.vocabulary.filter(v =>
+        normalize(v.hanzi+" "+v.pinyin+" "+v.meaning+" "+v.type).includes(q)
+      );
+
+      grid.innerHTML = items.map(v=>`
+        <article class="vocab-card">
+          <div class="vocab-actions">
+            <button class="mini-btn vocab-speak" data-text="${esc(v.hanzi)}" data-audio="${esc(v.audio)}">🔊</button>
+            <button class="mini-btn favorite-btn ${state.favorites.includes(v.id)?"active":""}" data-id="${v.id}">⭐</button>
+          </div>
+          <div class="hanzi">${esc(v.hanzi)}</div>
+          <div class="pinyin">${esc(v.pinyin)}</div>
+          <div class="meaning">${esc(v.meaning)}</div>
+          <small>${esc(v.type)}</small>
+          <div class="example">${esc(v.example)}<br>${esc(v.examplePinyin)}<br>${esc(v.exampleVi)}</div>
+        </article>`).join("") || `<p>Không tìm thấy từ phù hợp.</p>`;
+
+      bindVocabularyEvents();
+      renderFavorites();
+    }
+
+    function renderFavorites(){
+      const list = $("#favoriteList");
+      if(!list) return;
+      const words = lessonData.vocabulary.filter(v=>state.favorites.includes(v.id));
+      list.innerHTML = words.length
+        ? words.map(v=>`<span class="favorite-chip">${esc(v.hanzi)} · ${esc(v.meaning)}</span>`).join("")
+        : "<span>Chưa có từ yêu thích.</span>";
+    }
+
+    function bindVocabularyEvents(){
+      $$(".vocab-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text,btn.dataset.audio));
+      $$(".favorite-btn").forEach(btn=>btn.onclick=()=>{
+        const id = btn.dataset.id;
+        state.favorites = state.favorites.includes(id)
+          ? state.favorites.filter(x=>x!==id)
+          : [...state.favorites,id];
+        saveState();
+        renderVocabulary($("#vocabSearch")?.value || "");
+      });
+    }
+
+    /* =========================================================
+       6. TIẾN ĐỘ
+       ========================================================= */
+    const trackedSections = ["objectives","vocabulary","memory","grammar","mistakes","mindmap","dialogue","listening","speaking","exercises","quiz","summary","flashcards","notes"];
+
+    function updateProgress(){
+      const count = trackedSections.filter(id=>state.completed.includes(id)).length;
+      const percent = Math.round(count / trackedSections.length * 100);
+      $("#progressFill").style.width = percent+"%";
+      $("#progressText").textContent = percent+"%";
+      $$(".complete-btn").forEach(btn=>{
+        const done = state.completed.includes(btn.dataset.complete);
+        btn.classList.toggle("done",done);
+        btn.textContent = done ? "✓ Đã hoàn thành" : "Đánh dấu hoàn thành";
+      });
+    }
+
+    function toggleComplete(id){
+      state.completed = state.completed.includes(id)
+        ? state.completed.filter(x=>x!==id)
+        : [...state.completed,id];
+      saveState();
+      updateProgress();
+    }
+
+    /* =========================================================
+       7. SỰ KIỆN
+       ========================================================= */
+    function bindEvents(){
+      $$(".complete-btn").forEach(btn=>btn.onclick=()=>toggleComplete(btn.dataset.complete));
+
+      $("#vocabSearch").addEventListener("input",e=>renderVocabulary(e.target.value));
+      $("#clearSearch").onclick=()=>{
+        $("#vocabSearch").value="";
+        renderVocabulary("");
+      };
+
+      $("#favoritesToggle").onclick=()=>{
+        $("#favoritePanel").classList.toggle("show");
+        location.hash="#vocabulary";
+      };
+
+      $("#themeToggle").onclick=()=>{
+        state.theme = state.theme==="dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = state.theme;
+        localStorage.setItem("site-theme",state.theme);
+        $("#themeToggle").textContent = state.theme==="dark" ? "☀️" : "🌙";
+      };
+      $("#themeToggle").textContent = state.theme==="dark" ? "☀️" : "🌙";
+
+      $$(".speak-btn").forEach(btn=>btn.onclick=()=>speak(btn.dataset.speak));
+      $$(".dialogue-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text,btn.dataset.audio));
+      $$(".speaking-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text));
+
+      $("#togglePinyin").onclick=()=>{
+        state.hidePinyin=!state.hidePinyin;
+        saveState();
+        $$(".pinyin-line").forEach(el=>el.classList.toggle("hide",state.hidePinyin));
+        $("#togglePinyin").textContent=state.hidePinyin?"Hiện pinyin":"Ẩn pinyin";
+      };
+      $("#toggleVi").onclick=()=>{
+        state.hideVi=!state.hideVi;
+        saveState();
+        $$(".vi-line").forEach(el=>el.classList.toggle("hide",state.hideVi));
+        $("#toggleVi").textContent=state.hideVi?"Hiện bản dịch":"Ẩn bản dịch";
+      };
+
+      $("#listenPlay").onclick=()=>{
+        const l = lessonData.listening;
+        if(l.audio) new Audio(l.audio).play().catch(()=>{});
+        else speak("我想去超市买牛奶。");
+      };
+
+      $("#checkListening").onclick=()=>{
+        const selected = document.querySelector('input[name="listenQ"]:checked');
+        const fb = $("#listeningFeedback");
+        if(!selected){fb.innerHTML='<span class="wrong">Hãy chọn một đáp án.</span>';return}
+        fb.innerHTML = Number(selected.value)===lessonData.listening.answer
+          ? '<span class="correct">✓ Chính xác</span>'
+          : '<span class="wrong">✘ Chưa đúng</span>';
+      };
+
+      $("#checkExercises").onclick=()=>{
+        let allCorrect=true;
+        lessonData.exercises.forEach(e=>{
+          const value=normalize($("#"+e.id).value);
+          const ok=e.answers.some(a=>normalize(a)===value);
+          $("#"+e.id+"-feedback").innerHTML=ok
+            ? '<span class="correct">✓ Chính xác</span>'
+            : `<span class="wrong">✘ Đáp án gợi ý: ${esc(e.answers[0])}</span>`;
+          if(!ok) allCorrect=false;
+        });
+        if(allCorrect && !state.completed.includes("exercises")){
+          state.completed.push("exercises");saveState();updateProgress();
+        }
+      };
+
+      $("#gradeQuiz").onclick=()=>{
+        let score=0;
+        lessonData.quiz.forEach(q=>{
+          const selected=document.querySelector(`input[name="${q.id}"]:checked`);
+          if(selected && Number(selected.value)===q.answer) score++;
+        });
+        const percent=Math.round(score/lessonData.quiz.length*100);
+        state.quizScore=Math.max(state.quizScore,percent);
+        if(percent>=80 && !state.completed.includes("quiz")) state.completed.push("quiz");
+        saveState();updateProgress();
+        const box=$("#scoreBox");
+        box.style.display="block";
+        box.textContent=`Bạn đạt ${score}/${lessonData.quiz.length} câu (${percent}%). Điểm cao nhất: ${state.quizScore}%.`;
+      };
+
+      $$(".flashcard").forEach(card=>{
+        const flip=()=>card.classList.toggle("flipped");
+        card.onclick=e=>{
+          if(e.target.closest("button")) return;
+          flip();
+        };
+        card.onkeydown=e=>{
+          if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}
+        };
+      });
+
+      $$(".remembered-btn").forEach(btn=>btn.onclick=()=>{
+        localStorage.setItem(key(`card:${btn.dataset.id}`),"remembered");
+        btn.textContent="✓ Đã lưu";
+      });
+      $$(".review-btn").forEach(btn=>btn.onclick=()=>{
+        const reviewData={status:"review",updatedAt:new Date().toISOString()};
+        localStorage.setItem(key(`card:${btn.dataset.id}`),JSON.stringify(reviewData));
+        btn.textContent="✓ Sẽ ôn lại";
+      });
+
+      let noteTimer;
+      $("#notesArea").addEventListener("input",e=>{
+        state.notes=e.target.value;
+        $("#noteStatus").textContent="Đang lưu...";
+        clearTimeout(noteTimer);
+        noteTimer=setTimeout(()=>{
+          saveState();
+          $("#noteStatus").textContent="Đã tự động lưu.";
+        },400);
+      });
+
+      $("#finishLesson").onclick=()=>{
+        const finished=trackedSections.every(id=>state.completed.includes(id));
+        if(finished && state.quizScore>=80){
+          $("#completionBox").innerHTML="<h2>🎉 Chúc mừng!</h2><p>Bạn đã hoàn thành bài học với kết quả đạt yêu cầu.</p>";
+        }else{
+          const missing=trackedSections.filter(id=>!state.completed.includes(id)).length;
+          alert(`Bạn còn ${missing} phần chưa đánh dấu hoàn thành. Điểm quiz cao nhất hiện tại: ${state.quizScore}%.`);
+        }
+      };
+    }
+
+    render();
+    renderVocabulary();
+    bindEvents();
+    updateProgress();
+  </script>
+</body>
+</html>
