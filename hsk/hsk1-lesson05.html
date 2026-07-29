@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="HSK 1 Bài 5 - 今天我休息。 Học cách nói ngày tháng, thứ trong tuần, động từ năng nguyện 会, sở thích và bài tập tương tác.">
+  <title>HSK 1 - Bài 5 | Tiếng Trung Cô Mai</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+</head>
+<body>
+<div class="contact-strip">
+  <div class="container contact-strip-inner">
+    <div class="contact-main"><span>📞 Hotline/Zalo:</span><a href="tel:0985859968">0985 859 968</a></div>
+    <div class="contact-actions"><a class="contact-link" href="tel:0985859968">Gọi tư vấn</a><a class="contact-link zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Nhắn Zalo</a></div>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html"><img src="../assets/images/logo.svg" alt="Tiếng Trung Cô Mai"></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="nav-link" href="../index.html">Trang chủ</a>
+      <a class="nav-link active" href="hsk1.html">HSK 1</a>
+      <a class="nav-link" href="../resources/flashcards.html">Flashcards</a>
+      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      <a class="header-cta" href="tel:0985859968">Đăng ký học</a>
+    </nav>
+  </div>
+</header>
+
+<main id="lessonApp">
+  <section class="lesson-hero-v32">
+    <div class="container lesson-hero-grid-v32">
+      <div>
+        <div class="lesson-badge-v32">HSK 1 • BÀI 5</div>
+        <h1 id="lessonTitle">今天我休息</h1>
+        <p class="lesson-title-vi-v32" id="lessonTitleVi">Hôm nay anh được nghỉ</p>
+        <p id="lessonTheme">Ngày tháng, thứ trong tuần, khả năng với 会 và sở thích</p>
+        <div class="lesson-meta-v32">
+          <span>⏱ 60–90 phút</span>
+          <span>📚 22 từ mới</span>
+          <span>✍️ 20 bài tập</span>
+          <span>🔊 Audio MP3 + TTS dự phòng</span>
+        </div>
+      </div>
+      <div class="lesson-progress-card-v32">
+        <strong>Tiến độ bài học</strong>
+        <div class="progress-track-v32"><div id="progressBar" class="progress-bar-v32"></div></div>
+        <div id="progressText">0% hoàn thành</div>
+        <button id="resetProgress" class="lesson-small-btn-v32">Học lại từ đầu</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="lesson-audio-info-v33">
+    <div class="container">
+      <div class="audio-info-box-v33">
+        <div class="audio-info-icon-v33">🔊</div>
+        <div>
+          <strong>Hệ thống Audio Manager</strong>
+          <p>Nút nghe ưu tiên phát MP3. Khi chưa có MP3, trình duyệt tự đọc bằng giọng tiếng Trung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lesson-sticky-nav-v32">
+    <div class="container lesson-nav-scroll-v32">
+      <a href="#muc-tieu">Mục tiêu</a><a href="#tu-vung">Từ vựng</a><a href="#flashcards">Flashcards</a><a href="#mau-cau">Mẫu câu</a><a href="#hoi-thoai">Hội thoại</a><a href="#phat-am">Phát âm</a><a href="#bai-tap">Bài tập</a><a href="#tong-ket">Tổng kết</a>
+    </div>
+  </div>
+
+  <section class="lesson-section-v32" id="muc-tieu">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>🎯</span><div><small>BẠN SẼ HỌC ĐƯỢC GÌ?</small><h2>Mục tiêu bài học</h2></div></div>
+      <div id="objectives" class="objective-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="tu-vung">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>词</span><div><small>TỪ VỰNG TRỌNG TÂM</small><h2>Học từ trong ngữ cảnh</h2></div></div>
+      <input id="vocabSearch" class="lesson-search-v32" placeholder="Tìm chữ Hán, pinyin hoặc nghĩa tiếng Việt...">
+      <div id="vocabulary" class="vocab-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="flashcards">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>🃏</span><div><small>LẬT THẺ ĐỂ GHI NHỚ</small><h2>Flashcards Bài 5</h2></div></div>
+      <div class="flashcard-stage-v32">
+        <button id="prevCard" class="flash-nav-v32">←</button>
+        <div id="flashcard" class="flashcard-v32" tabindex="0" role="button" aria-label="Lật thẻ">
+          <div class="flashcard-inner-v32">
+            <div class="flashcard-front-v32"><div id="cardHanzi"></div><small>Nhấn để lật thẻ</small></div>
+            <div class="flashcard-back-v32"><div id="cardPinyin"></div><strong id="cardMeaning"></strong><p id="cardExample"></p>
+              <button id="cardAudio" type="button" class="audio-btn-v33 audio-btn-card-v33" aria-label="Nghe từ">🔊 Nghe</button>
+            </div>
+          </div>
+        </div>
+        <button id="nextCard" class="flash-nav-v32">→</button>
+      </div>
+      <div id="cardCounter" class="card-counter-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="mau-cau">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>法</span><div><small>MẪU CÂU VÀ CÁCH DÙNG</small><h2>Dùng đúng trong giao tiếp</h2></div></div>
+      <div id="patterns" class="pattern-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="hoi-thoai">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>说</span><div><small>HỘI THOẠI THEO NỘI DUNG BÀI HỌC</small><h2>Luyện nói theo tình huống</h2></div></div>
+      <div id="dialogues" class="dialogue-grid-v32"></div>
+      <div class="teacher-tip-v32"><strong>💡 Mẹo của Cô Mai</strong><div id="teacherTips"></div></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="phat-am">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>声</span><div><small>NỀN TẢNG PHIÊN ÂM</small><h2>Biến điệu của 不 và 一</h2></div></div>
+      <div id="pronunciation"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="bai-tap">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>考</span><div><small>LUYỆN TẬP TƯƠNG TÁC</small><h2>Kiểm tra ngay sau khi học</h2></div></div>
+      <div id="quiz" class="quiz-list-v32"></div>
+      <div class="quiz-actions-v32">
+        <button id="submitQuiz" class="button button-primary">Chấm bài</button>
+        <button id="showAnswers" class="button lesson-outline-btn-v32">Xem đáp án</button>
+      </div>
+      <div id="quizResult" class="quiz-result-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="tong-ket">
+    <div class="container">
+      <div class="lesson-summary-v32">
+        <div><small>HOÀN THÀNH BÀI 5</small><h2>Bạn đã có thể nói ngày tháng, khả năng và sở thích</h2><p>Ôn lại flashcards và làm lại bài tập đến khi đạt ít nhất 80%.</p></div>
+        <div class="summary-numbers-v32"><span><strong>22</strong>Từ mới</span><span><strong>5</strong>Mẫu câu</span><span><strong>3</strong>Hội thoại</span><span><strong>20</strong>Bài tập</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Tiếng Trung Cô Mai</h4><p>Học từ gốc – Vững mọi mốc.</p><p><strong>Hotline/Zalo: 0985 859 968</strong></p></div>
+      <div><h4>HSK 1</h4><a href="hsk1-lesson01.html">Bài 1</a><a href="hsk1-lesson02.html">Bài 2</a><a href="hsk1-lesson03.html">Bài 3</a><a href="hsk1-lesson04.html">Bài 4</a><a href="hsk1-lesson05.html">Bài 5</a></div>
+      <div><h4>Học liệu</h4><a href="../resources/flashcards.html">Flashcards</a><a href="../resources/grammar.html">Ngữ pháp</a></div>
+      <div><h4>Liên hệ</h4><a href="tel:0985859968">Gọi 0985 859 968</a><a href="https://zalo.me/0985859968">Zalo</a></div>
+    </div>
+    <div class="copyright">© 2026 Tiếng Trung Cô Mai</div>
+  </div>
+</footer>
+
+<div class="floating-contact"><a class="floating-btn phone" href="tel:0985859968">📞</a><a class="floating-btn zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Zalo</a></div>
+
+<script src="../assets/js/app.js?v=3.3.1"></script>
+<script src="../assets/js/audio-manager.js?v=3.3.1"></script>
+
+<script>
+const lessonData = {"objectives":[["📅","Nói ngày tháng và thứ","Biết hỏi và trả lời hôm nay ngày mấy, tháng mấy và thứ mấy."],["🗓️","Trật tự thời gian","Nắm trật tự năm → tháng → ngày → thứ trong tiếng Trung."],["🍳","Diễn đạt khả năng","Sử dụng động từ năng nguyện 会 để nói biết hoặc có khả năng làm việc gì."],["💻","Miêu tả đồ vật mới","Biết dùng 新、真、好看、喜欢 để miêu tả và bày tỏ sở thích."],["🔊","Phát âm","Nắm biến điệu của 不 và 一 trong lời nói tự nhiên."]],"vocabulary":[{"hanzi":"今天","pinyin":"jīntiān","meaning":"hôm nay","example":"今天我休息。","exampleVi":"Hôm nay tôi được nghỉ."},{"hanzi":"号","pinyin":"hào","meaning":"ngày, mùng","example":"今天几号？","exampleVi":"Hôm nay ngày mấy?"},{"hanzi":"月","pinyin":"yuè","meaning":"tháng","example":"今天九月八号。","exampleVi":"Hôm nay là ngày 8 tháng 9."},{"hanzi":"日","pinyin":"rì","meaning":"ngày","example":"今天是五月一日。","exampleVi":"Hôm nay là ngày 1 tháng 5."},{"hanzi":"星期","pinyin":"xīngqī","meaning":"thứ, tuần","example":"今天星期几？","exampleVi":"Hôm nay là thứ mấy?"},{"hanzi":"星期日","pinyin":"Xīngqīrì","meaning":"Chủ nhật","example":"今天星期日。","exampleVi":"Hôm nay là Chủ nhật."},{"hanzi":"星期天","pinyin":"Xīngqītiān","meaning":"Chủ nhật","example":"星期天我休息。","exampleVi":"Chủ nhật tôi được nghỉ."},{"hanzi":"休息","pinyin":"xiūxi","meaning":"nghỉ, nghỉ ngơi","example":"今天我休息。","exampleVi":"Hôm nay tôi nghỉ."},{"hanzi":"会","pinyin":"huì","meaning":"biết, có thể","example":"我会做饭。","exampleVi":"Tôi biết nấu ăn."},{"hanzi":"做饭","pinyin":"zuò fàn","meaning":"nấu ăn","example":"你会做饭吗？","exampleVi":"Bạn biết nấu ăn không?"},{"hanzi":"做","pinyin":"zuò","meaning":"làm, nấu","example":"我会做菜。","exampleVi":"Tôi biết nấu món ăn."},{"hanzi":"面条儿","pinyin":"miàntiáor","meaning":"mì, mì sợi","example":"我会做面条儿。","exampleVi":"Tôi biết nấu mì."},{"hanzi":"饺子","pinyin":"jiǎozi","meaning":"sủi cảo","example":"我会做饺子。","exampleVi":"Tôi biết làm sủi cảo."},{"hanzi":"一些","pinyin":"yìxiē","meaning":"một số, một vài","example":"我也会做一些菜。","exampleVi":"Tôi cũng biết nấu một số món ăn."},{"hanzi":"菜","pinyin":"cài","meaning":"món ăn, rau","example":"你会做什么菜？","exampleVi":"Bạn biết nấu món gì?"},{"hanzi":"下班","pinyin":"xiàbān","meaning":"tan làm, tan ca","example":"同乐，下班吗？","exampleVi":"Đồng Lạc, tan làm chưa?"},{"hanzi":"新","pinyin":"xīn","meaning":"mới","example":"这是我的新电脑。","exampleVi":"Đây là máy tính mới của tôi."},{"hanzi":"电脑","pinyin":"diànnǎo","meaning":"máy tính","example":"这是你的新电脑吗？","exampleVi":"Đây là máy tính mới của bạn phải không?"},{"hanzi":"真","pinyin":"zhēn","meaning":"thật, thực sự","example":"真好看！","exampleVi":"Đẹp thật!"},{"hanzi":"好看","pinyin":"hǎokàn","meaning":"đẹp, dễ nhìn","example":"你的电脑真好看！","exampleVi":"Máy tính của bạn đẹp thật!"},{"hanzi":"喜欢","pinyin":"xǐhuan","meaning":"thích","example":"我也很喜欢它。","exampleVi":"Tôi cũng rất thích nó."},{"hanzi":"它","pinyin":"tā","meaning":"nó","example":"我很喜欢它。","exampleVi":"Tôi rất thích nó."}],"patterns":[{"title":"今天几号？ / 今天星期几？","explain":"Dùng 几号 để hỏi ngày trong tháng và 星期几 để hỏi thứ trong tuần.","examples":["今天几号？","今天星期几？","今天九月八号。"]},{"title":"Năm + 月 + 日/号 + 星期","explain":"Trật tự thời gian trong tiếng Trung thường là năm → tháng → ngày → thứ.","examples":["2025年5月1号","2024年10月22日，星期二","今天是2025年5月22号。"]},{"title":"Danh từ làm vị ngữ","explain":"Trong câu chỉ ngày tháng, tuổi tác, vị ngữ có thể là danh từ mà không cần 是.","examples":["今天九月八号。","今天星期日。","我妹妹十二岁。"]},{"title":"会 + động từ","explain":"会 đứng trước động từ, biểu thị kỹ năng có được do học tập hoặc khả năng thực hiện hành động.","examples":["我会做饭。","你会做饺子吗？","我不会做菜。"]},{"title":"真 + tính từ / 很喜欢 + tân ngữ","explain":"真 nhấn mạnh mức độ; 喜欢 dùng để bày tỏ sở thích đối với người hoặc vật.","examples":["真好看！","你的新电脑真好看！","我也很喜欢它。"]}],"dialogues":[{"title":"Bài khóa 1: Hỏi ngày và thứ","lines":[["王一雪","今天几号？","Jīntiān jǐ hào?","Hôm nay ngày mấy?"],["刘明","今天九月八号。","Jīntiān jiǔ yuè bā hào.","Hôm nay là ngày 8 tháng 9."],["王一雪","星期几？","Xīngqī jǐ?","Thứ mấy?"],["刘明","星期日。今天我休息。","Xīngqīrì. Jīntiān wǒ xiūxi.","Chủ nhật. Hôm nay anh được nghỉ."]]},{"title":"Bài khóa 2: Nói về khả năng nấu ăn","lines":[["王一雪","你会做饭吗？","Nǐ huì zuò fàn ma?","Em biết nấu ăn không?"],["杨同乐","我会做。","Wǒ huì zuò.","Em biết."],["王一雪","你会做什么？","Nǐ huì zuò shénme?","Em biết nấu món gì?"],["杨同乐","我会做面条儿、饺子，也会做一些菜。星期天我也做饭。","Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.","Em biết nấu mì, làm sủi cảo và một số món ăn. Chủ nhật em cũng nấu ăn."]]},{"title":"Bài khóa 3: Máy tính mới","lines":[["王一雪","同乐，下班吗？","Tónglè, xiàbān ma?","Đồng Lạc, em tan làm chưa?"],["杨同乐","下班。","Xiàbān.","Em tan làm rồi."],["王一雪","这是你的新电脑吗？","Zhè shì nǐ de xīn diànnǎo ma?","Đây là máy tính mới của em à?"],["杨同乐","是的，是我的新电脑。","Shì de, shì wǒ de xīn diànnǎo.","Đúng vậy, đây là máy tính mới của em."],["王一雪","真好看！","Zhēn hǎokàn!","Đẹp thật!"],["杨同乐","我也很喜欢它。","Wǒ yě hěn xǐhuan tā.","Em cũng rất thích nó."]]}],"pronunciation":[["Biến điệu của 不","不 + thanh 4 → bú","不 đứng trước âm tiết thanh 4 thì đọc thành thanh 2: 不是、不会、不大、不对."],["不 trước thanh 1/2/3","bù + thanh 1/2/3","Không đổi thanh: 不喝、不来、不好、不学习."],["一 trước thanh 1/2/3","yì + thanh 1/2/3","一 đứng trước thanh 1, 2, 3 thường đọc thành thanh 4: 一些、一年、一口."],["一 trước thanh 4","yí + thanh 4","一 đứng trước thanh 4 thường đọc thành thanh 2: 一个、一日、一岁."],["Luyện đọc","不要、不客气、一天、一样、一些、一个","Chú ý biến điệu trong lời nói nhưng pinyin từ điển vẫn ghi dạng gốc."]],"quiz":[{"q":"“Hôm nay là ngày mấy?” nói thế nào?","options":["今天星期几？","今天几号？","今天几月？"],"answer":1},{"q":"星期日 nghĩa là gì?","options":["Thứ Hai","Thứ Bảy","Chủ nhật"],"answer":2},{"q":"今天九月八号。 nghĩa là gì?","options":["Hôm nay là ngày 8 tháng 9.","Hôm nay là ngày 9 tháng 8.","Hôm nay là tháng 9."],"answer":0},{"q":"休息 nghĩa là gì?","options":["làm việc","nghỉ ngơi","tan làm"],"answer":1},{"q":"会 trong bài này biểu thị gì?","options":["sở hữu","biết/có khả năng","đã làm xong"],"answer":1},{"q":"你会做饭吗？ nghĩa là gì?","options":["Bạn có thích nấu ăn không?","Bạn biết nấu ăn không?","Bạn đang nấu ăn phải không?"],"answer":1},{"q":"Câu phủ định của 我会做饭。 là:","options":["我不会做饭。","我没有做饭。","我不是做饭。"],"answer":0},{"q":"面条儿 nghĩa là gì?","options":["sủi cảo","mì sợi","rau"],"answer":1},{"q":"饺子 nghĩa là gì?","options":["cơm","mì","sủi cảo"],"answer":2},{"q":"一些 nghĩa là gì?","options":["tất cả","một số","không có"],"answer":1},{"q":"下班 nghĩa là gì?","options":["đi làm","tan làm","nghỉ phép"],"answer":1},{"q":"新 nghĩa là gì?","options":["mới","đẹp","thật"],"answer":0},{"q":"电脑 nghĩa là gì?","options":["điện thoại","máy tính","tivi"],"answer":1},{"q":"真好看！ nghĩa là gì?","options":["Không đẹp.","Đẹp thật!","Rất mới!"],"answer":1},{"q":"喜欢 nghĩa là gì?","options":["thích","biết","nghỉ"],"answer":0},{"q":"它 dùng để chỉ gì?","options":["người nữ","người nam","đồ vật/con vật"],"answer":2},{"q":"Trật tự ngày tháng đúng là:","options":["日→月→年","年→月→日","月→日→年"],"answer":1},{"q":"Câu nào là câu vị ngữ danh từ?","options":["今天九月八号。","我会做饭。","我喜欢电脑。"],"answer":0},{"q":"不 đứng trước thanh 4 thường đọc thành:","options":["bù","bú","bū"],"answer":1},{"q":"一 đứng trước thanh 4 thường đọc thành:","options":["yī","yí","yì"],"answer":1}]};
+document.getElementById("showAnswers").onclick = () => {
+  lessonData.quiz.forEach((_,i)=>document.getElementById(`answer${i}`).hidden=false);
+};
+
+function updateProgress(percent){
+  document.getElementById("progressBar").style.width=percent+"%";
+  document.getElementById("progressText").textContent=percent+"% hoàn thành";
+}
+updateProgress(Number(localStorage.getItem("hsk1Lesson05Progress")||0));
+document.getElementById("resetProgress").onclick=()=>{
+  localStorage.removeItem("hsk1Lesson05Progress");
+  document.querySelectorAll('#quiz input').forEach(x=>x.checked=false);
+  document.querySelectorAll('.answer-note-v32').forEach(x=>x.hidden=true);
+  document.getElementById("quizResult").textContent="";
+  updateProgress(0);
+};
+</script>
+
+<div id="audioVersionBadge" style="position:fixed;left:14px;bottom:14px;z-index:9999;background:#0f766e;color:white;padding:7px 11px;border-radius:999px;font:700 13px 'Times New Roman',serif;box-shadow:0 8px 24px rgba(0,0,0,.18)">🔊 Audio 3.3.1</div>
+</body>
+</html>
