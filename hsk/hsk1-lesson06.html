@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="HSK 1 Bài 6 - 你的手机号是多少？ Học cách hỏi số điện thoại, nói mong muốn với 想, dùng câu liên động và hỏi cách thức với 怎么.">
+  <title>HSK 1 - Bài 6 | Tiếng Trung Cô Mai</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+</head>
+<body>
+<div class="contact-strip">
+  <div class="container contact-strip-inner">
+    <div class="contact-main"><span>📞 Hotline/Zalo:</span><a href="tel:0985859968">0985 859 968</a></div>
+    <div class="contact-actions"><a class="contact-link" href="tel:0985859968">Gọi tư vấn</a><a class="contact-link zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Nhắn Zalo</a></div>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html"><img src="../assets/images/logo.svg" alt="Tiếng Trung Cô Mai"></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="nav-link" href="../index.html">Trang chủ</a>
+      <a class="nav-link active" href="hsk1.html">HSK 1</a>
+      <a class="nav-link" href="../resources/flashcards.html">Flashcards</a>
+      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      <a class="header-cta" href="tel:0985859968">Đăng ký học</a>
+    </nav>
+  </div>
+</header>
+
+<main id="lessonApp">
+  <section class="lesson-hero-v32">
+    <div class="container lesson-hero-grid-v32">
+      <div>
+        <div class="lesson-badge-v32">HSK 1 • BÀI 6</div>
+        <h1 id="lessonTitle">你的手机号是多少？</h1>
+        <p class="lesson-title-vi-v32" id="lessonTitleVi">Số điện thoại di động của bạn là bao nhiêu?</p>
+        <p id="lessonTheme">Số điện thoại, mong muốn với 想, câu liên động và cách hỏi với 怎么</p>
+        <div class="lesson-meta-v32">
+          <span>⏱ 60–90 phút</span>
+          <span>📚 22 từ mới</span>
+          <span>✍️ 20 bài tập</span>
+          <span>🔊 Audio MP3 + TTS dự phòng</span>
+        </div>
+      </div>
+      <div class="lesson-progress-card-v32">
+        <strong>Tiến độ bài học</strong>
+        <div class="progress-track-v32"><div id="progressBar" class="progress-bar-v32"></div></div>
+        <div id="progressText">0% hoàn thành</div>
+        <button id="resetProgress" class="lesson-small-btn-v32">Học lại từ đầu</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="lesson-audio-info-v33">
+    <div class="container">
+      <div class="audio-info-box-v33">
+        <div class="audio-info-icon-v33">🔊</div>
+        <div>
+          <strong>Hệ thống Audio Manager</strong>
+          <p>Nút nghe ưu tiên phát MP3. Khi chưa có MP3, trình duyệt tự đọc bằng giọng tiếng Trung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lesson-sticky-nav-v32">
+    <div class="container lesson-nav-scroll-v32">
+      <a href="#muc-tieu">Mục tiêu</a><a href="#tu-vung">Từ vựng</a><a href="#flashcards">Flashcards</a><a href="#mau-cau">Mẫu câu</a><a href="#hoi-thoai">Hội thoại</a><a href="#phat-am">Phát âm</a><a href="#bai-tap">Bài tập</a><a href="#tong-ket">Tổng kết</a>
+    </div>
+  </div>
+
+  <section class="lesson-section-v32" id="muc-tieu">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>🎯</span><div><small>BẠN SẼ HỌC ĐƯỢC GÌ?</small><h2>Mục tiêu bài học</h2></div></div>
+      <div id="objectives" class="objective-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="tu-vung">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>词</span><div><small>TỪ VỰNG TRỌNG TÂM</small><h2>Học từ trong ngữ cảnh</h2></div></div>
+      <input id="vocabSearch" class="lesson-search-v32" placeholder="Tìm chữ Hán, pinyin hoặc nghĩa tiếng Việt...">
+      <div id="vocabulary" class="vocab-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="flashcards">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>🃏</span><div><small>LẬT THẺ ĐỂ GHI NHỚ</small><h2>Flashcards Bài 6</h2></div></div>
+      <div class="flashcard-stage-v32">
+        <button id="prevCard" class="flash-nav-v32">←</button>
+        <div id="flashcard" class="flashcard-v32" tabindex="0" role="button" aria-label="Lật thẻ">
+          <div class="flashcard-inner-v32">
+            <div class="flashcard-front-v32"><div id="cardHanzi"></div><small>Nhấn để lật thẻ</small></div>
+            <div class="flashcard-back-v32"><div id="cardPinyin"></div><strong id="cardMeaning"></strong><p id="cardExample"></p>
+              <button id="cardAudio" type="button" class="audio-btn-v33 audio-btn-card-v33" aria-label="Nghe từ">🔊 Nghe</button>
+            </div>
+          </div>
+        </div>
+        <button id="nextCard" class="flash-nav-v32">→</button>
+      </div>
+      <div id="cardCounter" class="card-counter-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="mau-cau">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>法</span><div><small>MẪU CÂU VÀ CÁCH DÙNG</small><h2>Dùng đúng trong giao tiếp</h2></div></div>
+      <div id="patterns" class="pattern-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="hoi-thoai">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>说</span><div><small>HỘI THOẠI THEO NỘI DUNG BÀI HỌC</small><h2>Luyện nói theo tình huống</h2></div></div>
+      <div id="dialogues" class="dialogue-grid-v32"></div>
+      <div class="teacher-tip-v32"><strong>💡 Mẹo của Cô Mai</strong><div id="teacherTips"></div></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="phat-am">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>声</span><div><small>NỀN TẢNG PHIÊN ÂM</small><h2>Âm uốn lưỡi 儿 và dấu cách âm</h2></div></div>
+      <div id="pronunciation"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="bai-tap">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>考</span><div><small>LUYỆN TẬP TƯƠNG TÁC</small><h2>Kiểm tra ngay sau khi học</h2></div></div>
+      <div id="quiz" class="quiz-list-v32"></div>
+      <div class="quiz-actions-v32">
+        <button id="submitQuiz" class="button button-primary">Chấm bài</button>
+        <button id="showAnswers" class="button lesson-outline-btn-v32">Xem đáp án</button>
+      </div>
+      <div id="quizResult" class="quiz-result-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="tong-ket">
+    <div class="container">
+      <div class="lesson-summary-v32">
+        <div><small>HOÀN THÀNH BÀI 6</small><h2>Bạn đã có thể hỏi số điện thoại, nói mong muốn và hỏi cách thức</h2><p>Ôn lại flashcards và làm lại bài tập đến khi đạt ít nhất 80%.</p></div>
+        <div class="summary-numbers-v32"><span><strong>22</strong>Từ mới</span><span><strong>5</strong>Mẫu câu</span><span><strong>3</strong>Hội thoại</span><span><strong>20</strong>Bài tập</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Tiếng Trung Cô Mai</h4><p>Học từ gốc – Vững mọi mốc.</p><p><strong>Hotline/Zalo: 0985 859 968</strong></p></div>
+      <div><h4>HSK 1</h4><a href="hsk1-lesson01.html">Bài 1</a><a href="hsk1-lesson02.html">Bài 2</a><a href="hsk1-lesson03.html">Bài 3</a><a href="hsk1-lesson04.html">Bài 4</a><a href="hsk1-lesson05.html">Bài 5</a><a href="hsk1-lesson06.html">Bài 6</a></div>
+      <div><h4>Học liệu</h4><a href="../resources/flashcards.html">Flashcards</a><a href="../resources/grammar.html">Ngữ pháp</a></div>
+      <div><h4>Liên hệ</h4><a href="tel:0985859968">Gọi 0985 859 968</a><a href="https://zalo.me/0985859968">Zalo</a></div>
+    </div>
+    <div class="copyright">© 2026 Tiếng Trung Cô Mai</div>
+  </div>
+</footer>
+
+<div class="floating-contact"><a class="floating-btn phone" href="tel:0985859968">📞</a><a class="floating-btn zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Zalo</a></div>
+
+<script src="../assets/js/app.js?v=3.3.1"></script>
+<script src="../assets/js/audio-manager.js?v=3.3.1"></script>
+
+<script>
+const lessonData = {"objectives":[["📱","Hỏi và đọc số điện thoại","Nghe hiểu, hỏi và đọc số điện thoại di động; biết đọc số 1 là yāo trong dãy số."],["🛒","Diễn đạt mong muốn","Sử dụng động từ năng nguyện 想 trước động từ để nói mong muốn hoặc dự định."],["🚕","Dùng câu liên động","Nói mục đích hoặc phương thức bằng hai hay nhiều cụm động từ liên tiếp."],["❓","Hỏi cách thức với 怎么","Dùng 怎么 trước động từ để hỏi một hành động được thực hiện bằng cách nào."],["🔊","Phát âm","Luyện âm uốn lưỡi 儿 và quy tắc dùng dấu cách âm trong pinyin."]],"vocabulary":[{"hanzi":"手机","pinyin":"shǒujī","meaning":"điện thoại di động","example":"这是我的手机。","exampleVi":"Đây là điện thoại di động của tôi."},{"hanzi":"电话","pinyin":"diànhuà","meaning":"điện thoại","example":"你的电话是多少？","exampleVi":"Số điện thoại của bạn là bao nhiêu?"},{"hanzi":"号","pinyin":"hào","meaning":"số","example":"我的手机号是……","exampleVi":"Số điện thoại di động của tôi là…"},{"hanzi":"明天","pinyin":"míngtiān","meaning":"ngày mai","example":"明天你去哪儿？","exampleVi":"Ngày mai bạn đi đâu?"},{"hanzi":"去","pinyin":"qù","meaning":"đi","example":"我去超市。","exampleVi":"Tôi đi siêu thị."},{"hanzi":"哪儿","pinyin":"nǎr","meaning":"đâu, chỗ nào","example":"你去哪儿？","exampleVi":"Bạn đi đâu?"},{"hanzi":"想","pinyin":"xiǎng","meaning":"muốn","example":"我想买牛奶。","exampleVi":"Tôi muốn mua sữa."},{"hanzi":"超市","pinyin":"chāoshì","meaning":"siêu thị","example":"我想去超市。","exampleVi":"Tôi muốn đi siêu thị."},{"hanzi":"买","pinyin":"mǎi","meaning":"mua","example":"你想买什么？","exampleVi":"Bạn muốn mua gì?"},{"hanzi":"东西","pinyin":"dōngxi","meaning":"đồ, đồ đạc","example":"我去超市买东西。","exampleVi":"Tôi đi siêu thị mua đồ."},{"hanzi":"些","pinyin":"xiē","meaning":"một ít, một vài","example":"我想买些牛奶。","exampleVi":"Tôi muốn mua một ít sữa."},{"hanzi":"牛奶","pinyin":"niúnǎi","meaning":"sữa bò","example":"我想买牛奶。","exampleVi":"Tôi muốn mua sữa."},{"hanzi":"吃","pinyin":"chī","meaning":"ăn","example":"我想吃米饭。","exampleVi":"Tôi muốn ăn cơm."},{"hanzi":"晚饭","pinyin":"wǎnfàn","meaning":"bữa tối","example":"我们去吃晚饭。","exampleVi":"Chúng ta đi ăn tối."},{"hanzi":"那边","pinyin":"nàbian","meaning":"bên kia, chỗ đó","example":"那边的包子很好吃。","exampleVi":"Bánh bao ở đó rất ngon."},{"hanzi":"包子","pinyin":"bāozi","meaning":"bánh bao có nhân","example":"我想吃包子。","exampleVi":"Tôi muốn ăn bánh bao."},{"hanzi":"非常","pinyin":"fēicháng","meaning":"rất, vô cùng","example":"这些包子非常好吃。","exampleVi":"Những chiếc bánh bao này rất ngon."},{"hanzi":"好吃","pinyin":"hǎochī","meaning":"ngon","example":"包子很好吃。","exampleVi":"Bánh bao rất ngon."},{"hanzi":"米饭","pinyin":"mǐfàn","meaning":"cơm trắng","example":"我想吃米饭。","exampleVi":"Tôi muốn ăn cơm."},{"hanzi":"怎么","pinyin":"zěnme","meaning":"thế nào, bằng cách nào","example":"我们怎么去？","exampleVi":"Chúng ta đi bằng cách nào?"},{"hanzi":"坐","pinyin":"zuò","meaning":"ngồi; đi bằng phương tiện","example":"我们坐出租车去。","exampleVi":"Chúng ta đi bằng taxi."},{"hanzi":"出租车","pinyin":"chūzūchē","meaning":"xe taxi","example":"她坐出租车去超市。","exampleVi":"Cô ấy đi siêu thị bằng taxi."}],"patterns":[{"title":"你的手机号是多少？","explain":"Dùng 多少 để hỏi một con số chưa biết. Khi đọc số điện thoại, đọc từng chữ số; số 1 thường đọc là yāo.","examples":["你的手机号是多少？","我的手机号是十三五五二七二一一六零。","手机号要一位一位地读。"]},{"title":"想 + động từ","explain":"想 đứng trước động từ để biểu thị mong muốn, ý định hoặc dự định.","examples":["我想去超市。","我想买些牛奶。","我不想吃包子。"]},{"title":"Động từ 1 + nơi chốn + động từ 2","explain":"Câu liên động dùng chuỗi hành động để biểu thị mục đích: làm hành động thứ nhất nhằm thực hiện hành động thứ hai.","examples":["我去超市买东西。","我们去西安饭店吃晚饭。","她去商店买牛奶。"]},{"title":"坐 + phương tiện + 去 + địa điểm","explain":"Câu liên động cũng dùng để nói phương thức thực hiện hành động.","examples":["我们坐出租车去。","她坐出租车去超市。","我坐车去学校。"]},{"title":"怎么 + động từ？","explain":"怎么 đứng trước động từ để hỏi cách thức hoặc phương tiện thực hiện hành động.","examples":["我们怎么去？","你怎么去超市？","他怎么回家？"]}],"dialogues":[{"title":"Bài khóa 1: Hỏi số điện thoại","lines":[["李文","家月，你的手机号是多少？","Jiāyuè, nǐ de shǒujīhào shì duōshao?","Gia Nguyệt, số điện thoại di động của bạn là bao nhiêu?"],["白家月","我的手机号是+33 601493190。","Wǒ de shǒujīhào shì jiā sān sān liù líng yāo sì jiǔ sān yāo jiǔ líng.","Số điện thoại di động của mình là +33 601493190."],["李文","我的手机号是+86 13552721160。","Wǒ de shǒujīhào shì jiā bā liù yāo sān wǔ wǔ èr qī èr yāo yāo liù líng.","Số điện thoại của mình là +86 13552721160."],["白家月","好的。","Hǎo de.","Được rồi."]]},{"title":"Bài khóa 2: Đi siêu thị mua đồ","lines":[["陈天中","家月，明天你去哪儿？","Jiāyuè, míngtiān nǐ qù nǎr?","Gia Nguyệt, ngày mai bạn đi đâu?"],["白家月","我想去超市买东西。","Wǒ xiǎng qù chāoshì mǎi dōngxi.","Mình muốn đi siêu thị mua đồ."],["陈天中","你去超市买什么？","Nǐ qù chāoshì mǎi shénme?","Bạn đi siêu thị mua gì?"],["白家月","我想买些牛奶。","Wǒ xiǎng mǎi xiē niúnǎi.","Mình muốn mua một ít sữa."]]},{"title":"Bài khóa 3: Đi ăn tối","lines":[["王一雪","星期天我们去哪儿吃晚饭？","Xīngqītiān wǒmen qù nǎr chī wǎnfàn?","Chủ nhật này nhà mình đi đâu ăn tối?"],["刘明","我还想去西安饭店。","Wǒ hái xiǎng qù Xī'ān Fàndiàn.","Bố vẫn muốn đến nhà hàng Tây An."],["刘小雪","那边的包子非常好吃，我想吃包子。","Nàbian de bāozi fēicháng hǎochī, wǒ xiǎng chī bāozi.","Bánh bao ở đó rất ngon, con muốn ăn bánh bao."],["刘小明","妈妈，我想吃米饭，不想吃包子。","Māma, wǒ xiǎng chī mǐfàn, bù xiǎng chī bāozi.","Mẹ ơi, con muốn ăn cơm, không muốn ăn bánh bao."],["王一雪","好的。我们怎么去？","Hǎo de. Wǒmen zěnme qù?","Được thôi. Chúng ta đi bằng cách nào?"],["刘明","坐出租车去。","Zuò chūzūchē qù.","Đi bằng taxi."]]}],"pronunciation":[["Âm uốn lưỡi 儿","儿化 érhuà","Một số từ thêm 儿 sau âm tiết và đọc liền thành âm uốn lưỡi: 这儿 zhèr、那儿 nàr、哪儿 nǎr、面条儿 miàntiáor."],["Tác dụng của 儿","sắc thái khẩu ngữ","Âm 儿 thường tạo sắc thái thân mật, khẩu ngữ; đôi khi còn làm thay đổi từ loại hoặc nghĩa của từ."],["Luyện đọc âm uốn lưỡi","一点儿、饭馆儿、玩儿、歌儿","Đọc liền âm tiết gốc với âm r, không tách thành hai âm tiết riêng."],["Dấu cách âm","' apostrophe","Khi âm tiết sau bắt đầu bằng a, o, e và nối với âm tiết trước, dùng dấu ' để làm rõ ranh giới âm tiết."],["Ví dụ dấu cách âm","shí'èr, Xī'ān, Tiān'ānmén","Dấu cách âm giúp tránh đọc nhầm: 十二 shí'èr, 西安 Xī'ān, 天安门 Tiān'ānmén."]],"quiz":[{"q":"“Số điện thoại di động của bạn là bao nhiêu?” nói thế nào?","options":["你的手机在哪儿？","你的手机号是多少？","你有手机吗？"],"answer":1},{"q":"手机 nghĩa là gì?","options":["điện thoại di động","máy tính","số điện thoại"],"answer":0},{"q":"Trong số điện thoại, số 1 thường đọc là:","options":["yī","yāo","yì"],"answer":1},{"q":"明天 nghĩa là gì?","options":["hôm nay","ngày mai","hôm qua"],"answer":1},{"q":"哪儿 nghĩa là gì?","options":["khi nào","bao nhiêu","ở đâu"],"answer":2},{"q":"想 + động từ biểu thị gì?","options":["mong muốn hoặc dự định","khả năng đã học được","hành động đang diễn ra"],"answer":0},{"q":"我想去超市。 nghĩa là gì?","options":["Tôi đang ở siêu thị.","Tôi muốn đi siêu thị.","Tôi không đi siêu thị."],"answer":1},{"q":"超市 nghĩa là gì?","options":["nhà hàng","siêu thị","trường học"],"answer":1},{"q":"东西 nghĩa là gì?","options":["đồ, đồ đạc","phía đông","món ăn"],"answer":0},{"q":"我想买些牛奶。 nghĩa là gì?","options":["Tôi muốn uống một ít sữa.","Tôi muốn mua một ít sữa.","Tôi đã mua sữa."],"answer":1},{"q":"包子 nghĩa là gì?","options":["sủi cảo","bánh bao có nhân","mì sợi"],"answer":1},{"q":"非常 nghĩa là gì?","options":["một chút","cũng","rất, vô cùng"],"answer":2},{"q":"这些包子非常好吃。 nghĩa là gì?","options":["Những chiếc bánh bao này rất ngon.","Những chiếc bánh bao này rất đắt.","Tôi rất thích bánh bao."],"answer":0},{"q":"怎么 dùng để hỏi gì?","options":["người nào","cách thức","số lượng"],"answer":1},{"q":"我们怎么去？ nghĩa là gì?","options":["Chúng ta đi đâu?","Chúng ta khi nào đi?","Chúng ta đi bằng cách nào?"],"answer":2},{"q":"坐出租车去。 nghĩa là gì?","options":["Đi bằng taxi.","Mua một chiếc taxi.","Ngồi ở trong nhà."],"answer":0},{"q":"Câu nào biểu thị mục đích bằng câu liên động?","options":["我去超市买东西。","我很喜欢超市。","超市很大。"],"answer":0},{"q":"Câu phủ định đúng của 我想吃包子。 là:","options":["我没想吃包子。","我不想吃包子。","我不是吃包子。"],"answer":1},{"q":"Pinyin đúng của 西安 là:","options":["Xīān","Xī'ān","Xī an"],"answer":1},{"q":"哪儿 có âm uốn lưỡi, đọc gần đúng là:","options":["nǎ ér","nǎr","nǎi"],"answer":1}]};
+
+function updateProgress(percent){
+  document.getElementById("progressBar").style.width=percent+"%";
+  document.getElementById("progressText").textContent=percent+"% hoàn thành";
+}
+updateProgress(Number(localStorage.getItem("hsk1Lesson06Progress")||0));
+document.getElementById("resetProgress").onclick=()=>{
+  localStorage.removeItem("hsk1Lesson06Progress");
+  document.querySelectorAll('#quiz input').forEach(x=>x.checked=false);
+  document.querySelectorAll('.answer-note-v32').forEach(x=>x.hidden=true);
+  document.getElementById("quizResult").textContent="";
+  updateProgress(0);
+};
+</script>
+
+<div id="audioVersionBadge" style="position:fixed;left:14px;bottom:14px;z-index:9999;background:#0f766e;color:white;padding:7px 11px;border-radius:999px;font:700 13px 'Times New Roman',serif;box-shadow:0 8px 24px rgba(0,0,0,.18)">🔊 Audio 3.3.1</div>
+</body>
+</html>
