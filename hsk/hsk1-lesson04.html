@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="HSK 1 Bài 4 - 我有两个孩子。 Học cách nói có/không có, số đếm, lượng từ, gia đình, hỏi tuổi, phát âm và bài tập tương tác.">
+  <title>HSK 1 - Bài 4 | Tiếng Trung Cô Mai</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+</head>
+<body>
+<div class="contact-strip">
+  <div class="container contact-strip-inner">
+    <div class="contact-main"><span>📞 Hotline/Zalo:</span><a href="tel:0985859968">0985 859 968</a></div>
+    <div class="contact-actions"><a class="contact-link" href="tel:0985859968">Gọi tư vấn</a><a class="contact-link zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Nhắn Zalo</a></div>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html"><img src="../assets/images/logo.svg" alt="Tiếng Trung Cô Mai"></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="nav-link" href="../index.html">Trang chủ</a>
+      <a class="nav-link active" href="hsk1.html">HSK 1</a>
+      <a class="nav-link" href="../resources/flashcards.html">Flashcards</a>
+      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      <a class="header-cta" href="tel:0985859968">Đăng ký học</a>
+    </nav>
+  </div>
+</header>
+
+<main id="lessonApp">
+  <section class="lesson-hero-v32">
+    <div class="container lesson-hero-grid-v32">
+      <div>
+        <div class="lesson-badge-v32">HSK 1 • BÀI 4</div>
+        <h1 id="lessonTitle">我有两个孩子</h1>
+        <p class="lesson-title-vi-v32" id="lessonTitleVi">Chị có hai con</p>
+        <p id="lessonTheme">Gia đình, số lượng, hỏi tuổi và cách dùng 有 / 没有</p>
+        <div class="lesson-meta-v32">
+          <span>⏱ 60–90 phút</span>
+          <span>📚 21 từ mới</span>
+          <span>✍️ 20 bài tập</span>
+          <span>🔊 Audio MP3 + TTS dự phòng</span>
+        </div>
+      </div>
+      <div class="lesson-progress-card-v32">
+        <strong>Tiến độ bài học</strong>
+        <div class="progress-track-v32"><div id="progressBar" class="progress-bar-v32"></div></div>
+        <div id="progressText">0% hoàn thành</div>
+        <button id="resetProgress" class="lesson-small-btn-v32">Học lại từ đầu</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="lesson-audio-info-v33">
+    <div class="container">
+      <div class="audio-info-box-v33">
+        <div class="audio-info-icon-v33">🔊</div>
+        <div>
+          <strong>Hệ thống Audio Manager</strong>
+          <p>Nút nghe ưu tiên phát MP3. Khi chưa có MP3, trình duyệt tự đọc bằng giọng tiếng Trung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lesson-sticky-nav-v32">
+    <div class="container lesson-nav-scroll-v32">
+      <a href="#muc-tieu">Mục tiêu</a><a href="#tu-vung">Từ vựng</a><a href="#flashcards">Flashcards</a><a href="#mau-cau">Mẫu câu</a><a href="#hoi-thoai">Hội thoại</a><a href="#phat-am">Phát âm</a><a href="#bai-tap">Bài tập</a><a href="#tong-ket">Tổng kết</a>
+    </div>
+  </div>
+
+  <section class="lesson-section-v32" id="muc-tieu">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>🎯</span><div><small>BẠN SẼ HỌC ĐƯỢC GÌ?</small><h2>Mục tiêu bài học</h2></div></div>
+      <div id="objectives" class="objective-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="tu-vung">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>词</span><div><small>TỪ VỰNG TRỌNG TÂM</small><h2>Học từ trong ngữ cảnh</h2></div></div>
+      <input id="vocabSearch" class="lesson-search-v32" placeholder="Tìm chữ Hán, pinyin hoặc nghĩa tiếng Việt...">
+      <div id="vocabulary" class="vocab-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="flashcards">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>🃏</span><div><small>LẬT THẺ ĐỂ GHI NHỚ</small><h2>Flashcards Bài 4</h2></div></div>
+      <div class="flashcard-stage-v32">
+        <button id="prevCard" class="flash-nav-v32">←</button>
+        <div id="flashcard" class="flashcard-v32" tabindex="0" role="button" aria-label="Lật thẻ">
+          <div class="flashcard-inner-v32">
+            <div class="flashcard-front-v32"><div id="cardHanzi"></div><small>Nhấn để lật thẻ</small></div>
+            <div class="flashcard-back-v32"><div id="cardPinyin"></div><strong id="cardMeaning"></strong><p id="cardExample"></p>
+              <button id="cardAudio" type="button" class="audio-btn-v33 audio-btn-card-v33" aria-label="Nghe từ">🔊 Nghe</button>
+            </div>
+          </div>
+        </div>
+        <button id="nextCard" class="flash-nav-v32">→</button>
+      </div>
+      <div id="cardCounter" class="card-counter-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="mau-cau">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>法</span><div><small>MẪU CÂU VÀ CÁCH DÙNG</small><h2>Dùng đúng trong giao tiếp</h2></div></div>
+      <div id="patterns" class="pattern-grid-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="hoi-thoai">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>说</span><div><small>HỘI THOẠI THEO NỘI DUNG BÀI HỌC</small><h2>Luyện nói theo tình huống</h2></div></div>
+      <div id="dialogues" class="dialogue-grid-v32"></div>
+      <div class="teacher-tip-v32"><strong>💡 Mẹo của Cô Mai</strong><div id="teacherTips"></div></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="phat-am">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>声</span><div><small>NỀN TẢNG PHIÊN ÂM</small><h2>Biến điệu thanh 3 và thanh nhẹ</h2></div></div>
+      <div id="pronunciation"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32" id="bai-tap">
+    <div class="container">
+      <div class="lesson-heading-v32"><span>考</span><div><small>LUYỆN TẬP TƯƠNG TÁC</small><h2>Kiểm tra ngay sau khi học</h2></div></div>
+      <div id="quiz" class="quiz-list-v32"></div>
+      <div class="quiz-actions-v32">
+        <button id="submitQuiz" class="button button-primary">Chấm bài</button>
+        <button id="showAnswers" class="button lesson-outline-btn-v32">Xem đáp án</button>
+      </div>
+      <div id="quizResult" class="quiz-result-v32"></div>
+    </div>
+  </section>
+
+  <section class="lesson-section-v32 lesson-alt-v32" id="tong-ket">
+    <div class="container">
+      <div class="lesson-summary-v32">
+        <div><small>HOÀN THÀNH BÀI 4</small><h2>Bạn đã có thể giới thiệu gia đình và hỏi tuổi</h2><p>Ôn lại flashcards và làm lại bài tập đến khi đạt ít nhất 80%.</p></div>
+        <div class="summary-numbers-v32"><span><strong>21</strong>Từ mới</span><span><strong>5</strong>Mẫu câu</span><span><strong>3</strong>Hội thoại</span><span><strong>20</strong>Bài tập</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Tiếng Trung Cô Mai</h4><p>Học từ gốc – Vững mọi mốc.</p><p><strong>Hotline/Zalo: 0985 859 968</strong></p></div>
+      <div><h4>HSK 1</h4><a href="hsk1-lesson01.html">Bài 1</a><a href="hsk1-lesson02.html">Bài 2</a><a href="hsk1-lesson03.html">Bài 3</a><a href="hsk1-lesson04.html">Bài 4</a></div>
+      <div><h4>Học liệu</h4><a href="../resources/flashcards.html">Flashcards</a><a href="../resources/grammar.html">Ngữ pháp</a></div>
+      <div><h4>Liên hệ</h4><a href="tel:0985859968">Gọi 0985 859 968</a><a href="https://zalo.me/0985859968">Zalo</a></div>
+    </div>
+    <div class="copyright">© 2026 Tiếng Trung Cô Mai</div>
+  </div>
+</footer>
+
+<div class="floating-contact"><a class="floating-btn phone" href="tel:0985859968">📞</a><a class="floating-btn zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Zalo</a></div>
+
+<script src="../assets/js/app.js?v=3.3.1"></script>
+<script src="../assets/js/audio-manager.js?v=3.3.1"></script>
+
+<script>
+const lessonData = {"objectives":[["🏠","Nói về sự sở hữu","Sử dụng 有 và 没有 để nói có hoặc không có người, vật."],["🔢","Số đếm và lượng từ","Đọc và dùng số đếm, 个, 口 trong cấu trúc số từ + lượng từ + danh từ."],["👨‍👩‍👧‍👦","Giới thiệu gia đình","Nói được gia đình có bao nhiêu người và gồm những ai."],["🎂","Hỏi tuổi","Biết dùng 几岁 và 多大 phù hợp với từng đối tượng."],["🔊","Phát âm","Nhận biết biến điệu của thanh 3 và cách đọc thanh nhẹ."]],"vocabulary":[{"hanzi":"有","pinyin":"yǒu","meaning":"có","example":"我有两个孩子。","exampleVi":"Tôi có hai người con."},{"hanzi":"多少","pinyin":"duōshao","meaning":"bao nhiêu","example":"她有多少个学生？","exampleVi":"Cô ấy có bao nhiêu học sinh?"},{"hanzi":"个","pinyin":"gè","meaning":"lượng từ thông dụng","example":"她有二十个学生。","exampleVi":"Cô ấy có hai mươi học sinh."},{"hanzi":"哥哥","pinyin":"gēge","meaning":"anh trai","example":"我有两个哥哥。","exampleVi":"Tôi có hai anh trai."},{"hanzi":"呢","pinyin":"ne","meaning":"thì sao; trợ từ cuối câu","example":"我有两个哥哥，你呢？","exampleVi":"Tôi có hai anh trai, còn bạn thì sao?"},{"hanzi":"没有","pinyin":"méiyǒu","meaning":"không có","example":"我没有哥哥。","exampleVi":"Tôi không có anh trai."},{"hanzi":"家","pinyin":"jiā","meaning":"nhà, gia đình","example":"你家有几口人？","exampleVi":"Nhà bạn có mấy người?"},{"hanzi":"几","pinyin":"jǐ","meaning":"mấy, bao nhiêu","example":"你家有几口人？","exampleVi":"Nhà bạn có mấy người?"},{"hanzi":"口","pinyin":"kǒu","meaning":"lượng từ chỉ nhân khẩu","example":"我家有四口人。","exampleVi":"Nhà tôi có bốn người."},{"hanzi":"爸爸","pinyin":"bàba","meaning":"bố, ba","example":"我爸爸很忙。","exampleVi":"Bố tôi rất bận."},{"hanzi":"妈妈","pinyin":"māma","meaning":"mẹ","example":"我妈妈是老师。","exampleVi":"Mẹ tôi là giáo viên."},{"hanzi":"妹妹","pinyin":"mèimei","meaning":"em gái","example":"我有一个妹妹。","exampleVi":"Tôi có một em gái."},{"hanzi":"和","pinyin":"hé","meaning":"và","example":"爸爸、妈妈、妹妹和我。","exampleVi":"Bố, mẹ, em gái và tôi."},{"hanzi":"儿子","pinyin":"érzi","meaning":"con trai","example":"这是我儿子。","exampleVi":"Đây là con trai tôi."},{"hanzi":"孩子","pinyin":"háizi","meaning":"con, trẻ em","example":"我有两个孩子。","exampleVi":"Tôi có hai người con."},{"hanzi":"女儿","pinyin":"nǚ'ér","meaning":"con gái","example":"我有一个女儿。","exampleVi":"Tôi có một con gái."},{"hanzi":"岁","pinyin":"suì","meaning":"tuổi","example":"他今年五岁。","exampleVi":"Năm nay cậu bé năm tuổi."},{"hanzi":"他","pinyin":"tā","meaning":"anh ấy, cậu ấy, ông ấy","example":"他今年五岁。","exampleVi":"Năm nay cậu bé năm tuổi."},{"hanzi":"今年","pinyin":"jīnnián","meaning":"năm nay","example":"她今年十二岁。","exampleVi":"Năm nay cô bé mười hai tuổi."},{"hanzi":"多","pinyin":"duō","meaning":"bao nhiêu; nhiều","example":"您女儿多大？","exampleVi":"Con gái chị bao nhiêu tuổi?"},{"hanzi":"大","pinyin":"dà","meaning":"lớn; bao nhiêu tuổi","example":"你今年多大？","exampleVi":"Năm nay bạn bao nhiêu tuổi?"}],"patterns":[{"title":"A 有 B","explain":"有 biểu thị sự sở hữu hoặc tồn tại. Phủ định dùng 没有, không dùng 不有.","examples":["她有二十个学生。","我有两个哥哥。","我没有哥哥。"]},{"title":"A……，B 呢？","explain":"呢 dùng để hỏi lại người đối diện về cùng nội dung vừa được nhắc tới.","examples":["我有两个哥哥，你呢？","我叫白家月，你呢？","我是中国人，你呢？"]},{"title":"Số từ + lượng từ + danh từ","explain":"Sau số từ thường cần có lượng từ. 个 dùng phổ biến; 口 dùng để đếm người trong gia đình.","examples":["两个孩子","二十个学生","四口人"]},{"title":"几 + lượng từ + danh từ？","explain":"几 thường hỏi số lượng tương đối ít và câu trả lời thường dưới 10.","examples":["你家有几口人？","你有几个孩子？","您儿子几岁？"]},{"title":"多大 / 几岁","explain":"几岁 thường dùng hỏi tuổi trẻ em; 多大 dùng cho người lớn hơn hoặc hỏi chung.","examples":["您儿子几岁？","你今年多大？","您女儿多大？"]}],"dialogues":[{"title":"Bài khóa 1: Hỏi về số học sinh","lines":[["刘明","一飞忙吗？","Yīfēi máng ma?","Nhất Phi có bận không?"],["王一雪","她很忙。","Tā hěn máng.","Cô ấy rất bận."],["刘明","她有多少个学生？","Tā yǒu duōshao ge xuésheng?","Cô ấy có bao nhiêu học sinh?"],["王一雪","她有二十个学生。","Tā yǒu èrshí ge xuésheng.","Cô ấy có hai mươi học sinh."]]},{"title":"Bài khóa 2: Giới thiệu gia đình","lines":[["王一雪","我有两个哥哥，你呢？","Wǒ yǒu liǎng ge gēge, nǐ ne?","Chị có hai anh trai, còn em thì sao?"],["杨同乐","我没有哥哥。","Wǒ méiyǒu gēge.","Em không có anh trai."],["王一雪","你家有几口人？","Nǐ jiā yǒu jǐ kǒu rén?","Nhà em có mấy người?"],["杨同乐","我家有四口人，爸爸、妈妈、妹妹和我。","Wǒ jiā yǒu sì kǒu rén, bàba, māma, mèimei hé wǒ.","Nhà em có bốn người: bố, mẹ, em gái và em."]]},{"title":"Bài khóa 3: Hỏi tuổi các con","lines":[["杨同乐","这是您儿子吗？","Zhè shì nín érzi ma?","Đây là con trai chị phải không?"],["王一雪","是的。我有两个孩子，一个儿子，一个女儿。","Shì de. Wǒ yǒu liǎng ge háizi, yí ge érzi, yí ge nǚ'ér.","Đúng vậy. Chị có hai con, một con trai và một con gái."],["杨同乐","您儿子几岁？","Nín érzi jǐ suì?","Con trai chị mấy tuổi?"],["王一雪","他今年五岁。","Tā jīnnián wǔ suì.","Năm nay cháu năm tuổi."],["杨同乐","您女儿多大？","Nín nǚ'ér duō dà?","Con gái chị bao nhiêu tuổi?"],["王一雪","她今年十二岁。","Tā jīnnián shí'èr suì.","Năm nay cháu mười hai tuổi."]]}],"pronunciation":[["Biến điệu thanh 3","nǐ hǎo → ní hǎo","Khi hai âm tiết thanh 3 đứng liền nhau, âm tiết thứ nhất chuyển thành thanh 2."],["Luyện biến điệu","nǎlǐ、kěyǐ、shuǐguǒ、hěn hǎo","Khi đọc liền, chú ý biến điệu nhưng khi viết pinyin vẫn giữ dấu thanh gốc."],["Thanh nhẹ","bàba、māma、gēge、mèimei、háizi","Âm tiết thanh nhẹ đọc ngắn, nhẹ và thường không ghi dấu thanh."],["Phân biệt nghĩa","dōngxi / dōngxī","Một số từ thay đổi nghĩa tùy âm tiết cuối đọc thanh nhẹ hay đọc đủ thanh."],["Luyện đọc","xièxie、yīfu、piàoliang、zǎoshang","Chú ý các âm tiết thanh nhẹ trong từ quen thuộc."]],"quiz":[{"q":"“Tôi có hai người con” nói thế nào?","options":["我有两个孩子。","我有二孩子。","我两个有孩子。"],"answer":0},{"q":"Phủ định của 有 là gì?","options":["不有","没有","不是"],"answer":1},{"q":"多少 nghĩa là gì?","options":["mấy tuổi","bao nhiêu","rất nhiều"],"answer":1},{"q":"Câu nào đúng?","options":["她有二十学生。","她有二十个学生。","她二十个有学生。"],"answer":1},{"q":"哥哥 nghĩa là gì?","options":["anh trai","em trai","chị gái"],"answer":0},{"q":"“Còn bạn thì sao?” nói thế nào?","options":["你吗？","你呢？","你什么？"],"answer":1},{"q":"你家有几口人？ nghĩa là gì?","options":["Nhà bạn ở đâu?","Nhà bạn có mấy người?","Bạn có mấy ngôi nhà?"],"answer":1},{"q":"Lượng từ dùng để đếm người trong gia đình là:","options":["个","本","口"],"answer":2},{"q":"爸爸、妈妈、妹妹___我。","options":["也","和","呢"],"answer":1},{"q":"儿子 nghĩa là gì?","options":["con trai","con gái","trẻ em"],"answer":0},{"q":"女儿 nghĩa là gì?","options":["con gái","em gái","chị gái"],"answer":0},{"q":"孩子 nghĩa là gì?","options":["học sinh","con, trẻ em","người lớn"],"answer":1},{"q":"您儿子几岁？ dùng để hỏi gì?","options":["tên","tuổi của trẻ em","quốc tịch"],"answer":1},{"q":"您女儿多大？ nghĩa là gì?","options":["Con gái chị cao bao nhiêu?","Con gái chị bao nhiêu tuổi?","Con gái chị có lớn không?"],"answer":1},{"q":"他今年五岁。 nghĩa là gì?","options":["Năm nay cậu bé năm tuổi.","Năm nay anh ấy năm mươi tuổi.","Cậu bé có năm người."],"answer":0},{"q":"Điền từ: 我___哥哥。","options":["没有","不是","不"],"answer":0},{"q":"Chọn cụm đúng.","options":["二个哥哥","两个哥哥","两哥哥"],"answer":1},{"q":"Khi hai thanh 3 đứng liền nhau, âm tiết thứ nhất thường đọc thành:","options":["thanh 1","thanh 2","thanh 4"],"answer":1},{"q":"Từ nào có âm tiết cuối đọc thanh nhẹ?","options":["māma","Zhōngguó","Fǎguó"],"answer":0},{"q":"Câu nào dùng đúng 呢?","options":["我有两个哥哥，你呢？","我呢有两个哥哥？","你有呢两个哥哥？"],"answer":0}]};
+
+function speak(text){
+  if (window.AudioManager && typeof window.AudioManager.playText === "function") {
+    window.AudioManager.playText(text);
+    return;
+  }
+  if ("speechSynthesis" in window) {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "zh-CN";
+    u.rate = 0.8;
+    speechSynthesis.speak(u);
+  }
+}
+
+document.getElementById("objectives").innerHTML = lessonData.objectives.map(o =>
+  `<article class="objective-card-v32"><span>${o[0]}</span><h3>${o[1]}</h3><p>${o[2]}</p></article>`
+).join("");
+
+function renderVocabulary(items){
+  document.getElementById("vocabulary").innerHTML = items.map(v =>
+    `<article class="vocab-card-v32">
+      <div class="vocab-top-v32"><h3>${v.hanzi}</h3><button class="audio-btn-v33" onclick="speak('${v.hanzi}')">🔊</button></div>
+      <div class="vocab-pinyin-v32">${v.pinyin}</div>
+      <strong>${v.meaning}</strong>
+      <p>${v.example}</p><small>${v.exampleVi}</small>
+      <button class="audio-btn-v33" onclick="speak('${v.example}')">🔊 Nghe ví dụ</button>
+    </article>`
+  ).join("");
+}
+renderVocabulary(lessonData.vocabulary);
+
+document.getElementById("vocabSearch").addEventListener("input", e => {
+  const k = e.target.value.toLowerCase().trim();
+  renderVocabulary(lessonData.vocabulary.filter(v =>
+    `${v.hanzi} ${v.pinyin} ${v.meaning}`.toLowerCase().includes(k)
+  ));
+});
+
+document.getElementById("patterns").innerHTML = lessonData.patterns.map(p =>
+  `<article class="pattern-card-v32"><h3>${p.title}</h3><p>${p.explain}</p>
+   ${p.examples.map(x=>`<div class="pattern-example-v32">${x}<button class="audio-btn-v33" onclick="speak('${x}')">🔊</button></div>`).join("")}
+  </article>`
+).join("");
+
+document.getElementById("dialogues").innerHTML = lessonData.dialogues.map(d =>
+  `<article class="dialogue-card-v32"><h3>${d.title}</h3>
+   ${d.lines.map(l=>`<div class="dialogue-line-v32"><strong>${l[0]}:</strong>
+   <div><div class="dialogue-hanzi-v32">${l[1]} <button class="audio-btn-v33" onclick="speak('${l[1]}')">🔊</button></div>
+   <div class="dialogue-pinyin-v32">${l[2]}</div><div>${l[3]}</div></div></div>`).join("")}
+  </article>`
+).join("");
+
+document.getElementById("teacherTips").innerHTML = `
+<p>Ghi nhớ: phủ định của <strong>有</strong> là <strong>没有</strong>, không nói “不有”.</p>
+<p>Khi nói “hai” trước lượng từ, thường dùng <strong>两</strong>: 两个哥哥、两个孩子、两本书.</p>
+<p>Hỏi tuổi trẻ em thường dùng <strong>几岁</strong>; hỏi người lớn hơn dùng <strong>多大</strong>.</p>`;
+
+document.getElementById("pronunciation").innerHTML = `
+<div class="pattern-grid-v32">${lessonData.pronunciation.map(p =>
+  `<article class="pattern-card-v32"><h3>${p[0]}</h3><p class="dialogue-hanzi-v32">${p[1]}</p><p>${p[2]}</p><button class="audio-btn-v33" onclick="speak('${p[1].replaceAll("、","，")}')">🔊 Nghe</button></article>`
+).join("")}</div>`;
+
+let cardIndex = 0;
+function renderCard(){
+  const v = lessonData.vocabulary[cardIndex];
+  document.getElementById("cardHanzi").textContent = v.hanzi;
+  document.getElementById("cardPinyin").textContent = v.pinyin;
+  document.getElementById("cardMeaning").textContent = v.meaning;
+  document.getElementById("cardExample").textContent = `${v.example} — ${v.exampleVi}`;
+  document.getElementById("cardCounter").textContent = `${cardIndex+1} / ${lessonData.vocabulary.length}`;
+}
+renderCard();
+document.getElementById("prevCard").onclick = () => {cardIndex=(cardIndex-1+lessonData.vocabulary.length)%lessonData.vocabulary.length;renderCard();};
+document.getElementById("nextCard").onclick = () => {cardIndex=(cardIndex+1)%lessonData.vocabulary.length;renderCard();};
+document.getElementById("flashcard").onclick = () => document.getElementById("flashcard").classList.toggle("is-flipped");
+document.getElementById("cardAudio").onclick = e => {e.stopPropagation();speak(lessonData.vocabulary[cardIndex].hanzi);};
+
+document.getElementById("quiz").innerHTML = lessonData.quiz.map((q,i) =>
+  `<article class="quiz-item-v32"><h3>Câu ${i+1}. ${q.q}</h3>
+   ${q.options.map((o,j)=>`<label class="quiz-option-v32"><input type="radio" name="q${i}" value="${j}"> ${o}</label>`).join("")}
+   <div class="answer-note-v32" id="answer${i}" hidden>Đáp án: <strong>${q.options[q.answer]}</strong></div>
+  </article>`
+).join("");
+
+document.getElementById("submitQuiz").onclick = () => {
+  let score=0;
+  lessonData.quiz.forEach((q,i)=>{
+    const x=document.querySelector(`input[name="q${i}"]:checked`);
+    if(x && Number(x.value)===q.answer) score++;
+  });
+  const percent=Math.round(score/lessonData.quiz.length*100);
+  document.getElementById("quizResult").innerHTML=`Bạn đúng <strong>${score}/${lessonData.quiz.length}</strong> câu — <strong>${percent}%</strong>.`;
+  localStorage.setItem("hsk1Lesson04Progress", String(percent));
+  updateProgress(percent);
+};
+document.getElementById("showAnswers").onclick = () => {
+  lessonData.quiz.forEach((_,i)=>document.getElementById(`answer${i}`).hidden=false);
+};
+
+function updateProgress(percent){
+  document.getElementById("progressBar").style.width=percent+"%";
+  document.getElementById("progressText").textContent=percent+"% hoàn thành";
+}
+updateProgress(Number(localStorage.getItem("hsk1Lesson04Progress")||0));
+document.getElementById("resetProgress").onclick=()=>{
+  localStorage.removeItem("hsk1Lesson04Progress");
+  document.querySelectorAll('#quiz input').forEach(x=>x.checked=false);
+  document.querySelectorAll('.answer-note-v32').forEach(x=>x.hidden=true);
+  document.getElementById("quizResult").textContent="";
+  updateProgress(0);
+};
+</script>
+
+<div id="audioVersionBadge" style="position:fixed;left:14px;bottom:14px;z-index:9999;background:#0f766e;color:white;padding:7px 11px;border-radius:999px;font:700 13px 'Times New Roman',serif;box-shadow:0 8px 24px rgba(0,0,0,.18)">🔊 Audio 3.3.1</div>
+</body>
+</html>
