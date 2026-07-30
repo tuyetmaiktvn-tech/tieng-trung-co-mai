@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HSK1 Bài 9: 我明天上午在学校学习 – học câu tồn hiện, thứ tự thời gian và nơi chốn, cùng cách dùng 第." />
+  <meta name="theme-color" content="#2563eb" />
+  <title>HSK1 Bài 9: 我明天上午在学校学习 | Tiếng Trung Cô Mai</title>
+
+  <style>
+    :root{
+      --bg:#f6f8fc;
+      --surface:#ffffff;
+      --surface-2:#f8fafc;
+      --text:#172033;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --primary:#2563eb;
+      --primary-2:#7c3aed;
+      --success:#16a34a;
+      --warning:#d97706;
+      --danger:#dc2626;
+      --shadow:0 14px 40px rgba(15,23,42,.08);
+      --radius:20px;
+      --radius-sm:12px;
+      --max:1180px;
+    }
+
+    [data-theme="dark"]{
+      --bg:#0f172a;
+      --surface:#111827;
+      --surface-2:#1e293b;
+      --text:#f8fafc;
+      --muted:#cbd5e1;
+      --line:#334155;
+      --shadow:0 18px 45px rgba(0,0,0,.28);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+      transition:background .2s,color .2s;
+    }
+
+    button,input,textarea,select{font:inherit}
+    button{cursor:pointer}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(var(--max),calc(100% - 28px));margin:auto}
+
+    .topbar{
+      position:sticky;top:0;z-index:1000;
+      backdrop-filter:blur(14px);
+      background:color-mix(in srgb,var(--surface) 88%,transparent);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar-inner{
+      min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+    }
+    .brand{font-weight:900}
+    .brand span{color:var(--primary)}
+    .top-actions{display:flex;gap:8px;align-items:center}
+    .icon-btn{
+      width:42px;height:42px;border:1px solid var(--line);border-radius:12px;
+      background:var(--surface);color:var(--text);display:grid;place-items:center
+    }
+
+    .progress-shell{
+      position:sticky;top:68px;z-index:900;
+      background:var(--surface);border-bottom:1px solid var(--line)
+    }
+    .progress-wrap{padding:10px 0}
+    .progress-row{display:flex;justify-content:space-between;gap:16px;font-size:.9rem;color:var(--muted);margin-bottom:6px}
+    .progress-bar{height:10px;background:var(--surface-2);border-radius:999px;overflow:hidden}
+    .progress-fill{height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--primary-2));transition:width .35s ease}
+
+    .hero{padding:58px 0 30px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:stretch}
+    .hero-card,.lesson-meta,.section-card{
+      background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)
+    }
+    .hero-card{padding:30px}
+    .lesson-meta{padding:24px}
+    .eyebrow{
+      display:inline-flex;padding:8px 12px;border-radius:999px;background:#dbeafe;color:#1d4ed8;
+      font-weight:800;font-size:.9rem
+    }
+    [data-theme="dark"] .eyebrow{background:#1e3a8a;color:#dbeafe}
+    h1{font-size:clamp(2rem,5vw,4rem);line-height:1.08;margin:16px 0 10px}
+    h2{font-size:clamp(1.45rem,3vw,2.1rem);margin:0}
+    h3{margin-top:0}
+    .subtitle{font-size:1.08rem;color:var(--muted);margin:0}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .btn{
+      border:0;border-radius:12px;padding:12px 16px;font-weight:800;
+      background:var(--surface-2);color:var(--text)
+    }
+    .btn-primary{background:var(--primary);color:white}
+    .btn-success{background:var(--success);color:white}
+    .meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .meta-item{padding:14px;border-radius:14px;background:var(--surface-2)}
+    .meta-item strong{display:block;font-size:1.2rem}
+
+    .section{padding:18px 0}
+    .section-heading{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:14px}
+    .section-heading p{margin:4px 0 0;color:var(--muted)}
+    .section-card{padding:24px}
+    .complete-btn{
+      border:1px solid var(--line);background:var(--surface);color:var(--text);
+      border-radius:10px;padding:9px 12px;font-weight:700
+    }
+    .complete-btn.done{background:#dcfce7;color:#166534;border-color:#86efac}
+
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+    .objective,.memory-item,.grammar-card,.mistake-card,.summary-item{
+      padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)
+    }
+
+    .search-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+    .search-row input{
+      flex:1;min-width:220px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;
+      background:var(--surface);color:var(--text)
+    }
+
+    .vocab-card{
+      position:relative;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)
+    }
+    .vocab-actions{position:absolute;top:12px;right:12px;display:flex;gap:6px}
+    .mini-btn{
+      width:34px;height:34px;border-radius:10px;border:1px solid var(--line);
+      background:var(--surface-2);color:var(--text)
+    }
+    .mini-btn.active{background:#fef3c7;color:#92400e}
+    .hanzi{font-size:2rem;font-weight:900;color:var(--primary);padding-right:78px}
+    .pinyin{color:var(--primary-2);font-weight:800}
+    .meaning{font-weight:800;margin:6px 0}
+    .example{font-size:.94rem;color:var(--muted);margin-top:8px}
+
+    .formula{
+      padding:14px;text-align:center;border-radius:14px;background:var(--surface-2);
+      color:var(--primary);font-weight:900;margin:12px 0
+    }
+    .note{padding:12px 14px;border-left:4px solid var(--warning);background:var(--surface-2);border-radius:10px}
+    .wrong{color:var(--danger);font-weight:800}
+    .correct{color:var(--success);font-weight:800}
+
+    .mindmap{
+      display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:18px;align-items:center
+    }
+    .mind-col{display:grid;gap:12px}
+    .mind-node{padding:14px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);text-align:center;font-weight:800}
+    .mind-center{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:white;font-size:1.7rem;padding:26px}
+
+    .dialogue-list{display:grid;gap:12px}
+    .bubble{max-width:82%;padding:14px 16px;border-radius:18px;background:#dbeafe}
+    .bubble.right{margin-left:auto;background:#ede9fe}
+    [data-theme="dark"] .bubble{background:#1e3a8a}
+    [data-theme="dark"] .bubble.right{background:#4c1d95}
+    .speaker{font-weight:900}
+    .pinyin-line,.vi-line{font-size:.93rem;color:var(--muted)}
+    .hide{display:none!important}
+
+    .audio-block{
+      display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+      padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--surface-2)
+    }
+
+    .exercise,.quiz-question{padding:16px;border:1px solid var(--line);border-radius:14px;margin-bottom:12px}
+    .exercise input,.exercise textarea,.notes-area{
+      width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text)
+    }
+    .feedback{margin-top:8px;min-height:22px}
+    .quiz-question label{display:block;padding:8px;border-radius:9px}
+    .quiz-question label:hover{background:var(--surface-2)}
+    .score-box{display:none;margin-top:12px;padding:14px;border-radius:12px;background:#dcfce7;color:#166534;font-weight:900}
+
+    .flashcards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .flashcard{height:210px;perspective:1000px}
+    .flashcard-inner{position:relative;width:100%;height:100%;transition:transform .55s;transform-style:preserve-3d}
+    .flashcard.flipped .flashcard-inner{transform:rotateY(180deg)}
+    .flash-face{
+      position:absolute;inset:0;backface-visibility:hidden;border:1px solid var(--line);
+      border-radius:18px;background:var(--surface);display:flex;flex-direction:column;align-items:center;
+      justify-content:center;text-align:center;padding:18px;box-shadow:var(--shadow)
+    }
+    .flash-back{transform:rotateY(180deg)}
+    .flash-face strong{font-size:2rem;color:var(--primary)}
+    .flash-actions{display:flex;gap:8px;margin-top:12px}
+
+    .favorite-panel{display:none;margin-top:14px}
+    .favorite-panel.show{display:block}
+    .favorite-list{display:flex;gap:8px;flex-wrap:wrap}
+    .favorite-chip{padding:8px 10px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line)}
+
+    .completion{
+      text-align:center;padding:28px;border-radius:20px;background:linear-gradient(135deg,#dcfce7,#dbeafe)
+    }
+    [data-theme="dark"] .completion{background:linear-gradient(135deg,#14532d,#1e3a8a)}
+    footer{padding:38px 0;text-align:center;color:var(--muted)}
+
+    @media (max-width:900px){
+      .hero-grid,.grid-2,.grid-3,.grid-4,.mindmap{grid-template-columns:1fr}
+      .flashcards{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      .container{width:min(100% - 20px,var(--max))}
+      .hero{padding-top:34px}
+      .hero-card,.lesson-meta,.section-card{padding:18px}
+      .meta-grid,.flashcards{grid-template-columns:1fr}
+      .bubble{max-width:94%}
+      .progress-shell{top:68px}
+      .top-actions .text-label{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="../index.html">Tiếng Trung <span>Cô Mai</span></a>
+      <div class="top-actions">
+        <button class="icon-btn" id="favoritesToggle" title="Từ yêu thích">⭐</button>
+        <button class="icon-btn" id="themeToggle" title="Chế độ sáng/tối">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="progress-shell">
+    <div class="container progress-wrap">
+      <div class="progress-row">
+        <span>📊 Tiến độ bài học</span>
+        <strong id="progressText">0%</strong>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+  </div>
+
+  <main id="app"></main>
+
+  <footer>
+    <div class="container">© Tiếng Trung Cô Mai • Học từ gốc – Vững mọi mốc</div>
+  </footer>
+
+  <script>
+    /* =========================================================
+       1. DỮ LIỆU BÀI HỌC
+       Chỉ cần thay nội dung trong lessonData cho từng bài.
+       ========================================================= */
+    const lessonData = {
+  "id": "hsk1-lesson09",
+  "level": "HSK 1",
+  "lesson": 9,
+  "title": "我明天上午在学校学习",
+  "titleVi": "Sáng mai tôi học ở trường",
+  "topic": "Thời gian, nơi chốn, câu tồn hiện và số thứ tự",
+  "duration": "75–90 phút",
+  "difficulty": "Cơ bản",
+  "intro": "Bài 9 giúp học viên nói rõ thời gian và nơi diễn ra hoạt động, mô tả sự tồn tại của người hoặc đồ vật bằng 有 và 是, đồng thời sử dụng 第 để biểu đạt số thứ tự.",
+  "objectives": [
+    "Nói được hoạt động diễn ra vào thời gian và địa điểm cụ thể",
+    "Sắp xếp đúng thứ tự từ ngữ chỉ thời gian và nơi chốn trong câu",
+    "Dùng 有 để nói một nơi có người hoặc đồ vật",
+    "Dùng 是 trong câu tồn hiện để giới thiệu người hoặc sự vật xác định",
+    "Dùng 第 để biểu đạt số thứ tự"
+  ],
+  "vocabulary": [
+    {
+      "id": "v1",
+      "hanzi": "明天",
+      "pinyin": "míngtiān",
+      "meaning": "ngày mai",
+      "type": "Danh từ thời gian",
+      "example": "我明天上午在学校学习。",
+      "examplePinyin": "Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí.",
+      "exampleVi": "Sáng mai tôi học ở trường.",
+      "audio": ""
+    },
+    {
+      "id": "v2",
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "meaning": "trường học",
+      "type": "Danh từ",
+      "example": "学校前边有一家书店。",
+      "examplePinyin": "Xuéxiào qiánbian yǒu yì jiā shūdiàn.",
+      "exampleVi": "Phía trước trường có một hiệu sách.",
+      "audio": ""
+    },
+    {
+      "id": "v3",
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "meaning": "học, học tập",
+      "type": "Động từ",
+      "example": "我在学校学习汉语。",
+      "examplePinyin": "Wǒ zài xuéxiào xuéxí Hànyǔ.",
+      "exampleVi": "Tôi học tiếng Trung ở trường.",
+      "audio": ""
+    },
+    {
+      "id": "v4",
+      "hanzi": "前边",
+      "pinyin": "qiánbian",
+      "meaning": "phía trước",
+      "type": "Phương vị từ",
+      "example": "电影院在学校前边。",
+      "examplePinyin": "Diànyǐngyuàn zài xuéxiào qiánbian.",
+      "exampleVi": "Rạp chiếu phim ở phía trước trường học.",
+      "audio": ""
+    },
+    {
+      "id": "v5",
+      "hanzi": "后边",
+      "pinyin": "hòubian",
+      "meaning": "phía sau",
+      "type": "Phương vị từ",
+      "example": "书店在学校后边。",
+      "examplePinyin": "Shūdiàn zài xuéxiào hòubian.",
+      "exampleVi": "Hiệu sách ở phía sau trường học.",
+      "audio": ""
+    },
+    {
+      "id": "v6",
+      "hanzi": "外边",
+      "pinyin": "wàibian",
+      "meaning": "bên ngoài",
+      "type": "Phương vị từ",
+      "example": "学校外边有一个超市。",
+      "examplePinyin": "Xuéxiào wàibian yǒu yí ge chāoshì.",
+      "exampleVi": "Bên ngoài trường có một siêu thị.",
+      "audio": ""
+    },
+    {
+      "id": "v7",
+      "hanzi": "里边",
+      "pinyin": "lǐbian",
+      "meaning": "bên trong",
+      "type": "Phương vị từ",
+      "example": "教室里边有很多学生。",
+      "examplePinyin": "Jiàoshì lǐbian yǒu hěn duō xuésheng.",
+      "exampleVi": "Trong lớp học có rất nhiều học sinh.",
+      "audio": ""
+    },
+    {
+      "id": "v8",
+      "hanzi": "书店",
+      "pinyin": "shūdiàn",
+      "meaning": "hiệu sách",
+      "type": "Danh từ",
+      "example": "我下午去书店买书。",
+      "examplePinyin": "Wǒ xiàwǔ qù shūdiàn mǎi shū.",
+      "exampleVi": "Chiều tôi đi hiệu sách mua sách.",
+      "audio": ""
+    },
+    {
+      "id": "v9",
+      "hanzi": "书",
+      "pinyin": "shū",
+      "meaning": "sách",
+      "type": "Danh từ",
+      "example": "椅子上有一本书。",
+      "examplePinyin": "Yǐzi shàng yǒu yì běn shū.",
+      "exampleVi": "Trên ghế có một quyển sách.",
+      "audio": ""
+    },
+    {
+      "id": "v10",
+      "hanzi": "中文",
+      "pinyin": "Zhōngwén",
+      "meaning": "tiếng Trung, chữ Trung Quốc",
+      "type": "Danh từ",
+      "example": "这是一本中文书。",
+      "examplePinyin": "Zhè shì yì běn Zhōngwén shū.",
+      "exampleVi": "Đây là một quyển sách tiếng Trung.",
+      "audio": ""
+    },
+    {
+      "id": "v11",
+      "hanzi": "本",
+      "pinyin": "běn",
+      "meaning": "quyển, cuốn",
+      "type": "Lượng từ",
+      "example": "我有两本中文书。",
+      "examplePinyin": "Wǒ yǒu liǎng běn Zhōngwén shū.",
+      "exampleVi": "Tôi có hai quyển sách tiếng Trung.",
+      "audio": ""
+    },
+    {
+      "id": "v12",
+      "hanzi": "椅子",
+      "pinyin": "yǐzi",
+      "meaning": "cái ghế",
+      "type": "Danh từ",
+      "example": "椅子上有一本书。",
+      "examplePinyin": "Yǐzi shàng yǒu yì běn shū.",
+      "exampleVi": "Trên ghế có một quyển sách.",
+      "audio": ""
+    },
+    {
+      "id": "v13",
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "meaning": "trên, phía trên",
+      "type": "Phương vị từ",
+      "example": "桌子上有一部手机。",
+      "examplePinyin": "Zhuōzi shàng yǒu yí bù shǒujī.",
+      "exampleVi": "Trên bàn có một chiếc điện thoại.",
+      "audio": ""
+    },
+    {
+      "id": "v14",
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "meaning": "có",
+      "type": "Động từ",
+      "example": "学校前边有一家书店。",
+      "examplePinyin": "Xuéxiào qiánbian yǒu yì jiā shūdiàn.",
+      "exampleVi": "Phía trước trường có một hiệu sách.",
+      "audio": ""
+    },
+    {
+      "id": "v15",
+      "hanzi": "没有",
+      "pinyin": "méiyǒu",
+      "meaning": "không có",
+      "type": "Động từ",
+      "example": "教室里没有老师。",
+      "examplePinyin": "Jiàoshì lǐ méiyǒu lǎoshī.",
+      "exampleVi": "Trong lớp học không có giáo viên.",
+      "audio": ""
+    },
+    {
+      "id": "v16",
+      "hanzi": "第",
+      "pinyin": "dì",
+      "meaning": "thứ, số thứ tự",
+      "type": "Tiền tố",
+      "example": "这是我买的第一本中文书。",
+      "examplePinyin": "Zhè shì wǒ mǎi de dì-yī běn Zhōngwén shū.",
+      "exampleVi": "Đây là quyển sách tiếng Trung đầu tiên tôi mua.",
+      "audio": ""
+    },
+    {
+      "id": "v17",
+      "hanzi": "第一",
+      "pinyin": "dì-yī",
+      "meaning": "thứ nhất, đầu tiên",
+      "type": "Số thứ tự",
+      "example": "第一课很有意思。",
+      "examplePinyin": "Dì-yī kè hěn yǒuyìsi.",
+      "exampleVi": "Bài thứ nhất rất thú vị.",
+      "audio": ""
+    },
+    {
+      "id": "v18",
+      "hanzi": "第二",
+      "pinyin": "dì-èr",
+      "meaning": "thứ hai",
+      "type": "Số thứ tự",
+      "example": "这是第二杯咖啡。",
+      "examplePinyin": "Zhè shì dì-èr bēi kāfēi.",
+      "exampleVi": "Đây là cốc cà phê thứ hai.",
+      "audio": ""
+    },
+    {
+      "id": "v19",
+      "hanzi": "教室",
+      "pinyin": "jiàoshì",
+      "meaning": "phòng học, lớp học",
+      "type": "Danh từ",
+      "example": "老师在教室里。",
+      "examplePinyin": "Lǎoshī zài jiàoshì lǐ.",
+      "exampleVi": "Giáo viên ở trong lớp học.",
+      "audio": ""
+    },
+    {
+      "id": "v20",
+      "hanzi": "学生",
+      "pinyin": "xuésheng",
+      "meaning": "học sinh, sinh viên",
+      "type": "Danh từ",
+      "example": "教室里有很多学生。",
+      "examplePinyin": "Jiàoshì lǐ yǒu hěn duō xuésheng.",
+      "exampleVi": "Trong lớp có rất nhiều học sinh.",
+      "audio": ""
+    },
+    {
+      "id": "v21",
+      "hanzi": "图书馆",
+      "pinyin": "túshūguǎn",
+      "meaning": "thư viện",
+      "type": "Danh từ",
+      "example": "我下午在图书馆看书。",
+      "examplePinyin": "Wǒ xiàwǔ zài túshūguǎn kàn shū.",
+      "exampleVi": "Chiều tôi đọc sách ở thư viện.",
+      "audio": ""
+    },
+    {
+      "id": "v22",
+      "hanzi": "今天",
+      "pinyin": "jīntiān",
+      "meaning": "hôm nay",
+      "type": "Danh từ thời gian",
+      "example": "我今天在家学习。",
+      "examplePinyin": "Wǒ jīntiān zài jiā xuéxí.",
+      "exampleVi": "Hôm nay tôi học ở nhà.",
+      "audio": ""
+    },
+    {
+      "id": "v23",
+      "hanzi": "昨天",
+      "pinyin": "zuótiān",
+      "meaning": "hôm qua",
+      "type": "Danh từ thời gian",
+      "example": "我昨天在学校学习。",
+      "examplePinyin": "Wǒ zuótiān zài xuéxiào xuéxí.",
+      "exampleVi": "Hôm qua tôi học ở trường.",
+      "audio": ""
+    }
+  ],
+  "memory": [
+    {
+      "title": "Thời gian trước nơi chốn",
+      "text": "Chủ ngữ + thời gian + 在 + nơi chốn + động từ"
+    },
+    {
+      "title": "Câu tồn hiện với 有",
+      "text": "Nơi chốn + 有 + người / đồ vật"
+    },
+    {
+      "title": "Phủ định 有",
+      "text": "Dùng 没有, không dùng 不有"
+    },
+    {
+      "title": "Số thứ tự",
+      "text": "第 + số đếm + lượng từ + danh từ"
+    }
+  ],
+  "grammar": [
+    {
+      "title": "1. Câu tồn hiện với 有",
+      "explanation": "Dùng để nói tại một địa điểm có người hoặc đồ vật nào đó. Thành phần chỉ nơi chốn đứng đầu câu, sau đó là 有 và danh từ chỉ người hoặc vật.",
+      "formula": "Nơi chốn + 有 + số lượng + danh từ",
+      "examples": [
+        "学校前边有一家书店。",
+        "椅子上有一本中文书。",
+        "教室里有很多学生。"
+      ],
+      "note": "Phủ định của 有 là 没有: 教室里没有老师。"
+    },
+    {
+      "title": "2. Câu tồn hiện với 是",
+      "explanation": "Dùng 是 khi người hoặc sự vật phía sau đã được xác định hoặc người nói muốn giới thiệu chính xác đó là ai, là vật gì.",
+      "formula": "Nơi chốn + 是 + người / sự vật xác định",
+      "examples": [
+        "教室里是我们的老师。",
+        "前边是学校，后边是医院。"
+      ],
+      "note": "有 nhấn mạnh sự tồn tại; 是 nhấn mạnh sự xác định hoặc đồng nhất."
+    },
+    {
+      "title": "3. Thứ tự thời gian và nơi chốn",
+      "explanation": "Khi từ ngữ chỉ thời gian và nơi chốn cùng làm trạng ngữ, thời gian thường đứng trước cụm giới từ chỉ nơi chốn.",
+      "formula": "Chủ ngữ + thời gian + 在 + nơi chốn + động từ",
+      "examples": [
+        "我明天上午在学校学习。",
+        "安妮今天下午在家里学英语。",
+        "我们晚上在电影院看电影。"
+      ],
+      "note": "Không nói: 我在学校明天上午学习。"
+    },
+    {
+      "title": "4. 第 biểu đạt số thứ tự",
+      "explanation": "第 đứng trước số đếm để tạo số thứ tự. Khi đi với danh từ, sau số thứ tự thường có lượng từ phù hợp.",
+      "formula": "第 + số đếm + lượng từ + danh từ",
+      "examples": [
+        "第一课",
+        "第二本书",
+        "第三杯咖啡",
+        "第五个学生"
+      ],
+      "note": "第 không dùng trong số lượng thông thường: 两本书, không nói 第二本书 khi chỉ có nghĩa là hai quyển."
+    }
+  ],
+  "mistakes": [
+    {
+      "title": "Đặt nơi chốn trước thời gian",
+      "wrong": "我在学校明天上午学习。",
+      "correct": "我明天上午在学校学习。",
+      "tip": "Khi cùng xuất hiện, thời gian thường đứng trước nơi chốn."
+    },
+    {
+      "title": "Dùng 不有 để phủ định",
+      "wrong": "教室里不有老师。",
+      "correct": "教室里没有老师。",
+      "tip": "Phủ định của 有 là 没有."
+    },
+    {
+      "title": "Thiếu lượng từ sau số thứ tự",
+      "wrong": "这是第二书。",
+      "correct": "这是第二本书。",
+      "tip": "Sau 第 + số thường cần lượng từ trước danh từ."
+    },
+    {
+      "title": "Dùng 有 thay cho 在",
+      "wrong": "我有学校学习。",
+      "correct": "我在学校学习。",
+      "tip": "在 chỉ nơi diễn ra hoạt động; 有 biểu thị sự tồn tại hoặc sở hữu."
+    },
+    {
+      "title": "Đảo vị trí trong câu tồn hiện",
+      "wrong": "一本书有椅子上。",
+      "correct": "椅子上有一本书。",
+      "tip": "Nơi chốn phải đứng đầu câu tồn hiện."
+    }
+  ],
+  "mindmap": {
+    "center": "时间 + 地点",
+    "left": [
+      "明天上午",
+      "今天下午",
+      "在学校学习",
+      "在家学英语"
+    ],
+    "right": [
+      "地方 + 有 + 人/物",
+      "椅子上有一本书",
+      "没有",
+      "第 + 数 + 量词 + 名词"
+    ]
+  },
+  "dialogues": [
+    {
+      "speaker": "白家月",
+      "side": "left",
+      "hanzi": "你明天上午在哪儿学习？",
+      "pinyin": "Nǐ míngtiān shàngwǔ zài nǎr xuéxí?",
+      "vi": "Sáng mai bạn học ở đâu?",
+      "audio": ""
+    },
+    {
+      "speaker": "安妮",
+      "side": "right",
+      "hanzi": "我明天上午在学校学习。",
+      "pinyin": "Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí.",
+      "vi": "Sáng mai tôi học ở trường.",
+      "audio": ""
+    },
+    {
+      "speaker": "白家月",
+      "side": "left",
+      "hanzi": "下午呢？",
+      "pinyin": "Xiàwǔ ne?",
+      "vi": "Còn buổi chiều thì sao?",
+      "audio": ""
+    },
+    {
+      "speaker": "安妮",
+      "side": "right",
+      "hanzi": "我下午在家里学英语。",
+      "pinyin": "Wǒ xiàwǔ zài jiā lǐ xué Yīngyǔ.",
+      "vi": "Buổi chiều tôi học tiếng Anh ở nhà.",
+      "audio": ""
+    },
+    {
+      "speaker": "李文",
+      "side": "left",
+      "hanzi": "学校前边有什么？",
+      "pinyin": "Xuéxiào qiánbian yǒu shénme?",
+      "vi": "Phía trước trường có gì?",
+      "audio": ""
+    },
+    {
+      "speaker": "白家月",
+      "side": "right",
+      "hanzi": "学校前边有一家书店。",
+      "pinyin": "Xuéxiào qiánbian yǒu yì jiā shūdiàn.",
+      "vi": "Phía trước trường có một hiệu sách.",
+      "audio": ""
+    },
+    {
+      "speaker": "李文",
+      "side": "left",
+      "hanzi": "学校后边呢？",
+      "pinyin": "Xuéxiào hòubian ne?",
+      "vi": "Còn phía sau trường thì sao?",
+      "audio": ""
+    },
+    {
+      "speaker": "白家月",
+      "side": "right",
+      "hanzi": "后边是一个医院。",
+      "pinyin": "Hòubian shì yí ge yīyuàn.",
+      "vi": "Phía sau là một bệnh viện.",
+      "audio": ""
+    },
+    {
+      "speaker": "老师",
+      "side": "left",
+      "hanzi": "椅子上有什么？",
+      "pinyin": "Yǐzi shàng yǒu shénme?",
+      "vi": "Trên ghế có gì?",
+      "audio": ""
+    },
+    {
+      "speaker": "学生",
+      "side": "right",
+      "hanzi": "椅子上有一本中文书。",
+      "pinyin": "Yǐzi shàng yǒu yì běn Zhōngwén shū.",
+      "vi": "Trên ghế có một quyển sách tiếng Trung.",
+      "audio": ""
+    },
+    {
+      "speaker": "老师",
+      "side": "left",
+      "hanzi": "这是你的第一本中文书吗？",
+      "pinyin": "Zhè shì nǐ de dì-yī běn Zhōngwén shū ma?",
+      "vi": "Đây có phải là quyển sách tiếng Trung đầu tiên của bạn không?",
+      "audio": ""
+    },
+    {
+      "speaker": "学生",
+      "side": "right",
+      "hanzi": "不是，这是我的第二本中文书。",
+      "pinyin": "Bú shì, zhè shì wǒ de dì-èr běn Zhōngwén shū.",
+      "vi": "Không phải, đây là quyển sách tiếng Trung thứ hai của tôi.",
+      "audio": ""
+    }
+  ],
+  "listening": {
+    "title": "Nghe và chọn đáp án",
+    "instruction": "Nghe câu rồi chọn địa điểm đúng.",
+    "audio": "",
+    "question": "安妮明天上午在哪儿学习？",
+    "options": [
+      "在学校",
+      "在医院",
+      "在书店",
+      "在电影院"
+    ],
+    "answer": 0
+  },
+  "speaking": [
+    "Nói lịch học của bạn ngày mai theo mẫu: 我明天上午在……学习。",
+    "Quan sát phòng và nói ba câu theo mẫu: ……上有……。",
+    "Hỏi bạn học: 你今天下午在哪儿学习？",
+    "Nói vị trí của trường, bệnh viện hoặc hiệu sách bằng 前边 / 后边。",
+    "Nói ba số thứ tự: 第一、第二、第三 và đặt câu với lượng từ."
+  ],
+  "exercises": [
+    {
+      "id": "e1",
+      "type": "input",
+      "question": "Điền từ còn thiếu: 我明天上午___学校学习。",
+      "answers": [
+        "在"
+      ]
+    },
+    {
+      "id": "e2",
+      "type": "input",
+      "question": "Sắp xếp thành câu: 学习 / 我 / 明天上午 / 在学校",
+      "answers": [
+        "我明天上午在学校学习"
+      ]
+    },
+    {
+      "id": "e3",
+      "type": "input",
+      "question": "Điền 有 hoặc 在: 椅子上___一本书。",
+      "answers": [
+        "有"
+      ]
+    },
+    {
+      "id": "e4",
+      "type": "input",
+      "question": "Điền 有 hoặc 在: 我下午___图书馆看书。",
+      "answers": [
+        "在"
+      ]
+    },
+    {
+      "id": "e5",
+      "type": "input",
+      "question": "Viết câu phủ định: 教室里有老师。",
+      "answers": [
+        "教室里没有老师"
+      ]
+    },
+    {
+      "id": "e6",
+      "type": "input",
+      "question": "Dịch sang tiếng Trung: Phía trước trường có một hiệu sách.",
+      "answers": [
+        "学校前边有一家书店"
+      ]
+    },
+    {
+      "id": "e7",
+      "type": "input",
+      "question": "Dịch sang tiếng Việt: 椅子上有一本中文书。",
+      "answers": [
+        "Trên ghế có một quyển sách tiếng Trung",
+        "Trên cái ghế có một quyển sách tiếng Trung"
+      ]
+    },
+    {
+      "id": "e8",
+      "type": "input",
+      "question": "Điền lượng từ: 这是我的第二___中文书。",
+      "answers": [
+        "本"
+      ]
+    },
+    {
+      "id": "e9",
+      "type": "input",
+      "question": "Sửa câu sai: 我在学校明天上午学习。",
+      "answers": [
+        "我明天上午在学校学习"
+      ]
+    },
+    {
+      "id": "e10",
+      "type": "input",
+      "question": "Hoàn thành câu theo thông tin của bạn: 我今天下午在______。",
+      "answers": [
+        "家学习",
+        "学校学习",
+        "图书馆看书"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question": "Câu nào đúng?",
+      "options": [
+        "我在学校明天学习。",
+        "我明天在学校学习。",
+        "我学习明天在学校。"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q2",
+      "question": "“Phía trước trường có một hiệu sách” là câu nào?",
+      "options": [
+        "学校前边有一家书店。",
+        "书店有学校前边。",
+        "学校在书店前边有。"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q3",
+      "question": "Phủ định của 有 là gì?",
+      "options": [
+        "不有",
+        "没在",
+        "没有"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q4",
+      "question": "“Quyển sách thứ hai” nói thế nào?",
+      "options": [
+        "两本书",
+        "第二本书",
+        "第两书"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q5",
+      "question": "Trong câu có cả thời gian và nơi chốn, thứ tự thông thường là gì?",
+      "options": [
+        "Nơi chốn trước thời gian",
+        "Thời gian trước nơi chốn",
+        "Động từ đứng đầu"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q6",
+      "question": "Điền từ: 椅子上___一本书。",
+      "options": [
+        "在",
+        "有",
+        "是有"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q7",
+      "question": "Điền từ: 我下午___图书馆看书。",
+      "options": [
+        "在",
+        "有",
+        "第"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q8",
+      "question": "Câu nào dùng 第 đúng?",
+      "options": [
+        "第三杯咖啡",
+        "三第咖啡",
+        "第咖啡三杯"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q9",
+      "question": "“Bên trong lớp học” là gì?",
+      "options": [
+        "教室前边",
+        "教室后边",
+        "教室里边"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q10",
+      "question": "Câu “我明天上午在学校学习” nghĩa là gì?",
+      "options": [
+        "Chiều mai tôi học ở nhà.",
+        "Sáng mai tôi học ở trường.",
+        "Sáng nay tôi làm việc ở trường."
+      ],
+      "answer": 1
+    }
+  ],
+  "summary": [
+    {
+      "title": "Trật tự câu",
+      "text": "Chủ ngữ + thời gian + 在 + nơi chốn + động từ"
+    },
+    {
+      "title": "Câu tồn hiện",
+      "text": "Nơi chốn + 有 / 是 + người hoặc sự vật"
+    },
+    {
+      "title": "Số thứ tự",
+      "text": "第 + số đếm + lượng từ + danh từ"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "f1",
+      "front": "明天",
+      "pinyin": "míngtiān",
+      "back": "ngày mai",
+      "example": "我明天上午在学校学习。"
+    },
+    {
+      "id": "f2",
+      "front": "学校",
+      "pinyin": "xuéxiào",
+      "back": "trường học",
+      "example": "学校前边有一家书店。"
+    },
+    {
+      "id": "f3",
+      "front": "学习",
+      "pinyin": "xuéxí",
+      "back": "học, học tập",
+      "example": "我在学校学习汉语。"
+    },
+    {
+      "id": "f4",
+      "front": "前边",
+      "pinyin": "qiánbian",
+      "back": "phía trước",
+      "example": "学校前边有一家书店。"
+    },
+    {
+      "id": "f5",
+      "front": "后边",
+      "pinyin": "hòubian",
+      "back": "phía sau",
+      "example": "医院在学校后边。"
+    },
+    {
+      "id": "f6",
+      "front": "外边",
+      "pinyin": "wàibian",
+      "back": "bên ngoài",
+      "example": "学校外边有一个超市。"
+    },
+    {
+      "id": "f7",
+      "front": "里边",
+      "pinyin": "lǐbian",
+      "back": "bên trong",
+      "example": "教室里边有很多学生。"
+    },
+    {
+      "id": "f8",
+      "front": "书店",
+      "pinyin": "shūdiàn",
+      "back": "hiệu sách",
+      "example": "我去书店买书。"
+    },
+    {
+      "id": "f9",
+      "front": "书",
+      "pinyin": "shū",
+      "back": "sách",
+      "example": "椅子上有一本书。"
+    },
+    {
+      "id": "f10",
+      "front": "本",
+      "pinyin": "běn",
+      "back": "quyển, cuốn",
+      "example": "一本中文书。"
+    },
+    {
+      "id": "f11",
+      "front": "椅子",
+      "pinyin": "yǐzi",
+      "back": "cái ghế",
+      "example": "椅子上有一本书。"
+    },
+    {
+      "id": "f12",
+      "front": "有",
+      "pinyin": "yǒu",
+      "back": "có",
+      "example": "学校前边有一家书店。"
+    },
+    {
+      "id": "f13",
+      "front": "没有",
+      "pinyin": "méiyǒu",
+      "back": "không có",
+      "example": "教室里没有老师。"
+    },
+    {
+      "id": "f14",
+      "front": "第",
+      "pinyin": "dì",
+      "back": "thứ, số thứ tự",
+      "example": "这是第一本书。"
+    },
+    {
+      "id": "f15",
+      "front": "第一",
+      "pinyin": "dì-yī",
+      "back": "thứ nhất, đầu tiên",
+      "example": "第一课。"
+    },
+    {
+      "id": "f16",
+      "front": "第二",
+      "pinyin": "dì-èr",
+      "back": "thứ hai",
+      "example": "第二本中文书。"
+    },
+    {
+      "id": "f17",
+      "front": "教室",
+      "pinyin": "jiàoshì",
+      "back": "phòng học",
+      "example": "老师在教室里。"
+    },
+    {
+      "id": "f18",
+      "front": "图书馆",
+      "pinyin": "túshūguǎn",
+      "back": "thư viện",
+      "example": "我下午在图书馆看书。"
+    }
+  ]
+};
+
+    /* =========================================================
+       2. HỆ THỐNG LƯU TRỮ
+       ========================================================= */
+    const key = name => `${lessonData.id}:${name}`;
+
+    const state = {
+      theme: localStorage.getItem("site-theme") || "light",
+      favorites: JSON.parse(localStorage.getItem(key("favorites")) || "[]"),
+      completed: JSON.parse(localStorage.getItem(key("completed")) || "[]"),
+      notes: localStorage.getItem(key("notes")) || "",
+      quizScore: Number(localStorage.getItem(key("quizScore")) || 0),
+      hidePinyin: localStorage.getItem(key("hidePinyin")) === "true",
+      hideVi: localStorage.getItem(key("hideVi")) === "true"
+    };
+
+    document.documentElement.dataset.theme = state.theme;
+
+    function saveState(){
+      localStorage.setItem(key("favorites"),JSON.stringify(state.favorites));
+      localStorage.setItem(key("completed"),JSON.stringify(state.completed));
+      localStorage.setItem(key("notes"),state.notes);
+      localStorage.setItem(key("quizScore"),String(state.quizScore));
+      localStorage.setItem(key("hidePinyin"),String(state.hidePinyin));
+      localStorage.setItem(key("hideVi"),String(state.hideVi));
+    }
+
+    /* =========================================================
+       3. HÀM TIỆN ÍCH
+       ========================================================= */
+    const $ = selector => document.querySelector(selector);
+    const $$ = selector => [...document.querySelectorAll(selector)];
+
+    function esc(text=""){
+      return String(text).replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+      }[m]));
+    }
+
+    function normalize(text=""){
+      return text.toLowerCase().replace(/[，。！？,.!?]/g,"").replace(/\s+/g,"").trim();
+    }
+
+    function speak(text,audioUrl=""){
+      if(audioUrl){
+        const audio = new Audio(audioUrl);
+        audio.play().catch(()=>{});
+        return;
+      }
+      if("speechSynthesis" in window){
+        speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "zh-CN";
+        utterance.rate = 0.85;
+        speechSynthesis.speak(utterance);
+      } else {
+        alert("Trình duyệt chưa hỗ trợ phát âm tự động.");
+      }
+    }
+
+    function sectionShell(id,icon,title,subtitle,content){
+      const done = state.completed.includes(id);
+      return `
+        <section class="section" id="${id}">
+          <div class="container">
+            <div class="section-heading">
+              <div><h2>${icon} ${title}</h2><p>${subtitle}</p></div>
+              <button class="complete-btn ${done?"done":""}" data-complete="${id}">
+                ${done?"✓ Đã hoàn thành":"Đánh dấu hoàn thành"}
+              </button>
+            </div>
+            ${content}
+          </div>
+        </section>`;
+    }
+
+    /* =========================================================
+       4. RENDER TOÀN BỘ BÀI HỌC
+       ========================================================= */
+    function render(){
+      const app = $("#app");
+
+      const objectives = sectionShell(
+        "objectives","🎯","Mục tiêu","Học xong bài này, học viên có thể:",
+        `<div class="grid-4">${lessonData.objectives.map((x,i)=>`
+          <article class="objective"><strong>${i+1}</strong><p>${esc(x)}</p></article>`).join("")}</div>`
+      );
+
+      const vocab = sectionShell(
+        "vocabulary","📖","Từ mới","Tìm kiếm, nghe phát âm và đánh dấu từ yêu thích.",
+        `<div class="section-card">
+          <div class="search-row">
+            <input id="vocabSearch" placeholder="🔍 Tìm chữ Hán, pinyin hoặc nghĩa tiếng Việt...">
+            <button class="btn" id="clearSearch">Xóa tìm kiếm</button>
+          </div>
+          <div class="grid-4" id="vocabGrid"></div>
+          <div class="favorite-panel" id="favoritePanel">
+            <h3>⭐ Từ đã lưu</h3>
+            <div class="favorite-list" id="favoriteList"></div>
+          </div>
+        </div>`
+      );
+
+      const memory = sectionShell(
+        "memory","🧠","Ghi nhớ nhanh","Các công thức cần nhớ.",
+        `<div class="grid-4">${lessonData.memory.map(x=>`
+          <article class="memory-item"><strong>${esc(x.title)}</strong><p>${esc(x.text)}</p></article>`).join("")}</div>`
+      );
+
+      const grammar = sectionShell(
+        "grammar","📚","Ngữ pháp","Giải thích công thức, cách dùng và ví dụ.",
+        `<div class="grid-2">${lessonData.grammar.map(g=>`
+          <article class="grammar-card">
+            <h3>${esc(g.title)}</h3>
+            <p>${esc(g.explanation)}</p>
+            <div class="formula">${esc(g.formula)}</div>
+            <ul>${g.examples.map(e=>`<li>${esc(e)} <button class="mini-btn speak-btn" data-speak="${esc(e)}">🔊</button></li>`).join("")}</ul>
+            <div class="note">${esc(g.note)}</div>
+          </article>`).join("")}</div>`
+      );
+
+      const mistakes = sectionShell(
+        "mistakes","⚠️","Lỗi người Việt thường mắc","Nhận diện lỗi và ghi nhớ cách sửa.",
+        `<div class="grid-2">${lessonData.mistakes.map(m=>`
+          <article class="mistake-card">
+            <h3>${esc(m.title)}</h3>
+            <p class="wrong">✘ ${esc(m.wrong)}</p>
+            <p class="correct">✔ ${esc(m.correct)}</p>
+            <p><strong>Mẹo:</strong> ${esc(m.tip)}</p>
+          </article>`).join("")}</div>`
+      );
+
+      const mindmap = sectionShell(
+        "mindmap","🗺️","Mindmap","Sơ đồ liên kết kiến thức của bài.",
+        `<div class="section-card mindmap">
+          <div class="mind-col">${lessonData.mindmap.left.map(x=>`<div class="mind-node">${esc(x)}</div>`).join("")}</div>
+          <div class="mind-node mind-center">${esc(lessonData.mindmap.center)}</div>
+          <div class="mind-col">${lessonData.mindmap.right.map(x=>`<div class="mind-node">${esc(x)}</div>`).join("")}</div>
+        </div>`
+      );
+
+      const dialogue = sectionShell(
+        "dialogue","🎭","Hội thoại","Nghe từng câu, ẩn pinyin hoặc bản dịch để luyện.",
+        `<div class="section-card">
+          <div class="hero-actions" style="margin-top:0;margin-bottom:16px">
+            <button class="btn" id="togglePinyin">${state.hidePinyin?"Hiện pinyin":"Ẩn pinyin"}</button>
+            <button class="btn" id="toggleVi">${state.hideVi?"Hiện bản dịch":"Ẩn bản dịch"}</button>
+          </div>
+          <div class="dialogue-list">${lessonData.dialogues.map(d=>`
+            <div class="bubble ${d.side==="right"?"right":""}">
+              <div class="speaker">${esc(d.speaker)} <button class="mini-btn dialogue-speak" data-text="${esc(d.hanzi)}" data-audio="${esc(d.audio)}">🔊</button></div>
+              <div>${esc(d.hanzi)}</div>
+              <div class="pinyin-line ${state.hidePinyin?"hide":""}">${esc(d.pinyin)}</div>
+              <div class="vi-line ${state.hideVi?"hide":""}">${esc(d.vi)}</div>
+            </div>`).join("")}</div>
+        </div>`
+      );
+
+      const listening = sectionShell(
+        "listening","🎧","Luyện nghe","Nghe và trả lời câu hỏi.",
+        `<div class="section-card">
+          <div class="audio-block">
+            <div><strong>${esc(lessonData.listening.title)}</strong><p>${esc(lessonData.listening.instruction)}</p></div>
+            <button class="btn btn-primary" id="listenPlay">▶ Phát âm thanh</button>
+          </div>
+          <div class="quiz-question" style="margin-top:14px">
+            <h3>${esc(lessonData.listening.question)}</h3>
+            ${lessonData.listening.options.map((o,i)=>`<label><input type="radio" name="listenQ" value="${i}"> ${esc(o)}</label>`).join("")}
+            <button class="btn" id="checkListening">Kiểm tra</button>
+            <div id="listeningFeedback" class="feedback"></div>
+          </div>
+        </div>`
+      );
+
+      const speaking = sectionShell(
+        "speaking","🗣️","Luyện nói","Nói theo khung và thay bằng thông tin cá nhân.",
+        `<div class="grid-3">${lessonData.speaking.map((x,i)=>`
+          <article class="objective"><strong>Khung ${i+1}</strong><p>${esc(x)}</p>
+          <button class="mini-btn speaking-speak" data-text="${esc(x.split("—")[0])}">🔊</button></article>`).join("")}</div>`
+      );
+
+      const exercises = sectionShell(
+        "exercises","✍️","Bài tập","Nhập đáp án và kiểm tra ngay.",
+        `<div class="section-card">
+          ${lessonData.exercises.map((e,i)=>`
+            <div class="exercise">
+              <strong>${i+1}. ${esc(e.question)}</strong>
+              <input id="${e.id}" placeholder="Nhập đáp án">
+              <div class="feedback" id="${e.id}-feedback"></div>
+            </div>`).join("")}
+          <button class="btn btn-primary" id="checkExercises">Kiểm tra bài tập</button>
+        </div>`
+      );
+
+      const quiz = sectionShell(
+        "quiz","🎮","Quiz","Chấm điểm tự động và lưu kết quả cao nhất.",
+        `<div class="section-card">
+          ${lessonData.quiz.map((q,qi)=>`
+            <div class="quiz-question">
+              <h3>${qi+1}. ${esc(q.question)}</h3>
+              ${q.options.map((o,oi)=>`<label><input type="radio" name="${q.id}" value="${oi}"> ${esc(o)}</label>`).join("")}
+            </div>`).join("")}
+          <button class="btn btn-primary" id="gradeQuiz">Chấm điểm</button>
+          <div class="score-box" id="scoreBox"></div>
+        </div>`
+      );
+
+      const summary = sectionShell(
+        "summary","📑","Tổng kết","Ôn lại nội dung cốt lõi.",
+        `<div class="grid-3">${lessonData.summary.map(x=>`
+          <article class="summary-item"><strong>${esc(x.title)}</strong><p>${esc(x.text)}</p></article>`).join("")}</div>`
+      );
+
+      const flashcards = sectionShell(
+        "flashcards","📥","Flashcard","Bấm để lật; đánh dấu từ đã nhớ hoặc chưa nhớ.",
+        `<div class="flashcards">${lessonData.flashcards.map(f=>`
+          <div class="flashcard" data-card="${f.id}" tabindex="0">
+            <div class="flashcard-inner">
+              <div class="flash-face">
+                <strong>${esc(f.front)}</strong>
+                <span>${esc(f.pinyin)}</span>
+                <small>Bấm để lật</small>
+              </div>
+              <div class="flash-face flash-back">
+                <strong>${esc(f.back)}</strong>
+                <span>${esc(f.example)}</span>
+                <div class="flash-actions">
+                  <button class="btn remembered-btn" data-id="${f.id}">😊 Đã nhớ</button>
+                  <button class="btn review-btn" data-id="${f.id}">🤔 Chưa nhớ</button>
+                </div>
+              </div>
+            </div>
+          </div>`).join("")}</div>`
+      );
+
+      const notes = sectionShell(
+        "notes","📝","Ghi chú cá nhân","Nội dung được tự động lưu trên trình duyệt.",
+        `<div class="section-card">
+          <textarea class="notes-area" id="notesArea" rows="7" placeholder="Viết ghi chú của bạn tại đây...">${esc(state.notes)}</textarea>
+          <p id="noteStatus" style="color:var(--muted)">Đã bật tự động lưu.</p>
+        </div>`
+      );
+
+      app.innerHTML = `
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-card">
+              <span class="eyebrow">🎬 ${esc(lessonData.level)} • BÀI ${lessonData.lesson}</span>
+              <h1>${esc(lessonData.title)}</h1>
+              <p class="subtitle">${esc(lessonData.titleVi)}</p>
+              <p>${esc(lessonData.intro)}</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#objectives">Bắt đầu học</a>
+                <a class="btn" href="#flashcards">Ôn flashcard</a>
+              </div>
+            </div>
+            <aside class="lesson-meta">
+              <div class="meta-grid">
+                <div class="meta-item"><strong>${esc(lessonData.topic)}</strong><span>Chủ đề</span></div>
+                <div class="meta-item"><strong>${esc(lessonData.duration)}</strong><span>Thời lượng</span></div>
+                <div class="meta-item"><strong>${lessonData.vocabulary.length}</strong><span>Từ mới</span></div>
+                <div class="meta-item"><strong>${esc(lessonData.difficulty)}</strong><span>Mức độ</span></div>
+              </div>
+            </aside>
+          </div>
+        </section>
+        ${objectives}${vocab}${memory}${grammar}${mistakes}${mindmap}${dialogue}
+        ${listening}${speaking}${exercises}${quiz}${summary}${flashcards}${notes}
+        <section class="section">
+          <div class="container">
+            <div class="completion" id="completionBox">
+              <h2>🏆 Hoàn thành bài học</h2>
+              <p>Hoàn thành các phần và đạt ít nhất 80% quiz để kết thúc bài.</p>
+              <button class="btn btn-success" id="finishLesson">Kiểm tra hoàn thành</button>
+            </div>
+          </div>
+        </section>`;
+    }
+
+    /* =========================================================
+       5. RENDER TỪ VỰNG + YÊU THÍCH
+       ========================================================= */
+    function renderVocabulary(filter=""){
+      const grid = $("#vocabGrid");
+      const q = normalize(filter);
+      const items = lessonData.vocabulary.filter(v =>
+        normalize(v.hanzi+" "+v.pinyin+" "+v.meaning+" "+v.type).includes(q)
+      );
+
+      grid.innerHTML = items.map(v=>`
+        <article class="vocab-card">
+          <div class="vocab-actions">
+            <button class="mini-btn vocab-speak" data-text="${esc(v.hanzi)}" data-audio="${esc(v.audio)}">🔊</button>
+            <button class="mini-btn favorite-btn ${state.favorites.includes(v.id)?"active":""}" data-id="${v.id}">⭐</button>
+          </div>
+          <div class="hanzi">${esc(v.hanzi)}</div>
+          <div class="pinyin">${esc(v.pinyin)}</div>
+          <div class="meaning">${esc(v.meaning)}</div>
+          <small>${esc(v.type)}</small>
+          <div class="example">${esc(v.example)}<br>${esc(v.examplePinyin)}<br>${esc(v.exampleVi)}</div>
+        </article>`).join("") || `<p>Không tìm thấy từ phù hợp.</p>`;
+
+      bindVocabularyEvents();
+      renderFavorites();
+    }
+
+    function renderFavorites(){
+      const list = $("#favoriteList");
+      if(!list) return;
+      const words = lessonData.vocabulary.filter(v=>state.favorites.includes(v.id));
+      list.innerHTML = words.length
+        ? words.map(v=>`<span class="favorite-chip">${esc(v.hanzi)} · ${esc(v.meaning)}</span>`).join("")
+        : "<span>Chưa có từ yêu thích.</span>";
+    }
+
+    function bindVocabularyEvents(){
+      $$(".vocab-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text,btn.dataset.audio));
+      $$(".favorite-btn").forEach(btn=>btn.onclick=()=>{
+        const id = btn.dataset.id;
+        state.favorites = state.favorites.includes(id)
+          ? state.favorites.filter(x=>x!==id)
+          : [...state.favorites,id];
+        saveState();
+        renderVocabulary($("#vocabSearch")?.value || "");
+      });
+    }
+
+    /* =========================================================
+       6. TIẾN ĐỘ
+       ========================================================= */
+    const trackedSections = ["objectives","vocabulary","memory","grammar","mistakes","mindmap","dialogue","listening","speaking","exercises","quiz","summary","flashcards","notes"];
+
+    function updateProgress(){
+      const count = trackedSections.filter(id=>state.completed.includes(id)).length;
+      const percent = Math.round(count / trackedSections.length * 100);
+      $("#progressFill").style.width = percent+"%";
+      $("#progressText").textContent = percent+"%";
+      $$(".complete-btn").forEach(btn=>{
+        const done = state.completed.includes(btn.dataset.complete);
+        btn.classList.toggle("done",done);
+        btn.textContent = done ? "✓ Đã hoàn thành" : "Đánh dấu hoàn thành";
+      });
+    }
+
+    function toggleComplete(id){
+      state.completed = state.completed.includes(id)
+        ? state.completed.filter(x=>x!==id)
+        : [...state.completed,id];
+      saveState();
+      updateProgress();
+    }
+
+    /* =========================================================
+       7. SỰ KIỆN
+       ========================================================= */
+    function bindEvents(){
+      $$(".complete-btn").forEach(btn=>btn.onclick=()=>toggleComplete(btn.dataset.complete));
+
+      $("#vocabSearch").addEventListener("input",e=>renderVocabulary(e.target.value));
+      $("#clearSearch").onclick=()=>{
+        $("#vocabSearch").value="";
+        renderVocabulary("");
+      };
+
+      $("#favoritesToggle").onclick=()=>{
+        $("#favoritePanel").classList.toggle("show");
+        location.hash="#vocabulary";
+      };
+
+      $("#themeToggle").onclick=()=>{
+        state.theme = state.theme==="dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = state.theme;
+        localStorage.setItem("site-theme",state.theme);
+        $("#themeToggle").textContent = state.theme==="dark" ? "☀️" : "🌙";
+      };
+      $("#themeToggle").textContent = state.theme==="dark" ? "☀️" : "🌙";
+
+      $$(".speak-btn").forEach(btn=>btn.onclick=()=>speak(btn.dataset.speak));
+      $$(".dialogue-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text,btn.dataset.audio));
+      $$(".speaking-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text));
+
+      $("#togglePinyin").onclick=()=>{
+        state.hidePinyin=!state.hidePinyin;
+        saveState();
+        $$(".pinyin-line").forEach(el=>el.classList.toggle("hide",state.hidePinyin));
+        $("#togglePinyin").textContent=state.hidePinyin?"Hiện pinyin":"Ẩn pinyin";
+      };
+      $("#toggleVi").onclick=()=>{
+        state.hideVi=!state.hideVi;
+        saveState();
+        $$(".vi-line").forEach(el=>el.classList.toggle("hide",state.hideVi));
+        $("#toggleVi").textContent=state.hideVi?"Hiện bản dịch":"Ẩn bản dịch";
+      };
+
+      $("#listenPlay").onclick=()=>{
+        const l = lessonData.listening;
+        if(l.audio) new Audio(l.audio).play().catch(()=>{});
+        else speak("我想去超市买牛奶。");
+      };
+
+      $("#checkListening").onclick=()=>{
+        const selected = document.querySelector('input[name="listenQ"]:checked');
+        const fb = $("#listeningFeedback");
+        if(!selected){fb.innerHTML='<span class="wrong">Hãy chọn một đáp án.</span>';return}
+        fb.innerHTML = Number(selected.value)===lessonData.listening.answer
+          ? '<span class="correct">✓ Chính xác</span>'
+          : '<span class="wrong">✘ Chưa đúng</span>';
+      };
+
+      $("#checkExercises").onclick=()=>{
+        let allCorrect=true;
+        lessonData.exercises.forEach(e=>{
+          const value=normalize($("#"+e.id).value);
+          const ok=e.answers.some(a=>normalize(a)===value);
+          $("#"+e.id+"-feedback").innerHTML=ok
+            ? '<span class="correct">✓ Chính xác</span>'
+            : `<span class="wrong">✘ Đáp án gợi ý: ${esc(e.answers[0])}</span>`;
+          if(!ok) allCorrect=false;
+        });
+        if(allCorrect && !state.completed.includes("exercises")){
+          state.completed.push("exercises");saveState();updateProgress();
+        }
+      };
+
+      $("#gradeQuiz").onclick=()=>{
+        let score=0;
+        lessonData.quiz.forEach(q=>{
+          const selected=document.querySelector(`input[name="${q.id}"]:checked`);
+          if(selected && Number(selected.value)===q.answer) score++;
+        });
+        const percent=Math.round(score/lessonData.quiz.length*100);
+        state.quizScore=Math.max(state.quizScore,percent);
+        if(percent>=80 && !state.completed.includes("quiz")) state.completed.push("quiz");
+        saveState();updateProgress();
+        const box=$("#scoreBox");
+        box.style.display="block";
+        box.textContent=`Bạn đạt ${score}/${lessonData.quiz.length} câu (${percent}%). Điểm cao nhất: ${state.quizScore}%.`;
+      };
+
+      $$(".flashcard").forEach(card=>{
+        const flip=()=>card.classList.toggle("flipped");
+        card.onclick=e=>{
+          if(e.target.closest("button")) return;
+          flip();
+        };
+        card.onkeydown=e=>{
+          if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}
+        };
+      });
+
+      $$(".remembered-btn").forEach(btn=>btn.onclick=()=>{
+        localStorage.setItem(key(`card:${btn.dataset.id}`),"remembered");
+        btn.textContent="✓ Đã lưu";
+      });
+      $$(".review-btn").forEach(btn=>btn.onclick=()=>{
+        const reviewData={status:"review",updatedAt:new Date().toISOString()};
+        localStorage.setItem(key(`card:${btn.dataset.id}`),JSON.stringify(reviewData));
+        btn.textContent="✓ Sẽ ôn lại";
+      });
+
+      let noteTimer;
+      $("#notesArea").addEventListener("input",e=>{
+        state.notes=e.target.value;
+        $("#noteStatus").textContent="Đang lưu...";
+        clearTimeout(noteTimer);
+        noteTimer=setTimeout(()=>{
+          saveState();
+          $("#noteStatus").textContent="Đã tự động lưu.";
+        },400);
+      });
+
+      $("#finishLesson").onclick=()=>{
+        const finished=trackedSections.every(id=>state.completed.includes(id));
+        if(finished && state.quizScore>=80){
+          $("#completionBox").innerHTML="<h2>🎉 Chúc mừng!</h2><p>Bạn đã hoàn thành bài học với kết quả đạt yêu cầu.</p>";
+        }else{
+          const missing=trackedSections.filter(id=>!state.completed.includes(id)).length;
+          alert(`Bạn còn ${missing} phần chưa đánh dấu hoàn thành. Điểm quiz cao nhất hiện tại: ${state.quizScore}%.`);
+        }
+      };
+    }
+
+    render();
+    renderVocabulary();
+    bindEvents();
+    updateProgress();
+  </script>
+</body>
+</html>
