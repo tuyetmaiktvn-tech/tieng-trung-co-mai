@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HSK1 Bài 10: 这儿的苹果真便宜！ – học mua sắm, hỏi giá, tiền Nhân dân tệ và cách dùng 怎么样." />
+  <meta name="theme-color" content="#2563eb" />
+  <title>HSK1 Bài 10: 这儿的苹果真便宜！ | Tiếng Trung Cô Mai</title>
+
+  <style>
+    :root{
+      --bg:#f6f8fc;
+      --surface:#ffffff;
+      --surface-2:#f8fafc;
+      --text:#172033;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --primary:#2563eb;
+      --primary-2:#7c3aed;
+      --success:#16a34a;
+      --warning:#d97706;
+      --danger:#dc2626;
+      --shadow:0 14px 40px rgba(15,23,42,.08);
+      --radius:20px;
+      --radius-sm:12px;
+      --max:1180px;
+    }
+
+    [data-theme="dark"]{
+      --bg:#0f172a;
+      --surface:#111827;
+      --surface-2:#1e293b;
+      --text:#f8fafc;
+      --muted:#cbd5e1;
+      --line:#334155;
+      --shadow:0 18px 45px rgba(0,0,0,.28);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+      transition:background .2s,color .2s;
+    }
+
+    button,input,textarea,select{font:inherit}
+    button{cursor:pointer}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(var(--max),calc(100% - 28px));margin:auto}
+
+    .topbar{
+      position:sticky;top:0;z-index:1000;
+      backdrop-filter:blur(14px);
+      background:color-mix(in srgb,var(--surface) 88%,transparent);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar-inner{
+      min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+    }
+    .brand{font-weight:900}
+    .brand span{color:var(--primary)}
+    .top-actions{display:flex;gap:8px;align-items:center}
+    .icon-btn{
+      width:42px;height:42px;border:1px solid var(--line);border-radius:12px;
+      background:var(--surface);color:var(--text);display:grid;place-items:center
+    }
+
+    .progress-shell{
+      position:sticky;top:68px;z-index:900;
+      background:var(--surface);border-bottom:1px solid var(--line)
+    }
+    .progress-wrap{padding:10px 0}
+    .progress-row{display:flex;justify-content:space-between;gap:16px;font-size:.9rem;color:var(--muted);margin-bottom:6px}
+    .progress-bar{height:10px;background:var(--surface-2);border-radius:999px;overflow:hidden}
+    .progress-fill{height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--primary-2));transition:width .35s ease}
+
+    .hero{padding:58px 0 30px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:stretch}
+    .hero-card,.lesson-meta,.section-card{
+      background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)
+    }
+    .hero-card{padding:30px}
+    .lesson-meta{padding:24px}
+    .eyebrow{
+      display:inline-flex;padding:8px 12px;border-radius:999px;background:#dbeafe;color:#1d4ed8;
+      font-weight:800;font-size:.9rem
+    }
+    [data-theme="dark"] .eyebrow{background:#1e3a8a;color:#dbeafe}
+    h1{font-size:clamp(2rem,5vw,4rem);line-height:1.08;margin:16px 0 10px}
+    h2{font-size:clamp(1.45rem,3vw,2.1rem);margin:0}
+    h3{margin-top:0}
+    .subtitle{font-size:1.08rem;color:var(--muted);margin:0}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .btn{
+      border:0;border-radius:12px;padding:12px 16px;font-weight:800;
+      background:var(--surface-2);color:var(--text)
+    }
+    .btn-primary{background:var(--primary);color:white}
+    .btn-success{background:var(--success);color:white}
+    .meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .meta-item{padding:14px;border-radius:14px;background:var(--surface-2)}
+    .meta-item strong{display:block;font-size:1.2rem}
+
+    .section{padding:18px 0}
+    .section-heading{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:14px}
+    .section-heading p{margin:4px 0 0;color:var(--muted)}
+    .section-card{padding:24px}
+    .complete-btn{
+      border:1px solid var(--line);background:var(--surface);color:var(--text);
+      border-radius:10px;padding:9px 12px;font-weight:700
+    }
+    .complete-btn.done{background:#dcfce7;color:#166534;border-color:#86efac}
+
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+    .objective,.memory-item,.grammar-card,.mistake-card,.summary-item{
+      padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)
+    }
+
+    .search-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+    .search-row input{
+      flex:1;min-width:220px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;
+      background:var(--surface);color:var(--text)
+    }
+
+    .vocab-card{
+      position:relative;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)
+    }
+    .vocab-actions{position:absolute;top:12px;right:12px;display:flex;gap:6px}
+    .mini-btn{
+      width:34px;height:34px;border-radius:10px;border:1px solid var(--line);
+      background:var(--surface-2);color:var(--text)
+    }
+    .mini-btn.active{background:#fef3c7;color:#92400e}
+    .hanzi{font-size:2rem;font-weight:900;color:var(--primary);padding-right:78px}
+    .pinyin{color:var(--primary-2);font-weight:800}
+    .meaning{font-weight:800;margin:6px 0}
+    .example{font-size:.94rem;color:var(--muted);margin-top:8px}
+
+    .formula{
+      padding:14px;text-align:center;border-radius:14px;background:var(--surface-2);
+      color:var(--primary);font-weight:900;margin:12px 0
+    }
+    .note{padding:12px 14px;border-left:4px solid var(--warning);background:var(--surface-2);border-radius:10px}
+    .wrong{color:var(--danger);font-weight:800}
+    .correct{color:var(--success);font-weight:800}
+
+    .mindmap{
+      display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:18px;align-items:center
+    }
+    .mind-col{display:grid;gap:12px}
+    .mind-node{padding:14px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);text-align:center;font-weight:800}
+    .mind-center{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:white;font-size:1.7rem;padding:26px}
+
+    .dialogue-list{display:grid;gap:12px}
+    .bubble{max-width:82%;padding:14px 16px;border-radius:18px;background:#dbeafe}
+    .bubble.right{margin-left:auto;background:#ede9fe}
+    [data-theme="dark"] .bubble{background:#1e3a8a}
+    [data-theme="dark"] .bubble.right{background:#4c1d95}
+    .speaker{font-weight:900}
+    .pinyin-line,.vi-line{font-size:.93rem;color:var(--muted)}
+    .hide{display:none!important}
+
+    .audio-block{
+      display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+      padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--surface-2)
+    }
+
+    .exercise,.quiz-question{padding:16px;border:1px solid var(--line);border-radius:14px;margin-bottom:12px}
+    .exercise input,.exercise textarea,.notes-area{
+      width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text)
+    }
+    .feedback{margin-top:8px;min-height:22px}
+    .quiz-question label{display:block;padding:8px;border-radius:9px}
+    .quiz-question label:hover{background:var(--surface-2)}
+    .score-box{display:none;margin-top:12px;padding:14px;border-radius:12px;background:#dcfce7;color:#166534;font-weight:900}
+
+    .flashcards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .flashcard{height:210px;perspective:1000px}
+    .flashcard-inner{position:relative;width:100%;height:100%;transition:transform .55s;transform-style:preserve-3d}
+    .flashcard.flipped .flashcard-inner{transform:rotateY(180deg)}
+    .flash-face{
+      position:absolute;inset:0;backface-visibility:hidden;border:1px solid var(--line);
+      border-radius:18px;background:var(--surface);display:flex;flex-direction:column;align-items:center;
+      justify-content:center;text-align:center;padding:18px;box-shadow:var(--shadow)
+    }
+    .flash-back{transform:rotateY(180deg)}
+    .flash-face strong{font-size:2rem;color:var(--primary)}
+    .flash-actions{display:flex;gap:8px;margin-top:12px}
+
+    .favorite-panel{display:none;margin-top:14px}
+    .favorite-panel.show{display:block}
+    .favorite-list{display:flex;gap:8px;flex-wrap:wrap}
+    .favorite-chip{padding:8px 10px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line)}
+
+    .completion{
+      text-align:center;padding:28px;border-radius:20px;background:linear-gradient(135deg,#dcfce7,#dbeafe)
+    }
+    [data-theme="dark"] .completion{background:linear-gradient(135deg,#14532d,#1e3a8a)}
+    footer{padding:38px 0;text-align:center;color:var(--muted)}
+
+    @media (max-width:900px){
+      .hero-grid,.grid-2,.grid-3,.grid-4,.mindmap{grid-template-columns:1fr}
+      .flashcards{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      .container{width:min(100% - 20px,var(--max))}
+      .hero{padding-top:34px}
+      .hero-card,.lesson-meta,.section-card{padding:18px}
+      .meta-grid,.flashcards{grid-template-columns:1fr}
+      .bubble{max-width:94%}
+      .progress-shell{top:68px}
+      .top-actions .text-label{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="../index.html">Tiếng Trung <span>Cô Mai</span></a>
+      <div class="top-actions">
+        <button class="icon-btn" id="favoritesToggle" title="Từ yêu thích">⭐</button>
+        <button class="icon-btn" id="themeToggle" title="Chế độ sáng/tối">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="progress-shell">
+    <div class="container progress-wrap">
+      <div class="progress-row">
+        <span>📊 Tiến độ bài học</span>
+        <strong id="progressText">0%</strong>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+  </div>
+
+  <main id="app"></main>
+
+  <footer>
+    <div class="container">© Tiếng Trung Cô Mai • Học từ gốc – Vững mọi mốc</div>
+  </footer>
+
+  <script>
+    /* =========================================================
+       1. DỮ LIỆU BÀI HỌC
+       Chỉ cần thay nội dung trong lessonData cho từng bài.
+       ========================================================= */
+    const lessonData = {
+  "id": "hsk1-lesson10",
+  "level": "HSK 1",
+  "lesson": 10,
+  "title": "这儿的苹果真便宜！",
+  "titleVi": "Táo ở đây rẻ thật!",
+  "topic": "Mua sắm, hỏi giá, tiền Nhân dân tệ và nhận xét hàng hóa",
+  "duration": "75–90 phút",
+  "difficulty": "Cơ bản",
+  "intro": "Bài 10 giúp học viên hỏi và trả lời về giá cả, đọc các đơn vị tiền Nhân dân tệ, mua đồ dùng và thực phẩm, nhận xét hàng hóa bằng câu vị ngữ tính từ, đồng thời hỏi ý kiến với 怎么样。",
+  "objectives": [
+    "Nghe hiểu và thực hiện hội thoại mua bán đơn giản tại cửa hàng hoặc chợ",
+    "Hỏi và trả lời giá bằng 多少钱、多少块钱 và đọc đúng 元、块、角、毛、分",
+    "Dùng số lượng + lượng từ như 一个、两斤、一件 để mua hàng",
+    "Dùng tính từ trực tiếp làm vị ngữ để nhận xét đắt, rẻ, nhiều, ít, đẹp",
+    "Dùng 怎么样 để hỏi ý kiến hoặc tình trạng của người và sự vật"
+  ],
+  "vocabulary": [
+    {
+      "id": "v1",
+      "hanzi": "杯子",
+      "pinyin": "bēizi",
+      "meaning": "cốc, chén",
+      "type": "Danh từ",
+      "example": "这个杯子多少钱？",
+      "examplePinyin": "Zhège bēizi duōshao qián?",
+      "exampleVi": "Chiếc cốc này bao nhiêu tiền?",
+      "audio": ""
+    },
+    {
+      "id": "v2",
+      "hanzi": "售货员",
+      "pinyin": "shòuhuòyuán",
+      "meaning": "nhân viên bán hàng",
+      "type": "Danh từ",
+      "example": "售货员在商店里。",
+      "examplePinyin": "Shòuhuòyuán zài shāngdiàn lǐ.",
+      "exampleVi": "Nhân viên bán hàng ở trong cửa hàng.",
+      "audio": ""
+    },
+    {
+      "id": "v3",
+      "hanzi": "这边",
+      "pinyin": "zhèbian",
+      "meaning": "phía này, bên này",
+      "type": "Đại từ chỉ nơi chốn",
+      "example": "杯子在这边。",
+      "examplePinyin": "Bēizi zài zhèbian.",
+      "exampleVi": "Cốc ở bên này.",
+      "audio": ""
+    },
+    {
+      "id": "v4",
+      "hanzi": "钱",
+      "pinyin": "qián",
+      "meaning": "tiền",
+      "type": "Danh từ",
+      "example": "这个多少钱？",
+      "examplePinyin": "Zhège duōshao qián?",
+      "exampleVi": "Cái này bao nhiêu tiền?",
+      "audio": ""
+    },
+    {
+      "id": "v5",
+      "hanzi": "这些",
+      "pinyin": "zhèxiē",
+      "meaning": "những cái này",
+      "type": "Đại từ chỉ thị",
+      "example": "这些五块钱一个。",
+      "examplePinyin": "Zhèxiē wǔ kuài qián yí ge.",
+      "exampleVi": "Những cái này giá năm tệ một chiếc.",
+      "audio": ""
+    },
+    {
+      "id": "v6",
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "meaning": "đồng, tệ (khẩu ngữ)",
+      "type": "Lượng từ tiền tệ",
+      "example": "这个杯子十块钱。",
+      "examplePinyin": "Zhège bēizi shí kuài qián.",
+      "exampleVi": "Chiếc cốc này giá mười tệ.",
+      "audio": ""
+    },
+    {
+      "id": "v7",
+      "hanzi": "那些",
+      "pinyin": "nàxiē",
+      "meaning": "những cái kia",
+      "type": "Đại từ chỉ thị",
+      "example": "那些杯子很好看。",
+      "examplePinyin": "Nàxiē bēizi hěn hǎokàn.",
+      "exampleVi": "Những chiếc cốc kia rất đẹp.",
+      "audio": ""
+    },
+    {
+      "id": "v8",
+      "hanzi": "这儿",
+      "pinyin": "zhèr",
+      "meaning": "ở đây, chỗ này",
+      "type": "Đại từ chỉ nơi chốn",
+      "example": "这儿的水果真不少！",
+      "examplePinyin": "Zhèr de shuǐguǒ zhēn bù shǎo!",
+      "exampleVi": "Hoa quả ở đây nhiều thật!",
+      "audio": ""
+    },
+    {
+      "id": "v9",
+      "hanzi": "水果",
+      "pinyin": "shuǐguǒ",
+      "meaning": "hoa quả, trái cây",
+      "type": "Danh từ",
+      "example": "我想买一些水果。",
+      "examplePinyin": "Wǒ xiǎng mǎi yìxiē shuǐguǒ.",
+      "exampleVi": "Tôi muốn mua một ít hoa quả.",
+      "audio": ""
+    },
+    {
+      "id": "v10",
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "meaning": "ít, thiếu",
+      "type": "Tính từ",
+      "example": "今天的苹果不少。",
+      "examplePinyin": "Jīntiān de píngguǒ bù shǎo.",
+      "exampleVi": "Táo hôm nay không ít.",
+      "audio": ""
+    },
+    {
+      "id": "v11",
+      "hanzi": "斤",
+      "pinyin": "jīn",
+      "meaning": "cân Trung Quốc, 500 gam",
+      "type": "Lượng từ",
+      "example": "我买两斤苹果。",
+      "examplePinyin": "Wǒ mǎi liǎng jīn píngguǒ.",
+      "exampleVi": "Tôi mua hai cân Trung Quốc táo.",
+      "audio": ""
+    },
+    {
+      "id": "v12",
+      "hanzi": "苹果",
+      "pinyin": "píngguǒ",
+      "meaning": "quả táo",
+      "type": "Danh từ",
+      "example": "苹果三块五一斤。",
+      "examplePinyin": "Píngguǒ sān kuài wǔ yì jīn.",
+      "exampleVi": "Táo giá ba tệ rưỡi một cân Trung Quốc.",
+      "audio": ""
+    },
+    {
+      "id": "v13",
+      "hanzi": "便宜",
+      "pinyin": "piányi",
+      "meaning": "rẻ, phải chăng",
+      "type": "Tính từ",
+      "example": "这儿的苹果真便宜！",
+      "examplePinyin": "Zhèr de píngguǒ zhēn piányi!",
+      "exampleVi": "Táo ở đây rẻ thật!",
+      "audio": ""
+    },
+    {
+      "id": "v14",
+      "hanzi": "商店",
+      "pinyin": "shāngdiàn",
+      "meaning": "cửa hàng",
+      "type": "Danh từ",
+      "example": "这家商店衣服真多。",
+      "examplePinyin": "Zhè jiā shāngdiàn yīfu zhēn duō.",
+      "exampleVi": "Cửa hàng này có nhiều quần áo thật.",
+      "audio": ""
+    },
+    {
+      "id": "v15",
+      "hanzi": "衣服",
+      "pinyin": "yīfu",
+      "meaning": "quần áo",
+      "type": "Danh từ",
+      "example": "我想买一件衣服。",
+      "examplePinyin": "Wǒ xiǎng mǎi yí jiàn yīfu.",
+      "exampleVi": "Tôi muốn mua một bộ quần áo.",
+      "audio": ""
+    },
+    {
+      "id": "v16",
+      "hanzi": "件",
+      "pinyin": "jiàn",
+      "meaning": "chiếc, cái, bộ (quần áo/sự việc)",
+      "type": "Lượng từ",
+      "example": "这件衣服一百元。",
+      "examplePinyin": "Zhè jiàn yīfu yìbǎi yuán.",
+      "exampleVi": "Bộ quần áo này giá một trăm tệ.",
+      "audio": ""
+    },
+    {
+      "id": "v17",
+      "hanzi": "元",
+      "pinyin": "yuán",
+      "meaning": "nhân dân tệ, đồng tệ",
+      "type": "Đơn vị tiền tệ",
+      "example": "这本书二十元。",
+      "examplePinyin": "Zhè běn shū èrshí yuán.",
+      "exampleVi": "Quyển sách này giá hai mươi tệ.",
+      "audio": ""
+    },
+    {
+      "id": "v18",
+      "hanzi": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "meaning": "thế nào, ra sao",
+      "type": "Đại từ nghi vấn",
+      "example": "这件衣服怎么样？",
+      "examplePinyin": "Zhè jiàn yīfu zěnmeyàng?",
+      "exampleVi": "Bộ quần áo này thế nào?",
+      "audio": ""
+    },
+    {
+      "id": "v19",
+      "hanzi": "贵",
+      "pinyin": "guì",
+      "meaning": "đắt",
+      "type": "Tính từ",
+      "example": "这件衣服不贵。",
+      "examplePinyin": "Zhè jiàn yīfu bú guì.",
+      "exampleVi": "Bộ quần áo này không đắt.",
+      "audio": ""
+    },
+    {
+      "id": "v20",
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "meaning": "mặc, đi (quần áo/giày dép)",
+      "type": "Động từ",
+      "example": "小雪能穿这件衣服。",
+      "examplePinyin": "Xiǎoxuě néng chuān zhè jiàn yīfu.",
+      "exampleVi": "Tiểu Tuyết có thể mặc bộ quần áo này.",
+      "audio": ""
+    },
+    {
+      "id": "v21",
+      "hanzi": "女",
+      "pinyin": "nǚ",
+      "meaning": "nữ, con gái",
+      "type": "Tính từ",
+      "example": "这些是女孩子穿的衣服。",
+      "examplePinyin": "Zhèxiē shì nǚ háizi chuān de yīfu.",
+      "exampleVi": "Đây là quần áo dành cho bé gái.",
+      "audio": ""
+    },
+    {
+      "id": "v22",
+      "hanzi": "男",
+      "pinyin": "nán",
+      "meaning": "nam, con trai",
+      "type": "Tính từ",
+      "example": "男孩子的衣服在那儿。",
+      "examplePinyin": "Nán háizi de yīfu zài nàr.",
+      "exampleVi": "Quần áo bé trai ở đằng kia.",
+      "audio": ""
+    },
+    {
+      "id": "v23",
+      "hanzi": "那儿",
+      "pinyin": "nàr",
+      "meaning": "ở kia, chỗ kia",
+      "type": "Đại từ chỉ nơi chốn",
+      "example": "男孩子的衣服在那儿。",
+      "examplePinyin": "Nán háizi de yīfu zài nàr.",
+      "exampleVi": "Quần áo bé trai ở đằng kia.",
+      "audio": ""
+    }
+  ],
+  "memory": [
+    {
+      "title": "Hỏi giá",
+      "text": "这个多少钱？ / 多少钱一个？"
+    },
+    {
+      "title": "Đọc tiền",
+      "text": "元/块 → 角/毛 → 分"
+    },
+    {
+      "title": "Mua theo lượng",
+      "text": "Số + lượng từ + danh từ: 两斤苹果、一件衣服"
+    },
+    {
+      "title": "Hỏi nhận xét",
+      "text": "Danh từ + 怎么样？"
+    }
+  ],
+  "grammar": [
+    {
+      "title": "1. Cách biểu đạt số tiền",
+      "explanation": "Đơn vị tiền tệ từ lớn đến nhỏ là 元、角、分; trong khẩu ngữ thường dùng 块、毛、分. Khi không có đơn vị ở giữa, có thể dùng 零 để nối.",
+      "formula": "Số + 块/元 + số + 毛/角 + số + 分",
+      "examples": [
+        "三块五（3,5 元）",
+        "六块零两分（6,02 元）",
+        "二百零二块两毛（202,2 元）"
+      ],
+      "note": "Trong khẩu ngữ, 三块五 thường được hiểu là 3 tệ 5 hào. Không nói 三元五元."
+    },
+    {
+      "title": "2. Hỏi và trả lời giá",
+      "explanation": "多少钱 dùng để hỏi giá. Có thể thêm lượng từ và đơn vị tính sau giá để nói giá của mỗi món hoặc mỗi cân.",
+      "formula": "Danh từ + 多少钱（+ lượng từ）？ — Số tiền + lượng từ",
+      "examples": [
+        "这个杯子多少钱一个？",
+        "苹果三块五一斤。",
+        "这些五块钱一个。"
+      ],
+      "note": "钱 không cần lượng từ. Nói 多少钱, không nói 多少个钱."
+    },
+    {
+      "title": "3. Câu vị ngữ tính từ",
+      "explanation": "Trong tiếng Hán, tính từ có thể trực tiếp làm vị ngữ. Câu khẳng định tự nhiên thường có 很、真、太; phủ định dùng 不 trước tính từ.",
+      "formula": "Chủ ngữ + 很/真/太/不 + tính từ",
+      "examples": [
+        "这儿的水果真不少！",
+        "这件衣服不贵。",
+        "那些杯子很好看。"
+      ],
+      "note": "Không thêm 是 trước tính từ: nói 这件衣服很便宜, không nói 这件衣服是很便宜."
+    },
+    {
+      "title": "4. Đại từ nghi vấn 怎么样",
+      "explanation": "怎么样 đặt sau người hoặc sự vật để hỏi ý kiến, đặc điểm hay tình trạng. Câu trả lời thường là một nhận xét bằng tính từ.",
+      "formula": "Người/Sự vật + 怎么样？",
+      "examples": [
+        "这件衣服怎么样？",
+        "这个杯子怎么样？",
+        "今天的苹果怎么样？"
+      ],
+      "note": "怎么 hỏi cách thức làm việc; 怎么样 hỏi đánh giá hoặc tình trạng."
+    }
+  ],
+  "mistakes": [
+    {
+      "title": "Thêm 是 trước tính từ",
+      "wrong": "这件衣服是很便宜。",
+      "correct": "这件衣服很便宜。",
+      "tip": "Tính từ có thể trực tiếp làm vị ngữ."
+    },
+    {
+      "title": "Dùng 多少个钱",
+      "wrong": "这个杯子多少个钱？",
+      "correct": "这个杯子多少钱？",
+      "tip": "钱 không dùng với lượng từ 个 trong cấu trúc hỏi giá."
+    },
+    {
+      "title": "Dùng 二 trước 斤",
+      "wrong": "我买二斤苹果。",
+      "correct": "我买两斤苹果。",
+      "tip": "Trước lượng từ thường dùng 两, không dùng 二."
+    },
+    {
+      "title": "Đảo thứ tự giá và đơn vị",
+      "wrong": "苹果一斤三块五。",
+      "correct": "苹果三块五一斤。",
+      "tip": "Trong cách báo giá của bài: giá tiền đứng trước, đơn vị tính đứng sau."
+    },
+    {
+      "title": "Nhầm 怎么 với 怎么样",
+      "wrong": "这件衣服怎么？",
+      "correct": "这件衣服怎么样？",
+      "tip": "Hỏi nhận xét dùng 怎么样; hỏi cách thức dùng 怎么 + động từ."
+    }
+  ],
+  "mindmap": {
+    "center": "买东西",
+    "left": [
+      "多少钱？",
+      "五块钱一个",
+      "三块五一斤",
+      "元・块・毛・分"
+    ],
+    "right": [
+      "真便宜",
+      "不贵",
+      "怎么样？",
+      "两斤苹果・一件衣服"
+    ]
+  },
+  "dialogues": [
+    {
+      "speaker": "王一雪",
+      "side": "left",
+      "hanzi": "请问，有杯子吗？",
+      "pinyin": "Qǐngwèn, yǒu bēizi ma?",
+      "vi": "Xin hỏi, có cốc không?",
+      "audio": ""
+    },
+    {
+      "speaker": "售货员",
+      "side": "right",
+      "hanzi": "有，杯子在这边。",
+      "pinyin": "Yǒu, bēizi zài zhèbian.",
+      "vi": "Có, cốc ở bên này.",
+      "audio": ""
+    },
+    {
+      "speaker": "王一雪",
+      "side": "left",
+      "hanzi": "多少钱一个？",
+      "pinyin": "Duōshao qián yí ge?",
+      "vi": "Bao nhiêu tiền một chiếc?",
+      "audio": ""
+    },
+    {
+      "speaker": "售货员",
+      "side": "right",
+      "hanzi": "这些五块钱一个，那些十块钱一个。",
+      "pinyin": "Zhèxiē wǔ kuài qián yí ge, nàxiē shí kuài qián yí ge.",
+      "vi": "Những chiếc này năm tệ một chiếc, những chiếc kia mười tệ một chiếc.",
+      "audio": ""
+    },
+    {
+      "speaker": "王一雪",
+      "side": "left",
+      "hanzi": "我买这个吧。",
+      "pinyin": "Wǒ mǎi zhège ba.",
+      "vi": "Tôi mua chiếc này nhé.",
+      "audio": ""
+    },
+    {
+      "speaker": "王一雪",
+      "side": "left",
+      "hanzi": "这儿的水果真不少！",
+      "pinyin": "Zhèr de shuǐguǒ zhēn bù shǎo!",
+      "vi": "Hoa quả ở đây nhiều thật!",
+      "audio": ""
+    },
+    {
+      "speaker": "售货员",
+      "side": "right",
+      "hanzi": "您想买什么？",
+      "pinyin": "Nín xiǎng mǎi shénme?",
+      "vi": "Bà muốn mua gì?",
+      "audio": ""
+    },
+    {
+      "speaker": "王一雪",
+      "side": "left",
+      "hanzi": "我想买两斤苹果。",
+      "pinyin": "Wǒ xiǎng mǎi liǎng jīn píngguǒ.",
+      "vi": "Tôi muốn mua hai cân Trung Quốc táo.",
+      "audio": ""
+    },
+    {
+      "speaker": "售货员",
+      "side": "right",
+      "hanzi": "苹果三块五一斤。这些七块二，七块钱吧。",
+      "pinyin": "Píngguǒ sān kuài wǔ yì jīn. Zhèxiē qī kuài èr, qī kuài qián ba.",
+      "vi": "Táo ba tệ rưỡi một cân. Chỗ này là bảy tệ hai, lấy bảy tệ thôi.",
+      "audio": ""
+    },
+    {
+      "speaker": "王一雪",
+      "side": "left",
+      "hanzi": "好的，这儿的苹果真便宜！",
+      "pinyin": "Hǎo de, zhèr de píngguǒ zhēn piányi!",
+      "vi": "Được, táo ở đây rẻ thật!",
+      "audio": ""
+    },
+    {
+      "speaker": "王一雪",
+      "side": "left",
+      "hanzi": "这家商店衣服真多！这件一百元，怎么样？",
+      "pinyin": "Zhè jiā shāngdiàn yīfu zhēn duō! Zhè jiàn yìbǎi yuán, zěnmeyàng?",
+      "vi": "Cửa hàng này nhiều quần áo thật! Bộ này một trăm tệ, thế nào?",
+      "audio": ""
+    },
+    {
+      "speaker": "刘明",
+      "side": "right",
+      "hanzi": "好看，也不贵。",
+      "pinyin": "Hǎokàn, yě bú guì.",
+      "vi": "Đẹp, cũng không đắt.",
+      "audio": ""
+    },
+    {
+      "speaker": "王一雪",
+      "side": "left",
+      "hanzi": "小雪能穿，买一件吧。",
+      "pinyin": "Xiǎoxuě néng chuān, mǎi yí jiàn ba.",
+      "vi": "Tiểu Tuyết mặc được, mua một bộ nhé.",
+      "audio": ""
+    },
+    {
+      "speaker": "刘明",
+      "side": "right",
+      "hanzi": "好的。小明能穿吗？",
+      "pinyin": "Hǎo de. Xiǎomíng néng chuān ma?",
+      "vi": "Được. Tiểu Minh có mặc được không?",
+      "audio": ""
+    },
+    {
+      "speaker": "王一雪",
+      "side": "left",
+      "hanzi": "不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。",
+      "pinyin": "Bù néng. Zhèxiē shì nǚ háizi chuān de yīfu, nán háizi de yīfu zài nàr.",
+      "vi": "Không được. Đây là quần áo bé gái mặc, quần áo bé trai ở đằng kia.",
+      "audio": ""
+    },
+    {
+      "speaker": "刘明",
+      "side": "right",
+      "hanzi": "好的。",
+      "pinyin": "Hǎo de.",
+      "vi": "Được.",
+      "audio": ""
+    }
+  ],
+  "listening": {
+    "title": "Nghe hội thoại mua táo",
+    "instruction": "Nghe câu và chọn giá đúng của hai cân táo sau khi người bán bớt tiền.",
+    "audio": "",
+    "question": "王一雪最后付多少钱？ Wáng Yìxuě zuìhòu fù duōshao qián?",
+    "options": [
+      "七块钱",
+      "七块二",
+      "三块五"
+    ],
+    "answer": 0
+  },
+  "speaking": [
+    "这个杯子多少钱一个？ — Zhège bēizi duōshao qián yí ge? — Chiếc cốc này bao nhiêu tiền một chiếc?",
+    "我想买两斤苹果。 — Wǒ xiǎng mǎi liǎng jīn píngguǒ. — Tôi muốn mua hai cân Trung Quốc táo.",
+    "苹果三块五一斤。 — Píngguǒ sān kuài wǔ yì jīn. — Táo ba tệ rưỡi một cân.",
+    "这件衣服怎么样？ — Zhè jiàn yīfu zěnmeyàng? — Bộ quần áo này thế nào?",
+    "这件衣服很好看，也不贵。 — Zhè jiàn yīfu hěn hǎokàn, yě bú guì. — Bộ quần áo này rất đẹp, cũng không đắt."
+  ],
+  "exercises": [
+    {
+      "id": "e1",
+      "question": "Điền từ: 请问，这本书____钱？",
+      "answer": [
+        "多少"
+      ]
+    },
+    {
+      "id": "e2",
+      "question": "Điền từ: 这个____不便宜，六十五____钱一个。",
+      "answer": [
+        "杯子，块",
+        "杯子,块",
+        "杯子 块"
+      ]
+    },
+    {
+      "id": "e3",
+      "question": "Điền từ: 售货员：____苹果很好吃，你买一些吧。",
+      "answer": [
+        "这些"
+      ]
+    },
+    {
+      "id": "e4",
+      "question": "Điền từ: 安妮：这件衣服____？ 白家月：很好看。",
+      "answer": [
+        "怎么样"
+      ]
+    },
+    {
+      "id": "e5",
+      "question": "Sắp xếp thành câu: 苹果 / 两斤 / 我 / 买 / 想",
+      "answer": [
+        "我想买两斤苹果"
+      ]
+    },
+    {
+      "id": "e6",
+      "question": "Sắp xếp thành câu: 多少钱 / 一个 / 杯子 / 这个",
+      "answer": [
+        "这个杯子多少钱一个"
+      ]
+    },
+    {
+      "id": "e7",
+      "question": "Dịch sang tiếng Trung: Táo ở đây rẻ thật!",
+      "answer": [
+        "这儿的苹果真便宜",
+        "这里的苹果真便宜"
+      ]
+    },
+    {
+      "id": "e8",
+      "question": "Dịch sang tiếng Việt: 这件衣服一百元，不贵。",
+      "answer": [
+        "Bộ quần áo này giá một trăm tệ, không đắt",
+        "Bộ quần áo này 100 tệ, không đắt",
+        "Bộ quần áo này giá 100 tệ, không đắt"
+      ]
+    },
+    {
+      "id": "e9",
+      "question": "Viết bằng chữ Hán: 3,5 元",
+      "answer": [
+        "三块五",
+        "三元五角"
+      ]
+    },
+    {
+      "id": "e10",
+      "question": "Trả lời: 这件衣服怎么样？ (đẹp, không đắt)",
+      "answer": [
+        "很好看，也不贵",
+        "这件衣服很好看，也不贵"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question": "“杯子” nghĩa là gì?",
+      "options": [
+        "cốc, chén",
+        "quần áo",
+        "hoa quả"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "question": "Muốn hỏi giá, câu nào đúng?",
+      "options": [
+        "这个杯子多少钱？",
+        "这个杯子怎么去？",
+        "这个杯子哪国？"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q3",
+      "question": "3,5 tệ nói thế nào trong khẩu ngữ?",
+      "options": [
+        "三块五",
+        "三块五分",
+        "五块三"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "question": "“两斤苹果” là bao nhiêu?",
+      "options": [
+        "hai cân Trung Quốc táo",
+        "hai quả táo",
+        "hai túi táo"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q5",
+      "question": "Câu nào đúng?",
+      "options": [
+        "这件衣服很便宜。",
+        "这件衣服是很便宜。",
+        "这件衣服有便宜。"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q6",
+      "question": "“怎么样” dùng để làm gì?",
+      "options": [
+        "Hỏi ý kiến hoặc tình trạng",
+        "Hỏi số lượng",
+        "Hỏi quốc tịch"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q7",
+      "question": "Lượng từ của 衣服 trong bài là gì?",
+      "options": [
+        "件",
+        "斤",
+        "家"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q8",
+      "question": "“这些” nghĩa là gì?",
+      "options": [
+        "những cái này",
+        "những cái kia",
+        "chỗ kia"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q9",
+      "question": "Phủ định của 贵 là gì?",
+      "options": [
+        "不贵",
+        "没贵",
+        "不是贵"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q10",
+      "question": "Câu nào đúng với “Tôi muốn mua hai cân táo”?",
+      "options": [
+        "我想买两斤苹果。",
+        "我买想二斤苹果。",
+        "我想两苹果斤买。"
+      ],
+      "answer": 0
+    }
+  ],
+  "summary": [
+    {
+      "title": "Mua hàng",
+      "text": "Hỏi có hàng, hỏi giá, chọn món và nói số lượng cần mua."
+    },
+    {
+      "title": "Tiền và lượng từ",
+      "text": "元/块、角/毛、分; 一个杯子、两斤苹果、一件衣服."
+    },
+    {
+      "title": "Nhận xét",
+      "text": "Dùng câu vị ngữ tính từ và 怎么样: 真便宜、不贵、很好看."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "f1",
+      "front": "杯子",
+      "pinyin": "bēizi",
+      "back": "cốc, chén",
+      "example": "这个杯子多少钱？"
+    },
+    {
+      "id": "f2",
+      "front": "售货员",
+      "pinyin": "shòuhuòyuán",
+      "back": "nhân viên bán hàng",
+      "example": "售货员在商店里。"
+    },
+    {
+      "id": "f3",
+      "front": "这边",
+      "pinyin": "zhèbian",
+      "back": "bên này",
+      "example": "杯子在这边。"
+    },
+    {
+      "id": "f4",
+      "front": "钱",
+      "pinyin": "qián",
+      "back": "tiền",
+      "example": "多少钱？"
+    },
+    {
+      "id": "f5",
+      "front": "这些",
+      "pinyin": "zhèxiē",
+      "back": "những cái này",
+      "example": "这些五块钱一个。"
+    },
+    {
+      "id": "f6",
+      "front": "块",
+      "pinyin": "kuài",
+      "back": "tệ, đồng (khẩu ngữ)",
+      "example": "十块钱。"
+    },
+    {
+      "id": "f7",
+      "front": "那些",
+      "pinyin": "nàxiē",
+      "back": "những cái kia",
+      "example": "那些十块钱一个。"
+    },
+    {
+      "id": "f8",
+      "front": "水果",
+      "pinyin": "shuǐguǒ",
+      "back": "hoa quả",
+      "example": "这儿的水果真不少！"
+    },
+    {
+      "id": "f9",
+      "front": "斤",
+      "pinyin": "jīn",
+      "back": "cân Trung Quốc (500 g)",
+      "example": "两斤苹果。"
+    },
+    {
+      "id": "f10",
+      "front": "苹果",
+      "pinyin": "píngguǒ",
+      "back": "quả táo",
+      "example": "苹果三块五一斤。"
+    },
+    {
+      "id": "f11",
+      "front": "便宜",
+      "pinyin": "piányi",
+      "back": "rẻ",
+      "example": "苹果真便宜！"
+    },
+    {
+      "id": "f12",
+      "front": "衣服",
+      "pinyin": "yīfu",
+      "back": "quần áo",
+      "example": "我想买一件衣服。"
+    },
+    {
+      "id": "f13",
+      "front": "件",
+      "pinyin": "jiàn",
+      "back": "chiếc, bộ (quần áo)",
+      "example": "一件衣服。"
+    },
+    {
+      "id": "f14",
+      "front": "元",
+      "pinyin": "yuán",
+      "back": "nhân dân tệ",
+      "example": "一百元。"
+    },
+    {
+      "id": "f15",
+      "front": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "back": "thế nào",
+      "example": "这件衣服怎么样？"
+    },
+    {
+      "id": "f16",
+      "front": "贵",
+      "pinyin": "guì",
+      "back": "đắt",
+      "example": "这件衣服不贵。"
+    },
+    {
+      "id": "f17",
+      "front": "穿",
+      "pinyin": "chuān",
+      "back": "mặc",
+      "example": "小雪能穿。"
+    },
+    {
+      "id": "f18",
+      "front": "那儿",
+      "pinyin": "nàr",
+      "back": "ở kia",
+      "example": "男孩子的衣服在那儿。"
+    }
+  ]
+};
+
+    /* =========================================================
+       2. HỆ THỐNG LƯU TRỮ
+       ========================================================= */
+    const key = name => `${lessonData.id}:${name}`;
+
+    const state = {
+      theme: localStorage.getItem("site-theme") || "light",
+      favorites: JSON.parse(localStorage.getItem(key("favorites")) || "[]"),
+      completed: JSON.parse(localStorage.getItem(key("completed")) || "[]"),
+      notes: localStorage.getItem(key("notes")) || "",
+      quizScore: Number(localStorage.getItem(key("quizScore")) || 0),
+      hidePinyin: localStorage.getItem(key("hidePinyin")) === "true",
+      hideVi: localStorage.getItem(key("hideVi")) === "true"
+    };
+
+    document.documentElement.dataset.theme = state.theme;
+
+    function saveState(){
+      localStorage.setItem(key("favorites"),JSON.stringify(state.favorites));
+      localStorage.setItem(key("completed"),JSON.stringify(state.completed));
+      localStorage.setItem(key("notes"),state.notes);
+      localStorage.setItem(key("quizScore"),String(state.quizScore));
+      localStorage.setItem(key("hidePinyin"),String(state.hidePinyin));
+      localStorage.setItem(key("hideVi"),String(state.hideVi));
+    }
+
+    /* =========================================================
+       3. HÀM TIỆN ÍCH
+       ========================================================= */
+    const $ = selector => document.querySelector(selector);
+    const $$ = selector => [...document.querySelectorAll(selector)];
+
+    function esc(text=""){
+      return String(text).replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+      }[m]));
+    }
+
+    function normalize(text=""){
+      return text.toLowerCase().replace(/[，。！？,.!?]/g,"").replace(/\s+/g,"").trim();
+    }
+
+    function speak(text,audioUrl=""){
+      if(audioUrl){
+        const audio = new Audio(audioUrl);
+        audio.play().catch(()=>{});
+        return;
+      }
+      if("speechSynthesis" in window){
+        speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "zh-CN";
+        utterance.rate = 0.85;
+        speechSynthesis.speak(utterance);
+      } else {
+        alert("Trình duyệt chưa hỗ trợ phát âm tự động.");
+      }
+    }
+
+    function sectionShell(id,icon,title,subtitle,content){
+      const done = state.completed.includes(id);
+      return `
+        <section class="section" id="${id}">
+          <div class="container">
+            <div class="section-heading">
+              <div><h2>${icon} ${title}</h2><p>${subtitle}</p></div>
+              <button class="complete-btn ${done?"done":""}" data-complete="${id}">
+                ${done?"✓ Đã hoàn thành":"Đánh dấu hoàn thành"}
+              </button>
+            </div>
+            ${content}
+          </div>
+        </section>`;
+    }
+
+    /* =========================================================
+       4. RENDER TOÀN BỘ BÀI HỌC
+       ========================================================= */
+    function render(){
+      const app = $("#app");
+
+      const objectives = sectionShell(
+        "objectives","🎯","Mục tiêu","Học xong bài này, học viên có thể:",
+        `<div class="grid-4">${lessonData.objectives.map((x,i)=>`
+          <article class="objective"><strong>${i+1}</strong><p>${esc(x)}</p></article>`).join("")}</div>`
+      );
+
+      const vocab = sectionShell(
+        "vocabulary","📖","Từ mới","Tìm kiếm, nghe phát âm và đánh dấu từ yêu thích.",
+        `<div class="section-card">
+          <div class="search-row">
+            <input id="vocabSearch" placeholder="🔍 Tìm chữ Hán, pinyin hoặc nghĩa tiếng Việt...">
+            <button class="btn" id="clearSearch">Xóa tìm kiếm</button>
+          </div>
+          <div class="grid-4" id="vocabGrid"></div>
+          <div class="favorite-panel" id="favoritePanel">
+            <h3>⭐ Từ đã lưu</h3>
+            <div class="favorite-list" id="favoriteList"></div>
+          </div>
+        </div>`
+      );
+
+      const memory = sectionShell(
+        "memory","🧠","Ghi nhớ nhanh","Các công thức cần nhớ.",
+        `<div class="grid-4">${lessonData.memory.map(x=>`
+          <article class="memory-item"><strong>${esc(x.title)}</strong><p>${esc(x.text)}</p></article>`).join("")}</div>`
+      );
+
+      const grammar = sectionShell(
+        "grammar","📚","Ngữ pháp","Giải thích công thức, cách dùng và ví dụ.",
+        `<div class="grid-2">${lessonData.grammar.map(g=>`
+          <article class="grammar-card">
+            <h3>${esc(g.title)}</h3>
+            <p>${esc(g.explanation)}</p>
+            <div class="formula">${esc(g.formula)}</div>
+            <ul>${g.examples.map(e=>`<li>${esc(e)} <button class="mini-btn speak-btn" data-speak="${esc(e)}">🔊</button></li>`).join("")}</ul>
+            <div class="note">${esc(g.note)}</div>
+          </article>`).join("")}</div>`
+      );
+
+      const mistakes = sectionShell(
+        "mistakes","⚠️","Lỗi người Việt thường mắc","Nhận diện lỗi và ghi nhớ cách sửa.",
+        `<div class="grid-2">${lessonData.mistakes.map(m=>`
+          <article class="mistake-card">
+            <h3>${esc(m.title)}</h3>
+            <p class="wrong">✘ ${esc(m.wrong)}</p>
+            <p class="correct">✔ ${esc(m.correct)}</p>
+            <p><strong>Mẹo:</strong> ${esc(m.tip)}</p>
+          </article>`).join("")}</div>`
+      );
+
+      const mindmap = sectionShell(
+        "mindmap","🗺️","Mindmap","Sơ đồ liên kết kiến thức của bài.",
+        `<div class="section-card mindmap">
+          <div class="mind-col">${lessonData.mindmap.left.map(x=>`<div class="mind-node">${esc(x)}</div>`).join("")}</div>
+          <div class="mind-node mind-center">${esc(lessonData.mindmap.center)}</div>
+          <div class="mind-col">${lessonData.mindmap.right.map(x=>`<div class="mind-node">${esc(x)}</div>`).join("")}</div>
+        </div>`
+      );
+
+      const dialogue = sectionShell(
+        "dialogue","🎭","Hội thoại","Nghe từng câu, ẩn pinyin hoặc bản dịch để luyện.",
+        `<div class="section-card">
+          <div class="hero-actions" style="margin-top:0;margin-bottom:16px">
+            <button class="btn" id="togglePinyin">${state.hidePinyin?"Hiện pinyin":"Ẩn pinyin"}</button>
+            <button class="btn" id="toggleVi">${state.hideVi?"Hiện bản dịch":"Ẩn bản dịch"}</button>
+          </div>
+          <div class="dialogue-list">${lessonData.dialogues.map(d=>`
+            <div class="bubble ${d.side==="right"?"right":""}">
+              <div class="speaker">${esc(d.speaker)} <button class="mini-btn dialogue-speak" data-text="${esc(d.hanzi)}" data-audio="${esc(d.audio)}">🔊</button></div>
+              <div>${esc(d.hanzi)}</div>
+              <div class="pinyin-line ${state.hidePinyin?"hide":""}">${esc(d.pinyin)}</div>
+              <div class="vi-line ${state.hideVi?"hide":""}">${esc(d.vi)}</div>
+            </div>`).join("")}</div>
+        </div>`
+      );
+
+      const listening = sectionShell(
+        "listening","🎧","Luyện nghe","Nghe và trả lời câu hỏi.",
+        `<div class="section-card">
+          <div class="audio-block">
+            <div><strong>${esc(lessonData.listening.title)}</strong><p>${esc(lessonData.listening.instruction)}</p></div>
+            <button class="btn btn-primary" id="listenPlay">▶ Phát âm thanh</button>
+          </div>
+          <div class="quiz-question" style="margin-top:14px">
+            <h3>${esc(lessonData.listening.question)}</h3>
+            ${lessonData.listening.options.map((o,i)=>`<label><input type="radio" name="listenQ" value="${i}"> ${esc(o)}</label>`).join("")}
+            <button class="btn" id="checkListening">Kiểm tra</button>
+            <div id="listeningFeedback" class="feedback"></div>
+          </div>
+        </div>`
+      );
+
+      const speaking = sectionShell(
+        "speaking","🗣️","Luyện nói","Nói theo khung và thay bằng thông tin cá nhân.",
+        `<div class="grid-3">${lessonData.speaking.map((x,i)=>`
+          <article class="objective"><strong>Khung ${i+1}</strong><p>${esc(x)}</p>
+          <button class="mini-btn speaking-speak" data-text="${esc(x.split("—")[0])}">🔊</button></article>`).join("")}</div>`
+      );
+
+      const exercises = sectionShell(
+        "exercises","✍️","Bài tập","Nhập đáp án và kiểm tra ngay.",
+        `<div class="section-card">
+          ${lessonData.exercises.map((e,i)=>`
+            <div class="exercise">
+              <strong>${i+1}. ${esc(e.question)}</strong>
+              <input id="${e.id}" placeholder="Nhập đáp án">
+              <div class="feedback" id="${e.id}-feedback"></div>
+            </div>`).join("")}
+          <button class="btn btn-primary" id="checkExercises">Kiểm tra bài tập</button>
+        </div>`
+      );
+
+      const quiz = sectionShell(
+        "quiz","🎮","Quiz","Chấm điểm tự động và lưu kết quả cao nhất.",
+        `<div class="section-card">
+          ${lessonData.quiz.map((q,qi)=>`
+            <div class="quiz-question">
+              <h3>${qi+1}. ${esc(q.question)}</h3>
+              ${q.options.map((o,oi)=>`<label><input type="radio" name="${q.id}" value="${oi}"> ${esc(o)}</label>`).join("")}
+            </div>`).join("")}
+          <button class="btn btn-primary" id="gradeQuiz">Chấm điểm</button>
+          <div class="score-box" id="scoreBox"></div>
+        </div>`
+      );
+
+      const summary = sectionShell(
+        "summary","📑","Tổng kết","Ôn lại nội dung cốt lõi.",
+        `<div class="grid-3">${lessonData.summary.map(x=>`
+          <article class="summary-item"><strong>${esc(x.title)}</strong><p>${esc(x.text)}</p></article>`).join("")}</div>`
+      );
+
+      const flashcards = sectionShell(
+        "flashcards","📥","Flashcard","Bấm để lật; đánh dấu từ đã nhớ hoặc chưa nhớ.",
+        `<div class="flashcards">${lessonData.flashcards.map(f=>`
+          <div class="flashcard" data-card="${f.id}" tabindex="0">
+            <div class="flashcard-inner">
+              <div class="flash-face">
+                <strong>${esc(f.front)}</strong>
+                <span>${esc(f.pinyin)}</span>
+                <small>Bấm để lật</small>
+              </div>
+              <div class="flash-face flash-back">
+                <strong>${esc(f.back)}</strong>
+                <span>${esc(f.example)}</span>
+                <div class="flash-actions">
+                  <button class="btn remembered-btn" data-id="${f.id}">😊 Đã nhớ</button>
+                  <button class="btn review-btn" data-id="${f.id}">🤔 Chưa nhớ</button>
+                </div>
+              </div>
+            </div>
+          </div>`).join("")}</div>`
+      );
+
+      const notes = sectionShell(
+        "notes","📝","Ghi chú cá nhân","Nội dung được tự động lưu trên trình duyệt.",
+        `<div class="section-card">
+          <textarea class="notes-area" id="notesArea" rows="7" placeholder="Viết ghi chú của bạn tại đây...">${esc(state.notes)}</textarea>
+          <p id="noteStatus" style="color:var(--muted)">Đã bật tự động lưu.</p>
+        </div>`
+      );
+
+      app.innerHTML = `
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-card">
+              <span class="eyebrow">🎬 ${esc(lessonData.level)} • BÀI ${lessonData.lesson}</span>
+              <h1>${esc(lessonData.title)}</h1>
+              <p class="subtitle">${esc(lessonData.titleVi)}</p>
+              <p>${esc(lessonData.intro)}</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#objectives">Bắt đầu học</a>
+                <a class="btn" href="#flashcards">Ôn flashcard</a>
+              </div>
+            </div>
+            <aside class="lesson-meta">
+              <div class="meta-grid">
+                <div class="meta-item"><strong>${esc(lessonData.topic)}</strong><span>Chủ đề</span></div>
+                <div class="meta-item"><strong>${esc(lessonData.duration)}</strong><span>Thời lượng</span></div>
+                <div class="meta-item"><strong>${lessonData.vocabulary.length}</strong><span>Từ mới</span></div>
+                <div class="meta-item"><strong>${esc(lessonData.difficulty)}</strong><span>Mức độ</span></div>
+              </div>
+            </aside>
+          </div>
+        </section>
+        ${objectives}${vocab}${memory}${grammar}${mistakes}${mindmap}${dialogue}
+        ${listening}${speaking}${exercises}${quiz}${summary}${flashcards}${notes}
+        <section class="section">
+          <div class="container">
+            <div class="completion" id="completionBox">
+              <h2>🏆 Hoàn thành bài học</h2>
+              <p>Hoàn thành các phần và đạt ít nhất 80% quiz để kết thúc bài.</p>
+              <button class="btn btn-success" id="finishLesson">Kiểm tra hoàn thành</button>
+            </div>
+          </div>
+        </section>`;
+    }
+
+    /* =========================================================
+       5. RENDER TỪ VỰNG + YÊU THÍCH
+       ========================================================= */
+    function renderVocabulary(filter=""){
+      const grid = $("#vocabGrid");
+      const q = normalize(filter);
+      const items = lessonData.vocabulary.filter(v =>
+        normalize(v.hanzi+" "+v.pinyin+" "+v.meaning+" "+v.type).includes(q)
+      );
+
+      grid.innerHTML = items.map(v=>`
+        <article class="vocab-card">
+          <div class="vocab-actions">
+            <button class="mini-btn vocab-speak" data-text="${esc(v.hanzi)}" data-audio="${esc(v.audio)}">🔊</button>
+            <button class="mini-btn favorite-btn ${state.favorites.includes(v.id)?"active":""}" data-id="${v.id}">⭐</button>
+          </div>
+          <div class="hanzi">${esc(v.hanzi)}</div>
+          <div class="pinyin">${esc(v.pinyin)}</div>
+          <div class="meaning">${esc(v.meaning)}</div>
+          <small>${esc(v.type)}</small>
+          <div class="example">${esc(v.example)}<br>${esc(v.examplePinyin)}<br>${esc(v.exampleVi)}</div>
+        </article>`).join("") || `<p>Không tìm thấy từ phù hợp.</p>`;
+
+      bindVocabularyEvents();
+      renderFavorites();
+    }
+
+    function renderFavorites(){
+      const list = $("#favoriteList");
+      if(!list) return;
+      const words = lessonData.vocabulary.filter(v=>state.favorites.includes(v.id));
+      list.innerHTML = words.length
+        ? words.map(v=>`<span class="favorite-chip">${esc(v.hanzi)} · ${esc(v.meaning)}</span>`).join("")
+        : "<span>Chưa có từ yêu thích.</span>";
+    }
+
+    function bindVocabularyEvents(){
+      $$(".vocab-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text,btn.dataset.audio));
+      $$(".favorite-btn").forEach(btn=>btn.onclick=()=>{
+        const id = btn.dataset.id;
+        state.favorites = state.favorites.includes(id)
+          ? state.favorites.filter(x=>x!==id)
+          : [...state.favorites,id];
+        saveState();
+        renderVocabulary($("#vocabSearch")?.value || "");
+      });
+    }
+
+    /* =========================================================
+       6. TIẾN ĐỘ
+       ========================================================= */
+    const trackedSections = ["objectives","vocabulary","memory","grammar","mistakes","mindmap","dialogue","listening","speaking","exercises","quiz","summary","flashcards","notes"];
+
+    function updateProgress(){
+      const count = trackedSections.filter(id=>state.completed.includes(id)).length;
+      const percent = Math.round(count / trackedSections.length * 100);
+      $("#progressFill").style.width = percent+"%";
+      $("#progressText").textContent = percent+"%";
+      $$(".complete-btn").forEach(btn=>{
+        const done = state.completed.includes(btn.dataset.complete);
+        btn.classList.toggle("done",done);
+        btn.textContent = done ? "✓ Đã hoàn thành" : "Đánh dấu hoàn thành";
+      });
+    }
+
+    function toggleComplete(id){
+      state.completed = state.completed.includes(id)
+        ? state.completed.filter(x=>x!==id)
+        : [...state.completed,id];
+      saveState();
+      updateProgress();
+    }
+
+    /* =========================================================
+       7. SỰ KIỆN
+       ========================================================= */
+    function bindEvents(){
+      $$(".complete-btn").forEach(btn=>btn.onclick=()=>toggleComplete(btn.dataset.complete));
+
+      $("#vocabSearch").addEventListener("input",e=>renderVocabulary(e.target.value));
+      $("#clearSearch").onclick=()=>{
+        $("#vocabSearch").value="";
+        renderVocabulary("");
+      };
+
+      $("#favoritesToggle").onclick=()=>{
+        $("#favoritePanel").classList.toggle("show");
+        location.hash="#vocabulary";
+      };
+
+      $("#themeToggle").onclick=()=>{
+        state.theme = state.theme==="dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = state.theme;
+        localStorage.setItem("site-theme",state.theme);
+        $("#themeToggle").textContent = state.theme==="dark" ? "☀️" : "🌙";
+      };
+      $("#themeToggle").textContent = state.theme==="dark" ? "☀️" : "🌙";
+
+      $$(".speak-btn").forEach(btn=>btn.onclick=()=>speak(btn.dataset.speak));
+      $$(".dialogue-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text,btn.dataset.audio));
+      $$(".speaking-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text));
+
+      $("#togglePinyin").onclick=()=>{
+        state.hidePinyin=!state.hidePinyin;
+        saveState();
+        $$(".pinyin-line").forEach(el=>el.classList.toggle("hide",state.hidePinyin));
+        $("#togglePinyin").textContent=state.hidePinyin?"Hiện pinyin":"Ẩn pinyin";
+      };
+      $("#toggleVi").onclick=()=>{
+        state.hideVi=!state.hideVi;
+        saveState();
+        $$(".vi-line").forEach(el=>el.classList.toggle("hide",state.hideVi));
+        $("#toggleVi").textContent=state.hideVi?"Hiện bản dịch":"Ẩn bản dịch";
+      };
+
+      $("#listenPlay").onclick=()=>{
+        const l = lessonData.listening;
+        if(l.audio) new Audio(l.audio).play().catch(()=>{});
+        else speak("我想去超市买牛奶。");
+      };
+
+      $("#checkListening").onclick=()=>{
+        const selected = document.querySelector('input[name="listenQ"]:checked');
+        const fb = $("#listeningFeedback");
+        if(!selected){fb.innerHTML='<span class="wrong">Hãy chọn một đáp án.</span>';return}
+        fb.innerHTML = Number(selected.value)===lessonData.listening.answer
+          ? '<span class="correct">✓ Chính xác</span>'
+          : '<span class="wrong">✘ Chưa đúng</span>';
+      };
+
+      $("#checkExercises").onclick=()=>{
+        let allCorrect=true;
+        lessonData.exercises.forEach(e=>{
+          const value=normalize($("#"+e.id).value);
+          const ok=e.answers.some(a=>normalize(a)===value);
+          $("#"+e.id+"-feedback").innerHTML=ok
+            ? '<span class="correct">✓ Chính xác</span>'
+            : `<span class="wrong">✘ Đáp án gợi ý: ${esc(e.answers[0])}</span>`;
+          if(!ok) allCorrect=false;
+        });
+        if(allCorrect && !state.completed.includes("exercises")){
+          state.completed.push("exercises");saveState();updateProgress();
+        }
+      };
+
+      $("#gradeQuiz").onclick=()=>{
+        let score=0;
+        lessonData.quiz.forEach(q=>{
+          const selected=document.querySelector(`input[name="${q.id}"]:checked`);
+          if(selected && Number(selected.value)===q.answer) score++;
+        });
+        const percent=Math.round(score/lessonData.quiz.length*100);
+        state.quizScore=Math.max(state.quizScore,percent);
+        if(percent>=80 && !state.completed.includes("quiz")) state.completed.push("quiz");
+        saveState();updateProgress();
+        const box=$("#scoreBox");
+        box.style.display="block";
+        box.textContent=`Bạn đạt ${score}/${lessonData.quiz.length} câu (${percent}%). Điểm cao nhất: ${state.quizScore}%.`;
+      };
+
+      $$(".flashcard").forEach(card=>{
+        const flip=()=>card.classList.toggle("flipped");
+        card.onclick=e=>{
+          if(e.target.closest("button")) return;
+          flip();
+        };
+        card.onkeydown=e=>{
+          if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}
+        };
+      });
+
+      $$(".remembered-btn").forEach(btn=>btn.onclick=()=>{
+        localStorage.setItem(key(`card:${btn.dataset.id}`),"remembered");
+        btn.textContent="✓ Đã lưu";
+      });
+      $$(".review-btn").forEach(btn=>btn.onclick=()=>{
+        const reviewData={status:"review",updatedAt:new Date().toISOString()};
+        localStorage.setItem(key(`card:${btn.dataset.id}`),JSON.stringify(reviewData));
+        btn.textContent="✓ Sẽ ôn lại";
+      });
+
+      let noteTimer;
+      $("#notesArea").addEventListener("input",e=>{
+        state.notes=e.target.value;
+        $("#noteStatus").textContent="Đang lưu...";
+        clearTimeout(noteTimer);
+        noteTimer=setTimeout(()=>{
+          saveState();
+          $("#noteStatus").textContent="Đã tự động lưu.";
+        },400);
+      });
+
+      $("#finishLesson").onclick=()=>{
+        const finished=trackedSections.every(id=>state.completed.includes(id));
+        if(finished && state.quizScore>=80){
+          $("#completionBox").innerHTML="<h2>🎉 Chúc mừng!</h2><p>Bạn đã hoàn thành bài học với kết quả đạt yêu cầu.</p>";
+        }else{
+          const missing=trackedSections.filter(id=>!state.completed.includes(id)).length;
+          alert(`Bạn còn ${missing} phần chưa đánh dấu hoàn thành. Điểm quiz cao nhất hiện tại: ${state.quizScore}%.`);
+        }
+      };
+    }
+
+    render();
+    renderVocabulary();
+    bindEvents();
+    updateProgress();
+  </script>
+</body>
+</html>
