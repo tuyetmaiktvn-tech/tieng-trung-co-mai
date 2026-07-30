@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HSK1 Bài 15: 大兴机场见！ – học cách nói sở thích, kế hoạch du lịch, thời gian di chuyển và đón sân bay." />
+  <meta name="theme-color" content="#2563eb" />
+  <title>HSK1 Bài 15: 大兴机场见！ | Tiếng Trung Cô Mai</title>
+
+  <style>
+    :root{
+      --bg:#f6f8fc;
+      --surface:#ffffff;
+      --surface-2:#f8fafc;
+      --text:#172033;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --primary:#2563eb;
+      --primary-2:#7c3aed;
+      --success:#16a34a;
+      --warning:#d97706;
+      --danger:#dc2626;
+      --shadow:0 14px 40px rgba(15,23,42,.08);
+      --radius:20px;
+      --radius-sm:12px;
+      --max:1180px;
+    }
+
+    [data-theme="dark"]{
+      --bg:#0f172a;
+      --surface:#111827;
+      --surface-2:#1e293b;
+      --text:#f8fafc;
+      --muted:#cbd5e1;
+      --line:#334155;
+      --shadow:0 18px 45px rgba(0,0,0,.28);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+      transition:background .2s,color .2s;
+    }
+
+    button,input,textarea,select{font:inherit}
+    button{cursor:pointer}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(var(--max),calc(100% - 28px));margin:auto}
+
+    .topbar{
+      position:sticky;top:0;z-index:1000;
+      backdrop-filter:blur(14px);
+      background:color-mix(in srgb,var(--surface) 88%,transparent);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar-inner{
+      min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+    }
+    .brand{font-weight:900}
+    .brand span{color:var(--primary)}
+    .top-actions{display:flex;gap:8px;align-items:center}
+    .icon-btn{
+      width:42px;height:42px;border:1px solid var(--line);border-radius:12px;
+      background:var(--surface);color:var(--text);display:grid;place-items:center
+    }
+
+    .progress-shell{
+      position:sticky;top:68px;z-index:900;
+      background:var(--surface);border-bottom:1px solid var(--line)
+    }
+    .progress-wrap{padding:10px 0}
+    .progress-row{display:flex;justify-content:space-between;gap:16px;font-size:.9rem;color:var(--muted);margin-bottom:6px}
+    .progress-bar{height:10px;background:var(--surface-2);border-radius:999px;overflow:hidden}
+    .progress-fill{height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--primary-2));transition:width .35s ease}
+
+    .hero{padding:58px 0 30px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:stretch}
+    .hero-card,.lesson-meta,.section-card{
+      background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)
+    }
+    .hero-card{padding:30px}
+    .lesson-meta{padding:24px}
+    .eyebrow{
+      display:inline-flex;padding:8px 12px;border-radius:999px;background:#dbeafe;color:#1d4ed8;
+      font-weight:800;font-size:.9rem
+    }
+    [data-theme="dark"] .eyebrow{background:#1e3a8a;color:#dbeafe}
+    h1{font-size:clamp(2rem,5vw,4rem);line-height:1.08;margin:16px 0 10px}
+    h2{font-size:clamp(1.45rem,3vw,2.1rem);margin:0}
+    h3{margin-top:0}
+    .subtitle{font-size:1.08rem;color:var(--muted);margin:0}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .btn{
+      border:0;border-radius:12px;padding:12px 16px;font-weight:800;
+      background:var(--surface-2);color:var(--text)
+    }
+    .btn-primary{background:var(--primary);color:white}
+    .btn-success{background:var(--success);color:white}
+    .meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .meta-item{padding:14px;border-radius:14px;background:var(--surface-2)}
+    .meta-item strong{display:block;font-size:1.2rem}
+
+    .section{padding:18px 0}
+    .section-heading{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:14px}
+    .section-heading p{margin:4px 0 0;color:var(--muted)}
+    .section-card{padding:24px}
+    .complete-btn{
+      border:1px solid var(--line);background:var(--surface);color:var(--text);
+      border-radius:10px;padding:9px 12px;font-weight:700
+    }
+    .complete-btn.done{background:#dcfce7;color:#166534;border-color:#86efac}
+
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+    .objective,.memory-item,.grammar-card,.mistake-card,.summary-item{
+      padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)
+    }
+
+    .search-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+    .search-row input{
+      flex:1;min-width:220px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;
+      background:var(--surface);color:var(--text)
+    }
+
+    .vocab-card{
+      position:relative;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)
+    }
+    .vocab-actions{position:absolute;top:12px;right:12px;display:flex;gap:6px}
+    .mini-btn{
+      width:34px;height:34px;border-radius:10px;border:1px solid var(--line);
+      background:var(--surface-2);color:var(--text)
+    }
+    .mini-btn.active{background:#fef3c7;color:#92400e}
+    .hanzi{font-size:2rem;font-weight:900;color:var(--primary);padding-right:78px}
+    .pinyin{color:var(--primary-2);font-weight:800}
+    .meaning{font-weight:800;margin:6px 0}
+    .example{font-size:.94rem;color:var(--muted);margin-top:8px}
+
+    .formula{
+      padding:14px;text-align:center;border-radius:14px;background:var(--surface-2);
+      color:var(--primary);font-weight:900;margin:12px 0
+    }
+    .note{padding:12px 14px;border-left:4px solid var(--warning);background:var(--surface-2);border-radius:10px}
+    .wrong{color:var(--danger);font-weight:800}
+    .correct{color:var(--success);font-weight:800}
+
+    .mindmap{
+      display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:18px;align-items:center
+    }
+    .mind-col{display:grid;gap:12px}
+    .mind-node{padding:14px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);text-align:center;font-weight:800}
+    .mind-center{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:white;font-size:1.7rem;padding:26px}
+
+    .dialogue-list{display:grid;gap:12px}
+    .bubble{max-width:82%;padding:14px 16px;border-radius:18px;background:#dbeafe}
+    .bubble.right{margin-left:auto;background:#ede9fe}
+    [data-theme="dark"] .bubble{background:#1e3a8a}
+    [data-theme="dark"] .bubble.right{background:#4c1d95}
+    .speaker{font-weight:900}
+    .pinyin-line,.vi-line{font-size:.93rem;color:var(--muted)}
+    .hide{display:none!important}
+
+    .audio-block{
+      display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+      padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--surface-2)
+    }
+
+    .exercise,.quiz-question{padding:16px;border:1px solid var(--line);border-radius:14px;margin-bottom:12px}
+    .exercise input,.exercise textarea,.notes-area{
+      width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text)
+    }
+    .feedback{margin-top:8px;min-height:22px}
+    .quiz-question label{display:block;padding:8px;border-radius:9px}
+    .quiz-question label:hover{background:var(--surface-2)}
+    .score-box{display:none;margin-top:12px;padding:14px;border-radius:12px;background:#dcfce7;color:#166534;font-weight:900}
+
+    .flashcards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .flashcard{height:210px;perspective:1000px}
+    .flashcard-inner{position:relative;width:100%;height:100%;transition:transform .55s;transform-style:preserve-3d}
+    .flashcard.flipped .flashcard-inner{transform:rotateY(180deg)}
+    .flash-face{
+      position:absolute;inset:0;backface-visibility:hidden;border:1px solid var(--line);
+      border-radius:18px;background:var(--surface);display:flex;flex-direction:column;align-items:center;
+      justify-content:center;text-align:center;padding:18px;box-shadow:var(--shadow)
+    }
+    .flash-back{transform:rotateY(180deg)}
+    .flash-face strong{font-size:2rem;color:var(--primary)}
+    .flash-actions{display:flex;gap:8px;margin-top:12px}
+
+    .favorite-panel{display:none;margin-top:14px}
+    .favorite-panel.show{display:block}
+    .favorite-list{display:flex;gap:8px;flex-wrap:wrap}
+    .favorite-chip{padding:8px 10px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line)}
+
+    .completion{
+      text-align:center;padding:28px;border-radius:20px;background:linear-gradient(135deg,#dcfce7,#dbeafe)
+    }
+    [data-theme="dark"] .completion{background:linear-gradient(135deg,#14532d,#1e3a8a)}
+    footer{padding:38px 0;text-align:center;color:var(--muted)}
+
+    @media (max-width:900px){
+      .hero-grid,.grid-2,.grid-3,.grid-4,.mindmap{grid-template-columns:1fr}
+      .flashcards{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      .container{width:min(100% - 20px,var(--max))}
+      .hero{padding-top:34px}
+      .hero-card,.lesson-meta,.section-card{padding:18px}
+      .meta-grid,.flashcards{grid-template-columns:1fr}
+      .bubble{max-width:94%}
+      .progress-shell{top:68px}
+      .top-actions .text-label{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="../index.html">Tiếng Trung <span>Cô Mai</span></a>
+      <div class="top-actions">
+        <button class="icon-btn" id="favoritesToggle" title="Từ yêu thích">⭐</button>
+        <button class="icon-btn" id="themeToggle" title="Chế độ sáng/tối">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="progress-shell">
+    <div class="container progress-wrap">
+      <div class="progress-row">
+        <span>📊 Tiến độ bài học</span>
+        <strong id="progressText">0%</strong>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+  </div>
+
+  <main id="app"></main>
+
+  <footer>
+    <div class="container">© Tiếng Trung Cô Mai • Học từ gốc – Vững mọi mốc</div>
+  </footer>
+
+  <script>
+    /* =========================================================
+       1. DỮ LIỆU BÀI HỌC
+       Chỉ cần thay nội dung trong lessonData cho từng bài.
+       ========================================================= */
+    const lessonData = {
+  "id": "hsk1-lesson15",
+  "level": "HSK 1",
+  "lesson": 15,
+  "title": "大兴机场见！",
+  "titleVi": "Hẹn gặp ở sân bay Đại Hưng!",
+  "topic": "Sở thích, kế hoạch du lịch, câu song song ……, 还/也…… và giao tiếp đón sân bay",
+  "duration": "75–90 phút",
+  "difficulty": "Cơ bản",
+  "intro": "Bài 15 giúp học viên nói về sở thích ăn uống, kế hoạch du lịch, phương tiện đi lại và thời gian di chuyển; sử dụng câu song song với 也/还, đồng thời thực hành giao tiếp khi đón người thân hoặc bạn bè tại sân bay.",
+  "objectives": [
+    "Nói về món ăn yêu thích và cách mời khách trong bữa ăn",
+    "Diễn đạt kế hoạch và dự định du lịch",
+    "Sử dụng câu song song với 也 hoặc 还",
+    "Hỏi và trả lời về phương tiện, thời gian di chuyển",
+    "Thực hành giao tiếp đón khách tại sân bay"
+  ],
+  "vocabulary": [
+    {
+      "id": "v1",
+      "hanzi": "爱",
+      "pinyin": "ài",
+      "meaning": "yêu, thích",
+      "type": "Động từ",
+      "example": "我爱吃中国菜。",
+      "examplePinyin": "Wǒ ài chī Zhōngguó cài.",
+      "exampleVi": "Tôi thích ăn món Trung Quốc.",
+      "audio": ""
+    },
+    {
+      "id": "v2",
+      "hanzi": "哪个",
+      "pinyin": "nǎge",
+      "meaning": "cái nào, món nào",
+      "type": "Đại từ nghi vấn",
+      "example": "你爱吃哪个菜？",
+      "examplePinyin": "Nǐ ài chī nǎge cài?",
+      "exampleVi": "Bạn thích ăn món nào?",
+      "audio": ""
+    },
+    {
+      "id": "v3",
+      "hanzi": "去年",
+      "pinyin": "qùnián",
+      "meaning": "năm ngoái",
+      "type": "Danh từ thời gian",
+      "example": "去年我去了西安。",
+      "examplePinyin": "Qùnián wǒ qù le Xī'ān.",
+      "exampleVi": "Năm ngoái tôi đã đi Tây An.",
+      "audio": ""
+    },
+    {
+      "id": "v4",
+      "hanzi": "男朋友",
+      "pinyin": "nánpéngyou",
+      "meaning": "bạn trai",
+      "type": "Danh từ",
+      "example": "我和男朋友去了西安。",
+      "examplePinyin": "Wǒ hé nánpéngyou qù le Xī'ān.",
+      "exampleVi": "Tôi và bạn trai đã đi Tây An.",
+      "audio": ""
+    },
+    {
+      "id": "v5",
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "meaning": "mấy, vài",
+      "type": "Số từ nghi vấn",
+      "example": "前几年我去了北京。",
+      "examplePinyin": "Qián jǐ nián wǒ qù le Běijīng.",
+      "exampleVi": "Vài năm trước tôi đã đi Bắc Kinh.",
+      "audio": ""
+    },
+    {
+      "id": "v6",
+      "hanzi": "年",
+      "pinyin": "nián",
+      "meaning": "năm",
+      "type": "Danh từ/Lượng từ thời gian",
+      "example": "我在中国住了三年。",
+      "examplePinyin": "Wǒ zài Zhōngguó zhù le sān nián.",
+      "exampleVi": "Tôi đã sống ở Trung Quốc ba năm.",
+      "audio": ""
+    },
+    {
+      "id": "v7",
+      "hanzi": "好玩儿",
+      "pinyin": "hǎowánr",
+      "meaning": "vui, thú vị",
+      "type": "Tính từ",
+      "example": "西安非常好玩儿。",
+      "examplePinyin": "Xī'ān fēicháng hǎowánr.",
+      "exampleVi": "Tây An rất thú vị.",
+      "audio": ""
+    },
+    {
+      "id": "v8",
+      "hanzi": "飞机",
+      "pinyin": "fēijī",
+      "meaning": "máy bay",
+      "type": "Danh từ",
+      "example": "我们坐飞机去北京。",
+      "examplePinyin": "Wǒmen zuò fēijī qù Běijīng.",
+      "exampleVi": "Chúng tôi đi máy bay đến Bắc Kinh.",
+      "audio": ""
+    },
+    {
+      "id": "v9",
+      "hanzi": "要",
+      "pinyin": "yào",
+      "meaning": "cần, mất (thời gian)",
+      "type": "Động từ",
+      "example": "到北京要九个小时。",
+      "examplePinyin": "Dào Běijīng yào jiǔ ge xiǎoshí.",
+      "exampleVi": "Đến Bắc Kinh mất chín tiếng.",
+      "audio": ""
+    },
+    {
+      "id": "v10",
+      "hanzi": "小时",
+      "pinyin": "xiǎoshí",
+      "meaning": "giờ, tiếng",
+      "type": "Danh từ/Lượng từ thời gian",
+      "example": "坐飞机要几个小时？",
+      "examplePinyin": "Zuò fēijī yào jǐ ge xiǎoshí?",
+      "exampleVi": "Đi máy bay mất mấy tiếng?",
+      "audio": ""
+    },
+    {
+      "id": "v11",
+      "hanzi": "家人",
+      "pinyin": "jiārén",
+      "meaning": "người nhà, thành viên gia đình",
+      "type": "Danh từ",
+      "example": "我的家人都在北京。",
+      "examplePinyin": "Wǒ de jiārén dōu zài Běijīng.",
+      "exampleVi": "Người nhà tôi đều ở Bắc Kinh.",
+      "audio": ""
+    },
+    {
+      "id": "v12",
+      "hanzi": "时间",
+      "pinyin": "shíjiān",
+      "meaning": "thời gian",
+      "type": "Danh từ",
+      "example": "星期天我姐姐有时间。",
+      "examplePinyin": "Xīngqītiān wǒ jiějie yǒu shíjiān.",
+      "exampleVi": "Chủ nhật chị tôi có thời gian.",
+      "audio": ""
+    },
+    {
+      "id": "v13",
+      "hanzi": "机场",
+      "pinyin": "jīchǎng",
+      "meaning": "sân bay",
+      "type": "Danh từ",
+      "example": "我们在机场见。",
+      "examplePinyin": "Wǒmen zài jīchǎng jiàn.",
+      "exampleVi": "Chúng ta gặp nhau ở sân bay.",
+      "audio": ""
+    },
+    {
+      "id": "v14",
+      "hanzi": "接",
+      "pinyin": "jiē",
+      "meaning": "đón",
+      "type": "Động từ",
+      "example": "我姐姐可以去机场接你们。",
+      "examplePinyin": "Wǒ jiějie kěyǐ qù jīchǎng jiē nǐmen.",
+      "exampleVi": "Chị tôi có thể ra sân bay đón các bạn.",
+      "audio": ""
+    },
+    {
+      "id": "v15",
+      "hanzi": "住",
+      "pinyin": "zhù",
+      "meaning": "ở, lưu trú",
+      "type": "Động từ",
+      "example": "你们可以住我家。",
+      "examplePinyin": "Nǐmen kěyǐ zhù wǒ jiā.",
+      "exampleVi": "Các bạn có thể ở nhà tôi.",
+      "audio": ""
+    },
+    {
+      "id": "v16",
+      "hanzi": "早",
+      "pinyin": "zǎo",
+      "meaning": "sớm",
+      "type": "Tính từ",
+      "example": "八点到机场早不早？",
+      "examplePinyin": "Bā diǎn dào jīchǎng zǎo bu zǎo?",
+      "exampleVi": "Tám giờ đến sân bay có sớm không?",
+      "audio": ""
+    },
+    {
+      "id": "v17",
+      "hanzi": "那",
+      "pinyin": "nà",
+      "meaning": "vậy thì, thế thì",
+      "type": "Liên từ",
+      "example": "那我们机场见！",
+      "examplePinyin": "Nà wǒmen jīchǎng jiàn!",
+      "exampleVi": "Vậy thì chúng ta gặp nhau ở sân bay!",
+      "audio": ""
+    },
+    {
+      "id": "v18",
+      "hanzi": "西安",
+      "pinyin": "Xī'ān",
+      "meaning": "Tây An",
+      "type": "Danh từ riêng",
+      "example": "去年我去了西安。",
+      "examplePinyin": "Qùnián wǒ qù le Xī'ān.",
+      "exampleVi": "Năm ngoái tôi đã đi Tây An.",
+      "audio": ""
+    },
+    {
+      "id": "v19",
+      "hanzi": "北京",
+      "pinyin": "Běijīng",
+      "meaning": "Bắc Kinh",
+      "type": "Danh từ riêng",
+      "example": "北京非常漂亮。",
+      "examplePinyin": "Běijīng fēicháng piàoliang.",
+      "exampleVi": "Bắc Kinh rất đẹp.",
+      "audio": ""
+    },
+    {
+      "id": "v20",
+      "hanzi": "大兴机场",
+      "pinyin": "Dàxīng Jīchǎng",
+      "meaning": "Sân bay Đại Hưng",
+      "type": "Danh từ riêng",
+      "example": "大兴机场见！",
+      "examplePinyin": "Dàxīng Jīchǎng jiàn!",
+      "exampleVi": "Hẹn gặp ở sân bay Đại Hưng!",
+      "audio": ""
+    }
+  ],
+  "memory": [
+    {
+      "title": "Nói sở thích",
+      "text": "我爱吃……，也喜欢……"
+    },
+    {
+      "title": "Câu song song",
+      "text": "A……，也/还B……"
+    },
+    {
+      "title": "Nói kế hoạch",
+      "text": "今年我想去北京。"
+    },
+    {
+      "title": "Hỏi thời gian",
+      "text": "要几个小时？"
+    },
+    {
+      "title": "Đón sân bay",
+      "text": "去机场接你们。"
+    },
+    {
+      "title": "Hẹn gặp",
+      "text": "那我们大兴机场见！"
+    }
+  ],
+  "grammar": [
+    {
+      "title": "1. Câu song song với 也 / 还",
+      "explanation": "Hai vế câu có quan hệ song song, bổ sung cho nhau. 也 hoặc 还 đứng trước động từ hay tính từ ở vế sau.",
+      "formula": "Mệnh đề 1， 也/还 + Mệnh đề 2",
+      "examples": [
+        "我喜欢这个，也喜欢那个。",
+        "我喜欢喝中国茶，还喜欢吃中国菜。",
+        "王老师是北京人，李文也是北京人。"
+      ],
+      "note": "也 thường nhấn mạnh sự giống nhau; 还 thường nhấn mạnh bổ sung thêm."
+    },
+    {
+      "title": "2. 要 biểu thị thời gian cần thiết",
+      "explanation": "要 có thể dùng để nói một hành trình hoặc công việc cần bao nhiêu thời gian.",
+      "formula": "Địa điểm/Phương tiện + 要 + Thời lượng",
+      "examples": [
+        "坐飞机到北京要九个小时。",
+        "从学校到机场要一个小时。",
+        "做这个菜要多长时间？"
+      ],
+      "note": "Phân biệt với 要 mang nghĩa muốn hoặc định."
+    },
+    {
+      "title": "3. 那 dùng để chuyển ý",
+      "explanation": "那 đứng đầu câu, nghĩa là “vậy thì”, dùng để đưa ra quyết định hoặc phản hồi dựa trên thông tin vừa nghe.",
+      "formula": "那 + Chủ ngữ + Vị ngữ",
+      "examples": [
+        "那我们明天见。",
+        "那你们住我家吧。",
+        "那我们大兴机场见！"
+      ],
+      "note": "那 trong trường hợp này không phải đại từ chỉ “cái kia”."
+    }
+  ],
+  "mistakes": [
+    {
+      "title": "Đặt 也 sau động từ",
+      "wrong": "我喜欢这个，喜欢也那个。",
+      "correct": "我喜欢这个，也喜欢那个。",
+      "tip": "也 đứng trước động từ."
+    },
+    {
+      "title": "Nhầm 要 là muốn",
+      "wrong": "到北京想九个小时。",
+      "correct": "到北京要九个小时。",
+      "tip": "Khi nói thời gian cần thiết dùng 要."
+    },
+    {
+      "title": "Dùng 几 với thời lượng không phù hợp",
+      "wrong": "要几小时？",
+      "correct": "要几个小时？",
+      "tip": "小时 thường dùng với lượng từ 个."
+    },
+    {
+      "title": "Thiếu giới từ/động từ trong câu đón",
+      "wrong": "我姐姐机场你们。",
+      "correct": "我姐姐去机场接你们。",
+      "tip": "Cần dùng 去机场接."
+    },
+    {
+      "title": "Nhầm 住 và 在",
+      "wrong": "你们可以在我家。",
+      "correct": "你们可以住我家。",
+      "tip": "住 nhấn mạnh ở/lưu trú."
+    },
+    {
+      "title": "Dùng 那 như đại từ chỉ định",
+      "wrong": "那是我们机场见。",
+      "correct": "那我们机场见。",
+      "tip": "那 ở đầu câu nghĩa là “vậy thì”."
+    }
+  ],
+  "mindmap": {
+    "center": "旅行和接机",
+    "left": [
+      "爱吃中国菜",
+      "也喜欢做",
+      "去年去西安",
+      "今年去北京"
+    ],
+    "right": [
+      "坐飞机",
+      "要九个小时",
+      "机场接你们",
+      "住我家"
+    ]
+  },
+  "dialogues": [
+    {
+      "speaker": "李文",
+      "side": "left",
+      "hanzi": "你们爱吃哪个菜？",
+      "pinyin": "Nǐmen ài chī nǎge cài?",
+      "vi": "Các bạn thích ăn món nào?",
+      "audio": ""
+    },
+    {
+      "speaker": "白家月",
+      "side": "right",
+      "hanzi": "我喜欢这个，也喜欢那个。",
+      "pinyin": "Wǒ xǐhuan zhège, yě xǐhuan nàge.",
+      "vi": "Tôi thích món này, cũng thích món kia.",
+      "audio": ""
+    },
+    {
+      "speaker": "陈天中",
+      "side": "right",
+      "hanzi": "这些菜都好吃，还很好看。",
+      "pinyin": "Zhèxiē cài dōu hǎochī, hái hěn hǎokàn.",
+      "vi": "Những món này đều ngon, lại còn rất đẹp mắt.",
+      "audio": ""
+    },
+    {
+      "speaker": "李文",
+      "side": "left",
+      "hanzi": "我爱吃中国菜，也喜欢做。大家多吃点儿。",
+      "pinyin": "Wǒ ài chī Zhōngguó cài, yě xǐhuan zuò. Dàjiā duō chī diǎnr.",
+      "vi": "Tôi thích ăn món Trung Quốc, cũng thích nấu. Mọi người ăn thêm một chút nhé.",
+      "audio": ""
+    },
+    {
+      "speaker": "李文",
+      "side": "left",
+      "hanzi": "你们都想去哪儿？",
+      "pinyin": "Nǐmen dōu xiǎng qù nǎr?",
+      "vi": "Các bạn đều muốn đi đâu?",
+      "audio": ""
+    },
+    {
+      "speaker": "安妮",
+      "side": "right",
+      "hanzi": "去年我和男朋友去了西安，今年我想去北京。",
+      "pinyin": "Qùnián wǒ hé nánpéngyou qù le Xī'ān, jīnnián wǒ xiǎng qù Běijīng.",
+      "vi": "Năm ngoái tôi và bạn trai đã đi Tây An, năm nay tôi muốn đi Bắc Kinh.",
+      "audio": ""
+    },
+    {
+      "speaker": "白家月",
+      "side": "right",
+      "hanzi": "前几年我去了西安，非常好玩儿。今年我也想去北京。",
+      "pinyin": "Qián jǐ nián wǒ qù le Xī'ān, fēicháng hǎowánr. Jīnnián wǒ yě xiǎng qù Běijīng.",
+      "vi": "Vài năm trước tôi đã đi Tây An, rất thú vị. Năm nay tôi cũng muốn đi Bắc Kinh.",
+      "audio": ""
+    },
+    {
+      "speaker": "李文",
+      "side": "left",
+      "hanzi": "我和王老师都是北京人，北京非常漂亮。",
+      "pinyin": "Wǒ hé Wáng lǎoshī dōu shì Běijīng rén, Běijīng fēicháng piàoliang.",
+      "vi": "Tôi và cô Vương đều là người Bắc Kinh, Bắc Kinh rất đẹp.",
+      "audio": ""
+    },
+    {
+      "speaker": "王一飞",
+      "side": "left",
+      "hanzi": "你们的飞机到北京要几个小时？",
+      "pinyin": "Nǐmen de fēijī dào Běijīng yào jǐ ge xiǎoshí?",
+      "vi": "Chuyến bay của các bạn đến Bắc Kinh mất mấy tiếng?",
+      "audio": ""
+    },
+    {
+      "speaker": "白家月",
+      "side": "right",
+      "hanzi": "九个小时。",
+      "pinyin": "Jiǔ ge xiǎoshí.",
+      "vi": "Chín tiếng.",
+      "audio": ""
+    },
+    {
+      "speaker": "王一飞",
+      "side": "left",
+      "hanzi": "我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。",
+      "pinyin": "Wǒ jiārén dōu zài Běijīng, Xīngqītiān wǒ jiějie yě yǒu shíjiān, tā kěyǐ qù jīchǎng jiē nǐmen, nǐmen yě kěyǐ zhù wǒ jiā.",
+      "vi": "Người nhà tôi đều ở Bắc Kinh, chủ nhật chị tôi cũng có thời gian, chị ấy có thể ra sân bay đón các bạn, các bạn cũng có thể ở nhà tôi.",
+      "audio": ""
+    },
+    {
+      "speaker": "安妮",
+      "side": "right",
+      "hanzi": "我们星期日早上八点到大兴机场，早不早？",
+      "pinyin": "Wǒmen Xīngqīrì zǎoshang bā diǎn dào Dàxīng Jīchǎng, zǎo bu zǎo?",
+      "vi": "Chúng tôi đến sân bay Đại Hưng lúc tám giờ sáng chủ nhật, có sớm không?",
+      "audio": ""
+    },
+    {
+      "speaker": "王一飞",
+      "side": "left",
+      "hanzi": "不早。",
+      "pinyin": "Bù zǎo.",
+      "vi": "Không sớm.",
+      "audio": ""
+    },
+    {
+      "speaker": "白家月",
+      "side": "right",
+      "hanzi": "谢谢老师！那我们和您姐姐在大兴机场见！",
+      "pinyin": "Xièxie lǎoshī! Nà wǒmen hé nín jiějie zài Dàxīng Jīchǎng jiàn!",
+      "vi": "Cảm ơn cô! Vậy chúng tôi sẽ gặp chị cô ở sân bay Đại Hưng!",
+      "audio": ""
+    }
+  ],
+  "listening": {
+    "title": "Nghe kế hoạch di chuyển",
+    "instruction": "Nghe câu và chọn thông tin đúng.",
+    "audio": "",
+    "question": "白家月和安妮坐什么去北京？ Bái Jiāyuè hé Ānnī zuò shénme qù Běijīng?",
+    "options": [
+      "火车",
+      "飞机",
+      "出租车"
+    ],
+    "answer": 1
+  },
+  "speaking": [
+    "我爱吃中国菜，也喜欢做中国菜。 — Wǒ ài chī Zhōngguó cài, yě xǐhuan zuò Zhōngguó cài. — Tôi thích ăn món Trung Quốc, cũng thích nấu món Trung Quốc.",
+    "去年我去了西安，今年我想去北京。 — Qùnián wǒ qù le Xī'ān, jīnnián wǒ xiǎng qù Běijīng. — Năm ngoái tôi đã đi Tây An, năm nay tôi muốn đi Bắc Kinh.",
+    "坐飞机到北京要九个小时。 — Zuò fēijī dào Běijīng yào jiǔ ge xiǎoshí. — Đi máy bay đến Bắc Kinh mất chín tiếng.",
+    "我姐姐可以去机场接你们。 — Wǒ jiějie kěyǐ qù jīchǎng jiē nǐmen. — Chị tôi có thể ra sân bay đón các bạn.",
+    "你们也可以住我家。 — Nǐmen yě kěyǐ zhù wǒ jiā. — Các bạn cũng có thể ở nhà tôi.",
+    "那我们大兴机场见！ — Nà wǒmen Dàxīng Jīchǎng jiàn! — Vậy chúng ta gặp nhau ở sân bay Đại Hưng!"
+  ],
+  "exercises": [
+    {
+      "id": "e1",
+      "question": "Điền từ: 我喜欢这个，____喜欢那个。",
+      "answer": [
+        "也"
+      ]
+    },
+    {
+      "id": "e2",
+      "question": "Điền từ: 坐飞机到北京____九个小时。",
+      "answer": [
+        "要"
+      ]
+    },
+    {
+      "id": "e3",
+      "question": "Điền từ: 我姐姐可以去机场____你们。",
+      "answer": [
+        "接"
+      ]
+    },
+    {
+      "id": "e4",
+      "question": "Điền từ: 你们也可以____我家。",
+      "answer": [
+        "住"
+      ]
+    },
+    {
+      "id": "e5",
+      "question": "Sắp xếp: 北京 / 去年 / 我 / 去了",
+      "answer": [
+        "去年我去了北京"
+      ]
+    },
+    {
+      "id": "e6",
+      "question": "Sắp xếp: 几个小时 / 要 / 到北京 / 飞机",
+      "answer": [
+        "飞机到北京要几个小时",
+        "坐飞机到北京要几个小时"
+      ]
+    },
+    {
+      "id": "e7",
+      "question": "Dịch sang tiếng Trung: Tôi thích trà, cũng thích cà phê.",
+      "answer": [
+        "我喜欢茶，也喜欢咖啡"
+      ]
+    },
+    {
+      "id": "e8",
+      "question": "Dịch sang tiếng Trung: Chị tôi sẽ ra sân bay đón các bạn.",
+      "answer": [
+        "我姐姐会去机场接你们",
+        "我姐姐去机场接你们"
+      ]
+    },
+    {
+      "id": "e9",
+      "question": "Dịch sang tiếng Việt: 那我们大兴机场见！",
+      "answer": [
+        "Vậy chúng ta gặp nhau ở sân bay Đại Hưng",
+        "Thế thì chúng ta gặp nhau ở sân bay Đại Hưng"
+      ]
+    },
+    {
+      "id": "e10",
+      "question": "Hoàn thành: 你们的飞机到北京要____？",
+      "answer": [
+        "几个小时"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question": "“也” trong câu song song đứng ở đâu?",
+      "options": [
+        "Trước động từ/tính từ",
+        "Sau tân ngữ",
+        "Cuối câu"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "question": "“还” thường biểu thị:",
+      "options": [
+        "bổ sung thêm",
+        "phủ định",
+        "quá khứ"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q3",
+      "question": "“到北京要九个小时” nghĩa là:",
+      "options": [
+        "Đến Bắc Kinh lúc 9 giờ",
+        "Đến Bắc Kinh mất 9 tiếng",
+        "Ở Bắc Kinh 9 tiếng"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q4",
+      "question": "“接” nghĩa là:",
+      "options": [
+        "tiễn",
+        "đón",
+        "ở"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q5",
+      "question": "“住我家” nghĩa là:",
+      "options": [
+        "đến nhà tôi",
+        "ở nhà tôi",
+        "rời nhà tôi"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q6",
+      "question": "“那” ở đầu câu nghĩa là:",
+      "options": [
+        "cái kia",
+        "vậy thì",
+        "ở đó"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q7",
+      "question": "安妮今年想去哪儿？",
+      "options": [
+        "西安",
+        "北京",
+        "上海"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "q8",
+      "question": "飞机到北京要几个小时？",
+      "options": [
+        "七个小时",
+        "八个小时",
+        "九个小时"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "q9",
+      "question": "谁可以去机场接白家月和安妮？",
+      "options": [
+        "王老师的姐姐",
+        "李文",
+        "陈天中"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q10",
+      "question": "“大兴机场见” nghĩa là:",
+      "options": [
+        "Hẹn gặp ở sân bay Đại Hưng",
+        "Đi sân bay Đại Hưng",
+        "Rời sân bay Đại Hưng"
+      ],
+      "answer": 0
+    }
+  ],
+  "summary": [
+    {
+      "title": "Sở thích",
+      "text": "Dùng 爱/喜欢 và có thể nối hai ý bằng 也 hoặc 还."
+    },
+    {
+      "title": "Kế hoạch",
+      "text": "Dùng 想去 + địa điểm để nói dự định du lịch."
+    },
+    {
+      "title": "Thời lượng",
+      "text": "Dùng 要 + khoảng thời gian để nói mất bao lâu."
+    },
+    {
+      "title": "Đón sân bay",
+      "text": "Dùng 去机场接 + người."
+    },
+    {
+      "title": "Hẹn gặp",
+      "text": "Dùng 那我们……见 để chốt địa điểm gặp."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "f1",
+      "front": "爱",
+      "pinyin": "ài",
+      "back": "yêu, thích",
+      "example": "我爱吃中国菜。"
+    },
+    {
+      "id": "f2",
+      "front": "哪个",
+      "pinyin": "nǎge",
+      "back": "cái nào, món nào",
+      "example": "你爱吃哪个菜？"
+    },
+    {
+      "id": "f3",
+      "front": "去年",
+      "pinyin": "qùnián",
+      "back": "năm ngoái",
+      "example": "去年我去了西安。"
+    },
+    {
+      "id": "f4",
+      "front": "男朋友",
+      "pinyin": "nánpéngyou",
+      "back": "bạn trai",
+      "example": "我和男朋友去了西安。"
+    },
+    {
+      "id": "f5",
+      "front": "好玩儿",
+      "pinyin": "hǎowánr",
+      "back": "vui, thú vị",
+      "example": "西安很好玩儿。"
+    },
+    {
+      "id": "f6",
+      "front": "飞机",
+      "pinyin": "fēijī",
+      "back": "máy bay",
+      "example": "我们坐飞机去北京。"
+    },
+    {
+      "id": "f7",
+      "front": "小时",
+      "pinyin": "xiǎoshí",
+      "back": "giờ, tiếng",
+      "example": "要九个小时。"
+    },
+    {
+      "id": "f8",
+      "front": "家人",
+      "pinyin": "jiārén",
+      "back": "người nhà",
+      "example": "我的家人都在北京。"
+    },
+    {
+      "id": "f9",
+      "front": "时间",
+      "pinyin": "shíjiān",
+      "back": "thời gian",
+      "example": "我有时间。"
+    },
+    {
+      "id": "f10",
+      "front": "机场",
+      "pinyin": "jīchǎng",
+      "back": "sân bay",
+      "example": "我们在机场见。"
+    },
+    {
+      "id": "f11",
+      "front": "接",
+      "pinyin": "jiē",
+      "back": "đón",
+      "example": "我去机场接你。"
+    },
+    {
+      "id": "f12",
+      "front": "住",
+      "pinyin": "zhù",
+      "back": "ở, lưu trú",
+      "example": "你们可以住我家。"
+    },
+    {
+      "id": "f13",
+      "front": "早",
+      "pinyin": "zǎo",
+      "back": "sớm",
+      "example": "八点早不早？"
+    },
+    {
+      "id": "f14",
+      "front": "那",
+      "pinyin": "nà",
+      "back": "vậy thì",
+      "example": "那我们明天见。"
+    },
+    {
+      "id": "f15",
+      "front": "西安",
+      "pinyin": "Xī'ān",
+      "back": "Tây An",
+      "example": "去年我去了西安。"
+    },
+    {
+      "id": "f16",
+      "front": "北京",
+      "pinyin": "Běijīng",
+      "back": "Bắc Kinh",
+      "example": "北京非常漂亮。"
+    },
+    {
+      "id": "f17",
+      "front": "大兴机场",
+      "pinyin": "Dàxīng Jīchǎng",
+      "back": "Sân bay Đại Hưng",
+      "example": "大兴机场见！"
+    },
+    {
+      "id": "f18",
+      "front": "也",
+      "pinyin": "yě",
+      "back": "cũng",
+      "example": "我也想去北京。"
+    },
+    {
+      "id": "f19",
+      "front": "还",
+      "pinyin": "hái",
+      "back": "còn, lại còn",
+      "example": "这些菜还很好看。"
+    },
+    {
+      "id": "f20",
+      "front": "要几个小时？",
+      "pinyin": "yào jǐ ge xiǎoshí?",
+      "back": "mất mấy tiếng?",
+      "example": "到北京要几个小时？"
+    }
+  ]
+};
+
+    /* =========================================================
+       2. HỆ THỐNG LƯU TRỮ
+       ========================================================= */
+    const key = name => `${lessonData.id}:${name}`;
+
+    const state = {
+      theme: localStorage.getItem("site-theme") || "light",
+      favorites: JSON.parse(localStorage.getItem(key("favorites")) || "[]"),
+      completed: JSON.parse(localStorage.getItem(key("completed")) || "[]"),
+      notes: localStorage.getItem(key("notes")) || "",
+      quizScore: Number(localStorage.getItem(key("quizScore")) || 0),
+      hidePinyin: localStorage.getItem(key("hidePinyin")) === "true",
+      hideVi: localStorage.getItem(key("hideVi")) === "true"
+    };
+
+    document.documentElement.dataset.theme = state.theme;
+
+    function saveState(){
+      localStorage.setItem(key("favorites"),JSON.stringify(state.favorites));
+      localStorage.setItem(key("completed"),JSON.stringify(state.completed));
+      localStorage.setItem(key("notes"),state.notes);
+      localStorage.setItem(key("quizScore"),String(state.quizScore));
+      localStorage.setItem(key("hidePinyin"),String(state.hidePinyin));
+      localStorage.setItem(key("hideVi"),String(state.hideVi));
+    }
+
+    /* =========================================================
+       3. HÀM TIỆN ÍCH
+       ========================================================= */
+    const $ = selector => document.querySelector(selector);
+    const $$ = selector => [...document.querySelectorAll(selector)];
+
+    function esc(text=""){
+      return String(text).replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+      }[m]));
+    }
+
+    function normalize(text=""){
+      return text.toLowerCase().replace(/[，。！？,.!?]/g,"").replace(/\s+/g,"").trim();
+    }
+
+    function speak(text,audioUrl=""){
+      if(audioUrl){
+        const audio = new Audio(audioUrl);
+        audio.play().catch(()=>{});
+        return;
+      }
+      if("speechSynthesis" in window){
+        speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "zh-CN";
+        utterance.rate = 0.85;
+        speechSynthesis.speak(utterance);
+      } else {
+        alert("Trình duyệt chưa hỗ trợ phát âm tự động.");
+      }
+    }
+
+    function sectionShell(id,icon,title,subtitle,content){
+      const done = state.completed.includes(id);
+      return `
+        <section class="section" id="${id}">
+          <div class="container">
+            <div class="section-heading">
+              <div><h2>${icon} ${title}</h2><p>${subtitle}</p></div>
+              <button class="complete-btn ${done?"done":""}" data-complete="${id}">
+                ${done?"✓ Đã hoàn thành":"Đánh dấu hoàn thành"}
+              </button>
+            </div>
+            ${content}
+          </div>
+        </section>`;
+    }
+
+    /* =========================================================
+       4. RENDER TOÀN BỘ BÀI HỌC
+       ========================================================= */
+    function render(){
+      const app = $("#app");
+
+      const objectives = sectionShell(
+        "objectives","🎯","Mục tiêu","Học xong bài này, học viên có thể:",
+        `<div class="grid-4">${lessonData.objectives.map((x,i)=>`
+          <article class="objective"><strong>${i+1}</strong><p>${esc(x)}</p></article>`).join("")}</div>`
+      );
+
+      const vocab = sectionShell(
+        "vocabulary","📖","Từ mới","Tìm kiếm, nghe phát âm và đánh dấu từ yêu thích.",
+        `<div class="section-card">
+          <div class="search-row">
+            <input id="vocabSearch" placeholder="🔍 Tìm chữ Hán, pinyin hoặc nghĩa tiếng Việt...">
+            <button class="btn" id="clearSearch">Xóa tìm kiếm</button>
+          </div>
+          <div class="grid-4" id="vocabGrid"></div>
+          <div class="favorite-panel" id="favoritePanel">
+            <h3>⭐ Từ đã lưu</h3>
+            <div class="favorite-list" id="favoriteList"></div>
+          </div>
+        </div>`
+      );
+
+      const memory = sectionShell(
+        "memory","🧠","Ghi nhớ nhanh","Các công thức cần nhớ.",
+        `<div class="grid-4">${lessonData.memory.map(x=>`
+          <article class="memory-item"><strong>${esc(x.title)}</strong><p>${esc(x.text)}</p></article>`).join("")}</div>`
+      );
+
+      const grammar = sectionShell(
+        "grammar","📚","Ngữ pháp","Giải thích công thức, cách dùng và ví dụ.",
+        `<div class="grid-2">${lessonData.grammar.map(g=>`
+          <article class="grammar-card">
+            <h3>${esc(g.title)}</h3>
+            <p>${esc(g.explanation)}</p>
+            <div class="formula">${esc(g.formula)}</div>
+            <ul>${g.examples.map(e=>`<li>${esc(e)} <button class="mini-btn speak-btn" data-speak="${esc(e)}">🔊</button></li>`).join("")}</ul>
+            <div class="note">${esc(g.note)}</div>
+          </article>`).join("")}</div>`
+      );
+
+      const mistakes = sectionShell(
+        "mistakes","⚠️","Lỗi người Việt thường mắc","Nhận diện lỗi và ghi nhớ cách sửa.",
+        `<div class="grid-2">${lessonData.mistakes.map(m=>`
+          <article class="mistake-card">
+            <h3>${esc(m.title)}</h3>
+            <p class="wrong">✘ ${esc(m.wrong)}</p>
+            <p class="correct">✔ ${esc(m.correct)}</p>
+            <p><strong>Mẹo:</strong> ${esc(m.tip)}</p>
+          </article>`).join("")}</div>`
+      );
+
+      const mindmap = sectionShell(
+        "mindmap","🗺️","Mindmap","Sơ đồ liên kết kiến thức của bài.",
+        `<div class="section-card mindmap">
+          <div class="mind-col">${lessonData.mindmap.left.map(x=>`<div class="mind-node">${esc(x)}</div>`).join("")}</div>
+          <div class="mind-node mind-center">${esc(lessonData.mindmap.center)}</div>
+          <div class="mind-col">${lessonData.mindmap.right.map(x=>`<div class="mind-node">${esc(x)}</div>`).join("")}</div>
+        </div>`
+      );
+
+      const dialogue = sectionShell(
+        "dialogue","🎭","Hội thoại","Nghe từng câu, ẩn pinyin hoặc bản dịch để luyện.",
+        `<div class="section-card">
+          <div class="hero-actions" style="margin-top:0;margin-bottom:16px">
+            <button class="btn" id="togglePinyin">${state.hidePinyin?"Hiện pinyin":"Ẩn pinyin"}</button>
+            <button class="btn" id="toggleVi">${state.hideVi?"Hiện bản dịch":"Ẩn bản dịch"}</button>
+          </div>
+          <div class="dialogue-list">${lessonData.dialogues.map(d=>`
+            <div class="bubble ${d.side==="right"?"right":""}">
+              <div class="speaker">${esc(d.speaker)} <button class="mini-btn dialogue-speak" data-text="${esc(d.hanzi)}" data-audio="${esc(d.audio)}">🔊</button></div>
+              <div>${esc(d.hanzi)}</div>
+              <div class="pinyin-line ${state.hidePinyin?"hide":""}">${esc(d.pinyin)}</div>
+              <div class="vi-line ${state.hideVi?"hide":""}">${esc(d.vi)}</div>
+            </div>`).join("")}</div>
+        </div>`
+      );
+
+      const listening = sectionShell(
+        "listening","🎧","Luyện nghe","Nghe và trả lời câu hỏi.",
+        `<div class="section-card">
+          <div class="audio-block">
+            <div><strong>${esc(lessonData.listening.title)}</strong><p>${esc(lessonData.listening.instruction)}</p></div>
+            <button class="btn btn-primary" id="listenPlay">▶ Phát âm thanh</button>
+          </div>
+          <div class="quiz-question" style="margin-top:14px">
+            <h3>${esc(lessonData.listening.question)}</h3>
+            ${lessonData.listening.options.map((o,i)=>`<label><input type="radio" name="listenQ" value="${i}"> ${esc(o)}</label>`).join("")}
+            <button class="btn" id="checkListening">Kiểm tra</button>
+            <div id="listeningFeedback" class="feedback"></div>
+          </div>
+        </div>`
+      );
+
+      const speaking = sectionShell(
+        "speaking","🗣️","Luyện nói","Nói theo khung và thay bằng thông tin cá nhân.",
+        `<div class="grid-3">${lessonData.speaking.map((x,i)=>`
+          <article class="objective"><strong>Khung ${i+1}</strong><p>${esc(x)}</p>
+          <button class="mini-btn speaking-speak" data-text="${esc(x.split("—")[0])}">🔊</button></article>`).join("")}</div>`
+      );
+
+      const exercises = sectionShell(
+        "exercises","✍️","Bài tập","Nhập đáp án và kiểm tra ngay.",
+        `<div class="section-card">
+          ${lessonData.exercises.map((e,i)=>`
+            <div class="exercise">
+              <strong>${i+1}. ${esc(e.question)}</strong>
+              <input id="${e.id}" placeholder="Nhập đáp án">
+              <div class="feedback" id="${e.id}-feedback"></div>
+            </div>`).join("")}
+          <button class="btn btn-primary" id="checkExercises">Kiểm tra bài tập</button>
+        </div>`
+      );
+
+      const quiz = sectionShell(
+        "quiz","🎮","Quiz","Chấm điểm tự động và lưu kết quả cao nhất.",
+        `<div class="section-card">
+          ${lessonData.quiz.map((q,qi)=>`
+            <div class="quiz-question">
+              <h3>${qi+1}. ${esc(q.question)}</h3>
+              ${q.options.map((o,oi)=>`<label><input type="radio" name="${q.id}" value="${oi}"> ${esc(o)}</label>`).join("")}
+            </div>`).join("")}
+          <button class="btn btn-primary" id="gradeQuiz">Chấm điểm</button>
+          <div class="score-box" id="scoreBox"></div>
+        </div>`
+      );
+
+      const summary = sectionShell(
+        "summary","📑","Tổng kết","Ôn lại nội dung cốt lõi.",
+        `<div class="grid-3">${lessonData.summary.map(x=>`
+          <article class="summary-item"><strong>${esc(x.title)}</strong><p>${esc(x.text)}</p></article>`).join("")}</div>`
+      );
+
+      const flashcards = sectionShell(
+        "flashcards","📥","Flashcard","Bấm để lật; đánh dấu từ đã nhớ hoặc chưa nhớ.",
+        `<div class="flashcards">${lessonData.flashcards.map(f=>`
+          <div class="flashcard" data-card="${f.id}" tabindex="0">
+            <div class="flashcard-inner">
+              <div class="flash-face">
+                <strong>${esc(f.front)}</strong>
+                <span>${esc(f.pinyin)}</span>
+                <small>Bấm để lật</small>
+              </div>
+              <div class="flash-face flash-back">
+                <strong>${esc(f.back)}</strong>
+                <span>${esc(f.example)}</span>
+                <div class="flash-actions">
+                  <button class="btn remembered-btn" data-id="${f.id}">😊 Đã nhớ</button>
+                  <button class="btn review-btn" data-id="${f.id}">🤔 Chưa nhớ</button>
+                </div>
+              </div>
+            </div>
+          </div>`).join("")}</div>`
+      );
+
+      const notes = sectionShell(
+        "notes","📝","Ghi chú cá nhân","Nội dung được tự động lưu trên trình duyệt.",
+        `<div class="section-card">
+          <textarea class="notes-area" id="notesArea" rows="7" placeholder="Viết ghi chú của bạn tại đây...">${esc(state.notes)}</textarea>
+          <p id="noteStatus" style="color:var(--muted)">Đã bật tự động lưu.</p>
+        </div>`
+      );
+
+      app.innerHTML = `
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-card">
+              <span class="eyebrow">🎬 ${esc(lessonData.level)} • BÀI ${lessonData.lesson}</span>
+              <h1>${esc(lessonData.title)}</h1>
+              <p class="subtitle">${esc(lessonData.titleVi)}</p>
+              <p>${esc(lessonData.intro)}</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#objectives">Bắt đầu học</a>
+                <a class="btn" href="#flashcards">Ôn flashcard</a>
+              </div>
+            </div>
+            <aside class="lesson-meta">
+              <div class="meta-grid">
+                <div class="meta-item"><strong>${esc(lessonData.topic)}</strong><span>Chủ đề</span></div>
+                <div class="meta-item"><strong>${esc(lessonData.duration)}</strong><span>Thời lượng</span></div>
+                <div class="meta-item"><strong>${lessonData.vocabulary.length}</strong><span>Từ mới</span></div>
+                <div class="meta-item"><strong>${esc(lessonData.difficulty)}</strong><span>Mức độ</span></div>
+              </div>
+            </aside>
+          </div>
+        </section>
+        ${objectives}${vocab}${memory}${grammar}${mistakes}${mindmap}${dialogue}
+        ${listening}${speaking}${exercises}${quiz}${summary}${flashcards}${notes}
+        <section class="section">
+          <div class="container">
+            <div class="completion" id="completionBox">
+              <h2>🏆 Hoàn thành bài học</h2>
+              <p>Hoàn thành các phần và đạt ít nhất 80% quiz để kết thúc bài.</p>
+              <button class="btn btn-success" id="finishLesson">Kiểm tra hoàn thành</button>
+            </div>
+          </div>
+        </section>`;
+    }
+
+    /* =========================================================
+       5. RENDER TỪ VỰNG + YÊU THÍCH
+       ========================================================= */
+    function renderVocabulary(filter=""){
+      const grid = $("#vocabGrid");
+      const q = normalize(filter);
+      const items = lessonData.vocabulary.filter(v =>
+        normalize(v.hanzi+" "+v.pinyin+" "+v.meaning+" "+v.type).includes(q)
+      );
+
+      grid.innerHTML = items.map(v=>`
+        <article class="vocab-card">
+          <div class="vocab-actions">
+            <button class="mini-btn vocab-speak" data-text="${esc(v.hanzi)}" data-audio="${esc(v.audio)}">🔊</button>
+            <button class="mini-btn favorite-btn ${state.favorites.includes(v.id)?"active":""}" data-id="${v.id}">⭐</button>
+          </div>
+          <div class="hanzi">${esc(v.hanzi)}</div>
+          <div class="pinyin">${esc(v.pinyin)}</div>
+          <div class="meaning">${esc(v.meaning)}</div>
+          <small>${esc(v.type)}</small>
+          <div class="example">${esc(v.example)}<br>${esc(v.examplePinyin)}<br>${esc(v.exampleVi)}</div>
+        </article>`).join("") || `<p>Không tìm thấy từ phù hợp.</p>`;
+
+      bindVocabularyEvents();
+      renderFavorites();
+    }
+
+    function renderFavorites(){
+      const list = $("#favoriteList");
+      if(!list) return;
+      const words = lessonData.vocabulary.filter(v=>state.favorites.includes(v.id));
+      list.innerHTML = words.length
+        ? words.map(v=>`<span class="favorite-chip">${esc(v.hanzi)} · ${esc(v.meaning)}</span>`).join("")
+        : "<span>Chưa có từ yêu thích.</span>";
+    }
+
+    function bindVocabularyEvents(){
+      $$(".vocab-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text,btn.dataset.audio));
+      $$(".favorite-btn").forEach(btn=>btn.onclick=()=>{
+        const id = btn.dataset.id;
+        state.favorites = state.favorites.includes(id)
+          ? state.favorites.filter(x=>x!==id)
+          : [...state.favorites,id];
+        saveState();
+        renderVocabulary($("#vocabSearch")?.value || "");
+      });
+    }
+
+    /* =========================================================
+       6. TIẾN ĐỘ
+       ========================================================= */
+    const trackedSections = ["objectives","vocabulary","memory","grammar","mistakes","mindmap","dialogue","listening","speaking","exercises","quiz","summary","flashcards","notes"];
+
+    function updateProgress(){
+      const count = trackedSections.filter(id=>state.completed.includes(id)).length;
+      const percent = Math.round(count / trackedSections.length * 100);
+      $("#progressFill").style.width = percent+"%";
+      $("#progressText").textContent = percent+"%";
+      $$(".complete-btn").forEach(btn=>{
+        const done = state.completed.includes(btn.dataset.complete);
+        btn.classList.toggle("done",done);
+        btn.textContent = done ? "✓ Đã hoàn thành" : "Đánh dấu hoàn thành";
+      });
+    }
+
+    function toggleComplete(id){
+      state.completed = state.completed.includes(id)
+        ? state.completed.filter(x=>x!==id)
+        : [...state.completed,id];
+      saveState();
+      updateProgress();
+    }
+
+    /* =========================================================
+       7. SỰ KIỆN
+       ========================================================= */
+    function bindEvents(){
+      $$(".complete-btn").forEach(btn=>btn.onclick=()=>toggleComplete(btn.dataset.complete));
+
+      $("#vocabSearch").addEventListener("input",e=>renderVocabulary(e.target.value));
+      $("#clearSearch").onclick=()=>{
+        $("#vocabSearch").value="";
+        renderVocabulary("");
+      };
+
+      $("#favoritesToggle").onclick=()=>{
+        $("#favoritePanel").classList.toggle("show");
+        location.hash="#vocabulary";
+      };
+
+      $("#themeToggle").onclick=()=>{
+        state.theme = state.theme==="dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = state.theme;
+        localStorage.setItem("site-theme",state.theme);
+        $("#themeToggle").textContent = state.theme==="dark" ? "☀️" : "🌙";
+      };
+      $("#themeToggle").textContent = state.theme==="dark" ? "☀️" : "🌙";
+
+      $$(".speak-btn").forEach(btn=>btn.onclick=()=>speak(btn.dataset.speak));
+      $$(".dialogue-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text,btn.dataset.audio));
+      $$(".speaking-speak").forEach(btn=>btn.onclick=()=>speak(btn.dataset.text));
+
+      $("#togglePinyin").onclick=()=>{
+        state.hidePinyin=!state.hidePinyin;
+        saveState();
+        $$(".pinyin-line").forEach(el=>el.classList.toggle("hide",state.hidePinyin));
+        $("#togglePinyin").textContent=state.hidePinyin?"Hiện pinyin":"Ẩn pinyin";
+      };
+      $("#toggleVi").onclick=()=>{
+        state.hideVi=!state.hideVi;
+        saveState();
+        $$(".vi-line").forEach(el=>el.classList.toggle("hide",state.hideVi));
+        $("#toggleVi").textContent=state.hideVi?"Hiện bản dịch":"Ẩn bản dịch";
+      };
+
+      $("#listenPlay").onclick=()=>{
+        const l = lessonData.listening;
+        if(l.audio) new Audio(l.audio).play().catch(()=>{});
+        else speak("大兴机场见！");
+      };
+
+      $("#checkListening").onclick=()=>{
+        const selected = document.querySelector('input[name="listenQ"]:checked');
+        const fb = $("#listeningFeedback");
+        if(!selected){fb.innerHTML='<span class="wrong">Hãy chọn một đáp án.</span>';return}
+        fb.innerHTML = Number(selected.value)===lessonData.listening.answer
+          ? '<span class="correct">✓ Chính xác</span>'
+          : '<span class="wrong">✘ Chưa đúng</span>';
+      };
+
+      $("#checkExercises").onclick=()=>{
+        let allCorrect=true;
+        lessonData.exercises.forEach(e=>{
+          const value=normalize($("#"+e.id).value);
+          const ok=e.answers.some(a=>normalize(a)===value);
+          $("#"+e.id+"-feedback").innerHTML=ok
+            ? '<span class="correct">✓ Chính xác</span>'
+            : `<span class="wrong">✘ Đáp án gợi ý: ${esc(e.answers[0])}</span>`;
+          if(!ok) allCorrect=false;
+        });
+        if(allCorrect && !state.completed.includes("exercises")){
+          state.completed.push("exercises");saveState();updateProgress();
+        }
+      };
+
+      $("#gradeQuiz").onclick=()=>{
+        let score=0;
+        lessonData.quiz.forEach(q=>{
+          const selected=document.querySelector(`input[name="${q.id}"]:checked`);
+          if(selected && Number(selected.value)===q.answer) score++;
+        });
+        const percent=Math.round(score/lessonData.quiz.length*100);
+        state.quizScore=Math.max(state.quizScore,percent);
+        if(percent>=80 && !state.completed.includes("quiz")) state.completed.push("quiz");
+        saveState();updateProgress();
+        const box=$("#scoreBox");
+        box.style.display="block";
+        box.textContent=`Bạn đạt ${score}/${lessonData.quiz.length} câu (${percent}%). Điểm cao nhất: ${state.quizScore}%.`;
+      };
+
+      $$(".flashcard").forEach(card=>{
+        const flip=()=>card.classList.toggle("flipped");
+        card.onclick=e=>{
+          if(e.target.closest("button")) return;
+          flip();
+        };
+        card.onkeydown=e=>{
+          if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}
+        };
+      });
+
+      $$(".remembered-btn").forEach(btn=>btn.onclick=()=>{
+        localStorage.setItem(key(`card:${btn.dataset.id}`),"remembered");
+        btn.textContent="✓ Đã lưu";
+      });
+      $$(".review-btn").forEach(btn=>btn.onclick=()=>{
+        const reviewData={status:"review",updatedAt:new Date().toISOString()};
+        localStorage.setItem(key(`card:${btn.dataset.id}`),JSON.stringify(reviewData));
+        btn.textContent="✓ Sẽ ôn lại";
+      });
+
+      let noteTimer;
+      $("#notesArea").addEventListener("input",e=>{
+        state.notes=e.target.value;
+        $("#noteStatus").textContent="Đang lưu...";
+        clearTimeout(noteTimer);
+        noteTimer=setTimeout(()=>{
+          saveState();
+          $("#noteStatus").textContent="Đã tự động lưu.";
+        },400);
+      });
+
+      $("#finishLesson").onclick=()=>{
+        const finished=trackedSections.every(id=>state.completed.includes(id));
+        if(finished && state.quizScore>=80){
+          $("#completionBox").innerHTML="<h2>🎉 Chúc mừng!</h2><p>Bạn đã hoàn thành bài học với kết quả đạt yêu cầu.</p>";
+        }else{
+          const missing=trackedSections.filter(id=>!state.completed.includes(id)).length;
+          alert(`Bạn còn ${missing} phần chưa đánh dấu hoàn thành. Điểm quiz cao nhất hiện tại: ${state.quizScore}%.`);
+        }
+      };
+    }
+
+    render();
+    renderVocabulary();
+    bindEvents();
+    updateProgress();
+  </script>
+</body>
+</html>
