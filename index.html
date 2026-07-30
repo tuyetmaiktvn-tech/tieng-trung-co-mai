@@ -3,211 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Tiếng Trung Cô Mai - Nền tảng học tiếng Trung dành cho người Việt.">
-<title>Tiếng Trung Cô Mai</title>
+<meta name="description" content="Tiếng Trung Cô Mai – Học từ gốc, vững mọi mốc.">
+<title>Tiếng Trung Cô Mai | Học từ gốc – Vững mọi mốc</title>
 <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/css/style.css?v=3.3.1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1f4d;--blue:#1769e8;--blue2:#0f56d9;--soft:#eaf4ff;--pale:#f5faff;--orange:#ff9f0a;--green:#16b979;--purple:#7047eb;--text:#102044;--muted:#52627c;--line:#dce8f5;--shadow:0 20px 60px rgba(26,85,160,.12);--max:1420px}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:"Be Vietnam Pro",Arial,sans-serif;color:var(--text);background:#fff;line-height:1.65}a{text-decoration:none;color:inherit}button{font:inherit}.container{width:min(var(--max),calc(100% - 48px));margin:auto}
+.contact-bar{background:linear-gradient(90deg,#f8fbff,#eef7ff);border-bottom:1px solid #e7eff8}.contact-inner{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:24px}.contact-phone{display:flex;align-items:center;gap:10px;color:var(--blue);font-weight:600;font-size:17px}.contact-phone strong{color:var(--text)}.contact-actions{display:flex;gap:14px}.mini-btn{min-height:44px;display:flex;align-items:center;justify-content:center;padding:0 23px;border-radius:999px;font-weight:600;font-size:16px;transition:.2s}.mini-btn:hover{transform:translateY(-2px)}.mini-outline{background:#fff;color:var(--blue);border:1.5px solid #aacbfa}.mini-primary{background:var(--blue);color:#fff;box-shadow:0 10px 24px rgba(23,105,232,.2)}
+.site-header{background:rgba(255,255,255,.97);border-bottom:1px solid #edf2f8;position:sticky;top:0;z-index:1000;backdrop-filter:blur(14px)}.nav-wrap{min-height:134px;display:grid;grid-template-columns:130px 1fr auto;align-items:center;column-gap:36px}.logo-mark{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,#2278f2,#0b55d8);box-shadow:0 16px 35px rgba(23,105,232,.24);font-family:"Microsoft YaHei",sans-serif;font-size:54px;font-weight:700}.main-nav{display:flex;justify-content:center;align-items:center;gap:clamp(34px,4.4vw,74px)}.nav-link,.nav-button{border:0;background:transparent;color:var(--text);font-weight:700;font-size:18px;cursor:pointer;white-space:nowrap}.nav-link:hover,.nav-button:hover{color:var(--blue)}.nav-item{position:relative}.caret{font-size:12px;margin-left:5px}.dropdown{display:none;position:absolute;top:calc(100% + 20px);left:50%;transform:translateX(-50%);min-width:240px;padding:14px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow)}.nav-item:hover .dropdown,.nav-item:focus-within .dropdown{display:grid;gap:4px}.dropdown a{padding:11px 13px;border-radius:11px;color:var(--muted);font-weight:600;font-size:15px}.dropdown a:hover{background:var(--soft);color:var(--blue)}.enroll-btn{min-height:58px;padding:0 28px;border-radius:999px;display:flex;align-items:center;gap:10px;color:#fff;background:linear-gradient(135deg,#ffad1f,var(--orange));box-shadow:0 13px 30px rgba(255,159,10,.27);font-weight:700;font-size:17px;white-space:nowrap}.mobile-toggle{display:none;border:0;background:var(--soft);color:var(--blue);width:48px;height:48px;border-radius:14px;font-size:22px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 24% 38%,rgba(255,255,255,.98) 0 20%,rgba(255,255,255,.62) 40%,transparent 62%),linear-gradient(135deg,#eef8ff 0%,#fff 46%,#eaf5ff 100%);min-height:770px}.hero:after{content:"";position:absolute;left:-8%;right:-8%;bottom:-120px;height:260px;background:linear-gradient(180deg,rgba(206,232,255,.2),rgba(161,210,251,.4));border-radius:50% 50% 0 0/40% 40% 0 0;transform:rotate(-2deg)}.bamboo{position:absolute;left:-5px;top:10px;width:220px;height:690px;opacity:.22;z-index:1}.hero-grid{position:relative;z-index:2;min-height:770px;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(520px,.98fr);align-items:center;gap:74px;padding:58px 0 68px}.hero-copy{padding-left:70px;max-width:700px}.eyebrow{display:inline-flex;align-items:center;gap:11px;padding:12px 22px;border-radius:999px;background:rgba(226,241,255,.88);color:var(--blue2);font-weight:600;font-size:16px;box-shadow:0 8px 22px rgba(23,105,232,.08)}.hero-title{margin-top:34px;font-size:clamp(64px,6vw,92px);line-height:1.05;letter-spacing:-4px;font-weight:800;color:var(--navy)}.brand-subline{display:flex;align-items:center;justify-content:center;gap:26px;width:100%;margin-top:15px;color:var(--blue);font-size:clamp(52px,4.6vw,72px);line-height:1.1;font-weight:800;letter-spacing:-2px}.brand-subline:before,.brand-subline:after{content:"";flex:1;max-width:80px;height:3px;border-radius:99px;background:#4e91ef}.orange-line{width:82px;height:4px;border-radius:99px;background:var(--orange);margin:28px 0 25px}.hero-slogan{font-size:25px;font-weight:700;margin-bottom:14px}.hero-description{max-width:650px;color:var(--muted);font-size:18px;line-height:1.8}.hero-actions{display:flex;gap:18px;margin-top:32px;flex-wrap:wrap}.primary-btn,.secondary-btn{min-height:62px;display:flex;align-items:center;justify-content:center;gap:11px;padding:0 30px;border-radius:16px;font-size:17px;font-weight:700;transition:.2s}.primary-btn{background:linear-gradient(135deg,#2077f2,#0f57dc);color:#fff;box-shadow:0 13px 27px rgba(23,105,232,.22)}.secondary-btn{color:var(--blue);border:1.7px solid var(--blue);background:rgba(255,255,255,.76)}.primary-btn:hover,.secondary-btn:hover{transform:translateY(-2px)}
+.roadmap-card{background:rgba(255,255,255,.93);border:1px solid rgba(222,234,247,.95);border-radius:30px;padding:38px 40px 42px;box-shadow:var(--shadow)}.roadmap-title{font-size:32px;line-height:1.25;font-weight:800;margin-bottom:11px}.title-underline{width:58px;height:4px;background:var(--blue);border-radius:99px;margin-bottom:26px}.roadmap-list{display:grid;gap:16px}.roadmap-item{min-height:112px;padding:20px 22px;display:grid;grid-template-columns:68px 1fr 24px;align-items:center;gap:18px;border:1px solid var(--line);border-radius:21px;background:linear-gradient(135deg,#fbfdff,#f7faff);transition:.2s}.roadmap-item:hover{transform:translateX(5px);border-color:#b8d4fa;box-shadow:0 10px 24px rgba(24,78,145,.08)}.roadmap-icon{width:68px;height:68px;border-radius:17px;display:grid;place-items:center;color:#fff;font-family:"Microsoft YaHei",sans-serif;font-weight:700;font-size:34px}.blue{background:linear-gradient(145deg,#2778ef,#0758df)}.orange{background:linear-gradient(145deg,#ffaf25,#ff9400)}.green{background:linear-gradient(145deg,#28cc8b,#0caf6c)}.purple{background:linear-gradient(145deg,#8259f3,#6339dd)}.roadmap-item h3{font-size:20px;margin-bottom:3px}.roadmap-item p{color:var(--muted);font-size:15px}.arrow{font-size:28px}
+.section{padding:88px 0}.section-soft{background:#f7fbff}.section-heading{max-width:760px;margin:0 auto 46px;text-align:center}.section-heading span{color:var(--blue);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:14px}.section-heading h2{margin-top:10px;font-size:38px;line-height:1.3}.section-heading p{margin-top:13px;color:var(--muted);font-size:17px}.level-grid,.special-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.info-card{padding:28px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 12px 30px rgba(23,65,120,.06);transition:.2s}.info-card:hover{transform:translateY(-5px);border-color:#bcd6fa}.info-card .badge{display:inline-flex;padding:7px 13px;border-radius:999px;background:var(--soft);color:var(--blue);font-size:13px;font-weight:700}.info-card h3{margin-top:18px;font-size:23px}.info-card p{margin-top:9px;color:var(--muted);min-height:54px}.card-link{margin-top:20px;display:inline-flex;color:var(--blue);font-weight:700}
+footer{background:#0b1f4d;color:#dbe8ff;padding:42px 0 30px}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}.footer-title{color:#fff;font-size:20px;font-weight:700}.footer-note{margin-top:5px;color:#a9bfe3;font-size:14px}.floating-contact{position:fixed;right:24px;bottom:28px;z-index:1200;display:grid;gap:12px}.float-btn{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;box-shadow:0 14px 28px rgba(18,58,111,.2)}.float-phone{background:var(--green);font-size:25px}.float-zalo{background:#1487e8;font-size:15px}
+@media(max-width:1100px){.nav-wrap{grid-template-columns:auto auto auto;min-height:100px}.logo-mark{width:68px;height:68px;font-size:42px}.mobile-toggle{display:grid;place-items:center;justify-self:center}.main-nav{display:none;position:absolute;left:24px;right:24px;top:100%;padding:20px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:15px}.main-nav.open{display:flex}.dropdown{position:static;transform:none;margin-top:10px;box-shadow:none}.hero-grid{grid-template-columns:1fr;gap:40px}.hero-copy{padding-left:60px}.roadmap-card{margin:0 40px}}
+@media(max-width:760px){.container{width:min(100% - 28px,var(--max))}.contact-actions{display:none}.contact-phone{margin:auto;font-size:14px}.nav-wrap{min-height:82px;grid-template-columns:auto 1fr auto;gap:14px}.logo-mark{width:58px;height:58px;font-size:35px}.enroll-btn{min-height:46px;padding:0 17px;font-size:14px}.hero-grid{min-height:auto;padding:54px 0 70px}.bamboo{opacity:.12;width:150px}.hero-copy{padding-left:0;text-align:center}.hero-title{font-size:50px;letter-spacing:-2px}.brand-subline{font-size:42px}.orange-line{margin-left:auto;margin-right:auto}.hero-description{font-size:16px}.hero-actions{justify-content:center}.roadmap-card{margin:0;padding:27px 20px}.roadmap-title{font-size:27px}.roadmap-item{grid-template-columns:56px 1fr;min-height:96px;padding:15px}.roadmap-icon{width:56px;height:56px;font-size:28px}.arrow{display:none}.level-grid,.special-grid{grid-template-columns:1fr}.section{padding:65px 0}.section-heading h2{font-size:31px}.floating-contact{right:14px;bottom:18px}.float-btn{width:54px;height:54px}}
+</style>
 </head>
 <body>
-<div class="contact-strip">
-  <div class="container contact-strip-inner">
-    <div class="contact-main"><span>📞 Hotline/Zalo:</span><a href="tel:0985859968">0985 859 968</a></div>
-    <div class="contact-actions"><a class="contact-link" href="tel:0985859968">Gọi tư vấn</a><a class="contact-link zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Nhắn Zalo</a></div>
-  </div>
-</div>
-
-
-<header class="topbar">
-  <div class="container nav">
-    <a class="brand" href="index.html"><img src="assets/images/logo.svg" alt="Tiếng Trung Cô Mai"></a>
-    <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
-    <nav class="nav-links" id="navLinks">
-      <a class="nav-link" href="index.html">Trang chủ</a>
-      <div class="nav-item">
-        <button class="nav-link" data-dropdown>HSK 3.0 <span class="caret">▼</span></button>
-        <div class="dropdown">
-          <div class="dropdown-title">HSK 1–9</div>
-          <div class="dropdown-grid"><a href="hsk/hsk1.html">HSK 1</a><a href="hsk/hsk2.html">HSK 2</a><a href="hsk/hsk3.html">HSK 3</a><a href="hsk/hsk4.html">HSK 4</a><a href="hsk/hsk5.html">HSK 5</a><a href="hsk/hsk6.html">HSK 6</a><a href="hsk/hsk7.html">HSK 7</a><a href="hsk/hsk8.html">HSK 8</a><a href="hsk/hsk9.html">HSK 9</a></div>
-        </div>
-      </div>
-      <div class="nav-item">
-        <button class="nav-link" data-dropdown>Chuyên ngành <span class="caret">▼</span></button>
-        <div class="dropdown">
-          <a href="specialized/business.html">Tiếng Trung thương mại</a>
-          <a href="specialized/railway.html">Tiếng Trung đường sắt</a>
-          <a href="specialized/travel.html">Tiếng Trung du lịch</a>
-          <a href="specialized/logistics.html">Tiếng Trung logistics</a>
-        </div>
-      </div>
-      <div class="nav-item">
-        <button class="nav-link" data-dropdown>Học liệu <span class="caret">▼</span></button>
-        <div class="dropdown">
-          <a href="resources/flashcards.html">Flashcards</a>
-          <a href="resources/grammar.html">Ngữ pháp</a>
-          <a href="resources/vocabulary.html">Từ vựng</a>
-          <a href="resources/dialogues.html">Hội thoại</a>
-          <a href="resources/exams.html">Đề thi</a>
-        </div>
-      </div>
-      <a class="nav-link" href="blog/index.html">Blog</a>
-      <a class="nav-link" href="about/about.html">Về Cô Mai</a>
-      <a class="header-cta" href="tel:0985859968">Đăng ký học</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <div class="eyebrow">Nền tảng học tiếng Trung dành cho người Việt</div>
-      <h1>Tiếng Trung Cô Mai</h1>
-      <div class="tagline">Học từ gốc – Vững mọi mốc</div>
-      <p class="lead">Lộ trình HSK 3.0, tiếng Trung chuyên ngành và kho học liệu được tổ chức bài bản, trực quan, dễ áp dụng.</p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#hsk">Bắt đầu học</a>
-        <a class="button button-light" href="#chuyen-nganh">Khám phá học liệu</a>
-      </div>
-    </div>
-    <aside class="hero-card">
-      <h3>Lộ trình học rõ ràng</h3>
-      <div class="learning-list">
-        <div class="learning-item"><span class="learning-icon" style="background:#1d4ed8">词</span><div><strong>Từ vựng</strong><br><small>Chữ Hán, pinyin, nghĩa và ví dụ.</small></div></div>
-        <div class="learning-item"><span class="learning-icon" style="background:#f59e0b">法</span><div><strong>Ngữ pháp</strong><br><small>Giải thích dễ hiểu, mẫu câu rõ ràng.</small></div></div>
-        <div class="learning-item"><span class="learning-icon" style="background:#10b981">说</span><div><strong>Nghe – Nói</strong><br><small>Tình huống gần gũi và thực tế.</small></div></div>
-        <div class="learning-item"><span class="learning-icon" style="background:#8b5cf6">考</span><div><strong>Luyện thi</strong><br><small>Bài tập và định hướng theo cấp độ.</small></div></div>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<section class="section" id="hsk">
-  <div class="container">
-    <div class="section-heading">
-      <div class="kicker">Lộ trình chính</div>
-      <h2>HSK 3.0 từ HSK 1 đến HSK 9</h2>
-      <p>Học theo từng cấp độ rõ ràng, có mục tiêu và cấu trúc thống nhất.</p>
-    </div>
-    <div class="hsk-grid"><article class="card"><div class="level-badge">HSK 1</div><h3>Cấp độ HSK 1</h3><p>Nội dung được tổ chức theo định hướng HSK 3.0.</p><a class="text-link" href="hsk/hsk1.html">Xem cấp độ →</a></article><article class="card"><div class="level-badge">HSK 2</div><h3>Cấp độ HSK 2</h3><p>Nội dung được tổ chức theo định hướng HSK 3.0.</p><a class="text-link" href="hsk/hsk2.html">Xem cấp độ →</a></article><article class="card"><div class="level-badge">HSK 3</div><h3>Cấp độ HSK 3</h3><p>Nội dung được tổ chức theo định hướng HSK 3.0.</p><a class="text-link" href="hsk/hsk3.html">Xem cấp độ →</a></article><article class="card"><div class="level-badge">HSK 4</div><h3>Cấp độ HSK 4</h3><p>Nội dung được tổ chức theo định hướng HSK 3.0.</p><a class="text-link" href="hsk/hsk4.html">Xem cấp độ →</a></article><article class="card"><div class="level-badge">HSK 5</div><h3>Cấp độ HSK 5</h3><p>Nội dung được tổ chức theo định hướng HSK 3.0.</p><a class="text-link" href="hsk/hsk5.html">Xem cấp độ →</a></article><article class="card"><div class="level-badge">HSK 6</div><h3>Cấp độ HSK 6</h3><p>Nội dung được tổ chức theo định hướng HSK 3.0.</p><a class="text-link" href="hsk/hsk6.html">Xem cấp độ →</a></article><article class="card"><div class="level-badge">HSK 7</div><h3>Cấp độ HSK 7</h3><p>Nội dung được tổ chức theo định hướng HSK 3.0.</p><a class="text-link" href="hsk/hsk7.html">Xem cấp độ →</a></article><article class="card"><div class="level-badge">HSK 8</div><h3>Cấp độ HSK 8</h3><p>Nội dung được tổ chức theo định hướng HSK 3.0.</p><a class="text-link" href="hsk/hsk8.html">Xem cấp độ →</a></article><article class="card"><div class="level-badge">HSK 9</div><h3>Cấp độ HSK 9</h3><p>Nội dung được tổ chức theo định hướng HSK 3.0.</p><a class="text-link" href="hsk/hsk9.html">Xem cấp độ →</a></article></div>
-  </div>
-</section>
-
-<section class="section alt" id="chuyen-nganh">
-  <div class="container">
-    <div class="section-heading">
-      <div class="kicker">Ứng dụng nghề nghiệp</div>
-      <h2>Tiếng Trung chuyên ngành</h2>
-      <p>Phát triển năng lực sử dụng tiếng Trung trong môi trường công việc thực tế.</p>
-    </div>
-    <div class="subject-grid">
-      <article class="subject-card"><div class="subject-icon">💼</div><h3>Tiếng Trung thương mại</h3><p>Báo giá, hợp đồng, thanh toán, giao hàng và giao tiếp doanh nghiệp.</p><a class="text-link" href="specialized/business.html">Khám phá →</a></article>
-      <article class="subject-card"><div class="subject-icon">🚄</div><h3>Tiếng Trung đường sắt</h3><p>Tiến độ, vật liệu, công trường và họp kỹ thuật.</p><a class="text-link" href="specialized/railway.html">Khám phá →</a></article>
-      <article class="subject-card"><div class="subject-icon">✈️</div><h3>Tiếng Trung du lịch</h3><p>Khách sạn, nhà hàng, điểm đến và điều hành tour.</p><a class="text-link" href="specialized/travel.html">Khám phá →</a></article>
-      <article class="subject-card"><div class="subject-icon">🚚</div><h3>Tiếng Trung logistics</h3><p>Kho vận, vận tải, giao nhận, chứng từ và chuỗi cung ứng.</p><a class="text-link" href="specialized/logistics.html">Khám phá →</a></article>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-heading">
-      <div class="kicker">Kho học liệu</div>
-      <h2>Học theo cách phù hợp với bạn</h2>
-      <p>Các nhóm học liệu được tổ chức để tra cứu, ôn tập và luyện tập nhanh.</p>
-    </div>
-    <div class="resource-grid">
-      <article class="resource-card"><div class="resource-icon">🃏</div><h3>Flashcards</h3><a class="text-link" href="resources/flashcards.html">Mở →</a></article>
-      <article class="resource-card"><div class="resource-icon">📘</div><h3>Ngữ pháp</h3><a class="text-link" href="resources/grammar.html">Mở →</a></article>
-      <article class="resource-card"><div class="resource-icon">🈶</div><h3>Từ vựng</h3><a class="text-link" href="resources/vocabulary.html">Mở →</a></article>
-      <article class="resource-card"><div class="resource-icon">💬</div><h3>Hội thoại</h3><a class="text-link" href="resources/dialogues.html">Mở →</a></article>
-      <article class="resource-card"><div class="resource-icon">📝</div><h3>Đề thi</h3><a class="text-link" href="resources/exams.html">Mở →</a></article>
-    </div>
-  </div>
-</section>
-
-<section class="section alt">
-  <div class="container">
-    <div class="section-heading">
-      <div class="kicker">Chia sẻ học tập</div>
-      <h2>Blog Tiếng Trung Cô Mai</h2>
-      <p>Mẹo học, kinh nghiệm giảng dạy và các nội dung hữu ích cho người học tiếng Trung.</p>
-    </div>
-    <div class="blog-grid">
-      <article class="blog-card"><div class="blog-cover">📚</div><div class="blog-content"><h3>Cách xây dựng lộ trình học HSK</h3><p>Học theo mục tiêu, cấp độ và thời gian phù hợp.</p><a class="text-link" href="blog/index.html">Đọc bài →</a></div></article>
-      <article class="blog-card"><div class="blog-cover">🧠</div><div class="blog-content"><h3>Mẹo nhớ chữ Hán hiệu quả</h3><p>Kết hợp bộ thủ, ngữ cảnh và ôn tập ngắt quãng.</p><a class="text-link" href="blog/index.html">Đọc bài →</a></div></article>
-      <article class="blog-card"><div class="blog-cover">🎯</div><div class="blog-content"><h3>Học tiếng Trung theo chuyên ngành</h3><p>Chọn nội dung sát với công việc và mục tiêu sử dụng.</p><a class="text-link" href="blog/index.html">Đọc bài →</a></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="about-split">
-      <div class="about-visual">Khu vực ảnh chân dung hoặc hình ảnh thương hiệu<br>“Tiếng Trung Cô Mai”</div>
-      <article class="about-card">
-        <div class="kicker">Về Cô Mai</div>
-        <h2>Đồng hành cùng người học tiếng Trung</h2>
-        <p>Hệ thống học liệu được phát triển theo hướng bài bản, trực quan, dễ ứng dụng và phù hợp với người học Việt Nam.</p>
-        <p>Website sẽ từng bước mở rộng HSK 3.0, tiếng Trung chuyên ngành, kho học liệu, bài tập tương tác và các công cụ học tập thông minh.</p>
-        <a class="button button-primary" href="about/about.html">Tìm hiểu thêm</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="container">
-    <div class="cta-box">
-      <div><h2>Học từ gốc – Vững mọi mốc</h2><p>Bắt đầu với HSK 1 hoặc lựa chọn chuyên ngành phù hợp với bạn.</p></div>
-      <a class="button button-primary" href="hsk/hsk1.html">Bắt đầu ngay</a>
-    </div>
-  </div>
-</section>
-
-<section class="consult-section" id="lien-he">
-  <div class="container">
-    <div class="consult-box">
-      <div><div class="consult-kicker">TƯ VẤN KHÓA HỌC</div><h2>Đăng ký học cùng Cô Mai</h2><p>Liên hệ để được tư vấn lộ trình HSK, tiếng Trung giao tiếp và tiếng Trung chuyên ngành phù hợp.</p></div>
-      <div class="consult-contact"><a class="consult-phone" href="tel:0985859968">📞 0985 859 968</a><a class="consult-zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener">💬 Nhắn Zalo</a></div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <h4>Tiếng Trung Cô Mai</h4>
-        <p>Học từ gốc – Vững mọi mốc.</p><p><strong>Hotline/Zalo: 0985 859 968</strong></p>
-      </div>
-      <div>
-        <h4>HSK 3.0</h4>
-        <a href="hsk/hsk1.html">HSK 1</a>
-        <a href="hsk/hsk2.html">HSK 2</a>
-        <a href="hsk/hsk3.html">HSK 3</a>
-      </div>
-      <div>
-        <h4>Chuyên ngành</h4>
-        <a href="specialized/business.html">Thương mại</a>
-        <a href="specialized/railway.html">Đường sắt</a>
-        <a href="specialized/travel.html">Du lịch</a>
-      </div>
-      <div>
-        <h4>Học liệu</h4>
-        <a href="resources/flashcards.html">Flashcards</a>
-        <a href="resources/grammar.html">Ngữ pháp</a>
-        <a href="resources/exams.html">Đề thi</a>
-      </div>
-    </div>
-    <div class="copyright">© 2026 Tiếng Trung Cô Mai</div>
-  </div>
-</footer>
-
-<script src="assets/js/app.js?v=3.3.1"></script>
-
-<div class="floating-contact" aria-label="Liên hệ nhanh"><a class="floating-btn phone" href="tel:0985859968" aria-label="Gọi 0985 859 968">📞</a><a class="floating-btn zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener" aria-label="Nhắn Zalo">Zalo</a></div>
-
-</body>
-</html>
+<div class="contact-bar"><div class="container contact-inner"><a class="contact-phone" href="tel:0985859968"><span>☎</span><span>Hotline / Zalo: <strong>0985 859 968</strong></span></a><div class="contact-actions"><a class="mini-btn mini-outline" href="tel:0985859968">☎ Gọi tư vấn</a><a class="mini-btn mini-primary" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Zalo&nbsp; Nhắn Zalo</a></div></div></div>
+<header class="site-header"><div class="container nav-wrap"><a class="logo-mark" href="index.html" aria-label="Tiếng Trung Cô Mai">中</a><button class="mobile-toggle" id="mobileToggle" aria-label="Mở menu">☰</button><nav class="main-nav" id="mainNav"><a class="nav-link" href="index.html">Trang chủ</a><div class="nav-item"><button class="nav-button" type="button">HSK 3.0 <span class="caret">▼</span></button><div class="dropdown"><a href="hsk/hsk1.html">HSK 1</a><a href="hsk/hsk2.html">HSK 2</a><a href="hsk/hsk3.html">HSK 3</a><a href="hsk/hsk4.html">HSK 4</a><a href="hsk/hsk5.html">HSK 5</a><a href="hsk/hsk6.html">HSK 6</a><a href="hsk/hsk7.html">HSK 7</a><a href="hsk/hsk8.html">HSK 8</a><a href="hsk/hsk9.html">HSK 9</a></div></div><div class="nav-item"><button class="nav-button" type="button">Chuyên ngành <span class="caret">▼</span></button><div class="dropdown"><a href="specialized/business.html">Tiếng Trung thương mại</a><a href="specialized/railway.html">Tiếng Trung đường sắt</a><a href="specialized/travel.html">Tiếng Trung du lịch</a><a href="specialized/logistics.html">Tiếng Trung logistics</a></div></div><div class="nav-item"><button class="nav-button" type="button">Học liệu <span class="caret">▼</span></button><div class="dropdown"><a href="resources/flashcards.html">Flashcards</a><a href="resources/grammar.html">Ngữ pháp</a><a href="resources/vocabulary.html">Từ vựng</a><a href="resources/dialogues.html">Hội thoại</a><a href="resources/exams.html">Đề thi</a></div></div><a class="nav-link" href="about/about.html">Về Cô Mai</a></nav><a class="enroll-btn" href="tel:0985859968">♙ Đăng ký học</a></div></header>
+<main><section class="hero"><svg class="bamboo" viewBox="0 0 220 700" aria-hidden="true"><g fill="none" stroke="#4b86a9" stroke-width="5" stroke-linecap="round"><path d="M30 700 C32 570 42 430 48 290 C52 190 44 90 55 0"/><path d="M90 700 C88 570 96 420 102 300 C108 190 101 93 118 0"/><path d="M150 700 C148 590 158 455 164 330 C169 220 160 115 180 20"/></g><g fill="#6c9fba"><ellipse cx="36" cy="90" rx="34" ry="9" transform="rotate(-38 36 90)"/><ellipse cx="76" cy="135" rx="37" ry="9" transform="rotate(28 76 135)"/><ellipse cx="35" cy="215" rx="39" ry="10" transform="rotate(-27 35 215)"/><ellipse cx="84" cy="280" rx="38" ry="10" transform="rotate(34 84 280)"/><ellipse cx="128" cy="98" rx="38" ry="10" transform="rotate(-32 128 98)"/><ellipse cx="158" cy="170" rx="38" ry="10" transform="rotate(28 158 170)"/><ellipse cx="122" cy="360" rx="40" ry="10" transform="rotate(-28 122 360)"/><ellipse cx="190" cy="405" rx="36" ry="9" transform="rotate(30 190 405)"/><ellipse cx="67" cy="475" rx="39" ry="10" transform="rotate(-32 67 475)"/><ellipse cx="162" cy="550" rx="39" ry="10" transform="rotate(27 162 550)"/></g></svg><div class="container hero-grid"><div class="hero-copy"><div class="eyebrow"><span>★</span><span>Nền tảng học tiếng Trung dành cho người Việt</span></div><h1 class="hero-title">Tiếng Trung</h1><div class="brand-subline">Cô Mai</div><div class="orange-line"></div><p class="hero-slogan">Học từ gốc – Vững mọi mốc</p><p class="hero-description">Lộ trình HSK 3.0, tiếng Trung chuyên ngành và kho học liệu được tổ chức bài bản, trực quan, dễ áp dụng.</p><div class="hero-actions"><a class="primary-btn" href="hsk/hsk1.html">▣ Bắt đầu học</a><a class="secondary-btn" href="#hoc-lieu">▱ Khám phá học liệu</a></div></div><div class="roadmap-card" id="hoc-lieu"><h2 class="roadmap-title">Lộ trình học rõ ràng</h2><div class="title-underline"></div><div class="roadmap-list"><a class="roadmap-item" href="resources/vocabulary.html"><span class="roadmap-icon blue">词</span><span><h3>Từ vựng</h3><p>Chữ Hán, pinyin, nghĩa và ví dụ.</p></span><span class="arrow">›</span></a><a class="roadmap-item" href="resources/grammar.html"><span class="roadmap-icon orange">法</span><span><h3>Ngữ pháp</h3><p>Giải thích dễ hiểu, mẫu câu rõ ràng.</p></span><span class="arrow">›</span></a><a class="roadmap-item" href="resources/dialogues.html"><span class="roadmap-icon green">说</span><span><h3>Nghe – Nói</h3><p>Tình huống gần gũi và thực tế.</p></span><span class="arrow">›</span></a><a class="roadmap-item" href="resources/exams.html"><span class="roadmap-icon purple">考</span><span><h3>Luyện thi</h3><p>Bài tập và định hướng theo cấp độ.</p></span><span class="arrow">›</span></a></div></div></div></section>
+<section class="section"><div class="container"><div class="section-heading"><span>Lộ trình HSK</span><h2>Học theo từng cấp độ rõ ràng</h2><p>Bắt đầu từ HSK 1 và tiến dần lên các cấp độ cao hơn theo năng lực của bạn.</p></div><div class="level-grid"><article class="info-card"><span class="badge">HSK 1</span><h3>Nền tảng nhập môn</h3><p>Dành cho người mới bắt đầu học tiếng Trung.</p><a class="card-link" href="hsk/hsk1.html">Xem cấp độ →</a></article><article class="info-card"><span class="badge">HSK 2</span><h3>Giao tiếp cơ bản</h3><p>Mở rộng vốn từ và hình thành phản xạ giao tiếp.</p><a class="card-link" href="hsk/hsk2.html">Xem cấp độ →</a></article><article class="info-card"><span class="badge">HSK 3</span><h3>Phát triển năng lực</h3><p>Củng cố ngữ pháp, nghe hiểu và đọc hiểu.</p><a class="card-link" href="hsk/hsk3.html">Xem cấp độ →</a></article></div></div></section>
+<section class="section section-soft"><div class="container"><div class="section-heading"><span>Tiếng Trung chuyên ngành</span><h2>Ứng dụng vào học tập và công việc</h2><p>Nội dung được xây dựng theo các tình huống nghề nghiệp thực tế.</p></div><div class="special-grid"><article class="info-card"><span class="badge">Thương mại</span><h3>Tiếng Trung thương mại</h3><p>Báo giá, hợp đồng, thanh toán và giao tiếp doanh nghiệp.</p><a class="card-link" href="specialized/business.html">Khám phá →</a></article><article class="info-card"><span class="badge">Đường sắt</span><h3>Tiếng Trung đường sắt</h3><p>Tiến độ, vật liệu, công trường và họp kỹ thuật.</p><a class="card-link" href="specialized/railway.html">Khám phá →</a></article><article class="info-card"><span class="badge">Du lịch</span><h3>Tiếng Trung du lịch</h3><p>Nhà hàng, khách sạn, điểm đến và điều hành tour.</p><a class="card-link" href="specialized/travel.html">Khám phá →</a></article></div></div></section></main>
+<footer><div class="container footer-inner"><div><div class="footer-title">Tiếng Trung Cô Mai</div><div class="footer-note">Học từ gốc – Vững mọi mốc.</div></div><div class="footer-note">© 2026 Tiếng Trung Cô Mai</div></div></footer><div class="floating-contact"><a class="float-btn float-phone" href="tel:0985859968" aria-label="Gọi điện">☎</a><a class="float-btn float-zalo" href="https://zalo.me/0985859968" target="_blank" rel="noopener" aria-label="Nhắn Zalo">Zalo</a></div><script>const mobileToggle=document.getElementById('mobileToggle'),mainNav=document.getElementById('mainNav');mobileToggle.addEventListener('click',()=>mainNav.classList.toggle('open'));</script>
+</body></html>
