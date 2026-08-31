@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>HSK 2 - Bài 1 | 她请我们吃了北京烤鸭 | Tiếng Trung Cô Mai</title>
+<meta name="description" content="HSK 2 Bài 1 - Từ vựng, luyện từ, điền từ tương tác, sắp xếp câu, chữa câu sai, ngữ pháp và tự kiểm tra.">
+<style>
+:root{
+  --navy:#0b1f4d;--blue:#1769e8;--blue2:#0f56d9;--soft:#edf6ff;--pale:#f8fbff;
+  --orange:#ff9f0a;--green:#16b979;--purple:#7047eb;--red:#e94b4b;--yellow:#fff8df;
+  --text:#102044;--muted:#5d6b82;--line:#dce8f5;--shadow:0 14px 38px rgba(26,85,160,.10);
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Be Vietnam Pro","Segoe UI",Arial,sans-serif;background:#f7fbff;color:var(--text);line-height:1.7}
+a{text-decoration:none;color:inherit}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+.container{width:min(var(--max),calc(100% - 30px));margin:auto}
+
+.topbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.topbar-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}
+.logo{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#2379f1,#0b55d8);color:#fff;font-size:25px;font-family:"Microsoft YaHei",sans-serif}
+.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.nav a{padding:8px 11px;border-radius:10px;color:var(--muted);font-weight:700;font-size:14px}
+.nav a:hover{background:var(--soft);color:var(--blue)}
+
+.hero{background:linear-gradient(135deg,#edf7ff 0%,#fff 57%,#fff5e8 100%);border-bottom:1px solid var(--line)}
+.hero-inner{padding:52px 0 44px}
+.kicker{display:inline-flex;padding:8px 14px;border-radius:999px;background:#e7f2ff;color:var(--blue);font-size:14px;font-weight:800}
+.hero h1{font-size:clamp(36px,5vw,58px);line-height:1.15;margin:17px 0 8px;color:var(--navy);font-family:"Microsoft YaHei","SimSun",sans-serif}
+.pinyin-title{font-size:21px;color:var(--blue);font-weight:700}
+.vi-title{font-size:20px;color:var(--muted);margin-top:3px}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.pill{padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:14px;font-weight:700}
+
+.section{padding:42px 0}
+.section.white{background:#fff}
+.section h2{font-size:30px;line-height:1.3;margin:0 0 19px;color:var(--navy)}
+.section-intro{color:var(--muted);margin:-8px 0 18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+
+.vocab-table{width:100%;border-collapse:collapse;border:1px solid var(--line);background:#fff;border-radius:16px;overflow:hidden}
+.vocab-table th,.vocab-table td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+.vocab-table th{background:#f1f7ff;color:var(--navy)}
+.vocab-table tr:last-child td{border-bottom:0}
+.hanzi{font-family:"Microsoft YaHei","SimSun",sans-serif;font-size:20px;font-weight:700}
+.pin{color:var(--blue);font-weight:700}
+.tts{border:0;background:#edf5ff;color:var(--blue);border-radius:9px;padding:6px 9px;font-weight:800}
+.tts:hover{background:#dcecff}
+
+.exercise{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:15px}
+.ex-title{font-weight:800;font-size:18px;margin-bottom:12px;color:var(--navy)}
+.question{padding:14px 0;border-bottom:1px dashed #dfe7f1}
+.question:last-child{border-bottom:0}
+.qtext{font-size:18px;margin-bottom:9px}
+.cn{font-family:"Microsoft YaHei","SimSun",sans-serif}
+.word-bank{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}
+.word-btn{border:1.5px solid #b9d3f4;background:#fff;color:var(--blue);padding:8px 12px;border-radius:999px;font-weight:800}
+.word-btn:hover{background:var(--soft)}
+.word-btn.used{opacity:.45;pointer-events:none}
+.answer-slot{display:inline-flex;min-width:110px;min-height:38px;align-items:center;justify-content:center;border:1.5px dashed #9fbde1;border-radius:9px;padding:4px 10px;background:#fbfdff;color:var(--blue);font-weight:800;vertical-align:middle}
+.text-input{width:100%;max-width:620px;border:1.5px solid #bfd2ea;border-radius:11px;padding:10px 12px;background:#fbfdff}
+textarea.text-input{min-height:88px;resize:vertical}
+.check-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.btn{border:0;border-radius:11px;padding:10px 16px;font-weight:800}
+.btn.primary{background:var(--blue);color:#fff}
+.btn.secondary{background:#fff;color:var(--blue);border:1.5px solid var(--blue)}
+.btn.gray{background:#eef2f7;color:#42516a}
+.feedback{margin-top:10px;font-weight:800}
+.ok{color:var(--green)}
+.bad{color:var(--red)}
+.explain{margin-top:7px;padding:9px 11px;border-radius:10px;background:#f7fbff;color:var(--muted);display:none}
+.explain.show{display:block}
+
+.mcq label{display:block;margin:7px 0;padding:9px 11px;border-radius:10px;background:#fafcff;border:1px solid #e5edf6}
+.mcq input{margin-right:7px}
+
+.sort-bank,.sort-answer{display:flex;gap:8px;flex-wrap:wrap;min-height:50px;padding:10px;border-radius:12px;border:1.5px dashed #b9cbe2;background:#fbfdff}
+.sort-chip{border:1px solid #bad2f2;background:#fff;color:var(--navy);padding:8px 11px;border-radius:10px;font-weight:800}
+.sort-chip.selected{background:#e8f2ff;color:var(--blue)}
+.sort-answer{margin-top:9px;background:#fff}
+
+.grammar{border-left:5px solid var(--orange);background:#fffaf2}
+.formula{display:inline-block;background:#fff;border:1px dashed #f0b24b;border-radius:12px;padding:10px 14px;font-weight:800;color:#9b5b00;margin:7px 0 11px}
+.example{padding:12px 14px;border-radius:12px;background:#fff;border:1px solid #f3e0bb;margin-top:10px}
+.example .cn{font-size:19px;font-weight:700}
+.example .pin{font-size:14px}
+
+.note{font-size:14px;color:var(--muted)}
+.tip{background:var(--yellow);border:1px solid #f1df91;border-radius:14px;padding:14px 16px}
+.scorebox{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:18px;border-radius:16px;background:linear-gradient(135deg,#edf6ff,#fff);border:1px solid #d8e8f8}
+.score{font-size:27px;font-weight:900;color:var(--blue)}
+.progress{height:12px;background:#e7eef7;border-radius:999px;overflow:hidden;flex:1;min-width:220px}
+.progress > div{height:100%;width:0;background:linear-gradient(90deg,#1769e8,#16b979);transition:.35s}
+
+.footer-nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:32px 0 52px}
+.linkbtn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:12px;background:var(--blue);color:#fff;font-weight:800}
+.linkbtn.secondary{background:#fff;color:var(--blue);border:1.5px solid var(--blue)}
+.backtop{position:fixed;right:18px;bottom:18px;width:48px;height:48px;border-radius:50%;border:0;background:var(--blue);color:#fff;font-size:20px;box-shadow:var(--shadow)}
+@media(max-width:900px){.nav{display:none}.grid-2,.grid-3{grid-template-columns:1fr}.vocab-table{font-size:14px}}
+@media(max-width:620px){
+  .container{width:min(100% - 20px,var(--max))}
+  .hero-inner{padding:36px 0 30px}
+  .section{padding:30px 0}
+  .card{padding:17px}
+  .vocab-table th:nth-child(4),.vocab-table td:nth-child(4){display:none}
+  .qtext{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="../index.html"><span class="logo">中</span><span>Tiếng Trung Cô Mai</span></a>
+    <nav class="nav">
+      <a href="hsk2.html">HSK 2</a>
+      <a href="#tu-vung">Từ vựng</a>
+      <a href="#dien-tu">Điền từ</a>
+      <a href="#sap-xep">Sắp xếp câu</a>
+      <a href="#chua-sai">Chữa câu sai</a>
+      <a href="#ngu-phap">Ngữ pháp</a>
+      <a href="#kiem-tra">Tự kiểm tra</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <span class="kicker">NEW HSK 2 · BÀI 1</span>
+    <h1>她请我们吃了北京烤鸭</h1>
+    <div class="pinyin-title">Tā qǐng wǒmen chī le Běijīng kǎoyā</div>
+    <div class="vi-title">Cô ấy mời chúng tôi ăn vịt quay Bắc Kinh</div>
+    <div class="meta">
+      <span class="pill">Từ vựng trọng tâm</span>
+      <span class="pill">Luyện tập tương tác</span>
+      <span class="pill">吧 · 是……的 · 兼语句</span>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<section class="section" id="tu-vung">
+  <div class="container">
+    <h2>1. Từ vựng trọng tâm</h2>
+    <p class="section-intro">Học từ trước, sau đó dùng ngay trong bài tập.</p>
+    <div class="card">
+      <table class="vocab-table">
+        <thead><tr><th>#</th><th>Chữ Hán</th><th>Pinyin</th><th>Từ loại</th><th>Nghĩa</th><th>Nghe</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td class="hanzi">就</td><td class="pin">jiù</td><td>phó từ</td><td>chính là; ngay</td><td><button class="tts" data-say="就">🔊</button></td></tr>
+          <tr><td>2</td><td class="hanzi">给</td><td class="pin">gěi</td><td>giới từ</td><td>cho; đối với</td><td><button class="tts" data-say="给">🔊</button></td></tr>
+          <tr><td>3</td><td class="hanzi">让</td><td class="pin">ràng</td><td>động từ</td><td>để; bảo; cho phép</td><td><button class="tts" data-say="让">🔊</button></td></tr>
+          <tr><td>4</td><td class="hanzi">接</td><td class="pin">jiē</td><td>động từ</td><td>đón; tiếp nhận</td><td><button class="tts" data-say="接">🔊</button></td></tr>
+          <tr><td>5</td><td class="hanzi">次</td><td class="pin">cì</td><td>lượng từ</td><td>lần</td><td><button class="tts" data-say="次">🔊</button></td></tr>
+          <tr><td>6</td><td class="hanzi">旅游</td><td class="pin">lǚyóu</td><td>động từ</td><td>du lịch</td><td><button class="tts" data-say="旅游">🔊</button></td></tr>
+          <tr><td>7</td><td class="hanzi">帮忙</td><td class="pin">bāngmáng</td><td>động từ</td><td>giúp đỡ</td><td><button class="tts" data-say="帮忙">🔊</button></td></tr>
+          <tr><td>8</td><td class="hanzi">不好意思</td><td class="pin">bù hǎoyìsi</td><td>cụm từ</td><td>ngại quá; xin lỗi</td><td><button class="tts" data-say="不好意思">🔊</button></td></tr>
+          <tr><td>9</td><td class="hanzi">已经</td><td class="pin">yǐjīng</td><td>phó từ</td><td>đã</td><td><button class="tts" data-say="已经">🔊</button></td></tr>
+          <tr><td>10</td><td class="hanzi">那</td><td class="pin">nà</td><td>liên từ</td><td>vậy thì; thế thì</td><td><button class="tts" data-say="那">🔊</button></td></tr>
+          <tr><td>11</td><td class="hanzi">介绍</td><td class="pin">jièshào</td><td>động từ</td><td>giới thiệu</td><td><button class="tts" data-say="介绍">🔊</button></td></tr>
+          <tr><td>12</td><td class="hanzi">有时</td><td class="pin">yǒushí</td><td>phó từ</td><td>có lúc; đôi khi</td><td><button class="tts" data-say="有时">🔊</button></td></tr>
+          <tr><td>13</td><td class="hanzi">懂</td><td class="pin">dǒng</td><td>động từ</td><td>hiểu</td><td><button class="tts" data-say="懂">🔊</button></td></tr>
+          <tr><td>14</td><td class="hanzi">意思</td><td class="pin">yìsi</td><td>danh từ</td><td>ý; ý nghĩa</td><td><button class="tts" data-say="意思">🔊</button></td></tr>
+          <tr><td>15</td><td class="hanzi">北京烤鸭</td><td class="pin">Běijīng kǎoyā</td><td>danh từ riêng</td><td>vịt quay Bắc Kinh</td><td><button class="tts" data-say="北京烤鸭">🔊</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="container">
+    <h2>2. Nhận diện từ</h2>
+    <div class="grid-2">
+      <div class="exercise mcq" data-type="mcq" data-answer="B">
+        <div class="ex-title">Câu 1</div>
+        <div class="qtext">“帮忙” có nghĩa là gì?</div>
+        <label><input type="radio" name="r1" value="A"> A. Giới thiệu</label>
+        <label><input type="radio" name="r1" value="B"> B. Giúp đỡ</label>
+        <label><input type="radio" name="r1" value="C"> C. Du lịch</label>
+        <div class="feedback"></div>
+      </div>
+      <div class="exercise mcq" data-type="mcq" data-answer="C">
+        <div class="ex-title">Câu 2</div>
+        <div class="qtext">Từ nào có nghĩa là “đôi khi”?</div>
+        <label><input type="radio" name="r2" value="A"> A. 已经</label>
+        <label><input type="radio" name="r2" value="B"> B. 就</label>
+        <label><input type="radio" name="r2" value="C"> C. 有时</label>
+        <div class="feedback"></div>
+      </div>
+    </div>
+    <div class="check-row"><button class="btn primary" onclick="checkSection(this)">Kiểm tra</button></div>
+  </div>
+</section>
+
+<section class="section" id="dien-tu">
+  <div class="container">
+    <h2>3. Điền từ vào câu – bấm từ để điền</h2>
+    <p class="section-intro">Bạn có thể bấm trực tiếp vào từ trong khung. Nếu muốn, vẫn có thể tự gõ vào ô trống.</p>
+    <div class="card fill-set">
+      <div class="word-bank">
+        <button class="word-btn">已经</button>
+        <button class="word-btn">帮忙</button>
+        <button class="word-btn">介绍</button>
+        <button class="word-btn">意思</button>
+        <button class="word-btn">有时</button>
+      </div>
+
+      <div class="question fill-q" data-answer="有时">
+        <div class="qtext cn">1. 我 <input class="text-input fill-input" style="max-width:150px;display:inline-block"> 去电影院看电影。</div>
+        <div class="feedback"></div>
+      </div>
+      <div class="question fill-q" data-answer="意思">
+        <div class="qtext cn">2. 上课要多听、多说，你懂我的 <input class="text-input fill-input" style="max-width:150px;display:inline-block"> 吗？</div>
+        <div class="feedback"></div>
+      </div>
+      <div class="question fill-q" data-answer="已经">
+        <div class="qtext cn">3. 我很喜欢北京，这 <input class="text-input fill-input" style="max-width:150px;display:inline-block"> 是我第三次来北京了。</div>
+        <div class="feedback"></div>
+      </div>
+      <div class="question fill-q" data-answer="介绍">
+        <div class="qtext cn">4. 安妮，我给你 <input class="text-input fill-input" style="max-width:150px;display:inline-block"> 一下，这是我的中国朋友李文。</div>
+        <div class="feedback"></div>
+      </div>
+      <div class="question fill-q" data-answer="帮忙">
+        <div class="qtext cn">5. 今天的工作太多了！——那你找个人来 <input class="text-input fill-input" style="max-width:150px;display:inline-block"> 吧。</div>
+        <div class="feedback"></div>
+      </div>
+      <div class="check-row">
+        <button class="btn primary" onclick="checkFillSet(this)">Kiểm tra đáp án</button>
+        <button class="btn gray" onclick="resetFillSet(this)">Làm lại</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section white" id="sap-xep">
+  <div class="container">
+    <h2>4. Sắp xếp từ thành câu</h2>
+    <p class="section-intro">Bấm từng từ theo đúng thứ tự để tạo câu hoàn chỉnh.</p>
+
+    <div class="exercise sort-q" data-answer="我们是来旅游的。">
+      <div class="ex-title">Câu 1</div>
+      <div class="sort-bank">
+        <button class="sort-chip">来</button><button class="sort-chip">我们</button><button class="sort-chip">旅游</button><button class="sort-chip">的</button><button class="sort-chip">是</button>
+      </div>
+      <div class="sort-answer"></div>
+      <div class="check-row"><button class="btn primary" onclick="checkSort(this)">Kiểm tra</button><button class="btn gray" onclick="resetSort(this)">Làm lại</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="exercise sort-q" data-answer="我已经到北京了。">
+      <div class="ex-title">Câu 2</div>
+      <div class="sort-bank">
+        <button class="sort-chip">北京</button><button class="sort-chip">已经</button><button class="sort-chip">到</button><button class="sort-chip">了</button><button class="sort-chip">我</button>
+      </div>
+      <div class="sort-answer"></div>
+      <div class="check-row"><button class="btn primary" onclick="checkSort(this)">Kiểm tra</button><button class="btn gray" onclick="resetSort(this)">Làm lại</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="exercise sort-q" data-answer="王老师让我们说中文。">
+      <div class="ex-title">Câu 3</div>
+      <div class="sort-bank">
+        <button class="sort-chip">中文</button><button class="sort-chip">让</button><button class="sort-chip">王老师</button><button class="sort-chip">我们</button><button class="sort-chip">说</button>
+      </div>
+      <div class="sort-answer"></div>
+      <div class="check-row"><button class="btn primary" onclick="checkSort(this)">Kiểm tra</button><button class="btn gray" onclick="resetSort(this)">Làm lại</button></div>
+      <div class="feedback"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="chua-sai">
+  <div class="container">
+    <h2>5. Chữa câu sai</h2>
+    <p class="section-intro">Tìm lỗi và gõ lại câu đúng.</p>
+
+    <div class="exercise error-q" data-answer="我是今天早上到的。">
+      <div class="qtext cn">1. 我是今天早上到。</div>
+      <input class="text-input" placeholder="Gõ câu đúng...">
+      <div class="check-row"><button class="btn primary" onclick="checkError(this)">Kiểm tra</button></div>
+      <div class="feedback"></div>
+      <div class="explain">Dùng cấu trúc “是……的” để nhấn mạnh thời gian của sự việc đã xảy ra.</div>
+    </div>
+
+    <div class="exercise error-q" data-answer="我已经到北京了。">
+      <div class="qtext cn">2. 我到北京已经了。</div>
+      <input class="text-input" placeholder="Gõ câu đúng...">
+      <div class="check-row"><button class="btn primary" onclick="checkError(this)">Kiểm tra</button></div>
+      <div class="feedback"></div>
+      <div class="explain">“已经” thường đứng trước động từ/cụm động từ: 已经 + 到北京 + 了.</div>
+    </div>
+
+    <div class="exercise error-q" data-answer="我想请你帮个忙。">
+      <div class="qtext cn">3. 我想你请帮个忙。</div>
+      <input class="text-input" placeholder="Gõ câu đúng...">
+      <div class="check-row"><button class="btn primary" onclick="checkError(this)">Kiểm tra</button></div>
+      <div class="feedback"></div>
+      <div class="explain">Câu kiêm ngữ: 主语 + 请/让/叫 + người + động từ/cụm động từ.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section white" id="ngu-phap">
+  <div class="container">
+    <h2>6. Ngữ pháp trọng tâm</h2>
+
+    <div class="card grammar">
+      <h3>① 吧（2）– biểu thị phỏng đoán</h3>
+      <div class="formula">Câu trần thuật / nghi vấn + 吧？</div>
+      <div class="example"><div class="cn">你们就是她的学生吧？</div><div class="pin">Nǐmen jiù shì tā de xuésheng ba?</div><div>Các em chính là học sinh của cô ấy phải không?</div></div>
+    </div>
+
+    <div class="card grammar" style="margin-top:16px">
+      <h3>② “是……的” – nhấn mạnh chi tiết sự việc</h3>
+      <div class="formula">Chủ ngữ + 是 + thành phần nhấn mạnh + động từ/cụm động từ + 的</div>
+      <div class="example"><div class="cn">我们是来旅游的。</div><div class="pin">Wǒmen shì lái lǚyóu de.</div><div>Chúng tôi đến đây là để du lịch.</div></div>
+      <div class="example"><div class="cn">你是什么时候到的？</div><div class="pin">Nǐ shì shénme shíhou dào de?</div><div>Bạn đến lúc nào?</div></div>
+      <p class="note">Trong câu khẳng định và nghi vấn, “是” có thể lược bỏ; trong câu phủ định thì không được lược bỏ.</p>
+    </div>
+
+    <div class="card grammar" style="margin-top:16px">
+      <h3>③ 兼语句 – câu kiêm ngữ</h3>
+      <div class="formula">Chủ ngữ + 请 / 让 / 叫 + người + động từ / cụm động từ</div>
+      <div class="example"><div class="cn">我想请你帮个忙。</div><div class="pin">Wǒ xiǎng qǐng nǐ bāng ge máng.</div><div>Tôi muốn nhờ bạn giúp một việc.</div></div>
+      <div class="example"><div class="cn">王老师让我们说中文。</div><div class="pin">Wáng lǎoshī ràng wǒmen shuō Zhōngwén.</div><div>Cô Vương bảo chúng tôi nói tiếng Trung.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>7. Biến đổi câu theo mẫu</h2>
+
+    <div class="exercise transform-q" data-answer="我是昨天到北京的。">
+      <div class="qtext">Dùng “是……的” viết lại: <span class="cn">我昨天到北京。</span></div>
+      <input class="text-input" placeholder="Viết câu...">
+      <div class="check-row"><button class="btn primary" onclick="checkTransform(this)">Kiểm tra</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="exercise transform-q" data-answer="王老师让我们说中文。">
+      <div class="qtext">Dùng “让” viết lại: <span class="cn">王老师说：“你们说中文。”</span></div>
+      <input class="text-input" placeholder="Viết câu...">
+      <div class="check-row"><button class="btn primary" onclick="checkTransform(this)">Kiểm tra</button></div>
+      <div class="feedback"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="container">
+    <h2>8. Chọn câu đúng theo tình huống</h2>
+
+    <div class="exercise mcq" data-type="mcq" data-answer="A">
+      <div class="qtext">Bạn muốn nhờ bạn mình giúp một việc.</div>
+      <label><input type="radio" name="r3" value="A"> A. 我想请你帮个忙。</label>
+      <label><input type="radio" name="r3" value="B"> B. 我想你帮忙请。</label>
+      <label><input type="radio" name="r3" value="C"> C. 我请想帮你忙。</label>
+      <div class="check-row"><button class="btn primary" onclick="checkOneMCQ(this)">Kiểm tra</button></div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="exercise mcq" data-type="mcq" data-answer="B">
+      <div class="qtext">Bạn muốn hỏi người kia có phải lần đầu đến Bắc Kinh không.</div>
+      <label><input type="radio" name="r4" value="A"> A. 你北京第一次来吗？</label>
+      <label><input type="radio" name="r4" value="B"> B. 你是第一次来北京吗？</label>
+      <label><input type="radio" name="r4" value="C"> C. 你来北京是一次第一吗？</label>
+      <div class="check-row"><button class="btn primary" onclick="checkOneMCQ(this)">Kiểm tra</button></div>
+      <div class="feedback"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>9. Dịch Việt → Trung</h2>
+    <div class="exercise translate-q" data-answer="我已经到北京了。">
+      <div class="qtext">1. Tôi đã đến Bắc Kinh rồi.</div>
+      <input class="text-input" placeholder="Nhập câu tiếng Trung...">
+      <div class="check-row"><button class="btn primary" onclick="checkTranslate(this)">Kiểm tra</button></div>
+      <div class="feedback"></div>
+    </div>
+    <div class="exercise translate-q" data-answer="我想请你帮个忙。">
+      <div class="qtext">2. Tôi muốn nhờ bạn giúp một việc.</div>
+      <input class="text-input" placeholder="Nhập câu tiếng Trung...">
+      <div class="check-row"><button class="btn primary" onclick="checkTranslate(this)">Kiểm tra</button></div>
+      <div class="feedback"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="container">
+    <h2>10. Hội thoại ngắn</h2>
+    <div class="card">
+      <p class="cn"><b>A：</b>你是第一次来北京吗？</p>
+      <p class="cn"><b>B：</b><input class="text-input" style="max-width:520px" placeholder="Trả lời..."></p>
+      <p class="cn"><b>A：</b>你是来学中文的吗？</p>
+      <p class="cn"><b>B：</b><input class="text-input" style="max-width:520px" placeholder="Trả lời..."></p>
+      <div class="tip">Gợi ý: dùng <b>第一次、旅游、是……的</b> hoặc các từ mới của bài.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>11. Mini Speaking</h2>
+    <div class="card">
+      <p>Hãy nói 4–6 câu về một chuyến đi của bạn. Cố gắng dùng ít nhất:</p>
+      <ul>
+        <li>1 từ trong nhóm: 已经 / 有时 / 介绍 / 帮忙</li>
+        <li>1 câu “是……的”</li>
+        <li>1 câu với 请 / 让 / 叫</li>
+      </ul>
+      <textarea class="text-input" placeholder="Ghi ý tưởng trước khi nói..."></textarea>
+    </div>
+  </div>
+</section>
+
+<section class="section white" id="kiem-tra">
+  <div class="container">
+    <h2>12. Tự kiểm tra cuối bài</h2>
+    <p class="section-intro">10 câu hỗn hợp. Nhấn “Chấm điểm” sau khi hoàn thành.</p>
+
+    <div id="finalQuiz">
+      <div class="exercise final-q" data-kind="mcq" data-answer="C">
+        <div class="qtext">1. “已经” có nghĩa là:</div>
+        <label><input type="radio" name="f1" value="A"> A. Đôi khi</label>
+        <label><input type="radio" name="f1" value="B"> B. Giới thiệu</label>
+        <label><input type="radio" name="f1" value="C"> C. Đã</label>
+        <div class="feedback"></div>
+      </div>
+
+      <div class="exercise final-q" data-kind="text" data-answer="意思">
+        <div class="qtext cn">2. 你懂我的 ______ 吗？</div>
+        <input class="text-input" placeholder="Điền từ...">
+        <div class="feedback"></div>
+      </div>
+
+      <div class="exercise final-q" data-kind="text" data-answer="我们是来旅游的。">
+        <div class="qtext">3. Sắp xếp thành câu: <span class="cn">我们 / 是 / 来 / 旅游 / 的</span></div>
+        <input class="text-input" placeholder="Nhập câu hoàn chỉnh...">
+        <div class="feedback"></div>
+      </div>
+
+      <div class="exercise final-q" data-kind="mcq" data-answer="A">
+        <div class="qtext">4. Câu đúng là:</div>
+        <label><input type="radio" name="f4" value="A"> A. 我已经到北京了。</label>
+        <label><input type="radio" name="f4" value="B"> B. 我到已经北京了。</label>
+        <label><input type="radio" name="f4" value="C"> C. 我北京已经到了。</label>
+        <div class="feedback"></div>
+      </div>
+
+      <div class="exercise final-q" data-kind="text" data-answer="我想请你帮个忙。">
+        <div class="qtext">5. Dịch: Tôi muốn nhờ bạn giúp một việc.</div>
+        <input class="text-input" placeholder="Nhập câu tiếng Trung...">
+        <div class="feedback"></div>
+      </div>
+
+      <div class="exercise final-q" data-kind="mcq" data-answer="B">
+        <div class="qtext">6. “有时” có nghĩa là:</div>
+        <label><input type="radio" name="f6" value="A"> A. Đã</label>
+        <label><input type="radio" name="f6" value="B"> B. Đôi khi</label>
+        <label><input type="radio" name="f6" value="C"> C. Chính là</label>
+        <div class="feedback"></div>
+      </div>
+
+      <div class="exercise final-q" data-kind="text" data-answer="我是今天早上到的。">
+        <div class="qtext">7. Sửa câu sai: <span class="cn">我是今天早上到。</span></div>
+        <input class="text-input" placeholder="Nhập câu đúng...">
+        <div class="feedback"></div>
+      </div>
+
+      <div class="exercise final-q" data-kind="mcq" data-answer="C">
+        <div class="qtext">8. Câu nào là câu kiêm ngữ?</div>
+        <label><input type="radio" name="f8" value="A"> A. 我已经到北京了。</label>
+        <label><input type="radio" name="f8" value="B"> B. 我们是来旅游的。</label>
+        <label><input type="radio" name="f8" value="C"> C. 王老师让我们说中文。</label>
+        <div class="feedback"></div>
+      </div>
+
+      <div class="exercise final-q" data-kind="text" data-answer="北京烤鸭">
+        <div class="qtext">9. “Vịt quay Bắc Kinh” viết bằng tiếng Trung là:</div>
+        <input class="text-input" placeholder="Nhập từ...">
+        <div class="feedback"></div>
+      </div>
+
+      <div class="exercise final-q" data-kind="mcq" data-answer="A">
+        <div class="qtext">10. Câu nào dùng 吧 để phỏng đoán?</div>
+        <label><input type="radio" name="f10" value="A"> A. 你们就是她的学生吧？</label>
+        <label><input type="radio" name="f10" value="B"> B. 我已经到北京了。</label>
+        <label><input type="radio" name="f10" value="C"> C. 我们是来旅游的。</label>
+        <div class="feedback"></div>
+      </div>
+    </div>
+
+    <div class="scorebox" style="margin-top:18px">
+      <div><div style="font-weight:800">Kết quả</div><div class="score" id="scoreText">Chưa chấm</div></div>
+      <div class="progress"><div id="progressBar"></div></div>
+      <button class="btn primary" onclick="gradeFinal()">Chấm điểm</button>
+      <button class="btn gray" onclick="resetFinal()">Làm lại</button>
+    </div>
+  </div>
+</section>
+
+<div class="container footer-nav">
+  <a class="linkbtn secondary" href="hsk2.html">← Quay lại HSK 2</a>
+  <a class="linkbtn" href="hsk2-lesson02.html">Bài 2 →</a>
+</div>
+
+</main>
+
+<button class="backtop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+const norm=s=>(s||'').replace(/\s+/g,'').replace(/[，,。！？!?；;]/g,'').trim();
+
+document.querySelectorAll('.tts').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance(btn.dataset.say||'');
+    u.lang='zh-CN'; u.rate=.88;
+    speechSynthesis.speak(u);
+  });
+});
+
+document.querySelectorAll('.fill-set').forEach(set=>{
+  let current=null;
+  set.querySelectorAll('.fill-input').forEach(inp=>{
+    inp.addEventListener('focus',()=>current=inp);
+    inp.addEventListener('click',()=>current=inp);
+  });
+  set.querySelectorAll('.word-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      if(!current){
+        current=[...set.querySelectorAll('.fill-input')].find(i=>!i.value);
+      }
+      if(current){
+        current.value=btn.textContent.trim();
+        btn.classList.add('used');
+        const inputs=[...set.querySelectorAll('.fill-input')];
+        const idx=inputs.indexOf(current);
+        current=inputs[idx+1]||inputs.find(i=>!i.value)||null;
+      }
+    });
+  });
+});
+
+function checkFillSet(btn){
+  const set=btn.closest('.fill-set');
+  set.querySelectorAll('.fill-q').forEach(q=>{
+    const input=q.querySelector('.fill-input'), fb=q.querySelector('.feedback');
+    const ok=norm(input.value)===norm(q.dataset.answer);
+    fb.className='feedback '+(ok?'ok':'bad');
+    fb.textContent=ok?'✅ Đúng':'❌ Chưa đúng. Đáp án: '+q.dataset.answer;
+  });
+}
+function resetFillSet(btn){
+  const set=btn.closest('.fill-set');
+  set.querySelectorAll('.fill-input').forEach(i=>i.value='');
+  set.querySelectorAll('.feedback').forEach(f=>{f.textContent='';f.className='feedback'});
+  set.querySelectorAll('.word-btn').forEach(b=>b.classList.remove('used'));
+}
+
+document.querySelectorAll('.sort-q').forEach(q=>{
+  const bank=q.querySelector('.sort-bank'), answer=q.querySelector('.sort-answer');
+  bank.querySelectorAll('.sort-chip').forEach(chip=>{
+    chip.addEventListener('click',()=>{
+      chip.classList.add('selected');
+      answer.appendChild(chip);
+    });
+  });
+  answer.addEventListener('click',e=>{
+    if(e.target.classList.contains('sort-chip')){
+      e.target.classList.remove('selected');
+      bank.appendChild(e.target);
+    }
+  });
+});
+function sortText(q){
+  return [...q.querySelector('.sort-answer').querySelectorAll('.sort-chip')].map(x=>x.textContent.trim()).join('')+'。';
+}
+function checkSort(btn){
+  const q=btn.closest('.sort-q'), fb=q.querySelector('.feedback');
+  const ok=norm(sortText(q))===norm(q.dataset.answer);
+  fb.className='feedback '+(ok?'ok':'bad');
+  fb.textContent=ok?'✅ Chính xác!':'❌ Chưa đúng. Đáp án: '+q.dataset.answer;
+}
+function resetSort(btn){
+  const q=btn.closest('.sort-q'), bank=q.querySelector('.sort-bank'), answer=q.querySelector('.sort-answer');
+  [...answer.querySelectorAll('.sort-chip')].forEach(chip=>{chip.classList.remove('selected');bank.appendChild(chip)});
+  q.querySelector('.feedback').textContent='';
+}
+
+function checkTextQuestion(box){
+  const input=box.querySelector('input,textarea'), fb=box.querySelector('.feedback');
+  const ok=norm(input.value)===norm(box.dataset.answer);
+  fb.className='feedback '+(ok?'ok':'bad');
+  fb.textContent=ok?'✅ Đúng':'❌ Chưa đúng. Đáp án: '+box.dataset.answer;
+  const ex=box.querySelector('.explain'); if(ex) ex.classList.add('show');
+}
+function checkError(btn){checkTextQuestion(btn.closest('.error-q'))}
+function checkTransform(btn){checkTextQuestion(btn.closest('.transform-q'))}
+function checkTranslate(btn){checkTextQuestion(btn.closest('.translate-q'))}
+
+function checkOneMCQ(btn){
+  const q=btn.closest('.mcq'), chosen=q.querySelector('input[type=radio]:checked'), fb=q.querySelector('.feedback');
+  const ok=chosen && chosen.value===q.dataset.answer;
+  fb.className='feedback '+(ok?'ok':'bad');
+  fb.textContent=ok?'✅ Đúng':'❌ Chưa đúng. Đáp án: '+q.dataset.answer;
+}
+function checkSection(btn){
+  btn.closest('.container').querySelectorAll('.mcq').forEach(q=>{
+    const chosen=q.querySelector('input[type=radio]:checked'), fb=q.querySelector('.feedback');
+    const ok=chosen && chosen.value===q.dataset.answer;
+    fb.className='feedback '+(ok?'ok':'bad');
+    fb.textContent=ok?'✅ Đúng':'❌ Chưa đúng. Đáp án: '+q.dataset.answer;
+  });
+}
+
+function gradeFinal(){
+  const qs=[...document.querySelectorAll('#finalQuiz .final-q')];
+  let score=0;
+  qs.forEach(q=>{
+    let ok=false;
+    if(q.dataset.kind==='mcq'){
+      const c=q.querySelector('input[type=radio]:checked');
+      ok=!!c && c.value===q.dataset.answer;
+    }else{
+      ok=norm(q.querySelector('input').value)===norm(q.dataset.answer);
+    }
+    const fb=q.querySelector('.feedback');
+    fb.className='feedback '+(ok?'ok':'bad');
+    fb.textContent=ok?'✅ Đúng':'❌ Đáp án: '+q.dataset.answer;
+    if(ok) score++;
+  });
+  document.getElementById('scoreText').textContent=`${score}/${qs.length}`;
+  document.getElementById('progressBar').style.width=(score/qs.length*100)+'%';
+}
+function resetFinal(){
+  document.querySelectorAll('#finalQuiz input[type=radio]').forEach(i=>i.checked=false);
+  document.querySelectorAll('#finalQuiz input[type=text],#finalQuiz .text-input').forEach(i=>i.value='');
+  document.querySelectorAll('#finalQuiz .feedback').forEach(f=>{f.textContent='';f.className='feedback'});
+  document.getElementById('scoreText').textContent='Chưa chấm';
+  document.getElementById('progressBar').style.width='0%';
+}
+</script>
+</body>
+</html>
