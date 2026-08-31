@@ -13,8 +13,96 @@ section{padding:40px 0}section:nth-of-type(even){background:var(--soft)}h2{font-
 table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line)}th,td{padding:11px;border-bottom:1px solid var(--line);text-align:left}th{background:#edf3ff}.tts,.btn,.chip{font:inherit;cursor:pointer;border:0;border-radius:9px}.tts{padding:6px 9px;background:#eaf1ff;color:var(--b)}.btn{padding:9px 15px;margin-top:8px}.primary{background:var(--b);color:#fff}.gray{background:#e9edf5}.feedback{min-height:22px;font-weight:bold;margin-top:6px}.ok{color:var(--ok)}.bad{color:var(--bad)}
 .bank,.answer{display:flex;gap:8px;flex-wrap:wrap;padding:11px;border-radius:12px}.bank{background:#eef4ff}.answer{min-height:52px;border:2px dashed #b9c5d8;margin-top:9px}.chip{background:#fff;border:1px solid #bdc9dc;padding:7px 12px}.input{width:100%;padding:9px 11px;border:1px solid #cbd5e3;border-radius:9px;font:inherit}.fill{width:135px;border:0;border-bottom:2px solid #8795ab;font:inherit;text-align:center}.grammar{border-left:5px solid var(--b);padding-left:16px;margin:22px 0}.example{background:#fff;border:1px solid var(--line);border-radius:11px;padding:12px;margin:8px 0}.score{font-size:28px;font-weight:bold;color:var(--b)}.bar{height:12px;background:#e8edf5;border-radius:20px;overflow:hidden}.bar div{height:100%;width:0;background:var(--b)}.footer-nav{display:flex;justify-content:space-between;padding:35px 0 55px}.link{background:#eef3ff;color:var(--b);padding:10px 15px;border-radius:10px}
 @media(max-width:720px){.grid2{grid-template-columns:1fr}section{padding:28px 0}th:nth-child(4),td:nth-child(4){display:none}}
-</style></head><body>
-<header class="hero"><div class="container"><div class="crumb"><a href="hsk2.html">HSK 2</a> › Bài 14</div><div>HSK 2 · Bài 14</div><h1 class="cn">一个人过年多没意思啊</h1><p class="pinyin">Yí ge rén guònián duō méi yìsi a</p><p class="vi">Ăn Tết một mình thì buồn biết bao!</p></div></header>
+</style>
+<style id="tcm-unified-hsk2-ui">
+/* ===== NEW HSK 2 - giao diện bài học thống nhất ===== */
+body{font-size:18px !important;line-height:1.72 !important}
+.hero{
+  background:linear-gradient(135deg,#103f99,#1758d5) !important;
+  color:#fff !important;
+  padding:0 !important;
+  border-bottom:0 !important;
+}
+.hero .container,.hero .hero-inner{
+  width:min(1120px,92%) !important;
+  margin:auto !important;
+  padding:44px 0 46px !important;
+}
+.hero .kicker{
+  display:inline-flex !important;
+  padding:8px 14px !important;
+  border-radius:999px !important;
+  background:rgba(255,255,255,.16) !important;
+  color:#fff !important;
+  font-size:17px !important;
+  line-height:1.2 !important;
+  font-weight:800 !important;
+  letter-spacing:.035em !important;
+}
+.hero .crumb{display:none !important}
+.hero h1{
+  color:#fff !important;
+  font-family:"Microsoft YaHei","Noto Sans SC","SimSun",sans-serif !important;
+  font-size:clamp(46px,5.8vw,68px) !important;
+  line-height:1.14 !important;
+  margin:18px 0 12px !important;
+}
+.pinyin-title,.pinyin{
+  color:#fff !important;
+  font-family:"Times New Roman",serif !important;
+  font-size:25px !important;
+  line-height:1.45 !important;
+  font-weight:600 !important;
+  margin:0 0 7px !important;
+}
+.vi-title,.vi,.hero .subtitle{
+  color:rgba(255,255,255,.96) !important;
+  font-family:"Times New Roman",serif !important;
+  font-size:23px !important;
+  line-height:1.5 !important;
+  margin:0 !important;
+}
+.hero .meta{margin-top:22px !important}
+.hero .pill{
+  color:#fff !important;
+  border-color:rgba(255,255,255,.35) !important;
+  background:rgba(255,255,255,.12) !important;
+  font-size:15px !important;
+}
+section h2,.section h2{font-size:32px !important;line-height:1.25 !important}
+.card,.ex{font-size:18px !important;line-height:1.68 !important}
+
+/* Sửa lỗi Nhận diện từ vựng: đáp án luôn xuống dòng, không nhảy cạnh câu hỏi */
+.mcq > b,.fq2 > b{
+  display:block !important;
+  width:100% !important;
+  margin-bottom:10px !important;
+  font-size:19px !important;
+  line-height:1.5 !important;
+}
+.mcq label,.fq2 label{
+  display:block !important;
+  width:100% !important;
+  margin:7px 0 !important;
+  padding:8px 10px !important;
+  border-radius:9px !important;
+  line-height:1.5 !important;
+}
+.mcq label:hover,.fq2 label:hover{background:#f3f7ff !important}
+.mcq input[type="radio"],.fq2 input[type="radio"]{
+  margin-right:8px !important;
+  transform:scale(1.08);
+}
+@media(max-width:720px){
+  body{font-size:17px !important}
+  .hero h1{font-size:40px !important}
+  .pinyin-title,.pinyin{font-size:22px !important}
+  .vi-title,.vi,.hero .subtitle{font-size:20px !important}
+}
+</style>
+
+</head><body>
+<header class="hero"><div class="container"><span class="kicker">NEW HSK 2 · BÀI 14</span><h1 class="cn">一个人过年多没意思啊</h1><p class="pinyin">Yí ge rén guònián duō méi yìsi a</p><p class="vi">Ăn Tết một mình thì buồn biết bao!</p></div></header>
 <nav class="nav"><a href="#tu">Từ vựng</a><a href="#nhan">Nhận từ</a><a href="#dien">Điền từ</a><a href="#xep">Sắp xếp</a><a href="#sua">Chữa câu</a><a href="#np">Ngữ pháp</a><a href="#dich">Dịch</a><a href="#noi">Nói</a><a href="#test">Kiểm tra</a></nav>
 
 <section><div class="container"><span class="badge">Mục tiêu</span><h2>Bài 14 học gì?</h2><div class="grid2">

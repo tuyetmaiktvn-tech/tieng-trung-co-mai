@@ -16,6 +16,94 @@
 .sort-bank,.sort-answer{display:flex;gap:8px;flex-wrap:wrap;min-height:50px;padding:10px;border-radius:12px;border:1.5px dashed #b9cbe2;background:#fbfdff}.sort-chip{border:1px solid #bad2f2;background:#fff;color:var(--navy);padding:8px 11px;border-radius:10px;font-weight:800}.sort-answer{margin-top:9px;background:#fff}.grammar{border-left:5px solid var(--orange);background:#fffaf2}.formula{display:inline-block;background:#fff;border:1px dashed #f0b24b;border-radius:12px;padding:10px 14px;font-weight:800;color:#9b5b00;margin:7px 0 11px}.example{padding:12px 14px;border-radius:12px;background:#fff;border:1px solid #f3e0bb;margin-top:10px}.example .cn{font-size:19px;font-weight:700}.note{font-size:14px;color:var(--muted)}.tip{background:var(--yellow);border:1px solid #f1df91;border-radius:14px;padding:14px 16px}.scorebox{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:18px;border-radius:16px;background:linear-gradient(135deg,#edf6ff,#fff);border:1px solid #d8e8f8}.score{font-size:27px;font-weight:900;color:var(--blue)}.progress{height:12px;background:#e7eef7;border-radius:999px;overflow:hidden;flex:1;min-width:220px}.progress>div{height:100%;width:0;background:linear-gradient(90deg,#1769e8,#16b979);transition:.35s}.footer-nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:32px 0 52px}.linkbtn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:12px;background:var(--blue);color:#fff;font-weight:800}.linkbtn.secondary{background:#fff;color:var(--blue);border:1.5px solid var(--blue)}.backtop{position:fixed;right:18px;bottom:18px;width:48px;height:48px;border-radius:50%;border:0;background:var(--blue);color:#fff;font-size:20px;box-shadow:var(--shadow)}
 @media(max-width:900px){.nav{display:none}.grid-2{grid-template-columns:1fr}.vocab-table{font-size:14px}}@media(max-width:620px){.container{width:min(100% - 20px,var(--max))}.hero-inner{padding:36px 0 30px}.section{padding:30px 0}.card{padding:17px}.vocab-table th:nth-child(4),.vocab-table td:nth-child(4){display:none}.qtext{font-size:16px}}
 </style>
+
+<style id="tcm-unified-hsk2-ui">
+/* ===== NEW HSK 2 - giao diện bài học thống nhất ===== */
+body{font-size:18px !important;line-height:1.72 !important}
+.hero{
+  background:linear-gradient(135deg,#103f99,#1758d5) !important;
+  color:#fff !important;
+  padding:0 !important;
+  border-bottom:0 !important;
+}
+.hero .container,.hero .hero-inner{
+  width:min(1120px,92%) !important;
+  margin:auto !important;
+  padding:44px 0 46px !important;
+}
+.hero .kicker{
+  display:inline-flex !important;
+  padding:8px 14px !important;
+  border-radius:999px !important;
+  background:rgba(255,255,255,.16) !important;
+  color:#fff !important;
+  font-size:17px !important;
+  line-height:1.2 !important;
+  font-weight:800 !important;
+  letter-spacing:.035em !important;
+}
+.hero .crumb{display:none !important}
+.hero h1{
+  color:#fff !important;
+  font-family:"Microsoft YaHei","Noto Sans SC","SimSun",sans-serif !important;
+  font-size:clamp(46px,5.8vw,68px) !important;
+  line-height:1.14 !important;
+  margin:18px 0 12px !important;
+}
+.pinyin-title,.pinyin{
+  color:#fff !important;
+  font-family:"Times New Roman",serif !important;
+  font-size:25px !important;
+  line-height:1.45 !important;
+  font-weight:600 !important;
+  margin:0 0 7px !important;
+}
+.vi-title,.vi,.hero .subtitle{
+  color:rgba(255,255,255,.96) !important;
+  font-family:"Times New Roman",serif !important;
+  font-size:23px !important;
+  line-height:1.5 !important;
+  margin:0 !important;
+}
+.hero .meta{margin-top:22px !important}
+.hero .pill{
+  color:#fff !important;
+  border-color:rgba(255,255,255,.35) !important;
+  background:rgba(255,255,255,.12) !important;
+  font-size:15px !important;
+}
+section h2,.section h2{font-size:32px !important;line-height:1.25 !important}
+.card,.ex{font-size:18px !important;line-height:1.68 !important}
+
+/* Sửa lỗi Nhận diện từ vựng: đáp án luôn xuống dòng, không nhảy cạnh câu hỏi */
+.mcq > b,.fq2 > b{
+  display:block !important;
+  width:100% !important;
+  margin-bottom:10px !important;
+  font-size:19px !important;
+  line-height:1.5 !important;
+}
+.mcq label,.fq2 label{
+  display:block !important;
+  width:100% !important;
+  margin:7px 0 !important;
+  padding:8px 10px !important;
+  border-radius:9px !important;
+  line-height:1.5 !important;
+}
+.mcq label:hover,.fq2 label:hover{background:#f3f7ff !important}
+.mcq input[type="radio"],.fq2 input[type="radio"]{
+  margin-right:8px !important;
+  transform:scale(1.08);
+}
+@media(max-width:720px){
+  body{font-size:17px !important}
+  .hero h1{font-size:40px !important}
+  .pinyin-title,.pinyin{font-size:22px !important}
+  .vi-title,.vi,.hero .subtitle{font-size:20px !important}
+}
+</style>
+
 </head>
 <body>
 <header class="topbar"><div class="container topbar-inner"><a class="brand" href="../index.html"><span class="logo">中</span><span>Tiếng Trung Cô Mai</span></a><nav class="nav"><a href="hsk2.html">HSK 2</a><a href="#tu-vung">Từ vựng</a><a href="#dien-tu">Điền từ</a><a href="#sap-xep">Sắp xếp câu</a><a href="#chua-sai">Chữa câu sai</a><a href="#ngu-phap">Ngữ pháp</a><a href="#kiem-tra">Tự kiểm tra</a></nav></div></header>

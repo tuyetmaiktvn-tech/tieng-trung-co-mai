@@ -219,6 +219,43 @@
       .top-actions .text-label{display:none}
     }
   </style>
+
+<style id="tcm-unified-hsk1-ui">
+/* ===== NEW HSK 1 - giao diện bài học thống nhất ===== */
+body{font-size:18px !important;line-height:1.72 !important}
+.hero,.lesson-hero-v32{padding-top:0 !important}
+.hero .hero-grid,.lesson-hero-grid-v32{padding-top:42px !important;padding-bottom:42px !important}
+.hero .eyebrow,.lesson-badge-v32{
+  display:inline-flex !important;
+  align-items:center !important;
+  padding:8px 14px !important;
+  border-radius:999px !important;
+  background:#eaf2ff !important;
+  color:#1758d5 !important;
+  font-size:17px !important;
+  font-weight:800 !important;
+  letter-spacing:.03em !important;
+}
+.hero h1,.lesson-hero-v32 h1,#lessonTitle{
+  font-size:clamp(44px,5.5vw,64px) !important;
+  line-height:1.15 !important;
+  margin:16px 0 10px !important;
+}
+.hero .subtitle,.lesson-title-vi-v32,#lessonTitleVi{
+  font-size:23px !important;
+  line-height:1.55 !important;
+}
+.hero-card>p:not(.subtitle),#lessonTheme{font-size:19px !important}
+.section-title,h2{line-height:1.25}
+.card,.exercise-card,.question-card{font-size:18px}
+label{font-size:18px;line-height:1.55}
+@media(max-width:720px){
+  body{font-size:17px !important}
+  .hero h1,.lesson-hero-v32 h1,#lessonTitle{font-size:40px !important}
+  .hero .subtitle,.lesson-title-vi-v32,#lessonTitleVi{font-size:21px !important}
+}
+</style>
+
 </head>
 
 <body>
@@ -1402,7 +1439,7 @@
         <section class="hero">
           <div class="container hero-grid">
             <div class="hero-card">
-              <span class="eyebrow">🎬 ${esc(lessonData.level)} • BÀI ${lessonData.lesson}</span>
+              <span class="eyebrow">NEW HSK 1 · BÀI ${lessonData.lesson}</span>
               <h1>${esc(lessonData.title)}</h1>
               <p class="subtitle">${esc(lessonData.titleVi)}</p>
               <p>${esc(lessonData.intro)}</p>

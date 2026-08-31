@@ -36,23 +36,98 @@ th,td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}t
 .badge{display:inline-block;background:#eaf1ff;color:var(--blue);padding:5px 10px;border-radius:999px;font-weight:700;font-size:13px}
 @media(max-width:760px){.hero-grid,.grid2,.grid3{grid-template-columns:1fr}.hero-tag{display:none}.section{padding:30px 0}h2{font-size:27px}th:nth-child(4),td:nth-child(4){display:none}}
 </style>
+
+<style id="tcm-unified-hsk2-ui">
+/* ===== NEW HSK 2 - giao diện bài học thống nhất ===== */
+body{font-size:18px !important;line-height:1.72 !important}
+.hero{
+  background:linear-gradient(135deg,#103f99,#1758d5) !important;
+  color:#fff !important;
+  padding:0 !important;
+  border-bottom:0 !important;
+}
+.hero .container,.hero .hero-inner{
+  width:min(1120px,92%) !important;
+  margin:auto !important;
+  padding:44px 0 46px !important;
+}
+.hero .kicker{
+  display:inline-flex !important;
+  padding:8px 14px !important;
+  border-radius:999px !important;
+  background:rgba(255,255,255,.16) !important;
+  color:#fff !important;
+  font-size:17px !important;
+  line-height:1.2 !important;
+  font-weight:800 !important;
+  letter-spacing:.035em !important;
+}
+.hero .crumb{display:none !important}
+.hero h1{
+  color:#fff !important;
+  font-family:"Microsoft YaHei","Noto Sans SC","SimSun",sans-serif !important;
+  font-size:clamp(46px,5.8vw,68px) !important;
+  line-height:1.14 !important;
+  margin:18px 0 12px !important;
+}
+.pinyin-title,.pinyin{
+  color:#fff !important;
+  font-family:"Times New Roman",serif !important;
+  font-size:25px !important;
+  line-height:1.45 !important;
+  font-weight:600 !important;
+  margin:0 0 7px !important;
+}
+.vi-title,.vi,.hero .subtitle{
+  color:rgba(255,255,255,.96) !important;
+  font-family:"Times New Roman",serif !important;
+  font-size:23px !important;
+  line-height:1.5 !important;
+  margin:0 !important;
+}
+.hero .meta{margin-top:22px !important}
+.hero .pill{
+  color:#fff !important;
+  border-color:rgba(255,255,255,.35) !important;
+  background:rgba(255,255,255,.12) !important;
+  font-size:15px !important;
+}
+section h2,.section h2{font-size:32px !important;line-height:1.25 !important}
+.card,.ex{font-size:18px !important;line-height:1.68 !important}
+
+/* Sửa lỗi Nhận diện từ vựng: đáp án luôn xuống dòng, không nhảy cạnh câu hỏi */
+.mcq > b,.fq2 > b{
+  display:block !important;
+  width:100% !important;
+  margin-bottom:10px !important;
+  font-size:19px !important;
+  line-height:1.5 !important;
+}
+.mcq label,.fq2 label{
+  display:block !important;
+  width:100% !important;
+  margin:7px 0 !important;
+  padding:8px 10px !important;
+  border-radius:9px !important;
+  line-height:1.5 !important;
+}
+.mcq label:hover,.fq2 label:hover{background:#f3f7ff !important}
+.mcq input[type="radio"],.fq2 input[type="radio"]{
+  margin-right:8px !important;
+  transform:scale(1.08);
+}
+@media(max-width:720px){
+  body{font-size:17px !important}
+  .hero h1{font-size:40px !important}
+  .pinyin-title,.pinyin{font-size:22px !important}
+  .vi-title,.vi,.hero .subtitle{font-size:20px !important}
+}
+</style>
+
 </head>
 <body>
 
-<header class="top">
-  <div class="container">
-    <div class="crumb"><a href="hsk2.html">HSK 2</a> › Bài 3</div>
-    <div class="hero-grid">
-      <div>
-        <div class="kicker">HSK 2 · Bài 3</div>
-        <h1 class="cn">我想去西安旅游</h1>
-        <p class="pinyin">Wǒ xiǎng qù Xī'ān lǚyóu</p>
-        <p class="subtitle">Tôi muốn đi Tây An du lịch</p>
-      </div>
-      <div class="hero-tag">Từ vựng · Ngữ pháp · Luyện tập tương tác</div>
-    </div>
-  </div>
-</header>
+<header class="hero"><div class="container"><span class="kicker">NEW HSK 2 · BÀI 3</span><h1 class="cn">我想去西安旅游</h1><p class="pinyin">Wǒ xiǎng qù Xī'ān lǚyóu</p><p class="vi">Tôi muốn đi Tây An du lịch</p></div></header>
 
 <nav class="lesson-nav"><div class="container">
 <a href="#muctieu">Mục tiêu</a><a href="#tuvung">Từ vựng</a><a href="#nhantu">Nhận từ</a><a href="#dientu">Điền từ</a><a href="#sapxep">Sắp xếp</a><a href="#suacau">Chữa câu</a><a href="#nguphap">Ngữ pháp</a><a href="#dich">Dịch</a><a href="#noinhanh">Nói</a><a href="#kiemtra">Kiểm tra</a>
