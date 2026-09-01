@@ -20,6 +20,73 @@ footer{background:#0b1f4d;color:#dbe8ff;padding:42px 0 30px}.footer-inner{displa
 @media(max-width:1100px){.nav-wrap{grid-template-columns:auto auto auto;min-height:100px}.logo-mark{width:68px;height:68px;font-size:42px}.mobile-toggle{display:grid;place-items:center;justify-self:center}.main-nav{display:none;position:absolute;left:24px;right:24px;top:100%;padding:20px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:15px}.main-nav.open{display:flex}.dropdown{position:static;transform:none;margin-top:10px;box-shadow:none}.hero-grid{grid-template-columns:1fr;gap:40px}.hero-copy{padding-left:60px}.roadmap-card{margin:0 40px}}
 @media(max-width:760px){.container{width:min(100% - 28px,var(--max))}.contact-actions{display:none}.contact-phone{margin:auto;font-size:14px}.nav-wrap{min-height:82px;grid-template-columns:auto 1fr auto;gap:14px}.logo-mark{width:58px;height:58px;font-size:35px}.enroll-btn{min-height:46px;padding:0 17px;font-size:14px}.hero-grid{min-height:auto;padding:54px 0 70px}.bamboo{opacity:.12;width:150px}.hero-copy{padding-left:0;text-align:center}.hero-title{font-size:50px;letter-spacing:-2px}.brand-subline{font-size:42px}.orange-line{margin-left:auto;margin-right:auto}.hero-description{font-size:16px}.hero-actions{justify-content:center}.roadmap-card{margin:0;padding:27px 20px}.roadmap-title{font-size:27px}.roadmap-item{grid-template-columns:56px 1fr;min-height:96px;padding:15px}.roadmap-icon{width:56px;height:56px;font-size:28px}.arrow{display:none}.level-grid,.special-grid{grid-template-columns:1fr}.section{padding:65px 0}.section-heading h2{font-size:31px}.floating-contact{right:14px;bottom:18px}.float-btn{width:54px;height:54px}}
 </style>
+<style id="homepage-visual-refresh">
+body{font-family:"Times New Roman",Times,serif;font-size:18px;background:#fffdf8}
+.nav-link,.nav-button,.enroll-btn,.mini-btn{font-family:"Times New Roman",Times,serif}
+.nav-link,.nav-button{font-size:20px;font-weight:800}
+.dropdown a{font-size:17px;font-weight:700}
+.hero{
+  min-height:820px;
+  background:
+    radial-gradient(circle at 18% 24%,rgba(255,255,255,.98) 0 16%,rgba(255,255,255,.64) 37%,transparent 58%),
+    radial-gradient(circle at 84% 18%,rgba(255,190,75,.24),transparent 25%),
+    linear-gradient(135deg,#dff3ff 0%,#fff8e5 48%,#e1f2ff 100%);
+}
+.hero-grid{min-height:820px}
+.eyebrow{font-size:19px;font-weight:800;background:#d9efff;color:#084fae;border:1px solid #a8d6fb}
+.hero-title{font-size:clamp(72px,7vw,106px);color:#08265f;text-shadow:0 3px 0 #fff}
+.brand-subline{font-size:clamp(60px,5.2vw,82px);color:#1265d8}
+.hero-slogan{font-size:30px;color:#152b52}
+.hero-description{font-size:21px;line-height:1.75;color:#435675;font-weight:600}
+.primary-btn,.secondary-btn{min-height:66px;font-size:19px;font-weight:800;border-radius:18px}
+.primary-btn{background:linear-gradient(135deg,#1479f5,#074fcb);box-shadow:0 15px 30px rgba(23,105,232,.28)}
+.secondary-btn{background:#fff;color:#0d5fd2}
+.roadmap-card{border:2px solid #c5def6;box-shadow:0 24px 65px rgba(21,82,153,.17)}
+.roadmap-title{font-size:38px;color:#0a2a61}
+.roadmap-item{min-height:126px;border-width:2px;background:#fff}
+.roadmap-item:nth-child(1){background:linear-gradient(135deg,#eef7ff,#fff)}
+.roadmap-item:nth-child(2){background:linear-gradient(135deg,#fff5dc,#fff)}
+.roadmap-item:nth-child(3){background:linear-gradient(135deg,#e9fff4,#fff)}
+.roadmap-item:nth-child(4){background:linear-gradient(135deg,#f2edff,#fff)}
+.roadmap-item h3{font-size:24px;color:#102b58}
+.roadmap-item p{font-size:17px;font-weight:600}
+.section{padding:105px 0}
+.section-soft{background:linear-gradient(135deg,#eef8ff,#fff8e8)}
+.section-heading{max-width:900px;margin-bottom:55px}
+.section-heading span{display:inline-block;padding:8px 17px;border-radius:999px;background:#e1efff;font-size:16px;font-weight:900}
+.section-heading h2{font-size:clamp(43px,4vw,58px);line-height:1.15;color:#0b2860}
+.section-heading p{font-size:21px;line-height:1.7;color:#4b5d78;font-weight:600}
+.level-grid,.special-grid{gap:28px}
+.info-card{min-height:290px;padding:34px;border:2px solid #d6e5f5;border-radius:26px;box-shadow:0 16px 36px rgba(23,65,120,.1)}
+.info-card:nth-child(3n+1){border-top:7px solid #1874e8;background:linear-gradient(145deg,#fff,#edf6ff)}
+.info-card:nth-child(3n+2){border-top:7px solid #f39a18;background:linear-gradient(145deg,#fff,#fff6df)}
+.info-card:nth-child(3n){border-top:7px solid #18a875;background:linear-gradient(145deg,#fff,#ebfff6)}
+.info-card:hover{transform:translateY(-9px);box-shadow:0 22px 44px rgba(23,65,120,.16)}
+.info-card .badge{font-size:15px;padding:9px 15px;font-weight:900}
+.info-card h3{font-size:29px;line-height:1.25;color:#102b58}
+.info-card p{font-size:18px;line-height:1.7;color:#4d5f78;font-weight:600;min-height:72px}
+.card-link{font-size:18px;font-weight:900}
+footer{font-family:"Times New Roman",Times,serif;border-top:7px solid #ffad1f}
+.footer-title{font-size:24px}.footer-note{font-size:16px}
+@media(max-width:1100px){
+  .nav-link,.nav-button{font-size:18px}
+  .hero-title{font-size:76px}
+  .brand-subline{font-size:61px}
+}
+@media(max-width:760px){
+  body{font-size:17px}
+  .hero{min-height:auto}
+  .hero-title{font-size:56px}
+  .brand-subline{font-size:47px}
+  .hero-slogan{font-size:25px}
+  .hero-description{font-size:18px}
+  .roadmap-title{font-size:31px}
+  .section{padding:76px 0}
+  .section-heading h2{font-size:38px}
+  .section-heading p{font-size:19px}
+  .info-card{min-height:0;padding:29px 25px}
+}
+</style>
 </head>
 <body>
 <div class="contact-bar"><div class="container contact-inner"><a class="contact-phone" href="tel:0985859968"><span>☎</span><span>Hotline / Zalo: <strong>0985 859 968</strong></span></a><div class="contact-actions"><a class="mini-btn mini-outline" href="tel:0985859968">☎ Gọi tư vấn</a><a class="mini-btn mini-primary" href="https://zalo.me/0985859968" target="_blank" rel="noopener">Zalo&nbsp; Nhắn Zalo</a></div></div></div>

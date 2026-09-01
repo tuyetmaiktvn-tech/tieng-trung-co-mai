@@ -6,23 +6,102 @@
 <title>Tiếng Trung thương mại | Tiếng Trung Cô Mai</title>
 <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-<style>
+<style id="business-premium-theme">
+:root{
+  --biz-ink:#172554;
+  --biz-blue:#263fd1;
+  --biz-blue-deep:#17226f;
+  --biz-violet:#6d35d5;
+  --biz-gold:#ffbd2e;
+  --biz-cream:#fff9e8;
+  --biz-paper:#f7f8ff;
+  --biz-line:#aeb9fa;
+}
+body{
+  color:var(--biz-ink);
+  background:
+    radial-gradient(circle at 8% 22%,rgba(109,53,213,.1),transparent 20rem),
+    radial-gradient(circle at 90% 72%,rgba(255,189,46,.14),transparent 22rem),
+    var(--biz-paper);
+  font-family:"Times New Roman",Times,serif;
+  font-size:18px;
+}
+.topbar{background:rgba(255,255,255,.97);border-bottom:3px solid var(--biz-gold)}
 .brand{display:flex;align-items:center;gap:10px}
-.logo-mark{width:56px;height:56px;flex:0 0 56px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,#d97845,#bf5f32);box-shadow:0 10px 22px rgba(191,95,50,.24);font-family:"Microsoft YaHei",sans-serif;font-size:30px;font-weight:700}
-.biz-hero{background:linear-gradient(135deg,#1a1408 0%,#2b2110 45%,#4a3a12 100%);position:relative;overflow:hidden}
-.biz-hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(212,175,55,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,.07) 1px,transparent 1px);background-size:40px 40px}
-.biz-hero .container{position:relative}
-.biz-hero h1{color:#f4d888 !important;font-family:"Montserrat",Arial,sans-serif !important;font-weight:800;letter-spacing:-1px}
-.biz-hero p{color:#e9d9ad !important;font-family:"Montserrat",Arial,sans-serif !important}
-.biz-section{background:#12100b}
-.biz-section .card{background:#1c1810;border:1px solid #3a2f18;box-shadow:0 10px 28px rgba(0,0,0,.35)}
-.biz-section .card h3{color:#f4d888 !important;font-family:"Montserrat",Arial,sans-serif !important}
-.biz-section .card p{color:#c9b98a !important;font-family:"Montserrat",Arial,sans-serif !important}
-.biz-section .badge{background:#3a2f10;color:#e8c25e !important;font-family:"Montserrat",Arial,sans-serif !important}
-.biz-section .text-link{color:#e8c25e !important;font-family:"Montserrat",Arial,sans-serif !important}
+.logo-mark{
+  width:68px;height:68px;flex:0 0 68px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;background:linear-gradient(145deg,#d97845,#bf5f32);
+  box-shadow:0 12px 28px rgba(191,95,50,.24);
+  font-family:"Microsoft YaHei",sans-serif;font-size:42px;font-weight:800;
+}
+.nav-link{color:var(--biz-blue-deep);font-family:"Times New Roman",Times,serif;font-size:17px;font-weight:900}
+.nav-link:hover,.nav-link:focus{background:#eef0ff;color:var(--biz-violet)}
+.dropdown{background:#fff;border:2px solid #d8dcff}
+.dropdown-title{color:var(--biz-violet);font-weight:900}
+.dropdown a{color:var(--biz-ink);font-size:16px;font-weight:800}
+.dropdown a:hover{background:#f0edff;color:var(--biz-violet)}
+.biz-hero{
+  position:relative;overflow:hidden;padding:94px 0;
+  background:
+    linear-gradient(115deg,rgba(255,255,255,.06),transparent 45%),
+    linear-gradient(135deg,var(--biz-blue-deep),var(--biz-blue) 55%,var(--biz-violet));
+  border-bottom:9px solid var(--biz-gold);
+}
+.biz-hero:before{
+  content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);
+  background-size:42px 42px;transform:perspective(450px) rotateX(58deg) scale(1.7);transform-origin:bottom;
+}
+.biz-hero:after{
+  content:"商";position:absolute;right:8%;top:50%;transform:translateY(-50%);
+  color:rgba(255,255,255,.09);font:900 clamp(120px,18vw,220px)/1 "Microsoft YaHei",sans-serif;
+}
+.biz-hero .container{position:relative;z-index:1}
+.biz-hero h1{
+  max-width:900px;margin-bottom:18px;color:#fff !important;
+  font-family:"Times New Roman",Times,serif !important;
+  font-size:clamp(52px,6.4vw,82px);font-weight:900;line-height:1.04;letter-spacing:-.025em;
+  text-shadow:0 4px 0 rgba(10,18,79,.35);
+}
+.biz-hero p{max-width:760px;color:#fff4c9 !important;font-family:"Times New Roman",Times,serif !important;font-size:24px;font-weight:900}
+.biz-section{padding:96px 0;background:transparent}
+.biz-section .lesson-grid{grid-template-columns:repeat(2,1fr);gap:28px}
+.biz-section .card{
+  position:relative;overflow:hidden;min-height:255px;padding:36px;
+  background:#fff;border:3px solid var(--biz-line);border-radius:24px;
+  box-shadow:11px 12px 0 rgba(38,63,209,.13);
+}
+.biz-section .card:after{
+  content:"↗";position:absolute;right:24px;top:20px;color:rgba(38,63,209,.12);
+  font:900 56px/1 Georgia,serif;
+}
+.biz-section .card:nth-child(even){border-color:#d5b04a;box-shadow:11px 12px 0 rgba(255,189,46,.19)}
+.biz-section .card:hover{transform:translateY(-7px);box-shadow:14px 18px 0 rgba(38,63,209,.16)}
+.biz-section .card h3{
+  margin:19px 0 10px;color:var(--biz-blue-deep) !important;
+  font-family:"Times New Roman",Times,serif !important;font-size:33px;font-weight:900;
+}
+.biz-section .card p{color:#46527d !important;font-family:"Times New Roman",Times,serif !important;font-size:19px;font-weight:700;line-height:1.7}
+.biz-section .badge{
+  padding:8px 15px;background:var(--biz-gold);color:#4c3500 !important;border:2px solid #e2a719;
+  font-family:"Times New Roman",Times,serif !important;font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;
+}
+.biz-section .text-link{color:var(--biz-violet) !important;font-family:"Times New Roman",Times,serif !important;font-size:18px;font-weight:900}
+.biz-section .text-link:hover{color:#4317a0 !important}
+footer{background:var(--biz-blue-deep);color:#eef0ff;border-top:9px solid var(--biz-gold)}
+footer,footer h4,footer a{font-family:"Times New Roman",Times,serif}
+footer h4{color:#fff7d6;font-size:20px;font-weight:900}
+footer a,footer p,.copyright{color:#dfe3ff;font-weight:700}
+footer a:hover{color:var(--biz-gold)}
+.mobile-menu{background:#eef0ff;color:var(--biz-blue-deep);font-weight:900}
+@media(max-width:680px){
+  .logo-mark{width:58px;height:58px;flex-basis:58px;font-size:35px}
+  .biz-hero{padding:68px 0}
+  .biz-hero h1{font-size:46px}
+  .biz-hero p{font-size:20px}
+  .biz-section .lesson-grid{grid-template-columns:1fr}
+  .biz-section .card{min-height:0;padding:29px 24px}
+}
 </style>
 </head>
 <body>
@@ -43,7 +122,7 @@
       <div class="nav-item">
         <button class="nav-link" data-dropdown>Chuyên ngành <span class="caret">▼</span></button>
         <div class="dropdown">
-          <a href="../specialized/business.html">Tiếng Trung thương mại</a>
+          <a href="../specialized/business.html" aria-current="page">Tiếng Trung thương mại</a>
           <a href="../specialized/railway.html">Tiếng Trung đường sắt</a>
           <a href="../specialized/travel.html">Tiếng Trung du lịch</a>
         </div>

@@ -6,12 +6,168 @@
 <title>Flashcards | Tiếng Trung Cô Mai</title>
 <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+<style id="flashcards-unified-theme">
+:root{
+  --flash-ink:#42251f;
+  --flash-red:#e34b3f;
+  --flash-red-deep:#a92f2a;
+  --flash-orange:#ff8c42;
+  --flash-yellow:#ffd166;
+  --flash-cream:#fff7df;
+  --flash-paper:#fffdf7;
+  --flash-line:#efb6a5;
+}
+body{
+  color:var(--flash-ink);
+  background:
+    radial-gradient(circle at 12% 20%,rgba(255,209,102,.25),transparent 18rem),
+    radial-gradient(circle at 88% 72%,rgba(227,75,63,.1),transparent 22rem),
+    var(--flash-paper);
+  font-family:"Times New Roman",Times,serif;
+  font-size:20px;
+}
+.topbar{background:rgba(255,253,247,.97);border-bottom:3px solid var(--flash-orange)}
+.brand img{display:none}
+.brand{
+  width:68px;height:68px;flex:0 0 68px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;background:linear-gradient(145deg,#d97845,#bf5f32);
+  box-shadow:0 12px 28px rgba(191,95,50,.22);
+  font:800 42px/1 "Microsoft YaHei","Noto Sans SC",sans-serif;
+}
+.nav-link{color:#6f2c26;font-family:"Times New Roman",Times,serif;font-size:19px;font-weight:900}
+.nav-link:hover,.nav-link:focus{background:#fff0e5;color:var(--flash-red-deep)}
+.dropdown{background:#fffdf8;border:2px solid #f2c7b8}
+.dropdown-title{color:var(--flash-red-deep);font-weight:900}
+.dropdown a{color:var(--flash-ink);font-size:18px;font-weight:800}
+.dropdown a:hover{background:#fff0e5;color:var(--flash-red-deep)}
+.page-hero{
+  position:relative;overflow:hidden;padding:92px 0;
+  background:
+    radial-gradient(circle at 80% 22%,rgba(255,255,255,.32) 0 9%,transparent 9.5%),
+    linear-gradient(125deg,#ff695e 0%,#ff9851 52%,#ffd166 100%);
+  border-bottom:9px solid #b6312c;
+}
+.page-hero::before,.page-hero::after{
+  content:"词";position:absolute;display:grid;place-items:center;width:145px;height:190px;
+  border:5px solid rgba(255,255,255,.4);border-radius:20px;color:rgba(255,255,255,.38);
+  background:rgba(255,255,255,.12);font:900 86px/1 "Microsoft YaHei",sans-serif;
+}
+.page-hero::before{right:9%;top:25px;transform:rotate(8deg)}
+.page-hero::after{content:"字";right:17%;top:48px;transform:rotate(-8deg)}
+.page-hero .container{position:relative;z-index:1}
+.page-hero h1{
+  color:#fff !important;font-family:"Times New Roman",Times,serif;
+  font-size:clamp(64px,8vw,100px);font-weight:900;line-height:1.02;
+  text-shadow:0 4px 0 rgba(139,43,36,.28);
+}
+.page-hero p{max-width:780px;color:#fff9df;font-size:28px;font-weight:900;line-height:1.5}
+.section{padding:96px 0;background:transparent}
+.section .card{
+  position:relative;isolation:isolate;max-width:1080px;min-height:320px;margin:auto;padding:52px;
+  background:#fff;border:4px solid var(--flash-line);border-radius:28px;
+  box-shadow:14px 16px 0 rgba(227,75,63,.14);
+}
+.section .card::before{
+  content:"";position:absolute;z-index:-1;inset:18px -18px -18px 18px;
+  border:3px solid #f2c951;border-radius:28px;background:var(--flash-cream);transform:rotate(1.5deg);
+}
+.section .badge{
+  padding:9px 16px;background:var(--flash-yellow);color:#6b3b00;border:2px solid #dfa929;
+  font-size:17px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;
+}
+.section .card h2{
+  margin:20px 0 12px;color:var(--flash-red-deep);
+  font-family:"Times New Roman",Times,serif;font-size:50px;font-weight:900;
+}
+.section .card>p{max-width:820px;color:#674842;font-size:24px;font-weight:800;line-height:1.7}
+.flash-feature-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.flash-feature{
+  min-height:170px;padding:24px 20px;border:2px solid #f1b7a3;border-radius:20px;
+  background:linear-gradient(145deg,#fff,#fff5df);text-align:center;
+  box-shadow:0 9px 20px rgba(169,47,42,.08);
+}
+.flash-feature:nth-child(2){background:linear-gradient(145deg,#fff,#fff0ea);border-color:#f0aa9f}
+.flash-feature:nth-child(3){background:linear-gradient(145deg,#fff,#fff7ca);border-color:#e7c354}
+.flash-feature strong{display:block;color:var(--flash-red-deep);font-size:27px;font-weight:900}
+.flash-feature span{display:block;margin-top:9px;color:#6f4a42;font-size:19px;font-weight:700;line-height:1.5}
+.flash-feature .hanzi{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:46px;line-height:1}
+.flash-library{max-width:1180px;margin:52px auto 0}
+.flash-library-head{text-align:center;margin-bottom:30px}
+.flash-library-head .kicker{color:var(--flash-red-deep);font-size:17px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.flash-library-head h2{margin:9px 0 10px;color:var(--flash-red-deep);font-size:46px;font-weight:900}
+.flash-library-head p{margin:0;color:#725149;font-size:21px;font-weight:700}
+.flash-toolbar{display:grid;grid-template-columns:180px 220px 1fr;gap:14px;margin-bottom:26px}
+.flash-toolbar select,.flash-toolbar input{
+  width:100%;min-height:58px;padding:0 18px;border:2px solid var(--flash-line);border-radius:15px;
+  background:#fff;color:var(--flash-ink);font:800 18px/1 "Times New Roman",Times,serif;outline:none;
+}
+.flash-toolbar select:focus,.flash-toolbar input:focus{border-color:var(--flash-red);box-shadow:0 0 0 4px rgba(227,75,63,.12)}
+.flash-status{margin:0 0 20px;color:#7b453b;font-size:19px;font-weight:900;text-align:center}
+.study-stage{display:grid;grid-template-columns:64px minmax(0,640px) 64px;align-items:center;justify-content:center;gap:20px}
+.study-nav{width:60px;height:60px;border:0;border-radius:50%;background:var(--flash-red);color:#fff;font-size:32px;font-weight:900;cursor:pointer;box-shadow:0 10px 22px rgba(169,47,42,.22)}
+.study-nav:hover{background:var(--flash-red-deep);transform:translateY(-2px)}
+.study-card{height:390px;perspective:1200px;cursor:pointer;outline:none}
+.study-card-inner{position:relative;width:100%;height:100%;transition:transform .55s;transform-style:preserve-3d}
+.study-card.is-flipped .study-card-inner{transform:rotateY(180deg)}
+.study-face{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:42px;text-align:center;backface-visibility:hidden;border:4px solid var(--flash-line);border-radius:32px;
+  background:linear-gradient(145deg,#fff,#fff5df);box-shadow:14px 16px 0 rgba(227,75,63,.14);
+}
+.study-back{transform:rotateY(180deg);background:linear-gradient(145deg,#fff,#ffece6)}
+.study-source{position:absolute;left:24px;top:22px;padding:7px 12px;border-radius:999px;background:var(--flash-yellow);color:#6b3b00;font-size:16px;font-weight:900}
+.study-hanzi{font:900 clamp(64px,9vw,104px)/1.05 "Microsoft YaHei","Noto Sans SC",sans-serif;color:var(--flash-red-deep)}
+.study-hint{margin-top:24px;color:#886057;font-size:18px;font-weight:800}
+.study-pinyin{color:var(--flash-red-deep);font-size:34px;font-weight:900}
+.study-meaning{margin-top:15px;color:var(--flash-ink);font-size:31px;font-weight:900}
+.study-example{margin:18px 0 0;color:#725149;font-size:21px;font-weight:700}
+.study-actions{display:flex;justify-content:center;gap:14px;margin-top:28px}
+.study-action{min-height:52px;padding:0 20px;border:2px solid var(--flash-red);border-radius:999px;background:#fff;color:var(--flash-red-deep);font:900 18px/1 "Times New Roman",Times,serif;cursor:pointer}
+.study-action.primary{background:var(--flash-red);color:#fff}
+.study-action:hover{transform:translateY(-2px)}
+.flash-error{padding:24px;border:2px solid #e1a49a;border-radius:18px;background:#fff0ec;color:#8f2f29;font-size:19px;font-weight:800;text-align:center}
+footer{background:#8e2c27;color:#fff2e9;border-top:9px solid var(--flash-yellow)}
+footer,footer h4,footer a{font-family:"Times New Roman",Times,serif}
+footer h4{color:#fff8dc;font-size:20px;font-weight:900}
+footer a,footer p,.copyright{color:#ffe1d4;font-weight:700}
+footer a:hover{color:var(--flash-yellow)}
+.mobile-menu{background:#fff0e5;color:var(--flash-red-deep);font-weight:900}
+@media(max-width:680px){
+  .brand{width:58px;height:58px;flex-basis:58px;font-size:35px}
+  .page-hero{padding:68px 0}
+  body{font-size:19px}
+  .nav-link{font-size:18px}
+  .page-hero h1{font-size:54px}
+  .page-hero p{font-size:22px;max-width:78%}
+  .page-hero::before,.page-hero::after{width:90px;height:125px;font-size:52px;right:3%}
+  .page-hero::after{right:9%}
+  .section .card{min-height:0;padding:35px 25px}
+  .section .card h2{font-size:42px}
+  .section .card>p{font-size:21px}
+  .flash-feature-grid{grid-template-columns:1fr}
+  .flash-feature strong{font-size:25px}
+  .flash-feature span{font-size:18px}
+  .flash-library{margin-top:42px}
+  .flash-library-head h2{font-size:38px}
+  .flash-library-head p{font-size:19px}
+  .flash-toolbar{grid-template-columns:1fr}
+  .study-stage{grid-template-columns:44px minmax(0,1fr) 44px;gap:7px}
+  .study-nav{width:42px;height:42px;font-size:25px}
+  .study-card{height:370px}
+  .study-face{padding:35px 22px;border-width:3px}
+  .study-hanzi{font-size:62px}
+  .study-pinyin{font-size:28px}
+  .study-meaning{font-size:26px}
+  .study-example{font-size:19px}
+  .study-actions{display:grid}
+}
+</style>
 </head>
 <body>
 
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="../index.html"><img src="../assets/images/logo.svg" alt="Tiếng Trung Cô Mai"></a>
+    <a class="brand" href="../index.html" aria-label="Tiếng Trung Cô Mai">梅</a>
     <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
     <nav class="nav-links" id="navLinks">
       <a class="nav-link" href="../index.html">Trang chủ</a>
@@ -33,22 +189,21 @@
       <div class="nav-item">
         <button class="nav-link" data-dropdown>Học liệu <span class="caret">▼</span></button>
         <div class="dropdown">
-          <a href="../resources/flashcards.html">Flashcards</a>
+          <a href="../resources/flashcards.html" aria-current="page">Flashcards</a>
           <a href="../resources/grammar.html">Ngữ pháp</a>
           <a href="../resources/vocabulary.html">Từ vựng</a>
           <a href="../resources/dialogues.html">Hội thoại</a>
           <a href="../resources/exams.html">Đề thi</a>
         </div>
       </div>
-      <a class="nav-link" href="../blog/index.html">Blog</a>
-      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      <a class="nav-link" href="../about/about.html">Giảng viên</a>
     </nav>
   </div>
 </header>
 
 <main>
 <section class="page-hero"><div class="container"><h1>Flashcards</h1><p>Ôn từ vựng theo chữ Hán, pinyin và nghĩa tiếng Việt.</p></div></section>
-<section class="section"><div class="container"><div class="card"><span class="badge">Đang phát triển</span><h2>Flashcards</h2><p>Ôn từ vựng theo chữ Hán, pinyin và nghĩa tiếng Việt.</p></div></div></section>
+<section class="section"><div class="container"><div class="card"><span class="badge">Kho học liệu HSK</span><h2>Ghi nhớ từ mới trực quan hơn</h2><p>Flashcards tự động tổng hợp chữ Hán, cách phát âm và nghĩa tiếng Việt từ các bài HSK hiện có.</p><div class="flash-feature-grid"><div class="flash-feature"><strong class="hanzi">汉字</strong><span>Nhận diện và ghi nhớ mặt chữ Hán.</span></div><div class="flash-feature"><strong>Pinyin</strong><span>Đọc đúng phiên âm và thanh điệu.</span></div><div class="flash-feature"><strong>Nghĩa tiếng Việt</strong><span>Hiểu nhanh và vận dụng từ chính xác.</span></div></div></div><div class="flash-library" id="flashLibrary"><div class="flash-library-head"><div class="kicker">Tổng hợp tự động</div><h2>Flashcards theo bài HSK</h2><p>Chọn cấp độ, bài học hoặc tìm nhanh một từ bạn muốn ôn.</p></div><div class="flash-toolbar"><select id="levelFilter" aria-label="Chọn cấp độ HSK"><option value="all">Tất cả cấp độ</option></select><select id="lessonFilter" aria-label="Chọn bài học"><option value="all">Tất cả bài học</option></select><input id="flashSearch" type="search" placeholder="Tìm chữ Hán, pinyin, nghĩa..." aria-label="Tìm flashcard"></div><p class="flash-status" id="flashStatus">Đang tải dữ liệu từ các bài HSK...</p><div id="flashDeck" hidden><div class="study-stage"><button class="study-nav" id="prevFlash" type="button" aria-label="Thẻ trước">‹</button><div class="study-card" id="studyCard" tabindex="0" role="button" aria-label="Lật flashcard"><div class="study-card-inner"><div class="study-face study-front"><span class="study-source" id="cardSource"></span><div class="study-hanzi" id="studyHanzi"></div><div class="study-hint">Nhấn vào thẻ để xem đáp án</div></div><div class="study-face study-back"><span class="study-source" id="cardSourceBack"></span><div class="study-pinyin" id="studyPinyin"></div><div class="study-meaning" id="studyMeaning"></div><p class="study-example" id="studyExample"></p></div></div></div><button class="study-nav" id="nextFlash" type="button" aria-label="Thẻ sau">›</button></div><div class="study-actions"><button class="study-action" id="speakFlash" type="button">🔊 Nghe phát âm</button><button class="study-action primary" id="shuffleFlash" type="button">⇄ Trộn thẻ</button></div></div></div></div></section>
 </main>
 
 <footer>
@@ -82,5 +237,165 @@
 </footer>
 
 <script src="../assets/js/app.js?v=3.3.1"></script>
+<script id="embeddedFlashcards" type="application/json">[{"level":1,"lesson":1,"hanzi":"你好","pinyin":"nǐ hǎo","meaning":"xin chào","example":"你好，小语！"},{"level":1,"lesson":1,"hanzi":"大家","pinyin":"dàjiā","meaning":"mọi người","example":"大家好！"},{"level":1,"lesson":1,"hanzi":"好","pinyin":"hǎo","meaning":"tốt, khỏe","example":"老师好！"},{"level":1,"lesson":1,"hanzi":"学生","pinyin":"xuésheng","meaning":"học sinh, sinh viên","example":"我是学生。"},{"level":1,"lesson":1,"hanzi":"们","pinyin":"men","meaning":"hậu tố số nhiều","example":"同学们好！"},{"level":1,"lesson":1,"hanzi":"老师","pinyin":"lǎoshī","meaning":"giáo viên","example":"老师，您好！"},{"level":1,"lesson":1,"hanzi":"您","pinyin":"nín","meaning":"ngài; bạn (trang trọng)","example":"您好！"},{"level":1,"lesson":1,"hanzi":"你们","pinyin":"nǐmen","meaning":"các bạn","example":"你们好！"},{"level":1,"lesson":1,"hanzi":"谢谢","pinyin":"xièxie","meaning":"cảm ơn","example":"谢谢！"},{"level":1,"lesson":1,"hanzi":"不客气","pinyin":"bú kèqi","meaning":"không có gì","example":"不客气！"},{"level":1,"lesson":1,"hanzi":"同学","pinyin":"tóngxué","meaning":"bạn học","example":"同学们，再见！"},{"level":1,"lesson":1,"hanzi":"再见","pinyin":"zàijiàn","meaning":"tạm biệt","example":"老师，再见！"},{"level":1,"lesson":1,"hanzi":"大家好","pinyin":"dàjiā hǎo","meaning":"chào mọi người","example":"大家好！"},{"level":1,"lesson":1,"hanzi":"你们好","pinyin":"nǐmen hǎo","meaning":"chào các bạn","example":"你们好！"},{"level":1,"lesson":1,"hanzi":"您好","pinyin":"nín hǎo","meaning":"xin chào (trang trọng)","example":"王老师，您好！"},{"level":1,"lesson":1,"hanzi":"学生们","pinyin":"xuéshengmen","meaning":"các học sinh","example":"学生们好！"},{"level":1,"lesson":1,"hanzi":"同学们","pinyin":"tóngxuémen","meaning":"các bạn học","example":"同学们，再见！"},{"level":1,"lesson":1,"hanzi":"mā / má / mǎ / mà","pinyin":"bốn thanh điệu","meaning":"thanh 1 / 2 / 3 / 4","example":"妈、麻、马、骂"},{"level":1,"lesson":1,"hanzi":"声母","pinyin":"shēngmǔ","meaning":"thanh mẫu","example":"b、p、m、f"},{"level":1,"lesson":1,"hanzi":"韵母","pinyin":"yùnmǔ","meaning":"vận mẫu","example":"a、o、e、i、u"},{"level":1,"lesson":2,"hanzi":"叫","pinyin":"jiào","meaning":"gọi là, tên là","example":"我叫李文。"},{"level":1,"lesson":2,"hanzi":"什么","pinyin":"shénme","meaning":"gì, cái gì","example":"你叫什么名字？"},{"level":1,"lesson":2,"hanzi":"名字","pinyin":"míngzi","meaning":"tên, họ tên","example":"你的名字是什么？"},{"level":1,"lesson":2,"hanzi":"请","pinyin":"qǐng","meaning":"mời, xin","example":"请坐。"},{"level":1,"lesson":2,"hanzi":"请问","pinyin":"qǐngwèn","meaning":"xin hỏi","example":"请问，你叫什么名字？"},{"level":1,"lesson":2,"hanzi":"对不起","pinyin":"duìbuqǐ","meaning":"xin lỗi","example":"对不起，我来晚了。"},{"level":1,"lesson":2,"hanzi":"没关系","pinyin":"méi guānxi","meaning":"không sao","example":"没关系。"},{"level":1,"lesson":2,"hanzi":"认识","pinyin":"rènshi","meaning":"quen, biết, làm quen","example":"很高兴认识你。"},{"level":1,"lesson":2,"hanzi":"很","pinyin":"hěn","meaning":"rất","example":"我很好。"},{"level":1,"lesson":2,"hanzi":"高兴","pinyin":"gāoxìng","meaning":"vui, vui vẻ","example":"我很高兴。"},{"level":1,"lesson":2,"hanzi":"也","pinyin":"yě","meaning":"cũng","example":"我也很高兴。"},{"level":1,"lesson":2,"hanzi":"同学","pinyin":"tóngxué","meaning":"bạn học","example":"她是我的同学。"},{"level":1,"lesson":3,"hanzi":"人","pinyin":"rén","meaning":"người","example":"我是中国人。"},{"level":1,"lesson":3,"hanzi":"的","pinyin":"de","meaning":"của; trợ từ kết cấu","example":"她是我的老师。"},{"level":1,"lesson":3,"hanzi":"中国","pinyin":"Zhōngguó","meaning":"Trung Quốc","example":"我是中国人。"},{"level":1,"lesson":3,"hanzi":"法国","pinyin":"Fǎguó","meaning":"Pháp","example":"我是法国人。"},{"level":1,"lesson":3,"hanzi":"中文","pinyin":"Zhōngwén","meaning":"tiếng Trung Quốc","example":"她是中文老师。"},{"level":1,"lesson":3,"hanzi":"这","pinyin":"zhè","meaning":"này, đây","example":"这是谁？"},{"level":1,"lesson":3,"hanzi":"谁","pinyin":"shéi / shuí","meaning":"ai","example":"她是谁？"},{"level":1,"lesson":3,"hanzi":"女朋友","pinyin":"nǚpéngyou","meaning":"bạn gái, người yêu","example":"这是我女朋友。"},{"level":1,"lesson":3,"hanzi":"哪","pinyin":"nǎ","meaning":"nào","example":"你是哪国人？"},{"level":1,"lesson":3,"hanzi":"国","pinyin":"guó","meaning":"nước, quốc gia","example":"你是哪国人？"},{"level":1,"lesson":3,"hanzi":"她","pinyin":"tā","meaning":"cô ấy, chị ấy","example":"她也是泰国人。"},{"level":1,"lesson":3,"hanzi":"泰国","pinyin":"Tàiguó","meaning":"Thái Lan","example":"他是泰国人。"},{"level":1,"lesson":3,"hanzi":"喂","pinyin":"wèi","meaning":"a lô","example":"喂，一飞！"},{"level":1,"lesson":3,"hanzi":"姐姐","pinyin":"jiějie","meaning":"chị gái","example":"姐姐，你好！"},{"level":1,"lesson":3,"hanzi":"工作","pinyin":"gōngzuò","meaning":"công việc; làm việc","example":"你工作忙吗？"},{"level":1,"lesson":3,"hanzi":"还","pinyin":"hái","meaning":"vẫn, còn","example":"我还很忙。"},{"level":1,"lesson":3,"hanzi":"忙","pinyin":"máng","meaning":"bận","example":"我不太忙。"},{"level":1,"lesson":3,"hanzi":"吗","pinyin":"ma","meaning":"trợ từ nghi vấn","example":"你也是学生吗？"},{"level":1,"lesson":7,"hanzi":"现在","pinyin":"xiànzài","meaning":"bây giờ, hiện tại","example":"现在几点？"},{"level":1,"lesson":7,"hanzi":"点","pinyin":"diǎn","meaning":"giờ","example":"现在八点。"},{"level":1,"lesson":7,"hanzi":"分","pinyin":"fēn","meaning":"phút","example":"十点十分。"},{"level":1,"lesson":7,"hanzi":"上午","pinyin":"shàngwǔ","meaning":"buổi sáng","example":"我上午有课。"},{"level":1,"lesson":7,"hanzi":"下午","pinyin":"xiàwǔ","meaning":"buổi chiều","example":"下午两点见。"},{"level":1,"lesson":7,"hanzi":"吧","pinyin":"ba","meaning":"nhé, đi, nào","example":"我们下午见吧。"},{"level":1,"lesson":7,"hanzi":"电影院","pinyin":"diànyǐngyuàn","meaning":"rạp chiếu phim","example":"我想去电影院。"},{"level":1,"lesson":7,"hanzi":"上课","pinyin":"shàngkè","meaning":"lên lớp, đi học","example":"我两点上课。"},{"level":1,"lesson":7,"hanzi":"呢","pinyin":"ne","meaning":"đấy, mà; thì sao","example":"我还有课呢。"},{"level":1,"lesson":7,"hanzi":"半","pinyin":"bàn","meaning":"một nửa, rưỡi","example":"六点半。"},{"level":1,"lesson":7,"hanzi":"下班","pinyin":"xiàbān","meaning":"tan làm","example":"我六点半下班。"},{"level":1,"lesson":7,"hanzi":"医院","pinyin":"yīyuàn","meaning":"bệnh viện","example":"我去医院上班。"},{"level":1,"lesson":7,"hanzi":"上班","pinyin":"shàngbān","meaning":"đi làm, vào ca","example":"我八点上班。"},{"level":1,"lesson":7,"hanzi":"分钟","pinyin":"fēnzhōng","meaning":"phút","example":"十分钟后见。"},{"level":1,"lesson":7,"hanzi":"后","pinyin":"hòu","meaning":"sau, sau đó","example":"我十分钟后去。"},{"level":1,"lesson":8,"hanzi":"房间","pinyin":"fángjiān","meaning":"căn phòng","example":"房间里有一只小猫。"},{"level":1,"lesson":8,"hanzi":"外","pinyin":"wài","meaning":"ngoài, bên ngoài","example":"房间外有一只小猫。"},{"level":1,"lesson":8,"hanzi":"只","pinyin":"zhī","meaning":"con; chiếc","example":"我有一只小猫。"},{"level":1,"lesson":8,"hanzi":"猫","pinyin":"māo","meaning":"mèo","example":"小猫在桌子下。"},{"level":1,"lesson":8,"hanzi":"看见","pinyin":"kànjiàn","meaning":"nhìn thấy, trông thấy","example":"你看见我的手机了吗？"},{"level":1,"lesson":8,"hanzi":"桌子","pinyin":"zhuōzi","meaning":"bàn, cái bàn","example":"书在桌子上。"},{"level":1,"lesson":8,"hanzi":"下","pinyin":"xià","meaning":"dưới, bên dưới","example":"小猫在桌子下。"},{"level":1,"lesson":8,"hanzi":"漂亮","pinyin":"piàoliang","meaning":"đẹp, xinh đẹp","example":"这只小猫真漂亮！"},{"level":1,"lesson":8,"hanzi":"在","pinyin":"zài","meaning":"ở, tại","example":"我在学校吃午饭。"},{"level":1,"lesson":8,"hanzi":"学校","pinyin":"xuéxiào","meaning":"trường học","example":"我在学校工作。"},{"level":1,"lesson":8,"hanzi":"书店","pinyin":"shūdiàn","meaning":"hiệu sách, nhà sách","example":"我们在书店前见吧。"},{"level":1,"lesson":8,"hanzi":"前","pinyin":"qián","meaning":"trước, phía trước","example":"书店前有很多人。"},{"level":1,"lesson":8,"hanzi":"能","pinyin":"néng","meaning":"có thể","example":"下午两点你能到吗？"},{"level":1,"lesson":8,"hanzi":"到","pinyin":"dào","meaning":"đến","example":"我下午两点能到。"},{"level":1,"lesson":8,"hanzi":"午饭","pinyin":"wǔfàn","meaning":"bữa trưa","example":"我在学校吃午饭。"},{"level":1,"lesson":8,"hanzi":"病人","pinyin":"bìngrén","meaning":"bệnh nhân","example":"大医院病人多。"},{"level":1,"lesson":8,"hanzi":"医生","pinyin":"yīshēng","meaning":"bác sĩ","example":"我爸爸是医生。"},{"level":1,"lesson":8,"hanzi":"工作","pinyin":"gōngzuò","meaning":"làm việc; công việc","example":"我爸爸也在医院工作。"},{"level":1,"lesson":9,"hanzi":"明天","pinyin":"míngtiān","meaning":"ngày mai","example":"我明天上午在学校学习。"},{"level":1,"lesson":9,"hanzi":"学校","pinyin":"xuéxiào","meaning":"trường học","example":"学校前边有一家书店。"},{"level":1,"lesson":9,"hanzi":"学习","pinyin":"xuéxí","meaning":"học, học tập","example":"我在学校学习汉语。"},{"level":1,"lesson":9,"hanzi":"前边","pinyin":"qiánbian","meaning":"phía trước","example":"学校前边有一家书店。"},{"level":1,"lesson":9,"hanzi":"后边","pinyin":"hòubian","meaning":"phía sau","example":"医院在学校后边。"},{"level":1,"lesson":9,"hanzi":"外边","pinyin":"wàibian","meaning":"bên ngoài","example":"学校外边有一个超市。"},{"level":1,"lesson":9,"hanzi":"里边","pinyin":"lǐbian","meaning":"bên trong","example":"教室里边有很多学生。"},{"level":1,"lesson":9,"hanzi":"书店","pinyin":"shūdiàn","meaning":"hiệu sách","example":"我去书店买书。"},{"level":1,"lesson":9,"hanzi":"书","pinyin":"shū","meaning":"sách","example":"椅子上有一本书。"},{"level":1,"lesson":9,"hanzi":"本","pinyin":"běn","meaning":"quyển, cuốn","example":"一本中文书。"},{"level":1,"lesson":9,"hanzi":"椅子","pinyin":"yǐzi","meaning":"cái ghế","example":"椅子上有一本书。"},{"level":1,"lesson":9,"hanzi":"有","pinyin":"yǒu","meaning":"có","example":"学校前边有一家书店。"},{"level":1,"lesson":9,"hanzi":"没有","pinyin":"méiyǒu","meaning":"không có","example":"教室里没有老师。"},{"level":1,"lesson":9,"hanzi":"第","pinyin":"dì","meaning":"thứ, số thứ tự","example":"这是第一本书。"},{"level":1,"lesson":9,"hanzi":"第一","pinyin":"dì-yī","meaning":"thứ nhất, đầu tiên","example":"第一课。"},{"level":1,"lesson":9,"hanzi":"第二","pinyin":"dì-èr","meaning":"thứ hai","example":"第二本中文书。"},{"level":1,"lesson":9,"hanzi":"教室","pinyin":"jiàoshì","meaning":"phòng học","example":"老师在教室里。"},{"level":1,"lesson":9,"hanzi":"图书馆","pinyin":"túshūguǎn","meaning":"thư viện","example":"我下午在图书馆看书。"},{"level":1,"lesson":10,"hanzi":"杯子","pinyin":"bēizi","meaning":"cốc, chén","example":"这个杯子多少钱？"},{"level":1,"lesson":10,"hanzi":"售货员","pinyin":"shòuhuòyuán","meaning":"nhân viên bán hàng","example":"售货员在商店里。"},{"level":1,"lesson":10,"hanzi":"这边","pinyin":"zhèbian","meaning":"bên này","example":"杯子在这边。"},{"level":1,"lesson":10,"hanzi":"钱","pinyin":"qián","meaning":"tiền","example":"多少钱？"},{"level":1,"lesson":10,"hanzi":"这些","pinyin":"zhèxiē","meaning":"những cái này","example":"这些五块钱一个。"},{"level":1,"lesson":10,"hanzi":"块","pinyin":"kuài","meaning":"tệ, đồng (khẩu ngữ)","example":"十块钱。"},{"level":1,"lesson":10,"hanzi":"那些","pinyin":"nàxiē","meaning":"những cái kia","example":"那些十块钱一个。"},{"level":1,"lesson":10,"hanzi":"水果","pinyin":"shuǐguǒ","meaning":"hoa quả","example":"这儿的水果真不少！"},{"level":1,"lesson":10,"hanzi":"斤","pinyin":"jīn","meaning":"cân Trung Quốc (500 g)","example":"两斤苹果。"},{"level":1,"lesson":10,"hanzi":"苹果","pinyin":"píngguǒ","meaning":"quả táo","example":"苹果三块五一斤。"},{"level":1,"lesson":10,"hanzi":"便宜","pinyin":"piányi","meaning":"rẻ","example":"苹果真便宜！"},{"level":1,"lesson":10,"hanzi":"衣服","pinyin":"yīfu","meaning":"quần áo","example":"我想买一件衣服。"},{"level":1,"lesson":10,"hanzi":"件","pinyin":"jiàn","meaning":"chiếc, bộ (quần áo)","example":"一件衣服。"},{"level":1,"lesson":10,"hanzi":"元","pinyin":"yuán","meaning":"nhân dân tệ","example":"一百元。"},{"level":1,"lesson":10,"hanzi":"怎么样","pinyin":"zěnmeyàng","meaning":"thế nào","example":"这件衣服怎么样？"},{"level":1,"lesson":10,"hanzi":"贵","pinyin":"guì","meaning":"đắt","example":"这件衣服不贵。"},{"level":1,"lesson":10,"hanzi":"穿","pinyin":"chuān","meaning":"mặc","example":"小雪能穿。"},{"level":1,"lesson":10,"hanzi":"那儿","pinyin":"nàr","meaning":"ở kia","example":"男孩子的衣服在那儿。"},{"level":1,"lesson":11,"hanzi":"时候","pinyin":"shíhou","meaning":"lúc, khi","example":"你什么时候到饭店？"},{"level":1,"lesson":11,"hanzi":"饭店","pinyin":"fàndiàn","meaning":"nhà hàng","example":"我们在饭店见面。"},{"level":1,"lesson":11,"hanzi":"知道","pinyin":"zhīdào","meaning":"biết","example":"我不知道。"},{"level":1,"lesson":11,"hanzi":"正在","pinyin":"zhèngzài","meaning":"đang","example":"我正在找饭店呢。"},{"level":1,"lesson":11,"hanzi":"找","pinyin":"zhǎo","meaning":"tìm","example":"他在找手机。"},{"level":1,"lesson":11,"hanzi":"开车","pinyin":"kāichē","meaning":"lái xe","example":"你开车没开车？"},{"level":1,"lesson":11,"hanzi":"大学","pinyin":"dàxué","meaning":"đại học","example":"我读大学呢。"},{"level":1,"lesson":11,"hanzi":"大学生","pinyin":"dàxuéshēng","meaning":"sinh viên đại học","example":"我还是大学生。"},{"level":1,"lesson":11,"hanzi":"学医","pinyin":"xué yī","meaning":"học y","example":"我学医。"},{"level":1,"lesson":11,"hanzi":"弟弟","pinyin":"dìdi","meaning":"em trai","example":"我弟弟还在睡觉。"},{"level":1,"lesson":11,"hanzi":"起床","pinyin":"qǐchuáng","meaning":"thức dậy","example":"弟弟起床没起床？"},{"level":1,"lesson":11,"hanzi":"睡觉","pinyin":"shuìjiào","meaning":"ngủ","example":"孩子正在睡觉。"},{"level":1,"lesson":11,"hanzi":"那里","pinyin":"nàli","meaning":"ở đó","example":"他去那里。"},{"level":1,"lesson":11,"hanzi":"哪里","pinyin":"nǎli","meaning":"ở đâu","example":"你要去哪里？"},{"level":1,"lesson":11,"hanzi":"昨天","pinyin":"zuótiān","meaning":"hôm qua","example":"我昨天问他了。"},{"level":1,"lesson":11,"hanzi":"问","pinyin":"wèn","meaning":"hỏi","example":"爸爸问姐姐。"},{"level":1,"lesson":11,"hanzi":"对…说","pinyin":"duì…shuō","meaning":"nói với…","example":"他对我说。"},{"level":1,"lesson":11,"hanzi":"要","pinyin":"yào","meaning":"muốn, định","example":"我今天要去超市。"},{"level":1,"lesson":11,"hanzi":"小朋友","pinyin":"xiǎopéngyou","meaning":"bạn nhỏ, trẻ em","example":"小朋友们正在玩呢。"},{"level":1,"lesson":11,"hanzi":"去不去？","pinyin":"qù bu qù?","meaning":"có đi hay không?","example":"你今天去不去学校？"},{"level":1,"lesson":12,"hanzi":"天气","pinyin":"tiānqì","meaning":"thời tiết","example":"今天天气怎么样？"},{"level":1,"lesson":12,"hanzi":"下雨","pinyin":"xià yǔ","meaning":"trời mưa","example":"今天下雨了。"},{"level":1,"lesson":12,"hanzi":"了","pinyin":"le","meaning":"rồi; biểu thị thay đổi","example":"十二点了。"},{"level":1,"lesson":12,"hanzi":"有点儿","pinyin":"yǒudiǎnr","meaning":"hơi, một chút","example":"我觉得有点儿冷。"},{"level":1,"lesson":12,"hanzi":"觉得","pinyin":"juéde","meaning":"cảm thấy","example":"你觉得怎么样？"},{"level":1,"lesson":12,"hanzi":"冷","pinyin":"lěng","meaning":"lạnh","example":"今天太冷了。"},{"level":1,"lesson":12,"hanzi":"下雪","pinyin":"xià xuě","meaning":"tuyết rơi","example":"昨天下雪了。"},{"level":1,"lesson":12,"hanzi":"公司","pinyin":"gōngsī","meaning":"công ty","example":"我在公司工作。"},{"level":1,"lesson":12,"hanzi":"生病","pinyin":"shēngbìng","meaning":"bị ốm","example":"他生病了。"},{"level":1,"lesson":12,"hanzi":"看病","pinyin":"kànbìng","meaning":"đi khám bệnh","example":"我去医院看病。"},{"level":1,"lesson":12,"hanzi":"病","pinyin":"bìng","meaning":"bệnh, bị ốm","example":"医生，我病了。"},{"level":1,"lesson":12,"hanzi":"一点儿","pinyin":"yìdiǎnr","meaning":"một chút","example":"吃一点儿药。"},{"level":1,"lesson":12,"hanzi":"药","pinyin":"yào","meaning":"thuốc","example":"今天吃药吧。"},{"level":1,"lesson":12,"hanzi":"回","pinyin":"huí","meaning":"quay về","example":"我回家。"},{"level":1,"lesson":12,"hanzi":"再","pinyin":"zài","meaning":"sau đó, lại","example":"回家后再休息。"},{"level":1,"lesson":12,"hanzi":"喝","pinyin":"hē","meaning":"uống","example":"请喝水。"},{"level":1,"lesson":12,"hanzi":"热","pinyin":"rè","meaning":"nóng, ấm","example":"这杯水很热。"},{"level":1,"lesson":12,"hanzi":"水","pinyin":"shuǐ","meaning":"nước","example":"多喝热水。"},{"level":1,"lesson":12,"hanzi":"太冷了","pinyin":"tài lěng le","meaning":"lạnh quá","example":"昨天下雪了，太冷了！"},{"level":1,"lesson":12,"hanzi":"下雨了","pinyin":"xià yǔ le","meaning":"trời mưa rồi","example":"这里下雨了。"},{"level":1,"lesson":13,"hanzi":"可以","pinyin":"kěyǐ","meaning":"có thể, được phép","example":"我可以坐吗？"},{"level":1,"lesson":13,"hanzi":"再","pinyin":"zài","meaning":"lại, thêm lần nữa","example":"我再问一个问题。"},{"level":1,"lesson":13,"hanzi":"问题","pinyin":"wèntí","meaning":"câu hỏi, vấn đề","example":"你有什么问题？"},{"level":1,"lesson":13,"hanzi":"卖","pinyin":"mài","meaning":"bán","example":"这个商店卖手机。"},{"level":1,"lesson":13,"hanzi":"打电话","pinyin":"dǎ diànhuà","meaning":"gọi điện thoại","example":"我给他打电话。"},{"level":1,"lesson":13,"hanzi":"一下","pinyin":"yíxià","meaning":"một chút, một lần","example":"请看一下。"},{"level":1,"lesson":13,"hanzi":"服务员","pinyin":"fúwùyuán","meaning":"nhân viên phục vụ","example":"服务员，请给我水。"},{"level":1,"lesson":13,"hanzi":"女士","pinyin":"nǚshì","meaning":"quý cô, quý bà","example":"女士，请坐。"},{"level":1,"lesson":13,"hanzi":"请","pinyin":"qǐng","meaning":"mời, xin vui lòng","example":"请坐。"},{"level":1,"lesson":13,"hanzi":"给","pinyin":"gěi","meaning":"đưa, cho","example":"请给我一杯茶。"},{"level":1,"lesson":13,"hanzi":"杯","pinyin":"bēi","meaning":"cốc; lượng từ","example":"一杯牛奶。"},{"level":1,"lesson":13,"hanzi":"早饭","pinyin":"zǎofàn","meaning":"bữa sáng","example":"我没吃早饭。"},{"level":1,"lesson":13,"hanzi":"面包","pinyin":"miànbāo","meaning":"bánh mì","example":"我要面包。"},{"level":1,"lesson":13,"hanzi":"鸡蛋","pinyin":"jīdàn","meaning":"trứng gà","example":"面包和鸡蛋。"},{"level":1,"lesson":13,"hanzi":"先生","pinyin":"xiānsheng","meaning":"quý ông","example":"先生，请坐。"},{"level":1,"lesson":13,"hanzi":"一半","pinyin":"yíbàn","meaning":"một nửa","example":"我要一半。"},{"level":1,"lesson":13,"hanzi":"茶","pinyin":"chá","meaning":"trà","example":"请给我一杯茶。"},{"level":1,"lesson":13,"hanzi":"问一下","pinyin":"wèn yíxià","meaning":"hỏi thử một chút","example":"你可以问一下。"},{"level":1,"lesson":13,"hanzi":"请给我……","pinyin":"qǐng gěi wǒ…","meaning":"xin cho tôi…","example":"请给我一杯水。"},{"level":1,"lesson":13,"hanzi":"我要……","pinyin":"wǒ yào…","meaning":"tôi muốn/gọi…","example":"我要一斤饺子。"},{"level":1,"lesson":14,"hanzi":"火车","pinyin":"huǒchē","meaning":"tàu hỏa","example":"我坐火车去北京。"},{"level":1,"lesson":14,"hanzi":"中午","pinyin":"zhōngwǔ","meaning":"buổi trưa","example":"中午车开了。"},{"level":1,"lesson":14,"hanzi":"有些","pinyin":"yǒuxiē","meaning":"một số","example":"有些人在看书。"},{"level":1,"lesson":14,"hanzi":"有的","pinyin":"yǒude","meaning":"có người/có cái thì","example":"有的人睡觉了。"},{"level":1,"lesson":14,"hanzi":"了","pinyin":"le","meaning":"đã, rồi","example":"我看了一个电影。"},{"level":1,"lesson":14,"hanzi":"写","pinyin":"xiě","meaning":"viết","example":"我写了很多汉字。"},{"level":1,"lesson":14,"hanzi":"都","pinyin":"dōu","meaning":"đều, tất cả","example":"我们都会写。"},{"level":1,"lesson":14,"hanzi":"听见","pinyin":"tīngjiàn","meaning":"nghe thấy","example":"我没听见。"},{"level":1,"lesson":14,"hanzi":"不要","pinyin":"búyào","meaning":"đừng","example":"不要说话。"},{"level":1,"lesson":14,"hanzi":"说话","pinyin":"shuōhuà","meaning":"nói chuyện","example":"上课不要说话。"},{"level":1,"lesson":14,"hanzi":"哪些","pinyin":"nǎxiē","meaning":"những... nào","example":"你会写哪些字？"},{"level":1,"lesson":14,"hanzi":"明年","pinyin":"míngnián","meaning":"năm sau","example":"明年上中学。"},{"level":1,"lesson":14,"hanzi":"中学","pinyin":"zhōngxué","meaning":"trường trung học","example":"她上中学。"},{"level":1,"lesson":14,"hanzi":"小学","pinyin":"xiǎoxué","meaning":"trường tiểu học","example":"他上小学。"},{"level":1,"lesson":14,"hanzi":"中学生","pinyin":"zhōngxuéshēng","meaning":"học sinh trung học","example":"她是中学生。"},{"level":1,"lesson":14,"hanzi":"小学生","pinyin":"xiǎoxuéshēng","meaning":"học sinh tiểu học","example":"他是小学生。"},{"level":1,"lesson":14,"hanzi":"上学","pinyin":"shàngxué","meaning":"đi học","example":"孩子们上学了。"},{"level":1,"lesson":14,"hanzi":"他们","pinyin":"tāmen","meaning":"họ, bọn họ","example":"他们都忙了。"},{"level":1,"lesson":14,"hanzi":"它们","pinyin":"tāmen","meaning":"chúng (đồ vật/động vật)","example":"它们都很好看。"},{"level":1,"lesson":14,"hanzi":"晚","pinyin":"wǎn","meaning":"muộn","example":"太晚了。"},{"level":1,"lesson":15,"hanzi":"爱","pinyin":"ài","meaning":"yêu, thích","example":"我爱吃中国菜。"},{"level":1,"lesson":15,"hanzi":"哪个","pinyin":"nǎge","meaning":"cái nào, món nào","example":"你爱吃哪个菜？"},{"level":1,"lesson":15,"hanzi":"去年","pinyin":"qùnián","meaning":"năm ngoái","example":"去年我去了西安。"},{"level":1,"lesson":15,"hanzi":"男朋友","pinyin":"nánpéngyou","meaning":"bạn trai","example":"我和男朋友去了西安。"},{"level":1,"lesson":15,"hanzi":"好玩儿","pinyin":"hǎowánr","meaning":"vui, thú vị","example":"西安很好玩儿。"},{"level":1,"lesson":15,"hanzi":"飞机","pinyin":"fēijī","meaning":"máy bay","example":"我们坐飞机去北京。"},{"level":1,"lesson":15,"hanzi":"小时","pinyin":"xiǎoshí","meaning":"giờ, tiếng","example":"要九个小时。"},{"level":1,"lesson":15,"hanzi":"家人","pinyin":"jiārén","meaning":"người nhà","example":"我的家人都在北京。"},{"level":1,"lesson":15,"hanzi":"时间","pinyin":"shíjiān","meaning":"thời gian","example":"我有时间。"},{"level":1,"lesson":15,"hanzi":"机场","pinyin":"jīchǎng","meaning":"sân bay","example":"我们在机场见。"},{"level":1,"lesson":15,"hanzi":"接","pinyin":"jiē","meaning":"đón","example":"我去机场接你。"},{"level":1,"lesson":15,"hanzi":"住","pinyin":"zhù","meaning":"ở, lưu trú","example":"你们可以住我家。"},{"level":1,"lesson":15,"hanzi":"早","pinyin":"zǎo","meaning":"sớm","example":"八点早不早？"},{"level":1,"lesson":15,"hanzi":"那","pinyin":"nà","meaning":"vậy thì","example":"那我们明天见。"},{"level":1,"lesson":15,"hanzi":"西安","pinyin":"Xī'ān","meaning":"Tây An","example":"去年我去了西安。"},{"level":1,"lesson":15,"hanzi":"北京","pinyin":"Běijīng","meaning":"Bắc Kinh","example":"北京非常漂亮。"},{"level":1,"lesson":15,"hanzi":"大兴机场","pinyin":"Dàxīng Jīchǎng","meaning":"Sân bay Đại Hưng","example":"大兴机场见！"},{"level":1,"lesson":15,"hanzi":"也","pinyin":"yě","meaning":"cũng","example":"我也想去北京。"},{"level":1,"lesson":15,"hanzi":"还","pinyin":"hái","meaning":"còn, lại còn","example":"这些菜还很好看。"},{"level":1,"lesson":15,"hanzi":"要几个小时？","pinyin":"yào jǐ ge xiǎoshí?","meaning":"mất mấy tiếng?","example":"到北京要几个小时？"},{"level":2,"lesson":1,"hanzi":"就","pinyin":"jiù","meaning":"chính là; ngay","example":""},{"level":2,"lesson":1,"hanzi":"给","pinyin":"gěi","meaning":"cho; đối với","example":""},{"level":2,"lesson":1,"hanzi":"让","pinyin":"ràng","meaning":"để; bảo; cho phép","example":""},{"level":2,"lesson":1,"hanzi":"接","pinyin":"jiē","meaning":"đón; tiếp nhận","example":""},{"level":2,"lesson":1,"hanzi":"次","pinyin":"cì","meaning":"lần","example":""},{"level":2,"lesson":1,"hanzi":"旅游","pinyin":"lǚyóu","meaning":"du lịch","example":""},{"level":2,"lesson":1,"hanzi":"帮忙","pinyin":"bāngmáng","meaning":"giúp đỡ","example":""},{"level":2,"lesson":1,"hanzi":"不好意思","pinyin":"bù hǎoyìsi","meaning":"ngại quá; xin lỗi","example":""},{"level":2,"lesson":1,"hanzi":"已经","pinyin":"yǐjīng","meaning":"đã","example":""},{"level":2,"lesson":1,"hanzi":"那","pinyin":"nà","meaning":"vậy thì; thế thì","example":""},{"level":2,"lesson":1,"hanzi":"介绍","pinyin":"jièshào","meaning":"giới thiệu","example":""},{"level":2,"lesson":1,"hanzi":"有时","pinyin":"yǒushí","meaning":"có lúc; đôi khi","example":""},{"level":2,"lesson":1,"hanzi":"懂","pinyin":"dǒng","meaning":"hiểu","example":""},{"level":2,"lesson":1,"hanzi":"意思","pinyin":"yìsi","meaning":"ý; ý nghĩa","example":""},{"level":2,"lesson":1,"hanzi":"北京烤鸭","pinyin":"Běijīng kǎoyā","meaning":"vịt quay Bắc Kinh","example":""},{"level":2,"lesson":2,"hanzi":"公交车","pinyin":"gōngjiāochē","meaning":"xe buýt","example":""},{"level":2,"lesson":2,"hanzi":"但","pinyin":"dàn","meaning":"nhưng","example":""},{"level":2,"lesson":2,"hanzi":"车站","pinyin":"chēzhàn","meaning":"bến/nhà ga","example":""},{"level":2,"lesson":2,"hanzi":"远","pinyin":"yuǎn","meaning":"xa","example":""},{"level":2,"lesson":2,"hanzi":"打车","pinyin":"dǎchē","meaning":"đi/gọi taxi","example":""},{"level":2,"lesson":2,"hanzi":"还是","pinyin":"háishi","meaning":"tốt hơn là; hay là","example":""},{"level":2,"lesson":2,"hanzi":"啊","pinyin":"a","meaning":"à, nhỉ, nhé…","example":""},{"level":2,"lesson":2,"hanzi":"万","pinyin":"wàn","meaning":"mười nghìn","example":""},{"level":2,"lesson":2,"hanzi":"名","pinyin":"míng","meaning":"lượng từ cho người; tên","example":""},{"level":2,"lesson":2,"hanzi":"网上","pinyin":"wǎngshang","meaning":"trên mạng","example":""},{"level":2,"lesson":2,"hanzi":"外国","pinyin":"wàiguó","meaning":"nước ngoài","example":""},{"level":2,"lesson":2,"hanzi":"间","pinyin":"jiān","meaning":"lượng từ cho phòng","example":""},{"level":2,"lesson":2,"hanzi":"教室","pinyin":"jiàoshì","meaning":"phòng học","example":""},{"level":2,"lesson":2,"hanzi":"票","pinyin":"piào","meaning":"vé","example":""},{"level":2,"lesson":2,"hanzi":"别","pinyin":"bié","meaning":"đừng","example":""},{"level":2,"lesson":2,"hanzi":"过来","pinyin":"guòlái","meaning":"đi/đến đây","example":""},{"level":2,"lesson":2,"hanzi":"北京大学","pinyin":"Běijīng Dàxué","meaning":"Đại học Bắc Kinh","example":""},{"level":2,"lesson":3,"hanzi":"回来","pinyin":"huílái","meaning":"trở về, quay về","example":""},{"level":2,"lesson":3,"hanzi":"这么","pinyin":"zhème","meaning":"như thế, như vậy","example":""},{"level":2,"lesson":3,"hanzi":"完","pinyin":"wán","meaning":"xong, hoàn thành","example":""},{"level":2,"lesson":3,"hanzi":"一起","pinyin":"yìqǐ","meaning":"cùng nhau","example":""},{"level":2,"lesson":3,"hanzi":"出去","pinyin":"chūqù","meaning":"đi ra ngoài","example":""},{"level":2,"lesson":3,"hanzi":"洗","pinyin":"xǐ","meaning":"rửa, giặt","example":""},{"level":2,"lesson":3,"hanzi":"自己","pinyin":"zìjǐ","meaning":"bản thân, tự mình","example":""},{"level":2,"lesson":3,"hanzi":"拿","pinyin":"ná","meaning":"cầm, lấy","example":""},{"level":2,"lesson":3,"hanzi":"手","pinyin":"shǒu","meaning":"tay","example":""},{"level":2,"lesson":3,"hanzi":"为什么","pinyin":"wèi shénme","meaning":"tại sao","example":""},{"level":2,"lesson":3,"hanzi":"不错","pinyin":"búcuò","meaning":"không tệ, khá tốt","example":""},{"level":2,"lesson":3,"hanzi":"送","pinyin":"sòng","meaning":"đưa, tiễn; tặng","example":""},{"level":2,"lesson":3,"hanzi":"回去","pinyin":"huíqù","meaning":"quay về, trở về","example":""},{"level":2,"lesson":3,"hanzi":"每","pinyin":"měi","meaning":"mỗi","example":""},{"level":2,"lesson":3,"hanzi":"累","pinyin":"lèi","meaning":"mệt","example":""},{"level":2,"lesson":4,"hanzi":"过","pinyin":"guo","meaning":"trợ từ chỉ kinh nghiệm đã từng","example":""},{"level":2,"lesson":4,"hanzi":"商场","pinyin":"shāngchǎng","meaning":"trung tâm thương mại","example":""},{"level":2,"lesson":4,"hanzi":"进去","pinyin":"jìnqù","meaning":"đi vào","example":""},{"level":2,"lesson":4,"hanzi":"条","pinyin":"tiáo","meaning":"lượng từ cho vật dài/hẹp","example":""},{"level":2,"lesson":4,"hanzi":"裤子","pinyin":"kùzi","meaning":"quần","example":""},{"level":2,"lesson":4,"hanzi":"白色","pinyin":"báisè","meaning":"màu trắng","example":""},{"level":2,"lesson":4,"hanzi":"因为","pinyin":"yīnwèi","meaning":"bởi vì","example":""},{"level":2,"lesson":4,"hanzi":"试","pinyin":"shì","meaning":"thử","example":""},{"level":2,"lesson":4,"hanzi":"红色","pinyin":"hóngsè","meaning":"màu đỏ","example":""},{"level":2,"lesson":4,"hanzi":"所以","pinyin":"suǒyǐ","meaning":"cho nên, vì vậy","example":""},{"level":2,"lesson":4,"hanzi":"书包","pinyin":"shūbāo","meaning":"cặp sách","example":""},{"level":2,"lesson":4,"hanzi":"过去","pinyin":"guòqù","meaning":"đi qua, sang đó","example":""},{"level":2,"lesson":4,"hanzi":"绿色","pinyin":"lǜsè","meaning":"màu xanh lá","example":""},{"level":2,"lesson":4,"hanzi":"黑色","pinyin":"hēisè","meaning":"màu đen","example":""},{"level":2,"lesson":4,"hanzi":"更","pinyin":"gèng","meaning":"hơn nữa, càng hơn","example":""},{"level":2,"lesson":4,"hanzi":"颜色","pinyin":"yánsè","meaning":"màu sắc","example":""},{"level":2,"lesson":5,"hanzi":"快","pinyin":"kuài","meaning":"nhanh; mau lên","example":""},{"level":2,"lesson":5,"hanzi":"下来","pinyin":"xiàlái","meaning":"đi/xuống đây","example":""},{"level":2,"lesson":5,"hanzi":"上来","pinyin":"shànglái","meaning":"đi/lên đây","example":""},{"level":2,"lesson":5,"hanzi":"上去","pinyin":"shàngqù","meaning":"đi/lên đó","example":""},{"level":2,"lesson":5,"hanzi":"下面","pinyin":"xiàmiàn","meaning":"phía dưới","example":""},{"level":2,"lesson":5,"hanzi":"等","pinyin":"děng","meaning":"đợi","example":""},{"level":2,"lesson":5,"hanzi":"一会儿","pinyin":"yíhuìr","meaning":"một lát, một lúc","example":""},{"level":2,"lesson":5,"hanzi":"下去","pinyin":"xiàqù","meaning":"đi/xuống đó","example":""},{"level":2,"lesson":5,"hanzi":"进来","pinyin":"jìnlái","meaning":"đi/vào đây","example":""},{"level":2,"lesson":5,"hanzi":"爷爷","pinyin":"yéye","meaning":"ông","example":""},{"level":2,"lesson":5,"hanzi":"奶奶","pinyin":"nǎinai","meaning":"bà","example":""},{"level":2,"lesson":5,"hanzi":"礼物","pinyin":"lǐwù","meaning":"quà, quà tặng","example":""},{"level":2,"lesson":5,"hanzi":"准备","pinyin":"zhǔnbèi","meaning":"chuẩn bị","example":""},{"level":2,"lesson":5,"hanzi":"奶茶","pinyin":"nǎichá","meaning":"trà sữa","example":""},{"level":2,"lesson":5,"hanzi":"跟","pinyin":"gēn","meaning":"với, cùng với","example":""},{"level":2,"lesson":5,"hanzi":"走","pinyin":"zǒu","meaning":"đi, đi bộ","example":""},{"level":2,"lesson":5,"hanzi":"酒店","pinyin":"jiǔdiàn","meaning":"khách sạn","example":""},{"level":2,"lesson":6,"hanzi":"生日","pinyin":"shēngrì","meaning":"sinh nhật","example":""},{"level":2,"lesson":6,"hanzi":"忘","pinyin":"wàng","meaning":"quên","example":""},{"level":2,"lesson":6,"hanzi":"画","pinyin":"huà","meaning":"vẽ; tranh","example":""},{"level":2,"lesson":6,"hanzi":"画笔","pinyin":"huàbǐ","meaning":"bút vẽ, bút màu","example":""},{"level":2,"lesson":6,"hanzi":"蛋糕","pinyin":"dàngāo","meaning":"bánh ngọt, bánh sinh nhật","example":""},{"level":2,"lesson":6,"hanzi":"快乐","pinyin":"kuàilè","meaning":"vui vẻ","example":""},{"level":2,"lesson":6,"hanzi":"打开","pinyin":"dǎkāi","meaning":"mở ra","example":""},{"level":2,"lesson":6,"hanzi":"长","pinyin":"cháng","meaning":"dài","example":""},{"level":2,"lesson":6,"hanzi":"鱼","pinyin":"yú","meaning":"cá","example":""},{"level":2,"lesson":6,"hanzi":"肉","pinyin":"ròu","meaning":"thịt","example":""},{"level":2,"lesson":6,"hanzi":"过","pinyin":"guò","meaning":"trải qua; tổ chức/đón (sinh nhật)","example":""},{"level":2,"lesson":6,"hanzi":"地","pinyin":"de","meaning":"trợ từ kết cấu dùng với trạng ngữ","example":""},{"level":2,"lesson":6,"hanzi":"床","pinyin":"chuáng","meaning":"giường","example":""},{"level":2,"lesson":6,"hanzi":"舒服","pinyin":"shūfu","meaning":"thoải mái, dễ chịu","example":""},{"level":2,"lesson":7,"hanzi":"从","pinyin":"cóng","meaning":"từ","example":""},{"level":2,"lesson":7,"hanzi":"往","pinyin":"wǎng","meaning":"về phía; đi về","example":""},{"level":2,"lesson":7,"hanzi":"跑","pinyin":"pǎo","meaning":"chạy; đi nhanh tới","example":""},{"level":2,"lesson":7,"hanzi":"打","pinyin":"dǎ","meaning":"chơi (môn bóng); đánh","example":""},{"level":2,"lesson":7,"hanzi":"篮球","pinyin":"lánqiú","meaning":"bóng rổ","example":""},{"level":2,"lesson":7,"hanzi":"运动","pinyin":"yùndòng","meaning":"thể thao; vận động","example":""},{"level":2,"lesson":7,"hanzi":"踢","pinyin":"tī","meaning":"đá","example":""},{"level":2,"lesson":7,"hanzi":"足球","pinyin":"zúqiú","meaning":"bóng đá","example":""},{"level":2,"lesson":7,"hanzi":"球","pinyin":"qiú","meaning":"bóng","example":""},{"level":2,"lesson":7,"hanzi":"得","pinyin":"de","meaning":"trợ từ nối động từ với bổ ngữ trạng thái","example":""},{"level":2,"lesson":7,"hanzi":"跑步","pinyin":"pǎobù","meaning":"chạy bộ","example":""},{"level":2,"lesson":7,"hanzi":"游泳","pinyin":"yóuyǒng","meaning":"bơi","example":""},{"level":2,"lesson":7,"hanzi":"游","pinyin":"yóu","meaning":"bơi","example":""},{"level":2,"lesson":7,"hanzi":"爱好","pinyin":"àihào","meaning":"sở thích; yêu thích","example":""},{"level":2,"lesson":7,"hanzi":"开始","pinyin":"kāishǐ","meaning":"bắt đầu","example":""},{"level":2,"lesson":8,"hanzi":"手表","pinyin":"shǒubiǎo","meaning":"đồng hồ đeo tay","example":""},{"level":2,"lesson":8,"hanzi":"左边","pinyin":"zuǒbian","meaning":"bên trái","example":""},{"level":2,"lesson":8,"hanzi":"左","pinyin":"zuǒ","meaning":"trái","example":""},{"level":2,"lesson":8,"hanzi":"比","pinyin":"bǐ","meaning":"so với","example":""},{"level":2,"lesson":8,"hanzi":"右边","pinyin":"yòubian","meaning":"bên phải","example":""},{"level":2,"lesson":8,"hanzi":"右","pinyin":"yòu","meaning":"phải","example":""},{"level":2,"lesson":8,"hanzi":"记得","pinyin":"jìde","meaning":"nhớ","example":""},{"level":2,"lesson":8,"hanzi":"爱情片","pinyin":"àiqíngpiàn","meaning":"phim tình cảm","example":""},{"level":2,"lesson":8,"hanzi":"有意思","pinyin":"yǒuyìsi","meaning":"thú vị","example":""},{"level":2,"lesson":8,"hanzi":"点","pinyin":"diǎn","meaning":"gọi/chọn món","example":""},{"level":2,"lesson":8,"hanzi":"虽然","pinyin":"suīrán","meaning":"mặc dù","example":""},{"level":2,"lesson":8,"hanzi":"但是","pinyin":"dànshì","meaning":"nhưng","example":""},{"level":2,"lesson":8,"hanzi":"花","pinyin":"huā","meaning":"tiêu, dùng (tiền/thời gian)","example":""},{"level":2,"lesson":8,"hanzi":"妻子","pinyin":"qīzi","meaning":"vợ","example":""},{"level":2,"lesson":8,"hanzi":"丈夫","pinyin":"zhàngfu","meaning":"chồng","example":""},{"level":2,"lesson":8,"hanzi":"饭馆","pinyin":"fànguǎn","meaning":"nhà hàng, quán ăn","example":""},{"level":2,"lesson":9,"hanzi":"坏","pinyin":"huài","meaning":"hỏng, xấu","example":""},{"level":2,"lesson":9,"hanzi":"旁边","pinyin":"pángbiān","meaning":"bên cạnh","example":""},{"level":2,"lesson":9,"hanzi":"男孩儿","pinyin":"nánháir","meaning":"bé trai, cậu bé","example":""},{"level":2,"lesson":9,"hanzi":"这样","pinyin":"zhèyàng","meaning":"như thế này","example":""},{"level":2,"lesson":9,"hanzi":"个子","pinyin":"gèzi","meaning":"vóc dáng, chiều cao","example":""},{"level":2,"lesson":9,"hanzi":"那么","pinyin":"nàme","meaning":"như vậy, đến mức như vậy","example":""},{"level":2,"lesson":9,"hanzi":"高","pinyin":"gāo","meaning":"cao","example":""},{"level":2,"lesson":9,"hanzi":"门口","pinyin":"ménkǒu","meaning":"cửa, lối vào","example":""},{"level":2,"lesson":9,"hanzi":"咖啡","pinyin":"kāfēi","meaning":"cà phê","example":""},{"level":2,"lesson":9,"hanzi":"离","pinyin":"lí","meaning":"cách, cách xa","example":""},{"level":2,"lesson":9,"hanzi":"近","pinyin":"jìn","meaning":"gần","example":""},{"level":2,"lesson":9,"hanzi":"走路","pinyin":"zǒulù","meaning":"đi bộ","example":""},{"level":2,"lesson":9,"hanzi":"周","pinyin":"zhōu","meaning":"tuần","example":""},{"level":2,"lesson":10,"hanzi":"开学","pinyin":"kāixué","meaning":"khai giảng; bắt đầu học kỳ","example":""},{"level":2,"lesson":10,"hanzi":"门","pinyin":"mén","meaning":"cửa","example":""},{"level":2,"lesson":10,"hanzi":"后面","pinyin":"hòumiàn","meaning":"phía sau","example":""},{"level":2,"lesson":10,"hanzi":"笔","pinyin":"bǐ","meaning":"bút","example":""},{"level":2,"lesson":10,"hanzi":"帮","pinyin":"bāng","meaning":"giúp","example":""},{"level":2,"lesson":10,"hanzi":"考试","pinyin":"kǎoshì","meaning":"thi; kỳ thi","example":""},{"level":2,"lesson":10,"hanzi":"词","pinyin":"cí","meaning":"từ","example":""},{"level":2,"lesson":10,"hanzi":"本子","pinyin":"běnzi","meaning":"vở","example":""},{"level":2,"lesson":10,"hanzi":"错","pinyin":"cuò","meaning":"sai; nhầm","example":""},{"level":2,"lesson":10,"hanzi":"题","pinyin":"tí","meaning":"câu hỏi; bài tập; đề","example":""},{"level":2,"lesson":10,"hanzi":"还是","pinyin":"háishi","meaning":"hay, hoặc (trong câu hỏi lựa chọn)","example":""},{"level":2,"lesson":10,"hanzi":"考","pinyin":"kǎo","meaning":"thi, kiểm tra","example":""},{"level":2,"lesson":10,"hanzi":"快要","pinyin":"kuàiyào","meaning":"sắp, sắp sửa","example":""},{"level":2,"lesson":10,"hanzi":"笑","pinyin":"xiào","meaning":"cười","example":""},{"level":2,"lesson":11,"hanzi":"头","pinyin":"tóu","meaning":"đầu","example":""},{"level":2,"lesson":11,"hanzi":"疼","pinyin":"téng","meaning":"đau","example":""},{"level":2,"lesson":11,"hanzi":"经常","pinyin":"jīngcháng","meaning":"thường xuyên","example":""},{"level":2,"lesson":11,"hanzi":"动","pinyin":"dòng","meaning":"cử động, di chuyển","example":""},{"level":2,"lesson":11,"hanzi":"着","pinyin":"zhe","meaning":"trợ từ chỉ sự tiếp diễn","example":""},{"level":2,"lesson":11,"hanzi":"路上","pinyin":"lùshang","meaning":"trên đường","example":""},{"level":2,"lesson":11,"hanzi":"慢","pinyin":"màn","meaning":"chậm","example":""},{"level":2,"lesson":11,"hanzi":"进","pinyin":"jìn","meaning":"vào","example":""},{"level":2,"lesson":11,"hanzi":"药","pinyin":"yào","meaning":"thuốc","example":""},{"level":2,"lesson":11,"hanzi":"身体","pinyin":"shēntǐ","meaning":"cơ thể, sức khỏe","example":""},{"level":2,"lesson":11,"hanzi":"时","pinyin":"shí","meaning":"lúc, thời điểm","example":""},{"level":2,"lesson":11,"hanzi":"最","pinyin":"zuì","meaning":"nhất","example":""},{"level":2,"lesson":11,"hanzi":"药店","pinyin":"yàodiàn","meaning":"hiệu thuốc","example":""},{"level":2,"lesson":12,"hanzi":"事情","pinyin":"shìqing","meaning":"sự việc, việc","example":""},{"level":2,"lesson":12,"hanzi":"晴","pinyin":"qíng","meaning":"trời quang, nắng","example":""},{"level":2,"lesson":12,"hanzi":"正","pinyin":"zhèng","meaning":"đang, đúng lúc đang","example":""},{"level":2,"lesson":12,"hanzi":"外面","pinyin":"wàimiàn","meaning":"bên ngoài","example":""},{"level":2,"lesson":12,"hanzi":"阴","pinyin":"yīn","meaning":"âm u, nhiều mây","example":""},{"level":2,"lesson":12,"hanzi":"从小","pinyin":"cóngxiǎo","meaning":"từ nhỏ","example":""},{"level":2,"lesson":12,"hanzi":"地铁","pinyin":"dìtiě","meaning":"tàu điện ngầm","example":""},{"level":2,"lesson":12,"hanzi":"楼","pinyin":"lóu","meaning":"tòa nhà; tầng","example":""},{"level":2,"lesson":12,"hanzi":"站","pinyin":"zhàn","meaning":"trạm, ga","example":""},{"level":2,"lesson":12,"hanzi":"小时候","pinyin":"xiǎoshíhou","meaning":"hồi nhỏ","example":""},{"level":2,"lesson":12,"hanzi":"好","pinyin":"hǎo","meaning":"rất, khá (phó từ)","example":""},{"level":2,"lesson":13,"hanzi":"新年","pinyin":"xīnnián","meaning":"Năm mới","example":""},{"level":2,"lesson":13,"hanzi":"教","pinyin":"jiāo","meaning":"dạy","example":""},{"level":2,"lesson":13,"hanzi":"花","pinyin":"huā","meaning":"hoa","example":""},{"level":2,"lesson":13,"hanzi":"希望","pinyin":"xīwàng","meaning":"hy vọng, mong","example":""},{"level":2,"lesson":13,"hanzi":"上面","pinyin":"shàngmiàn","meaning":"phía trên, bề mặt","example":""},{"level":2,"lesson":13,"hanzi":"洗手间","pinyin":"xǐshǒujiān","meaning":"nhà vệ sinh","example":""},{"level":2,"lesson":13,"hanzi":"里面","pinyin":"lǐmiàn","meaning":"bên trong","example":""},{"level":2,"lesson":13,"hanzi":"笔","pinyin":"bǐ","meaning":"nét (chữ); bút","example":""},{"level":2,"lesson":13,"hanzi":"可能","pinyin":"kěnéng","meaning":"có thể, có lẽ","example":""},{"level":2,"lesson":13,"hanzi":"上网","pinyin":"shàngwǎng","meaning":"lên mạng","example":""},{"level":2,"lesson":13,"hanzi":"那样","pinyin":"nàyàng","meaning":"như thế, như vậy","example":""},{"level":2,"lesson":13,"hanzi":"告诉","pinyin":"gàosu","meaning":"nói, cho biết","example":""},{"level":2,"lesson":13,"hanzi":"班","pinyin":"bān","meaning":"lớp","example":""},{"level":2,"lesson":14,"hanzi":"站","pinyin":"zhàn","meaning":"đứng","example":""},{"level":2,"lesson":14,"hanzi":"包","pinyin":"bāo","meaning":"túi; gói, bọc","example":""},{"level":2,"lesson":14,"hanzi":"过年","pinyin":"guònián","meaning":"ăn Tết, đón năm mới","example":""},{"level":2,"lesson":14,"hanzi":"没意思","pinyin":"méi yìsi","meaning":"chán, không thú vị","example":""},{"level":2,"lesson":14,"hanzi":"位","pinyin":"wèi","meaning":"vị (lượng từ kính trọng cho người)","example":""},{"level":2,"lesson":14,"hanzi":"前面","pinyin":"qiánmiàn","meaning":"phía trước","example":""},{"level":2,"lesson":14,"hanzi":"房子","pinyin":"fángzi","meaning":"nhà, căn nhà","example":""},{"level":2,"lesson":14,"hanzi":"小孩儿","pinyin":"xiǎoháir","meaning":"trẻ con","example":""},{"level":2,"lesson":14,"hanzi":"女孩儿","pinyin":"nǚháir","meaning":"bé gái, cô gái","example":""},{"level":2,"lesson":14,"hanzi":"姓","pinyin":"xìng","meaning":"họ; mang họ","example":""},{"level":2,"lesson":14,"hanzi":"眼睛","pinyin":"yǎnjing","meaning":"mắt","example":""},{"level":2,"lesson":14,"hanzi":"跳舞","pinyin":"tiàowǔ","meaning":"nhảy, khiêu vũ","example":""},{"level":2,"lesson":15,"hanzi":"姓名","pinyin":"xìngmíng","meaning":"họ tên","example":""},{"level":2,"lesson":15,"hanzi":"出国","pinyin":"chūguó","meaning":"ra nước ngoài","example":""},{"level":2,"lesson":15,"hanzi":"门票","pinyin":"ménpiào","meaning":"vé vào cửa","example":""},{"level":2,"lesson":15,"hanzi":"高中","pinyin":"gāozhōng","meaning":"trung học phổ thông","example":""},{"level":2,"lesson":15,"hanzi":"出门","pinyin":"chūmén","meaning":"ra khỏi nhà","example":""},{"level":2,"lesson":15,"hanzi":"路","pinyin":"lù","meaning":"đường","example":""},{"level":2,"lesson":15,"hanzi":"机场","pinyin":"jīchǎng","meaning":"sân bay","example":""},{"level":2,"lesson":15,"hanzi":"机票","pinyin":"jīpiào","meaning":"vé máy bay","example":""},{"level":2,"lesson":15,"hanzi":"飞","pinyin":"fēi","meaning":"bay","example":""},{"level":2,"lesson":15,"hanzi":"好像","pinyin":"hǎoxiàng","meaning":"hình như, có vẻ","example":""},{"level":2,"lesson":15,"hanzi":"鸟","pinyin":"niǎo","meaning":"chim","example":""}]</script>
+<script>
+(() => {
+  const lessonSources = [
+    ...Array.from({length:15},(_,i)=>({level:1,lesson:i+1,url:`../hsk/hsk1-lesson${String(i+1).padStart(2,"0")}.html`})),
+    ...Array.from({length:15},(_,i)=>({level:2,lesson:i+1,url:`../hsk/hsk2-lesson${String(i+1).padStart(2,"0")}.html`}))
+  ];
+  const els = {
+    level:document.getElementById("levelFilter"),lesson:document.getElementById("lessonFilter"),
+    search:document.getElementById("flashSearch"),status:document.getElementById("flashStatus"),
+    deck:document.getElementById("flashDeck"),card:document.getElementById("studyCard"),
+    hanzi:document.getElementById("studyHanzi"),pinyin:document.getElementById("studyPinyin"),
+    meaning:document.getElementById("studyMeaning"),example:document.getElementById("studyExample"),
+    source:document.getElementById("cardSource"),sourceBack:document.getElementById("cardSourceBack")
+  };
+  let allCards=[],visibleCards=[],current=0;
+  const embeddedCards=JSON.parse(document.getElementById("embeddedFlashcards")?.textContent||"[]");
+
+  function extractArray(source,key){
+    const match=new RegExp(`(?:"${key}"|\\b${key}\\b)\\s*:`).exec(source);
+    const start=match?source.indexOf("[",match.index+match[0].length):-1;
+    if(start<0) return null;
+    let depth=0,inString=false,escaped=false;
+    for(let i=start;i<source.length;i++){
+      const char=source[i];
+      if(inString){
+        if(escaped) escaped=false;
+        else if(char==="\\") escaped=true;
+        else if(char==='"') inString=false;
+        continue;
+      }
+      if(char==='"'){inString=true;continue}
+      if(char==="[") depth++;
+      if(char==="]" && --depth===0){
+        const arraySource=source.slice(start,i+1);
+        try{return JSON.parse(arraySource)}catch{
+          try{return Function(`"use strict";return (${arraySource})`)()}catch{return null}
+        }
+      }
+    }
+    return null;
+  }
+
+  function cardsFromHsk1(html,source){
+    const direct=extractArray(html,"flashcards");
+    if(direct) return direct.map(item=>({
+      level:source.level,lesson:source.lesson,
+      hanzi:item.front||item[0],pinyin:item.pinyin||item[1],meaning:item.back||item[2],example:item.example||item[3]||""
+    }));
+    const vocabulary=extractArray(html,"vocabulary")||[];
+    return vocabulary.map(item=>({
+      level:source.level,lesson:source.lesson,
+      hanzi:item.hanzi||item[0],pinyin:item.pinyin||item[1],meaning:item.meaning||item[2],example:item.example||item[3]||""
+    }));
+  }
+
+  function cardsFromHsk2(html,source){
+    const doc=new DOMParser().parseFromString(html,"text/html");
+    const tables=[...doc.querySelectorAll("table")].filter(table=>{
+      const heading=table.querySelector("thead")?.textContent.toLocaleLowerCase("vi")||"";
+      return heading.includes("pinyin")&&heading.includes("nghĩa");
+    });
+    return tables.flatMap(table=>{
+      const headers=[...table.querySelectorAll("thead th")].map(th=>th.textContent.trim().toLocaleLowerCase("vi"));
+      const hanziIndex=headers.findIndex(text=>text.includes("chữ hán")||text.includes("hán tự"));
+      const pinyinIndex=headers.findIndex(text=>text.includes("pinyin"));
+      const meaningIndex=headers.findIndex(text=>text.includes("nghĩa"));
+      return [...table.querySelectorAll("tbody tr")].map(row=>{
+        const cells=row.querySelectorAll("td");
+        return {level:source.level,lesson:source.lesson,hanzi:cells[hanziIndex]?.textContent.trim(),pinyin:cells[pinyinIndex]?.textContent.trim(),meaning:cells[meaningIndex]?.textContent.trim(),example:""};
+      });
+    }).filter(card=>card.hanzi&&card.pinyin&&card.meaning);
+  }
+
+  async function loadSource(source){
+    try{
+      const response=await fetch(source.url);
+      if(!response.ok) return [];
+      const html=await response.text();
+      return source.level===1?cardsFromHsk1(html,source):cardsFromHsk2(html,source);
+    }catch{return []}
+  }
+
+  function fillFilters(){
+    const levels=[...new Set(allCards.map(card=>card.level))].sort((a,b)=>a-b);
+    els.level.innerHTML='<option value="all">Tất cả cấp độ</option>';
+    els.level.insertAdjacentHTML("beforeend",levels.map(level=>`<option value="${level}">HSK ${level}</option>`).join(""));
+    updateLessonFilter();
+  }
+
+  function updateLessonFilter(){
+    const selected=els.level.value;
+    const lessons=[...new Set(allCards.filter(card=>selected==="all"||String(card.level)===selected).map(card=>card.lesson))].sort((a,b)=>a-b);
+    els.lesson.innerHTML='<option value="all">Tất cả bài học</option>'+lessons.map(lesson=>`<option value="${lesson}">Bài ${lesson}</option>`).join("");
+  }
+
+  function applyFilters(){
+    const level=els.level.value,lesson=els.lesson.value,query=els.search.value.trim().toLocaleLowerCase("vi");
+    visibleCards=allCards.filter(card=>(level==="all"||String(card.level)===level)&&(lesson==="all"||String(card.lesson)===lesson)&&(!query||[card.hanzi,card.pinyin,card.meaning,card.example].some(value=>(value||"").toLocaleLowerCase("vi").includes(query))));
+    current=0;
+    els.deck.hidden=!visibleCards.length;
+    els.status.textContent=visibleCards.length?`${visibleCards.length} thẻ đang hiển thị · Nhấn vào thẻ để lật`:`Không tìm thấy flashcard phù hợp.`;
+    renderCard();
+  }
+
+  function renderCard(){
+    if(!visibleCards.length) return;
+    const card=visibleCards[current];
+    els.card.classList.remove("is-flipped");
+    els.hanzi.textContent=card.hanzi;
+    els.pinyin.textContent=card.pinyin;
+    els.meaning.textContent=card.meaning;
+    els.example.textContent=card.example?`Ví dụ: ${card.example}`:"";
+    const source=`HSK ${card.level} · Bài ${card.lesson} · ${current+1}/${visibleCards.length}`;
+    els.source.textContent=source;els.sourceBack.textContent=source;
+  }
+
+  function move(step){
+    if(!visibleCards.length) return;
+    current=(current+step+visibleCards.length)%visibleCards.length;
+    renderCard();
+  }
+
+  els.card.addEventListener("click",()=>els.card.classList.toggle("is-flipped"));
+  els.card.addEventListener("keydown",event=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();els.card.click()}});
+  document.getElementById("prevFlash").addEventListener("click",()=>move(-1));
+  document.getElementById("nextFlash").addEventListener("click",()=>move(1));
+  document.getElementById("shuffleFlash").addEventListener("click",()=>{
+    for(let i=visibleCards.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[visibleCards[i],visibleCards[j]]=[visibleCards[j],visibleCards[i]]}
+    current=0;renderCard();
+  });
+  document.getElementById("speakFlash").addEventListener("click",()=>{
+    if(!visibleCards.length||!("speechSynthesis" in window)) return;
+    speechSynthesis.cancel();
+    const utterance=new SpeechSynthesisUtterance(visibleCards[current].hanzi);utterance.lang="zh-CN";speechSynthesis.speak(utterance);
+  });
+  els.level.addEventListener("change",()=>{updateLessonFilter();applyFilters()});
+  els.lesson.addEventListener("change",applyFilters);
+  els.search.addEventListener("input",applyFilters);
+
+  function useCards(cards){
+    const seen=new Set();
+    allCards=cards.filter(card=>{
+      const key=[card.level,card.lesson,card.hanzi,card.pinyin,card.meaning].join("|");
+      if(seen.has(key)) return false;seen.add(key);return true;
+    });
+    if(!allCards.length){
+      els.status.className="flash-error";
+      els.status.textContent="Không thể tải dữ liệu HSK. Hãy mở website bằng máy chủ local thay vì mở trực tiếp file HTML.";
+      return;
+    }
+    fillFilters();applyFilters();
+  }
+
+  useCards(embeddedCards);
+  if(location.protocol!=="file:"){
+    Promise.all(lessonSources.map(loadSource)).then(groups=>useCards([...groups.flat(),...embeddedCards]));
+  }
+})();
+</script>
 </body>
 </html>
