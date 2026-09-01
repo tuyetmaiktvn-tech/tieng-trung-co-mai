@@ -6,6 +6,342 @@
 <title>HSK 4 | Tiếng Trung Cô Mai</title>
 <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+
+<style id="tcm-hsk4-fresh-green-orange">
+:root{
+  --h4-emerald:#247a4b;
+  --h4-emerald-deep:#17613a;
+  --h4-leaf:#59a85d;
+  --h4-lime:#a9cf69;
+  --h4-orange:#f28a2e;
+  --h4-tangerine:#ef6f2f;
+  --h4-apricot:#ffd5ae;
+  --h4-cream:#fffaf0;
+  --h4-mint:#eef8e8;
+  --h4-lime-soft:#f4f8df;
+  --h4-line:#d4e4c9;
+  --h4-text:#35523b;
+}
+body{
+  color:var(--h4-text)!important;
+  background:
+    linear-gradient(180deg,#fffdf7 0%,#f7fbef 100%)!important;
+}
+.topbar{
+  background:rgba(255,253,247,.98)!important;
+  border-bottom:1px solid var(--h4-line)!important;
+}
+.brand img{display:none!important}
+.brand::before{
+  content:"梅";
+  width:68px;height:68px;border-radius:50%;
+  display:grid;place-items:center;
+  background:linear-gradient(145deg,#eb8a43,#cf6533);
+  color:#fff;
+  font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:42px;font-weight:800;line-height:1;
+  box-shadow:0 12px 28px rgba(153,91,48,.20);
+}
+.nav-link{
+  color:var(--h4-emerald-deep)!important;
+  font-size:19px!important;
+}
+.nav-link:hover,.nav-link:focus{color:var(--h4-tangerine)!important}
+.dropdown{
+  background:#fffef9!important;
+  border-color:var(--h4-line)!important;
+}
+.dropdown-title{
+  color:var(--h4-emerald-deep)!important;
+  font-size:16px!important;
+}
+.dropdown a{
+  color:var(--h4-emerald-deep)!important;
+  font-size:17px!important;
+}
+.dropdown a:hover{
+  color:var(--h4-tangerine)!important;
+  background:#fff0e2!important;
+}
+
+.page-hero{
+  background:
+    radial-gradient(circle at 82% 24%,rgba(169,207,105,.38) 0 15%,transparent 36%),
+    radial-gradient(circle at 12% 80%,rgba(242,138,46,.18) 0 13%,transparent 34%),
+    linear-gradient(135deg,#e9f8e4 0%,#fff4df 52%,#eaf7d8 100%)!important;
+  border-bottom:1px solid #d5e3c5!important;
+}
+.page-hero h1{
+  color:var(--h4-emerald-deep)!important;
+  font-size:clamp(62px,6.5vw,84px)!important;
+  line-height:1.03!important;
+  letter-spacing:.01em!important;
+}
+.page-hero p{
+  color:#4f6c52!important;
+  font-size:22px!important;
+  line-height:1.65!important;
+}
+
+.section{
+  background:
+    linear-gradient(180deg,#fffdf8 0%,#f6faef 100%)!important;
+}
+.section-heading{
+  max-width:1080px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+}
+.section-heading .kicker{
+  display:inline-block!important;
+  color:#a54d20!important;
+  background:#ffe1c5!important;
+  border:1px solid #f5bb89!important;
+  border-radius:999px!important;
+  padding:9px 19px!important;
+  font-size:20px!important;
+  line-height:1.25!important;
+  font-weight:800!important;
+  letter-spacing:.08em!important;
+  margin-bottom:18px!important;
+}
+.section-heading h2{
+  color:var(--h4-emerald-deep)!important;
+  font-size:clamp(54px,5.7vw,74px)!important;
+  line-height:1.08!important;
+  margin:0 0 20px!important;
+}
+.section-heading p{
+  color:#5a7059!important;
+  font-size:clamp(22px,2.1vw,26px)!important;
+  line-height:1.65!important;
+  max-width:980px!important;
+  margin:0 auto!important;
+}
+
+.lesson-grid{gap:28px!important}
+.lesson-grid .card{
+  background:linear-gradient(145deg,#ffffff,#eef8e8)!important;
+  border:1px solid var(--h4-line)!important;
+  border-top:7px solid var(--h4-emerald)!important;
+  box-shadow:0 11px 28px rgba(52,103,61,.10)!important;
+}
+.lesson-grid .card:nth-child(3n+2){
+  background:linear-gradient(145deg,#fffef9,#fff0df)!important;
+  border-top-color:var(--h4-orange)!important;
+}
+.lesson-grid .card:nth-child(3n){
+  background:linear-gradient(145deg,#fffef9,#f3f8df)!important;
+  border-top-color:var(--h4-lime)!important;
+}
+.lesson-grid .card:hover{
+  transform:translateY(-6px)!important;
+  box-shadow:0 17px 36px rgba(49,101,58,.16)!important;
+}
+.lesson-grid .badge{
+  background:#dff2dc!important;
+  color:#256a40!important;
+  border:1px solid #bcd9b8!important;
+  font-size:18px!important;
+  padding:7px 12px!important;
+}
+.lesson-grid .card:nth-child(3n+2) .badge{
+  background:#ffe1c8!important;
+  color:#b35325!important;
+  border-color:#f4bf95!important;
+}
+.lesson-grid .card:nth-child(3n) .badge{
+  background:#eef5cc!important;
+  color:#607d35!important;
+  border-color:#d3e19b!important;
+}
+.lesson-grid .card h3{
+  color:var(--h4-emerald-deep)!important;
+  font-size:27px!important;
+  line-height:1.45!important;
+}
+.lesson-grid .card p{
+  color:#5b6e58!important;
+  font-size:20px!important;
+  line-height:1.72!important;
+}
+.lesson-grid .text-link{
+  color:var(--h4-tangerine)!important;
+  font-size:19px!important;
+  font-weight:800!important;
+}
+.lesson-grid .text-link:hover{color:#c75522!important}
+
+footer{
+  background:#285f3d!important;
+  color:#fff7e7!important;
+}
+footer h4{
+  color:#fff9e9!important;
+  font-size:20px!important;
+}
+footer a,footer p{
+  color:#e8f3df!important;
+  font-size:17px!important;
+  line-height:1.75!important;
+}
+footer a:hover{color:#ffd39c!important}
+.copyright{
+  color:#dcebd4!important;
+  font-size:16px!important;
+}
+.mobile-menu{
+  background:#e6f2dd!important;
+  color:var(--h4-emerald-deep)!important;
+}
+
+@media(max-width:720px){
+  .brand::before{width:60px;height:60px;font-size:37px}
+  .nav-link{font-size:17px!important}
+  .page-hero h1{font-size:54px!important}
+  .page-hero p{font-size:20px!important}
+  .section-heading h2{font-size:46px!important}
+  .section-heading p{font-size:20px!important}
+  .lesson-grid .card h3{font-size:24px!important}
+  .lesson-grid .card p,.lesson-grid .text-link{font-size:18px!important}
+  .lesson-grid .badge{font-size:17px!important}
+}
+</style>
+
+
+<style id="tcm-hsk4-orange-dominant-v2">
+:root{
+  --h4-main:#e9652b;
+  --h4-main-deep:#c94e1d;
+  --h4-orange:#f28a32;
+  --h4-pumpkin:#f6a044;
+  --h4-gold:#e7b34b;
+  --h4-green:#39784a;
+  --h4-green-light:#72a65c;
+  --h4-cream:#fff8e9;
+  --h4-apricot:#ffe2c4;
+  --h4-peach:#fff0df;
+  --h4-line:#efc89f;
+  --h4-text:#66452f;
+}
+body{
+  color:var(--h4-text)!important;
+  background:linear-gradient(180deg,#fffaf0 0%,#fff3e2 100%)!important;
+}
+.topbar{
+  background:rgba(255,249,237,.98)!important;
+  border-bottom:2px solid #f0c69d!important;
+}
+.nav-link{
+  color:#b84c20!important;
+}
+.nav-link:hover,.nav-link:focus{color:#39784a!important}
+.dropdown-title{color:#c45323!important}
+.dropdown a{color:#7b5134!important}
+.dropdown a:hover{background:#ffead5!important;color:#d65b25!important}
+
+.page-hero{
+  background:
+    radial-gradient(circle at 83% 23%,rgba(255,213,167,.75) 0 17%,transparent 39%),
+    radial-gradient(circle at 12% 82%,rgba(240,130,52,.22) 0 14%,transparent 36%),
+    linear-gradient(125deg,#ffd3a8 0%,#fff0d7 42%,#ffe3bd 72%,#f8e6bd 100%)!important;
+  border-bottom:2px solid #efc292!important;
+}
+.page-hero h1{
+  color:#c94e1d!important;
+  text-shadow:0 2px 0 rgba(255,255,255,.65);
+}
+.page-hero p{
+  color:#76543c!important;
+  font-weight:600!important;
+}
+.section{
+  background:linear-gradient(180deg,#fffaf0 0%,#fff3e2 100%)!important;
+}
+.section-heading .kicker{
+  color:#fff!important;
+  background:linear-gradient(135deg,#e9652b,#f28a32)!important;
+  border-color:#dc642e!important;
+  box-shadow:0 7px 18px rgba(218,91,38,.16)!important;
+}
+.section-heading h2{color:#39784a!important}
+.section-heading p{color:#72533d!important}
+
+.lesson-grid .card{
+  background:linear-gradient(145deg,#fffdf8,#ffead5)!important;
+  border:1px solid #efc89f!important;
+  border-top:8px solid #e9652b!important;
+}
+.lesson-grid .card:nth-child(3n+2){
+  background:linear-gradient(145deg,#fffdf8,#fff1d4)!important;
+  border-top-color:#f2a13a!important;
+}
+.lesson-grid .card:nth-child(3n){
+  background:linear-gradient(145deg,#fffdf8,#f0f5df)!important;
+  border-top-color:#4f8a55!important;
+}
+.lesson-grid .badge{
+  color:#fff!important;
+  background:#e9652b!important;
+  border-color:#d85a24!important;
+}
+.lesson-grid .card:nth-child(3n+2) .badge{
+  color:#81531f!important;
+  background:#f8dda3!important;
+  border-color:#e7bd6b!important;
+}
+.lesson-grid .card:nth-child(3n) .badge{
+  color:#fff!important;
+  background:#4f8a55!important;
+  border-color:#417649!important;
+}
+.lesson-grid .card h3{color:#c94e1d!important}
+.lesson-grid .card:nth-child(3n) h3{color:#39784a!important}
+.lesson-grid .card p{color:#73533d!important}
+.lesson-grid .text-link{color:#d85a24!important}
+.lesson-grid .text-link:hover{color:#39784a!important}
+
+footer{
+  background:linear-gradient(135deg,#b94b22,#d7652e)!important;
+  color:#fff8e9!important;
+}
+footer h4{color:#fff7df!important}
+footer a,footer p{color:#ffe5c7!important}
+footer a:hover{color:#dff0d1!important}
+.copyright{color:#f8d8ba!important}
+.mobile-menu{background:#ffe1c4!important;color:#b84c20!important}
+</style>
+
+
+<style id="tcm-hsk4-dark-readable-text">
+/* HSK4: nền cam ấm + chữ xanh lá đậm/đen đậm để tăng tương phản */
+body{color:#253428!important}
+.page-hero h1{color:#244f32!important;text-shadow:none!important}
+.page-hero p{color:#2e3d31!important;font-weight:700!important}
+.nav-link{color:#244f32!important;font-weight:700!important}
+.dropdown-title{color:#244f32!important}
+.dropdown a{color:#29362d!important;font-weight:600!important}
+.section-heading h2{color:#244f32!important}
+.section-heading p{color:#303d32!important;font-weight:600!important}
+.lesson-grid .card h3,
+.lesson-grid .card:nth-child(3n) h3{
+  color:#244f32!important;
+  font-weight:800!important;
+}
+.lesson-grid .card p{
+  color:#2d352f!important;
+  font-weight:600!important;
+}
+.lesson-grid .text-link{
+  color:#255c37!important;
+  font-weight:800!important;
+}
+.lesson-grid .text-link:hover{color:#b94b22!important}
+footer h4{color:#fffaf0!important}
+footer a,footer p{color:#fff1df!important}
+</style>
+
 </head>
 <body>
 
@@ -41,8 +377,8 @@
           <a href="../resources/exams.html">Đề thi</a>
         </div>
       </div>
-      <a class="nav-link" href="../blog/index.html">Blog</a>
-      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      
+      <a class="nav-link" href="../about/about.html">Giảng viên</a>
     </nav>
   </div>
 </header>
