@@ -31,6 +31,15 @@
     summary{cursor:pointer;font-size:19px;font-weight:900;padding:14px 0;color:#755400}
     .answer-list{font-family:"Noto Serif SC","Microsoft YaHei","SimSun",serif;font-size:18px;line-height:1.65;margin:0 0 18px;padding-left:28px}
     .answer-list li{margin-bottom:7px}
+    .task-block{margin:24px 0 0;padding-top:20px;border-top:1px dashed #9fcfc7}
+    .task-block h4{font-size:21px;margin:0 0 12px;color:var(--teal-dark)}
+    .word-bank{background:#fff7d6;border:2px solid #f0cf66;border-radius:12px;padding:12px 16px;font-family:"Noto Serif SC","Microsoft YaHei","SimSun",serif;font-size:18px;line-height:1.7;margin-bottom:14px}
+    .compact-input{display:inline-block;min-width:110px;max-width:180px;border:0;border-bottom:2px solid var(--teal);background:#f5fffc;padding:2px 7px;font:18px "Noto Serif SC","Microsoft YaHei","SimSun",serif;color:var(--ink)}
+    .tf-list{list-style:none;padding:0;margin:0}
+    .tf-list li{font-family:"Noto Serif SC","Microsoft YaHei","SimSun",serif;font-size:18px;line-height:1.55;margin:0 0 12px}
+    .tf-list label{white-space:nowrap;margin-left:12px;font-family:"Times New Roman",Times,serif;font-weight:700}
+    .match-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:8px 18px;font-family:"Noto Serif SC","Microsoft YaHei","SimSun",serif;font-size:18px;line-height:1.5}
+    .match-grid p{margin:0;padding:7px 0;border-bottom:1px solid #dcece8}
     @media (max-width:640px){.reading-hero{padding-top:42px}.reading-shell{padding-left:14px;padding-right:14px}.test-card{border-radius:18px}.chinese-text{font-size:18px;padding:16px}.questions li{font-size:18px}}
   </style>
 </head>
@@ -48,6 +57,9 @@
     <nav class="test-nav" aria-label="Chọn đề đọc hiểu">
       <a href="#de-1">Đề số 1</a>
       <a href="#de-2">Đề số 2</a>
+      <a href="#doc4-de-1">Đọc 4 – Đề 1</a>
+      <a href="#doc4-de-2">Đọc 4 – Đề 2</a>
+      <a href="#doc4-de-3">Đọc 4 – Đề 3</a>
     </nav>
 
     <article class="test-card" id="de-1">
@@ -115,6 +127,78 @@
         <details><summary>Xem đáp án bài đọc 2</summary><ol class="answer-list" start="46"><li>星期日。</li><li>写信、写阅读课的作业，预习星期一的语法和生词。</li><li>山本。</li><li>去邮局买报纸。</li><li>《日汉词典》。</li></ol></details>
       </section>
     </article>
+
+    <article class="test-card" id="doc4-de-1">
+      <h2>Đọc 4 – Đề số 1</h2>
+      <p class="test-intro">三、阅读短文</p>
+      <section class="passage">
+        <h3>中国的“月光族”</h3>
+        <p class="chinese-text" lang="zh-Hans">中国的“月光族”越来越多。“光”在汉语中的一个意思是“一点儿也不剩”，“月光族”就是指那些每月都把工资花光的年轻人。
+李小姐在一家公司工作。月薪是4500元，除去每月的房租、生活费，再加上偶尔和朋友在酒吧喝两杯，工资几乎就没有了。和一般人相比，她的工资已经算多的了。即使这样，李小姐还抱怨说：“每到月底，我就两手空空，等着下月的月薪。”
+在公司当经理的王娜月收入6000多元，可她不仅月月光，而且还常常向别人借钱。她上个月10号才拿到薪资，到25号口袋里就只有1000多元了。月底的时候，王娜的口袋已经基本空了，可她又看上了一款笔记本电脑。虽然可以分期付款，可她连首付也拿不出来，于是她只好去找妈妈借。为了还每月的贷款，王娜的旅游计划已经泡汤了。
+月光族是商家最喜欢的消费者，因为他们有强烈的消费欲望，会花钱；更重要的是他们有很强的赚钱能力，有钱可花。“富，富不过30天；穷，穷不了一个月”，说的就是月光族们的生活，追求时尚是月光族产生的直接原因。
+对于月光族，专家们提出了这样的建议，如强制储蓄，即每月做到把工资的一部分用来储蓄。虽然每月储蓄的数额不多，但从长远来算，就可以积累一笔不小的资金。专家们还建议月光族们要少用信用卡，年轻人往往一逛街便很难控制自己的消费欲望。因此在逛街前要先想好这次主要购买什么和大概的花费，不要盲目购物。</p>
+
+        <div class="task-block"><h4>一、根据短文内容，选词填空（20分）</h4>
+          <ol class="questions">
+            <li>李小姐每个月的花费主要用于 <input class="compact-input" aria-label="Đề 1 điền từ 1"> 和 <input class="compact-input" aria-label="Đề 1 điền từ 2">，还有有时和朋友去酒吧玩儿的钱。</li>
+            <li>对于“月光族”，<input class="compact-input" aria-label="Đề 1 điền từ 3"> 给出的建议是，每个月要强制自己 <input class="compact-input" aria-label="Đề 1 điền từ 4">，另外，还要尽量少用 <input class="compact-input" aria-label="Đề 1 điền từ 5">，买东西要有计划，购物的时候不要太 <input class="compact-input" aria-label="Đề 1 điền từ 6">。</li>
+            <li>王娜是一家公司的 <input class="compact-input" aria-label="Đề 1 điền từ 7">，她也是个“月光族”。最近她想要通过 <input class="compact-input" aria-label="Đề 1 điền từ 8"> 的方式买一台笔记本电脑，但是她连 <input class="compact-input" aria-label="Đề 1 điền từ 9"> 的钱也没有，只好去借 <input class="compact-input" aria-label="Đề 1 điền từ 10"> 的钱。</li>
+          </ol>
+        </div>
+        <div class="task-block"><h4>二、根据短文内容判断对错（10分）</h4><ol class="tf-list">
+          <li>1. 李小姐每个月的工资都用来付租房。<label><input type="radio" name="d41-t1"> 对</label><label><input type="radio" name="d41-t1"> 错</label></li>
+          <li>2. 李小姐的工资比一般人的低。<label><input type="radio" name="d41-t2"> 对</label><label><input type="radio" name="d41-t2"> 错</label></li>
+          <li>3. 王娜的工资很高，很多朋友向她借钱。<label><input type="radio" name="d41-t3"> 对</label><label><input type="radio" name="d41-t3"> 错</label></li>
+          <li>4. 商家们很喜欢月光族。<label><input type="radio" name="d41-t4"> 对</label><label><input type="radio" name="d41-t4"> 错</label></li>
+          <li>5. 月光族们一般都喜欢追求时尚。<label><input type="radio" name="d41-t5"> 对</label><label><input type="radio" name="d41-t5"> 错</label></li>
+        </ol></div>
+        <div class="task-block"><h4>三、为左边的词语选择合适的解释（10分）</h4><div class="match-grid"><p>月薪（　）</p><p>A. 从银行借钱</p><p>首付（　）</p><p>B. 到银行存钱</p><p>贷款（　）</p><p>C. 买东西的人</p><p>盲目（　）</p><p>D. 每个月挣的钱</p><p>消费者（　）</p><p>F. 买东西时第一次交的钱</p><p></p><p>G. 没有目的地</p></div></div>
+        <div class="task-block"><h4>四、回答问题（10分）</h4><ol class="questions"><li>“月光族”是什么样的人？<textarea class="answer-input"></textarea></li><li>王娜的旅游计划为什么泡汤了？<textarea class="answer-input"></textarea></li><li>专家们提出什么建议？<textarea class="answer-input"></textarea></li><li>年轻人逛街前，应该怎么办才能控制自己的消费欲望？<textarea class="answer-input"></textarea></li></ol></div>
+        <details><summary>Xem đáp án Đọc 4 – Đề 1</summary>
+          <div class="answer-list"><p><strong>一、填空：</strong>1. 房租；2. 生活费；3. 专家们；4. 储蓄；5. 信用卡；6. 盲目；7. 经理；8. 分期付款；9. 首付；10. 妈妈。</p><p><strong>二、判断：</strong>1. 错；2. 错；3. 错；4. 对；5. 错。</p><p><strong>三、配对：</strong>月薪—D；首付—F；贷款—A；盲目—G；消费者—C。</p><p><strong>四、回答：</strong></p><ol><li>每月都把工资花光的年轻人。</li><li>因为她每个月要还贷款。</li><li>强制储蓄，少用信用卡。</li><li>先想好这次主要购买什么和大概的花费。</li></ol></div>
+        </details>
+      </section>
+    </article>
+
+    <article class="test-card" id="doc4-de-2">
+      <h2>Đọc 4 – Đề số 2</h2><p class="test-intro">三、阅读短文</p>
+      <section class="passage"><h3>大学生就业难</h3>
+        <p class="chinese-text" lang="zh-Hans">“我都参加了20场校外的招聘会了，现在还没有找到工作。”北京某大学社会学专业的高文说。不好找工作就只好读研究生，高文的宿舍住了四个人，除了他以外，其他三个人都选择了读研究生。高文对薪水的要求也不断下降，从3月时的4000元，降到了5月的2000元，可能还会降。高文所在的班，共29名学生，13个考上了研究生，剩下16个人都开始找工作，到了5月底，只有6个人找到了工作，且其中5个同学是家在北京的学生，找工作时得到了父母和朋友的帮助。
+2001年，北京师范大学对全国6000名大学本科毕业生进行调查，当年全国大学毕业生参加工作所接受的月薪底线是2000元，以后便逐年下降。到2005年，即使在薪水要求远高于全国平均水平的北京，毕业生月薪底线也已经降至1500元，且“这一要求还可能再降”。
+大学生就业为什么这么难呢？主要有三个原因：
+扩招。大学招收的学生数量每年都在扩大，从2002年的145万增加到2005年的340万。
+专业问题。一些专业的学生容易找到工作，于是，很多大学都开了这样的专业。这些专业的学生越来越多。等到他们毕业时，人数超过了社会的需求，找工作就很难了。
+大学生的要求太高。大部分大学生都希望到大城市工作，一毕业，全国的大学毕业生都来到北京、上海这样的大城市找工作，不愿意去别的中小城市。
+造成大学生就业难的原因是多方面的，要解决就业难的问题，需要用人单位、大学生、高校、全社会共同努力。</p>
+        <div class="task-block"><h4>一、根据短文内容，选词填空（20分）</h4><p class="word-bank">扩招　热门　调查　房租　需求　愿意　超过　降至　大城市　就业　工作　平均</p><ol class="questions"><li>大学生 ________ 难，有很多原因。其中一个是因为 ________，高校的学生越来越多；第二个是为了容易找到 ________，很多学生都喜欢考 ________ 专业，但是几年后，这些专业的学生 ________ 了社会的 ________，也不容易找到工作。<textarea class="answer-input"></textarea></li><li>很多大学生的就业要求很高，他们都希望在 ________ 工作，而不 ________ 去中小城市工作。<textarea class="answer-input"></textarea></li><li>到2005年，即使在薪水要求远高于全国 ________ 水平的北京，毕业生月薪底线也已经 ________ 1500元。<textarea class="answer-input"></textarea></li></ol></div>
+        <div class="task-block"><h4>二、根据短文内容判断对错（10分）</h4><ol class="tf-list"><li>1. 高文学的是社会学专业。<label><input type="radio" name="d42-t1"> 对</label><label><input type="radio" name="d42-t1"> 错</label></li><li>2. 高文的同屋们都要考研。<label><input type="radio" name="d42-t2"> 对</label><label><input type="radio" name="d42-t2"> 错</label></li><li>3. 高文班的大部分同学都已经找到了工作。<label><input type="radio" name="d42-t3"> 对</label><label><input type="radio" name="d42-t3"> 错</label></li><li>4. 高文的月薪底线是1500元。<label><input type="radio" name="d42-t4"> 对</label><label><input type="radio" name="d42-t4"> 错</label></li><li>5. 2005年，全国大学毕业生要求的最低月薪是1500元。<label><input type="radio" name="d42-t5"> 对</label><label><input type="radio" name="d42-t5"> 错</label></li></ol></div>
+        <div class="task-block"><h4>三、为词语选择合适的解释（10分）</h4><div class="match-grid"><p>考研（　）</p><p>A. 指最低的条件、最低的限度</p><p>就业（　）</p><p>C. 参加工作</p><p>底线（　）</p><p>D. 得到了学位、毕业文凭或证书的人</p><p>高校（　）</p><p>F. 高等学校的简称</p><p>毕业生（　）</p><p>G. 考研究生</p></div></div>
+        <div class="task-block"><h4>四、回答问题（10分）</h4><ol class="questions"><li>2001年，北京师范大学对什么对象进行了调查？<textarea class="answer-input"></textarea></li><li>2005年，毕业生月薪底线降至多少？<textarea class="answer-input"></textarea></li><li>大学生就业难主要有几个原因？<textarea class="answer-input"></textarea></li><li>现在怎么办才能解决毕业生就业难的问题？<textarea class="answer-input"></textarea></li></ol></div>
+        <details><summary>Xem đáp án Đọc 4 – Đề 2</summary>
+          <div class="answer-list"><p><strong>一、填空：</strong>1. 就业；2. 扩招；3. 工作；4. 热门；5. 超过；6. 需求；7. 大城市；8. 愿意；9. 平均；10. 降至。</p><p><strong>二、判断：</strong>1. 对；2. 对；3. 错；4. 错；5. 错。</p><p><strong>三、配对：</strong>考研—G；就业—C；底线—A；高校—F；毕业生—D。</p><p><strong>四、回答：</strong></p><ol><li>北京师范大学对全国6000名大学本科毕业生进行了调查。</li><li>月薪底线降至1500元。</li><li>主要有三个原因。</li><li>需要用人单位、大学生、高校和全社会共同努力。</li></ol></div>
+        </details>
+      </section>
+    </article>
+
+    <article class="test-card" id="doc4-de-3">
+      <h2>Đọc 4 – Đề số 3</h2><p class="test-intro">三、阅读短文</p>
+      <section class="passage"><h3>有车一族</h3>
+        <p class="chinese-text" lang="zh-Hans">25年前，中国消费者最想要的还是彩色电视机，而“买轮车”就是指买自行车。现在不同了，经过三十几年的经济改革，中国人逐渐富裕起来，而且由于国产汽车业的发展，汽车的价格越来越低，汽车开始进入中国人的日常生活。
+在一家外企工作的张明是去年刚买的车，谈起为什么买车，他说，买车一直是他的梦想，小时候就从外国的电影里看到人们开着车很自由地去购物、旅游，特别羡慕这样的生活。现在自己的工作收入还不错，汽车的价格也不贵，于是，就买了一辆。自从买了车以后，他的生活变得更轻松、更丰富了，每天可以听着音乐轻松地开车上班，不必挤公共汽车了，而且周末的时候，他可以和朋友开着车到郊区去玩儿。以前没有车的时候，他常常待在家里，或者只能在市里转转。
+像张明这样的有车一族在体会到汽车所带来的快乐的同时，也体会到了汽车所带来的烦恼。首先是堵车，由于私家车越来越多，城市交通变得越来越拥堵。虽然有车，他每天早上都要7点以前出门，只有这样才能8点以前赶到公司，虽然家离公司并不远。其次，油价越来越高，自从买了车以后，开车的费用几乎每个月都在涨。对于很多有车族来说，车买得起却开不起了。
+张明说，如果堵车一直这么严重，油价再继续涨下去，他打算每天坐地铁上班了。地铁虽然人多，挤一点儿，但是不堵车，快速准时，如果坐地铁上班，用不了二十分钟就到了，而且地铁的票价很低，与开车相比，费用便宜不少。
+张明的想法代表了很多有车一族的想法。随着中国公交系统越来越方便舒适，会有越来越多的有车一族选择公共交通出行。和世界上很多大城市的人一样，中国人的出行也将经历从私家车向公共交通的回归。</p>
+        <div class="task-block"><h4>一、根据短文内容，选词填空（20分）</h4><p class="word-bank">梦想　羡慕　外企　公共汽车　郊区　烦恼　堵车　油价　地铁　费用</p><p class="chinese-text">张明从小就一直 ________ 着买车，他很 ________ 电影里外国人有车的生活。他现在在 ________ 工作，收入不错，车的价格也不高，于是就买了一辆。有了车以后，张明不坐 ________ 上下班了，而且生活也变得更丰富了，周末可以开车和朋友去 ________ 玩儿。但是现在他也体会到了开车的 ________，因为 ________ 越来越厉害，而且 ________ 越来越高。如果这样的情况继续下去，张明打算坐 ________ 上班了，这样会更快速，而且 ________ 便宜。</p><textarea class="answer-input" aria-label="Đề 3 đáp án điền từ"></textarea></div>
+        <div class="task-block"><h4>二、根据短文内容判断对错（10分）</h4><ol class="tf-list"><li>1. 二十五年前，中国人说“买轮车”是指买汽车。<label><input type="radio" name="d43-t1"> 对</label><label><input type="radio" name="d43-t1"> 错</label></li><li>2. 买车一直是张明的一个梦想。<label><input type="radio" name="d43-t2"> 对</label><label><input type="radio" name="d43-t2"> 错</label></li><li>3. 有车以后，张明每天早上不用早出门了，能很快到公司。<label><input type="radio" name="d43-t3"> 对</label><label><input type="radio" name="d43-t3"> 错</label></li><li>4. 张明决定以后每天坐地铁上班。<label><input type="radio" name="d43-t4"> 对</label><label><input type="radio" name="d43-t4"> 错</label></li><li>5. 未来越来越多的中国人选择公共交通出行。<label><input type="radio" name="d43-t5"> 对</label><label><input type="radio" name="d43-t5"> 错</label></li></ol></div>
+        <div class="task-block"><h4>三、为词语选择合适的解释（10分）</h4><div class="match-grid"><p>富裕（　）</p><p>B. 大家都可以用的</p><p>郊区（　）</p><p>C. 有很多钱</p><p>拥堵（　）</p><p>D. 准确的时间</p><p>准时（　）</p><p>E. 拥挤、车辆无法通过道路</p><p>公共（　）</p><p>F. 城市周围的地区</p></div></div>
+        <div class="task-block"><h4>四、回答问题（10分）</h4><ol class="questions"><li>张明买汽车了没？<textarea class="answer-input"></textarea></li><li>家离公司不远，为什么有车一族要早点出门？<textarea class="answer-input"></textarea></li><li>为什么越来越多的有车一族想挤地铁上下班？<textarea class="answer-input"></textarea></li><li>现在中国公交系统怎么样？<textarea class="answer-input"></textarea></li></ol></div>
+        <details><summary>Xem đáp án Đọc 4 – Đề 3</summary>
+          <div class="answer-list"><p><strong>一、填空：</strong>1. 梦想；2. 羡慕；3. 外企；4. 公共汽车；5. 郊区；6. 烦恼；7. 堵车；8. 油价；9. 地铁；10. 费用。</p><p><strong>二、判断：</strong>1. 错；2. 对；3. 错；4. 错；5. 对。</p><p><strong>三、配对：</strong>富裕—C；郊区—F；拥堵—E；准时—D；公共—B。</p><p><strong>四、回答：</strong></p><ol><li>买了。</li><li>因为城市交通变得越来越拥堵。</li><li>因为油价越来越高，堵车一直很严重。</li><li>中国公交系统越来越方便舒适。</li></ol></div>
+        </details>
+      </section>
+    </article>
+
   </div>
 </main>
 <script src="../assets/js/app.js?v=3.3.1"></script>
