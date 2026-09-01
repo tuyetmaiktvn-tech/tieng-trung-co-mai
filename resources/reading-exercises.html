@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đọc hiểu | Bài tập mở rộng | Tiếng Trung Cô Mai</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+  <style>
+    :root{--ink:#17324d;--teal:#008f8c;--teal-dark:#08706e;--cream:#fffdf3;--line:#cce8e2}
+    *{box-sizing:border-box}
+    body{font-family:"Times New Roman",Times,serif;background:linear-gradient(180deg,var(--cream),#edfff9);color:var(--ink);margin:0}
+    .reading-hero{padding:56px 20px 48px;text-align:center;background:linear-gradient(135deg,#ffca3a,#52d6a5)}
+    .reading-hero h1{font-size:clamp(38px,6vw,60px);font-weight:900;margin:0 0 10px}
+    .reading-hero p{font-size:21px;font-weight:700;margin:0 auto;max-width:760px;line-height:1.5}
+    .back-link{display:inline-block;margin-top:20px;font-size:18px;font-weight:800;color:var(--ink)}
+    .reading-shell{max-width:1040px;margin:0 auto;padding:36px 20px 64px}
+    .test-nav{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+    .test-nav a{display:inline-block;padding:11px 22px;border-radius:999px;background:#fff;border:2px solid var(--teal);color:var(--teal-dark);font-size:18px;font-weight:800;text-decoration:none}
+    .test-card{background:#fff;border:2px solid var(--line);border-radius:24px;box-shadow:0 14px 34px rgba(22,67,92,.12);padding:clamp(22px,4vw,42px);margin:0 0 34px;scroll-margin-top:18px}
+    .test-card h2{font-size:32px;margin:0 0 8px;color:var(--teal-dark)}
+    .test-intro{font-size:18px;font-weight:700;margin:0 0 26px}
+    .passage{padding:24px 0;border-top:2px solid var(--line)}
+    .passage:first-of-type{border-top:0;padding-top:0}
+    .passage h3{font-size:25px;margin:0 0 14px}
+    .chinese-text{font-family:"Noto Serif SC","Microsoft YaHei","SimSun",serif;font-size:20px;line-height:1.9;text-align:justify;background:#f4fffb;border-left:5px solid var(--teal);border-radius:0 14px 14px 0;padding:20px;margin:0 0 22px;white-space:pre-line}
+    .questions{margin:0;padding-left:28px}
+    .questions li{font-family:"Noto Serif SC","Microsoft YaHei","SimSun",serif;font-size:19px;line-height:1.55;margin:0 0 18px;padding-left:4px}
+    .answer-input{display:block;width:100%;min-height:44px;margin-top:8px;border:2px solid #b9d8d4;border-radius:10px;padding:9px 12px;font:17px "Times New Roman",Times,serif;color:var(--ink);resize:vertical}
+    .answer-input:focus{outline:3px solid rgba(0,143,140,.2);border-color:var(--teal)}
+    details{margin-top:18px;border:2px solid #ffd66e;background:#fff9df;border-radius:14px;padding:0 18px}
+    summary{cursor:pointer;font-size:19px;font-weight:900;padding:14px 0;color:#755400}
+    .answer-list{font-family:"Noto Serif SC","Microsoft YaHei","SimSun",serif;font-size:18px;line-height:1.65;margin:0 0 18px;padding-left:28px}
+    .answer-list li{margin-bottom:7px}
+    @media (max-width:640px){.reading-hero{padding-top:42px}.reading-shell{padding-left:14px;padding-right:14px}.test-card{border-radius:18px}.chinese-text{font-size:18px;padding:16px}.questions li{font-size:18px}}
+  </style>
+</head>
+<body>
+<main>
+  <section class="reading-hero">
+    <div class="container">
+      <h1>Đọc hiểu</h1>
+      <p>Đọc kỹ từng đoạn văn, trả lời câu hỏi bằng tiếng Trung rồi mở phần đáp án để tự kiểm tra.</p>
+      <a class="back-link" href="extended-exercises.html">← Trở về Bài tập mở rộng</a>
+    </div>
+  </section>
+
+  <div class="reading-shell">
+    <nav class="test-nav" aria-label="Chọn đề đọc hiểu">
+      <a href="#de-1">Đề số 1</a>
+      <a href="#de-2">Đề số 2</a>
+    </nav>
+
+    <article class="test-card" id="de-1">
+      <h2>Đề số 1</h2>
+      <p class="test-intro">五。读后回答问题（20分）</p>
+
+      <section class="passage">
+        <h3>短文一</h3>
+        <p class="chinese-text" lang="zh-Hans">山田、安娜和玛丽是我的同班同学。我们常常一起聊天儿。山田说他喜欢中国功夫，他每天都练习。玛丽说她的爱好是中国书法，她觉得书法太有意思了。安娜喜欢看京剧，她说京剧里的衣服真漂亮。我的爱好是旅行，中国有很多名胜古迹，北京的故宫、长城、颐和园，杭州的西湖，西安的兵马俑，桂林的山水……啊，太多了！这些地方我都想去，我一定要去。</p>
+        <ol class="questions" start="41">
+          <li>山田、安娜、玛丽在一个班学习吗？<textarea class="answer-input" aria-label="Câu trả lời câu 41"></textarea></li>
+          <li>山田有什么爱好？<textarea class="answer-input" aria-label="Câu trả lời câu 42"></textarea></li>
+          <li>玛丽喜欢什么？<textarea class="answer-input" aria-label="Câu trả lời câu 43"></textarea></li>
+          <li>安娜觉得京剧里的衣服怎么样？<textarea class="answer-input" aria-label="Câu trả lời câu 44"></textarea></li>
+          <li>“我”喜欢什么？“我”想去哪儿旅行？<textarea class="answer-input" aria-label="Câu trả lời câu 45"></textarea></li>
+        </ol>
+        <details><summary>Xem đáp án bài đọc 1</summary><ol class="answer-list" start="41"><li>是。</li><li>中国功夫。</li><li>中国书法。</li><li>漂亮。</li><li>“我”喜欢旅行，想去北京的故宫、长城、颐和园，杭州的西湖，西安的兵马俑和桂林的山水。</li></ol></details>
+      </section>
+
+      <section class="passage">
+        <h3>短文二</h3>
+        <p class="chinese-text" lang="zh-Hans">很多中国人常常早睡早起。他们六点半起床，七点吃早饭，八点上班。上午工作四个小时，十二点一刻吃午饭。午饭后休息一会儿，下午工作四个小时。下班后很多人去商店、市场买菜，以后回家做饭，晚饭在七点左右。晚饭后人们常常看电视、看书、看报、聊天儿，很多人十点半左右睡觉。</p>
+        <ol class="questions" start="46">
+          <li>人们常常几点起床？<textarea class="answer-input" aria-label="Câu trả lời câu 46"></textarea></li>
+          <li>他们每天工作几个小时？<textarea class="answer-input" aria-label="Câu trả lời câu 47"></textarea></li>
+          <li>下班后人们做什么？<textarea class="answer-input" aria-label="Câu trả lời câu 48"></textarea></li>
+          <li>晚饭后人们常常做什么？<textarea class="answer-input" aria-label="Câu trả lời câu 49"></textarea></li>
+          <li>人们常常几点睡觉？<textarea class="answer-input" aria-label="Câu trả lời câu 50"></textarea></li>
+        </ol>
+        <details><summary>Xem đáp án bài đọc 2</summary><ol class="answer-list" start="46"><li>六点半。</li><li>八个小时。</li><li>去商店、市场买菜。</li><li>看电视、看书、看报、聊天儿。</li><li>十点半左右。</li></ol></details>
+      </section>
+    </article>
+
+    <article class="test-card" id="de-2">
+      <h2>Đề số 2</h2>
+      <p class="test-intro">五。读后回答问题（20分）</p>
+
+      <section class="passage">
+        <h3>短文一</h3>
+        <p class="chinese-text" lang="zh-Hans">妈妈、爸爸：
+你们好！我来北京一个多月了，刚有点儿习惯这儿的生活。我们的学校不太大，但是学生很多，我们系的留学生就有1000多个。我们星期一到星期五上课，我们有综合课、听力课、阅读课。我最喜欢阅读课，阅读课老师教我们认汉字、写汉字。汉字很有意思。刚开始学习汉语的时候，我觉得汉字差不多都一样，太难写，太难记了，但是，现在我不这样想了。我每天都练习写汉字，我已经会写300多个汉字了。妈妈、爸爸，你们知道吗，我还会用电脑“写”汉字呢。用电脑“写”的汉字特别好看。我们学校有电脑室，每星期二下午我都去那儿上电脑课。用电脑“写”汉字更有意思。我想，回国的时候我要带一些中文软件，那样我就能用电脑“写”汉字了。
+祝你们身体健康
+女儿 玛丽
+1999年10月25日</p>
+        <ol class="questions" start="41">
+          <li>玛丽是什么时候到北京的？<textarea class="answer-input" aria-label="Câu trả lời câu 41 đề 2"></textarea></li>
+          <li>玛丽有什么课？<textarea class="answer-input" aria-label="Câu trả lời câu 42 đề 2"></textarea></li>
+          <li>玛丽最喜欢什么课？为什么？<textarea class="answer-input" aria-label="Câu trả lời câu 43 đề 2"></textarea></li>
+          <li>开始学汉语的时候，玛丽觉得汉字容易吗？现在呢？<textarea class="answer-input" aria-label="Câu trả lời câu 44 đề 2"></textarea></li>
+          <li>玛丽在哪儿上电脑课？<textarea class="answer-input" aria-label="Câu trả lời câu 45 đề 2"></textarea></li>
+        </ol>
+        <details><summary>Xem đáp án bài đọc 1</summary><ol class="answer-list" start="41"><li>1999年9月。</li><li>综合课、听力课、阅读课和电脑课。</li><li>阅读课，因为老师教她认汉字、写汉字，她觉得汉字很有意思。</li><li>不容易，她觉得汉字差不多都一样，太难写、太难记。现在她不这样想了。</li><li>学校的电脑室。</li></ol></details>
+      </section>
+
+      <section class="passage">
+        <h3>短文二</h3>
+        <p class="chinese-text" lang="zh-Hans">今天是星期日，马丁起床后问山本：“今天做什么？”山本想了想，说：“今天要做的事很多。上午我要写信，写阅读课的作业，预习星期一的语法和生词。下午我去邮局寄信，还要去银行换钱，然后去书店买一本《日汉词典》，晚上去大使馆看朋友。”马丁说：“今天你真忙！我下午跟你一起去邮局买报纸，然后回宿舍看报纸，听音乐。”</p>
+        <ol class="questions" start="46">
+          <li>今天星期几？<textarea class="answer-input" aria-label="Câu trả lời câu 46 đề 2"></textarea></li>
+          <li>山本今天早上要做什么？<textarea class="answer-input" aria-label="Câu trả lời câu 47 đề 2"></textarea></li>
+          <li>马丁和山本今天谁忙？<textarea class="answer-input" aria-label="Câu trả lời câu 48 đề 2"></textarea></li>
+          <li>马丁下午要做什么？<textarea class="answer-input" aria-label="Câu trả lời câu 49 đề 2"></textarea></li>
+          <li>山本要买什么词典？<textarea class="answer-input" aria-label="Câu trả lời câu 50 đề 2"></textarea></li>
+        </ol>
+        <details><summary>Xem đáp án bài đọc 2</summary><ol class="answer-list" start="46"><li>星期日。</li><li>写信、写阅读课的作业，预习星期一的语法和生词。</li><li>山本。</li><li>去邮局买报纸。</li><li>《日汉词典》。</li></ol></details>
+      </section>
+    </article>
+  </div>
+</main>
+<script src="../assets/js/app.js?v=3.3.1"></script>
+</body>
+</html>
