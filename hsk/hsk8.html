@@ -6,6 +6,187 @@
 <title>HSK 8 | Tiếng Trung Cô Mai</title>
 <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+
+<style id="tcm-hsk8-sky-yellow">
+:root{
+  --h8-sky:#2f8fc7;
+  --h8-sky-deep:#17658f;
+  --h8-cyan:#65c7d0;
+  --h8-yellow:#f3cf4f;
+  --h8-yellow-deep:#aa7b08;
+  --h8-cream:#fffaf0;
+  --h8-blue-soft:#e7f5fb;
+  --h8-yellow-soft:#fff4bd;
+  --h8-line:#c9e2eb;
+  --h8-text:#24323a;
+}
+body{
+  color:var(--h8-text)!important;
+  background:linear-gradient(180deg,#fffdf6 0%,#edf8fb 100%)!important;
+}
+.topbar{
+  background:rgba(255,253,246,.98)!important;
+  border-bottom:2px solid #cfe5eb!important;
+}
+.brand img{display:none!important}
+.brand::before{
+  content:"梅";
+  width:68px;height:68px;border-radius:50%;
+  display:grid;place-items:center;
+  background:linear-gradient(145deg,#eb8a43,#cf6533);
+  color:#fff;
+  font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:42px;font-weight:800;line-height:1;
+  box-shadow:0 12px 28px rgba(153,91,48,.20);
+}
+.nav-link{
+  color:#17658f!important;
+  font-size:19px!important;
+  font-weight:750!important;
+}
+.nav-link:hover,.nav-link:focus{color:#9a7109!important}
+.dropdown{background:#fffef8!important;border-color:#cfe5eb!important}
+.dropdown-title{color:#17658f!important;font-size:16px!important}
+.dropdown a{color:#2d3a42!important;font-size:17px!important;font-weight:600!important}
+.dropdown a:hover{background:#fff3bf!important;color:#17658f!important}
+
+.page-hero{
+  background:
+    radial-gradient(circle at 82% 20%,rgba(243,207,79,.46) 0 15%,transparent 35%),
+    radial-gradient(circle at 13% 80%,rgba(47,143,199,.15) 0 15%,transparent 36%),
+    linear-gradient(130deg,#dff3fb 0%,#fff2c9 48%,#e3f7f6 100%)!important;
+  border-bottom:2px solid #c9e3eb!important;
+}
+.page-hero h1{
+  color:#17658f!important;
+  font-size:clamp(66px,6.8vw,88px)!important;
+  line-height:1.02!important;
+}
+.page-hero p{
+  color:#2c3840!important;
+  font-size:23px!important;
+  line-height:1.65!important;
+  font-weight:650!important;
+}
+.section{
+  background:linear-gradient(180deg,#fffdf7 0%,#eff8fb 100%)!important;
+}
+.section-heading{
+  max-width:1080px!important;
+  margin-left:auto!important;margin-right:auto!important;
+  text-align:center!important;
+}
+.section-heading .kicker{
+  display:inline-block!important;
+  color:#5f4809!important;
+  background:#f7df78!important;
+  border:1px solid #e5c252!important;
+  border-radius:999px!important;
+  padding:10px 20px!important;
+  font-size:20px!important;
+  line-height:1.25!important;
+  font-weight:850!important;
+  letter-spacing:.08em!important;
+  margin-bottom:18px!important;
+}
+.section-heading h2{
+  color:#17658f!important;
+  font-size:clamp(56px,5.8vw,76px)!important;
+  line-height:1.08!important;
+  margin:0 0 20px!important;
+}
+.section-heading p{
+  color:#2f3940!important;
+  font-size:clamp(22px,2.1vw,27px)!important;
+  line-height:1.65!important;
+  font-weight:600!important;
+  max-width:980px!important;
+  margin:0 auto!important;
+}
+
+.lesson-grid{gap:28px!important}
+.lesson-grid .card{
+  background:linear-gradient(145deg,#fffdf9,#e8f6fb)!important;
+  border:1px solid #cfe4ec!important;
+  border-top:8px solid #2f8fc7!important;
+  box-shadow:0 11px 28px rgba(23,101,143,.10)!important;
+}
+.lesson-grid .card:nth-child(3n+2){
+  background:linear-gradient(145deg,#fffdf9,#fff4c9)!important;
+  border-top-color:#d9af27!important;
+}
+.lesson-grid .card:nth-child(3n){
+  background:linear-gradient(145deg,#fffdf9,#e7f7f5)!important;
+  border-top-color:#55b9c1!important;
+}
+.lesson-grid .card:hover{
+  transform:translateY(-6px)!important;
+  box-shadow:0 17px 36px rgba(23,101,143,.16)!important;
+}
+.lesson-grid .badge{
+  background:#2f8fc7!important;
+  color:#fff!important;
+  border:1px solid #267eaf!important;
+  font-size:18px!important;
+  padding:7px 12px!important;
+  font-weight:850!important;
+}
+.lesson-grid .card:nth-child(3n+2) .badge{
+  background:#f4dc79!important;
+  color:#634b0a!important;
+  border-color:#ddb951!important;
+}
+.lesson-grid .card:nth-child(3n) .badge{
+  background:#cceff0!important;
+  color:#21656a!important;
+  border-color:#a7d9dd!important;
+}
+.lesson-grid .card h3{
+  color:#17658f!important;
+  font-size:28px!important;
+  line-height:1.42!important;
+  font-weight:850!important;
+}
+.lesson-grid .card p{
+  color:#2d3337!important;
+  font-size:20px!important;
+  line-height:1.72!important;
+  font-weight:600!important;
+}
+.lesson-grid .text-link{
+  color:#17658f!important;
+  font-size:19px!important;
+  font-weight:850!important;
+}
+.lesson-grid .text-link:hover{color:#9a7109!important}
+
+footer{
+  background:linear-gradient(135deg,#155d85,#2484b5)!important;
+  color:#fff9e9!important;
+}
+footer h4{color:#fffbe9!important;font-size:20px!important}
+footer a,footer p{
+  color:#e5f5fb!important;
+  font-size:17px!important;
+  line-height:1.75!important;
+}
+footer a:hover{color:#ffe27b!important}
+.copyright{color:#d8eef6!important;font-size:16px!important}
+.mobile-menu{background:#e6f4f8!important;color:#17658f!important}
+
+@media(max-width:720px){
+  .brand::before{width:60px;height:60px;font-size:37px}
+  .nav-link{font-size:17px!important}
+  .page-hero h1{font-size:56px!important}
+  .page-hero p{font-size:20px!important}
+  .section-heading h2{font-size:47px!important}
+  .section-heading p{font-size:20px!important}
+  .lesson-grid .card h3{font-size:24px!important}
+  .lesson-grid .card p,.lesson-grid .text-link{font-size:18px!important}
+  .lesson-grid .badge{font-size:17px!important}
+}
+</style>
+
 </head>
 <body>
 
@@ -41,8 +222,8 @@
           <a href="../resources/exams.html">Đề thi</a>
         </div>
       </div>
-      <a class="nav-link" href="../blog/index.html">Blog</a>
-      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      
+      <a class="nav-link" href="../about/about.html">Giảng viên</a>
     </nav>
   </div>
 </header>
