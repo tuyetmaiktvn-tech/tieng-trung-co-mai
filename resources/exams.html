@@ -6,6 +6,127 @@
 <title>Đề thi | Tiếng Trung Cô Mai</title>
 <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+
+<style id="tcm-exams-light-gold-olive">
+:root{
+  --ex-gold:#c69a3b;
+  --ex-gold-deep:#927126;
+  --ex-olive:#65784b;
+  --ex-olive-deep:#4d6138;
+  --ex-cream:#fffdf5;
+  --ex-gold-soft:#fbf1cc;
+  --ex-olive-soft:#eef3df;
+  --ex-text:#353a2f;
+}
+body{
+  color:var(--ex-text)!important;
+  background:linear-gradient(180deg,#fffdf7 0%,#f8f5e9 100%)!important;
+}
+.topbar{
+  background:rgba(255,253,248,.98)!important;
+  border-bottom:2px solid #e7dfc9!important;
+}
+.brand img{display:none!important}
+.brand::before{
+  content:"梅";
+  width:68px;height:68px;border-radius:50%;
+  display:grid;place-items:center;
+  background:linear-gradient(145deg,#eb8a43,#cf6533);
+  color:#fff;
+  font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:42px;font-weight:800;line-height:1;
+  box-shadow:0 12px 28px rgba(153,91,48,.20);
+}
+.nav-link{
+  color:#586c43!important;
+  font-size:19px!important;
+  font-weight:750!important;
+}
+.nav-link:hover,.nav-link:focus{color:#a87928!important}
+.dropdown{background:#fffef8!important;border-color:#e7dfca!important}
+.dropdown-title{color:#927126!important;font-size:16px!important}
+.dropdown a{color:#3d4436!important;font-size:17px!important;font-weight:600!important}
+.dropdown a:hover{background:#fbf2d3!important;color:#4d6138!important}
+
+.page-hero{
+  background:
+    radial-gradient(circle at 84% 22%,rgba(198,154,59,.17) 0 15%,transparent 36%),
+    radial-gradient(circle at 12% 80%,rgba(101,120,75,.10) 0 15%,transparent 35%),
+    linear-gradient(130deg,#fff3cf 0%,#fffaf0 50%,#edf3df 100%)!important;
+  border-bottom:2px solid #e5ddc3!important;
+}
+.page-hero h1{
+  color:#876923!important;
+  font-size:clamp(64px,6.4vw,86px)!important;
+  line-height:1.03!important;
+  font-weight:900!important;
+}
+.page-hero p{
+  color:#3d4636!important;
+  font-size:24px!important;
+  line-height:1.65!important;
+  font-weight:700!important;
+  max-width:950px!important;
+}
+.section{
+  background:linear-gradient(180deg,#fffdf9 0%,#f7f5e9 100%)!important;
+}
+.section .container>.card{
+  max-width:1050px!important;
+  margin:0 auto!important;
+  padding:42px 46px!important;
+  background:linear-gradient(145deg,#ffffff,#fbf2d5)!important;
+  border:1px solid #e5dcc4!important;
+  border-left:10px solid #d5b665!important;
+  box-shadow:0 12px 30px rgba(113,96,53,.08)!important;
+}
+.section .card .badge{
+  display:inline-block!important;
+  background:#d5b665!important;
+  color:#fff!important;
+  border:1px solid #c5a653!important;
+  font-size:19px!important;
+  font-weight:850!important;
+  padding:8px 14px!important;
+}
+.section .card h2{
+  color:#586d42!important;
+  font-size:clamp(48px,5vw,68px)!important;
+  line-height:1.08!important;
+  margin:20px 0 18px!important;
+  font-weight:900!important;
+}
+.section .card p{
+  color:#3a4134!important;
+  font-size:23px!important;
+  line-height:1.75!important;
+  font-weight:650!important;
+}
+footer{
+  background:linear-gradient(135deg,#6b7452,#8a8050)!important;
+  color:#fffbed!important;
+}
+footer h4{color:#fff9e8!important;font-size:20px!important}
+footer a,footer p{
+  color:#f2f2e5!important;
+  font-size:17px!important;
+  line-height:1.75!important;
+}
+footer a:hover{color:#ffe9a2!important}
+.copyright{color:#e4e7d8!important;font-size:16px!important}
+.mobile-menu{background:#f2edd9!important;color:#586d42!important}
+
+@media(max-width:720px){
+  .brand::before{width:60px;height:60px;font-size:37px}
+  .nav-link{font-size:17px!important}
+  .page-hero h1{font-size:52px!important}
+  .page-hero p{font-size:20px!important}
+  .section .container>.card{padding:30px 24px!important}
+  .section .card h2{font-size:42px!important}
+  .section .card p{font-size:20px!important}
+}
+</style>
+
 </head>
 <body>
 
@@ -41,8 +162,8 @@
           <a href="../resources/exams.html">Đề thi</a>
         </div>
       </div>
-      <a class="nav-link" href="../blog/index.html">Blog</a>
-      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      
+      <a class="nav-link" href="../about/about.html">Giảng viên</a>
     </nav>
   </div>
 </header>
