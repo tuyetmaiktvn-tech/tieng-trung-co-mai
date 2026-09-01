@@ -6,107 +6,134 @@
 <title>Ngữ pháp | Tiếng Trung Cô Mai</title>
 <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
-<style id="grammar-visual-theme">
+
+<style id="tcm-grammar-light-green">
 :root{
-  --grammar-ink:#38253f;
-  --grammar-plum:#5c2e5f;
-  --grammar-plum-deep:#321b3c;
-  --grammar-coral:#d66b5d;
-  --grammar-gold:#d7a84a;
-  --grammar-paper:#fffaf0;
-  --grammar-mist:#f2e8f1;
-  --grammar-line:#dec9d9;
+  --gr-green:#62845b;
+  --gr-green-deep:#456640;
+  --gr-sage:#a8c79a;
+  --gr-yellow:#efd77a;
+  --gr-cream:#fffdf5;
+  --gr-mint:#edf6e8;
+  --gr-text:#303b2e;
 }
 body{
-  color:var(--grammar-ink);
-  background:
-    radial-gradient(circle at 8% 16%,rgba(214,107,93,.12),transparent 24rem),
-    repeating-linear-gradient(0deg,rgba(92,46,95,.025) 0 1px,transparent 1px 30px),
-    var(--grammar-paper);
-  font-family:Georgia,"Times New Roman",serif;
+  color:var(--gr-text)!important;
+  background:linear-gradient(180deg,#fffdf7 0%,#f2f7e9 100%)!important;
 }
 .topbar{
-  background:rgba(255,250,240,.96);
-  border-bottom:1px solid var(--grammar-line);
+  background:rgba(255,253,248,.98)!important;
+  border-bottom:2px solid #dce8d4!important;
 }
-.brand img{display:none}
-.brand{
-  width:68px;
-  height:68px;
-  flex:0 0 68px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
+.brand img{display:none!important}
+.brand::before{
+  content:"梅";
+  width:68px;height:68px;border-radius:50%;
+  display:grid;place-items:center;
+  background:linear-gradient(145deg,#eb8a43,#cf6533);
   color:#fff;
-  background:linear-gradient(145deg,#d97845,#bf5f32);
-  box-shadow:0 12px 28px rgba(191,95,50,.22);
   font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;
-  font-size:42px;
-  font-weight:800;
+  font-size:42px;font-weight:800;line-height:1;
+  box-shadow:0 12px 28px rgba(153,91,48,.20);
 }
-.nav-link,.dropdown,.mobile-menu{font-family:"Times New Roman",Times,serif}
-.nav-link{color:var(--grammar-plum-deep)}
-.nav-link:hover,.nav-link.active{background:var(--grammar-mist);color:var(--grammar-plum)}
-.dropdown{background:#fffdf7;border-color:var(--grammar-line)}
-.dropdown a{color:var(--grammar-ink)}
-.dropdown a:hover{background:var(--grammar-mist);color:var(--grammar-plum)}
+.nav-link{
+  color:#4e7048!important;
+  font-size:19px!important;
+  font-weight:750!important;
+}
+.nav-link:hover,.nav-link:focus{color:#bd713a!important}
+.dropdown{background:#fffef8!important;border-color:#dce8d4!important}
+.dropdown-title{color:#456640!important;font-size:16px!important}
+.dropdown a{color:#364333!important;font-size:17px!important;font-weight:600!important}
+.dropdown a:hover{background:#f4efd2!important;color:#456640!important}
+
 .page-hero{
-  position:relative;
-  overflow:hidden;
   background:
-    radial-gradient(circle at 82% 28%,rgba(255,255,255,.16) 0 12%,transparent 13%),
-    linear-gradient(135deg,var(--grammar-plum-deep),#74436f 62%,#a75962);
+    radial-gradient(circle at 84% 22%,rgba(239,215,122,.27) 0 15%,transparent 36%),
+    radial-gradient(circle at 12% 80%,rgba(98,132,91,.10) 0 15%,transparent 35%),
+    linear-gradient(130deg,#e8f3e3 0%,#fff8df 50%,#f4f0dc 100%)!important;
+  border-bottom:2px solid #d8e5d1!important;
 }
-.page-hero::after{
-  content:"语法";
-  position:absolute;
-  right:7%;
-  top:50%;
-  transform:translateY(-50%);
-  color:rgba(255,255,255,.09);
-  font:700 clamp(90px,15vw,190px)/1 "Microsoft YaHei",sans-serif;
+.page-hero h1{
+  color:#456640!important;
+  font-size:clamp(64px,6.4vw,86px)!important;
+  line-height:1.03!important;
+  font-weight:900!important;
 }
-.page-hero .container{position:relative;z-index:1}
-.page-hero h1{color:#fff7e7;letter-spacing:.02em}
-.page-hero p{color:#f1dfe8;font-size:19px}
-.section{background:transparent}
-.section .card{
-  position:relative;
-  overflow:hidden;
-  padding:40px;
-  color:var(--grammar-ink);
-  background:rgba(255,253,247,.9);
-  border:1px solid var(--grammar-line);
-  border-left:7px solid var(--grammar-coral);
-  box-shadow:0 18px 45px rgba(67,33,65,.1);
+.page-hero p{
+  color:#354432!important;
+  font-size:24px!important;
+  line-height:1.65!important;
+  font-weight:700!important;
+  max-width:950px!important;
 }
-.section .card::after{
-  content:"的 · 了 · 吗";
-  position:absolute;
-  right:30px;
-  bottom:12px;
-  color:rgba(92,46,95,.08);
-  font:700 clamp(34px,6vw,72px)/1 "Microsoft YaHei",sans-serif;
+
+.section{
+  background:linear-gradient(180deg,#fffdf8 0%,#f3f7eb 100%)!important;
 }
-.section .badge{background:#f4dfd9;color:#9a453f;border:1px solid #eac2b9}
-.section .card h2{color:var(--grammar-plum-deep);font-size:36px}
-.section .card p{position:relative;z-index:1;color:#68546a;font-size:18px}
-footer{background:var(--grammar-plum-deep);color:#f5e8ee}
-footer h4{color:#fff7e7}
-footer a,footer p,.copyright{color:#dbc8d7}
-footer a:hover{color:#f2c36b}
-.mobile-menu{background:var(--grammar-mist);color:var(--grammar-plum)}
-@media(max-width:680px){
-  .brand{width:58px;height:58px;flex-basis:58px;font-size:35px}
-  .section .card{padding:28px 24px}
+.section .container>.card{
+  max-width:1050px!important;
+  margin:0 auto!important;
+  padding:42px 46px!important;
+  background:linear-gradient(145deg,#ffffff,#edf6e8)!important;
+  border:1px solid #d7e5d0!important;
+  border-left:10px solid #8eb482!important;
+  box-shadow:0 12px 30px rgba(82,111,75,.08)!important;
+}
+.section .card .badge{
+  display:inline-block!important;
+  background:#8eb482!important;
+  color:#fff!important;
+  border:1px solid #7ca570!important;
+  font-size:19px!important;
+  font-weight:850!important;
+  padding:8px 14px!important;
+}
+.section .card h2{
+  color:#4d7047!important;
+  font-size:clamp(48px,5vw,68px)!important;
+  line-height:1.08!important;
+  margin:20px 0 18px!important;
+  font-weight:900!important;
+}
+.section .card p{
+  color:#354032!important;
+  font-size:23px!important;
+  line-height:1.75!important;
+  font-weight:650!important;
+}
+
+footer{
+  background:linear-gradient(135deg,#607b55,#7f8b5d)!important;
+  color:#fffced!important;
+}
+footer h4{color:#fffbe9!important;font-size:20px!important}
+footer a,footer p{
+  color:#edf3e8!important;
+  font-size:17px!important;
+  line-height:1.75!important;
+}
+footer a:hover{color:#fff0a8!important}
+.copyright{color:#e0e9da!important;font-size:16px!important}
+.mobile-menu{background:#e9f1df!important;color:#456640!important}
+
+@media(max-width:720px){
+  .brand::before{width:60px;height:60px;font-size:37px}
+  .nav-link{font-size:17px!important}
+  .page-hero h1{font-size:52px!important}
+  .page-hero p{font-size:20px!important}
+  .section .container>.card{padding:30px 24px!important}
+  .section .card h2{font-size:42px!important}
+  .section .card p{font-size:20px!important}
 }
 </style>
+
 </head>
 <body>
 
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="../index.html" aria-label="Tiếng Trung Cô Mai">梅</a>
+    <a class="brand" href="../index.html"><img src="../assets/images/logo.svg" alt="Tiếng Trung Cô Mai"></a>
     <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
     <nav class="nav-links" id="navLinks">
       <a class="nav-link" href="../index.html">Trang chủ</a>
@@ -130,12 +157,13 @@ footer a:hover{color:#f2c36b}
         <button class="nav-link" data-dropdown>Học liệu <span class="caret">▼</span></button>
         <div class="dropdown">
           <a href="../resources/flashcards.html">Flashcards</a>
-          <a href="../resources/grammar.html" aria-current="page">Ngữ pháp</a>
+          <a href="../resources/grammar.html">Ngữ pháp</a>
           <a href="../resources/vocabulary.html">Từ vựng</a>
           <a href="../resources/dialogues.html">Hội thoại</a>
           <a href="../resources/exams.html">Đề thi</a>
         </div>
       </div>
+      
       <a class="nav-link" href="../about/about.html">Giảng viên</a>
     </nav>
   </div>
