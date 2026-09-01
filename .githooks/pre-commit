@@ -1,0 +1,4 @@
+#!/bin/sh
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/sync-learning-resources.ps1
+git add data/learning-resources.js
+

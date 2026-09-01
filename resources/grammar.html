@@ -170,7 +170,7 @@ footer a:hover{color:#fff0a8!important}
 
 <main>
 <section class="page-hero"><div class="container"><h1>Ngữ pháp</h1><p>Hệ thống hóa cấu trúc ngữ pháp theo cấp độ và chủ đề.</p></div></section>
-<section class="section"><div class="container"><div class="card"><span class="badge">Đang phát triển</span><h2>Ngữ pháp</h2><p>Hệ thống hóa cấu trúc ngữ pháp theo cấp độ và chủ đề.</p></div></div></section>
+<section class="section"><div class="container" id="grammarLibrary"><div class="card"><span class="badge">Đang cập nhật</span><h2>Ngữ pháp</h2><p>Danh mục sẽ tự động lấy từ các bài HSK hiện có.</p></div></div></section>
 </main>
 
 <footer>
@@ -204,5 +204,15 @@ footer a:hover{color:#fff0a8!important}
 </footer>
 
 <script src="../assets/js/app.js?v=3.3.1"></script>
+<script src="../data/learning-resources.js"></script>
+<script>
+(() => {
+  const lessons=(window.TCM_LEARNING_RESOURCES||[]).filter(item=>item.grammar);
+  const levels=[...new Set(lessons.map(item=>item.level))];
+  const library=document.getElementById('grammarLibrary');
+  if(!lessons.length) return;
+  library.innerHTML=levels.map(level=>`<section class="card" style="margin-bottom:24px"><h2>Ngữ pháp HSK ${level}</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px">${lessons.filter(item=>item.level===level).map(item=>`<a class="btn btn-outline" style="font-size:18px;font-weight:700;justify-content:center" href="${item.url}?focus=${item.grammar}#${item.grammar}">Bài ${item.lesson} →</a>`).join('')}</div></section>`).join('');
+})();
+</script>
 </body>
 </html>

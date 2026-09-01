@@ -204,6 +204,7 @@ footer a:hover{color:#ffe0a7!important}
 </footer>
 
 <script src="../assets/js/app.js?v=3.3.1"></script>
-<script>document.getElementById('vocabularyLibrary').innerHTML=[1,2].map(level=>`<section class="auto-level"><h2>HSK ${level}</h2><div class="auto-grid">${Array.from({length:15},(_,i)=>`<a class="auto-item" href="../hsk/hsk${level}-lesson${String(i+1).padStart(2,'0')}.html#tu-vung"><b>Bài ${i+1}</b><span>Xem toàn bộ từ vựng →</span></a>`).join('')}</div></section>`).join('');</script>
+<script src="../data/learning-resources.js"></script>
+<script>{const lessons=(window.TCM_LEARNING_RESOURCES||[]).filter(item=>item.vocabulary);const levels=[...new Set(lessons.map(item=>item.level))];document.getElementById('vocabularyLibrary').innerHTML=levels.map(level=>`<section class="auto-level"><h2>HSK ${level}</h2><div class="auto-grid">${lessons.filter(item=>item.level===level).map(item=>`<a class="auto-item" href="${item.url}?focus=${item.vocabulary}#${item.vocabulary}"><b>Bài ${item.lesson}</b><span>Xem toàn bộ từ vựng →</span></a>`).join('')}</div></section>`).join('');}</script>
 </body>
 </html>
