@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Điền 不 hoặc 没 | Bài tập mở rộng | Tiếng Trung Cô Mai</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+  <style>
+    :root{--ink:#17324d;--blue:#3978c5;--blue-dark:#255c9f;--line:#cfdef0;--soft:#f3f8ff;--green:#19724e;--red:#b73b38}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#f8fbff,#f1faf6);color:var(--ink);font-family:"Segoe UI",Arial,sans-serif}
+    .fill-hero{padding:54px 20px 46px;text-align:center;background:linear-gradient(135deg,#e9f3ff,#e4f8ef);border-bottom:1px solid #d7e5e3}
+    .fill-hero h1{margin:0 0 12px;font-size:clamp(38px,6vw,58px);line-height:1.1}
+    .fill-hero p{max-width:760px;margin:0 auto;color:#496174;font-size:clamp(17px,2vw,20px);line-height:1.6}
+    .back-link{display:inline-block;margin-top:20px;color:#29465f;font-weight:700}
+    .exercise-shell{max-width:980px;margin:0 auto;padding:30px 18px 64px}
+    .exercise-card{padding:clamp(22px,4vw,40px);border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 12px 30px rgba(38,70,94,.09)}
+    .card-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:24px;padding-bottom:20px;border-bottom:2px solid var(--line)}
+    .card-heading h2{margin:0 0 7px;color:var(--blue-dark);font-size:clamp(25px,4vw,34px)}
+    .card-heading p{margin:0;color:#607181;line-height:1.55}
+    .online-badge{flex:0 0 auto;padding:7px 12px;border-radius:999px;background:#e5f7ef;color:var(--green);font-size:14px;font-weight:750}
+    .question-list{display:grid;gap:16px;margin:0;padding:0;list-style:none;counter-reset:item}
+    .question{counter-increment:item;padding:19px 20px;border:1px solid #dce8f4;border-radius:15px;background:var(--soft)}
+    .question::before{content:"Câu " counter(item);display:block;margin-bottom:10px;color:var(--blue-dark);font-weight:800}
+    .sentence{margin:0;font:20px/2 "Microsoft YaHei","Noto Sans SC",sans-serif;color:#243c50}
+    .blank{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+    .blank-number{font:700 14px "Segoe UI",Arial,sans-serif;color:#63798b}
+    .choice{min-width:74px;padding:6px 28px 6px 10px;border:2px solid #9cbcdf;border-radius:9px;background:#fff;color:#17324d;font:19px "Microsoft YaHei","Noto Sans SC",sans-serif;cursor:pointer}
+    .choice:focus{outline:3px solid rgba(57,120,197,.16);border-color:var(--blue)}
+    .choice.is-correct{border-color:#4ca476;background:#effaf4}.choice.is-wrong{border-color:#d46b67;background:#fff1f0}
+    .feedback{min-height:22px;margin:9px 0 0;font-size:15px;font-weight:700}.feedback.correct{color:var(--green)}.feedback.wrong{color:var(--red)}
+    .actions{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-top:24px}
+    .action-button{padding:11px 18px;border:1px solid var(--blue);border-radius:999px;background:#fff;color:var(--blue-dark);font:750 16px "Segoe UI",Arial,sans-serif;cursor:pointer}
+    .action-button.primary{background:var(--blue);color:#fff}.score{margin-left:auto;font-size:17px;font-weight:800;color:var(--blue-dark)}
+    .answer-panel{display:none;margin-top:22px;padding:18px 20px;border-left:5px solid #58a98c;border-radius:0 14px 14px 0;background:#f1fbf7}
+    .answer-panel.is-visible{display:block}.answer-panel h3{margin:0 0 12px;color:var(--green)}.answer-panel ol{columns:2;gap:32px;margin:0;padding-left:25px}.answer-panel li{margin-bottom:7px;break-inside:avoid;font:18px/1.55 "Microsoft YaHei","Noto Sans SC",sans-serif}
+    @media(max-width:700px){.fill-hero{padding-top:40px}.exercise-shell{padding:20px 9px 44px}.exercise-card{padding:17px 13px}.card-heading{flex-direction:column}.question{padding:15px 13px}.sentence{font-size:18px;line-height:2.25}.actions{align-items:stretch;flex-direction:column}.action-button{width:100%}.score{margin:5px 0 0;text-align:center}.answer-panel ol{columns:1}}
+    @media print{body{display:none!important}}
+  </style>
+</head>
+<body>
+<main>
+  <section class="fill-hero"><div class="container"><h1>Điền 不 hoặc 没</h1><p>Chọn từ thích hợp cho từng chỗ trống, sau đó chấm bài và mở đáp án để tự kiểm tra.</p><a class="back-link" href="extended-exercises.html">← Trở về Bài tập mở rộng</a></div></section>
+  <div class="exercise-shell"><article class="exercise-card">
+    <header class="card-heading"><div><h2>选择“不”或“没”填空</h2><p>9 câu · 17 chỗ trống · Mỗi chỗ trống đúng được 1 điểm</p></div><span class="online-badge">Chỉ làm trực tuyến</span></header>
+    <ol class="question-list" id="question-list"></ol>
+    <div class="actions"><button class="action-button primary" id="check-button" type="button">Chấm bài</button><button class="action-button" id="answer-button" type="button" aria-expanded="false" aria-controls="answer-panel">Xem đáp án</button><button class="action-button" id="reset-button" type="button">Làm lại</button><span class="score" id="score" aria-live="polite"></span></div>
+    <section class="answer-panel" id="answer-panel"><h3>Đáp án</h3><ol id="answer-list"></ol></section>
+  </article></div>
+</main>
+<script src="../assets/js/app.js?v=3.3.1"></script>
+<script>
+const exercises=[
+  {parts:['昨天我','迟到，老师也','批评我。'],answers:['没','没']},
+  {parts:['我通知王先生开会了，他怎么','来？'],answers:['没']},
+  {parts:['不是我','愿意去，我根本','接到通知。'],answers:['不','没']},
+  {parts:['既然你','愿意参加，我也就','勉强你了。'],answers:['不','不']},
+  {parts:['今天我','想发言，我还','准备好呢。'],answers:['不','没']},
+  {parts:['那儿的东西也','便宜，我在那儿什么也','买。'],answers:['不','没']},
+  {parts:['明天的参观我','给你报名，你真的','想去？'],answers:['没','不']},
+  {parts:['这么大的事','跟父母商量怎么行？你怎么还','跟他们说？'],answers:['不','没']},
+  {parts:['我还一点儿','复习呢，','准备参加考试了。'],answers:['没','不']}
+];
+const list=document.getElementById('question-list');
+list.innerHTML=exercises.map((item,qIndex)=>{let html=item.parts[0];item.answers.forEach((_,aIndex)=>{const id=`q${qIndex+1}-${aIndex+1}`;html+=` <span class="blank"><span class="blank-number">(${aIndex+1})</span><select class="choice" id="${id}" data-q="${qIndex}" data-a="${aIndex}" aria-label="Câu ${qIndex+1}, chỗ trống ${aIndex+1}"><option value="">—</option><option value="不">不</option><option value="没">没</option></select></span> ${item.parts[aIndex+1]}`});return `<li class="question"><p class="sentence" lang="zh-Hans">${html}</p><p class="feedback" aria-live="polite"></p></li>`}).join('');
+document.getElementById('answer-list').innerHTML=exercises.map(item=>`<li>${item.answers.map((answer,index)=>`(${index+1}) ${answer}`).join('　')}</li>`).join('');
+document.getElementById('check-button').addEventListener('click',()=>{let correct=0,total=0;document.querySelectorAll('.question').forEach((question,qIndex)=>{let questionCorrect=true;question.querySelectorAll('.choice').forEach(select=>{const expected=exercises[qIndex].answers[Number(select.dataset.a)];const ok=select.value===expected;total++;if(ok)correct++;else questionCorrect=false;select.classList.toggle('is-correct',ok);select.classList.toggle('is-wrong',!ok)});const feedback=question.querySelector('.feedback');feedback.textContent=questionCorrect?'Chính xác':'Chưa đúng, hãy kiểm tra lại';feedback.className=`feedback ${questionCorrect?'correct':'wrong'}`});document.getElementById('score').textContent=`Kết quả: ${correct}/${total}`});
+document.getElementById('answer-button').addEventListener('click',event=>{const panel=document.getElementById('answer-panel');const visible=panel.classList.toggle('is-visible');event.currentTarget.setAttribute('aria-expanded',String(visible));event.currentTarget.textContent=visible?'Ẩn đáp án':'Xem đáp án'});
+document.getElementById('reset-button').addEventListener('click',()=>{document.querySelectorAll('.choice').forEach(select=>{select.value='';select.classList.remove('is-correct','is-wrong')});document.querySelectorAll('.feedback').forEach(item=>{item.textContent='';item.className='feedback'});document.getElementById('score').textContent='';window.scrollTo({top:0,behavior:'smooth'})});
+document.addEventListener('contextmenu',event=>event.preventDefault());document.addEventListener('keydown',event=>{if((event.ctrlKey||event.metaKey)&&['s','p','u'].includes(event.key.toLowerCase()))event.preventDefault()});
+</script>
+</body>
+</html>
