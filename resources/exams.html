@@ -169,7 +169,7 @@ footer a:hover{color:#ffe9a2!important}
 
 <main>
 <section class="page-hero"><div class="container"><h1>Đề thi</h1><p>Kho bài tập và đề luyện thi theo cấp độ.</p></div></section>
-<section class="section"><div class="container"><div class="card"><span class="badge">Bài tập HSK 1–2</span><h2>Kho luyện tập theo bài</h2><p>Trắc nghiệm · Nhận diện từ · Điền từ · Sắp xếp câu · Chữa câu sai · Dịch · Tự kiểm tra.</p></div><div class="auto-library" id="exerciseLibrary"></div></div></section>
+<section class="section"><div class="container"><div class="card"><span class="badge">Đang phát triển</span><h2>Đề thi</h2><p>Kho bài tập và đề luyện thi theo cấp độ.</p></div></div></section>
 </main>
 
 <footer>
@@ -203,6 +203,5 @@ footer a:hover{color:#ffe9a2!important}
 </footer>
 
 <script src="../assets/js/app.js?v=3.3.1"></script>
-<script>document.getElementById('exerciseLibrary').innerHTML=[1,2].map(level=>`<section class="auto-level"><h2>HSK ${level}</h2><div class="auto-grid">${Array.from({length:15},(_,i)=>`<a class="auto-item" href="../hsk/hsk${level}-lesson${String(i+1).padStart(2,'0')}.html"><b>Bài ${i+1}</b><span>Làm các dạng bài tập →</span></a>`).join('')}</div></section>`).join('');</script>
 </body>
 </html>

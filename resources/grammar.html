@@ -170,7 +170,7 @@ footer a:hover{color:#fff0a8!important}
 
 <main>
 <section class="page-hero"><div class="container"><h1>Ngữ pháp</h1><p>Hệ thống hóa cấu trúc ngữ pháp theo cấp độ và chủ đề.</p></div></section>
-<section class="section"><div class="container"><div class="card"><span class="badge">Tổng hợp từ bài HSK</span><h2>Ngữ pháp HSK 1–2</h2><p>Toàn bộ mẫu câu, cấu trúc, giải thích và ví dụ được liên kết theo đúng bài học nguồn.</p></div><div class="auto-library" id="grammarLibrary"></div></div></section>
+<section class="section"><div class="container"><div class="card"><span class="badge">Đang phát triển</span><h2>Ngữ pháp</h2><p>Hệ thống hóa cấu trúc ngữ pháp theo cấp độ và chủ đề.</p></div></div></section>
 </main>
 
 <footer>
@@ -204,6 +204,5 @@ footer a:hover{color:#fff0a8!important}
 </footer>
 
 <script src="../assets/js/app.js?v=3.3.1"></script>
-<script>document.getElementById('grammarLibrary').innerHTML=[1,2].map(level=>`<section class="auto-level"><h2>HSK ${level}</h2><div class="auto-grid">${Array.from({length:15},(_,i)=>`<a class="auto-item" href="../hsk/hsk${level}-lesson${String(i+1).padStart(2,'0')}.html${level===1?'#grammar':'#ngu-phap'}"><b>Bài ${i+1}</b><span>Xem ngữ pháp trọng tâm →</span></a>`).join('')}</div></section>`).join('');</script>
 </body>
 </html>
