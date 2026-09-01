@@ -54,16 +54,17 @@ body{
     radial-gradient(circle at 12% 80%,rgba(118,86,125,.09) 0 15%,transparent 35%),
     linear-gradient(130deg,#f3e9f5 0%,#fff2e2 50%,#f8f0dc 100%)!important;
   border-bottom:2px solid #e5d7e5!important;
+  padding:52px 0 46px!important;
 }
 .page-hero h1{
   color:#65496c!important;
-  font-size:clamp(64px,6.4vw,86px)!important;
+  font-size:clamp(48px,5vw,64px)!important;
   line-height:1.03!important;
   font-weight:900!important;
 }
 .page-hero p{
   color:#40373f!important;
-  font-size:24px!important;
+  font-size:21px!important;
   line-height:1.65!important;
   font-weight:700!important;
   max-width:980px!important;
@@ -71,11 +72,12 @@ body{
 
 .section{
   background:linear-gradient(180deg,#fffdf9 0%,#f8f2f7 100%)!important;
+  padding:42px 0 60px!important;
 }
 .section .container>.card{
   max-width:1050px!important;
   margin:0 auto!important;
-  padding:42px 46px!important;
+  padding:28px 34px!important;
   background:linear-gradient(145deg,#ffffff,#f5edf6)!important;
   border:1px solid #e3d4e5!important;
   border-left:10px solid #b994c1!important;
@@ -86,21 +88,21 @@ body{
   background:#b994c1!important;
   color:#fff!important;
   border:1px solid #a57caf!important;
-  font-size:19px!important;
+  font-size:16px!important;
   font-weight:850!important;
   padding:8px 14px!important;
 }
 .section .card h2{
   color:#65496c!important;
-  font-size:clamp(48px,5vw,68px)!important;
+  font-size:clamp(35px,4vw,48px)!important;
   line-height:1.08!important;
-  margin:20px 0 18px!important;
+  margin:14px 0 10px!important;
   font-weight:900!important;
 }
 .section .card p{
   color:#3d353c!important;
-  font-size:23px!important;
-  line-height:1.75!important;
+  font-size:19px!important;
+  line-height:1.6!important;
   font-weight:650!important;
 }
 footer{
@@ -116,15 +118,25 @@ footer a,footer p{
 footer a:hover{color:#ffe0a7!important}
 .copyright{color:#eadce8!important;font-size:16px!important}
 .mobile-menu{background:#f0e6f1!important;color:#65496c!important}
+.auto-library{display:grid;gap:18px;margin-top:26px!important;font-family:"Segoe UI",Arial,sans-serif!important}
+.vocabulary-folder{overflow:hidden;border:2px solid #d9c8dd;border-radius:18px;background:#fff;box-shadow:0 9px 22px rgba(91,64,97,.10)}
+.vocabulary-folder summary{display:flex;align-items:center;gap:15px;padding:21px 25px;cursor:pointer;list-style:none;color:#5d4164;background:linear-gradient(135deg,#f3e7f5,#fff0df);font-size:25px;font-weight:850}
+.vocabulary-folder summary::-webkit-details-marker{display:none}
+.vocabulary-folder summary::before{content:"📁";font-size:28px}.vocabulary-folder[open] summary::before{content:"📂"}
+.vocabulary-folder summary::after{content:"Mở danh sách ›";margin-left:auto;color:#8b593c;font-size:16px;font-weight:800}.vocabulary-folder[open] summary::after{content:"Thu gọn ⌃"}
+.folder-count{padding:5px 10px;border-radius:999px;background:#fff;color:#65496c;font-size:14px;font-weight:800}
+.vocabulary-folder .auto-grid{padding:20px;background:#fffdfb}
+.vocabulary-folder .auto-item{min-height:102px;padding:19px;border-color:#dfd1e1}.vocabulary-folder .auto-item b{font-size:23px}.vocabulary-folder .auto-item span{font-size:16px}
 
 @media(max-width:720px){
   .brand::before{width:60px;height:60px;font-size:37px}
   .nav-link{font-size:17px!important}
-  .page-hero h1{font-size:52px!important}
-  .page-hero p{font-size:20px!important}
-  .section .container>.card{padding:30px 24px!important}
-  .section .card h2{font-size:42px!important}
-  .section .card p{font-size:20px!important}
+  .page-hero{padding:40px 0 36px!important}.page-hero h1{font-size:44px!important}
+  .page-hero p{font-size:18px!important}
+  .section{padding:28px 0 44px!important}.section .container>.card{padding:24px 20px!important}
+  .section .card h2{font-size:34px!important}
+  .section .card p{font-size:18px!important}
+  .vocabulary-folder summary{padding:18px 16px;font-size:22px}.vocabulary-folder summary::after{content:"›";font-size:26px}.vocabulary-folder[open] summary::after{content:"⌃"}.vocabulary-folder .auto-grid{padding:14px}
 }
 </style>
 
@@ -158,7 +170,6 @@ footer a:hover{color:#ffe0a7!important}
           <a href="../resources/flashcards.html">Flashcards</a>
           <a href="../resources/grammar.html">Ngữ pháp</a>
           <a href="../resources/vocabulary.html">Từ vựng</a>
-          <a href="../resources/dialogues.html">Hội thoại</a>
           <a href="../resources/exams.html">Bài tập ứng dụng</a>
         </div>
       </div>
@@ -205,6 +216,6 @@ footer a:hover{color:#ffe0a7!important}
 
 <script src="../assets/js/app.js?v=3.3.1"></script>
 <script src="../data/learning-resources.js"></script>
-<script>{const lessons=(window.TCM_LEARNING_RESOURCES||[]).filter(item=>item.vocabulary);const levels=[...new Set(lessons.map(item=>item.level))];document.getElementById('vocabularyLibrary').innerHTML=levels.map(level=>`<section class="auto-level"><h2>HSK ${level}</h2><div class="auto-grid">${lessons.filter(item=>item.level===level).map(item=>`<a class="auto-item" href="${item.url}?focus=${item.vocabulary}#${item.vocabulary}"><b>Bài ${item.lesson}</b><span>Xem toàn bộ từ vựng →</span></a>`).join('')}</div></section>`).join('');}</script>
+<script>{const lessons=(window.TCM_LEARNING_RESOURCES||[]).filter(item=>item.vocabulary);const levels=[...new Set(lessons.map(item=>item.level))];document.getElementById('vocabularyLibrary').innerHTML=levels.map(level=>{const levelLessons=lessons.filter(item=>item.level===level);return `<details class="vocabulary-folder"><summary><span>HSK ${level}</span><span class="folder-count">${levelLessons.length} bài</span></summary><div class="auto-grid">${levelLessons.map(item=>`<a class="auto-item" href="${item.url}?focus=${item.vocabulary}#${item.vocabulary}"><b>Bài ${item.lesson}</b><span>Xem toàn bộ từ vựng →</span></a>`).join('')}</div></details>`}).join('');}</script>
 </body>
 </html>
