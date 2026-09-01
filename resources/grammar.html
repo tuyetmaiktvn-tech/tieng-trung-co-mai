@@ -6,12 +6,107 @@
 <title>Ngữ pháp | Tiếng Trung Cô Mai</title>
 <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+<style id="grammar-visual-theme">
+:root{
+  --grammar-ink:#38253f;
+  --grammar-plum:#5c2e5f;
+  --grammar-plum-deep:#321b3c;
+  --grammar-coral:#d66b5d;
+  --grammar-gold:#d7a84a;
+  --grammar-paper:#fffaf0;
+  --grammar-mist:#f2e8f1;
+  --grammar-line:#dec9d9;
+}
+body{
+  color:var(--grammar-ink);
+  background:
+    radial-gradient(circle at 8% 16%,rgba(214,107,93,.12),transparent 24rem),
+    repeating-linear-gradient(0deg,rgba(92,46,95,.025) 0 1px,transparent 1px 30px),
+    var(--grammar-paper);
+  font-family:Georgia,"Times New Roman",serif;
+}
+.topbar{
+  background:rgba(255,250,240,.96);
+  border-bottom:1px solid var(--grammar-line);
+}
+.brand img{display:none}
+.brand{
+  width:68px;
+  height:68px;
+  flex:0 0 68px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  background:linear-gradient(145deg,#d97845,#bf5f32);
+  box-shadow:0 12px 28px rgba(191,95,50,.22);
+  font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:42px;
+  font-weight:800;
+}
+.nav-link,.dropdown,.mobile-menu{font-family:"Times New Roman",Times,serif}
+.nav-link{color:var(--grammar-plum-deep)}
+.nav-link:hover,.nav-link.active{background:var(--grammar-mist);color:var(--grammar-plum)}
+.dropdown{background:#fffdf7;border-color:var(--grammar-line)}
+.dropdown a{color:var(--grammar-ink)}
+.dropdown a:hover{background:var(--grammar-mist);color:var(--grammar-plum)}
+.page-hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 28%,rgba(255,255,255,.16) 0 12%,transparent 13%),
+    linear-gradient(135deg,var(--grammar-plum-deep),#74436f 62%,#a75962);
+}
+.page-hero::after{
+  content:"语法";
+  position:absolute;
+  right:7%;
+  top:50%;
+  transform:translateY(-50%);
+  color:rgba(255,255,255,.09);
+  font:700 clamp(90px,15vw,190px)/1 "Microsoft YaHei",sans-serif;
+}
+.page-hero .container{position:relative;z-index:1}
+.page-hero h1{color:#fff7e7;letter-spacing:.02em}
+.page-hero p{color:#f1dfe8;font-size:19px}
+.section{background:transparent}
+.section .card{
+  position:relative;
+  overflow:hidden;
+  padding:40px;
+  color:var(--grammar-ink);
+  background:rgba(255,253,247,.9);
+  border:1px solid var(--grammar-line);
+  border-left:7px solid var(--grammar-coral);
+  box-shadow:0 18px 45px rgba(67,33,65,.1);
+}
+.section .card::after{
+  content:"的 · 了 · 吗";
+  position:absolute;
+  right:30px;
+  bottom:12px;
+  color:rgba(92,46,95,.08);
+  font:700 clamp(34px,6vw,72px)/1 "Microsoft YaHei",sans-serif;
+}
+.section .badge{background:#f4dfd9;color:#9a453f;border:1px solid #eac2b9}
+.section .card h2{color:var(--grammar-plum-deep);font-size:36px}
+.section .card p{position:relative;z-index:1;color:#68546a;font-size:18px}
+footer{background:var(--grammar-plum-deep);color:#f5e8ee}
+footer h4{color:#fff7e7}
+footer a,footer p,.copyright{color:#dbc8d7}
+footer a:hover{color:#f2c36b}
+.mobile-menu{background:var(--grammar-mist);color:var(--grammar-plum)}
+@media(max-width:680px){
+  .brand{width:58px;height:58px;flex-basis:58px;font-size:35px}
+  .section .card{padding:28px 24px}
+}
+</style>
 </head>
 <body>
 
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="../index.html"><img src="../assets/images/logo.svg" alt="Tiếng Trung Cô Mai"></a>
+    <a class="brand" href="../index.html" aria-label="Tiếng Trung Cô Mai">梅</a>
     <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
     <nav class="nav-links" id="navLinks">
       <a class="nav-link" href="../index.html">Trang chủ</a>
@@ -35,14 +130,13 @@
         <button class="nav-link" data-dropdown>Học liệu <span class="caret">▼</span></button>
         <div class="dropdown">
           <a href="../resources/flashcards.html">Flashcards</a>
-          <a href="../resources/grammar.html">Ngữ pháp</a>
+          <a href="../resources/grammar.html" aria-current="page">Ngữ pháp</a>
           <a href="../resources/vocabulary.html">Từ vựng</a>
           <a href="../resources/dialogues.html">Hội thoại</a>
           <a href="../resources/exams.html">Đề thi</a>
         </div>
       </div>
-      <a class="nav-link" href="../blog/index.html">Blog</a>
-      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      <a class="nav-link" href="../about/about.html">Giảng viên</a>
     </nav>
   </div>
 </header>
