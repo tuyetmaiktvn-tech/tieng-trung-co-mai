@@ -6,12 +6,30 @@
 <title>Tiếng Trung thương mại | Tiếng Trung Cô Mai</title>
 <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+.brand{display:flex;align-items:center;gap:10px}
+.logo-mark{width:56px;height:56px;flex:0 0 56px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,#d97845,#bf5f32);box-shadow:0 10px 22px rgba(191,95,50,.24);font-family:"Microsoft YaHei",sans-serif;font-size:30px;font-weight:700}
+.biz-hero{background:linear-gradient(135deg,#1a1408 0%,#2b2110 45%,#4a3a12 100%);position:relative;overflow:hidden}
+.biz-hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(212,175,55,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,.07) 1px,transparent 1px);background-size:40px 40px}
+.biz-hero .container{position:relative}
+.biz-hero h1{color:#f4d888 !important;font-family:"Montserrat",Arial,sans-serif !important;font-weight:800;letter-spacing:-1px}
+.biz-hero p{color:#e9d9ad !important;font-family:"Montserrat",Arial,sans-serif !important}
+.biz-section{background:#12100b}
+.biz-section .card{background:#1c1810;border:1px solid #3a2f18;box-shadow:0 10px 28px rgba(0,0,0,.35)}
+.biz-section .card h3{color:#f4d888 !important;font-family:"Montserrat",Arial,sans-serif !important}
+.biz-section .card p{color:#c9b98a !important;font-family:"Montserrat",Arial,sans-serif !important}
+.biz-section .badge{background:#3a2f10;color:#e8c25e !important;font-family:"Montserrat",Arial,sans-serif !important}
+.biz-section .text-link{color:#e8c25e !important;font-family:"Montserrat",Arial,sans-serif !important}
+</style>
 </head>
 <body>
 
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="../index.html"><img src="../assets/images/logo.svg" alt="Tiếng Trung Cô Mai"></a>
+    <a class="brand" href="../index.html" aria-label="Tiếng Trung Cô Mai"><span class="logo-mark">梅</span></a>
     <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
     <nav class="nav-links" id="navLinks">
       <a class="nav-link" href="../index.html">Trang chủ</a>
@@ -41,15 +59,14 @@
           <a href="../resources/exams.html">Đề thi</a>
         </div>
       </div>
-      <a class="nav-link" href="../blog/index.html">Blog</a>
-      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      <a class="nav-link" href="../about/about.html">Giảng viên</a>
     </nav>
   </div>
 </header>
 
 <main>
-<section class="page-hero"><div class="container"><h1>Tiếng Trung thương mại</h1><p>Tiếng Trung trong môi trường kinh doanh và giao dịch.</p></div></section>
-<section class="section"><div class="container"><div class="lesson-grid"><article class="card"><span class="badge">Chuyên đề</span><h3>Báo giá</h3><p>Nội dung chuyên đề đang được xây dựng.</p><a class="text-link" href="#" onclick="showNotice('Báo giá');return false;">Xem nội dung →</a></article><article class="card"><span class="badge">Chuyên đề</span><h3>Hợp đồng</h3><p>Nội dung chuyên đề đang được xây dựng.</p><a class="text-link" href="#" onclick="showNotice('Hợp đồng');return false;">Xem nội dung →</a></article><article class="card"><span class="badge">Chuyên đề</span><h3>Thanh toán</h3><p>Nội dung chuyên đề đang được xây dựng.</p><a class="text-link" href="#" onclick="showNotice('Thanh toán');return false;">Xem nội dung →</a></article><article class="card"><span class="badge">Chuyên đề</span><h3>Giao hàng</h3><p>Nội dung chuyên đề đang được xây dựng.</p><a class="text-link" href="#" onclick="showNotice('Giao hàng');return false;">Xem nội dung →</a></article></div></div></section>
+<section class="page-hero biz-hero"><div class="container"><h1>Tiếng Trung thương mại</h1><p>Tiếng Trung trong môi trường kinh doanh và giao dịch.</p></div></section>
+<section class="section biz-section"><div class="container"><div class="lesson-grid"><article class="card"><span class="badge">Chuyên đề</span><h3>Báo giá</h3><p>Nội dung chuyên đề đang được xây dựng.</p><a class="text-link" href="#" onclick="showNotice('Báo giá');return false;">Xem nội dung →</a></article><article class="card"><span class="badge">Chuyên đề</span><h3>Hợp đồng</h3><p>Nội dung chuyên đề đang được xây dựng.</p><a class="text-link" href="#" onclick="showNotice('Hợp đồng');return false;">Xem nội dung →</a></article><article class="card"><span class="badge">Chuyên đề</span><h3>Thanh toán</h3><p>Nội dung chuyên đề đang được xây dựng.</p><a class="text-link" href="#" onclick="showNotice('Thanh toán');return false;">Xem nội dung →</a></article><article class="card"><span class="badge">Chuyên đề</span><h3>Giao hàng</h3><p>Nội dung chuyên đề đang được xây dựng.</p><a class="text-link" href="#" onclick="showNotice('Giao hàng');return false;">Xem nội dung →</a></article></div></div></section>
 </main>
 
 <footer>
