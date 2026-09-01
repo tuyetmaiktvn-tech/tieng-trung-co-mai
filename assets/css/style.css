@@ -125,6 +125,18 @@ footer{padding:32px 0;background:#0f2746;color:rgba(255,255,255,.85)}
   .dropdown-grid{grid-template-columns:repeat(2,1fr)}
   .cta-box{display:grid}
 }
+
+/* Danh mục Học liệu tự động theo bài HSK */
+.auto-library{max-width:1180px;margin:52px auto 0;font-family:"Times New Roman",Times,serif}
+.auto-level{margin-top:42px}
+.auto-level>h2{margin:0 0 22px;color:var(--navy);font-size:38px;font-weight:900}
+.auto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.auto-item{display:flex;flex-direction:column;gap:8px;min-height:128px;padding:24px;border:2px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 10px 24px rgba(15,23,42,.07);transition:.2s}
+.auto-item:hover{transform:translateY(-5px);border-color:var(--blue);box-shadow:0 16px 32px rgba(15,23,42,.12)}
+.auto-item b{color:var(--navy);font-size:26px;font-weight:900}
+.auto-item span{color:var(--blue);font-size:18px;font-weight:800;line-height:1.5}
+@media(max-width:900px){.auto-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.auto-grid{grid-template-columns:1fr}.auto-level>h2{font-size:32px}.auto-item b{font-size:24px}.auto-item span{font-size:18px}}
 /* ===== Bổ sung liên hệ tuyển sinh ===== */
 .contact-strip{background:#0f3d75;color:#fff;font-size:14px}.contact-strip-inner{min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:16px}.contact-main{display:flex;align-items:center;gap:7px;font-weight:700}.contact-main a{font-weight:900}.contact-actions{display:flex;gap:10px}.contact-link{padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.12);font-weight:800}.contact-link.zalo{background:#0ea5e9}.header-cta{background:var(--orange);color:#fff;padding:11px 17px;border-radius:999px;font-weight:900;box-shadow:0 10px 22px rgba(245,158,11,.25)}.consult-section{padding:72px 0}.consult-box{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:38px 42px;border-radius:28px;color:#fff;background:linear-gradient(135deg,#0f3d75,#1d4ed8);box-shadow:var(--shadow)}.consult-kicker{font-size:12px;letter-spacing:1px;font-weight:900;color:#bfdbfe}.consult-box h2{margin:8px 0;font-size:34px}.consult-box p{margin:0;color:rgba(255,255,255,.86)}.consult-contact{display:flex;gap:12px;flex-wrap:wrap}.consult-phone,.consult-zalo{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:999px;font-weight:900}.consult-phone{background:#fff;color:var(--navy)}.consult-zalo{background:#0ea5e9;color:#fff}.floating-contact{position:fixed;right:18px;bottom:20px;z-index:120;display:grid;gap:10px}.floating-btn{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;box-shadow:0 12px 28px rgba(15,23,42,.22)}.floating-btn.phone{background:#10b981;font-size:23px}.floating-btn.zalo{background:#0ea5e9;font-size:13px}@media(max-width:900px){.contact-strip-inner{padding:8px 0}.contact-actions{display:none}.header-cta{text-align:center}}@media(max-width:680px){.consult-box{display:grid;padding:30px 24px}.consult-contact{display:grid}.contact-main{font-size:13px}}
 
