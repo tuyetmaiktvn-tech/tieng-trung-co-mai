@@ -6,12 +6,160 @@
 <title>Tiếng Trung du lịch | Tiếng Trung Cô Mai</title>
 <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+<style id="travel-tropical-theme">
+:root{
+  --travel-ink:#263c3a;
+  --travel-green:#087f71;
+  --travel-green-deep:#075e54;
+  --travel-mint:#bff4df;
+  --travel-coral:#ff705d;
+  --travel-pink:#ffb4a8;
+  --travel-sand:#fff3d6;
+  --travel-paper:#fffaf0;
+  --travel-line:#f0aa92;
+}
+body{
+  color:var(--travel-ink);
+  background:
+    radial-gradient(circle at 12% 22%,rgba(255,112,93,.1) 0 8rem,transparent 8.2rem),
+    radial-gradient(circle at 88% 68%,rgba(8,127,113,.1) 0 11rem,transparent 11.2rem),
+    var(--travel-paper);
+  font-family:"Times New Roman",Times,serif;
+  font-size:18px;
+}
+.topbar{
+  background:rgba(255,253,247,.97);
+  border-bottom:3px solid var(--travel-coral);
+}
+.brand img{display:none}
+.brand{
+  width:68px;
+  height:68px;
+  flex:0 0 68px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  background:linear-gradient(145deg,#d97845,#bf5f32);
+  box-shadow:0 12px 28px rgba(191,95,50,.22);
+  font:800 42px/1 "Microsoft YaHei","Noto Sans SC",sans-serif;
+}
+.nav-link{
+  color:var(--travel-green-deep);
+  font-family:"Times New Roman",Times,serif;
+  font-size:17px;
+  font-weight:900;
+}
+.nav-link:hover,.nav-link:focus{background:#dcf8ed;color:#d94335}
+.dropdown{background:#fffdf8;border:2px solid #9edfcf}
+.dropdown-title{color:var(--travel-green);font-weight:900}
+.dropdown a{color:var(--travel-ink);font-size:16px;font-weight:800}
+.dropdown a:hover{background:#e1f8f0;color:var(--travel-green-deep)}
+.page-hero{
+  position:relative;
+  overflow:hidden;
+  padding:90px 0;
+  color:var(--travel-ink);
+  background:
+    radial-gradient(circle at 82% 22%,rgba(255,255,255,.58) 0 8%,transparent 8.5%),
+    linear-gradient(125deg,#ffb4a8 0%,#ffd3a6 46%,#bff4df 100%);
+  border-bottom:8px solid var(--travel-coral);
+}
+.page-hero::before,.page-hero::after{
+  position:absolute;
+  font-family:"Microsoft YaHei",sans-serif;
+  font-weight:900;
+  line-height:1;
+  pointer-events:none;
+}
+.page-hero::before{
+  content:"游";
+  right:9%;
+  top:50%;
+  transform:translateY(-50%);
+  color:rgba(7,94,84,.1);
+  font-size:clamp(120px,18vw,220px);
+}
+.page-hero::after{
+  content:"✈";
+  right:27%;
+  top:18%;
+  color:rgba(217,67,53,.22);
+  font-size:clamp(38px,6vw,72px);
+  transform:rotate(-12deg);
+}
+.page-hero .container{position:relative;z-index:1}
+.page-hero h1{
+  max-width:850px;
+  color:#075e54;
+  font-family:"Times New Roman",Times,serif;
+  font-size:clamp(50px,6vw,78px);
+  font-weight:900;
+  line-height:1.05;
+  letter-spacing:-.025em;
+  text-shadow:0 3px 0 rgba(255,255,255,.55);
+}
+.page-hero p{max-width:720px;color:#7a3029;font-size:23px;font-weight:900}
+.section{padding:92px 0;background:transparent}
+.lesson-grid{grid-template-columns:repeat(2,1fr);gap:28px}
+.lesson-grid .card{
+  position:relative;
+  overflow:hidden;
+  min-height:250px;
+  padding:36px;
+  background:rgba(255,255,255,.94);
+  border:3px solid var(--travel-line);
+  border-radius:34px 12px 34px 12px;
+  box-shadow:10px 12px 0 rgba(255,112,93,.14);
+}
+.lesson-grid .card:nth-child(even){
+  border-color:#73cbb7;
+  border-radius:12px 34px 12px 34px;
+  box-shadow:10px 12px 0 rgba(8,127,113,.13);
+}
+.lesson-grid .card:hover{transform:translateY(-7px);box-shadow:12px 18px 0 rgba(255,112,93,.16)}
+.lesson-grid .badge{
+  padding:8px 15px;
+  color:#fff;
+  background:var(--travel-coral);
+  border:0;
+  font-size:15px;
+  font-weight:900;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+.lesson-grid .card:nth-child(even) .badge{background:var(--travel-green)}
+.lesson-grid .card h3{
+  margin:19px 0 10px;
+  color:var(--travel-green-deep);
+  font-family:"Times New Roman",Times,serif;
+  font-size:32px;
+  font-weight:900;
+}
+.lesson-grid .card p{color:#455f5b;font-size:19px;font-weight:700;line-height:1.7}
+.lesson-grid .text-link{color:#d94335;font-size:18px;font-weight:900}
+.lesson-grid .text-link:hover{color:#9f2e24}
+footer{background:#075e54;color:#edfff9;border-top:8px solid var(--travel-coral)}
+footer,footer h4,footer a{font-family:"Times New Roman",Times,serif}
+footer h4{color:#fff7df;font-size:20px;font-weight:900}
+footer a,footer p,.copyright{color:#d8f7ed;font-weight:700}
+footer a:hover{color:#ffc7b9}
+.mobile-menu{background:#dcf8ed;color:var(--travel-green-deep);font-weight:900}
+@media(max-width:680px){
+  .brand{width:58px;height:58px;flex-basis:58px;font-size:35px}
+  .page-hero{padding:66px 0}
+  .page-hero h1{font-size:45px}
+  .page-hero p{font-size:20px}
+  .lesson-grid{grid-template-columns:1fr}
+  .lesson-grid .card{min-height:0;padding:29px 24px}
+}
+</style>
 </head>
 <body>
 
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="../index.html"><img src="../assets/images/logo.svg" alt="Tiếng Trung Cô Mai"></a>
+    <a class="brand" href="../index.html" aria-label="Tiếng Trung Cô Mai">梅</a>
     <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
     <nav class="nav-links" id="navLinks">
       <a class="nav-link" href="../index.html">Trang chủ</a>
@@ -27,8 +175,7 @@
         <div class="dropdown">
           <a href="../specialized/business.html">Tiếng Trung thương mại</a>
           <a href="../specialized/railway.html">Tiếng Trung đường sắt</a>
-          <a href="../specialized/travel.html">Tiếng Trung du lịch</a>
-          <a href="../specialized/logistics.html">Tiếng Trung logistics</a>
+          <a href="../specialized/travel.html" aria-current="page">Tiếng Trung du lịch</a>
         </div>
       </div>
       <div class="nav-item">
@@ -41,8 +188,7 @@
           <a href="../resources/exams.html">Đề thi</a>
         </div>
       </div>
-      <a class="nav-link" href="../blog/index.html">Blog</a>
-      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      <a class="nav-link" href="../about/about.html">Giảng viên</a>
     </nav>
   </div>
 </header>

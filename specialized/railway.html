@@ -6,12 +6,141 @@
 <title>Tiếng Trung đường sắt | Tiếng Trung Cô Mai</title>
 <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+<style id="railway-bright-theme">
+:root{
+  --rail-ink:#102a43;
+  --rail-blue:#087fce;
+  --rail-blue-deep:#075985;
+  --rail-cyan:#22d3ee;
+  --rail-yellow:#ffd447;
+  --rail-orange:#ff8a3d;
+  --rail-paper:#f4fcff;
+  --rail-line:#96dff2;
+}
+body{
+  color:var(--rail-ink);
+  background:
+    linear-gradient(rgba(8,127,206,.045) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(8,127,206,.045) 1px,transparent 1px),
+    var(--rail-paper);
+  background-size:32px 32px;
+  font-family:"Times New Roman",Times,serif;
+  font-size:17px;
+}
+.topbar{
+  background:rgba(255,255,255,.97);
+  border-bottom:3px solid var(--rail-yellow);
+}
+.brand img{display:none}
+.brand{
+  width:68px;
+  height:68px;
+  flex:0 0 68px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  background:linear-gradient(145deg,#d97845,#bf5f32);
+  box-shadow:0 12px 28px rgba(191,95,50,.22);
+  font:800 42px/1 "Microsoft YaHei","Noto Sans SC",sans-serif;
+}
+.nav-link{
+  color:var(--rail-ink);
+  font-family:"Times New Roman",Times,serif;
+  font-size:16px;
+  font-weight:900;
+}
+.nav-link:hover,.nav-link:focus{background:#dff8ff;color:var(--rail-blue-deep)}
+.dropdown{background:#fff;border:2px solid var(--rail-line)}
+.dropdown-title{color:var(--rail-blue-deep);font-weight:900}
+.dropdown a{color:var(--rail-ink);font-size:15px;font-weight:800}
+.dropdown a:hover{background:#e3faff;color:var(--rail-blue-deep)}
+.page-hero{
+  position:relative;
+  overflow:hidden;
+  padding:86px 0;
+  color:var(--rail-ink);
+  background:
+    radial-gradient(circle at 86% 26%,rgba(255,255,255,.7) 0 9%,transparent 10%),
+    linear-gradient(120deg,#67e8f9 0%,#a7f3d0 48%,#fde68a 100%);
+  border-bottom:8px solid var(--rail-yellow);
+}
+.page-hero::after{
+  content:"轨";
+  position:absolute;
+  right:8%;
+  top:50%;
+  transform:translateY(-50%);
+  color:rgba(7,89,133,.1);
+  font:900 clamp(110px,18vw,220px)/1 "Microsoft YaHei",sans-serif;
+}
+.page-hero .container{position:relative;z-index:1}
+.page-hero h1{
+  max-width:850px;
+  color:#073b5c;
+  font-family:"Times New Roman",Times,serif;
+  font-size:clamp(48px,6vw,76px);
+  font-weight:900;
+  line-height:1.05;
+  letter-spacing:-.035em;
+  text-shadow:0 3px 0 rgba(255,255,255,.55);
+}
+.page-hero p{color:#164e63;font-size:22px;font-weight:800}
+.section{padding:92px 0;background:transparent}
+.lesson-grid{grid-template-columns:repeat(2,1fr);gap:26px}
+.lesson-grid .card{
+  position:relative;
+  overflow:hidden;
+  min-height:245px;
+  padding:34px;
+  background:#fff;
+  border:3px solid var(--rail-line);
+  border-radius:26px;
+  box-shadow:10px 10px 0 rgba(8,127,206,.13);
+}
+.lesson-grid .card:nth-child(even){border-color:#f5c83b;box-shadow:10px 10px 0 rgba(245,200,59,.2)}
+.lesson-grid .card:hover{transform:translate(-2px,-6px);box-shadow:14px 16px 0 rgba(8,127,206,.16)}
+.lesson-grid .badge{
+  padding:8px 14px;
+  color:#073b5c;
+  background:var(--rail-yellow);
+  border:2px solid #e9b91e;
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.lesson-grid .card h3{
+  margin:18px 0 10px;
+  color:var(--rail-blue-deep);
+  font-family:"Times New Roman",Times,serif;
+  font-size:30px;
+  font-weight:900;
+}
+.lesson-grid .card p{color:#334e68;font-size:18px;font-weight:700;line-height:1.7}
+.lesson-grid .text-link{color:#d94f13;font-size:17px;font-weight:900}
+.lesson-grid .text-link:hover{color:#9a3412}
+footer{background:#073b5c;color:#e9faff;border-top:8px solid var(--rail-yellow)}
+footer,footer h4,footer a{font-family:"Times New Roman",Times,serif}
+footer h4{color:#fff;font-size:19px;font-weight:900}
+footer a,footer p,.copyright{color:#d9f5ff;font-weight:700}
+footer a:hover{color:var(--rail-yellow)}
+.mobile-menu{background:#dff8ff;color:var(--rail-blue-deep);font-weight:900}
+@media(max-width:680px){
+  .brand{width:58px;height:58px;flex-basis:58px;font-size:35px}
+  .page-hero{padding:66px 0}
+  .page-hero h1{font-size:44px}
+  .page-hero p{font-size:19px}
+  .lesson-grid{grid-template-columns:1fr}
+  .lesson-grid .card{min-height:0;padding:28px 24px}
+}
+</style>
 </head>
 <body>
 
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="../index.html"><img src="../assets/images/logo.svg" alt="Tiếng Trung Cô Mai"></a>
+    <a class="brand" href="../index.html" aria-label="Tiếng Trung Cô Mai">梅</a>
     <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
     <nav class="nav-links" id="navLinks">
       <a class="nav-link" href="../index.html">Trang chủ</a>
@@ -26,9 +155,8 @@
         <button class="nav-link" data-dropdown>Chuyên ngành <span class="caret">▼</span></button>
         <div class="dropdown">
           <a href="../specialized/business.html">Tiếng Trung thương mại</a>
-          <a href="../specialized/railway.html">Tiếng Trung đường sắt</a>
+          <a href="../specialized/railway.html" aria-current="page">Tiếng Trung đường sắt</a>
           <a href="../specialized/travel.html">Tiếng Trung du lịch</a>
-          <a href="../specialized/logistics.html">Tiếng Trung logistics</a>
         </div>
       </div>
       <div class="nav-item">
@@ -41,8 +169,7 @@
           <a href="../resources/exams.html">Đề thi</a>
         </div>
       </div>
-      <a class="nav-link" href="../blog/index.html">Blog</a>
-      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      <a class="nav-link" href="../about/about.html">Giảng viên</a>
     </nav>
   </div>
 </header>
