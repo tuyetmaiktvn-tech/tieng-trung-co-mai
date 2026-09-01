@@ -52,6 +52,68 @@
 }
 </style>
 
+
+<style id="tcm-earth-palette">
+:root{
+  --tcm-olive:#45683d;
+  --tcm-olive-dark:#365b34;
+  --tcm-leaf:#5f814b;
+  --tcm-terracotta:#d96f38;
+  --tcm-orange:#e98b35;
+  --tcm-gold:#d9a23c;
+  --tcm-brown:#805d3e;
+  --tcm-cream:#fff8e9;
+  --tcm-sand:#f3e2c3;
+  --tcm-line:#dfc69e;
+  --tcm-text:#43583b;
+}
+body{color:var(--tcm-text) !important;background:#fffdf8 !important}
+.topbar{background:rgba(255,253,248,.97) !important;border-bottom-color:var(--tcm-line) !important}
+.brand img{display:none !important}
+.brand::before{
+  content:"梅";
+  width:68px;height:68px;border-radius:50%;
+  display:grid;place-items:center;
+  background:linear-gradient(145deg,#eb8a43,#cf6533);
+  color:#fff;
+  font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:42px;font-weight:800;
+  box-shadow:0 12px 28px rgba(153,91,48,.20);
+}
+.nav-link{color:var(--tcm-olive-dark) !important}
+.nav-link:hover,.nav-link:focus{color:var(--tcm-terracotta) !important}
+.dropdown{border-color:var(--tcm-line) !important;background:#fffdf8 !important}
+.dropdown a{color:var(--tcm-olive-dark) !important}
+.dropdown a:hover{background:var(--tcm-sand) !important;color:var(--tcm-terracotta) !important}
+.page-hero{
+  background:linear-gradient(135deg,#f4dfbb 0%,#fff6e5 48%,#e8efd5 100%) !important;
+}
+.page-hero h1{color:var(--tcm-olive-dark) !important}
+.page-hero p{color:#59694d !important}
+.section-heading .kicker{color:var(--tcm-terracotta) !important}
+.section-heading h2{color:var(--tcm-olive-dark) !important}
+.section-heading p{color:#59664d !important}
+.lesson-grid .card{
+  background:#fffdf8 !important;
+  border-color:var(--tcm-line) !important;
+  box-shadow:0 10px 26px rgba(112,83,49,.07) !important;
+}
+.lesson-grid .card:hover{
+  border-color:#d7b783 !important;
+  box-shadow:0 14px 32px rgba(112,83,49,.12) !important;
+}
+.lesson-grid .badge{
+  background:#f0d5a7 !important;
+  color:#9c512c !important;
+}
+.lesson-grid .card h3{color:var(--tcm-olive-dark) !important}
+.lesson-grid .card p,.lesson-card-meta-v32{color:#5e694f !important}
+.lesson-grid .text-link{color:var(--tcm-terracotta) !important}
+footer{background:#465d3e !important;color:#f8f0df !important}
+footer h4{color:#fffaf0 !important}
+footer a,footer p,.copyright{color:#efe4cf !important}
+</style>
+
 </head>
 <body>
 <header class="topbar">
@@ -109,8 +171,8 @@
         </div>
       </div>
 
-      <a class="nav-link" href="../blog/index.html">Blog</a>
-      <a class="nav-link" href="../about/about.html">Về Cô Mai</a>
+      
+      <a class="nav-link" href="../about/about.html">Giảng viên</a>
     </nav>
   </div>
 </header>
