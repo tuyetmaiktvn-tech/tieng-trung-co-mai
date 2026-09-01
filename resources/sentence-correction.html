@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chữa câu sai | Bài tập mở rộng | Tiếng Trung Cô Mai</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=3.3.1">
+  <style>
+    :root{--ink:#17324d;--orange:#e96f2d;--orange-dark:#b84c18;--cream:#fffaf5;--line:#f0d7c7}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#fffaf5,#f4fbf8);color:var(--ink);font-family:"Segoe UI",Arial,sans-serif}
+    .correction-hero{padding:54px 20px 46px;text-align:center;background:linear-gradient(135deg,#fff0d7,#def7ed);border-bottom:1px solid #eaded4}
+    .correction-hero h1{margin:0 0 12px;font-size:clamp(38px,6vw,58px);line-height:1.1}
+    .correction-hero p{max-width:760px;margin:0 auto;color:#496174;font-size:clamp(17px,2vw,20px);line-height:1.6}
+    .back-link{display:inline-block;margin-top:20px;color:#29465f;font-weight:700}
+    .exercise-shell{max-width:1180px;margin:0 auto;padding:30px 20px 64px}
+    .mode-nav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+    .mode-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 19px;border:1px solid #ddc1ae;border-radius:999px;background:#fff;color:var(--orange-dark);font:700 16px "Segoe UI",Arial,sans-serif;cursor:pointer}
+    .mode-button[aria-selected="true"]{background:var(--orange);border-color:var(--orange);color:#fff}
+    .document-panel{display:none}
+    .document-panel.is-active{display:block}
+    .document-card{overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 30px rgba(44,64,74,.09)}
+    .document-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid var(--line);background:#fffdfb}
+    .document-header h2{margin:0;font-size:21px}
+    .document-header p{margin:4px 0 0;color:#667784;font-size:15px}
+    .online-badge{flex:0 0 auto;padding:7px 12px;border-radius:999px;background:#e5f7ef;color:#147054;font-size:14px;font-weight:750}
+    .page-list{padding:22px;background:#edf0ef;user-select:none;-webkit-user-select:none}
+    .scan-page{position:relative;max-width:900px;margin:0 auto 22px;overflow:hidden;background:#fff;box-shadow:0 5px 18px rgba(31,50,59,.14)}
+    .scan-page:last-child{margin-bottom:0}
+    .scan-page img{display:block;width:100%;height:auto;pointer-events:none;-webkit-user-drag:none}
+    .scan-page::after{content:"";position:absolute;inset:0;z-index:2}
+    @media(max-width:700px){.correction-hero{padding-top:42px}.exercise-shell{padding:22px 8px 44px}.document-header{align-items:flex-start;flex-direction:column}.page-list{padding:8px}.scan-page{margin-bottom:10px}}
+    @media print{body{display:none!important}}
+  </style>
+</head>
+<body>
+<main>
+  <section class="correction-hero">
+    <div class="container">
+      <h1>Chữa câu sai</h1>
+      <p>200 câu luyện nhận biết và sửa lỗi tiếng Trung, được đánh số liên tục từ 1 đến 200. Hãy làm bài trước rồi mở đáp án để tự kiểm tra.</p>
+      <a class="back-link" href="extended-exercises.html">← Trở về Bài tập mở rộng</a>
+    </div>
+  </section>
+
+  <div class="exercise-shell">
+    <nav class="mode-nav" role="tablist" aria-label="Chọn nội dung">
+      <button class="mode-button" id="exercise-tab" type="button" role="tab" aria-selected="true" aria-controls="exercise-panel">Làm bài (1–200)</button>
+      <button class="mode-button" id="answer-tab" type="button" role="tab" aria-selected="false" aria-controls="answer-panel">Xem đáp án (1–200)</button>
+    </nav>
+
+    <section class="document-panel is-active" id="exercise-panel" role="tabpanel" aria-labelledby="exercise-tab">
+      <div class="document-card">
+        <header class="document-header"><div><h2>Đề bài: Câu 1–200</h2><p>改正下列句子中的错误</p></div><span class="online-badge">Chỉ xem trực tuyến</span></header>
+        <div class="page-list" id="question-pages" aria-label="Đề bài chữa câu sai từ câu 1 đến câu 200"></div>
+      </div>
+    </section>
+
+    <section class="document-panel" id="answer-panel" role="tabpanel" aria-labelledby="answer-tab" hidden>
+      <div class="document-card">
+        <header class="document-header"><div><h2>Đáp án: Câu 1–200</h2><p>参考答案</p></div><span class="online-badge">Chỉ xem trực tuyến</span></header>
+        <div class="page-list" id="answer-pages" aria-label="Đáp án chữa câu sai từ câu 1 đến câu 200"></div>
+      </div>
+    </section>
+  </div>
+</main>
+<script src="../assets/js/app.js?v=3.3.1"></script>
+<script>
+const tabs=[...document.querySelectorAll('.mode-button')];
+const pad=value=>String(value).padStart(3,'0');
+const renderPages=(target,prefix,pageCount,stripsPerPage,folder)=>{
+  document.getElementById(target).innerHTML=Array.from({length:pageCount},(_,page)=>{
+    const images=Array.from({length:stripsPerPage},(_,strip)=>{
+      const index=page*stripsPerPage+strip+1;
+      return `<img src="../assets/images/sentence-correction/${folder}/${prefix}-${pad(index)}.jpg" alt="" loading="lazy" draggable="false">`;
+    }).join('');
+    return `<section class="scan-page" aria-label="Trang ${page+1}">${images}</section>`;
+  }).join('');
+};
+renderPages('question-pages','q',13,6,'questions');
+renderPages('answer-pages','a',7,3,'answers');
+tabs.forEach(tab=>tab.addEventListener('click',()=>{
+  tabs.forEach(item=>item.setAttribute('aria-selected',String(item===tab)));
+  document.querySelectorAll('.document-panel').forEach(panel=>{
+    const active=panel.id===tab.getAttribute('aria-controls');
+    panel.classList.toggle('is-active',active);
+    panel.hidden=!active;
+  });
+}));
+document.addEventListener('contextmenu',event=>event.preventDefault());
+document.addEventListener('dragstart',event=>event.preventDefault());
+document.addEventListener('keydown',event=>{
+  if((event.ctrlKey||event.metaKey)&&['s','p','u'].includes(event.key.toLowerCase()))event.preventDefault();
+});
+</script>
+</body>
+</html>
