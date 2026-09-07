@@ -1,0 +1,28 @@
+/* Answer controls stay directly with their question image. */
+.inline-question{background:#fff;border:1px solid var(--line);border-radius:12px;margin:14px 0;overflow:hidden;break-inside:avoid}
+.question-image{display:block;width:100%;height:auto;background:white}
+.inline-question .answer-row{margin:0;padding:12px 16px;border-top:1px solid #eee;border-bottom:0}
+.inline-question .result:empty{display:none}
+.inline-question .opt{position:relative;display:inline-flex;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+.inline-question .opt input{display:block;position:absolute;width:1px;height:1px;opacity:0}
+.inline-question .opt span{width:44px;height:44px}
+.inline-question .opt input:focus-visible+span{outline:3px solid var(--blue);outline-offset:3px}
+.picture-question .answer-row{grid-template-columns:14% 1fr;gap:0;padding-right:8%}
+.picture-question .options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;justify-items:center}
+.picture-question .result{grid-column:2;text-align:center;margin-top:6px}
+.question-reference{margin:14px 0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.question-reference .question-image{max-height:min(65vh,640px)}
+.question-reference h3{font:700 17px Arial,sans-serif;margin:0;padding:12px 16px;background:#f7f3ef}
+.shared-question-group{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:start}
+.shared-question-group>.question-reference{position:sticky;top:90px}
+.shared-question-group .answer-row{grid-template-columns:38px 1fr;gap:8px}
+.shared-question-group .result{grid-column:2}
+.shared-question-group .options{gap:5px}
+.question-example{margin:14px 0}
+@media(max-width:720px){.shared-question-group{display:block}.shared-question-group>.question-reference{position:static}.inline-question .answer-row{grid-template-columns:36px 1fr;gap:8px;padding:10px}.picture-question .answer-row{grid-template-columns:18% 1fr;gap:0;padding-right:5%}.inline-question .options{gap:5px}.picture-question .options{gap:0}.inline-question .result{grid-column:2}.question-reference .question-image{max-height:340px}.inline-question .qnum{font-size:17px}}
+
+/* Match the answer columns to the three picture columns at every screen width. */
+.picture-question .answer-row{display:block;position:relative;padding:12px 0}
+.picture-question .qnum{position:absolute;left:12px;top:16px}
+.picture-question .options{margin-left:var(--choice-left);margin-right:var(--choice-right)}
+.picture-question .result{margin:6px 12px 0;text-align:center}
