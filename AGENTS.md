@@ -19,4 +19,4 @@
 
 - Bộ H10901 là Đề 1 HSK1 (`hsk/hsk1-test1.html`). Các đề HSK1 thêm tiếp theo được đánh số Đề 2, Đề 3… theo thứ tự tích hợp; kiểm tra số đã có trước khi tạo đề mới. Giữ bài test đầu ra riêng, không tính vào chuỗi số đề.
 
-- Theo yêu cầu của chủ dự án, H11005 được tích hợp trước thành Đề 5 HSK1 (`hsk/hsk1-test5.html`); giữ số 4 cho H11004 khi có lại tệp nguồn. Không đổi Đề 5 thành Đề 4 để lấp số còn thiếu.
+- H11004 là Đề 4 HSK1 (`hsk/hsk1-test4.html`); H11005 là Đề 5 HSK1 (`hsk/hsk1-test5.html`). Đề 5 được tích hợp trước theo yêu cầu của chủ dự án; giữ nguyên số đề khi bổ sung Đề 4.
