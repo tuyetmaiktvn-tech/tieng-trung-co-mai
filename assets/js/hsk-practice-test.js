@@ -44,10 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let q = 1; q <= config.total; q++) {
       const picked = answer(q), expected = config.answers[q], result = document.getElementById('r' + q);
       const isWritten = written.some(input => input.name === 'q' + q);
-      const matches = isWritten ? normalizeWriting(picked) === normalizeWriting(expected) : picked === expected;
+      const accepted = config.acceptedAnswers?.[q] || [expected];
+      const matches = isWritten ? accepted.some(value => normalizeWriting(picked) === normalizeWriting(value)) : picked === expected;
       if (matches) { correct++; result.textContent = '✓ Đúng'; result.className = 'result ok'; }
       else {
-        result.textContent = (picked ? 'Sai. ' : 'Chưa trả lời. ') + 'Đáp án: ' + expected;
+        result.textContent = (picked ? 'Sai. ' : 'Chưa trả lời. ') + 'Đáp án: ' + accepted.join(' / ');
         result.className = 'result bad';
         const link = document.createElement('a'); link.href = '#question-' + q; link.textContent = 'Câu ' + q; links.append(link);
       }
