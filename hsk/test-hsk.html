@@ -186,6 +186,20 @@ footer a:hover{color:#e7f3a8!important}
   .lesson-grid .card p,.lesson-grid .text-link{font-size:18px!important}
   .lesson-grid .badge{font-size:17px!important}
 }
+.test-folders{display:grid;gap:20px}
+.test-folder{min-width:0;background:#fffaf7;border:1px solid #edcbd6;border-radius:18px;overflow:hidden;scroll-margin-top:110px}
+.test-folder summary{display:flex;align-items:center;gap:16px;padding:24px;cursor:pointer;color:#9f2854;font-size:28px;font-weight:800;list-style:none}
+.test-folder summary::-webkit-details-marker{display:none}
+.test-folder summary::before{content:"▸"}
+.test-folder[open] summary::before{content:"▾"}
+.test-folder summary:focus-visible{outline:3px solid #6c8b2d;outline-offset:-4px}
+.test-count{margin-left:auto;font-size:18px;font-weight:600}
+.test-folder .lesson-grid{padding:0 24px 24px}
+@media(max-width:720px){
+ .test-folder summary{padding:18px;gap:10px;font-size:24px}
+ .test-count{font-size:16px}
+ .test-folder .lesson-grid{padding:0 18px 18px}
+}
 </style>
 
 </head>
@@ -229,14 +243,10 @@ footer a:hover{color:#e7f3a8!important}
 <main>
 <section class="page-hero"><div class="container"><h1>Test HSK</h1><p>Chọn bài kiểm tra để ôn tập và đánh giá kiến thức tiếng Trung của bạn.</p></div></section>
 <section class="section"><div class="container">
-<div class="section-heading"><div class="kicker">Luyện tập HSK</div><h2>Chọn bài kiểm tra</h2><p>Các bài kiểm tra hiện có dành cho cấp độ HSK 1 và HSK 2.</p></div>
-<div class="lesson-grid">
-<article class="card"><span class="badge">HSK 1</span><h3>Bài kiểm tra HSK 1</h3><p>Ôn tập và kiểm tra kiến thức đã học ở cấp độ HSK 1.</p><a class="text-link" href="hsk1-final-test.html">Làm bài test HSK 1 →</a></article>
-<article class="card"><span class="badge">HSK 2</span><h3>Bài test đầu ra HSK 2</h3><p>Ôn tập và kiểm tra kiến thức đã học ở cấp độ HSK 2.</p><a class="text-link" href="hsk2-final-test.html">Làm bài test HSK 2 →</a></article>
+<div class="section-heading"><div class="kicker">Luyện tập HSK</div><h2>Chọn trình độ HSK</h2><p>Mở thư mục theo trình độ để chọn bài kiểm tra. Hiện có đề HSK 1 và HSK 2.</p></div>
+<div class="test-folders"><details class="test-folder" id="hsk1"><summary><span>HSK 1</span><span class="test-count">1 bài kiểm tra</span></summary><div class="lesson-grid"><article class="card"><span class="badge">HSK 1</span><h3>Bài kiểm tra HSK 1</h3><p>Ôn tập và kiểm tra kiến thức đã học ở cấp độ HSK 1.</p><a class="text-link" href="hsk1-final-test.html">Làm bài test HSK 1 →</a></article></div></details><details class="test-folder" id="hsk2"><summary><span>HSK 2</span><span class="test-count">3 bài kiểm tra</span></summary><div class="lesson-grid"><article class="card"><span class="badge">HSK 2</span><h3>Bài test đầu ra HSK 2</h3><p>Ôn tập và kiểm tra kiến thức đã học ở cấp độ HSK 2.</p><a class="text-link" href="hsk2-final-test.html">Làm bài test HSK 2 →</a></article>
 <article class="card"><span class="badge">HSK 2 · Đề số 1</span><h3>HSK 2 – Đề số 1</h3><p>35 câu nghe, 25 câu đọc. Có file nghe và chấm điểm sau khi nộp bài.</p><a class="text-link" href="hsk2-test1.html">Làm đề số 1 →</a></article>
-<article class="card"><span class="badge">HSK 2 · Đề số 2</span><h3>HSK 2 – Đề số 2</h3><p>35 câu nghe, 25 câu đọc. Có file nghe và chấm điểm sau khi nộp bài.</p><a class="text-link" href="hsk2-test2.html">Làm đề số 2 →</a></article>
-
-</div></div></section>
+<article class="card"><span class="badge">HSK 2 · Đề số 2</span><h3>HSK 2 – Đề số 2</h3><p>35 câu nghe, 25 câu đọc. Có file nghe và chấm điểm sau khi nộp bài.</p><a class="text-link" href="hsk2-test2.html">Làm đề số 2 →</a></article></div></details></div></div></section>
 </main>
 
 <footer>
@@ -270,5 +280,13 @@ footer a:hover{color:#e7f3a8!important}
 </footer>
 
 <script src="../assets/js/app.js?v=3.3.1"></script>
+<script>
+function openTestFolderFromHash() {
+  const folder = document.getElementById(window.location.hash.slice(1));
+  if (folder && folder.classList.contains('test-folder')) folder.open = true;
+}
+openTestFolderFromHash();
+window.addEventListener('hashchange', openTestFolderFromHash);
+</script>
 </body>
 </html>
