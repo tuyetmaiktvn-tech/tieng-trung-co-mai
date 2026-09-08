@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   const config = JSON.parse(document.getElementById('test-config').textContent);
   const radios = [...document.querySelectorAll('input[type="radio"]')];
+  const written = [...document.querySelectorAll('.written-answer')];
   const summary = document.getElementById('summary');
   const audio = document.getElementById('testAudio');
   let startedAt = null, elapsedMs = 0, tick = null, submitted = false;
-  const answer = q => document.querySelector('input[name="q' + q + '"]:checked')?.value || '';
+  const answer = q => document.querySelector('input[name="q' + q + '"]:checked')?.value || document.getElementById('q' + q)?.value.trim() || '';
+  const normalizeWriting = value => value.normalize('NFKC').replace(/[\s\p{P}]/gu, '');
   function renderTime() {
     const seconds = Math.floor((elapsedMs + (startedAt === null ? 0 : Date.now() - startedAt)) / 1000);
     document.getElementById('elapsed').textContent = String(Math.floor(seconds / 60)).padStart(2, '0') + ':' + String(seconds % 60).padStart(2, '0');
@@ -28,10 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('progress').textContent = 'Đã làm ' + count + '/' + config.total + ' câu';
     return count;
   }
-  radios.forEach(input => input.addEventListener('change', () => {
+  function answerChanged() {
     if (submitted) { submitted = false; clearResults(); }
     startTime(); progress();
-  }));
+  }
+  radios.forEach(input => input.addEventListener('change', answerChanged));
+  written.forEach(input => input.addEventListener('input', answerChanged));
   audio.addEventListener('play', startTime);
   document.getElementById('submitTest').addEventListener('click', () => {
     stopTime(); submitted = true; audio.pause();
@@ -39,7 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const links = document.getElementById('reviewLinks'); links.replaceChildren();
     for (let q = 1; q <= config.total; q++) {
       const picked = answer(q), expected = config.answers[q], result = document.getElementById('r' + q);
-      if (picked === expected) { correct++; result.textContent = '✓ Đúng'; result.className = 'result ok'; }
+      const isWritten = written.some(input => input.name === 'q' + q);
+      const matches = isWritten ? normalizeWriting(picked) === normalizeWriting(expected) : picked === expected;
+      if (matches) { correct++; result.textContent = '✓ Đúng'; result.className = 'result ok'; }
       else {
         result.textContent = (picked ? 'Sai. ' : 'Chưa trả lời. ') + 'Đáp án: ' + expected;
         result.className = 'result bad';
@@ -55,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     stopTime(); submitted = false; elapsedMs = 0;
     audio.pause(); audio.currentTime = 0;
     radios.forEach(input => { input.checked = false; });
+    written.forEach(input => { input.value = ''; });
     clearResults(); progress(); renderTime();
   });
 });
