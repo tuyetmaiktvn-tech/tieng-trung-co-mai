@@ -14,3 +14,7 @@
 - Trước khi hoàn tất, kiểm tra đủ nội dung từng câu, liên kết tài nguyên, chọn/đổi đáp án, chấm điểm và làm lại; kiểm tra bố cục trên màn hình lớn và nhỏ khi có trình duyệt khả dụng. Nêu rõ nếu chưa kiểm tra trực tiếp được.
 
 Đây là quy tắc khi biên soạn và tích hợp đề mới; thao tác Git Push tự nó không chuyển đổi bố cục của tệp đề được tải lên.
+
+## Đánh số đề HSK 1
+
+- Bộ H10901 là Đề 1 HSK1 (`hsk/hsk1-test1.html`). Các đề HSK1 thêm tiếp theo được đánh số Đề 2, Đề 3… theo thứ tự tích hợp; kiểm tra số đã có trước khi tạo đề mới. Giữ bài test đầu ra riêng, không tính vào chuỗi số đề.
