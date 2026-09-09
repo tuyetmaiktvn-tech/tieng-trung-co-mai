@@ -285,7 +285,59 @@ label{font-size:18px;line-height:1.55}
     <div class="container">© Tiếng Trung Cô Mai • Học từ gốc – Vững mọi mốc</div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
+    /* =========================================================
+       SUPABASE - dùng cùng cấu hình với hsk1.html
+       ========================================================= */
+    const TCM_SUPABASE_URL="https://bxuvszgmvbzxpwjmqqcv.supabase.co";
+    const TCM_SUPABASE_PUBLISHABLE_KEY="sb_publishable_xlERYsP4Z6kfE8qBbWOSUw_FFtP_3kA";
+    const tcmSupabase = window.supabase.createClient(
+      TCM_SUPABASE_URL,
+      TCM_SUPABASE_PUBLISHABLE_KEY
+    );
+
+    async function saveLessonProgressToSupabase({completed=false, testScore=null} = {}){
+      try{
+        const { data:{ session } } = await tcmSupabase.auth.getSession();
+        if(!session?.user){
+          return {ok:false, reason:"not_logged_in"};
+        }
+
+        const userId = session.user.id;
+
+        // Giữ trạng thái đã hoàn thành nếu học viên đã hoàn thành trước đó.
+        const { data: existing } = await tcmSupabase
+          .from("learning_progress")
+          .select("completed,test_score")
+          .eq("user_id", userId)
+          .eq("course", "HSK1")
+          .eq("lesson", 1)
+          .maybeSingle();
+
+        const finalCompleted = Boolean(existing?.completed || completed);
+        const oldScore = Number(existing?.test_score ?? 0);
+        const newScore = testScore === null ? oldScore : Math.max(oldScore, Number(testScore));
+
+        const { error } = await tcmSupabase
+          .from("learning_progress")
+          .upsert({
+            user_id: userId,
+            course: "HSK1",
+            lesson: 1,
+            completed: finalCompleted,
+            test_score: newScore,
+            updated_at: new Date().toISOString()
+          }, { onConflict: "user_id,course,lesson" });
+
+        if(error) throw error;
+        return {ok:true};
+      }catch(err){
+        console.error("Không thể lưu tiến độ Supabase:", err);
+        return {ok:false, reason:"error"};
+      }
+    }
+
     /* =========================================================
        1. DỮ LIỆU BÀI HỌC
        Chỉ cần thay nội dung trong lessonData cho từng bài.
@@ -1443,6 +1495,13 @@ label{font-size:18px;line-height:1.55}
         const box=$("#scoreBox");
         box.style.display="block";
         box.textContent=`Bạn đạt ${score}/${lessonData.quiz.length} câu (${percent}%). Điểm cao nhất: ${state.quizScore}%.`;
+
+        // Nếu đã đăng nhập, lưu điểm cao nhất của Quiz Bài 1 lên Supabase.
+        saveLessonProgressToSupabase({testScore: state.quizScore}).then(result=>{
+          if(result.reason==="not_logged_in"){
+            box.textContent += " Đăng nhập ở trang HSK 1 để lưu điểm vào tài khoản.";
+          }
+        });
       };
 
       $$(".flashcard").forEach(card=>{
@@ -1477,10 +1536,34 @@ label{font-size:18px;line-height:1.55}
         },400);
       });
 
-      $("#finishLesson").onclick=()=>{
+      $("#finishLesson").onclick=async()=>{
         const finished=trackedSections.every(id=>state.completed.includes(id));
         if(finished && state.quizScore>=80){
-          $("#completionBox").innerHTML="<h2>🎉 Chúc mừng!</h2><p>Bạn đã hoàn thành bài học với kết quả đạt yêu cầu.</p>";
+          const box=$("#completionBox");
+          box.innerHTML="<h2>⏳ Đang lưu kết quả...</h2><p>Vui lòng chờ trong giây lát.</p>";
+
+          const result=await saveLessonProgressToSupabase({
+            completed:true,
+            testScore:state.quizScore
+          });
+
+          if(result.ok){
+            box.innerHTML=`
+              <h2>🎉 Chúc mừng!</h2>
+              <p>Bạn đã hoàn thành Bài 1. Tiến độ và điểm Quiz đã được lưu vào tài khoản.</p>
+              <p><strong>Điểm Quiz cao nhất: ${state.quizScore}%</strong></p>
+              <a class="btn btn-success" href="hsk1.html">← Về HSK 1 · Học của tôi</a>`;
+          }else if(result.reason==="not_logged_in"){
+            box.innerHTML=`
+              <h2>🎉 Bạn đã hoàn thành nội dung Bài 1</h2>
+              <p>Để lưu tiến độ vào tài khoản, hãy đăng nhập tại trang HSK 1 rồi quay lại bài học.</p>
+              <a class="btn btn-primary" href="hsk1.html">Đăng nhập / Về HSK 1</a>`;
+          }else{
+            box.innerHTML=`
+              <h2>⚠️ Chưa lưu được lên tài khoản</h2>
+              <p>Kết quả trên máy vẫn được giữ. Hãy thử lại sau.</p>
+              <button class="btn btn-success" onclick="location.reload()">Thử lại</button>`;
+          }
         }else{
           const missing=trackedSections.filter(id=>!state.completed.includes(id)).length;
           alert(`Bạn còn ${missing} phần chưa đánh dấu hoàn thành. Điểm quiz cao nhất hiện tại: ${state.quizScore}%.`);
