@@ -114,6 +114,11 @@ footer h4{color:#fffaf0 !important}
 footer a,footer p,.copyright{color:#efe4cf !important}
 </style>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<style id="tcm-progress-ui">
+.tcm-account{max-width:1050px;margin:28px auto;padding:20px;border:1px solid #dfc69e;border-radius:18px;background:#fffaf0}.tcm-account-top{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap}.tcm-account h3{margin:0;color:#365b34;font-size:24px}.tcm-account p{margin:5px 0 0;color:#667158}.tcm-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.tcm-btn{border:0;border-radius:999px;padding:10px 16px;font-weight:800;cursor:pointer}.tcm-green{background:#45683d;color:white}.tcm-orange{background:#d96f38;color:white}.tcm-soft{background:#f0dfbd;color:#365b34}.tcm-user{display:none}.tcm-progress{display:none;margin-top:18px;padding-top:16px;border-top:1px solid #dfc69e}.tcm-track{height:14px;background:#eadfc9;border-radius:999px;overflow:hidden;margin:10px 0 14px}.tcm-fill{height:100%;width:0;background:#5f814b}.tcm-checks{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.tcm-check{border:1px solid #dfc69e;border-radius:10px;padding:9px;background:#fffdf8;font-weight:700;cursor:pointer;color:#365b34}.tcm-check.done{background:#e7f0dc;border-color:#9db58a}.tcm-modal{display:none;position:fixed;inset:0;background:#0006;z-index:9999;align-items:center;justify-content:center;padding:18px}.tcm-modal.open{display:flex}.tcm-card{width:min(430px,100%);background:#fffdf8;border-radius:18px;padding:24px}.tcm-card input{width:100%;box-sizing:border-box;margin:7px 0;padding:12px;border:1px solid #d8c49e;border-radius:10px;font-size:16px}.tcm-msg{min-height:20px;margin:8px 0;font-weight:700}@media(max-width:720px){.tcm-checks{grid-template-columns:repeat(3,1fr)}}
+</style>
 </head>
 <body>
 <header class="topbar">
@@ -175,6 +180,10 @@ footer a,footer p,.copyright{color:#efe4cf !important}
 </header>
 
 <main>
+
+<section class="tcm-account"><div class="tcm-account-top"><div><h3>Học của tôi · HSK 1</h3><p>Không đăng nhập vẫn học bình thường. Đăng nhập để lưu tiến độ.</p></div><div class="tcm-actions" id="guest"><button class="tcm-btn tcm-green" id="loginBtn" type="button">Đăng nhập</button><button class="tcm-btn tcm-orange" id="signupBtn" type="button">Đăng ký</button></div><div class="tcm-actions tcm-user" id="userBox"><b id="userEmail"></b><button class="tcm-btn tcm-soft" id="logoutBtn" type="button">Đăng xuất</button></div></div><div class="tcm-progress" id="progressBox"><b id="progressText">0/15 bài · 0%</b><div class="tcm-track"><div class="tcm-fill" id="progressFill"></div></div><div class="tcm-checks" id="checks"></div></div></section>
+<div class="tcm-modal" id="authModal"><div class="tcm-card"><h3 id="authTitle">Đăng nhập</h3><p id="authHelp">Nhập email và mật khẩu.</p><input id="authEmail" type="email" placeholder="Email"><input id="authPassword" type="password" placeholder="Mật khẩu (ít nhất 6 ký tự)"><div class="tcm-msg" id="authMsg"></div><div class="tcm-actions"><button class="tcm-btn tcm-green" id="authSubmit" type="button">Tiếp tục</button><button class="tcm-btn tcm-soft" id="authClose" type="button">Đóng</button></div></div></div>
+
   <section class="page-hero">
     <div class="container">
       <h1>HSK 1</h1>
@@ -407,5 +416,20 @@ footer a,footer p,.copyright{color:#efe4cf !important}
 </footer>
 
 <script src="../assets/js/app.js?v=3.3.1"></script>
+
+<script>
+const TCM_SUPABASE_URL="https://bxuvszgmvbzxpwjmqqcv.supabase.co";
+const TCM_SUPABASE_PUBLISHABLE_KEY="sb_publishable_xlERYsP4Z6kfE8qBbWOSUw_FFtP_3kA";
+let client=null,session=null,mode="login",progress=new Map();
+const configured=()=>!TCM_SUPABASE_URL.includes("DAN_API")&&!TCM_SUPABASE_PUBLISHABLE_KEY.includes("DAN_PUBLISHABLE");
+function openAuth(m){mode=m;authTitle.textContent=m==="signup"?"Đăng ký tài khoản":"Đăng nhập";authHelp.textContent=m==="signup"?"Dùng email thật để nhận thư xác nhận.":"Nhập email và mật khẩu đã đăng ký.";authMsg.textContent="";authModal.classList.add("open")}
+function render(){let done=[...progress.values()].filter(x=>x.completed).length,pct=Math.round(done/15*100);progressText.textContent=`${done}/15 bài · ${pct}%`;progressFill.style.width=pct+"%";checks.innerHTML="";for(let i=1;i<=15;i++){let b=document.createElement("button");b.type="button";b.className="tcm-check"+(progress.get(i)?.completed?" done":"");b.textContent=(progress.get(i)?.completed?"✓ ":"○ ")+"Bài "+i;b.onclick=()=>toggle(i);checks.appendChild(b)}}
+async function load(){if(!session)return;let {data,error}=await client.from("learning_progress").select("lesson,completed,test_score,updated_at").eq("course","HSK1").order("lesson");if(error){console.error(error);return}progress=new Map((data||[]).map(r=>[r.lesson,r]));render()}
+async function toggle(i){if(!session){openAuth("login");return}let current=!!progress.get(i)?.completed;let {error}=await client.from("learning_progress").upsert({user_id:session.user.id,course:"HSK1",lesson:i,completed:!current,updated_at:new Date().toISOString()},{onConflict:"user_id,course,lesson"});if(error){alert("Chưa lưu được tiến độ.");console.error(error);return}await load()}
+function show(s){session=s;if(s){guest.style.display="none";userBox.style.display="flex";progressBox.style.display="block";userEmail.textContent=s.user.email||"Đã đăng nhập";load()}else{guest.style.display="flex";userBox.style.display="none";progressBox.style.display="none";progress=new Map()}}
+loginBtn.onclick=()=>openAuth("login");signupBtn.onclick=()=>openAuth("signup");authClose.onclick=()=>authModal.classList.remove("open");logoutBtn.onclick=async()=>client&&client.auth.signOut();authSubmit.onclick=async()=>{if(!configured()){authMsg.textContent="Chưa điền API URL và Publishable key.";return}let email=authEmail.value.trim(),password=authPassword.value;if(!email||!password){authMsg.textContent="Vui lòng nhập đủ email và mật khẩu.";return}authMsg.textContent="Đang xử lý...";if(mode==="signup"){let {data,error}=await client.auth.signUp({email,password,options:{emailRedirectTo:"https://tiengtrungcomai.vn/hsk/hsk1.html"}});authMsg.textContent=error?error.message:(data.session?"Đăng ký thành công.":"Đã đăng ký. Hãy mở email để xác nhận tài khoản.")}else{let {error}=await client.auth.signInWithPassword({email,password});if(error){authMsg.textContent="Email hoặc mật khẩu chưa đúng."}else{authMsg.textContent="Đăng nhập thành công.";setTimeout(()=>authModal.classList.remove("open"),400)}}};
+(async()=>{if(!configured()){console.warn("Chưa điền Supabase API URL / Publishable key");return}client=window.supabase.createClient(TCM_SUPABASE_URL,TCM_SUPABASE_PUBLISHABLE_KEY);let {data}=await client.auth.getSession();show(data.session);client.auth.onAuthStateChange((_e,s)=>show(s))})();
+</script>
+
 </body>
 </html>
