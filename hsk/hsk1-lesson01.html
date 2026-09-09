@@ -1330,8 +1330,8 @@ label{font-size:18px;line-height:1.55}
           <div class="container">
             <div class="completion" id="completionBox">
               <h2>🏆 Hoàn thành bài học</h2>
-              <p>Hoàn thành các phần và đạt ít nhất 80% quiz để kết thúc bài.</p>
-              <button class="btn btn-success" id="finishLesson">Kiểm tra hoàn thành</button>
+              <p>Đạt ít nhất 80% Quiz để hoàn thành bài học. Các dấu hoàn thành từng phần chỉ dùng để theo dõi quá trình học.</p>
+              <button class="btn btn-success" id="finishLesson">✓ Hoàn thành bài học</button>
             </div>
           </div>
         </section>`;
@@ -1537,8 +1537,13 @@ label{font-size:18px;line-height:1.55}
       });
 
       $("#finishLesson").onclick=async()=>{
-        const finished=trackedSections.every(id=>state.completed.includes(id));
-        if(finished && state.quizScore>=80){
+        if(state.quizScore>=80){
+          // Khi Quiz đạt yêu cầu, bài học được công nhận hoàn thành.
+          // Các nút hoàn thành từng phần chỉ còn vai trò theo dõi quá trình học.
+          state.completed=[...trackedSections];
+          saveState();
+          updateProgress();
+
           const box=$("#completionBox");
           box.innerHTML="<h2>⏳ Đang lưu kết quả...</h2><p>Vui lòng chờ trong giây lát.</p>";
 
@@ -1555,8 +1560,8 @@ label{font-size:18px;line-height:1.55}
               <a class="btn btn-success" href="hsk1.html">← Về HSK 1 · Học của tôi</a>`;
           }else if(result.reason==="not_logged_in"){
             box.innerHTML=`
-              <h2>🎉 Bạn đã hoàn thành nội dung Bài 1</h2>
-              <p>Để lưu tiến độ vào tài khoản, hãy đăng nhập tại trang HSK 1 rồi quay lại bài học.</p>
+              <h2>🎉 Bạn đã đạt yêu cầu hoàn thành Bài 1</h2>
+              <p>Điểm Quiz của bạn là ${state.quizScore}%. Để lưu tiến độ vào tài khoản, hãy đăng nhập tại trang HSK 1 rồi quay lại bài học.</p>
               <a class="btn btn-primary" href="hsk1.html">Đăng nhập / Về HSK 1</a>`;
           }else{
             box.innerHTML=`
@@ -1565,8 +1570,7 @@ label{font-size:18px;line-height:1.55}
               <button class="btn btn-success" onclick="location.reload()">Thử lại</button>`;
           }
         }else{
-          const missing=trackedSections.filter(id=>!state.completed.includes(id)).length;
-          alert(`Bạn còn ${missing} phần chưa đánh dấu hoàn thành. Điểm quiz cao nhất hiện tại: ${state.quizScore}%.`);
+          alert(`Bạn cần đạt tối thiểu 80% Quiz để hoàn thành bài học. Điểm Quiz cao nhất hiện tại: ${state.quizScore}%.`);
         }
       };
     }
