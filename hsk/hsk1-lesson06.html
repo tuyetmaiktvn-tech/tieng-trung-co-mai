@@ -1423,7 +1423,7 @@
           <div class="pinyin">${esc(v.pinyin)}</div>
           <div class="meaning">${esc(v.meaning)}</div>
           <small>${esc(v.type)}</small>
-          <div class="example">${esc(v.example)}<br>${esc(v.examplePinyin)}<br>${esc(v.exampleVi)}</div>
+          <div class="example">${esc(v.example)} <button type="button" class="mini-btn vocab-speak" data-text="${esc(v.example)}" aria-label="Nghe ví dụ: ${esc(v.example)}">🔊 Nghe ví dụ</button><br>${esc(v.examplePinyin)}<br>${esc(v.exampleVi)}</div>
         </article>`).join("") || `<p>Không tìm thấy từ phù hợp.</p>`;
 
       bindVocabularyEvents();
