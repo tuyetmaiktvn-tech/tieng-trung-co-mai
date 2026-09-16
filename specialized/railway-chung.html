@@ -37,6 +37,41 @@ footer{padding:30px 0;background:#f2e8d0;text-align:center;color:#5c604d;font-we
 @media(max-width:850px){.quicknav{grid-template-columns:repeat(2,1fr)}.quizbox{grid-template-columns:1fr}}
 @media(max-width:560px){.quicknav{grid-template-columns:1fr}.topbar .container{min-height:64px}.brand{font-size:17px}.back{font-size:14px}th,td{padding:11px 10px}.han{font-size:20px}}
 </style>
+
+<style>
+/* FIX FONT PINYIN + TIENG VIET */
+.pinyin,.viet,.quizcard .qpy,.options button,
+.hero p,.section-head p,.study,.source-note,
+.searchbox input,.searchbox button,.quicknav,.meta,.back,footer{
+ font-family:Arial,"Segoe UI","Noto Sans",sans-serif !important;
+ font-style:normal !important;
+ font-stretch:normal !important;
+ font-variant:normal !important;
+ letter-spacing:normal !important;
+ word-spacing:normal !important;
+ text-transform:none !important;
+ font-kerning:normal !important;
+ text-rendering:optimizeLegibility;
+}
+.pinyin,.viet{
+ font-size:18px !important;
+ line-height:1.55 !important;
+ font-weight:600 !important;
+ white-space:normal;
+}
+.quizcard .qpy{
+ font-size:19px !important;
+ line-height:1.5 !important;
+}
+.options button{
+ font-size:17px !important;
+ line-height:1.45 !important;
+}
+@media(max-width:560px){
+ .pinyin,.viet{font-size:17px !important}
+}
+</style>
+
 </head>
 <body>
 <header class="topbar"><div class="container">
