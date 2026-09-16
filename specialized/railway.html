@@ -193,6 +193,44 @@ footer a:hover{color:var(--rail-yellow)}
   .railway-card{min-height:0}
 }
 
+
+/* ===== GIAO DIEN THE CHUYEN MUC MOI ===== */
+.railway-grid{grid-template-columns:repeat(3,1fr);gap:28px;align-items:stretch}
+.railway-card{
+  min-height:350px;padding:32px 24px 28px;
+  align-items:center;justify-content:flex-start;text-align:center
+}
+.railway-icon{
+  width:92px;height:92px;margin:0 auto 20px;border-radius:24px;
+  font-size:52px;line-height:1
+}
+.railway-no{
+  width:100%;text-align:center;font-size:15px;line-height:1.4;letter-spacing:.07em
+}
+.railway-card h3{
+  width:100%;margin:10px auto 22px;text-align:center;
+  font-size:31px;line-height:1.25
+}
+.term-preview{
+  width:100%;justify-content:center;align-items:center;
+  gap:10px;margin:0 auto 24px
+}
+.term-preview span{
+  padding:8px 12px;font-size:18px;line-height:1.25;font-weight:800
+}
+.railway-card .open-topic{
+  width:min(260px,100%);margin:auto auto 0;justify-content:center;
+  gap:14px;padding:14px 18px;font-size:18px
+}
+@media(max-width:980px){.railway-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){
+  .railway-grid{grid-template-columns:1fr}
+  .railway-card{min-height:320px;padding:28px 20px 24px}
+  .railway-icon{width:82px;height:82px;font-size:46px}
+  .railway-card h3{font-size:28px}
+  .term-preview span{font-size:17px}
+}
+
 </style>
 </head>
 <body>
@@ -258,7 +296,6 @@ footer a:hover{color:var(--rail-yellow)}
           <div class="railway-icon">🚄</div>
           <div class="railway-no">Chuyên mục 01</div>
           <h3>Thuật ngữ đường sắt chung</h3>
-          <p>Những thuật ngữ nền tảng dùng xuyên suốt trong thiết kế, thi công, quản lý dự án, vận hành và trao đổi kỹ thuật đường sắt.</p>
           <div class="term-preview"><span>铁路</span><span>工程</span><span>设计</span><span>施工</span><span>运营</span></div>
           <a class="open-topic" href="#" onclick="showRailNotice('Thuật ngữ đường sắt chung');return false;"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
@@ -267,7 +304,6 @@ footer a:hover{color:var(--rail-yellow)}
           <div class="railway-icon">🛤️</div>
           <div class="railway-no">Chuyên mục 02</div>
           <h3>Đường – Ray – Ghi</h3>
-          <p>Ray thép, tà vẹt, phụ kiện liên kết ray, ghi, đường có đá ba lát, đường không đá ba lát, đường hàn liền, lắp đặt và bảo trì.</p>
           <div class="term-preview"><span>轨道</span><span>钢轨</span><span>轨枕</span><span>道岔</span><span>扣件</span></div>
           <a class="open-topic" href="#" onclick="showRailNotice('Đường – Ray – Ghi');return false;"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
@@ -276,7 +312,6 @@ footer a:hover{color:var(--rail-yellow)}
           <div class="railway-icon">🚉</div>
           <div class="railway-no">Chuyên mục 03</div>
           <h3>Ga – Bãi ga</h3>
-          <p>Ga khách, đường đón gửi tàu, khu vực ghi đầu ga, ke ga, đường dồn, luồng hành khách, bố trí mặt bằng và tổ chức khai thác.</p>
           <div class="term-preview"><span>车站</span><span>站场</span><span>到发线</span><span>站台</span><span>咽喉区</span></div>
           <a class="open-topic" href="#" onclick="showRailNotice('Ga – Bãi ga');return false;"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
@@ -285,7 +320,6 @@ footer a:hover{color:var(--rail-yellow)}
           <div class="railway-icon">🌉</div>
           <div class="railway-no">Chuyên mục 04</div>
           <h3>Cầu – Cống</h3>
-          <p>Thiết kế cầu, kết cấu, gối cầu, khe co giãn, móng, thi công, kiểm tra, quan trắc, độ bền lâu và yêu cầu kỹ thuật.</p>
           <div class="term-preview"><span>桥梁</span><span>支座</span><span>伸缩缝</span><span>基础</span><span>施工</span></div>
           <a class="open-topic" href="#" onclick="showRailNotice('Cầu – Cống');return false;"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
@@ -294,7 +328,6 @@ footer a:hover{color:var(--rail-yellow)}
           <div class="railway-icon">⛰️</div>
           <div class="railway-no">Chuyên mục 05</div>
           <h3>Cầu – Hầm</h3>
-          <p>Thuật ngữ về hầm đường sắt, kết cấu hầm, phương pháp thi công, chống đỡ, quan trắc, kiểm tra và kiểm soát chất lượng.</p>
           <div class="term-preview"><span>隧道</span><span>衬砌</span><span>支护</span><span>开挖</span><span>监测</span></div>
           <a class="open-topic" href="#" onclick="showRailNotice('Cầu – Hầm');return false;"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
@@ -303,7 +336,6 @@ footer a:hover{color:var(--rail-yellow)}
           <div class="railway-icon">🚦</div>
           <div class="railway-no">Chuyên mục 06</div>
           <h3>Tín hiệu đường sắt</h3>
-          <p>Liên khóa, CTC, hệ thống khống chế chạy tàu, mạch điện đường ray, máy chuyển ghi, tín hiệu vào – ra ga và các hệ thống an toàn.</p>
           <div class="term-preview"><span>信号</span><span>联锁</span><span>CTC系统</span><span>轨道电路</span><span>转辙机</span></div>
           <a class="open-topic" href="#" onclick="showRailNotice('Tín hiệu đường sắt');return false;"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
@@ -312,7 +344,6 @@ footer a:hover{color:var(--rail-yellow)}
           <div class="railway-icon">🏭</div>
           <div class="railway-no">Chuyên mục 07</div>
           <h3>Depot – Bảo trì phương tiện</h3>
-          <p>Bố trí depot, xưởng vận dụng, thiết bị, kiểm tra đoàn tàu, phụ tùng dự phòng, sửa chữa thường xuyên, đại tu và nghiệm thu.</p>
           <div class="term-preview"><span>车辆基地</span><span>运用库</span><span>检修</span><span>大修</span><span>备品备件</span></div>
           <a class="open-topic" href="#" onclick="showRailNotice('Depot – Bảo trì phương tiện');return false;"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
@@ -321,7 +352,6 @@ footer a:hover{color:var(--rail-yellow)}
           <div class="railway-icon">💰</div>
           <div class="railway-no">Chuyên mục 08</div>
           <h3>Dự toán – Chi phí</h3>
-          <p>Dự toán, tổng mức đầu tư, bảng khối lượng, đơn giá, chi phí nhân công – vật liệu – máy, mua sắm thiết bị và thẩm tra chi phí.</p>
           <div class="term-preview"><span>预算</span><span>投资估算</span><span>工程量</span><span>单价</span><span>费用</span></div>
           <a class="open-topic" href="#" onclick="showRailNotice('Dự toán – Chi phí');return false;"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
@@ -330,7 +360,6 @@ footer a:hover{color:var(--rail-yellow)}
           <div class="railway-icon">🧱</div>
           <div class="railway-no">Chuyên mục 09</div>
           <h3>Vật liệu công trình</h3>
-          <p>Cát, đá, thép, cáp dự ứng lực, gối cầu, khe co giãn, sơn, nhựa đường, cọc, ống, cáp điện và vật liệu thông dụng.</p>
           <div class="term-preview"><span>碎石</span><span>钢板</span><span>型钢</span><span>预应力钢绞线</span><span>沥青</span></div>
           <a class="open-topic" href="#" onclick="showRailNotice('Vật liệu công trình');return false;"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
