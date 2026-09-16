@@ -34,7 +34,27 @@ button{border:0;border-radius:12px;padding:11px 16px;background:var(--green);col
 .answers{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.answers button{background:#faf5e9;color:var(--ink);border:1px solid #dcc79f}.result{text-align:center;min-height:32px;margin-top:13px;font-weight:800}
 footer{text-align:center;padding:30px;color:#53665c}
 @media(max-width:900px){.roots,.cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){body{font-size:17px}.roots,.cards,.patterns,.answers{grid-template-columns:1fr}.py,.vi{font-size:17px}}
-</style></head>
+</style>
+<style id="depot-sentence-style">
+.sentence-section{padding:40px 0;background:#f4ecda}
+.sentence-wrap{width:min(1160px,93%);margin:auto}
+.sentence-title{text-align:center;color:#354638;font:900 34px Georgia,serif;margin:0 0 8px}
+.sentence-note{max-width:930px;margin:0 auto 22px;text-align:center;font:18px/1.6 Arial,"Segoe UI","Noto Sans",sans-serif}
+.sentence-filters{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.sentence-filters button{border:1px solid #dfcba4;background:#fff;color:#354638;border-radius:999px;padding:9px 13px;font-weight:800;cursor:pointer}
+.sentence-filters button.active{background:#c8783e;color:#fff}
+.sentence-grid2{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.sentence-card{background:#fff;border:1px solid #dfcba4;border-radius:18px;padding:18px}
+.sentence-tag{display:inline-block;padding:5px 9px;border-radius:999px;background:#edf1df;color:#354638;font:800 14px Arial}
+.sentence-cn{font:900 23px/1.45 "Microsoft YaHei","Noto Sans CJK SC","PingFang SC","SimSun",sans-serif;color:#354638;margin:10px 0}
+.sentence-detail{margin-top:9px;font-family:Arial,"Segoe UI","Noto Sans",sans-serif;font-style:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal}
+.sentence-hide{display:none}.sentence-toggle{margin-top:9px;border:1px solid #dfcba4;background:#fff7e8;color:#354638;border-radius:10px;padding:8px 11px;font-weight:800;cursor:pointer}
+.sentence-practice{margin-top:22px;background:#fff;border:1px solid #dfcba4;border-radius:20px;padding:20px;text-align:center}
+.sentence-practice .blank{font:900 27px/1.5 "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:#354638}
+.sentence-options{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:13px}.sentence-options button{background:#eef2df;color:#354638;border:1px solid #cad4b7;border-radius:11px;padding:10px 14px;font:800 18px "Microsoft YaHei","Noto Sans CJK SC",sans-serif;cursor:pointer}
+@media(max-width:760px){.sentence-grid2{grid-template-columns:1fr}}
+</style>
+</head>
 <body>
 <header class="hero"><div class="wrap">
 <a class="back" href="railway.html">← Về Tiếng Trung Đường sắt</a>
@@ -60,6 +80,155 @@ footer{text-align:center;padding:30px;color:#53665c}
 
 <section id="vocab"><div class="wrap"><h2 class="title">📚 Toàn bộ từ vựng Depot</h2><p class="lead">Bảng giữ nguyên chữ Hán, phiên âm và nghĩa tiếng Việt của tài liệu nguồn; chỉ chia lại thành các nhóm để học và tra cứu thuận tiện hơn.</p><div id="groups"></div></div></section>
 
+
+<section class="sentence-section" id="depot-sentences">
+<div class="sentence-wrap">
+<h2 class="sentence-title">🗣️ Mẫu câu thường dùng trong Depot</h2>
+<p class="sentence-note"><b>Mẫu câu thực hành:</b> các câu dưới đây được xây dựng từ thuật ngữ chuyên ngành trong tài liệu Depot để luyện giao tiếp công việc; không phải câu trích nguyên văn từ PDF. Hãy tự đoán trước khi mở Pinyin và nghĩa.</p>
+<div class="sentence-filters"><button class="active" onclick="filterDepotSentences('Tất cả',this)">Tất cả</button><button onclick="filterDepotSentences('Thiết kế – bố trí',this)">Thiết kế – bố trí</button><button onclick="filterDepotSentences('Thiết bị',this)">Thiết bị</button><button onclick="filterDepotSentences('Giao diện',this)">Giao diện</button><button onclick="filterDepotSentences('Kiểm tra – bảo trì',this)">Kiểm tra – bảo trì</button><button onclick="filterDepotSentences('Vận hành',this)">Vận hành</button><button onclick="filterDepotSentences('Đường – tuyến',this)">Đường – tuyến</button><button onclick="filterDepotSentences('Nghiệm thu',this)">Nghiệm thu</button><button onclick="filterDepotSentences('Hiện trường',this)">Hiện trường</button></div>
+<div class="sentence-grid2"><article class="sentence-card" data-cat="Thiết kế – bố trí">
+<span class="sentence-tag">Thiết kế – bố trí</span>
+<div class="sentence-cn">请确认检修库的布置方案。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Qǐng quèrèn jiǎnxiūkù de bùzhì fāng'àn.</b></div><div>Vui lòng xác nhận phương án bố trí xưởng kiểm tra sửa chữa.</div></div>
+</article><article class="sentence-card" data-cat="Thiết kế – bố trí">
+<span class="sentence-tag">Thiết kế – bố trí</span>
+<div class="sentence-cn">运用库的工艺设计需要进一步优化。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Yùnyòngkù de gōngyì shèjì xūyào jìnyíbù yōuhuà.</b></div><div>Thiết kế công nghệ của xưởng vận dụng cần được tối ưu thêm.</div></div>
+</article><article class="sentence-card" data-cat="Thiết kế – bố trí">
+<span class="sentence-tag">Thiết kế – bố trí</span>
+<div class="sentence-cn">请检查停车列检库的设计文件。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Qǐng jiǎnchá tíngchē lièjiǎnkù de shèjì wénjiàn.</b></div><div>Vui lòng kiểm tra hồ sơ thiết kế nhà đỗ và kiểm tra đoàn tàu.</div></div>
+</article><article class="sentence-card" data-cat="Thiết bị">
+<span class="sentence-tag">Thiết bị</span>
+<div class="sentence-cn">请确认检修库的设备配置。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Qǐng quèrèn jiǎnxiūkù de shèbèi pèizhì.</b></div><div>Vui lòng xác nhận cấu hình thiết bị của xưởng kiểm tra sửa chữa.</div></div>
+</article><article class="sentence-card" data-cat="Thiết bị">
+<span class="sentence-tag">Thiết bị</span>
+<div class="sentence-cn">洗车库的设备配置需要调整。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Xǐchēkù de shèbèi pèizhì xūyào tiáozhěng.</b></div><div>Cấu hình thiết bị của nhà rửa tàu cần được điều chỉnh.</div></div>
+</article><article class="sentence-card" data-cat="Thiết bị">
+<span class="sentence-tag">Thiết bị</span>
+<div class="sentence-cn">备品备件是否已经准备齐全？</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Bèipǐn bèijiàn shìfǒu yǐjīng zhǔnbèi qíquán?</b></div><div>Vật tư, phụ tùng dự phòng đã được chuẩn bị đầy đủ chưa?</div></div>
+</article><article class="sentence-card" data-cat="Giao diện">
+<span class="sentence-tag">Giao diện</span>
+<div class="sentence-cn">请确认车辆基地与相关系统的接口。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Qǐng quèrèn chēliàng jīdì yǔ xiāngguān xìtǒng de jiēkǒu.</b></div><div>Vui lòng xác nhận giao diện giữa depot và các hệ thống liên quan.</div></div>
+</article><article class="sentence-card" data-cat="Giao diện">
+<span class="sentence-tag">Giao diện</span>
+<div class="sentence-cn">这个接口需要进一步协调。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Zhège jiēkǒu xūyào jìnyíbù xiétiáo.</b></div><div>Giao diện này cần được phối hợp thêm.</div></div>
+</article><article class="sentence-card" data-cat="Kiểm tra – bảo trì">
+<span class="sentence-tag">Kiểm tra – bảo trì</span>
+<div class="sentence-cn">这列车需要进行日常检修。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Zhè liè chē xūyào jìnxíng rìcháng jiǎnxiū.</b></div><div>Đoàn tàu này cần được kiểm tra sửa chữa thường xuyên.</div></div>
+</article><article class="sentence-card" data-cat="Kiểm tra – bảo trì">
+<span class="sentence-tag">Kiểm tra – bảo trì</span>
+<div class="sentence-cn">请按照检修等级进行检查。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Qǐng ànzhào jiǎnxiū děngjí jìnxíng jiǎnchá.</b></div><div>Vui lòng tiến hành kiểm tra theo cấp kiểm tra sửa chữa.</div></div>
+</article><article class="sentence-card" data-cat="Kiểm tra – bảo trì">
+<span class="sentence-tag">Kiểm tra – bảo trì</span>
+<div class="sentence-cn">这个部件需要大修。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Zhège bùjiàn xūyào dàxiū.</b></div><div>Bộ phận này cần đại tu.</div></div>
+</article><article class="sentence-card" data-cat="Kiểm tra – bảo trì">
+<span class="sentence-tag">Kiểm tra – bảo trì</span>
+<div class="sentence-cn">检修作业完成了吗？</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Jiǎnxiū zuòyè wánchéng le ma?</b></div><div>Công tác kiểm tra sửa chữa đã hoàn thành chưa?</div></div>
+</article><article class="sentence-card" data-cat="Vận hành">
+<span class="sentence-tag">Vận hành</span>
+<div class="sentence-cn">车辆基地的运营管理方案需要确认。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Chēliàng jīdì de yùnyíng guǎnlǐ fāng'àn xūyào quèrèn.</b></div><div>Phương án quản lý vận hành depot cần được xác nhận.</div></div>
+</article><article class="sentence-card" data-cat="Vận hành">
+<span class="sentence-tag">Vận hành</span>
+<div class="sentence-cn">请确认出入段线是否具备使用条件。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Qǐng quèrèn chūrù duànxiàn shìfǒu jùbèi shǐyòng tiáojiàn.</b></div><div>Vui lòng xác nhận đường ra vào depot đã đủ điều kiện sử dụng hay chưa.</div></div>
+</article><article class="sentence-card" data-cat="Vận hành">
+<span class="sentence-tag">Vận hành</span>
+<div class="sentence-cn">今天需要进行调车作业。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Jīntiān xūyào jìnxíng diàochē zuòyè.</b></div><div>Hôm nay cần tiến hành tác nghiệp dồn tàu.</div></div>
+</article><article class="sentence-card" data-cat="Vận hành">
+<span class="sentence-tag">Vận hành</span>
+<div class="sentence-cn">请安排车辆进入运用库。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Qǐng ānpái chēliàng jìnrù yùnyòngkù.</b></div><div>Vui lòng bố trí phương tiện vào xưởng vận dụng.</div></div>
+</article><article class="sentence-card" data-cat="Đường – tuyến">
+<span class="sentence-tag">Đường – tuyến</span>
+<div class="sentence-cn">试车线什么时候可以使用？</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Shìchēxiàn shénme shíhou kěyǐ shǐyòng?</b></div><div>Khi nào đường thử tàu có thể sử dụng?</div></div>
+</article><article class="sentence-card" data-cat="Đường – tuyến">
+<span class="sentence-tag">Đường – tuyến</span>
+<div class="sentence-cn">请检查洗车线的运行条件。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Qǐng jiǎnchá xǐchēxiàn de yùnxíng tiáojiàn.</b></div><div>Vui lòng kiểm tra điều kiện vận hành của đường rửa tàu.</div></div>
+</article><article class="sentence-card" data-cat="Đường – tuyến">
+<span class="sentence-tag">Đường – tuyến</span>
+<div class="sentence-cn">出入段线需要进一步检查。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Chūrù duànxiàn xūyào jìnyíbù jiǎnchá.</b></div><div>Đường ra vào depot cần được kiểm tra thêm.</div></div>
+</article><article class="sentence-card" data-cat="Nghiệm thu">
+<span class="sentence-tag">Nghiệm thu</span>
+<div class="sentence-cn">检修库什么时候可以进行验收？</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Jiǎnxiūkù shénme shíhou kěyǐ jìnxíng yànshōu?</b></div><div>Khi nào xưởng kiểm tra sửa chữa có thể tiến hành nghiệm thu?</div></div>
+</article><article class="sentence-card" data-cat="Nghiệm thu">
+<span class="sentence-tag">Nghiệm thu</span>
+<div class="sentence-cn">请准备车辆基地验收资料。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Qǐng zhǔnbèi chēliàng jīdì yànshōu zīliào.</b></div><div>Vui lòng chuẩn bị tài liệu nghiệm thu depot.</div></div>
+</article><article class="sentence-card" data-cat="Nghiệm thu">
+<span class="sentence-tag">Nghiệm thu</span>
+<div class="sentence-cn">洗车库验收前需要再次检查设备。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Xǐchēkù yànshōu qián xūyào zàicì jiǎnchá shèbèi.</b></div><div>Trước khi nghiệm thu nhà rửa tàu cần kiểm tra lại thiết bị.</div></div>
+</article><article class="sentence-card" data-cat="Hiện trường">
+<span class="sentence-tag">Hiện trường</span>
+<div class="sentence-cn">请到检修库现场确认。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Qǐng dào jiǎnxiūkù xiànchǎng quèrèn.</b></div><div>Vui lòng đến hiện trường xưởng kiểm tra sửa chữa để xác nhận.</div></div>
+</article><article class="sentence-card" data-cat="Hiện trường">
+<span class="sentence-tag">Hiện trường</span>
+<div class="sentence-cn">这个问题需要现场处理。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Zhège wèntí xūyào xiànchǎng chǔlǐ.</b></div><div>Vấn đề này cần được xử lý tại hiện trường.</div></div>
+</article><article class="sentence-card" data-cat="Hiện trường">
+<span class="sentence-tag">Hiện trường</span>
+<div class="sentence-cn">请把检查结果记录下来。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Qǐng bǎ jiǎnchá jiéguǒ jìlù xiàlái.</b></div><div>Vui lòng ghi lại kết quả kiểm tra.</div></div>
+</article><article class="sentence-card" data-cat="Hiện trường">
+<span class="sentence-tag">Hiện trường</span>
+<div class="sentence-cn">发现问题后请及时报告。</div>
+<button class="sentence-toggle" onclick="this.nextElementSibling.classList.toggle('sentence-hide')">👁 Hiện / ẩn Pinyin + nghĩa</button>
+<div class="sentence-detail sentence-hide"><div><b>Fāxiàn wèntí hòu qǐng jíshí bàogào.</b></div><div>Sau khi phát hiện vấn đề, vui lòng báo cáo kịp thời.</div></div>
+</article></div>
+<div class="sentence-practice">
+<h3>🧩 Luyện thay từ trong mẫu câu</h3>
+<div class="blank" id="depotBlank">请确认 ＿＿＿ 的设备配置。</div>
+<div>Vui lòng xác nhận cấu hình thiết bị của ___.</div>
+<div class="sentence-options">
+<button onclick="checkDepotWord(this,'检修库')">检修库</button>
+<button onclick="checkDepotWord(this,'检修库')">洗车库</button>
+<button onclick="checkDepotWord(this,'检修库')">运用库</button>
+<button onclick="checkDepotWord(this,'检修库')">车辆基地</button>
+</div>
+<div id="depotSentenceResult" style="min-height:30px;margin-top:10px;font-weight:900"></div>
+</div></div></section>
 <section id="cards" class="memory"><div class="wrap"><h2 class="title">🧠 Ghi nhớ nhanh bằng thẻ từ</h2><p class="lead">Mỗi lượt lấy 12 thuật ngữ. Hãy tự nhớ nghĩa trước rồi nhấn vào thẻ để kiểm tra Pinyin và tiếng Việt.</p><p style="text-align:center"><button id="shuffle">🔄 Đổi 12 thẻ khác</button></p><div class="cards" id="deck"></div></div></section>
 
 <section id="quiz" class="quiz"><div class="wrap"><h2 class="title">✍️ Luyện tập nhận diện từ</h2><p class="lead">Nhìn chữ Hán và Pinyin, chọn đúng nghĩa tiếng Việt.</p><div class="quizbox"><div class="qhan" id="qhan"></div><div class="qpy" id="qpy"></div><div class="answers" id="answers"></div><div class="result" id="result"></div><p style="text-align:center"><button id="next">Câu tiếp theo →</button></p></div></div></section>
@@ -86,4 +255,14 @@ function cards(){deck.innerHTML=sample(D.terms,12).map(t=>`<div class="card"><di
 cards();shuffle.onclick=cards;
 let cur;function question(){cur=D.terms[Math.floor(Math.random()*D.terms.length)];qhan.textContent=cur[0];qpy.textContent=cur[1];let opts=[cur[2],...sample(D.terms.filter(x=>x[2]!==cur[2]),3).map(x=>x[2])].sort(()=>Math.random()-.5);answers.innerHTML=opts.map(x=>`<button>${x}</button>`).join("");result.textContent="";answers.querySelectorAll("button").forEach(b=>b.onclick=()=>result.textContent=b.textContent===cur[2]?"✓ Chính xác":"Chưa đúng · Đáp án: "+cur[2])}
 next.onclick=question;question();
-</script></body></html>
+</script>
+<script>
+function filterDepotSentences(cat,btn){
+ document.querySelectorAll(".sentence-filters button").forEach(x=>x.classList.remove("active"));btn.classList.add("active");
+ document.querySelectorAll(".sentence-card").forEach(x=>x.style.display=(cat==="Tất cả"||x.dataset.cat===cat)?"block":"none");
+}
+function checkDepotWord(btn,correct){
+ document.getElementById("depotSentenceResult").textContent=btn.textContent.trim()===correct?"✓ Chính xác":"Chưa đúng. Thử lại nhé.";
+}
+</script>
+</body></html>
