@@ -1,6 +1,6 @@
 body{background:#fffaf2;color:#2c3e37;font-family:Arial,"Segoe UI",sans-serif;font-size:18px;line-height:1.58}
 .hero{text-align:center;padding:46px 0 34px;background:linear-gradient(135deg,#f9e8c9,#e8f1df)}
-.hero h1{font:800 clamp(36px,5vw,64px)/1.25 Georgia,"Microsoft YaHei",serif;color:#24483c;margin:7px 0}
+.hero h1{font:800 clamp(36px,5vw,64px)/1.25 Arial,"Microsoft YaHei",sans-serif;color:#24483c;margin:7px 0}
 .hero .back{color:#24483c;font-weight:800;text-decoration:none}
 .rail-nav{position:sticky;top:0;z-index:20;background:#fffdf8f5;border-bottom:1px solid #dfc394;backdrop-filter:blur(8px)}
 .rail-nav .wrap{width:min(1220px,93%);margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;padding:12px 0;overflow:visible}
@@ -10,7 +10,7 @@ body{background:#fffaf2;color:#2c3e37;font-family:Arial,"Segoe UI",sans-serif;fo
 section[id],main[id]{scroll-margin-top:90px}
 .rail-sentences{padding:40px 0;background:#f4ecda}
 .rail-content{width:min(1160px,93%);margin:auto}
-.rail-sentences h2,.rail-cards h2{text-align:center;color:#354638;font:800 clamp(26px,3vw,34px)/1.35 Georgia,serif;margin:0 0 24px}
+.rail-sentences h2,.rail-cards h2{text-align:center;color:#354638;font:800 clamp(26px,3vw,34px)/1.35 Arial,sans-serif;margin:0 0 24px}
 .rail-sentence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .rail-sentence{background:#fff;border:1px solid #dfcba4;border-radius:18px;padding:22px}
 .rail-sentence h3{font:700 23px/1.6 "Microsoft YaHei",sans-serif;color:#24483c;margin:0 0 12px;overflow-wrap:anywhere}

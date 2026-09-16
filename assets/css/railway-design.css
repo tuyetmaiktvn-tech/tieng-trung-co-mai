@@ -15,8 +15,8 @@ body.rail-design{--ui-font:"Segoe UI",Arial,"Noto Sans",sans-serif;--zh-font:"Mi
 .rail-design :is(.wrap,.container){width:min(1200px,92%);margin-inline:auto}
 .rail-design :is(.hero,.page-hero){padding:44px 0 36px;background:var(--topic-soft,#edf3fc);border-bottom:4px solid var(--topic,#2459a6);text-align:center}
 .rail-design .page-hero::after{display:none}
-.rail-design :is(.hero,.page-hero) h1{font-size:clamp(30px,4vw,48px);line-height:1.25;font-weight:750;max-width:1000px;margin:20px auto 8px;color:var(--topic,#2459a6);text-shadow:none;overflow-wrap:anywhere}
-.rail-design .back{font-size:16px;color:var(--topic,#2459a6);font-weight:650}
+.rail-design :is(.hero,.page-hero) h1{font-family:Arial,"Segoe UI","Microsoft YaHei",sans-serif!important;font-size:clamp(28px,3.2vw,40px);line-height:1.4;font-weight:600;max-width:1000px;margin:24px auto 8px;color:var(--topic,#2459a6);text-shadow:none;overflow-wrap:anywhere}
+.rail-design .back{display:inline-flex;align-items:center;font-family:Arial,"Segoe UI",sans-serif!important;font-size:15px;line-height:1.5;color:var(--topic,#2459a6);font-weight:500;border:0;border-radius:8px;background:transparent;padding:8px 12px}
 .rail-design :is(h2,.title,.sentence-title){font-size:clamp(24px,2.5vw,30px);line-height:1.4;font-weight:700;color:#203247}
 .rail-design h3{line-height:1.45}
 .rail-design :is(.lead,.hero p,.page-hero p){font-size:17px;font-weight:400;line-height:1.7;color:#52627a;max-width:850px;margin:12px auto 24px}
