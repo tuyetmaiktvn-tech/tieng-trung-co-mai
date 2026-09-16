@@ -232,8 +232,9 @@ footer a:hover{color:var(--rail-yellow)}
 }
 
 </style>
+<link rel="stylesheet" href="../assets/css/railway-design.css?v=1">
 </head>
-<body>
+<body class="rail-design">
 
 <header class="topbar">
   <div class="container nav">
@@ -290,9 +291,10 @@ footer a:hover{color:var(--rail-yellow)}
 
   <section class="railway-section">
     <div class="container">
-      <div class="railway-grid">
+      <label class="rail-topic-search"><span>Tìm chuyên mục</span><input type="search" id="rail-topic-search" placeholder="Tên chuyên mục hoặc từ khóa tiếng Trung…" autocomplete="off"></label><p id="rail-no-results" role="status" hidden>Không tìm thấy chuyên mục phù hợp.</p>
+<div class="railway-grid">
 
-        <article class="railway-card">
+        <article class="railway-card" data-rail-topic="chung">">
           <div class="railway-icon">🚄</div>
           <div class="railway-no">Chuyên mục 01</div>
           <h3>Thuật ngữ đường sắt chung</h3>
@@ -300,7 +302,7 @@ footer a:hover{color:var(--rail-yellow)}
           <a class="open-topic" href="railway-chung.html"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
 
-        <article class="railway-card">
+        <article class="railway-card" data-rail-topic="duong-ray-ghi">">
           <div class="railway-icon">🛤️</div>
           <div class="railway-no">Chuyên mục 02</div>
           <h3>Đường – Ray – Ghi</h3>
@@ -308,7 +310,7 @@ footer a:hover{color:var(--rail-yellow)}
           <a class="open-topic" href="railway-duong-ray-ghi.html"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
 
-        <article class="railway-card">
+        <article class="railway-card" data-rail-topic="ga-bai-ga">">
           <div class="railway-icon">🚉</div>
           <div class="railway-no">Chuyên mục 03</div>
           <h3>Ga – Bãi ga</h3>
@@ -316,7 +318,7 @@ footer a:hover{color:var(--rail-yellow)}
           <a class="open-topic" href="railway-ga-bai-ga.html"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
 
-        <article class="railway-card">
+        <article class="railway-card" data-rail-topic="cau-cong">">
           <div class="railway-icon">🌉</div>
           <div class="railway-no">Chuyên mục 04</div>
           <h3>Cầu – Cống</h3>
@@ -324,7 +326,7 @@ footer a:hover{color:var(--rail-yellow)}
           <a class="open-topic" href="railway-cau-cong.html"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
 
-        <article class="railway-card">
+        <article class="railway-card" data-rail-topic="cau-ham">">
           <div class="railway-icon">⛰️</div>
           <div class="railway-no">Chuyên mục 05</div>
           <h3>Cầu – Hầm</h3>
@@ -332,7 +334,7 @@ footer a:hover{color:var(--rail-yellow)}
           <a class="open-topic" href="railway-cau-ham.html"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
 
-        <article class="railway-card">
+        <article class="railway-card" data-rail-topic="tin-hieu">">
           <div class="railway-icon">🚦</div>
           <div class="railway-no">Chuyên mục 06</div>
           <h3>Tín hiệu đường sắt</h3>
@@ -340,7 +342,7 @@ footer a:hover{color:var(--rail-yellow)}
           <a class="open-topic" href="railway-tin-hieu.html"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
 
-        <article class="railway-card">
+        <article class="railway-card" data-rail-topic="depot">">
           <div class="railway-icon">🏭</div>
           <div class="railway-no">Chuyên mục 07</div>
           <h3>Depot – Bảo trì phương tiện</h3>
@@ -348,7 +350,7 @@ footer a:hover{color:var(--rail-yellow)}
           <a class="open-topic" href="railway-depot.html"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
 
-        <article class="railway-card">
+        <article class="railway-card" data-rail-topic="du-toan-chi-phi">">
           <div class="railway-icon">💰</div>
           <div class="railway-no">Chuyên mục 08</div>
           <h3>Dự toán – Chi phí</h3>
@@ -356,7 +358,7 @@ footer a:hover{color:var(--rail-yellow)}
           <a class="open-topic" href="railway-du-toan-chi-phi.html"><span>Vào chuyên mục</span><span>→</span></a>
         </article>
 
-        <article class="railway-card">
+        <article class="railway-card" data-rail-topic="vat-lieu-thong-dung">">
           <div class="railway-icon">🧱</div>
           <div class="railway-no">Chuyên mục 09</div>
           <h3>Vật liệu công trình</h3>
@@ -412,5 +414,6 @@ function showRailNotice(topic){
 </script>
 
 <script src="../assets/js/app.js?v=3.3.1"></script>
+<script src="../assets/js/railway-catalog.js?v=1"></script>
 </body>
 </html>

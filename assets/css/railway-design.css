@@ -1,0 +1,55 @@
+/* Shared railway typography, layout and topic identity. */
+[data-rail-topic="chung"]{--topic:#2459a6;--topic-soft:#edf3fc}
+[data-rail-topic="duong-ray-ghi"]{--topic:#9a4a13;--topic-soft:#fff2e7}
+[data-rail-topic="ga-bai-ga"]{--topic:#146c78;--topic-soft:#eaf7f8}
+[data-rail-topic="cau-cong"]{--topic:#6845a0;--topic-soft:#f3eefb}
+[data-rail-topic="cau-ham"]{--topic:#775435;--topic-soft:#f7f0e9}
+[data-rail-topic="tin-hieu"]{--topic:#a33349;--topic-soft:#fceef1}
+[data-rail-topic="depot"]{--topic:#276849;--topic-soft:#edf7ef}
+[data-rail-topic="du-toan-chi-phi"]{--topic:#80600c;--topic-soft:#fcf6df}
+[data-rail-topic="vat-lieu-thong-dung"]{--topic:#465b72;--topic-soft:#eef3f8}
+body.rail-design{--ui-font:"Segoe UI",Arial,"Noto Sans",sans-serif;--zh-font:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;--ink:#203247;--line:#dce3ea;--green:var(--topic,#2459a6);--orange:var(--topic,#2459a6);margin:0;background:#f7f9fc;color:#203247;font:17px/1.65 var(--ui-font);background-image:none}
+.rail-design :is(h1,h2,h3,h4,p,a,button,input,select,textarea,table,th,td,summary,div,span){font-family:var(--ui-font)!important;letter-spacing:normal!important}
+.rail-design :is(.han,.zh,.hz,.cn,.sentence-cn,.qhan,.qzh,[lang="zh"],[lang="zh-CN"]){font-family:var(--zh-font)!important}
+.rail-design :is(.py,.pinyin,.qpy){font-size:16px;line-height:1.7;color:#52627a;font-style:normal}
+.rail-design :is(.wrap,.container){width:min(1200px,92%);margin-inline:auto}
+.rail-design :is(.hero,.page-hero){padding:44px 0 36px;background:var(--topic-soft,#edf3fc);border-bottom:4px solid var(--topic,#2459a6);text-align:center}
+.rail-design .page-hero::after{display:none}
+.rail-design :is(.hero,.page-hero) h1{font-size:clamp(30px,4vw,48px);line-height:1.25;font-weight:750;max-width:1000px;margin:20px auto 8px;color:var(--topic,#2459a6);text-shadow:none;overflow-wrap:anywhere}
+.rail-design .back{font-size:16px;color:var(--topic,#2459a6);font-weight:650}
+.rail-design :is(h2,.title,.sentence-title){font-size:clamp(24px,2.5vw,30px);line-height:1.4;font-weight:700;color:#203247}
+.rail-design h3{line-height:1.45}
+.rail-design :is(.lead,.hero p,.page-hero p){font-size:17px;font-weight:400;line-height:1.7;color:#52627a;max-width:850px;margin:12px auto 24px}
+.rail-design .rail-nav{background:#fffffffa;border-bottom:1px solid #dce3ea;box-shadow:0 3px 12px #20324708}
+.rail-design .rail-nav a{border-radius:12px;font-size:16px;font-weight:650;background:#f3f5f8;color:#35465a;border:1px solid #e0e6ed;min-height:46px}
+.rail-design .rail-nav a:hover,.rail-design .rail-nav a:focus-visible{background:var(--topic-soft);color:var(--topic);border-color:var(--topic)}
+.rail-design :is(a,button,input,summary):focus-visible{outline:3px solid var(--topic,#2459a6);outline-offset:3px}
+.rail-design :is(.memory,.quiz,.rail-cards,.rail-sentences,.sentence-section){background:var(--topic-soft);padding-block:40px}
+.rail-design :is(.panel,.quizbox,.rail-sentence,.sentence-card,.rail-card,.card,.core>div,.root,.action){border-color:#dce3ea;border-radius:16px;box-shadow:0 3px 14px #20324706}
+.rail-design .panel .head{background:var(--topic-soft);border-left:4px solid var(--topic);padding:18px 22px}
+.rail-design .panel .head h2{font-size:23px;color:var(--topic)}
+.rail-design .panel .head p{font-size:14px;color:#52627a}
+.rail-design :is(th,td){padding:14px 18px;line-height:1.6}
+.rail-design th{background:var(--topic-soft);color:var(--topic);font-weight:700}
+.rail-design tbody tr:nth-child(even){background:#f8fafc}
+.rail-design tbody tr:hover{background:var(--topic-soft)}
+.rail-design :is(.han,.zh,.hz){color:var(--topic);font-size:22px;line-height:1.6}
+.rail-design :is(.search,.searchall,input[type="search"]){min-height:48px;border:1px solid #b9c6d4;border-radius:12px;background:#fff;color:#203247;font-size:16px}
+.rail-design button{min-height:44px}
+.rail-design :is(.sentence-tag,.sentence-filters button.active){background:var(--topic);color:#fff}
+.rail-design .railway-grid{gap:22px;align-items:stretch}
+.rail-design .railway-card{display:flex;flex-direction:column;min-height:280px;padding:26px;background:#fff;border:1px solid #dce3ea;border-top:5px solid var(--topic);border-radius:18px;box-shadow:0 5px 20px #20324708;transition:transform .2s,box-shadow .2s}
+.rail-design .railway-card:hover{transform:translateY(-3px);box-shadow:0 9px 26px #20324712}
+.rail-design .railway-card .railway-icon{width:58px;height:58px;font-size:30px;background:var(--topic-soft);border-radius:14px;margin:0 0 16px;box-shadow:none}
+.rail-design .railway-card .railway-no{color:var(--topic);font-size:13px;font-weight:700;margin:0}
+.rail-design .railway-card h3{color:#203247;font-size:23px;line-height:1.4;margin:8px 0 16px;font-weight:700}
+.rail-design .term-preview{gap:7px;margin-bottom:22px}
+.rail-design .term-preview span{background:var(--topic-soft);color:var(--topic);border:0;font:16px/1.5 var(--zh-font)!important;padding:5px 9px;border-radius:7px}
+.rail-design .railway-card .open-topic{margin-top:auto;background:var(--topic-soft);color:var(--topic);border:1px solid transparent;border-radius:10px;padding:11px 14px;font-size:16px;font-weight:650}
+.rail-design .railway-card .open-topic:hover{border-color:var(--topic);background:var(--topic-soft)}
+.rail-topic-search{display:block;max-width:640px;margin:0 0 28px}
+.rail-topic-search span{display:block;font-size:16px;font-weight:650;margin-bottom:8px}
+.rail-topic-search input{width:100%;padding:12px 16px}
+.rail-design [hidden]{display:none!important}
+@media(max-width:620px){.rail-design :is(.hero,.page-hero){padding:30px 0 24px}.rail-design :is(.wrap,.container){width:94%}.rail-design :is(th,td){padding:11px 12px}.rail-design .railway-card{min-height:0;padding:22px}.rail-design .rail-nav a{font-size:14px;padding:9px 8px}.rail-design .railway-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.rail-design *{scroll-behavior:auto!important;transition:none!important}}
