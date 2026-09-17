@@ -1,0 +1,201 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HSK3 Bài 2 - 你们想吃什么就点什么</title><style>
+:root{--ink:#354638;--green:#68784b;--orange:#c8753f;--cream:#fffaf0;--line:#dfcba7;--soft:#eef1df}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:#354038;font:17px/1.6 Arial,"Segoe UI","Noto Sans",sans-serif}body,button{font-family:Arial,"Segoe UI","Noto Sans",sans-serif!important;font-style:normal!important;font-stretch:normal!important;letter-spacing:normal!important;word-spacing:normal!important}.zh{font-family:"Microsoft YaHei","Noto Sans CJK SC","PingFang SC","SimSun",sans-serif!important}.py{font-family:Arial,"Segoe UI","Noto Sans",sans-serif!important;font-style:normal!important;letter-spacing:normal!important}.wrap{width:min(1120px,93%);margin:auto}.hero{padding:38px 0;background:linear-gradient(135deg,#f4d8b8,#edf1d9);border-bottom:5px solid #d7a64a}.hero h1{font-size:48px;margin:5px 0;color:var(--ink)}.mission{background:#fff;border:1px solid var(--line);padding:16px;border-radius:18px;margin-top:16px}.progress{height:12px;background:#eee5d5;border-radius:99px;overflow:hidden}.progress i{display:block;height:100%;width:0;background:var(--green)}nav{position:sticky;top:0;background:#fffdf8ee;border-bottom:1px solid var(--line);z-index:5}nav .wrap{display:flex;gap:7px;overflow:auto;padding:9px 0}nav a{white-space:nowrap;text-decoration:none;color:var(--ink);background:#f2ecdc;padding:8px 11px;border-radius:999px;font-weight:800}section{padding:38px 0}.title{text-align:center;font-size:31px;margin:0 0 6px}.lead{text-align:center;max-width:850px;margin:0 auto 20px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}button{border:0;border-radius:10px;padding:10px 13px;background:var(--green);color:white;font-weight:800;cursor:pointer}.ghost{background:#f6f0e2;color:var(--ink);border:1px solid var(--line)}.warm{background:#f3ead7}.warmgrid,.vgrid,.ggrid,.stats{display:grid;gap:10px}.warmgrid{grid-template-columns:repeat(5,1fr)}.warmgrid button{background:#fff;color:var(--ink);border:1px solid var(--line);min-height:75px}.warmgrid .done{background:var(--soft);outline:2px solid var(--green)}.vgrid{grid-template-columns:repeat(4,1fr)}.vcard{text-align:center;min-height:145px;cursor:pointer}.vcard .zh{font-size:28px;font-weight:900}.hidden{display:none}.texts{background:var(--soft)}.tabs{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}.dialog{max-width:860px;margin:auto}.line{padding:11px;border-bottom:1px solid #eee1cc}.line .zh{font-size:20px}.ggrid{grid-template-columns:repeat(3,1fr)}.gcard h3{color:var(--orange)}.ex{background:#f7f0e3;padding:8px;border-radius:9px;margin:6px 0}.lab{max-width:850px;margin:18px auto 0;text-align:center}.tokens{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px}.tokens button{background:#f6ead7;color:var(--ink);border:1px solid var(--line);font-size:18px}.build{min-height:52px;background:var(--soft);padding:10px;border-radius:10px;font-size:22px}.challenge{background:#f6e3d2}.chat{max-width:760px;margin:auto}.bubble{padding:12px 15px;border-radius:16px;margin:8px 0;max-width:82%}.bot{background:white;border:1px solid var(--line)}.me{background:#e6edd5;margin-left:auto}.choices{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.choices button{background:#fff;color:var(--ink);border:1px solid var(--line)}.story{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.story div{text-align:center;cursor:pointer}.story .sel{outline:3px solid var(--orange)}.stats{grid-template-columns:repeat(4,1fr)}.stat{text-align:center}.stat b{display:block;font-size:28px;color:var(--green)}.quiz{max-width:760px;margin:15px auto;text-align:center}.answers{display:grid;grid-template-columns:1fr 1fr;gap:8px}.answers button{background:#fff7e8;color:var(--ink);border:1px solid var(--line)}footer{text-align:center;padding:25px}@media(max-width:800px){.vgrid,.warmgrid,.ggrid{grid-template-columns:repeat(2,1fr)}.story{grid-template-columns:1fr 1fr}}@media(max-width:520px){.vgrid,.warmgrid,.stats,.answers{grid-template-columns:1fr}.hero h1{font-size:37px}}
+</style>
+<style id="hsk3-text-practice-v2">
+.postwork{max-width:900px;margin:16px auto 0;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+.postwork h3{margin:4px 0 8px;color:var(--orange)}
+.tasknav{display:flex;gap:7px;justify-content:center;align-items:center;flex-wrap:wrap;margin:10px 0}
+.taskcount{font-weight:900;color:var(--green)}
+.rebuildPrompt{font-size:14px;color:#68716a;margin-bottom:6px}
+.wordbank{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:12px 0}
+.wordbank button{background:#f6ead7;color:var(--ink);border:1px solid var(--line);font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif!important;font-size:18px}
+.cloze{font-family:"Microsoft YaHei","Noto Sans CJK SC","PingFang SC","SimSun",sans-serif!important;font-size:20px;line-height:2.05;background:#fffaf0;border-radius:13px;padding:15px;margin-top:12px}
+.cloze select{font:700 17px Arial,"Segoe UI","Noto Sans",sans-serif;padding:5px 8px;border:1px solid #d8bd8c;border-radius:8px;background:white;color:var(--ink);max-width:190px}
+.clozeResult{font-weight:900;min-height:28px;margin-top:10px}
+.sourceTag{display:inline-block;background:#eef1df;padding:4px 8px;border-radius:999px;font-size:13px;font-weight:800}
+</style>
+
+<style id="hsk3-clean-ui-v4">
+body{font-size:18px!important;line-height:1.65!important;background:#fffaf2!important}
+.wrap{width:min(1080px,92%)!important}
+nav{background:#fffdf9!important;box-shadow:0 2px 12px rgba(85,70,45,.06)!important}
+nav .wrap{justify-content:center!important;align-items:center!important;gap:10px!important;padding:12px 0!important;overflow-x:auto!important}
+nav a{font-size:17px!important;padding:9px 15px!important;background:#f7efdf!important;border:1px solid #e8d4ae!important;color:#43543d!important}
+nav a:hover{background:#e9efdc!important;color:#355b36!important}
+section{padding:34px 0!important}
+.title{font-size:32px!important;line-height:1.35!important;margin-bottom:10px!important}
+.lead{font-size:18px!important;line-height:1.7!important;color:#59655a!important}
+.card{box-shadow:0 5px 16px rgba(93,72,45,.055)!important}
+.warm{background:#f7f0e3!important}
+.texts{background:#f1f3e8!important}
+.challenge{background:#f8e9dc!important}
+.warmgrid{gap:14px!important}
+.warmgrid button{font-size:18px!important;line-height:1.55!important;padding:14px 10px!important}
+.vgrid{gap:14px!important}
+.vcard{min-height:160px!important;padding:22px 14px!important}
+.vcard .zh{font-size:31px!important}
+.vcard .py{font-size:18px!important;margin-top:5px!important}
+.vcard .hidden div:last-of-type{font-size:18px!important}
+.tabs{gap:10px!important;margin:18px auto!important}
+.tabs button{font-size:18px!important;padding:10px 18px!important}
+.dialog{max-width:920px!important;padding:22px!important}
+.line{padding:15px 10px!important}
+.line .zh{font-size:22px!important;line-height:1.7!important}
+.ggrid{gap:16px!important}
+.gcard{padding:22px!important}
+.gcard h3{font-size:22px!important}
+.gcard p{font-size:18px!important}
+.ex{font-size:20px!important;line-height:1.7!important;padding:11px 13px!important}
+.postwork{max-width:920px!important;padding:22px!important}
+.postwork h3{font-size:22px!important}
+.postwork p{font-size:18px!important}
+.tasknav button,.wordbank button,.postwork>button{font-size:17px!important}
+.cloze{font-size:21px!important;line-height:2.2!important}
+.cloze select{font-size:18px!important}
+.chat{max-width:820px!important;padding:22px!important}
+.bubble{font-size:19px!important;line-height:1.7!important}
+.choices button{font-size:18px!important;line-height:1.5!important;padding:12px 15px!important}
+.stats{gap:14px!important}
+.stat{font-size:17px!important}
+.quiz{font-size:18px!important}
+.hero{padding:32px 0!important}
+.hero h1{font-size:46px!important}
+.hero h3{font-size:22px!important}
+.mission{font-size:18px!important}
+@media(max-width:800px){
+ nav .wrap{justify-content:flex-start!important}
+ .ggrid{grid-template-columns:1fr!important}
+ .title{font-size:28px!important}
+}
+</style>
+
+<style id="hsk3-warm-situation-v5">
+.warmintro{max-width:940px;margin:0 auto 18px;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.warmgrid .warmitem{min-height:150px!important;text-align:left!important;padding:16px!important}
+.warmitem .wi-icon{font-size:28px;display:block;margin-bottom:5px}
+.warmitem .wi-title{font-size:20px;font-weight:900;display:block;margin-bottom:5px}
+.warmitem .wi-task{font-size:15px;line-height:1.55;color:#657063;display:block}
+.warmitem.done .wi-task{color:#40523d}
+.sitgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:980px;margin:0 auto}
+.sitcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}
+.sitcard h3{margin:0 0 7px;color:var(--orange);font-size:22px}
+.sitcard .goal{background:#f7f0e3;border-radius:11px;padding:10px 12px;margin:10px 0}
+.sitcard textarea{width:100%;min-height:92px;border:1px solid #d8c39d;border-radius:11px;padding:11px;font:18px/1.6 Arial,"Segoe UI","Noto Sans",sans-serif;resize:vertical}
+.sitcard details{margin-top:10px;background:#eef1df;border-radius:11px;padding:9px 12px}
+.sitcard summary{cursor:pointer;font-weight:800;color:var(--green)}
+.sitcard .model{font-size:19px;line-height:1.75;margin-top:8px}
+.sitcheck{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.sitresult{font-weight:800;min-height:25px;margin-top:7px}
+@media(max-width:800px){.sitgrid{grid-template-columns:1fr}.warmgrid{grid-template-columns:1fr!important}}
+</style>
+
+
+<style id="hsk3-font-grammar-v6">
+.warm .lead,.warmintro,.warmitem .wi-task,.sitcard p,.sitcard .goal,.sitresult,
+.postwork p,.rebuildPrompt,.taskcount,.clozeResult{
+  font-family:Arial,"Segoe UI","Noto Sans",sans-serif!important;
+  font-style:normal!important;font-stretch:normal!important;font-variant:normal!important;
+  font-weight:400;letter-spacing:normal!important;word-spacing:normal!important;
+  text-rendering:optimizeLegibility;
+}
+.warm .lead,.warmintro,.warmitem .wi-task{font-size:17px!important;line-height:1.68!important}
+.warmitem .wi-title{font-family:"Microsoft YaHei","Noto Sans CJK SC","PingFang SC","SimSun",sans-serif!important}
+.gcard .moreex{margin-top:12px;padding-top:10px;border-top:1px dashed #dcc79f}
+.gcard .moreex b{display:block;margin-bottom:7px;color:#596b4d}
+.gcard .ex-note{font-family:Arial,"Segoe UI","Noto Sans",sans-serif!important;font-size:16px!important;color:#667064;margin:3px 0 9px}
+</style>
+
+</head><body>
+<header class="hero"><div class="wrap"><b style="color:#c8753f">新HSK教程 3 · LESSON 2</b><h1 class="zh">你们想吃什么就点什么</h1><h3>Các bạn muốn ăn gì thì gọi món đó</h3><div class="mission"><b>🎯 Nhiệm vụ cuối bài:</b> Gọi món tại nhà hàng, trao đổi về khẩu vị và thói quen ăn uống, đồng thời sử dụng đúng các cấu trúc trọng tâm của bài.<div class="progress"><i id="bar"></i></div><small id="prog">0 / 6 chặng hoàn thành</small></div></div></header>
+<nav><div class="wrap"><a href="#warm">① Khởi động</a><a href="#vocab">② Từ vựng</a><a href="#text">③ Bài khóa</a><a href="#grammar">④ Ôn ngữ pháp</a><a href="#challenge">⑤ Tình huống</a><a href="#review">⑥ Ôn tập</a></div></nav>
+<section id="warm" class="warm"><div class="wrap"><h2 class="title">① 热身 · Khởi động</h2><p class="lead">Quan sát 5 chủ đề trước khi học. Với mỗi chủ đề, hãy thử nói 1–2 câu tiếng Trung theo gợi ý. Bấm vào thẻ sau khi bạn đã tự nói.</p><div class="warmintro"><b>🎯 Mục tiêu khởi động:</b> kích hoạt vốn từ về <span class="zh">肉、甜品、主食、饮料、点菜</span> và chuẩn bị cho tình huống ăn uống tại nhà hàng.</div><div class="warmgrid">
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">🥩</span><span class="wi-title zh">图一 · 肉类</span><span class="wi-task">Bạn biết những loại thịt nào? Thử nói: <span class="zh">我喜欢吃……肉；我不太喜欢吃……</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">🍰</span><span class="wi-title zh">图二 · 甜品</span><span class="wi-task">Bạn thường ăn món ngọt nào? Gợi ý: <span class="zh">我喜欢吃蛋糕/冰激凌，因为……</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">🍜</span><span class="wi-title zh">图三 · 主食</span><span class="wi-task">Mì, bánh bao, sủi cảo — bạn chọn món nào? <span class="zh">面条儿、包子、饺子，我最喜欢……</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">🍵</span><span class="wi-title zh">图四 · 饮料</span><span class="wi-task">Bạn muốn uống gì khi ăn? <span class="zh">我想喝……；我又饿又渴。</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">📋</span><span class="wi-title zh">图五 · 点菜</span><span class="wi-task">Nếu đi ăn cùng bạn, bạn sẽ mời bạn gọi món thế nào? <span class="zh">你想吃什么？你想吃什么就点什么。</span></span></button>
+</div></div></section>
+<section id="vocab"><div class="wrap"><h2 class="title">② 生词 · Học từ chủ động</h2><p class="lead">HSK3 mặc định chỉ hiện chữ Hán. Hãy tự nhớ trước rồi bấm thẻ để xem Pinyin và nghĩa.</p><div class="vgrid" id="vgrid"></div></div></section>
+<section id="text" class="texts"><div class="wrap"><h2 class="title">③ 课文 · Bài khóa</h2><p class="lead">Đọc nguyên bản trước. Bấm từng câu để mở nghĩa. Pinyin không hiển thị mặc định.</p><div class="tabs" id="tabs"></div><div class="card dialog" id="dialog"></div><div id="postTextPractice"></div></div></section>
+<section id="grammar"><div class="wrap"><h2 class="title">④ 语法复习 · Ôn tập ngữ pháp</h2><div class="ggrid" id="ggrid"></div></div></section>
+<section id="challenge" class="challenge"><div class="wrap"><h2 class="title">⑤ 情景练习 · Luyện tập tình huống</h2><p class="lead"><b>Luyện tập mở rộng:</b> hoàn thành 6 nhiệm vụ giao tiếp xoay quanh nhà hàng, gọi món, phục vụ và thói quen ăn uống. Hãy tự viết trước rồi mới mở câu mẫu.</p><div class="sitgrid">
+<div class="sitcard"><h3>情景一 · 请朋友点菜</h3><p>Bạn mời bạn đi ăn. Hãy đưa thực đơn và mời bạn ấy chọn món.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">菜单 / 想吃 / 点</span></div><textarea id="sit1"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">你看看菜单，想吃点儿什么？别客气，你想吃什么就点什么。</div></details><div class="sitcheck"><button onclick="checkSit(1,['菜单','想吃','点'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres1"></div></div>
+<div class="sitcard"><h3>情景二 · 又饿又渴</h3><p>Sau chuyến đi dài, bạn vừa đói vừa khát. Hãy gọi đồ uống và món ăn.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">又饿又渴 / 饮料</span></div><textarea id="sit2"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">我现在又饿又渴。我想喝绿茶，再吃一点儿饺子。</div></details><div class="sitcheck"><button onclick="checkSit(2,['饿','渴'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres2"></div></div>
+<div class="sitcard"><h3>情景三 · 请服务员拿餐具</h3><p>Bàn ăn thiếu dụng cụ. Hãy gọi nhân viên và yêu cầu mang thêm.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">服务员 / 筷子 / 勺子 / 碗</span></div><textarea id="sit3"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">服务员，请再给我们拿一双筷子、一个勺子和一个碗。</div></details><div class="sitcheck"><button onclick="checkSit(3,['服务员','筷子','勺子','碗'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres3"></div></div>
+<div class="sitcard"><h3>情景四 · 评价饭馆</h3><p>Hãy nhận xét về món ăn và cách phục vụ của nhà hàng.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">服务 / 热情 / 又……又……</span></div><textarea id="sit4"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">这家饭馆的服务很热情，饭菜又便宜又好吃。</div></details><div class="sitcheck"><button onclick="checkSit(4,['服务','热情','又'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres4"></div></div>
+<div class="sitcard"><h3>情景五 · 用手机点外卖</h3><p>Bạn không muốn ra ngoài ăn. Hãy nói cách dùng điện thoại chọn món và đặt đồ ăn.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">不用 / 选 / 外卖 / 方便</span></div><textarea id="sit5"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">不用去饭馆，在手机上选好就可以点外卖，真方便！</div></details><div class="sitcheck"><button onclick="checkSit(5,['不用','选','外卖','方便'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres5"></div></div>
+<div class="sitcard"><h3>情景六 · 说说你的吃饭习惯</h3><p>Hãy nói 3–4 câu về việc tự nấu, ăn ngoài hoặc gọi đồ ăn khi bận.</p><div class="goal"><b>Nên dùng:</b> <span class="zh">只 / 方便面 / 简单 / 外卖</span></div><textarea id="sit6"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">我平时会做一些简单的菜。很忙的时候，我有时只吃方便面，也会点外卖。</div></details><div class="sitcheck"><button onclick="checkSit(6,['简单'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres6"></div></div>
+</div></div></section>
+
+<section id="review" class="warm"><div class="wrap"><h2 class="title">⑥ 智能复习 · Ôn tập thông minh</h2><div class="stats"><div class="card stat"><b id="seenN">0</b>Đã xem</div><div class="card stat"><b id="rightN">0</b>Đúng</div><div class="card stat"><b id="wrongN">0</b>Cần ôn</div><div class="card stat"><b id="score">0%</b>Độ chính xác</div></div><div class="card quiz" id="quiz"></div></div></section><footer>© Tiếng Trung Cô Mai · HSK 3.0 · Bài 2</footer>
+<script>
+const V=[["菜单","càidān","thực đơn"],["又","yòu","lại; vừa... vừa..."],["饿","è","đói"],["渴","kě","khát"],["客气","kèqi","khách sáo; lịch sự"],["饮料","yǐnliào","đồ uống"],["好久","hǎojiǔ","rất lâu"],["服务","fúwù","phục vụ"],["员","yuán","nhân viên; hậu tố chỉ người"],["双","shuāng","đôi; cặp"],["筷子","kuàizi","đũa"],["勺子","sháozi","thìa"],["碗","wǎn","bát"],["马上","mǎshàng","ngay; lập tức"],["热情","rèqíng","nhiệt tình"],["尝","cháng","nếm; thử"],["记","jì","nhớ; ghi nhớ"],["用","yòng","dùng; sử dụng"],["鸡","jī","gà"],["张","zhāng","tờ; lượng từ cho giấy/tranh"],["不用","búyòng","không cần"],["选","xuǎn","chọn"],["外卖","wàimài","đồ ăn mang đi; giao đồ ăn"],["方便","fāngbiàn","thuận tiện"],["蛋糕","dàngāo","bánh ngọt"],["只","zhǐ","chỉ"],["方便面","fāngbiànmiàn","mì ăn liền"],["简单","jiǎndān","đơn giản"]];
+const T=[["课文1","在饭馆，王一雪、刘明、白家月和李文在点菜。",["家月、李文，你们看看菜单，想吃点儿什么？","谢谢一雪姐，我都可以，你们点吧。","飞了这么远，现在还真是又饿又渴。","那多点点儿，别客气。你们喝什么饮料？","好久没喝中国茶，也好久没吃饺子了。我想喝绿茶、吃饺子，可以吗？","没问题。你们看看还想吃什么。"]],["课文2","在饭馆，王一雪、刘明、白家月和李文一起吃饭。",["服务员，再给我们拿一双筷子、一个勺子和一个碗。","好的，请等一下，我马上去拿。","这家饭馆的服务很热情，菜也都做得很好吃。你们尝尝，看看最喜欢这些菜。","哪个菜都好吃。您点的这些菜真不错。","这里的饭菜又便宜又好吃，我们经常来，服务员都记住我们爱吃的菜了。","王姐，您经常来吃饭，今天还送您一些水果，请慢用。"]],["课文3","在饭馆，王一雪、刘明、白家月和李文继续边吃边聊。",["这个鸡肉饭太好吃了，我要再来吃一次。","你可以拿走这张菜单，看看下次还吃点儿什么。","不用拿菜单，在手机上就能看到，也可以选好了让他们给你送。","他们家还能送外卖？","对，现在很多饭馆都能送外卖，想吃什么就点什么。","那真是太方便了！"]],["课文4","在李文家，李文在写日记。",["这些年在国外，我很少自己做饭。早饭我吃一个面包，有时候吃一块蛋糕，再喝一杯咖啡。午饭和晚饭也都在外面吃。快要考试的时候又忙又累，没时间出去吃饭，家里又什么吃的都没有，我可能好几天只吃方便面。现在回到中国了，每天能吃到妈妈做的饭，我真是太高兴了！有时候妈妈只做几个简单的菜，我也非常爱吃，因为什么都没有妈妈做的饭好吃。"]]];
+const G=[["又……又……","Dùng trước hai tính từ để nói một người hoặc sự vật đồng thời có hai đặc điểm. Cấu trúc: 又 + tính từ 1 + 又 + tính từ 2.",[["我现在还真是又饿又渴。","Bây giờ tôi thật sự vừa đói vừa khát."],["这里的饭菜又便宜又好吃。","Đồ ăn ở đây vừa rẻ vừa ngon."],["那个女孩儿又高又漂亮。","Cô gái kia vừa cao vừa xinh."],["这家饭馆又干净又安静。","Nhà hàng này vừa sạch vừa yên tĩnh."],["他今天又忙又累。","Hôm nay anh ấy vừa bận vừa mệt."],["这个菜又香又好吃。","Món này vừa thơm vừa ngon."]]],["疑问代词的非疑问用法（2）","Các đại từ nghi vấn như 哪、哪儿、什么、谁、怎么 có thể biểu thị phiếm chỉ; trong câu thường đi cùng 都 để diễn đạt “bất kỳ... đều...”.",[["哪个菜都好吃。","Món nào cũng ngon."],["这次旅游，我去哪儿都可以。","Chuyến đi này, đi đâu tôi cũng được."],["我下午有时间，你想什么时候来都没问题。","Chiều tôi có thời gian, bạn muốn đến lúc nào cũng được."],["你想吃什么都可以。","Bạn muốn ăn gì cũng được."],["谁来我都欢迎。","Ai đến tôi cũng hoan nghênh."],["你怎么做我都支持你。","Bạn làm thế nào tôi cũng ủng hộ."]]],["疑问代词的非疑问用法（3）","Hai đại từ nghi vấn giống nhau có thể hô ứng, cùng chỉ một người, vật, cách thức, thời gian hoặc địa điểm. Mẫu thường gặp: 什么……就什么…… / 哪个……就哪个…… / 哪儿……就哪儿……",[["你们想吃什么就点什么。","Các bạn muốn ăn gì thì gọi món đó."],["你觉得哪个好看就买哪个。","Bạn thấy cái nào đẹp thì mua cái đó."],["你想去哪儿，我们就去哪儿。","Bạn muốn đi đâu thì chúng ta đi đó."],["你什么时候有时间，我们就什么时候见。","Khi nào bạn có thời gian thì chúng ta gặp khi đó."],["谁想吃就谁点菜。","Ai muốn ăn thì người đó gọi món."],["你想怎么做就怎么做。","Bạn muốn làm thế nào thì làm thế đó."]]]];
+
+const TP=[{"rebuild":[["你们看看菜单。",["你们","看看","菜单"]],["你们想吃点儿什么？",["你们","想吃","点儿","什么"]],["我都可以，你们点吧。",["我","都可以","你们","点吧"]],["现在还真是又饿又渴。",["现在","还真是","又饿","又渴"]],["那多点点儿，别客气。",["那","多点点儿","别客气"]],["你们喝什么饮料？",["你们","喝","什么","饮料"]],["我好久没喝中国茶了。",["我","好久","没喝","中国茶","了"]],["我也好久没吃饺子了。",["我","也","好久","没吃","饺子","了"]],["我想喝绿茶、吃饺子。",["我想","喝绿茶","吃饺子"]],["你们看看还想吃什么。",["你们","看看","还想吃","什么"]]],"summary":["在饭馆，一雪让家月和李文看看___，想吃什么就点什么。因为飞了很远，家月现在又___又___。她说自己好久没喝中国茶，也好久没吃___了，所以想喝绿茶、吃饺子。一雪让他们别___，还可以再点一些___。",["菜单","饿","渴","饺子","客气","饮料"]]},{"rebuild":[["再给我们拿一双筷子。",["再","给我们","拿","一双筷子"]],["请等一下，我马上去拿。",["请","等一下","我","马上","去拿"]],["这家饭馆的服务很热情。",["这家饭馆的","服务","很热情"]],["菜也都做得很好吃。",["菜","也都","做得","很好吃"]],["你们尝尝这些菜。",["你们","尝尝","这些菜"]],["哪个菜都好吃。",["哪个菜","都","好吃"]],["您点的这些菜真不错。",["您点的","这些菜","真不错"]],["这里的饭菜又便宜又好吃。",["这里的饭菜","又便宜","又好吃"]],["服务员都记住我们爱吃的菜了。",["服务员","都记住","我们爱吃的菜","了"]],["今天还送您一些水果。",["今天","还送","您","一些水果"]]],"summary":["吃饭的时候，一雪请服务员再拿一___筷子、一个勺子和一个___。服务员说___去拿。一雪觉得这家饭馆的服务很___，饭菜又___又好吃。因为他们经常来，服务员已经___他们爱吃的菜。",["双","碗","马上","热情","便宜","记住"]]},{"rebuild":[["这个鸡肉饭太好吃了。",["这个","鸡肉饭","太好吃了"]],["我要再来吃一次。",["我","要","再来","吃一次"]],["你可以拿走这张菜单。",["你","可以","拿走","这张菜单"]],["看看下次还吃点儿什么。",["看看","下次","还吃","点儿什么"]],["不用拿菜单。",["不用","拿","菜单"]],["在手机上就能看到。",["在手机上","就能","看到"]],["也可以选好了让他们给你送。",["也可以","选好了","让他们","给你送"]],["他们家还能送外卖？",["他们家","还能","送外卖"]],["想吃什么就点什么。",["想吃","什么","就点","什么"]],["那真是太方便了！",["那","真是","太方便了"]]],"summary":["家月觉得___饭很好吃，下次还想来。一雪告诉她，不用拿___，在手机上就能看到菜品，___好了还可以让饭馆送来。现在很多饭馆都能送___，想吃什么就___什么。家月觉得这样非常___。",["鸡肉","菜单","选","外卖","点","方便"]]},{"rebuild":[["这些年在国外，我很少自己做饭。",["这些年","在国外","我","很少","自己做饭"]],["早饭我吃一个面包。",["早饭","我","吃","一个面包"]],["有时候我吃一块蛋糕。",["有时候","我","吃","一块蛋糕"]],["午饭和晚饭也都在外面吃。",["午饭和晚饭","也都","在外面","吃"]],["快要考试的时候又忙又累。",["快要考试的时候","又忙","又累"]],["我没时间出去吃饭。",["我","没时间","出去","吃饭"]],["我可能好几天只吃方便面。",["我","可能","好几天","只吃","方便面"]],["现在我回到中国了。",["现在","我","回到中国","了"]],["每天能吃到妈妈做的饭。",["每天","能吃到","妈妈做的饭"]],["妈妈只做几个简单的菜。",["妈妈","只做","几个","简单的菜"]]],"summary":["李文在国外的时候很少自己做饭。早饭有时吃面包或___，午饭和晚饭常在外面吃。考试前他又忙又累，有时好几天只吃___。现在回到中国，每天能吃妈妈做的饭。即使妈妈只做几个___的菜，他也很爱吃，因为他觉得什么都没有妈妈做的饭___。",["蛋糕","方便面","简单","好吃"]]}];
+let rebuildIndex=0,rebuildParts=[];
+function renderPostWork(){
+ let d=TP[ct]; rebuildIndex=0;
+ postTextPractice.innerHTML=`<div class="postwork">
+ <span class="sourceTag">课文 ${ct+1} · Sau bài khóa</span>
+ <h3>🧩 A. Sắp xếp từ thành câu hoàn chỉnh · 10 câu</h3>
+ <p>Mỗi bài khóa có 10 câu. Hãy sắp xếp các từ/cụm từ thành câu hoàn chỉnh để ôn lại từ mới, trật tự từ và cấu trúc vừa học.</p>
+ <div class="tasknav"><button class="ghost" onclick="moveRebuild(-1)">← Câu trước</button><span class="taskcount" id="rCount"></span><button class="ghost" onclick="moveRebuild(1)">Câu sau →</button></div>
+ <div class="build zh" id="rBuild"></div><div class="wordbank" id="rTokens"></div>
+ <button onclick="checkRebuild()">Kiểm tra</button> <button class="ghost" onclick="resetRebuild()">Làm lại</button><div class="clozeResult" id="rResult"></div>
+ <hr style="border:0;border-top:1px solid #eadbc0;margin:24px 0">
+ <h3>📝 B. Tóm tắt bài khóa · Điền từ mới</h3>
+ <p>Đọc lại toàn bộ nội dung rồi hoàn thành đoạn tóm tắt. Mỗi đoạn có 6–9 chỗ trống để buộc người học huy động nhiều từ mới và cấu trúc của bài.</p>
+ <div class="cloze" id="clozeBox"></div>
+ <div style="margin-top:12px"><button class="orange" onclick="checkCloze()">Kiểm tra đoạn tóm tắt</button> <button class="ghost" onclick="renderCloze()">Làm lại</button></div>
+ <div class="clozeResult" id="clozeResult"></div></div>`;
+ renderRebuild();renderCloze();
+}
+function renderRebuild(){
+ rebuildParts=[];let d=TP[ct].rebuild[rebuildIndex];rCount.textContent=`${rebuildIndex+1} / ${TP[ct].rebuild.length}`;rBuild.textContent="";
+ rTokens.innerHTML=[...d[1]].sort(()=>Math.random()-.5).map(x=>`<button class="zh" onclick="addRebuild(this)">${x}</button>`).join("");rResult.textContent="";
+}
+function addRebuild(b){rebuildParts.push(b.textContent);rBuild.textContent=rebuildParts.join("");b.disabled=true}
+function resetRebuild(){renderRebuild()}
+function moveRebuild(n){rebuildIndex=(rebuildIndex+n+TP[ct].rebuild.length)%TP[ct].rebuild.length;renderRebuild()}
+function checkRebuild(){let target=TP[ct].rebuild[rebuildIndex][0].replace(/[，。？！,.?!]/g,""),got=rebuildParts.join("").replace(/[，。？！,.?!]/g,"");rResult.textContent=got===target?"✓ Chính xác":"Chưa đúng. Hãy thử sắp xếp lại."}
+function renderCloze(){
+ let [txt,answers]=TP[ct].summary,parts=txt.split("___"),bank=[...answers].sort(()=>Math.random()-.5);
+ let out="";for(let i=0;i<parts.length;i++){out+=parts[i];if(i<answers.length)out+=`<select data-answer="${answers[i]}"><option value="">— chọn từ —</option>${bank.map(w=>`<option>${w}</option>`).join("")}</select>`}
+ clozeBox.innerHTML=out;clozeResult.textContent="";
+}
+function checkCloze(){
+ let ss=[...clozeBox.querySelectorAll("select")],right=ss.filter(x=>x.value===x.dataset.answer).length;
+ ss.forEach(x=>x.style.borderColor=x.value===x.dataset.answer?"#68784b":"#c8753f");
+ clozeResult.textContent=right===ss.length?`✓ Hoàn thành: ${right}/${ss.length} từ đúng.`:`Bạn đúng ${right}/${ss.length}. Những ô viền cam cần xem lại.`;
+ if(right===ss.length)stage(3);
+}
+
+let S={seen:[],right:[],wrong:[],stages:[]},ct=0,bp=[],ap=[],sp=[];
+const uniq=a=>[...new Set(a)],sample=(a,n)=>[...a].sort(()=>Math.random()-.5).slice(0,n);function save(){S.seen=uniq(S.seen);S.right=uniq(S.right);S.wrong=uniq(S.wrong);S.stages=uniq(S.stages);localStorage.setItem("hsk3l2",JSON.stringify(S));update()}try{S=JSON.parse(localStorage.getItem("hsk3l2"))||S}catch(e){}
+function stage(n){S.stages.push(n);save()}function update(){seenN.textContent=S.seen.length;rightN.textContent=S.right.length;wrongN.textContent=S.wrong.length;let n=S.right.length+S.wrong.length;score.textContent=(n?Math.round(S.right.length/n*100):0)+"%";bar.style.width=Math.min(100,S.stages.length/6*100)+"%";prog.textContent=S.stages.length+" / 6 chặng hoàn thành"}
+function warm(b){b.classList.toggle("done");if(document.querySelectorAll(".warmgrid .done").length>=3)stage(1)}
+function vocab(){vgrid.innerHTML=V.map((v,i)=>`<div class="card vcard" onclick="flip(this,${i})"><div class="zh">${v[0]}</div><div class="hidden"><div class="py">${v[1]}</div><div>${v[2]}</div><button class="ghost" onclick="event.stopPropagation();hard(${i})">↻ Cần ôn</button></div></div>`).join("")}function flip(e,i){e.lastElementChild.classList.toggle("hidden");S.seen.push(i);if(S.seen.length>=10)stage(2);save()}function hard(i){S.wrong.push(i);save()}
+function showText(i){ct=i;tabs.innerHTML=T.map((x,j)=>`<button class="${i===j?'':'ghost'}" onclick="showText(${j})">${x[0]}</button>`).join("");dialog.innerHTML=`<b>📍 <span class="zh">${T[i][1]}</span></b>`+T[i][2].map(x=>`<div class="line"><div class="zh">${x}</div><button class="ghost" onclick="this.nextElementSibling.classList.toggle('hidden')">💡 Tự kiểm tra</button><small class="hidden">Hãy tự diễn đạt nghĩa câu này trước khi đối chiếu giáo trình.</small></div>`).join("");renderPostWork();if(i===3)stage(3)}
+const BT=["他","是","白家月","的","好朋友"];function resetBuild(){bp=[];build.textContent="";tokens.innerHTML=[...BT].sort(()=>Math.random()-.5).map(x=>`<button onclick="bp.push(this.textContent);build.textContent=bp.join('');this.disabled=true">${x}</button>`).join("");buildResult.textContent=""}function checkBuild(){let ok=bp.join("")===BT.join("");buildResult.textContent=ok?"✓ Chính xác":"Chưa đúng";if(ok)stage(3)}
+function grammar(){ggrid.innerHTML=G.map(g=>`<div class="card gcard"><h3>${g[0]}</h3><p>${g[1]}</p><div class="moreex"><b>Ví dụ ôn tập</b>${g[2].map(x=>`<div class="ex zh">${x[0]}</div><div class="ex-note">${x[1]}</div>`).join("")}</div></div>`).join("")}
+const AT=["那个","穿着黑衣服的","短头发的","年轻人"];function resetAttr(){ap=[];abuild.textContent="";atokens.innerHTML=[...AT].sort(()=>Math.random()-.5).map(x=>`<button onclick="ap.push(this.textContent);abuild.textContent=ap.join('');this.disabled=true">${x}</button>`).join("");aresult.textContent=""}function checkAttr(){let ok=ap.join("")===AT.join("");aresult.textContent=ok?"✓ 正确："+AT.join(""):"Chưa đúng, hãy thử lại.";if(ok)stage(4)}
+let sitDone=[];
+function checkSit(n,keys){
+ const el=document.getElementById("sit"+n),res=document.getElementById("sitres"+n),txt=el.value.trim();
+ if(!txt){res.textContent="Hãy tự viết câu trước khi kiểm tra.";return}
+ const miss=keys.filter(k=>!txt.includes(k));
+ if(miss.length===0){
+   res.textContent="✓ Đã sử dụng đủ từ/cấu trúc mục tiêu. Hãy đối chiếu câu mẫu và tự chỉnh cách diễn đạt.";
+   sitDone.push(n);sitDone=uniq(sitDone);if(sitDone.length>=4)stage(5);
+ }else{
+   res.textContent="Cần thử dùng thêm: "+miss.join("、");
+ }
+}
+const ST=[["✈️","到北京"],["🧳","行李不见了"],["ℹ️","去服务台"],["🚪","走出机场"],["🍜","吃中国菜"]];function resetStory(){sp=[];story.innerHTML=[...ST].sort(()=>Math.random()-.5).map(x=>`<div class="card" data-k="${x[1]}" onclick="if(!this.classList.contains('sel')){this.classList.add('sel');sp.push(this.dataset.k);this.innerHTML='<b>'+sp.length+'</b><br>'+this.innerHTML}"><b>${x[0]}</b><br><span class="zh">${x[1]}</span></div>`).join("");sresult.textContent=""}function checkStory(){let ok=sp.join("|")===ST.map(x=>x[1]).join("|");sresult.textContent=ok?"✓ Đúng trình tự!":"Chưa đúng, đọc lại 课文4.";if(ok)stage(5)}
+function q(){let i=Math.floor(Math.random()*V.length),o=[V[i],...sample(V.filter((x,j)=>j!==i),3)].sort(()=>Math.random()-.5);quiz.innerHTML=`<h2 class="zh">${V[i][0]}</h2><div class="py">${V[i][1]}</div><p>Chọn nghĩa đúng</p><div class="answers">${o.map(x=>`<button onclick="qa(${i},'${x[0]}')">${x[2]}</button>`).join("")}</div><p id="qr"></p><button class="ghost" onclick="q()">Câu tiếp →</button>`}function qa(i,x){let ok=x===V[i][0];qr.textContent=ok?"✓ Chính xác":"Chưa đúng: "+V[i][2];if(ok){S.right.push(i);S.wrong=S.wrong.filter(y=>y!==i)}else S.wrong.push(i);if(S.right.length>=5)stage(6);save()}
+vocab();showText(0);grammar();q();update();
+</script></body></html>
