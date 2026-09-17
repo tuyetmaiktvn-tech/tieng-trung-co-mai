@@ -70,14 +70,75 @@ section{padding:34px 0!important}
  .title{font-size:28px!important}
 }
 </style>
+
+<style id="hsk3-warm-situation-v5">
+.warmintro{max-width:940px;margin:0 auto 18px;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.warmgrid .warmitem{min-height:150px!important;text-align:left!important;padding:16px!important}
+.warmitem .wi-icon{font-size:28px;display:block;margin-bottom:5px}
+.warmitem .wi-title{font-size:20px;font-weight:900;display:block;margin-bottom:5px}
+.warmitem .wi-task{font-size:15px;line-height:1.55;color:#657063;display:block}
+.warmitem.done .wi-task{color:#40523d}
+.sitgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:980px;margin:0 auto}
+.sitcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}
+.sitcard h3{margin:0 0 7px;color:var(--orange);font-size:22px}
+.sitcard .goal{background:#f7f0e3;border-radius:11px;padding:10px 12px;margin:10px 0}
+.sitcard textarea{width:100%;min-height:92px;border:1px solid #d8c39d;border-radius:11px;padding:11px;font:18px/1.6 Arial,"Segoe UI","Noto Sans",sans-serif;resize:vertical}
+.sitcard details{margin-top:10px;background:#eef1df;border-radius:11px;padding:9px 12px}
+.sitcard summary{cursor:pointer;font-weight:800;color:var(--green)}
+.sitcard .model{font-size:19px;line-height:1.75;margin-top:8px}
+.sitcheck{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.sitresult{font-weight:800;min-height:25px;margin-top:7px}
+@media(max-width:800px){.sitgrid{grid-template-columns:1fr}.warmgrid{grid-template-columns:1fr!important}}
+</style>
+
+
+<style id="hsk3-font-grammar-v6">
+.warm .lead,.warmintro,.warmitem .wi-task,.sitcard p,.sitcard .goal,.sitresult,
+.postwork p,.rebuildPrompt,.taskcount,.clozeResult{
+  font-family:Arial,"Segoe UI","Noto Sans",sans-serif!important;
+  font-style:normal!important;font-stretch:normal!important;font-variant:normal!important;
+  font-weight:400;letter-spacing:normal!important;word-spacing:normal!important;
+  text-rendering:optimizeLegibility;
+}
+.warm .lead,.warmintro,.warmitem .wi-task{font-size:17px!important;line-height:1.68!important}
+.warmitem .wi-title{font-family:"Microsoft YaHei","Noto Sans CJK SC","PingFang SC","SimSun",sans-serif!important}
+.gcard .moreex{margin-top:12px;padding-top:10px;border-top:1px dashed #dcc79f}
+.gcard .moreex b{display:block;margin-bottom:7px;color:#596b4d}
+.gcard .ex-note{font-family:Arial,"Segoe UI","Noto Sans",sans-serif!important;font-size:16px!important;color:#667064;margin:3px 0 9px}
+</style>
+
 </head><body>
 <header class="hero"><div class="wrap"><b style="color:#c8753f">新HSK教程 3 · LESSON 1</b><h1 class="zh">我们去机场接他们</h1><h3>Chúng ta ra sân bay đón họ</h3><div class="mission"><b>🎯 Nhiệm vụ cuối bài:</b> Ra sân bay đón bạn, mô tả người cần đón và xử lý tình huống thất lạc hành lý/hộ chiếu.<div class="progress"><i id="bar"></i></div><small id="prog">0 / 6 chặng hoàn thành</small></div></div></header>
 <nav><div class="wrap"><a href="#warm">① Khởi động</a><a href="#vocab">② Từ vựng</a><a href="#text">③ Bài khóa</a><a href="#grammar">④ Ôn ngữ pháp</a><a href="#challenge">⑤ Tình huống</a><a href="#review">⑥ Ôn tập</a></div></nav>
-<section id="warm" class="warm"><div class="wrap"><h2 class="title">① 热身 · Khởi động</h2><p class="lead">Nếu đi sân bay đón một người bạn Trung Quốc, bạn cần làm được những gì?</p><div class="warmgrid"><button onclick="warm(this)">👤<br>描述一个人</button><button onclick="warm(this)">🧳<br>找行李</button><button onclick="warm(this)">🛂<br>找护照</button><button onclick="warm(this)">ℹ️<br>问服务台</button><button onclick="warm(this)">✈️<br>接朋友</button></div></div></section>
+<section id="warm" class="warm"><div class="wrap"><h2 class="title">① 热身 · Khởi động</h2>
+<p class="lead">Quan sát 5 tình huống trước khi học. Với mỗi tình huống, hãy thử nói 1–2 câu tiếng Trung theo gợi ý. Bấm vào thẻ sau khi bạn đã tự nói.</p>
+<div class="warmintro"><b>🎯 Mục tiêu khởi động:</b> kích hoạt những từ và cấu trúc bạn đã biết về <span class="zh">描述人物、行李、护照、服务台、接机</span>. Không cần nói hoàn hảo; hãy thử diễn đạt trước rồi mới vào bài.</div>
+<div class="warmgrid">
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">👤</span><span class="wi-title zh">图一 · 描述一个人</span><span class="wi-task">Người bạn cần đón trông thế nào? Hãy nói về quần áo, tóc, chiều cao hoặc dáng người. Gợi ý: <span class="zh">他/她穿着……；头发……；看起来……</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">🧳</span><span class="wi-title zh">图二 · 行李不见了</span><span class="wi-task">Bạn chờ mãi chưa thấy va-li. Hãy nói điều gì đã xảy ra và mô tả chiếc va-li. Gợi ý: <span class="zh">我的行李……；是一个……的箱子。</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">🛂</span><span class="wi-title zh">图三 · 找不到护照</span><span class="wi-task">Bạn không tìm thấy hộ chiếu và đang lo. Hãy nói 1–2 câu nhờ bạn đi cùng giúp đỡ. Gợi ý: <span class="zh">我的护照……；你能帮助我……吗？</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">ℹ️</span><span class="wi-title zh">图四 · 去服务台</span><span class="wi-task">Bạn đến quầy dịch vụ để hỏi về hành lý. Hãy nghĩ xem câu đầu tiên bạn sẽ nói là gì. Gợi ý: <span class="zh">您好，我的……；请问……？</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">✈️</span><span class="wi-title zh">图五 · 去机场接朋友</span><span class="wi-task">Bạn đang ở sân bay đón bạn nhưng chưa thấy họ. Hãy hỏi người đi cùng và đề nghị vị trí đứng dễ tìm. Gợi ý: <span class="zh">你看见……了吗？我们站到……去吧。</span></span></button>
+</div></div></section>
 <section id="vocab"><div class="wrap"><h2 class="title">② 生词 · Học từ chủ động</h2><p class="lead">HSK3 mặc định chỉ hiện chữ Hán. Hãy tự nhớ trước rồi bấm thẻ để xem Pinyin và nghĩa.</p><div class="vgrid" id="vgrid"></div></div></section>
 <section id="text" class="texts"><div class="wrap"><h2 class="title">③ 课文 · Bài khóa</h2><p class="lead">Đọc nguyên bản trước. Bấm từng câu để mở nghĩa. Pinyin không hiển thị mặc định.</p><div class="tabs" id="tabs"></div><div class="card dialog" id="dialog"></div><div id="postTextPractice"></div></div></section>
 <section id="grammar"><div class="wrap"><h2 class="title">④ 语法复习 · Ôn tập ngữ pháp</h2><div class="ggrid" id="ggrid"></div></div></section>
-<section id="challenge" class="challenge"><div class="wrap"><h2 class="title">⑤ 情景练习 · Luyện tập tình huống</h2><p class="lead"><b>Luyện tập mở rộng:</b> dùng chính từ vựng và tình huống của bài để luyện giao tiếp.</p><div class="card chat"><div id="chat"><div class="bubble bot zh">👩‍💼 服务台：您好，请问您需要什么帮助？</div></div><div class="choices" id="choices"></div></div><h3 class="title" style="font-size:25px;margin-top:25px">🔎 找李文 · Tìm Lý Văn</h3><div class="warmgrid" style="grid-template-columns:repeat(3,1fr)"><button onclick="person(false)">白衣服 · 长头发</button><button onclick="person(true)">黑衣服 · 短头发 · 年轻</button><button onclick="person(false)">黑衣服 · 长头发</button></div><p id="presult" style="text-align:center;font-weight:bold"></p></div></section>
+<section id="challenge" class="challenge"><div class="wrap">
+<h2 class="title">⑤ 情景练习 · Luyện tập tình huống</h2>
+<p class="lead"><b>Luyện tập mở rộng:</b> hoàn thành 6 nhiệm vụ giao tiếp dựa trên bối cảnh sân bay của Bài 1. Mỗi nhiệm vụ buộc người học huy động lại từ mới và cấu trúc vừa học, thay vì chỉ chọn một đáp án.</p>
+<div class="sitgrid">
+<div class="sitcard"><h3>情景一 · 接机前确认人物</h3><p>Bạn đi đón Lý Văn nhưng chưa từng gặp anh ấy. Hãy hỏi bạn mình về đặc điểm nhận dạng.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">看起来 / 身高 / 头发</span></div><textarea id="sit1" placeholder="Viết 2–3 câu tiếng Trung..."></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">李文看起来怎么样？他的身高是多少？他的头发长还是短？</div></details><div class="sitcheck"><button onclick="checkSit(1,['看','身高','头发'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres1"></div></div>
+
+<div class="sitcard"><h3>情景二 · 在大厅找朋友</h3><p>Máy bay đã đến nhưng bạn vẫn chưa thấy người cần đón. Hãy trao đổi với người đi cùng và chọn vị trí dễ được nhìn thấy.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">应该 / 站 / 中间</span></div><textarea id="sit2" placeholder="Viết 2–3 câu tiếng Trung..."></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">他们应该快出来了。我们站到中间去吧，这样他们好找一些。</div></details><div class="sitcheck"><button onclick="checkSit(2,['应该','站','中间'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres2"></div></div>
+
+<div class="sitcard"><h3>情景三 · 行李迟迟没出来</h3><p>Hành lý chưa xuất hiện ở băng chuyền. Hãy nói với bạn đi cùng điều bạn lo lắng và mô tả chiếc va-li.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">行李 / 丢 / 箱子</span></div><textarea id="sit3" placeholder="Viết 2–3 câu tiếng Trung..."></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">我的行李怎么还没出来？是不是丢了？我的行李箱是一个黑色的箱子。</div></details><div class="sitcheck"><button onclick="checkSit(3,['行李','丢','箱子'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres3"></div></div>
+
+<div class="sitcard"><h3>情景四 · 向服务台求助</h3><p>Bạn đến quầy dịch vụ. Hãy cung cấp thông tin nhận dạng va-li và đề nghị nhân viên giúp tìm.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">号码 / 服务台 / 帮助</span></div><textarea id="sit4" placeholder="Viết 3–4 câu tiếng Trung..."></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">您好，我的行李箱不见了。箱子上写着我的名字和电话号码。请问您能帮助我找一下吗？</div></details><div class="sitcheck"><button onclick="checkSit(4,['号码','帮助'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres4"></div></div>
+
+<div class="sitcard"><h3>情景五 · 护照找不到了</h3><p>Bạn phát hiện hộ chiếu không thấy đâu. Hãy nói trạng thái của mình và nhờ người đi cùng hỗ trợ.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">发现 / 护照 / 不见 / 着急 / 帮助</span></div><textarea id="sit5" placeholder="Viết 2–3 câu tiếng Trung..."></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">我发现我的护照不见了，我很着急。你能帮助我找一下吗？</div></details><div class="sitcheck"><button onclick="checkSit(5,['护照','不见','着急','帮助'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres5"></div></div>
+
+<div class="sitcard"><h3>情景六 · 接到朋友以后</h3><p>Cuối cùng bạn đã đón được bạn. Hãy nhận xét về họ so với ảnh và nói kế hoạch tiếp theo.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">照片 / 看起来 / 年轻 / 带</span></div><textarea id="sit6" placeholder="Viết 2–3 câu tiếng Trung..."></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">你看起来比照片上年轻。现在我带你们去吃中国菜吧。</div></details><div class="sitcheck"><button onclick="checkSit(6,['照片','看起来','年轻','带'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres6"></div></div>
+</div></div></section>
 
 <section id="review" class="warm"><div class="wrap"><h2 class="title">⑥ 智能复习 · Ôn tập thông minh</h2><div class="stats"><div class="card stat"><b id="seenN">0</b>Đã xem</div><div class="card stat"><b id="rightN">0</b>Đúng</div><div class="card stat"><b id="wrongN">0</b>Cần ôn</div><div class="card stat"><b id="score">0%</b>Độ chính xác</div></div><div class="card quiz" id="quiz"></div></div></section><footer>© Tiếng Trung Cô Mai · HSK 3.0 · Bài 1</footer>
 <script>
@@ -87,7 +148,31 @@ const T=[
 ["课文2","在机场，李文和白家月在行李领取处。",["我的行李怎么还没出来？是不是丢了？","你的行李箱是什么样的？","是一个黑色的箱子，上面写着我的名字和电话号码。","我好像在哪儿看到过这个箱子，是不是有人拿错了？","我们快找谁问一下吧，箱子里有不少重要的东西。","别着急，我们拿着护照和机票，去服务台问问吧。"]],
 ["课文3","在机场大厅，刘明和王一雪接机。",["飞机早就到了，你看见白家月他们了吗？","没有，他们应该快出来了。","我们站到中间去吧，这样他们好找一些。","你看那个高个子的人是李文吗？","你说的是哪个？那个穿着黑衣服的短头发的年轻人？","对，那个人就是李文！你看，家月在他后面呢。"]],
 ["课文4","在宾馆房间，李文在写日记。",["昨天我到北京了。虽然路上花了十几个小时，但是跟家月坐在一起，我觉得时间过得很快。到机场的时候，家月发现行李箱不见了。我们一起去服务台，帮助她找到行李箱。走出机场的时候，已经八点多了，我们一出来就看见了王老师的姐姐，她看起来比照片上年轻。晚上，一雪姐带我们去吃了一家很好吃的中国菜。"]]];
-const G=[["看上去 / 看起来","Miêu tả dáng vẻ, trạng thái hoặc ấn tượng quan sát được。",["他们看上去有点儿像。","这些菜看起来都很好吃。"]],["疑问代词的非疑问用法","哪儿、什么、谁、哪 có thể chỉ đối tượng không xác định。",["我好像在哪儿看到过这个箱子。","你吃点儿什么再走吧。"]],["多项定语","Danh từ trung tâm có thể có nhiều định ngữ đứng trước。",["那个穿着黑衣服的短头发的年轻人","我那件新买的白色的衣服"]]];
+const G=[
+["看上去 / 看起来","Miêu tả dáng vẻ, trạng thái hoặc ấn tượng quan sát được。",[
+["他们看上去有点儿像。","Họ trông hơi giống nhau."],
+["李文看起来比同乐瘦一点儿。","Lý Văn trông gầy hơn Đồng Lạc một chút."],
+["她看起来比照片上年轻。","Cô ấy trông trẻ hơn trong ảnh."],
+["这个箱子看上去很重。","Chiếc va-li này trông rất nặng."],
+["那个年轻人看起来很着急。","Người trẻ tuổi kia trông rất sốt ruột."],
+["这些中国菜看起来都很好吃。","Những món Trung Quốc này trông đều rất ngon."]
+]],
+["疑问代词的非疑问用法","哪儿、什么、谁、哪个 có thể không dùng để hỏi mà chỉ người, vật hoặc nơi chốn chưa xác định。",[
+["我好像在哪儿看到过这个箱子。","Hình như tôi đã nhìn thấy chiếc va-li này ở đâu đó."],
+["我们快找谁问一下吧。","Chúng ta mau tìm ai đó hỏi thử đi."],
+["你吃点儿什么再走吧。","Bạn ăn chút gì đó rồi hãy đi."],
+["他好像在跟谁说话。","Hình như anh ấy đang nói chuyện với ai đó."],
+["我们找个地方站吧。","Chúng ta tìm một chỗ nào đó để đứng nhé."],
+["你看看哪个箱子是你的。","Bạn xem thử chiếc va-li nào là của bạn."]
+]],
+["多项定语","Khi nhiều thành phần cùng bổ nghĩa cho một danh từ, các định ngữ được đặt trước danh từ trung tâm và thường nối bằng 的 theo quan hệ ngữ nghĩa。",[
+["那个穿着黑衣服的短头发的年轻人","Người trẻ tuổi tóc ngắn đang mặc quần áo màu đen."],
+["一个上面写着名字和电话号码的黑色箱子","Một chiếc va-li màu đen có ghi tên và số điện thoại ở trên."],
+["白家月的一个很重要的东西","Một đồ vật rất quan trọng của Bạch Gia Nguyệt."],
+["那个站在中间的高个子的人","Người cao đang đứng ở giữa kia."],
+["我昨天在机场看见的那个年轻人","Người trẻ tuổi mà hôm qua tôi nhìn thấy ở sân bay."],
+["王老师的那个看起来很年轻的姐姐","Người chị trông rất trẻ của cô Vương."]
+]]];
 
 const TP=[
  {rebuild:[
@@ -98,7 +183,10 @@ const TP=[
  ["他的身高有一米八。",["他的身高","有","一米八"]],
  ["李文看起来比同乐瘦一点儿。",["李文","看起来","比同乐","瘦一点儿"]],
  ["下个星期家月和李文要来北京。",["下个星期","家月和李文","要来","北京"]],
- ["我跟你一起去机场接他们吧。",["我","跟你","一起","去机场","接他们吧"]]
+ ["我跟你一起去机场接他们吧。",["我","跟你","一起","去机场","接他们吧"]],
+ ["我还以为是同乐呢。",["我","还以为","是同乐","呢"]],
+ ["他们哪天到北京？",["他们","哪天","到北京"]]
+ 
  ],summary:["刘明看到照片以后，___照片里的人是杨同乐，因为照片里的人和同乐___有点儿像。王一雪告诉他，那个人叫李文，是白家月的好朋友。李文比同乐高，___有一米八，而且看起来比同乐___一点儿。下个星期白家月和李文要来北京，王一雪准备去机场___他们。刘明也想和她___去机场。",["以为","看上去","身高","瘦","接","一起"]]},
  {rebuild:[
  ["我的行李怎么还没出来？",["我的行李","怎么","还没","出来"]],
@@ -108,7 +196,10 @@ const TP=[
  ["我好像在哪儿看到过这个箱子。",["我","好像","在哪儿","看到过","这个箱子"]],
  ["箱子里有不少重要的东西。",["箱子里","有","不少","重要的东西"]],
  ["别着急，我们去服务台问问吧。",["别着急","我们","去服务台","问问吧"]],
- ["我们拿着护照和机票去服务台。",["我们","拿着","护照和机票","去服务台"]]
+ ["我们拿着护照和机票去服务台。",["我们","拿着","护照和机票","去服务台"]],
+ ["是不是有人拿错了这个箱子？",["是不是","有人","拿错了","这个箱子"]],
+ ["箱子里有不少重要的东西。",["箱子里","有","不少","重要的东西"]]
+ 
  ],summary:["在机场，白家月一直没有看到自己的___，她担心是不是___了。她的___是黑色的，上面写着她的名字和电话___。她___在哪儿看到过这个箱子，所以怀疑可能有人拿错了。因为箱子里有不少___的东西，她非常___。李文让她别担心，并建议带着___和机票去___问一问。",["行李","丢","箱子","号码","好像","重要","着急","护照","服务台"]]},
  {rebuild:[
  ["他们应该快出来了。",["他们","应该","快","出来了"]],
@@ -118,7 +209,10 @@ const TP=[
  ["你说的是哪个？",["你说的","是","哪个"]],
  ["那个年轻人穿着黑衣服。",["那个年轻人","穿着","黑衣服"]],
  ["他是一个短头发的年轻人。",["他","是一个","短头发的","年轻人"]],
- ["家月在李文后面。",["家月","在","李文","后面"]]
+ ["家月在李文后面。",["家月","在","李文","后面"]],
+ ["飞机早就到了。",["飞机","早就","到了"]],
+ ["那个穿着黑衣服的人是李文。",["那个","穿着黑衣服的","人","是李文"]]
+ 
  ],summary:["刘明和王一雪去机场___白家月和李文。飞机已经到了，他们觉得两个人___快出来了。为了让朋友容易找到，他们决定___到大厅___。后来他们看到一个高个子的男人。那个男人穿着黑衣服，头发很___，看起来很___。王一雪确认他就是李文，而家月就在他的___。",["接","应该","站","中间","短","年轻","后面"]]},
  {rebuild:[
  ["昨天我到北京了。",["昨天","我","到北京","了"]],
@@ -128,7 +222,10 @@ const TP=[
  ["我们帮助她找到行李箱。",["我们","帮助","她","找到","行李箱"]],
  ["她看起来比照片上年轻。",["她","看起来","比照片上","年轻"]],
  ["一雪姐带我们去吃中国菜。",["一雪姐","带","我们","去吃","中国菜"]],
- ["我觉得时间过得很快。",["我觉得","时间","过得","很快"]]
+ ["我觉得时间过得很快。",["我觉得","时间","过得","很快"]],
+ ["虽然路上花了十几个小时，但是时间过得很快。",["虽然","路上花了十几个小时","但是","时间过得很快"]],
+ ["我们一出来就看见了王老师的姐姐。",["我们","一出来","就看见了","王老师的姐姐"]]
+ 
  ],summary:["李文昨天到了北京。虽然路上花了十几个小时，但是他觉得时间过得很快。到机场以后，家月___自己的行李箱___了。于是他们一起去___，并___她找到行李箱。走出机场以后，他们见到了来接他们的人。李文觉得她看起来比___上更___。晚上，一雪姐___他们去吃中国菜。",["发现","不见","服务台","帮助","照片","年轻","带"]]}
 ];
 let rebuildIndex=0,rebuildParts=[];
@@ -136,8 +233,8 @@ function renderPostWork(){
  let d=TP[ct]; rebuildIndex=0;
  postTextPractice.innerHTML=`<div class="postwork">
  <span class="sourceTag">课文 ${ct+1} · Sau bài khóa</span>
- <h3>🧩 A. Ôn cấu trúc qua dựng lại câu · 8 câu</h3>
- <p>Mỗi bài khóa có 8 câu ôn tập, tập trung vào từ mới, cấu trúc và nội dung vừa học.</p>
+ <h3>🧩 A. Sắp xếp từ thành câu hoàn chỉnh · 10 câu</h3>
+ <p>Mỗi bài khóa có 10 câu. Hãy sắp xếp các từ/cụm từ thành câu hoàn chỉnh để ôn lại từ mới, trật tự từ và cấu trúc vừa học.</p>
  <div class="tasknav"><button class="ghost" onclick="moveRebuild(-1)">← Câu trước</button><span class="taskcount" id="rCount"></span><button class="ghost" onclick="moveRebuild(1)">Câu sau →</button></div>
  <div class="build zh" id="rBuild"></div><div class="wordbank" id="rTokens"></div>
  <button onclick="checkRebuild()">Kiểm tra</button> <button class="ghost" onclick="resetRebuild()">Làm lại</button><div class="clozeResult" id="rResult"></div>
@@ -176,10 +273,21 @@ function warm(b){b.classList.toggle("done");if(document.querySelectorAll(".warmg
 function vocab(){vgrid.innerHTML=V.map((v,i)=>`<div class="card vcard" onclick="flip(this,${i})"><div class="zh">${v[0]}</div><div class="hidden"><div class="py">${v[1]}</div><div>${v[2]}</div><button class="ghost" onclick="event.stopPropagation();hard(${i})">↻ Cần ôn</button></div></div>`).join("")}function flip(e,i){e.lastElementChild.classList.toggle("hidden");S.seen.push(i);if(S.seen.length>=10)stage(2);save()}function hard(i){S.wrong.push(i);save()}
 function showText(i){ct=i;tabs.innerHTML=T.map((x,j)=>`<button class="${i===j?'':'ghost'}" onclick="showText(${j})">${x[0]}</button>`).join("");dialog.innerHTML=`<b>📍 <span class="zh">${T[i][1]}</span></b>`+T[i][2].map(x=>`<div class="line"><div class="zh">${x}</div><button class="ghost" onclick="this.nextElementSibling.classList.toggle('hidden')">💡 Tự kiểm tra</button><small class="hidden">Hãy tự diễn đạt nghĩa câu này trước khi đối chiếu giáo trình.</small></div>`).join("");renderPostWork();if(i===3)stage(3)}
 const BT=["他","是","白家月","的","好朋友"];function resetBuild(){bp=[];build.textContent="";tokens.innerHTML=[...BT].sort(()=>Math.random()-.5).map(x=>`<button onclick="bp.push(this.textContent);build.textContent=bp.join('');this.disabled=true">${x}</button>`).join("");buildResult.textContent=""}function checkBuild(){let ok=bp.join("")===BT.join("");buildResult.textContent=ok?"✓ Chính xác":"Chưa đúng";if(ok)stage(3)}
-function grammar(){ggrid.innerHTML=G.map(g=>`<div class="card gcard"><h3>${g[0]}</h3><p>${g[1]}</p>${g[2].map(x=>`<div class="ex zh">${x}</div>`).join("")}</div>`).join("")}
+function grammar(){ggrid.innerHTML=G.map(g=>`<div class="card gcard"><h3>${g[0]}</h3><p>${g[1]}</p><div class="moreex"><b>Ví dụ ôn tập</b>${g[2].map(x=>`<div class="ex zh">${x[0]}</div><div class="ex-note">${x[1]}</div>`).join("")}</div></div>`).join("")}
 const AT=["那个","穿着黑衣服的","短头发的","年轻人"];function resetAttr(){ap=[];abuild.textContent="";atokens.innerHTML=[...AT].sort(()=>Math.random()-.5).map(x=>`<button onclick="ap.push(this.textContent);abuild.textContent=ap.join('');this.disabled=true">${x}</button>`).join("");aresult.textContent=""}function checkAttr(){let ok=ap.join("")===AT.join("");aresult.textContent=ok?"✓ 正确："+AT.join(""):"Chưa đúng, hãy thử lại.";if(ok)stage(4)}
-let cs=0;const C=[["我的行李不见了。","我想吃中国菜。","他看起来很年轻。"],["是一个黑色的箱子。","我身高一米八。","他们应该快出来了。"],["写着我的名字和电话号码。","他站在中间。","我以为是同乐。"]],CQ=["您的行李箱是什么样的？","箱子上有什么信息？","好的，请别着急，我们帮您找一下。"];function renderChat(){choices.innerHTML=C[cs].map((x,i)=>`<button class="zh" onclick="chatAns('${x}',${i===0})">${x}</button>`).join("")}function chatAns(x,ok){chat.innerHTML+=`<div class="bubble me zh">${x}</div>`;if(!ok){chat.innerHTML+=`<div class="bubble bot">💡 Chưa phù hợp tình huống.</div>`;return}chat.innerHTML+=`<div class="bubble bot zh">👩‍💼 ${CQ[cs]}</div>`;cs++;if(cs<3)renderChat();else{choices.innerHTML="<b>✓ Hoàn thành tình huống.</b>";stage(5)}}function person(ok){presult.textContent=ok?"✓ 找到了！这就是李文。":"Chưa đúng.";if(ok)stage(5)}
+let sitDone=[];
+function checkSit(n,keys){
+ const el=document.getElementById("sit"+n),res=document.getElementById("sitres"+n),txt=el.value.trim();
+ if(!txt){res.textContent="Hãy tự viết câu trước khi kiểm tra.";return}
+ const miss=keys.filter(k=>!txt.includes(k));
+ if(miss.length===0){
+   res.textContent="✓ Đã sử dụng đủ từ/cấu trúc mục tiêu. Hãy đối chiếu câu mẫu và tự chỉnh cách diễn đạt.";
+   sitDone.push(n);sitDone=uniq(sitDone);if(sitDone.length>=4)stage(5);
+ }else{
+   res.textContent="Cần thử dùng thêm: "+miss.join("、");
+ }
+}
 const ST=[["✈️","到北京"],["🧳","行李不见了"],["ℹ️","去服务台"],["🚪","走出机场"],["🍜","吃中国菜"]];function resetStory(){sp=[];story.innerHTML=[...ST].sort(()=>Math.random()-.5).map(x=>`<div class="card" data-k="${x[1]}" onclick="if(!this.classList.contains('sel')){this.classList.add('sel');sp.push(this.dataset.k);this.innerHTML='<b>'+sp.length+'</b><br>'+this.innerHTML}"><b>${x[0]}</b><br><span class="zh">${x[1]}</span></div>`).join("");sresult.textContent=""}function checkStory(){let ok=sp.join("|")===ST.map(x=>x[1]).join("|");sresult.textContent=ok?"✓ Đúng trình tự!":"Chưa đúng, đọc lại 课文4.";if(ok)stage(5)}
 function q(){let i=Math.floor(Math.random()*V.length),o=[V[i],...sample(V.filter((x,j)=>j!==i),3)].sort(()=>Math.random()-.5);quiz.innerHTML=`<h2 class="zh">${V[i][0]}</h2><div class="py">${V[i][1]}</div><p>Chọn nghĩa đúng</p><div class="answers">${o.map(x=>`<button onclick="qa(${i},'${x[0]}')">${x[2]}</button>`).join("")}</div><p id="qr"></p><button class="ghost" onclick="q()">Câu tiếp →</button>`}function qa(i,x){let ok=x===V[i][0];qr.textContent=ok?"✓ Chính xác":"Chưa đúng: "+V[i][2];if(ok){S.right.push(i);S.wrong=S.wrong.filter(y=>y!==i)}else S.wrong.push(i);if(S.right.length>=5)stage(6);save()}
-vocab();showText(0);grammar();renderChat();q();update();
+vocab();showText(0);grammar();q();update();
 </script></body></html>
