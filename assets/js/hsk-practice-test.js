@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startedAt = null; clearInterval(tick); tick = null; renderTime();
   }
   function clearResults() {
+    window.HskAnswerReview.clear();
     summary.hidden = true;
     document.querySelectorAll('.result').forEach(el => { el.textContent = ''; el.className = 'result'; });
     document.getElementById('reviewLinks').replaceChildren();
@@ -53,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const link = document.createElement('a'); link.href = '#question-' + q; link.textContent = 'Câu ' + q; links.append(link);
       }
     }
+    window.HskAnswerReview.render(config.answers, config.acceptedAnswers);
     const answered = progress();
     document.getElementById('scoreText').textContent = correct + '/' + config.total + ' câu đúng · ' + Math.round(correct / config.total * 100) + '/100 điểm luyện tập';
     document.getElementById('detailText').textContent = 'Đã trả lời ' + answered + '/' + config.total + ' câu. Sai hoặc bỏ trống: ' + (config.total - correct) + ' câu.';

@@ -59,6 +59,7 @@ button{font:inherit;border:0;border-radius:10px;cursor:pointer;padding:11px 18px
 }
 </style>
 <link rel="stylesheet" href="../assets/css/test-inline-answers.css?v=1">
+<link rel="stylesheet" href="../assets/css/hsk-answer-review.css?v=1"><script defer src="../assets/js/hsk-answer-review.js?v=1"></script>
 </head>
 <body>
 <header class="topbar"><div class="inner">
@@ -354,11 +355,11 @@ function submitTest(){
   document.getElementById('scoreText').textContent=`${correct}/40 câu đúng · ${score} điểm`;
   document.getElementById('detailText').textContent=
     `Đã trả lời ${answered}/40 câu. Sai hoặc bỏ trống: ${40-correct} câu.`;
-  document.getElementById('summary').classList.add('show');
+  window.HskAnswerReview.render(ANSWERS);document.getElementById('summary').classList.add('show');
   document.getElementById('summary').scrollIntoView({behavior:'smooth',block:'center'});
 }
 
-function resetTest(){
+function resetTest(){window.HskAnswerReview.clear();
   document.querySelectorAll('input[type=radio]').forEach(x=>x.checked=false);
   document.querySelectorAll('.result').forEach(x=>{x.textContent='';x.className='result';});
   document.getElementById('summary').classList.remove('show');

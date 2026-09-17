@@ -1,0 +1,11 @@
+.answer-review{overflow-x:auto;margin-top:24px}
+.answer-review table{width:100%;border-collapse:collapse;font-size:17px;line-height:1.6;text-align:left}
+.answer-review caption{text-align:left;font-size:22px;font-weight:700;color:#243247;margin-bottom:12px}
+.answer-review th,.answer-review td{padding:12px;border:1px solid #cbd5df;vertical-align:top;overflow-wrap:anywhere}
+.answer-review thead th{background:#edf1f5;color:#243247}
+.answer-review .review-correct{background:#edf8f0;color:#176337}
+.answer-review .review-incorrect{background:#fff0ef;color:#a32424}
+.answer-review tbody a{color:inherit;font-weight:700;text-decoration:underline}
+.answer-review tbody th{width:60px}
+.answer-review td:nth-child(2),.answer-review td:nth-child(3){max-width:440px}
+@media(max-width:600px){.answer-review table{font-size:15px;min-width:420px}.answer-review th,.answer-review td{padding:9px}}

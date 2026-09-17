@@ -30,6 +30,7 @@ a{color:inherit;text-decoration:none} .wrap{width:min(1120px,94%);margin:auto}
 @media(max-width:850px){.submit-inner{align-items:flex-start;flex-direction:column}.timer-panel{width:100%}} button{font:inherit;border:0;border-radius:10px;padding:11px 18px;font-weight:800;cursor:pointer} .primary{background:var(--red);color:#fff} .secondary{background:#ece7e1}
 @media(max-width:720px){body{font-size:17px}.hero h1{font-size:36px}.answer-row{grid-template-columns:38px 1fr}.result{grid-column:2}.submit-inner{flex-direction:column;align-items:flex-start}}
 </style><link rel="stylesheet" href="../assets/css/test-inline-answers.css?v=1">
+<link rel="stylesheet" href="../assets/css/hsk-answer-review.css?v=1"><script defer src="../assets/js/hsk-answer-review.js?v=1"></script>
 </head><body>
 <header class="topbar"><div class="inner"><div class="brand">Tiếng Trung Cô Mai · NEW HSK 2</div><a class="back" href="hsk2.html">← Về HSK 2</a></div></header>
 <section class="hero"><div class="wrap"><div class="kicker">BÀI TEST ĐẦU RA · NEW HSK 2</div><h1>Bài test đầu ra NEW HSK 2</h1><p>Nghe · Đọc · Viết · Tổng 60 câu</p></div></section>
@@ -130,7 +131,7 @@ const ANSWERS={"1": "A", "2": "C", "3": "B", "4": "B", "5": "A", "6": "A", "7": 
 function val(i){const r=document.querySelector(`input[name=q${i}]:checked`); if(r)return r.value; const t=document.getElementById('q'+i); return t?t.value.trim():''}
 function updateProgress(){let n=0;for(let i=1;i<=60;i++)if(val(i))n++;document.getElementById('progress').textContent=`Đã làm ${n}/60 câu`}
 document.addEventListener('change',updateProgress);document.addEventListener('input',updateProgress);
-function submitTest(){let c=0,a=0;for(let i=1;i<=60;i++){const v=val(i),r=document.getElementById('r'+i);if(v)a++;if(v===ANSWERS[i]){c++;r.textContent='✓ Đúng';r.className='result ok'}else{r.textContent='Đáp án: '+ANSWERS[i];r.className='result bad'}}const s=Math.round(c/60*100);document.getElementById('scoreText').textContent=`${c}/60 câu đúng · ${s} điểm`;document.getElementById('detailText').textContent=`Đã trả lời ${a}/60 câu. Sai hoặc bỏ trống: ${60-c} câu.`;document.getElementById('summary').classList.add('show');document.getElementById('summary').scrollIntoView({behavior:'smooth',block:'center'})}
+function submitTest(){let c=0,a=0;for(let i=1;i<=60;i++){const v=val(i),r=document.getElementById('r'+i);if(v)a++;if(v===ANSWERS[i]){c++;r.textContent='✓ Đúng';r.className='result ok'}else{r.textContent='Đáp án: '+ANSWERS[i];r.className='result bad'}}const s=Math.round(c/60*100);document.getElementById('scoreText').textContent=`${c}/60 câu đúng · ${s} điểm`;document.getElementById('detailText').textContent=`Đã trả lời ${a}/60 câu. Sai hoặc bỏ trống: ${60-c} câu.`;window.HskAnswerReview.render(ANSWERS);document.getElementById('summary').classList.add('show');document.getElementById('summary').scrollIntoView({behavior:'smooth',block:'center'})}
 
 const TIMER_DEFAULTS={listening:17*60,reading:25*60,writing:10*60};
 let timerState={...TIMER_DEFAULTS};
@@ -181,7 +182,7 @@ document.addEventListener('input',startTimers);
 document.querySelector('audio')?.addEventListener('play',startTimers);
 renderTimers();
 
-function resetTest(){document.querySelectorAll('input[type=radio]').forEach(x=>x.checked=false);document.querySelectorAll('.text-answer').forEach(x=>x.value='');document.querySelectorAll('.result').forEach(x=>{x.textContent='';x.className='result'});document.getElementById('summary').classList.remove('show');
+function resetTest(){window.HskAnswerReview.clear();document.querySelectorAll('input[type=radio]').forEach(x=>x.checked=false);document.querySelectorAll('.text-answer').forEach(x=>x.value='');document.querySelectorAll('.result').forEach(x=>{x.textContent='';x.className='result'});document.getElementById('summary').classList.remove('show');
   if(timerHandle){clearInterval(timerHandle);timerHandle=null}
   timerState={...TIMER_DEFAULTS};timerStage='listening';timerStarted=false;
   ['timerListening','timerReading','timerWriting'].forEach(id=>document.getElementById(id).classList.remove('done','active'));
