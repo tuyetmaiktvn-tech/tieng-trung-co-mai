@@ -1,0 +1,15 @@
+/* Larger, flat presentation for the railway directory. */
+body.rail-design{font-size:19px}
+.rail-design *,.rail-design *::before,.rail-design *::after{text-shadow:none!important;box-shadow:none!important}
+.rail-design .page-hero{background:#edf3fc}
+.rail-design .page-hero p{font-size:20px;color:#35465a}
+.rail-design .railway-card{border-color:#bdc9d6;border-top-color:var(--topic)}
+.rail-design .railway-card:hover{transform:none}
+.rail-design .railway-card .railway-no{font-size:16px}
+.rail-design .railway-card h3{font-size:28px;line-height:1.45;font-weight:600}
+.rail-design .term-preview span{font-size:21px!important;line-height:1.6!important}
+.rail-design .railway-card .open-topic{font-size:19px;font-weight:600;padding:13px 16px}
+.rail-design .rail-topic-search span,.rail-design .rail-topic-search input{font-size:19px}
+.rail-design .rail-note{font-size:18px;font-weight:400;color:#35465a}
+.rail-design .nav-link,.rail-design .dropdown a{font-size:18px;font-weight:600}
+@media(max-width:620px){.rail-design .railway-card h3{font-size:26px}.rail-design .page-hero p{font-size:18px}}
