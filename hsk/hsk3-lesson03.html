@@ -1,0 +1,206 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HSK3 Bài 3 - 这个小区挺好的</title><style>
+:root{--ink:#354638;--green:#68784b;--orange:#c8753f;--cream:#fffaf0;--line:#dfcba7;--soft:#eef1df}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:#354038;font:17px/1.6 Arial,"Segoe UI","Noto Sans",sans-serif}body,button{font-family:Arial,"Segoe UI","Noto Sans",sans-serif!important;font-style:normal!important;font-stretch:normal!important;letter-spacing:normal!important;word-spacing:normal!important}.zh{font-family:"Microsoft YaHei","Noto Sans CJK SC","PingFang SC","SimSun",sans-serif!important}.py{font-family:Arial,"Segoe UI","Noto Sans",sans-serif!important;font-style:normal!important;letter-spacing:normal!important}.wrap{width:min(1120px,93%);margin:auto}.hero{padding:38px 0;background:linear-gradient(135deg,#f4d8b8,#edf1d9);border-bottom:5px solid #d7a64a}.hero h1{font-size:48px;margin:5px 0;color:var(--ink)}.mission{background:#fff;border:1px solid var(--line);padding:16px;border-radius:18px;margin-top:16px}.progress{height:12px;background:#eee5d5;border-radius:99px;overflow:hidden}.progress i{display:block;height:100%;width:0;background:var(--green)}nav{position:sticky;top:0;background:#fffdf8ee;border-bottom:1px solid var(--line);z-index:5}nav .wrap{display:flex;gap:7px;overflow:auto;padding:9px 0}nav a{white-space:nowrap;text-decoration:none;color:var(--ink);background:#f2ecdc;padding:8px 11px;border-radius:999px;font-weight:800}section{padding:38px 0}.title{text-align:center;font-size:31px;margin:0 0 6px}.lead{text-align:center;max-width:850px;margin:0 auto 20px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}button{border:0;border-radius:10px;padding:10px 13px;background:var(--green);color:white;font-weight:800;cursor:pointer}.ghost{background:#f6f0e2;color:var(--ink);border:1px solid var(--line)}.warm{background:#f3ead7}.warmgrid,.vgrid,.ggrid,.stats{display:grid;gap:10px}.warmgrid{grid-template-columns:repeat(5,1fr)}.warmgrid button{background:#fff;color:var(--ink);border:1px solid var(--line);min-height:75px}.warmgrid .done{background:var(--soft);outline:2px solid var(--green)}.vgrid{grid-template-columns:repeat(4,1fr)}.vcard{text-align:center;min-height:145px;cursor:pointer}.vcard .zh{font-size:28px;font-weight:900}.hidden{display:none}.texts{background:var(--soft)}.tabs{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}.dialog{max-width:860px;margin:auto}.line{padding:11px;border-bottom:1px solid #eee1cc}.line .zh{font-size:20px}.ggrid{grid-template-columns:repeat(3,1fr)}.gcard h3{color:var(--orange)}.ex{background:#f7f0e3;padding:8px;border-radius:9px;margin:6px 0}.lab{max-width:850px;margin:18px auto 0;text-align:center}.tokens{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px}.tokens button{background:#f6ead7;color:var(--ink);border:1px solid var(--line);font-size:18px}.build{min-height:52px;background:var(--soft);padding:10px;border-radius:10px;font-size:22px}.challenge{background:#f6e3d2}.chat{max-width:760px;margin:auto}.bubble{padding:12px 15px;border-radius:16px;margin:8px 0;max-width:82%}.bot{background:white;border:1px solid var(--line)}.me{background:#e6edd5;margin-left:auto}.choices{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.choices button{background:#fff;color:var(--ink);border:1px solid var(--line)}.story{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.story div{text-align:center;cursor:pointer}.story .sel{outline:3px solid var(--orange)}.stats{grid-template-columns:repeat(4,1fr)}.stat{text-align:center}.stat b{display:block;font-size:28px;color:var(--green)}.quiz{max-width:760px;margin:15px auto;text-align:center}.answers{display:grid;grid-template-columns:1fr 1fr;gap:8px}.answers button{background:#fff7e8;color:var(--ink);border:1px solid var(--line)}footer{text-align:center;padding:25px}@media(max-width:800px){.vgrid,.warmgrid,.ggrid{grid-template-columns:repeat(2,1fr)}.story{grid-template-columns:1fr 1fr}}@media(max-width:520px){.vgrid,.warmgrid,.stats,.answers{grid-template-columns:1fr}.hero h1{font-size:37px}}
+</style>
+<style id="hsk3-text-practice-v2">
+.postwork{max-width:900px;margin:16px auto 0;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+.postwork h3{margin:4px 0 8px;color:var(--orange)}
+.tasknav{display:flex;gap:7px;justify-content:center;align-items:center;flex-wrap:wrap;margin:10px 0}
+.taskcount{font-weight:900;color:var(--green)}
+.rebuildPrompt{font-size:14px;color:#68716a;margin-bottom:6px}
+.wordbank{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:12px 0}
+.wordbank button{background:#f6ead7;color:var(--ink);border:1px solid var(--line);font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif!important;font-size:18px}
+.cloze{font-family:"Microsoft YaHei","Noto Sans CJK SC","PingFang SC","SimSun",sans-serif!important;font-size:20px;line-height:2.05;background:#fffaf0;border-radius:13px;padding:15px;margin-top:12px}
+.cloze select{font:700 17px Arial,"Segoe UI","Noto Sans",sans-serif;padding:5px 8px;border:1px solid #d8bd8c;border-radius:8px;background:white;color:var(--ink);max-width:190px}
+.clozeResult{font-weight:900;min-height:28px;margin-top:10px}
+.sourceTag{display:inline-block;background:#eef1df;padding:4px 8px;border-radius:999px;font-size:13px;font-weight:800}
+</style>
+
+<style id="hsk3-clean-ui-v4">
+body{font-size:18px!important;line-height:1.65!important;background:#fffaf2!important}
+.wrap{width:min(1080px,92%)!important}
+nav{background:#fffdf9!important;box-shadow:0 2px 12px rgba(85,70,45,.06)!important}
+nav .wrap{justify-content:center!important;align-items:center!important;gap:10px!important;padding:12px 0!important;overflow-x:auto!important}
+nav a{font-size:17px!important;padding:9px 15px!important;background:#f7efdf!important;border:1px solid #e8d4ae!important;color:#43543d!important}
+nav a:hover{background:#e9efdc!important;color:#355b36!important}
+section{padding:34px 0!important}
+.title{font-size:32px!important;line-height:1.35!important;margin-bottom:10px!important}
+.lead{font-size:18px!important;line-height:1.7!important;color:#59655a!important}
+.card{box-shadow:0 5px 16px rgba(93,72,45,.055)!important}
+.warm{background:#f7f0e3!important}
+.texts{background:#f1f3e8!important}
+.challenge{background:#f8e9dc!important}
+.warmgrid{gap:14px!important}
+.warmgrid button{font-size:18px!important;line-height:1.55!important;padding:14px 10px!important}
+.vgrid{gap:14px!important}
+.vcard{min-height:160px!important;padding:22px 14px!important}
+.vcard .zh{font-size:31px!important}
+.vcard .py{font-size:18px!important;margin-top:5px!important}
+.vcard .hidden div:last-of-type{font-size:18px!important}
+.tabs{gap:10px!important;margin:18px auto!important}
+.tabs button{font-size:18px!important;padding:10px 18px!important}
+.dialog{max-width:920px!important;padding:22px!important}
+.line{padding:15px 10px!important}
+.line .zh{font-size:22px!important;line-height:1.7!important}
+.ggrid{gap:16px!important}
+.gcard{padding:22px!important}
+.gcard h3{font-size:22px!important}
+.gcard p{font-size:18px!important}
+.ex{font-size:20px!important;line-height:1.7!important;padding:11px 13px!important}
+.postwork{max-width:920px!important;padding:22px!important}
+.postwork h3{font-size:22px!important}
+.postwork p{font-size:18px!important}
+.tasknav button,.wordbank button,.postwork>button{font-size:17px!important}
+.cloze{font-size:21px!important;line-height:2.2!important}
+.cloze select{font-size:18px!important}
+.chat{max-width:820px!important;padding:22px!important}
+.bubble{font-size:19px!important;line-height:1.7!important}
+.choices button{font-size:18px!important;line-height:1.5!important;padding:12px 15px!important}
+.stats{gap:14px!important}
+.stat{font-size:17px!important}
+.quiz{font-size:18px!important}
+.hero{padding:32px 0!important}
+.hero h1{font-size:46px!important}
+.hero h3{font-size:22px!important}
+.mission{font-size:18px!important}
+@media(max-width:800px){
+ nav .wrap{justify-content:flex-start!important}
+ .ggrid{grid-template-columns:1fr!important}
+ .title{font-size:28px!important}
+}
+</style>
+
+<style id="hsk3-warm-situation-v5">
+.warmintro{max-width:940px;margin:0 auto 18px;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.warmgrid .warmitem{min-height:150px!important;text-align:left!important;padding:16px!important}
+.warmitem .wi-icon{font-size:28px;display:block;margin-bottom:5px}
+.warmitem .wi-title{font-size:20px;font-weight:900;display:block;margin-bottom:5px}
+.warmitem .wi-task{font-size:15px;line-height:1.55;color:#657063;display:block}
+.warmitem.done .wi-task{color:#40523d}
+.sitgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:980px;margin:0 auto}
+.sitcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}
+.sitcard h3{margin:0 0 7px;color:var(--orange);font-size:22px}
+.sitcard .goal{background:#f7f0e3;border-radius:11px;padding:10px 12px;margin:10px 0}
+.sitcard textarea{width:100%;min-height:92px;border:1px solid #d8c39d;border-radius:11px;padding:11px;font:18px/1.6 Arial,"Segoe UI","Noto Sans",sans-serif;resize:vertical}
+.sitcard details{margin-top:10px;background:#eef1df;border-radius:11px;padding:9px 12px}
+.sitcard summary{cursor:pointer;font-weight:800;color:var(--green)}
+.sitcard .model{font-size:19px;line-height:1.75;margin-top:8px}
+.sitcheck{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.sitresult{font-weight:800;min-height:25px;margin-top:7px}
+@media(max-width:800px){.sitgrid{grid-template-columns:1fr}.warmgrid{grid-template-columns:1fr!important}}
+</style>
+
+
+<style id="hsk3-font-grammar-v6">
+.warm .lead,.warmintro,.warmitem .wi-task,.sitcard p,.sitcard .goal,.sitresult,
+.postwork p,.rebuildPrompt,.taskcount,.clozeResult{
+  font-family:Arial,"Segoe UI","Noto Sans",sans-serif!important;
+  font-style:normal!important;font-stretch:normal!important;font-variant:normal!important;
+  font-weight:400;letter-spacing:normal!important;word-spacing:normal!important;
+  text-rendering:optimizeLegibility;
+}
+.warm .lead,.warmintro,.warmitem .wi-task{font-size:17px!important;line-height:1.68!important}
+.warmitem .wi-title{font-family:"Microsoft YaHei","Noto Sans CJK SC","PingFang SC","SimSun",sans-serif!important}
+.gcard .moreex{margin-top:12px;padding-top:10px;border-top:1px dashed #dcc79f}
+.gcard .moreex b{display:block;margin-bottom:7px;color:#596b4d}
+.gcard .ex-note{font-family:Arial,"Segoe UI","Noto Sans",sans-serif!important;font-size:16px!important;color:#667064;margin:3px 0 9px}
+</style>
+
+</head><body>
+<header class="hero"><div class="wrap"><b style="color:#c8753f">新HSK教程 3 · LESSON 3</b><h1 class="zh">这个小区挺好的</h1><h3>Khu dân cư này khá tốt</h3><div class="mission"><b>🎯 Nhiệm vụ cuối bài:</b> Miêu tả nơi ở, trao đổi về chuyển nhà và sử dụng đúng 挺、坏了、就、才 để diễn đạt mức độ, thời điểm và tốc độ của hành động.<div class="progress"><i id="bar"></i></div><small id="prog">0 / 6 chặng hoàn thành</small></div></div></header>
+<nav><div class="wrap"><a href="#warm">① Khởi động</a><a href="#vocab">② Từ vựng</a><a href="#text">③ Bài khóa</a><a href="#grammar">④ Ôn ngữ pháp</a><a href="#challenge">⑤ Tình huống</a><a href="#review">⑥ Ôn tập</a></div></nav>
+<section id="warm" class="warm"><div class="wrap"><h2 class="title">① 热身 · Khởi động</h2>
+<p class="lead">Quan sát 6 chủ đề trước khi học. Với mỗi chủ đề, hãy thử nói 1–2 câu tiếng Trung theo gợi ý. Bấm vào thẻ sau khi bạn đã tự nói.</p>
+<div class="warmintro"><b>🎯 Mục tiêu khởi động:</b> kích hoạt vốn từ về <span class="zh">冰箱、空调、洗衣机、花园、卫生间、灯</span> và chuẩn bị cho chủ đề nhà ở – chuyển nhà.</div>
+<div class="warmgrid">
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">🧊</span><span class="wi-title zh">图一 · 冰箱</span><span class="wi-task">Nhà bạn có tủ lạnh không? <span class="zh">我家有一个冰箱。冰箱在……</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">❄️</span><span class="wi-title zh">图二 · 空调</span><span class="wi-task">Điều hòa nhà bạn mới hay cũ? <span class="zh">房间里有空调，空调挺新的。</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">🧺</span><span class="wi-title zh">图三 · 洗衣机</span><span class="wi-task">Bạn thường dùng máy giặt khi nào? <span class="zh">我常用洗衣机洗衣服。</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">🌷</span><span class="wi-title zh">图四 · 花园</span><span class="wi-task">Bạn có thích nhà có vườn không? Vì sao? <span class="zh">我喜欢有花园的房子，因为……</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">🚿</span><span class="wi-title zh">图五 · 卫生间</span><span class="wi-task">Hãy miêu tả phòng vệ sinh nhà bạn. <span class="zh">卫生间挺……的。</span></span></button>
+<button class="warmitem" onclick="warm(this)"><span class="wi-icon">💡</span><span class="wi-title zh">图六 · 灯</span><span class="wi-task">Trước khi ra khỏi nhà cần làm gì? <span class="zh">走的时候要关灯。</span></span></button>
+</div></div></section>
+<section id="vocab"><div class="wrap"><h2 class="title">② 生词 · Học từ chủ động</h2><p class="lead">HSK3 mặc định chỉ hiện chữ Hán. Hãy tự nhớ trước rồi bấm thẻ để xem Pinyin và nghĩa.</p><div class="vgrid" id="vgrid"></div></div></section>
+<section id="text" class="texts"><div class="wrap"><h2 class="title">③ 课文 · Bài khóa</h2><p class="lead">Đọc nguyên bản trước. Bấm từng câu để mở nghĩa. Pinyin không hiển thị mặc định.</p><div class="tabs" id="tabs"></div><div class="card dialog" id="dialog"></div><div id="postTextPractice"></div></div></section>
+<section id="grammar"><div class="wrap"><h2 class="title">④ 语法复习 · Ôn tập ngữ pháp</h2><div class="ggrid" id="ggrid"></div></div></section>
+<section id="challenge" class="challenge"><div class="wrap"><h2 class="title">⑤ 情景练习 · Luyện tập tình huống</h2>
+<p class="lead"><b>Luyện tập mở rộng:</b> hoàn thành 6 nhiệm vụ giao tiếp về chọn nhà, thiết bị trong nhà, chuyển nhà và làm thẻ ngân hàng. Hãy tự viết trước rồi mới mở câu mẫu.</p><div class="sitgrid">
+<div class="sitcard"><h3>情景一 · 介绍你住的小区</h3><p>Hãy giới thiệu khu dân cư bạn đang ở: môi trường, giao thông và điều bạn thích.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">小区 / 环境 / 挺</span></div><textarea id="sit1"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">我住的小区环境挺好的，离地铁站也不远，我挺喜欢这里的。</div></details><div class="sitcheck"><button onclick="checkSit(1,['小区','环境','挺'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres1"></div></div>
+<div class="sitcard"><h3>情景二 · 看新房</h3><p>Bạn đang xem một căn nhà mới. Hãy nhận xét về thiết bị và tầng của căn nhà.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">房子 / 空调 / 洗衣机 / 层</span></div><textarea id="sit2"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">这个房子挺好的，空调和洗衣机都是新的，但是我不太喜欢住一层。</div></details><div class="sitcheck"><button onclick="checkSit(2,['房子','空调','洗衣机','层'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres2"></div></div>
+<div class="sitcard"><h3>情景三 · 新家出了问题</h3><p>Trong nhà mới có một số vấn đề. Hãy nói thiết bị nào không dùng được và việc gì chưa làm xong.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">冰箱 / 卫生间 / 打扫</span></div><textarea id="sit3"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">冰箱现在不能用，卫生间也还没打扫好，我们今天还不能搬家。</div></details><div class="sitcheck"><button onclick="checkSit(3,['冰箱','卫生间','打扫'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres3"></div></div>
+<div class="sitcard"><h3>情景四 · 忙坏了</h3><p>Bạn rất mệt vì chuẩn bị chuyển nhà. Hãy dùng “坏了” để diễn đạt mức độ.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">搬家 / 忙坏了或累坏了</span></div><textarea id="sit4"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">这几天一直准备搬家，我真是忙坏了，今天搬东西也累坏了。</div></details><div class="sitcheck"><button onclick="checkSit(4,['搬家','坏了'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres4"></div></div>
+<div class="sitcard"><h3>情景五 · 去银行办卡</h3><p>Bạn muốn làm thẻ tín dụng. Hãy nói lý do và thời gian đi ngân hàng, dùng 就 hoặc 才.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">办 / 信用卡 / 银行 / 就或才</span></div><textarea id="sit5"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">我想去银行办一张信用卡。银行很近，走路几分钟就能到。</div></details><div class="sitcheck"><button onclick="checkSit(5,['办','信用卡','银行'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres5"></div></div>
+<div class="sitcard"><h3>情景六 · 制定搬家计划</h3><p>Hãy lập kế hoạch chuyển nhà: khi nào chuẩn bị, dọn nhà và chuyển xong.</p><div class="goal"><b>Nên dùng:</b> <span class="zh">纸箱 / 打扫 / 搬 / 需要 / 就 / 才</span></div><textarea id="sit6"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">我明天买纸箱，下周去打扫新家。如果朋友来帮忙，一天就能搬完；如果事情太多，可能两个星期才能准备好。</div></details><div class="sitcheck"><button onclick="checkSit(6,['纸箱','搬'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres6"></div></div>
+</div></div></section>
+
+<section id="review" class="warm"><div class="wrap"><h2 class="title">⑥ 智能复习 · Ôn tập thông minh</h2><div class="stats"><div class="card stat"><b id="seenN">0</b>Đã xem</div><div class="card stat"><b id="rightN">0</b>Đúng</div><div class="card stat"><b id="wrongN">0</b>Cần ôn</div><div class="card stat"><b id="score">0%</b>Độ chính xác</div></div><div class="card quiz" id="quiz"></div></div></section><footer>© Tiếng Trung Cô Mai · HSK 3.0 · Bài 3</footer>
+<script>
+const V=[["初中","chūzhōng","trung học cơ sở"],["咱们","zánmen","chúng ta"],["换","huàn","đổi; thay"],["房子","fángzi","nhà; căn nhà"],["小区","xiǎoqū","khu dân cư"],["环境","huánjìng","môi trường; hoàn cảnh"],["挺","tǐng","khá; rất"],["空调","kōngtiáo","điều hòa"],["洗衣机","xǐyījī","máy giặt"],["层","céng","tầng"],["花园","huāyuán","vườn"],["灯","dēng","đèn"],["关","guān","tắt; đóng"],["冰箱","bīngxiāng","tủ lạnh"],["卫生间","wèishēngjiān","phòng vệ sinh"],["打扫","dǎsǎo","quét dọn"],["搬家","bānjiā","chuyển nhà"],["办","bàn","làm; giải quyết; làm thủ tục"],["信用卡","xìnyòngkǎ","thẻ tín dụng"],["还","huán","trả lại; hoàn lại"],["听说","tīngshuō","nghe nói"],["银行","yínháng","ngân hàng"],["才","cái","mãi đến; mới"],["纸","zhǐ","giấy"],["搬","bān","chuyển; khuân"],["需要","xūyào","cần; cần phải"]];
+const T=[["课文1","在家里，刘明和王一雪在聊天儿。",["小雪的初中离家有点儿远，咱们换一个近点儿的房子吧。","好啊，我上网看看。你觉得这个小区怎么样？","环境挺好的，离地铁站还不远。","房子里面也不错，空调和洗衣机都是新的。","是不错，但是我不喜欢住一层。","这个一层带一个小花园，我觉得咱们可以去看看。"]],["课文2","在新家，王一雪在收拾房间，刘明进来了。",["我今天早上来的时候，灯还开着。","我这几天忙坏了，可能走的时候忘关了。","冰箱不能用，这些吃的东西放在哪儿？","不可能吧？冰箱是新买的，我来看看。","洗衣机也坏了吗？","没坏，但是卫生间没打扫好，还不能洗衣服。","星期天我们真的能搬家吗？"]],["课文3","在家里，刘明和王一雪在客厅聊天儿。",["这个月花了不少钱。","是的，我们买了很多搬家时要用的东西。","咱们办张信用卡吧，花的钱可以慢慢还。听说中国银行的服务不错，办了信用卡买东西还能便宜。","好啊！中国银行很近，走路几分钟就能到。咱们什么时候去？","今天下午？","我下午要去医院，很晚才能回来。","那我下午自己去吧。"]],["课文4","在家里，刘明和王一雪讨论搬家计划。",["我觉得这个星期就能搬家。我明天去买一些纸箱，很快就能准备好。搬家那天，我想请几位朋友来帮忙，最多一天就能搬完。","我觉得下个月才能搬家。这周开始准备，下周去打扫新家，这么多事情最少需要两个星期才能做完。搬家那天，我们应该找一家搬家公司。"]]];
+const G=[["程度副词“挺”","“挺” đặt trước tính từ hoặc động từ tâm lý, biểu thị mức độ tương đối cao; thường dùng trong khẩu ngữ. Cấu trúc: 挺 + tính từ/động từ tâm lý + 的.",[["这个小区环境挺好的。","Môi trường của khu dân cư này khá tốt."],["这家饭馆的菜挺好吃的。","Món ăn của nhà hàng này khá ngon."],["买这个吧，我挺喜欢这个颜色的。","Mua cái này đi, tôi khá thích màu này."],["这个房子挺大的。","Căn nhà này khá rộng."],["新家的花园挺漂亮的。","Khu vườn của nhà mới khá đẹp."],["我挺喜欢现在住的小区的。","Tôi khá thích khu dân cư hiện đang ở."]]],["程度补语“坏了”","“坏了” đặt sau tính từ để nhấn mạnh mức độ rất cao, thường mang sắc thái khoa trương và hay dùng trong tình huống tiêu cực. Không nên hiểu máy móc là “bị hỏng”.",[["我这几天忙坏了。","Mấy hôm nay tôi bận chết đi được."],["我渴坏了，哪里能买水？","Tôi khát chết đi được, ở đâu mua được nước?"],["这几天非常忙，大家都累坏了。","Mấy hôm nay rất bận, mọi người mệt lử."],["今天搬家，我和刘明都累坏了。","Hôm nay chuyển nhà, tôi và Lưu Minh đều mệt rã rời."],["外面热坏了，我们开空调吧。","Bên ngoài nóng kinh khủng, bật điều hòa nhé."],["找不到信用卡，我急坏了。","Không tìm thấy thẻ tín dụng, tôi lo chết đi được."]]],["“就”和“才”","“就” cho thấy hành động xảy ra sớm, nhanh hoặc thuận lợi hơn dự kiến; “才” cho thấy hành động xảy ra muộn, chậm hoặc khó hơn dự kiến.",[["中国银行很近，走路几分钟就能到。","Ngân hàng Trung Quốc rất gần, đi bộ vài phút là tới."],["我下午要去医院，很晚才能回来。","Chiều tôi phải đi bệnh viện, rất muộn mới có thể về."],["我早上五点就起床了。","Tôi đã dậy từ 5 giờ sáng."],["坐火车去北京，五个小时才能到。","Đi tàu đến Bắc Kinh phải 5 tiếng mới tới."],["这些东西一天就能搬完。","Những đồ này một ngày là có thể chuyển xong."],["这么多事情最少需要两个星期才能做完。","Nhiều việc như vậy ít nhất phải hai tuần mới làm xong."]]]];
+
+const TP=[{"rebuild":[["小雪的初中离家有点儿远。",["小雪的初中","离家","有点儿远"]],["咱们换一个近点儿的房子吧。",["咱们","换一个","近点儿的","房子吧"]],["你觉得这个小区怎么样？",["你觉得","这个小区","怎么样"]],["这个小区的环境挺好的。",["这个小区的","环境","挺好的"]],["这个小区离地铁站还不远。",["这个小区","离地铁站","还不远"]],["房子里面也不错。",["房子里面","也","不错"]],["空调和洗衣机都是新的。",["空调和洗衣机","都是","新的"]],["我不喜欢住一层。",["我","不喜欢","住一层"]],["这个一层带一个小花园。",["这个一层","带","一个小花园"]],["我觉得咱们可以去看看。",["我觉得","咱们","可以","去看看"]]],"summary":["因为小雪的___离家有点儿远，刘明想___一个近点儿的房子。一雪觉得这个___的环境挺好，离地铁站也不远。房子里的___和洗衣机都是新的。虽然一雪不喜欢住一___，但是这个房子带一个小___。",["初中","换","小区","空调","层","花园"]]},{"rebuild":[["我今天早上来的时候，灯还开着。",["我","今天早上","来的时候","灯还开着"]],["我这几天忙坏了。",["我","这几天","忙坏了"]],["可能走的时候忘关了。",["可能","走的时候","忘关了"]],["冰箱不能用。",["冰箱","不能用"]],["这些吃的东西放在哪儿？",["这些吃的东西","放在","哪儿"]],["冰箱是新买的。",["冰箱","是","新买的"]],["洗衣机也坏了吗？",["洗衣机","也","坏了吗"]],["卫生间没打扫好。",["卫生间","没","打扫好"]],["现在还不能洗衣服。",["现在","还不能","洗衣服"]],["星期天我们真的能搬家吗？",["星期天","我们","真的","能搬家吗"]]],"summary":["一雪早上来新家的时候，发现___还开着。刘明这几天忙___了，可能忘了___灯。后来他们发现___不能用，不过是新买的。洗衣机没有坏，但是___还没打扫好，所以还不能洗衣服。他们担心星期天能不能___。",["灯","坏","关","冰箱","卫生间","搬家"]]},{"rebuild":[["这个月花了不少钱。",["这个月","花了","不少钱"]],["我们买了很多搬家时要用的东西。",["我们","买了","很多","搬家时要用的东西"]],["咱们办张信用卡吧。",["咱们","办张","信用卡吧"]],["花的钱可以慢慢还。",["花的钱","可以","慢慢还"]],["听说中国银行的服务不错。",["听说","中国银行的服务","不错"]],["办了信用卡买东西还能便宜。",["办了信用卡","买东西","还能便宜"]],["中国银行离这儿很近。",["中国银行","离这儿","很近"]],["走路几分钟就能到。",["走路","几分钟","就能到"]],["我下午要去医院。",["我","下午","要去医院"]],["我很晚才能回来。",["我","很晚","才能回来"]]],"summary":["这个月他们因为___花了不少钱。一雪建议去___一张信用卡，花的钱可以慢慢___。她___中国银行的服务不错，而且银行很近，走路几分钟___能到。但是刘明下午要去医院，很晚___能回来，所以一雪决定自己去。",["搬家","办","还","听说","就","才"]]},{"rebuild":[["我觉得这个星期就能搬家。",["我觉得","这个星期","就能搬家"]],["我明天去买一些纸箱。",["我","明天","去买","一些纸箱"]],["很快就能准备好。",["很快","就能","准备好"]],["我想请几位朋友来帮忙。",["我想","请几位朋友","来帮忙"]],["最多一天就能搬完。",["最多","一天","就能搬完"]],["我觉得下个月才能搬家。",["我觉得","下个月","才能搬家"]],["这周开始准备。",["这周","开始","准备"]],["下周去打扫新家。",["下周","去","打扫新家"]],["这么多事情最少需要两个星期才能做完。",["这么多事情","最少需要","两个星期","才能做完"]],["我们应该找一家搬家公司。",["我们","应该","找一家","搬家公司"]]],"summary":["刘明觉得这个星期___能搬家。他准备买一些___，还想请几位朋友帮忙，认为最多一天就能搬___。一雪却觉得下个月___能搬家，因为还要___新家，这么多事情至少___两个星期才能做完，所以她建议找搬家公司。",["就","纸箱","完","才","打扫","需要"]]}];
+let rebuildIndex=0,rebuildParts=[];
+function renderPostWork(){
+ let d=TP[ct]; rebuildIndex=0;
+ postTextPractice.innerHTML=`<div class="postwork">
+ <span class="sourceTag">课文 ${ct+1} · Sau bài khóa</span>
+ <h3>🧩 A. Sắp xếp từ thành câu hoàn chỉnh · 10 câu</h3>
+ <p>Mỗi bài khóa có 10 câu. Hãy sắp xếp các từ/cụm từ thành câu hoàn chỉnh để ôn lại từ mới, trật tự từ và cấu trúc vừa học.</p>
+ <div class="tasknav"><button class="ghost" onclick="moveRebuild(-1)">← Câu trước</button><span class="taskcount" id="rCount"></span><button class="ghost" onclick="moveRebuild(1)">Câu sau →</button></div>
+ <div class="build zh" id="rBuild"></div><div class="wordbank" id="rTokens"></div>
+ <button onclick="checkRebuild()">Kiểm tra</button> <button class="ghost" onclick="resetRebuild()">Làm lại</button><div class="clozeResult" id="rResult"></div>
+ <hr style="border:0;border-top:1px solid #eadbc0;margin:24px 0">
+ <h3>📝 B. Tóm tắt bài khóa · Điền từ mới</h3>
+ <p>Đọc lại toàn bộ nội dung rồi hoàn thành đoạn tóm tắt. Mỗi đoạn có 6–9 chỗ trống để buộc người học huy động nhiều từ mới và cấu trúc của bài.</p>
+ <div class="cloze" id="clozeBox"></div>
+ <div style="margin-top:12px"><button class="orange" onclick="checkCloze()">Kiểm tra đoạn tóm tắt</button> <button class="ghost" onclick="renderCloze()">Làm lại</button></div>
+ <div class="clozeResult" id="clozeResult"></div></div>`;
+ renderRebuild();renderCloze();
+}
+function renderRebuild(){
+ rebuildParts=[];let d=TP[ct].rebuild[rebuildIndex];rCount.textContent=`${rebuildIndex+1} / ${TP[ct].rebuild.length}`;rBuild.textContent="";
+ rTokens.innerHTML=[...d[1]].sort(()=>Math.random()-.5).map(x=>`<button class="zh" onclick="addRebuild(this)">${x}</button>`).join("");rResult.textContent="";
+}
+function addRebuild(b){rebuildParts.push(b.textContent);rBuild.textContent=rebuildParts.join("");b.disabled=true}
+function resetRebuild(){renderRebuild()}
+function moveRebuild(n){rebuildIndex=(rebuildIndex+n+TP[ct].rebuild.length)%TP[ct].rebuild.length;renderRebuild()}
+function checkRebuild(){let target=TP[ct].rebuild[rebuildIndex][0].replace(/[，。？！,.?!]/g,""),got=rebuildParts.join("").replace(/[，。？！,.?!]/g,"");rResult.textContent=got===target?"✓ Chính xác":"Chưa đúng. Hãy thử sắp xếp lại."}
+function renderCloze(){
+ let [txt,answers]=TP[ct].summary,parts=txt.split("___"),bank=[...answers].sort(()=>Math.random()-.5);
+ let out="";for(let i=0;i<parts.length;i++){out+=parts[i];if(i<answers.length)out+=`<select data-answer="${answers[i]}"><option value="">— chọn từ —</option>${bank.map(w=>`<option>${w}</option>`).join("")}</select>`}
+ clozeBox.innerHTML=out;clozeResult.textContent="";
+}
+function checkCloze(){
+ let ss=[...clozeBox.querySelectorAll("select")],right=ss.filter(x=>x.value===x.dataset.answer).length;
+ ss.forEach(x=>x.style.borderColor=x.value===x.dataset.answer?"#68784b":"#c8753f");
+ clozeResult.textContent=right===ss.length?`✓ Hoàn thành: ${right}/${ss.length} từ đúng.`:`Bạn đúng ${right}/${ss.length}. Những ô viền cam cần xem lại.`;
+ if(right===ss.length)stage(3);
+}
+
+let S={seen:[],right:[],wrong:[],stages:[]},ct=0,bp=[],ap=[],sp=[];
+const uniq=a=>[...new Set(a)],sample=(a,n)=>[...a].sort(()=>Math.random()-.5).slice(0,n);function save(){S.seen=uniq(S.seen);S.right=uniq(S.right);S.wrong=uniq(S.wrong);S.stages=uniq(S.stages);localStorage.setItem("hsk3l3",JSON.stringify(S));update()}try{S=JSON.parse(localStorage.getItem("hsk3l3"))||S}catch(e){}
+function stage(n){S.stages.push(n);save()}function update(){seenN.textContent=S.seen.length;rightN.textContent=S.right.length;wrongN.textContent=S.wrong.length;let n=S.right.length+S.wrong.length;score.textContent=(n?Math.round(S.right.length/n*100):0)+"%";bar.style.width=Math.min(100,S.stages.length/6*100)+"%";prog.textContent=S.stages.length+" / 6 chặng hoàn thành"}
+function warm(b){b.classList.toggle("done");if(document.querySelectorAll(".warmgrid .done").length>=3)stage(1)}
+function vocab(){vgrid.innerHTML=V.map((v,i)=>`<div class="card vcard" onclick="flip(this,${i})"><div class="zh">${v[0]}</div><div class="hidden"><div class="py">${v[1]}</div><div>${v[2]}</div><button class="ghost" onclick="event.stopPropagation();hard(${i})">↻ Cần ôn</button></div></div>`).join("")}function flip(e,i){e.lastElementChild.classList.toggle("hidden");S.seen.push(i);if(S.seen.length>=10)stage(2);save()}function hard(i){S.wrong.push(i);save()}
+function showText(i){ct=i;tabs.innerHTML=T.map((x,j)=>`<button class="${i===j?'':'ghost'}" onclick="showText(${j})">${x[0]}</button>`).join("");dialog.innerHTML=`<b>📍 <span class="zh">${T[i][1]}</span></b>`+T[i][2].map(x=>`<div class="line"><div class="zh">${x}</div><button class="ghost" onclick="this.nextElementSibling.classList.toggle('hidden')">💡 Tự kiểm tra</button><small class="hidden">Hãy tự diễn đạt nghĩa câu này trước khi đối chiếu giáo trình.</small></div>`).join("");renderPostWork();if(i===3)stage(3)}
+const BT=["他","是","白家月","的","好朋友"];function resetBuild(){bp=[];build.textContent="";tokens.innerHTML=[...BT].sort(()=>Math.random()-.5).map(x=>`<button onclick="bp.push(this.textContent);build.textContent=bp.join('');this.disabled=true">${x}</button>`).join("");buildResult.textContent=""}function checkBuild(){let ok=bp.join("")===BT.join("");buildResult.textContent=ok?"✓ Chính xác":"Chưa đúng";if(ok)stage(3)}
+function grammar(){ggrid.innerHTML=G.map(g=>`<div class="card gcard"><h3>${g[0]}</h3><p>${g[1]}</p><div class="moreex"><b>Ví dụ ôn tập</b>${g[2].map(x=>`<div class="ex zh">${x[0]}</div><div class="ex-note">${x[1]}</div>`).join("")}</div></div>`).join("")}
+const AT=["那个","穿着黑衣服的","短头发的","年轻人"];function resetAttr(){ap=[];abuild.textContent="";atokens.innerHTML=[...AT].sort(()=>Math.random()-.5).map(x=>`<button onclick="ap.push(this.textContent);abuild.textContent=ap.join('');this.disabled=true">${x}</button>`).join("");aresult.textContent=""}function checkAttr(){let ok=ap.join("")===AT.join("");aresult.textContent=ok?"✓ 正确："+AT.join(""):"Chưa đúng, hãy thử lại.";if(ok)stage(4)}
+let sitDone=[];
+function checkSit(n,keys){
+ const el=document.getElementById("sit"+n),res=document.getElementById("sitres"+n),txt=el.value.trim();
+ if(!txt){res.textContent="Hãy tự viết câu trước khi kiểm tra.";return}
+ const miss=keys.filter(k=>!txt.includes(k));
+ if(miss.length===0){
+   res.textContent="✓ Đã sử dụng đủ từ/cấu trúc mục tiêu. Hãy đối chiếu câu mẫu và tự chỉnh cách diễn đạt.";
+   sitDone.push(n);sitDone=uniq(sitDone);if(sitDone.length>=4)stage(5);
+ }else{
+   res.textContent="Cần thử dùng thêm: "+miss.join("、");
+ }
+}
+const ST=[["✈️","到北京"],["🧳","行李不见了"],["ℹ️","去服务台"],["🚪","走出机场"],["🍜","吃中国菜"]];function resetStory(){sp=[];story.innerHTML=[...ST].sort(()=>Math.random()-.5).map(x=>`<div class="card" data-k="${x[1]}" onclick="if(!this.classList.contains('sel')){this.classList.add('sel');sp.push(this.dataset.k);this.innerHTML='<b>'+sp.length+'</b><br>'+this.innerHTML}"><b>${x[0]}</b><br><span class="zh">${x[1]}</span></div>`).join("");sresult.textContent=""}function checkStory(){let ok=sp.join("|")===ST.map(x=>x[1]).join("|");sresult.textContent=ok?"✓ Đúng trình tự!":"Chưa đúng, đọc lại 课文4.";if(ok)stage(5)}
+function q(){let i=Math.floor(Math.random()*V.length),o=[V[i],...sample(V.filter((x,j)=>j!==i),3)].sort(()=>Math.random()-.5);quiz.innerHTML=`<h2 class="zh">${V[i][0]}</h2><div class="py">${V[i][1]}</div><p>Chọn nghĩa đúng</p><div class="answers">${o.map(x=>`<button onclick="qa(${i},'${x[0]}')">${x[2]}</button>`).join("")}</div><p id="qr"></p><button class="ghost" onclick="q()">Câu tiếp →</button>`}function qa(i,x){let ok=x===V[i][0];qr.textContent=ok?"✓ Chính xác":"Chưa đúng: "+V[i][2];if(ok){S.right.push(i);S.wrong=S.wrong.filter(y=>y!==i)}else S.wrong.push(i);if(S.right.length>=5)stage(6);save()}
+vocab();showText(0);grammar();q();update();
+</script></body></html>
