@@ -16,15 +16,69 @@
 .clozeResult{font-weight:900;min-height:28px;margin-top:10px}
 .sourceTag{display:inline-block;background:#eef1df;padding:4px 8px;border-radius:999px;font-size:13px;font-weight:800}
 </style>
+
+<style id="hsk3-clean-ui-v4">
+body{font-size:18px!important;line-height:1.65!important;background:#fffaf2!important}
+.wrap{width:min(1080px,92%)!important}
+nav{background:#fffdf9!important;box-shadow:0 2px 12px rgba(85,70,45,.06)!important}
+nav .wrap{justify-content:center!important;align-items:center!important;gap:10px!important;padding:12px 0!important;overflow-x:auto!important}
+nav a{font-size:17px!important;padding:9px 15px!important;background:#f7efdf!important;border:1px solid #e8d4ae!important;color:#43543d!important}
+nav a:hover{background:#e9efdc!important;color:#355b36!important}
+section{padding:34px 0!important}
+.title{font-size:32px!important;line-height:1.35!important;margin-bottom:10px!important}
+.lead{font-size:18px!important;line-height:1.7!important;color:#59655a!important}
+.card{box-shadow:0 5px 16px rgba(93,72,45,.055)!important}
+.warm{background:#f7f0e3!important}
+.texts{background:#f1f3e8!important}
+.challenge{background:#f8e9dc!important}
+.warmgrid{gap:14px!important}
+.warmgrid button{font-size:18px!important;line-height:1.55!important;padding:14px 10px!important}
+.vgrid{gap:14px!important}
+.vcard{min-height:160px!important;padding:22px 14px!important}
+.vcard .zh{font-size:31px!important}
+.vcard .py{font-size:18px!important;margin-top:5px!important}
+.vcard .hidden div:last-of-type{font-size:18px!important}
+.tabs{gap:10px!important;margin:18px auto!important}
+.tabs button{font-size:18px!important;padding:10px 18px!important}
+.dialog{max-width:920px!important;padding:22px!important}
+.line{padding:15px 10px!important}
+.line .zh{font-size:22px!important;line-height:1.7!important}
+.ggrid{gap:16px!important}
+.gcard{padding:22px!important}
+.gcard h3{font-size:22px!important}
+.gcard p{font-size:18px!important}
+.ex{font-size:20px!important;line-height:1.7!important;padding:11px 13px!important}
+.postwork{max-width:920px!important;padding:22px!important}
+.postwork h3{font-size:22px!important}
+.postwork p{font-size:18px!important}
+.tasknav button,.wordbank button,.postwork>button{font-size:17px!important}
+.cloze{font-size:21px!important;line-height:2.2!important}
+.cloze select{font-size:18px!important}
+.chat{max-width:820px!important;padding:22px!important}
+.bubble{font-size:19px!important;line-height:1.7!important}
+.choices button{font-size:18px!important;line-height:1.5!important;padding:12px 15px!important}
+.stats{gap:14px!important}
+.stat{font-size:17px!important}
+.quiz{font-size:18px!important}
+.hero{padding:32px 0!important}
+.hero h1{font-size:46px!important}
+.hero h3{font-size:22px!important}
+.mission{font-size:18px!important}
+@media(max-width:800px){
+ nav .wrap{justify-content:flex-start!important}
+ .ggrid{grid-template-columns:1fr!important}
+ .title{font-size:28px!important}
+}
+</style>
 </head><body>
 <header class="hero"><div class="wrap"><b style="color:#c8753f">新HSK教程 3 · LESSON 1</b><h1 class="zh">我们去机场接他们</h1><h3>Chúng ta ra sân bay đón họ</h3><div class="mission"><b>🎯 Nhiệm vụ cuối bài:</b> Ra sân bay đón bạn, mô tả người cần đón và xử lý tình huống thất lạc hành lý/hộ chiếu.<div class="progress"><i id="bar"></i></div><small id="prog">0 / 6 chặng hoàn thành</small></div></div></header>
-<nav><div class="wrap"><a href="#warm">① Khởi động</a><a href="#vocab">② Từ vựng</a><a href="#text">③ Bài khóa</a><a href="#grammar">④ Ngữ pháp</a><a href="#challenge">⑤ Thử thách</a><a href="#review">⑥ Ôn tập</a></div></nav>
+<nav><div class="wrap"><a href="#warm">① Khởi động</a><a href="#vocab">② Từ vựng</a><a href="#text">③ Bài khóa</a><a href="#grammar">④ Ôn ngữ pháp</a><a href="#challenge">⑤ Tình huống</a><a href="#review">⑥ Ôn tập</a></div></nav>
 <section id="warm" class="warm"><div class="wrap"><h2 class="title">① 热身 · Khởi động</h2><p class="lead">Nếu đi sân bay đón một người bạn Trung Quốc, bạn cần làm được những gì?</p><div class="warmgrid"><button onclick="warm(this)">👤<br>描述一个人</button><button onclick="warm(this)">🧳<br>找行李</button><button onclick="warm(this)">🛂<br>找护照</button><button onclick="warm(this)">ℹ️<br>问服务台</button><button onclick="warm(this)">✈️<br>接朋友</button></div></div></section>
 <section id="vocab"><div class="wrap"><h2 class="title">② 生词 · Học từ chủ động</h2><p class="lead">HSK3 mặc định chỉ hiện chữ Hán. Hãy tự nhớ trước rồi bấm thẻ để xem Pinyin và nghĩa.</p><div class="vgrid" id="vgrid"></div></div></section>
-<section id="text" class="texts"><div class="wrap"><h2 class="title">③ 课文 · Học sâu bài khóa</h2><p class="lead">Đọc nguyên bản trước. Bấm từng câu để mở nghĩa. Pinyin không hiển thị mặc định.</p><div class="tabs" id="tabs"></div><div class="card dialog" id="dialog"></div><div id="postTextPractice"></div></div></section>
-<section id="grammar"><div class="wrap"><h2 class="title">④ 语法实验室 · Phòng thí nghiệm câu</h2><div class="ggrid" id="ggrid"></div></div></section>
-<section id="challenge" class="challenge"><div class="wrap"><h2 class="title">⑤ 情景挑战 · Thử thách sân bay</h2><p class="lead"><b>Luyện tập mở rộng:</b> dùng chính từ vựng và tình huống của bài để luyện giao tiếp.</p><div class="card chat"><div id="chat"><div class="bubble bot zh">👩‍💼 服务台：您好，请问您需要什么帮助？</div></div><div class="choices" id="choices"></div></div><h3 class="title" style="font-size:25px;margin-top:25px">🔎 找李文 · Tìm Lý Văn</h3><div class="warmgrid" style="grid-template-columns:repeat(3,1fr)"><button onclick="person(false)">白衣服 · 长头发</button><button onclick="person(true)">黑衣服 · 短头发 · 年轻</button><button onclick="person(false)">黑衣服 · 长头发</button></div><p id="presult" style="text-align:center;font-weight:bold"></p></div></section>
-<section><div class="wrap"><h2 class="title">📖 Story Mode · 课文4</h2><p class="lead">Bấm các sự kiện theo đúng thứ tự diễn biến.</p><div class="story" id="story"></div><p style="text-align:center"><button onclick="checkStory()">Kiểm tra</button> <button class="ghost" onclick="resetStory()">Làm lại</button></p><p id="sresult" style="text-align:center;font-weight:bold"></p></div></section>
+<section id="text" class="texts"><div class="wrap"><h2 class="title">③ 课文 · Bài khóa</h2><p class="lead">Đọc nguyên bản trước. Bấm từng câu để mở nghĩa. Pinyin không hiển thị mặc định.</p><div class="tabs" id="tabs"></div><div class="card dialog" id="dialog"></div><div id="postTextPractice"></div></div></section>
+<section id="grammar"><div class="wrap"><h2 class="title">④ 语法复习 · Ôn tập ngữ pháp</h2><div class="ggrid" id="ggrid"></div></div></section>
+<section id="challenge" class="challenge"><div class="wrap"><h2 class="title">⑤ 情景练习 · Luyện tập tình huống</h2><p class="lead"><b>Luyện tập mở rộng:</b> dùng chính từ vựng và tình huống của bài để luyện giao tiếp.</p><div class="card chat"><div id="chat"><div class="bubble bot zh">👩‍💼 服务台：您好，请问您需要什么帮助？</div></div><div class="choices" id="choices"></div></div><h3 class="title" style="font-size:25px;margin-top:25px">🔎 找李文 · Tìm Lý Văn</h3><div class="warmgrid" style="grid-template-columns:repeat(3,1fr)"><button onclick="person(false)">白衣服 · 长头发</button><button onclick="person(true)">黑衣服 · 短头发 · 年轻</button><button onclick="person(false)">黑衣服 · 长头发</button></div><p id="presult" style="text-align:center;font-weight:bold"></p></div></section>
+
 <section id="review" class="warm"><div class="wrap"><h2 class="title">⑥ 智能复习 · Ôn tập thông minh</h2><div class="stats"><div class="card stat"><b id="seenN">0</b>Đã xem</div><div class="card stat"><b id="rightN">0</b>Đúng</div><div class="card stat"><b id="wrongN">0</b>Cần ôn</div><div class="card stat"><b id="score">0%</b>Độ chính xác</div></div><div class="card quiz" id="quiz"></div></div></section><footer>© Tiếng Trung Cô Mai · HSK 3.0 · Bài 1</footer>
 <script>
 const V=[["以为","yǐwéi","tưởng rằng"],["像","xiàng","giống"],["长","zhǎng","lớn lên; phát triển"],["身高","shēngāo","chiều cao"],["米","mǐ","mét"],["瘦","shòu","gầy"],["接","jiē","đón"],["行李","xíngli","hành lý"],["丢","diū","mất; làm mất"],["箱子","xiāngzi","va-li; hòm"],["号码","hàomǎ","số"],["好像","hǎoxiàng","hình như"],["重要","zhòngyào","quan trọng"],["着急","zháojí","sốt ruột; lo lắng"],["护照","hùzhào","hộ chiếu"],["服务台","fúwùtái","quầy dịch vụ"],["应该","yīnggāi","nên; cần phải"],["站","zhàn","đứng"],["中间","zhōngjiān","ở giữa"],["短","duǎn","ngắn"],["头发","tóufa","tóc"],["年轻","niánqīng","trẻ"],["发现","fāxiàn","phát hiện"],["不见","bújiàn","không thấy; biến mất"],["带","dài","mang; đem theo"],["帮助","bāngzhù","giúp đỡ"],["照片","zhàopiàn","ảnh"]];
@@ -127,5 +181,5 @@ const AT=["那个","穿着黑衣服的","短头发的","年轻人"];function res
 let cs=0;const C=[["我的行李不见了。","我想吃中国菜。","他看起来很年轻。"],["是一个黑色的箱子。","我身高一米八。","他们应该快出来了。"],["写着我的名字和电话号码。","他站在中间。","我以为是同乐。"]],CQ=["您的行李箱是什么样的？","箱子上有什么信息？","好的，请别着急，我们帮您找一下。"];function renderChat(){choices.innerHTML=C[cs].map((x,i)=>`<button class="zh" onclick="chatAns('${x}',${i===0})">${x}</button>`).join("")}function chatAns(x,ok){chat.innerHTML+=`<div class="bubble me zh">${x}</div>`;if(!ok){chat.innerHTML+=`<div class="bubble bot">💡 Chưa phù hợp tình huống.</div>`;return}chat.innerHTML+=`<div class="bubble bot zh">👩‍💼 ${CQ[cs]}</div>`;cs++;if(cs<3)renderChat();else{choices.innerHTML="<b>✓ Hoàn thành tình huống.</b>";stage(5)}}function person(ok){presult.textContent=ok?"✓ 找到了！这就是李文。":"Chưa đúng.";if(ok)stage(5)}
 const ST=[["✈️","到北京"],["🧳","行李不见了"],["ℹ️","去服务台"],["🚪","走出机场"],["🍜","吃中国菜"]];function resetStory(){sp=[];story.innerHTML=[...ST].sort(()=>Math.random()-.5).map(x=>`<div class="card" data-k="${x[1]}" onclick="if(!this.classList.contains('sel')){this.classList.add('sel');sp.push(this.dataset.k);this.innerHTML='<b>'+sp.length+'</b><br>'+this.innerHTML}"><b>${x[0]}</b><br><span class="zh">${x[1]}</span></div>`).join("");sresult.textContent=""}function checkStory(){let ok=sp.join("|")===ST.map(x=>x[1]).join("|");sresult.textContent=ok?"✓ Đúng trình tự!":"Chưa đúng, đọc lại 课文4.";if(ok)stage(5)}
 function q(){let i=Math.floor(Math.random()*V.length),o=[V[i],...sample(V.filter((x,j)=>j!==i),3)].sort(()=>Math.random()-.5);quiz.innerHTML=`<h2 class="zh">${V[i][0]}</h2><div class="py">${V[i][1]}</div><p>Chọn nghĩa đúng</p><div class="answers">${o.map(x=>`<button onclick="qa(${i},'${x[0]}')">${x[2]}</button>`).join("")}</div><p id="qr"></p><button class="ghost" onclick="q()">Câu tiếp →</button>`}function qa(i,x){let ok=x===V[i][0];qr.textContent=ok?"✓ Chính xác":"Chưa đúng: "+V[i][2];if(ok){S.right.push(i);S.wrong=S.wrong.filter(y=>y!==i)}else S.wrong.push(i);if(S.right.length>=5)stage(6);save()}
-vocab();showText(0);grammar();renderChat();resetStory();q();update();
+vocab();showText(0);grammar();renderChat();q();update();
 </script></body></html>
