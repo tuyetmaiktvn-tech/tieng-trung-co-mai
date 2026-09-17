@@ -1,0 +1,5 @@
+.rail-return{display:flex;justify-content:center;padding:24px 16px 36px;background:#f7f9fc}
+.rail-return a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;border:1px solid var(--topic,#2459a6);border-radius:12px;background:var(--topic-soft,#edf3fc);color:var(--topic,#2459a6);font-size:19px;font-weight:600;line-height:1.5;text-align:center;text-decoration:none}
+.rail-return a:hover{background:white}
+.rail-return a:focus-visible{outline:3px solid var(--topic,#2459a6);outline-offset:4px}
+@media(max-width:600px){.rail-return a{width:100%;max-width:420px}}

@@ -17,6 +17,7 @@ section{padding:38px 0}.title{text-align:center;color:var(--ink);font:900 35px A
 <link rel="stylesheet" href="../../assets/css/railway-sentences.css?v=1">
 <link rel="stylesheet" href="../../assets/css/railway-quick-pinyin.css?v=1">
 <link rel="canonical" href="https://tiengtrungcomai.vn/chuyen-nganh/duong-sat/tin-hieu.html">
+<link rel="stylesheet" href="../../assets/css/railway-return.css?v=1">
 </head><body class="rail-design" data-rail-topic="tin-hieu">
 <header class="hero"><div class="wrap"><a class="back" href="../tieng-trung-duong-sat.html">← Về Tiếng Trung Đường sắt</a><h1>🚦 Tín hiệu</h1><span id="count" hidden></span></div></header>
 <nav class="rail-nav" aria-label="Truy cập nhanh nội dung"><div class="wrap"><a href="#fast">⚡ Học nhanh</a><a href="#all">📚 Toàn bộ từ</a><a href="#common-sentences">🗣️ Mẫu câu thường dùng</a><a href="#cards">🧠 Thẻ nhớ</a><a href="#quiz">✍️ Luyện tập</a></div></nav>
@@ -60,4 +61,5 @@ const sample=(a,n)=>[...a].sort(()=>Math.random()-.5).slice(0,n);
 function cards(){deck.innerHTML=sample(D.terms,12).map(t=>`<div class="card"><div class="zh">${t[0]}</div><div class="answer"><div class="py">${t[1]}</div><div class="vi">${t[2]}</div></div><small>Nhấn để xem đáp án</small></div>`).join("");document.querySelectorAll(".card").forEach(c=>c.onclick=()=>c.classList.toggle("open"))}cards();shuffle.onclick=cards;
 let cur;function question(){cur=D.terms[Math.floor(Math.random()*D.terms.length)];qzh.textContent=cur[0];qpy.textContent=cur[1];let opts=[cur[2],...sample(D.terms.filter(x=>x[2]!==cur[2]),3).map(x=>x[2])].sort(()=>Math.random()-.5);answers.innerHTML=opts.map(x=>`<button>${x}</button>`).join("");result.textContent="";answers.querySelectorAll("button").forEach(b=>b.onclick=()=>result.textContent=b.textContent===cur[2]?"✓ Chính xác":"Chưa đúng · Đáp án: "+cur[2])}next.onclick=question;question();
 </script><script src="../../assets/js/railway-sentences.js?v=1"></script>
+<div class="rail-return" role="navigation" aria-label="Quay về danh mục"><a href="../tieng-trung-duong-sat.html">← Về danh mục Đường sắt</a></div>
 </body></html>
