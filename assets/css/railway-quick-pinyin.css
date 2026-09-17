@@ -1,0 +1,3 @@
+.rail-design #fast .quick-pinyin{display:block;margin:6px 0 10px;font:400 18px/1.7 Arial,"Segoe UI",sans-serif!important;color:#43546a;overflow-wrap:anywhere;letter-spacing:normal}
+.rail-design #fast .inline-pinyin{display:inline;margin:0 6px}
+@media(max-width:620px){.rail-design #fast .quick-pinyin{font-size:17px!important}}
