@@ -25,6 +25,7 @@ button{border:0;border-radius:12px;padding:11px 16px;background:var(--green);col
 <link rel="stylesheet" href="../../assets/css/railway-quick-pinyin.css?v=1">
 <link rel="canonical" href="https://tiengtrungcomai.vn/chuyen-nganh/duong-sat/duong-ray-ghi.html">
 <link rel="stylesheet" href="../../assets/css/railway-return.css?v=1">
+<link rel="stylesheet" href="../../assets/css/railway-cards.css?v=1">
 </head><body class="rail-design" data-rail-topic="duong-ray-ghi">
 <header class="hero"><div class="wrap"><a class="back" href="../tieng-trung-duong-sat.html">← Về Tiếng Trung Đường sắt</a><h1>🛤️ Đường – Ray – Ghi</h1><span id="count" hidden></span></div></header>
 <nav class="rail-nav" aria-label="Truy cập nhanh nội dung"><div class="wrap"><a href="#fast">⚡ Học nhanh</a><a href="#all">📚 Toàn bộ từ</a><a href="#common-sentences">🗣️ Mẫu câu thường dùng</a><a href="#cards">🧠 Thẻ nhớ</a><a href="#quiz">✍️ Luyện tập</a></div></nav>
@@ -71,7 +72,7 @@ actions.innerHTML=D.actions.map(t=>`<div class="action"><b>${t[0]}</b><br><span 
 function renderPages(q=""){pages.innerHTML="";let n=0;D.pages.forEach(g=>{let a=g[1].filter(t=>t.join(" ").toLowerCase().includes(q.toLowerCase()));if(!a.length)return;n+=a.length;let p=document.createElement("div");p.className="panel";p.innerHTML=`<div class="head"><h2>${g[0]} · ${a.length} mục từ</h2></div><div class="tablebox"><table><thead><tr><th>Chữ Hán</th><th>Phiên âm</th><th>Nghĩa tiếng Việt</th></tr></thead><tbody>${a.map(t=>`<tr><td class="han">${t[0]}</td><td class="py">${t[1]}</td><td class="vi">${t[2]}</td></tr>`).join("")}</tbody></table></div>`;pages.appendChild(p)});if(q&&!n)pages.innerHTML="<p style='text-align:center'>Không tìm thấy mục phù hợp.</p>"}
 renderPages();search.oninput=()=>renderPages(search.value.trim());
 const sample=(a,n)=>[...a].sort(()=>Math.random()-.5).slice(0,n);
-function cards(){deck.innerHTML=sample(D.terms,12).map(t=>`<div class="card"><div class="zh">${t[0]}</div><div class="answer"><div class="py">${t[1]}</div><div class="vi">${t[2]}</div></div><small>Nhấn để xem đáp án</small></div>`).join("");document.querySelectorAll(".card").forEach(c=>c.onclick=()=>c.classList.toggle("open"))}cards();shuffle.onclick=cards;
+function cards(){deck.innerHTML=sample(D.terms,12).map(t=>`<details class="card"><summary><span class="zh">${t[0]}</span><small class="card-hint"></small></summary><div class="answer"><div class="py">${t[1]}</div><div class="vi">${t[2]}</div></div></details>`).join("")}cards();shuffle.onclick=cards;
 let cur;function question(){cur=D.terms[Math.floor(Math.random()*D.terms.length)];qzh.textContent=cur[0];qpy.textContent=cur[1];let opts=[cur[2],...sample(D.terms.filter(x=>x[2]!==cur[2]),3).map(x=>x[2])].sort(()=>Math.random()-.5);answers.innerHTML=opts.map(x=>`<button>${x}</button>`).join("");result.textContent="";answers.querySelectorAll("button").forEach(b=>b.onclick=()=>result.textContent=b.textContent===cur[2]?"✓ Chính xác":"Chưa đúng · Đáp án: "+cur[2])}next.onclick=question;question();
 </script><script src="../../assets/js/railway-sentences.js?v=1"></script>
 <div class="rail-return" role="navigation" aria-label="Quay về danh mục"><a href="../tieng-trung-duong-sat.html">← Về danh mục Đường sắt</a></div>
