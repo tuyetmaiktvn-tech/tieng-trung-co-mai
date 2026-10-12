@@ -1,0 +1,7 @@
+/* One transparent brand asset across the site, including legacy headers. */
+.tcm-brand,.tcm-lesson-home{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:64px!important;height:64px!important;min-width:64px!important;flex:0 0 64px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;font-size:0!important}
+.tcm-brand::before,.tcm-brand::after,.tcm-brand-label::before,.tcm-brand-label::after{content:none!important;display:none!important}
+img.tcm-unified-logo,.tcm-brand img.tcm-unified-logo{display:block!important;width:64px!important;height:64px!important;max-width:none!important;object-fit:contain!important;flex:0 0 64px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;margin:0!important;padding:0!important}
+.tcm-brand-label{display:flex;align-items:center;gap:12px}
+.tcm-lesson-home{position:absolute;left:24px;top:22px;z-index:90;text-decoration:none}
+@media(max-width:680px){.tcm-brand,.tcm-lesson-home{width:56px!important;height:56px!important;min-width:56px!important;flex-basis:56px!important}img.tcm-unified-logo,.tcm-brand img.tcm-unified-logo{width:56px!important;height:56px!important;flex-basis:56px!important}.tcm-lesson-home{left:14px;top:14px}}
