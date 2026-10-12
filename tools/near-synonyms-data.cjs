@@ -4,7 +4,8 @@ const root = path.resolve(__dirname, '..');
 function loadTranslations() {
   const groups = new Map();
   let group, term;
-  for (const [index, raw] of fs.readFileSync(path.join(root, 'data/near-synonyms-faithful.txt'), 'utf8').split(/\r?\n/).entries()) {
+  const content = ['near-synonyms-faithful.txt', 'near-synonyms-th3.txt'].map(file => fs.readFileSync(path.join(root, 'data', file), 'utf8')).join('\n');
+  for (const [index, raw] of content.split(/\r?\n/).entries()) {
     const line = raw.trim();
     if (!line) continue;
     const fail = () => { throw Error(`Invalid translation at line ${index + 1}: ${line}`); };
@@ -30,7 +31,11 @@ function loadTranslations() {
   }
   const sources = JSON.parse(fs.readFileSync(path.join(root, 'data/near-synonyms-source.json'), 'utf8')).filter(s => !s.duplicate);
   if (groups.size !== sources.length) throw Error('Incomplete source coverage');
+  const seen = new Set();
   for (const source of sources) {
+    const key = [...source.terms].sort().join('|');
+    if (seen.has(key)) throw Error('Duplicate source group: ' + key);
+    seen.add(key);
     const g = groups.get(source.id);
     if (!g || g.terms.map(t => t.zh).sort().join('|') !== [...source.terms].sort().join('|')) throw Error('Source terms mismatch: ' + source.id);
     if (g.terms.some(t => !t.usage.length || !t.examples.length)) throw Error('Missing usage/examples: ' + source.id);

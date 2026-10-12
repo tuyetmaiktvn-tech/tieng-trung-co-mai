@@ -1,1136 +1,1486 @@
 [
-    {
-        "id":  1,
-        "source":  "一向-一直.jpg",
-        "terms":  [
-                      "一向",
-                      "一直"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  2,
-        "source":  "一贯-一直.jpg",
-        "terms":  [
-                      "一贯",
-                      "一直"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  3,
-        "source":  "一连-一直.jpg",
-        "terms":  [
-                      "一连",
-                      "一直"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  4,
-        "source":  "不免-难免.jpg",
-        "terms":  [
-                      "不免",
-                      "难免"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  5,
-        "source":  "不得不-忍不住.jpg",
-        "terms":  [
-                      "不得不",
-                      "忍不住"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  6,
-        "source":  "不断-不停.jpg",
-        "terms":  [
-                      "不断",
-                      "不停"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  7,
-        "source":  "不断-接连.jpg",
-        "terms":  [
-                      "不断",
-                      "接连"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  8,
-        "source":  "不断-陆续.jpg",
-        "terms":  [
-                      "不断",
-                      "陆续"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  9,
-        "source":  "不止-不只.jpg",
-        "terms":  [
-                      "不止",
-                      "不只"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  10,
-        "source":  "不管-尽管.jpg",
-        "terms":  [
-                      "不管",
-                      "尽管"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  11,
-        "source":  "不管-无论.jpg",
-        "terms":  [
-                      "不管",
-                      "无论"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  12,
-        "source":  "不论-不管.jpg",
-        "terms":  [
-                      "不论",
-                      "不管"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  13,
-        "source":  "享乐-享受.jpg",
-        "terms":  [
-                      "享乐",
-                      "享受"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  14,
-        "source":  "从来-一直.jpg",
-        "terms":  [
-                      "从来",
-                      "一直"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  15,
-        "source":  "从来-历来-向来.jpg",
-        "terms":  [
-                      "从来",
-                      "历来",
-                      "向来"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  16,
-        "source":  "从来-始终.jpg",
-        "terms":  [
-                      "从来",
-                      "始终"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  17,
-        "source":  "仿佛-好像.jpg",
-        "terms":  [
-                      "仿佛",
-                      "好像"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  18,
-        "source":  "优秀-优异.jpg",
-        "terms":  [
-                      "优秀",
-                      "优异"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  19,
-        "source":  "优良-优秀.jpg",
-        "terms":  [
-                      "优良",
-                      "优秀"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  20,
-        "source":  "体会-体验.jpg",
-        "terms":  [
-                      "体会",
-                      "体验"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  21,
-        "source":  "信赖-信任.jpg",
-        "terms":  [
-                      "信赖",
-                      "信任"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  22,
-        "source":  "做-作.jpg",
-        "terms":  [
-                      "做",
-                      "作"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  23,
-        "source":  "偶尔-偶然.jpg",
-        "terms":  [
-                      "偶尔",
-                      "偶然"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  24,
-        "source":  "免不了-那么面.jpg",
-        "terms":  [
-                      "免不了",
-                      "难免"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  25,
-        "source":  "公平-平等.jpg",
-        "terms":  [
-                      "公平",
-                      "平等"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  26,
-        "source":  "公正-公平.jpg",
-        "terms":  [
-                      "公正",
-                      "公平"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  27,
-        "source":  "具备-具有.jpg",
-        "terms":  [
-                      "具备",
-                      "具有"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  28,
-        "source":  "具有-有.jpg",
-        "terms":  [
-                      "具有",
-                      "有"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  29,
-        "source":  "冷静-镇静.jpg",
-        "terms":  [
-                      "冷静",
-                      "镇静"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  30,
-        "source":  "出色-优秀.jpg",
-        "terms":  [
-                      "出色",
-                      "优秀"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  31,
-        "source":  "创办-创建-创立.jpg",
-        "terms":  [
-                      "创办",
-                      "创建",
-                      "创立"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  32,
-        "source":  "剧烈-强烈.jpg",
-        "terms":  [
-                      "剧烈",
-                      "强烈"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  33,
-        "source":  "剧烈-猛烈.jpg",
-        "terms":  [
-                      "剧烈",
-                      "猛烈"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  34,
-        "source":  "办-办理.jpg",
-        "terms":  [
-                      "办",
-                      "办理"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  35,
-        "source":  "功夫-时间.jpg",
-        "terms":  [
-                      "功夫",
-                      "时间"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  36,
-        "source":  "反复-一再.jpg",
-        "terms":  [
-                      "反复",
-                      "一再"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  37,
-        "source":  "可惜-惋惜.jpg",
-        "terms":  [
-                      "可惜",
-                      "惋惜"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  38,
-        "source":  "可惜-遗憾.jpg",
-        "terms":  [
-                      "可惜",
-                      "遗憾"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  39,
-        "source":  "可能-也许.jpg",
-        "terms":  [
-                      "可能",
-                      "也许"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  40,
-        "source":  "吃惊-惊喜-惊讶.jpg",
-        "terms":  [
-                      "吃惊",
-                      "惊喜",
-                      "惊讶"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  41,
-        "source":  "合作-协作.jpg",
-        "terms":  [
-                      "合作",
-                      "协作"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  42,
-        "source":  "合作-配合.jpg",
-        "terms":  [
-                      "合作",
-                      "配合"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  43,
-        "source":  "合适-适合.jpg",
-        "terms":  [
-                      "合适",
-                      "适合"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  44,
-        "source":  "后果-结果-效果.jpg",
-        "terms":  [
-                      "后果",
-                      "结果",
-                      "效果"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  45,
-        "source":  "在乎-在意.jpg",
-        "terms":  [
-                      "在乎",
-                      "在意"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  46,
-        "source":  "在乎-重视.jpg",
-        "terms":  [
-                      "在乎",
-                      "重视"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  47,
-        "source":  "好像-似乎.jpg",
-        "terms":  [
-                      "好像",
-                      "似乎"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  48,
-        "source":  "好像-像.jpg",
-        "terms":  [
-                      "好像",
-                      "像"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  49,
-        "source":  "好像-几乎.jpg",
-        "terms":  [
-                      "好像",
-                      "几乎"
-                  ],
-        "duplicate":  47
-    },
-    {
-        "id":  50,
-        "source":  "存在-有.jpg",
-        "terms":  [
-                      "存在",
-                      "有"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  51,
-        "source":  "安宁-宁静.jpg",
-        "terms":  [
-                      "安宁",
-                      "宁静"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  52,
-        "source":  "安静-宁静.jpg",
-        "terms":  [
-                      "安静",
-                      "宁静"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  53,
-        "source":  "安静-平静.jpg",
-        "terms":  [
-                      "安静",
-                      "平静"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  54,
-        "source":  "实施-实行.jpg",
-        "terms":  [
-                      "实施",
-                      "实行"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  55,
-        "source":  "富有-富裕.jpg",
-        "terms":  [
-                      "富有",
-                      "富裕"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  56,
-        "source":  "导致-引起.jpg",
-        "terms":  [
-                      "导致",
-                      "引起"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  57,
-        "source":  "导致-造成.jpg",
-        "terms":  [
-                      "导致",
-                      "造成"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  58,
-        "source":  "导致=致使.jpg",
-        "terms":  [
-                      "导致",
-                      "致使"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  59,
-        "source":  "将来=未来.jpg",
-        "terms":  [
-                      "将来",
-                      "未来"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  60,
-        "source":  "尊敬-尊重.jpg",
-        "terms":  [
-                      "尊敬",
-                      "尊重"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  61,
-        "source":  "崇敬-尊敬.jpg",
-        "terms":  [
-                      "崇敬",
-                      "尊敬"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  62,
-        "source":  "差不多-几乎.jpg",
-        "terms":  [
-                      "差不多",
-                      "几乎"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  63,
-        "source":  "希望-愿意.jpg",
-        "terms":  [
-                      "希望",
-                      "愿意"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  64,
-        "source":  "希望-愿望.jpg",
-        "terms":  [
-                      "希望",
-                      "愿望"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  65,
-        "source":  "干-做.jpg",
-        "terms":  [
-                      "干",
-                      "做"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  66,
-        "source":  "恭敬-尊敬.jpg",
-        "terms":  [
-                      "恭敬",
-                      "尊敬"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  67,
-        "source":  "惦记-想念.jpg",
-        "terms":  [
-                      "惦记",
-                      "想念"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  68,
-        "source":  "感受-体会.jpg",
-        "terms":  [
-                      "感受",
-                      "体会"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  69,
-        "source":  "感受-感想.jpg",
-        "terms":  [
-                      "感受",
-                      "感想"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  70,
-        "source":  "感觉-感受.jpg",
-        "terms":  [
-                      "感觉",
-                      "感受"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  71,
-        "source":  "成效-效果.jpg",
-        "terms":  [
-                      "成效",
-                      "效果"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  72,
-        "source":  "成果-成绩-成就.jpg",
-        "terms":  [
-                      "成果",
-                      "成绩",
-                      "成就"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  73,
-        "source":  "成果-成绩.jpg",
-        "terms":  [
-                      "成果",
-                      "成绩"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  74,
-        "source":  "成果-效果.jpg",
-        "terms":  [
-                      "成果",
-                      "效果"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  75,
-        "source":  "成立-建立.jpg",
-        "terms":  [
-                      "成立",
-                      "建立"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  76,
-        "source":  "把握-掌握.jpg",
-        "terms":  [
-                      "把握",
-                      "掌握"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  77,
-        "source":  "拥有-有.jpg",
-        "terms":  [
-                      "拥有",
-                      "有"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  78,
-        "source":  "搞-弄.jpg",
-        "terms":  [
-                      "搞",
-                      "弄"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  79,
-        "source":  "改善-改正.jpg",
-        "terms":  [
-                      "改善",
-                      "改正"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  80,
-        "source":  "改良-改善.jpg",
-        "terms":  [
-                      "改良",
-                      "改善"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  81,
-        "source":  "改进-改善.jpg",
-        "terms":  [
-                      "改进",
-                      "改善"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  82,
-        "source":  "效果-效力.jpg",
-        "terms":  [
-                      "效果",
-                      "效力"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  83,
-        "source":  "效果-效率.jpg",
-        "terms":  [
-                      "效果",
-                      "效率"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  84,
-        "source":  "旅行-实行.jpg",
-        "terms":  [
-                      "施行",
-                      "实行"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  85,
-        "source":  "时候-时间.jpg",
-        "terms":  [
-                      "时候",
-                      "时间"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  86,
-        "source":  "时光-是将.jpg",
-        "terms":  [
-                      "时光",
-                      "时间"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  87,
-        "source":  "是-有.jpg",
-        "terms":  [
-                      "是",
-                      "有"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  88,
-        "source":  "有-占有.jpg",
-        "terms":  [
-                      "有",
-                      "占有"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  89,
-        "source":  "有名-著名.jpg",
-        "terms":  [
-                      "有名",
-                      "著名"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  90,
-        "source":  "期望-希望.jpg",
-        "terms":  [
-                      "期望",
-                      "希望"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  91,
-        "source":  "本身-自身.jpg",
-        "terms":  [
-                      "本身",
-                      "自身"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  92,
-        "source":  "根据-凭.jpg",
-        "terms":  [
-                      "根据",
-                      "凭"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  93,
-        "source":  "比-比较.jpg",
-        "terms":  [
-                      "比",
-                      "比较"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  94,
-        "source":  "比较-对比.jpg",
-        "terms":  [
-                      "比较",
-                      "对比"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  95,
-        "source":  "比较-较.jpg",
-        "terms":  [
-                      "比较",
-                      "较"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  96,
-        "source":  "毫不-毫无.jpg",
-        "terms":  [
-                      "毫不",
-                      "毫无"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  97,
-        "source":  "沮丧-难过-难受-伤心.jpg",
-        "terms":  [
-                      "沮丧",
-                      "难过",
-                      "难受",
-                      "伤心"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  98,
-        "source":  "渴望-希望.jpg",
-        "terms":  [
-                      "渴望",
-                      "希望"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  99,
-        "source":  "激烈-剧烈.jpg",
-        "terms":  [
-                      "激烈",
-                      "剧烈"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  100,
-        "source":  "爱惜-珍惜.jpg",
-        "terms":  [
-                      "爱惜",
-                      "珍惜"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  101,
-        "source":  "珍贵-珍惜.jpg",
-        "terms":  [
-                      "珍贵",
-                      "珍惜"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  102,
-        "source":  "盼望-希望.jpg",
-        "terms":  [
-                      "盼望",
-                      "希望"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  103,
-        "source":  "知名-著名.jpg",
-        "terms":  [
-                      "知名",
-                      "著名"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  104,
-        "source":  "碰见 遇见 见面.jpg",
-        "terms":  [
-                      "碰见",
-                      "遇见",
-                      "见面"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  105,
-        "source":  "禁不住-忍不住.jpg",
-        "terms":  [
-                      "禁不住",
-                      "忍不住"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  106,
-        "source":  "立刻-马上.jpg",
-        "terms":  [
-                      "立刻",
-                      "马上"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  107,
-        "source":  "立即-马上.jpg",
-        "terms":  [
-                      "立即",
-                      "马上"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  108,
-        "source":  "等-等候.jpg",
-        "terms":  [
-                      "等",
-                      "等候"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  109,
-        "source":  "等-等待.jpg",
-        "terms":  [
-                      "等",
-                      "等待"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  110,
-        "source":  "紧急-紧迫.jpg",
-        "terms":  [
-                      "紧急",
-                      "紧迫"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  111,
-        "source":  "约-约会.jpg",
-        "terms":  [
-                      "约",
-                      "约会"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  112,
-        "source":  "终于-总算.jpg",
-        "terms":  [
-                      "终于",
-                      "总算"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  113,
-        "source":  "规则-规律.jpg",
-        "terms":  [
-                      "规则",
-                      "规律"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  114,
-        "source":  "认为 - 以为.jpg",
-        "terms":  [
-                      "认为",
-                      "以为"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  115,
-        "source":  "讨论-议论.jpg",
-        "terms":  [
-                      "讨论",
-                      "议论"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  116,
-        "source":  "起码-至少.jpg",
-        "terms":  [
-                      "起码",
-                      "至少"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  117,
-        "source":  "轻易-容易.jpg",
-        "terms":  [
-                      "轻易",
-                      "容易"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  118,
-        "source":  "达到-到达.jpg",
-        "terms":  [
-                      "达到",
-                      "到达"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  119,
-        "source":  "进行-做.jpg",
-        "terms":  [
-                      "进行",
-                      "做"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  120,
-        "source":  "遭-遭受-遭遇.jpg",
-        "terms":  [
-                      "遭",
-                      "遭受",
-                      "遭遇"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  121,
-        "source":  "重复-反复.jpg",
-        "terms":  [
-                      "重复",
-                      "反复"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  122,
-        "source":  "随后-随即.jpg",
-        "terms":  [
-                      "随后",
-                      "随即"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  123,
-        "source":  "靠-凭.jpg",
-        "terms":  [
-                      "靠",
-                      "凭"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  124,
-        "source":  "顿时-立刻.jpg",
-        "terms":  [
-                      "顿时",
-                      "立刻"
-                  ],
-        "duplicate":  null
-    },
-    {
-        "id":  125,
-        "source":  "骄傲-自豪.jpg",
-        "terms":  [
-                      "骄傲",
-                      "自豪"
-                  ],
-        "duplicate":  null
-    }
+  {
+    "id": 1,
+    "source": "一向-一直.jpg",
+    "terms": [
+      "一向",
+      "一直"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 2,
+    "source": "一贯-一直.jpg",
+    "terms": [
+      "一贯",
+      "一直"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 3,
+    "source": "一连-一直.jpg",
+    "terms": [
+      "一连",
+      "一直"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 4,
+    "source": "不免-难免.jpg",
+    "terms": [
+      "不免",
+      "难免"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 5,
+    "source": "不得不-忍不住.jpg",
+    "terms": [
+      "不得不",
+      "忍不住"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 6,
+    "source": "不断-不停.jpg",
+    "terms": [
+      "不断",
+      "不停"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 7,
+    "source": "不断-接连.jpg",
+    "terms": [
+      "不断",
+      "接连"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 8,
+    "source": "不断-陆续.jpg",
+    "terms": [
+      "不断",
+      "陆续"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 9,
+    "source": "不止-不只.jpg",
+    "terms": [
+      "不止",
+      "不只"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 10,
+    "source": "不管-尽管.jpg",
+    "terms": [
+      "不管",
+      "尽管"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 11,
+    "source": "不管-无论.jpg",
+    "terms": [
+      "不管",
+      "无论"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 12,
+    "source": "不论-不管.jpg",
+    "terms": [
+      "不论",
+      "不管"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 13,
+    "source": "享乐-享受.jpg",
+    "terms": [
+      "享乐",
+      "享受"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 14,
+    "source": "从来-一直.jpg",
+    "terms": [
+      "从来",
+      "一直"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 15,
+    "source": "从来-历来-向来.jpg",
+    "terms": [
+      "从来",
+      "历来",
+      "向来"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 16,
+    "source": "从来-始终.jpg",
+    "terms": [
+      "从来",
+      "始终"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 17,
+    "source": "仿佛-好像.jpg",
+    "terms": [
+      "仿佛",
+      "好像"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 18,
+    "source": "优秀-优异.jpg",
+    "terms": [
+      "优秀",
+      "优异"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 19,
+    "source": "优良-优秀.jpg",
+    "terms": [
+      "优良",
+      "优秀"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 20,
+    "source": "体会-体验.jpg",
+    "terms": [
+      "体会",
+      "体验"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 21,
+    "source": "信赖-信任.jpg",
+    "terms": [
+      "信赖",
+      "信任"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 22,
+    "source": "做-作.jpg",
+    "terms": [
+      "做",
+      "作"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 23,
+    "source": "偶尔-偶然.jpg",
+    "terms": [
+      "偶尔",
+      "偶然"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 24,
+    "source": "免不了-那么面.jpg",
+    "terms": [
+      "免不了",
+      "难免"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 25,
+    "source": "公平-平等.jpg",
+    "terms": [
+      "公平",
+      "平等"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 26,
+    "source": "公正-公平.jpg",
+    "terms": [
+      "公正",
+      "公平"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 27,
+    "source": "具备-具有.jpg",
+    "terms": [
+      "具备",
+      "具有"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 28,
+    "source": "具有-有.jpg",
+    "terms": [
+      "具有",
+      "有"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 29,
+    "source": "冷静-镇静.jpg",
+    "terms": [
+      "冷静",
+      "镇静"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 30,
+    "source": "出色-优秀.jpg",
+    "terms": [
+      "出色",
+      "优秀"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 31,
+    "source": "创办-创建-创立.jpg",
+    "terms": [
+      "创办",
+      "创建",
+      "创立"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 32,
+    "source": "剧烈-强烈.jpg",
+    "terms": [
+      "剧烈",
+      "强烈"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 33,
+    "source": "剧烈-猛烈.jpg",
+    "terms": [
+      "剧烈",
+      "猛烈"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 34,
+    "source": "办-办理.jpg",
+    "terms": [
+      "办",
+      "办理"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 35,
+    "source": "功夫-时间.jpg",
+    "terms": [
+      "功夫",
+      "时间"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 36,
+    "source": "反复-一再.jpg",
+    "terms": [
+      "反复",
+      "一再"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 37,
+    "source": "可惜-惋惜.jpg",
+    "terms": [
+      "可惜",
+      "惋惜"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 38,
+    "source": "可惜-遗憾.jpg",
+    "terms": [
+      "可惜",
+      "遗憾"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 39,
+    "source": "可能-也许.jpg",
+    "terms": [
+      "可能",
+      "也许"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 40,
+    "source": "吃惊-惊喜-惊讶.jpg",
+    "terms": [
+      "吃惊",
+      "惊喜",
+      "惊讶"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 41,
+    "source": "合作-协作.jpg",
+    "terms": [
+      "合作",
+      "协作"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 42,
+    "source": "合作-配合.jpg",
+    "terms": [
+      "合作",
+      "配合"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 43,
+    "source": "合适-适合.jpg",
+    "terms": [
+      "合适",
+      "适合"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 44,
+    "source": "后果-结果-效果.jpg",
+    "terms": [
+      "后果",
+      "结果",
+      "效果"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 45,
+    "source": "在乎-在意.jpg",
+    "terms": [
+      "在乎",
+      "在意"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 46,
+    "source": "在乎-重视.jpg",
+    "terms": [
+      "在乎",
+      "重视"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 47,
+    "source": "好像-似乎.jpg",
+    "terms": [
+      "好像",
+      "似乎"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 48,
+    "source": "好像-像.jpg",
+    "terms": [
+      "好像",
+      "像"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 49,
+    "source": "好像-几乎.jpg",
+    "terms": [
+      "好像",
+      "几乎"
+    ],
+    "duplicate": 47
+  },
+  {
+    "id": 50,
+    "source": "存在-有.jpg",
+    "terms": [
+      "存在",
+      "有"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 51,
+    "source": "安宁-宁静.jpg",
+    "terms": [
+      "安宁",
+      "宁静"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 52,
+    "source": "安静-宁静.jpg",
+    "terms": [
+      "安静",
+      "宁静"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 53,
+    "source": "安静-平静.jpg",
+    "terms": [
+      "安静",
+      "平静"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 54,
+    "source": "实施-实行.jpg",
+    "terms": [
+      "实施",
+      "实行"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 55,
+    "source": "富有-富裕.jpg",
+    "terms": [
+      "富有",
+      "富裕"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 56,
+    "source": "导致-引起.jpg",
+    "terms": [
+      "导致",
+      "引起"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 57,
+    "source": "导致-造成.jpg",
+    "terms": [
+      "导致",
+      "造成"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 58,
+    "source": "导致=致使.jpg",
+    "terms": [
+      "导致",
+      "致使"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 59,
+    "source": "将来=未来.jpg",
+    "terms": [
+      "将来",
+      "未来"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 60,
+    "source": "尊敬-尊重.jpg",
+    "terms": [
+      "尊敬",
+      "尊重"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 61,
+    "source": "崇敬-尊敬.jpg",
+    "terms": [
+      "崇敬",
+      "尊敬"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 62,
+    "source": "差不多-几乎.jpg",
+    "terms": [
+      "差不多",
+      "几乎"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 63,
+    "source": "希望-愿意.jpg",
+    "terms": [
+      "希望",
+      "愿意"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 64,
+    "source": "希望-愿望.jpg",
+    "terms": [
+      "希望",
+      "愿望"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 65,
+    "source": "干-做.jpg",
+    "terms": [
+      "干",
+      "做"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 66,
+    "source": "恭敬-尊敬.jpg",
+    "terms": [
+      "恭敬",
+      "尊敬"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 67,
+    "source": "惦记-想念.jpg",
+    "terms": [
+      "惦记",
+      "想念"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 68,
+    "source": "感受-体会.jpg",
+    "terms": [
+      "感受",
+      "体会"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 69,
+    "source": "感受-感想.jpg",
+    "terms": [
+      "感受",
+      "感想"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 70,
+    "source": "感觉-感受.jpg",
+    "terms": [
+      "感觉",
+      "感受"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 71,
+    "source": "成效-效果.jpg",
+    "terms": [
+      "成效",
+      "效果"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 72,
+    "source": "成果-成绩-成就.jpg",
+    "terms": [
+      "成果",
+      "成绩",
+      "成就"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 73,
+    "source": "成果-成绩.jpg",
+    "terms": [
+      "成果",
+      "成绩"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 74,
+    "source": "成果-效果.jpg",
+    "terms": [
+      "成果",
+      "效果"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 75,
+    "source": "成立-建立.jpg",
+    "terms": [
+      "成立",
+      "建立"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 76,
+    "source": "把握-掌握.jpg",
+    "terms": [
+      "把握",
+      "掌握"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 77,
+    "source": "拥有-有.jpg",
+    "terms": [
+      "拥有",
+      "有"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 78,
+    "source": "搞-弄.jpg",
+    "terms": [
+      "搞",
+      "弄"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 79,
+    "source": "改善-改正.jpg",
+    "terms": [
+      "改善",
+      "改正"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 80,
+    "source": "改良-改善.jpg",
+    "terms": [
+      "改良",
+      "改善"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 81,
+    "source": "改进-改善.jpg",
+    "terms": [
+      "改进",
+      "改善"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 82,
+    "source": "效果-效力.jpg",
+    "terms": [
+      "效果",
+      "效力"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 83,
+    "source": "效果-效率.jpg",
+    "terms": [
+      "效果",
+      "效率"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 84,
+    "source": "旅行-实行.jpg",
+    "terms": [
+      "施行",
+      "实行"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 85,
+    "source": "时候-时间.jpg",
+    "terms": [
+      "时候",
+      "时间"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 86,
+    "source": "时光-是将.jpg",
+    "terms": [
+      "时光",
+      "时间"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 87,
+    "source": "是-有.jpg",
+    "terms": [
+      "是",
+      "有"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 88,
+    "source": "有-占有.jpg",
+    "terms": [
+      "有",
+      "占有"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 89,
+    "source": "有名-著名.jpg",
+    "terms": [
+      "有名",
+      "著名"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 90,
+    "source": "期望-希望.jpg",
+    "terms": [
+      "期望",
+      "希望"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 91,
+    "source": "本身-自身.jpg",
+    "terms": [
+      "本身",
+      "自身"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 92,
+    "source": "根据-凭.jpg",
+    "terms": [
+      "根据",
+      "凭"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 93,
+    "source": "比-比较.jpg",
+    "terms": [
+      "比",
+      "比较"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 94,
+    "source": "比较-对比.jpg",
+    "terms": [
+      "比较",
+      "对比"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 95,
+    "source": "比较-较.jpg",
+    "terms": [
+      "比较",
+      "较"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 96,
+    "source": "毫不-毫无.jpg",
+    "terms": [
+      "毫不",
+      "毫无"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 97,
+    "source": "沮丧-难过-难受-伤心.jpg",
+    "terms": [
+      "沮丧",
+      "难过",
+      "难受",
+      "伤心"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 98,
+    "source": "渴望-希望.jpg",
+    "terms": [
+      "渴望",
+      "希望"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 99,
+    "source": "激烈-剧烈.jpg",
+    "terms": [
+      "激烈",
+      "剧烈"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 100,
+    "source": "爱惜-珍惜.jpg",
+    "terms": [
+      "爱惜",
+      "珍惜"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 101,
+    "source": "珍贵-珍惜.jpg",
+    "terms": [
+      "珍贵",
+      "珍惜"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 102,
+    "source": "盼望-希望.jpg",
+    "terms": [
+      "盼望",
+      "希望"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 103,
+    "source": "知名-著名.jpg",
+    "terms": [
+      "知名",
+      "著名"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 104,
+    "source": "碰见 遇见 见面.jpg",
+    "terms": [
+      "碰见",
+      "遇见",
+      "见面"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 105,
+    "source": "禁不住-忍不住.jpg",
+    "terms": [
+      "禁不住",
+      "忍不住"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 106,
+    "source": "立刻-马上.jpg",
+    "terms": [
+      "立刻",
+      "马上"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 107,
+    "source": "立即-马上.jpg",
+    "terms": [
+      "立即",
+      "马上"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 108,
+    "source": "等-等候.jpg",
+    "terms": [
+      "等",
+      "等候"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 109,
+    "source": "等-等待.jpg",
+    "terms": [
+      "等",
+      "等待"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 110,
+    "source": "紧急-紧迫.jpg",
+    "terms": [
+      "紧急",
+      "紧迫"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 111,
+    "source": "约-约会.jpg",
+    "terms": [
+      "约",
+      "约会"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 112,
+    "source": "终于-总算.jpg",
+    "terms": [
+      "终于",
+      "总算"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 113,
+    "source": "规则-规律.jpg",
+    "terms": [
+      "规则",
+      "规律"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 114,
+    "source": "认为 - 以为.jpg",
+    "terms": [
+      "认为",
+      "以为"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 115,
+    "source": "讨论-议论.jpg",
+    "terms": [
+      "讨论",
+      "议论"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 116,
+    "source": "起码-至少.jpg",
+    "terms": [
+      "起码",
+      "至少"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 117,
+    "source": "轻易-容易.jpg",
+    "terms": [
+      "轻易",
+      "容易"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 118,
+    "source": "达到-到达.jpg",
+    "terms": [
+      "达到",
+      "到达"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 119,
+    "source": "进行-做.jpg",
+    "terms": [
+      "进行",
+      "做"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 120,
+    "source": "遭-遭受-遭遇.jpg",
+    "terms": [
+      "遭",
+      "遭受",
+      "遭遇"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 121,
+    "source": "重复-反复.jpg",
+    "terms": [
+      "重复",
+      "反复"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 122,
+    "source": "随后-随即.jpg",
+    "terms": [
+      "随后",
+      "随即"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 123,
+    "source": "靠-凭.jpg",
+    "terms": [
+      "靠",
+      "凭"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 124,
+    "source": "顿时-立刻.jpg",
+    "terms": [
+      "顿时",
+      "立刻"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 125,
+    "source": "骄傲-自豪.jpg",
+    "terms": [
+      "骄傲",
+      "自豪"
+    ],
+    "duplicate": null
+  },
+  {
+    "id": 126,
+    "terms": [
+      "不但",
+      "不仅"
+    ],
+    "source": "不但-不仅.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 127,
+    "terms": [
+      "不只",
+      "不但"
+    ],
+    "source": "不只-不但.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 128,
+    "terms": [
+      "不过",
+      "但是"
+    ],
+    "source": "不过-但是.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 129,
+    "terms": [
+      "不过",
+      "可是"
+    ],
+    "source": "不过-可是.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 130,
+    "terms": [
+      "为",
+      "为了"
+    ],
+    "source": "为-为了.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 131,
+    "terms": [
+      "为了",
+      "因为"
+    ],
+    "source": "为了-因为.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 132,
+    "terms": [
+      "亲切",
+      "亲热"
+    ],
+    "source": "亲切-亲热.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 133,
+    "terms": [
+      "但是",
+      "却"
+    ],
+    "source": "但是- 却.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 134,
+    "terms": [
+      "保卫",
+      "保护"
+    ],
+    "source": "保卫-保护.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 135,
+    "terms": [
+      "保护",
+      "维护"
+    ],
+    "source": "保护-维护.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 136,
+    "terms": [
+      "其实",
+      "实际上"
+    ],
+    "source": "其实-实际上.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 137,
+    "terms": [
+      "古怪",
+      "奇怪"
+    ],
+    "source": "古怪-奇怪.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 138,
+    "terms": [
+      "害怕",
+      "可怕"
+    ],
+    "source": "害怕-可怕.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 139,
+    "terms": [
+      "害怕",
+      "恐怕"
+    ],
+    "source": "害怕-恐怕.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 140,
+    "terms": [
+      "并且",
+      "而且"
+    ],
+    "source": "并且-而且.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 141,
+    "terms": [
+      "怕",
+      "害怕"
+    ],
+    "source": "怕-害怕.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 142,
+    "terms": [
+      "所以",
+      "因此"
+    ],
+    "source": "所以-因此.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 143,
+    "terms": [
+      "新鲜",
+      "新颖"
+    ],
+    "source": "新鲜-新颖.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 144,
+    "terms": [
+      "旧",
+      "老"
+    ],
+    "source": "旧-老.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 145,
+    "terms": [
+      "时兴",
+      "流行"
+    ],
+    "source": "时光-流行.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 146,
+    "terms": [
+      "格外",
+      "尤其"
+    ],
+    "source": "格外-尤其.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 147,
+    "terms": [
+      "格外",
+      "特别"
+    ],
+    "source": "格外-特别.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 148,
+    "terms": [
+      "流行",
+      "受欢迎"
+    ],
+    "source": "流行-受欢迎.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 149,
+    "terms": [
+      "流行",
+      "时髦"
+    ],
+    "source": "流行-时髦.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 150,
+    "terms": [
+      "渐渐",
+      "慢慢"
+    ],
+    "source": "渐渐 - 慢慢.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 151,
+    "terms": [
+      "爱护",
+      "保护"
+    ],
+    "source": "爱护-保护.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 152,
+    "terms": [
+      "相信",
+      "信"
+    ],
+    "source": "相信-信.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 153,
+    "terms": [
+      "相信",
+      "信任"
+    ],
+    "source": "相信-信任.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 154,
+    "terms": [
+      "竟然",
+      "居然"
+    ],
+    "source": "竟然-居然.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 155,
+    "terms": [
+      "经过",
+      "通过"
+    ],
+    "source": "经过-通过.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 156,
+    "terms": [
+      "而且",
+      "再说"
+    ],
+    "source": "而且-再说.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 157,
+    "terms": [
+      "谨慎",
+      "小心"
+    ],
+    "source": "谨慎-小心.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 158,
+    "terms": [
+      "赶紧",
+      "赶忙"
+    ],
+    "source": "赶紧-赶忙.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 159,
+    "terms": [
+      "适应",
+      "习惯"
+    ],
+    "source": "适应0习惯.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  },
+  {
+    "id": 160,
+    "terms": [
+      "适应",
+      "顺应"
+    ],
+    "source": "适应-顺应.jpg",
+    "duplicate": null,
+    "collection": "TH3"
+  }
 ]

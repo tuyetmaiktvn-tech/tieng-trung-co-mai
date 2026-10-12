@@ -8,7 +8,22 @@ const sources = JSON.parse(fs.readFileSync(path.join(root, 'data/near-synonyms-s
 const translations = require('./near-synonyms-data.cjs').loadTranslations();
 const decode = text => text.replace(/<[^>]*>/g, ' ').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const groups = [...page.matchAll(/<details class="syn-group" id="([^"]+)">([\s\S]*?)<\/details>/g)].map(m => ({id:m[1],textContent:decode(m[2]),hidden:false,open:false,classList:{contains: x => x === 'syn-group'},scrollIntoView(){this.scrolled=true;}}));
-assert.equal(groups.length,124);
+assert.equal(groups.length,159);
+const originalExamples = translations.filter(g=>g.id<=125).flatMap(g=>g.terms).flatMap(t=>t.examples);
+assert.equal(originalExamples.length,791);
+assert.equal(originalExamples.filter(e=>e.wrong).length,84);
+const expectedNewCounts = [8,5,7,4,7,8,6,5,4,7,3,5,4,4,7,9,9,5,8,14,6,6,9,9,6,4,13,8,6,14,4,7,5,14,6];
+for (const [index, count] of expectedNewCounts.entries()) {
+  const group = translations.find(g=>g.id===126+index);
+  assert.equal(group.terms.flatMap(t=>t.examples).length,count,'Source example count '+group.id);
+}
+const imports = JSON.parse(fs.readFileSync(path.join(root,'data/near-synonyms-th3-import.json'),'utf8'));
+assert.equal(imports.length,38);
+assert.equal(imports.filter(s=>s.duplicateOf).length,3);
+for(const item of imports) {
+  assert(translations.some(g=>g.id===item.id));
+  if(item.archive) assert(fs.existsSync(path.join(root,item.archive)));
+}
 let exampleCount = 0;
 for (const translation of translations) {
   const rendered = groups.find(g => g.id === 'nhom-' + translation.id);
@@ -23,9 +38,9 @@ for (const translation of translations) {
   }
   for (const note of translation.notes) assert(rendered.textContent.includes(note));
 }
-assert.equal(exampleCount, 791);
+assert.equal(exampleCount, 1037);
 assert.equal((page.match(/class="syn-translation"/g) || []).length, exampleCount);
-assert.equal((page.match(/class="syn-badge"/g) || []).length, 84);
+assert.equal((page.match(/class="syn-badge"/g) || []).length, 129);
 assert.equal((page.match(/syn-example syn-incomplete/g) || []).length, 0);
 assert(!/ảnh gốc bị cắt|Phần cuối bị cắt/.test(page));
 const futureGroup = groups.find(g => g.id === 'nhom-59');
@@ -54,13 +69,16 @@ assert(search('一直').includes('nhom-1'));
 assert(search('yizhi').includes('nhom-1'));
 assert.deepEqual(search('liên tục'),search('lien tuc'));
 assert(search('jiaoao').includes('nhom-125'));
+assert(search('时兴').includes('nhom-145'));
+assert(search('shunying').includes('nhom-160'));
+assert(search('thích nghi').includes('nhom-159'));
 assert(search('phối hợp chặt chẽ').includes('nhom-41'));
 assert(search('戴上帽子').includes('nhom-32'));
 assert.equal(search('zzzz-no-such-word').length,0);
 assert.equal(elements['syn-empty'].hidden,false);
-elements['syn-clear'].handlers.click();assert.equal(groups.filter(g=>!g.hidden).length,124);assert(elements['syn-search'].focused);
-search('not-a-match');location.hash='#nhom-125';win.handlers.hashchange();assert(groups.at(-1).open);assert(!groups.at(-1).hidden);assert(groups.at(-1).scrolled);
+elements['syn-clear'].handlers.click();assert.equal(groups.filter(g=>!g.hidden).length,159);assert(elements['syn-search'].focused);
+search('not-a-match');location.hash='#nhom-125';win.handlers.hashchange();assert(groups.find(g=>g.id === 'nhom-125').open);assert(!groups.find(g=>g.id === 'nhom-125').hidden);assert(groups.find(g=>g.id === 'nhom-125').scrolled);
 elements['syn-collapse'].handlers.click();assert(groups.every(g=>!g.open));
-console.log('PASS: 124 unique groups, all source rows accounted for, local links, Chinese/pinyin/Vietnamese searches, no results, clear, deep link, collapse.');
+console.log('PASS: 159 unique groups, all source rows accounted for, local links, Chinese/pinyin/Vietnamese searches, no results, clear, deep link, collapse.');
 console.log('DOM behavior simulated; visual browser testing remains separate.');
-console.log(`PASS: ${exampleCount} source-specific examples and translations, usage and shared notes rendered without omission; 84 incorrect-example labels; all four previously cropped examples restored.`);
+console.log(`PASS: ${exampleCount} source-specific examples and translations, usage and shared notes rendered without omission; 129 incorrect-example labels; all four previously cropped examples restored.`);
