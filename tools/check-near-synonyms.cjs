@@ -26,7 +26,12 @@ for (const translation of translations) {
 assert.equal(exampleCount, 791);
 assert.equal((page.match(/class="syn-translation"/g) || []).length, exampleCount);
 assert.equal((page.match(/class="syn-badge"/g) || []).length, 84);
-assert.equal((page.match(/syn-example syn-incomplete/g) || []).length, 4);
+assert.equal((page.match(/syn-example syn-incomplete/g) || []).length, 0);
+assert(!/ảnh gốc bị cắt|Phần cuối bị cắt/.test(page));
+const futureGroup = groups.find(g => g.id === 'nhom-59');
+for (const ending of ['更好的将来。', '祖国的未来。', '请大家注意安全。', '机器人能取代人类吗？']) {
+  assert(futureGroup.textContent.includes(ending), 'Missing restored source text: ' + ending);
+}
 assert(!page.includes('Lưu ý và cách sửa'));
 assert(!page.includes('Xem bảng tiếng Trung gốc'));
 assert(!/cần đối chiếu|không rõ phần kết|TODO/.test(page));
@@ -58,4 +63,4 @@ search('not-a-match');location.hash='#nhom-125';win.handlers.hashchange();assert
 elements['syn-collapse'].handlers.click();assert(groups.every(g=>!g.open));
 console.log('PASS: 124 unique groups, all source rows accounted for, local links, Chinese/pinyin/Vietnamese searches, no results, clear, deep link, collapse.');
 console.log('DOM behavior simulated; visual browser testing remains separate.');
-console.log(`PASS: ${exampleCount} source-specific examples and translations, usage and shared notes rendered without omission; 84 incorrect-example labels; 4 cropped-source fragments explicitly identified.`);
+console.log(`PASS: ${exampleCount} source-specific examples and translations, usage and shared notes rendered without omission; 84 incorrect-example labels; all four previously cropped examples restored.`);
