@@ -1,6 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d4ed8"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs>
-  <rect x="4" y="4" width="56" height="56" rx="18" fill="url(#g)"/>
-  <circle cx="49" cy="15" r="7" fill="#f59e0b"/>
-  <text x="32" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#fff">文</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <rect x="3" y="3" width="74" height="74" rx="29" fill="#153b59"/>
+  <path d="M17 53C9 37 17 17 35 13C51 9 67 20 68 35" stroke="#8aacae" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M14 44C15 62 33 71 50 65C58 62 63 57 67 49" stroke="#8aacae" stroke-width="1.5" stroke-linecap="round" opacity=".8"/>
+  <text x="40" y="54" text-anchor="middle" fill="#f4a052" font-family="KaiTi, STKaiti, FangSong, serif" font-size="44" font-weight="700">梅</text>
+  <path d="M19 66C31 67 49 66 63 55" stroke="#cd9168" stroke-width="1.6" stroke-linecap="round"/>
+  <g fill="#f1ad8e"><circle cx="20" cy="60" r="3.2"/><circle cx="16" cy="63" r="3.2"/><circle cx="18" cy="68" r="3.2"/><circle cx="23" cy="68" r="3.2"/><circle cx="25" cy="63" r="3.2"/></g>
+  <circle cx="21" cy="64" r="2" fill="#f7c76d"/>
+  <ellipse cx="61" cy="56" rx="2.5" ry="4" transform="rotate(30 61 56)" fill="#f1ad8e"/>
 </svg>
