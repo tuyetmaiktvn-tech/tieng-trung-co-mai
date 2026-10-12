@@ -14,11 +14,19 @@
 .syn-group[open]>summary{background:#f6f2fa;border-bottom:1px solid #d9cce7}
 .syn-body{padding:24px}.syn-body h2{font:700 23px/1.4 Arial,sans-serif;color:#50346a;margin:0 0 12px}
 .syn-body p{margin:8px 0 18px;overflow-wrap:anywhere}
-.syn-words{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+.syn-words{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0 0 24px;align-items:start}
 .syn-word{padding:20px;border:1px solid #e1dce7;border-radius:12px;background:#fcfbfe;min-width:0}
+.syn-word>h3,.syn-word>.syn-pinyin,.syn-word>.syn-meaning,.syn-pos{text-align:center}
 .syn-word h3{font-size:30px;margin:0;color:#493064}.syn-pinyin{color:#6a466e;font-size:18px}
-.syn-meaning{font-weight:700}.syn-example{border-top:1px solid #e1dce7;padding-top:12px}
-.syn-example h4{font-size:16px;margin:0 0 10px;color:#54505e}.syn-example [lang=zh]{font-size:23px;line-height:1.65}
+.syn-meaning{font-weight:700}.syn-pos{color:#544361;font-size:17px}
+.syn-word h4{font:700 19px/1.5 Arial,sans-serif;margin:0 0 12px;color:#493064}
+.syn-usage{border-top:1px solid #e1dce7;padding-top:18px;margin-top:20px}
+.syn-usage ul{padding-left:24px;margin:0 0 24px}.syn-usage li{margin:0 0 10px;overflow-wrap:anywhere}
+.syn-examples ol{list-style:none;padding:0;margin:0}.syn-example{border-top:1px solid #e1dce7;padding:16px 0}
+.syn-example [lang=zh]{font-size:23px;line-height:1.65;color:#244a74}
+.syn-example .syn-translation{margin-bottom:0}.syn-incorrect,.syn-example.syn-incorrect [lang=zh]{color:#a32d36}
+.syn-badge{display:inline-block;font-size:15px;font-weight:700;background:#fff0f1;color:#962833;border-radius:6px;padding:3px 8px}
+.syn-incomplete{border-left:3px solid #b67a24;padding-left:12px}
 .syn-note{background:#fff7e5;border-left:4px solid #b67a24;padding:16px 20px;margin:24px 0}
 .syn-note h3{font:700 20px/1.5 Arial,sans-serif;margin:0}.syn-note p{margin-bottom:0}
 .syn-permalink,.syn-return a{color:#59377b;text-decoration:underline}.syn-return{margin-top:30px}
