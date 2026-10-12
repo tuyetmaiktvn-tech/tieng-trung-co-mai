@@ -1,0 +1,24 @@
+/* Shared spacing and readable type for catalog pages; no color overrides. */
+body.tcm-catalog{font-size:18px;line-height:1.75}
+.tcm-catalog .container{width:min(1160px,calc(100% - 48px))!important;margin-inline:auto!important}
+.tcm-catalog .container .container{width:100%!important}
+.tcm-catalog .page-hero{padding:44px 0!important}
+.tcm-catalog .page-hero h1{line-height:1.3!important;overflow-wrap:break-word}
+.tcm-catalog .page-hero p{max-width:800px;line-height:1.8}
+.tcm-catalog .section{padding:36px 0!important}
+.tcm-catalog .section-heading{text-align:left!important;max-width:none!important;margin:0 0 24px!important}
+.tcm-catalog .section-heading h2{line-height:1.4!important}
+.tcm-catalog :is(.lesson-grid,.hsk-grid,.subject-grid,.resource-grid,.auto-grid,.blog-grid){display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:24px!important;align-items:stretch}
+.tcm-catalog :is(.card,.subject-card,.resource-card,.auto-item){min-width:0;box-sizing:border-box;padding:24px!important;height:auto!important}
+.tcm-catalog :is(.lesson-grid,.hsk-grid,.subject-grid,.resource-grid)>.card{display:flex;flex-direction:column;align-items:flex-start}
+.tcm-catalog .card>.text-link{margin-top:auto;padding-top:16px}
+.tcm-catalog :is(.card,.auto-item) h3{line-height:1.5;overflow-wrap:break-word}
+.tcm-catalog :is(.card,.auto-item) p{line-height:1.8}
+.tcm-catalog :is(.card p,.auto-item p,.text-link,.dropdown a,.nav-link,.button,.btn){font-size:17px!important}
+.tcm-catalog :is(.badge,.kicker,.folder-count,.dropdown-title,.copyright){font-size:16px!important}
+.tcm-catalog :is(input,select,textarea){font-size:17px;max-width:100%;box-sizing:border-box}
+.tcm-catalog :is(.hero-actions,.syn-tools,.syn-search-row){flex-wrap:wrap;gap:12px}
+.tcm-catalog .nav{gap:16px}
+.tcm-catalog .nav-links{flex-wrap:wrap}
+@media(max-width:1000px){.tcm-catalog :is(.lesson-grid,.hsk-grid,.subject-grid,.resource-grid,.auto-grid,.blog-grid){grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:620px){body.tcm-catalog{font-size:17px}.tcm-catalog .container{width:calc(100% - 32px)!important}.tcm-catalog .page-hero{padding:28px 0!important}.tcm-catalog .section{padding:24px 0!important}.tcm-catalog :is(.lesson-grid,.hsk-grid,.subject-grid,.resource-grid,.auto-grid,.blog-grid){grid-template-columns:minmax(0,1fr)!important;gap:16px!important}.tcm-catalog :is(.card,.subject-card,.resource-card,.auto-item){padding:20px!important}.tcm-catalog .syn-search-row>*{min-width:0;max-width:100%}}
