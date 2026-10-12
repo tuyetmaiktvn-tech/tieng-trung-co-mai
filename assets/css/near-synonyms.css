@@ -1,0 +1,27 @@
+#syn-main{font-family:Arial,"Segoe UI",sans-serif;font-size:19px;line-height:1.75;color:#263348}
+#syn-main [hidden]{display:none!important}
+#syn-main .page-hero h1{font-family:inherit;font-size:clamp(30px,4vw,44px);line-height:1.3;text-shadow:none}
+.syn-library{max-width:1120px}.syn-intro{margin:0 0 22px}
+.syn-tools{background:#f3eef8;border:1px solid #d9cce7;border-radius:14px;padding:20px;margin-bottom:24px}
+.syn-tools label{display:block;font-weight:700;margin-bottom:8px}
+.syn-search-row{display:flex;gap:10px;margin-bottom:12px}
+#syn-search{min-width:0;flex:1;padding:12px 14px;border:1px solid #8f79a1;border-radius:8px;font:inherit;background:#fff;color:#263348}
+.syn-tools button{padding:10px 15px;border:1px solid #73528e;border-radius:8px;background:white;color:#543470;font:inherit;cursor:pointer}
+#syn-status{margin:12px 0 0;color:#544361}
+.syn-group{border:1px solid #d9cce7;background:white;border-radius:14px;margin-bottom:14px;overflow:hidden;scroll-margin-top:100px}
+.syn-group>summary{cursor:pointer;padding:20px 24px;color:#50346a;list-style-position:inside}
+.syn-title{font-size:26px;font-weight:700}.syn-preview{display:block;color:#4b5563;font-size:17px;margin-top:4px}
+.syn-group[open]>summary{background:#f6f2fa;border-bottom:1px solid #d9cce7}
+.syn-body{padding:24px}.syn-body h2{font:700 23px/1.4 Arial,sans-serif;color:#50346a;margin:0 0 12px}
+.syn-body p{margin:8px 0 18px;overflow-wrap:anywhere}
+.syn-words{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+.syn-word{padding:20px;border:1px solid #e1dce7;border-radius:12px;background:#fcfbfe;min-width:0}
+.syn-word h3{font-size:30px;margin:0;color:#493064}.syn-pinyin{color:#6a466e;font-size:18px}
+.syn-meaning{font-weight:700}.syn-example{border-top:1px solid #e1dce7;padding-top:12px}
+.syn-example h4{font-size:16px;margin:0 0 10px;color:#54505e}.syn-example [lang=zh]{font-size:23px;line-height:1.65}
+.syn-note{background:#fff7e5;border-left:4px solid #b67a24;padding:16px 20px;margin:24px 0}
+.syn-note h3{font:700 20px/1.5 Arial,sans-serif;margin:0}.syn-note p{margin-bottom:0}
+.syn-permalink,.syn-return a{color:#59377b;text-decoration:underline}.syn-return{margin-top:30px}
+#syn-main :is(a,button,input,summary):focus-visible{outline:3px solid #8656ae;outline-offset:3px}
+#syn-main [lang=zh]{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif}
+@media(max-width:620px){.syn-words{grid-template-columns:1fr}.syn-search-row{flex-direction:column}.syn-group>summary,.syn-body{padding:16px}.syn-title{font-size:24px}.syn-word{padding:16px}.syn-tools{padding:16px}}
