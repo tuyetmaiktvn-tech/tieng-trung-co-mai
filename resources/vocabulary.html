@@ -26,17 +26,6 @@ body{
   background:rgba(255,253,249,.98)!important;
   border-bottom:2px solid #e6d9e7!important;
 }
-.brand img{display:none!important}
-.brand::before{
-  content:"梅";
-  width:68px;height:68px;border-radius:50%;
-  display:grid;place-items:center;
-  background:linear-gradient(145deg,#eb8a43,#cf6533);
-  color:#fff;
-  font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;
-  font-size:42px;font-weight:800;line-height:1;
-  box-shadow:0 12px 28px rgba(153,91,48,.20);
-}
 .nav-link{
   color:#674c6d!important;
   font-size:19px!important;
@@ -129,7 +118,6 @@ footer a:hover{color:#ffe0a7!important}
 .vocabulary-folder .auto-item{min-height:102px;padding:19px;border-color:#dfd1e1}.vocabulary-folder .auto-item b{font-size:23px}.vocabulary-folder .auto-item span{font-size:16px}
 
 @media(max-width:720px){
-  .brand::before{width:60px;height:60px;font-size:37px}
   .nav-link{font-size:17px!important}
   .page-hero{padding:40px 0 36px!important}.page-hero h1{font-size:44px!important}
   .page-hero p{font-size:18px!important}
@@ -141,8 +129,9 @@ footer a:hover{color:#ffe0a7!important}
 </style>
 
 <link rel="icon" href="../assets/images/mai-logo-circle.png?v=6" type="image/png">
-<link rel="stylesheet" href="../assets/css/brand.css?v=1">
+<link rel="stylesheet" href="../assets/css/brand.css?v=2">
 <link rel="stylesheet" href="../assets/css/catalog-layout.css?v=1">
+<link rel="stylesheet" href="../assets/css/vocabulary-layout.css?v=1">
 </head>
 <body class="tcm-catalog">
 
@@ -183,7 +172,7 @@ footer a:hover{color:#ffe0a7!important}
 
 <main>
 <section class="page-hero"><div class="container"><h1>Từ vựng</h1><p>Tra cứu và ôn tập từ vựng theo cấp độ, chủ đề và chuyên ngành.</p></div></section>
-<section class="section"><div class="container"><div class="card"><span class="badge">431 mục từ HSK</span><h2>Kho từ vựng HSK 1–2</h2><p>Chọn bài để xem đầy đủ chữ Hán, pinyin, nghĩa tiếng Việt, ví dụ và phát âm trong bài học gốc.</p></div><div class="auto-library" id="vocabularyLibrary"></div></div></section>
+<section class="section"><div class="container"><div class="card"><span class="badge" id="vocabularyCount">Từ vựng theo bài học</span><h2 id="vocabularyTitle">Kho từ vựng HSK</h2><p>Chọn bài để xem đầy đủ chữ Hán, pinyin, nghĩa tiếng Việt, ví dụ và phát âm trong bài học gốc.</p></div><div class="auto-library" id="vocabularyLibrary"></div></div></section>
 <section class="section" id="so-sanh-tu-can-nghia"><div class="container"><div class="card"><span class="badge">Từ vựng · 近义词</span><h2>So sánh từ cận nghĩa</h2><p>Phân biệt ý nghĩa, cách dùng và ngữ cảnh của các từ tiếng Trung dễ nhầm lẫn.</p><a class="text-link" href="so-sanh-tu-can-nghia.html">Mở mục so sánh từ cận nghĩa →</a></div></div></section>
 </main>
 
@@ -218,7 +207,7 @@ footer a:hover{color:#ffe0a7!important}
 </footer>
 
 <script src="../assets/js/app.js?v=3.3.1"></script>
-<script src="../data/learning-resources.js"></script>
-<script>{const lessons=(window.TCM_LEARNING_RESOURCES||[]).filter(item=>item.vocabulary);const levels=[...new Set(lessons.map(item=>item.level))];document.getElementById('vocabularyLibrary').innerHTML=levels.map(level=>{const levelLessons=lessons.filter(item=>item.level===level);return `<details class="vocabulary-folder"><summary><span>HSK ${level}</span><span class="folder-count">${levelLessons.length} bài</span></summary><div class="auto-grid">${levelLessons.map(item=>`<a class="auto-item" href="${item.url}?focus=${item.vocabulary}#${item.vocabulary}"><b>Bài ${item.lesson}</b><span>Xem toàn bộ từ vựng →</span></a>`).join('')}</div></details>`}).join('');}</script>
+<script src="../data/learning-resources.js?v=2"></script>
+<script>{const lessons=(window.TCM_LEARNING_RESOURCES||[]).filter(item=>item.vocabulary);const levels=[...new Set(lessons.map(item=>item.level))].sort((a,b)=>Number(a)-Number(b));document.getElementById('vocabularyCount').textContent=lessons.length+' bài học HSK';document.getElementById('vocabularyTitle').textContent='Kho từ vựng '+levels.map(level=>'HSK '+level).join(' · ');document.getElementById('vocabularyLibrary').innerHTML=levels.map(level=>{const levelLessons=lessons.filter(item=>item.level===level).sort((a,b)=>Number(a.lesson)-Number(b.lesson));return `<details class="vocabulary-folder"><summary><span>HSK ${level}</span><span class="folder-count">${levelLessons.length} bài</span></summary><div class="auto-grid">${levelLessons.map(item=>`<a class="auto-item" href="${item.url}?focus=${item.vocabulary}#${item.vocabulary}"><b>Bài ${item.lesson}</b><span>Xem toàn bộ từ vựng →</span></a>`).join('')}</div></details>`}).join('');}</script>
 </body>
 </html>

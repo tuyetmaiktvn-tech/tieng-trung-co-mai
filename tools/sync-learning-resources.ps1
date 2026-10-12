@@ -20,7 +20,7 @@ Get-ChildItem $hskRoot -Filter 'hsk*-lesson*.html' -File | ForEach-Object {
   $html = Get-Content $_.FullName -Raw -Encoding utf8
   $title = if ($html -match '<title>(.*?)</title>') { $Matches[1] -replace '\s*\|.*$','' } else { "HSK $level - Lesson $lesson" }
 
-  $vocabularyId = Find-SectionId $html @('tu-vung','tuvung','tu','vocabulary')
+  $vocabularyId = Find-SectionId $html @('tu-vung','tuvung','tu','vocabulary','vocab')
   $grammarId = Find-SectionId $html @('grammar','ngu-phap','nguphap','np')
   $exerciseId = Find-SectionId $html @('exercises','bai-tap','dien-tu','dientu','dien')
   $flashcardId = Find-SectionId $html @('flashcards')
