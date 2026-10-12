@@ -1,0 +1,16 @@
+/* Align the profile and teaching sections without changing their palette. */
+.about-clean-intro{padding:48px 0!important}
+.about-clean-grid{grid-template-columns:290px minmax(0,1fr)!important;gap:48px!important;max-width:none!important;margin:0!important;align-items:start!important}
+.about-clean-photo{width:100%!important;max-width:290px!important;margin:0!important}
+.about-clean-photo img{display:block;width:100%;height:auto}
+.about-clean-copy{min-width:0;max-width:760px!important;margin:0!important}
+.about-clean-copy h1{line-height:1.25!important;overflow-wrap:break-word}
+.about-clean-copy p{text-align:left!important}
+.about-clean-copy p:last-child{margin-bottom:0!important}
+.teaching-grid-v31{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px!important}
+.teaching-grid-v31 article{min-width:0;padding:26px!important;text-align:left!important}
+.teaching-grid-v31 article p{line-height:1.8!important}
+.teaching-grid-v31 article h3{margin:14px 0 8px!important}
+.teaching-icon-v31{margin-left:0!important;margin-right:0!important}
+@media(max-width:900px){.about-clean-grid{grid-template-columns:230px minmax(0,1fr)!important;gap:28px!important}.about-clean-copy h1{font-size:38px!important}.about-clean-copy p{font-size:18px!important}}
+@media(max-width:620px){.about-clean-intro{padding:28px 0!important}.about-clean-grid{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}.about-clean-photo{max-width:240px!important;margin-inline:auto!important}.about-clean-copy h1{font-size:34px!important}.teaching-grid-v31{grid-template-columns:minmax(0,1fr)!important;gap:16px!important}.teaching-grid-v31 article{padding:22px!important}.section-heading h2{font-size:30px!important;line-height:1.4!important}.contact-strip-inner{flex-wrap:wrap;gap:8px}.contact-actions{flex-wrap:wrap}}
