@@ -1,16 +1,24 @@
-/* Align the profile and teaching sections without changing their palette. */
-.about-clean-intro{padding:48px 0!important}
-.about-clean-grid{grid-template-columns:290px minmax(0,1fr)!important;gap:48px!important;max-width:none!important;margin:0!important;align-items:start!important}
-.about-clean-photo{width:100%!important;max-width:290px!important;margin:0!important}
-.about-clean-photo img{display:block;width:100%;height:auto}
-.about-clean-copy{min-width:0;max-width:760px!important;margin:0!important}
-.about-clean-copy h1{line-height:1.25!important;overflow-wrap:break-word}
-.about-clean-copy p{text-align:left!important}
+﻿/* Profile page layout. Existing theme colors and content remain unchanged. */
+.about-clean-intro{padding:40px 0!important}
+.about-clean-grid{display:grid;grid-template-columns:minmax(220px,300px) minmax(0,1fr)!important;gap:48px!important;max-width:none!important;margin:0!important;align-items:center!important}
+.about-clean-photo{width:100%!important;max-width:300px!important;margin:0!important;padding:0!important}
+.about-clean-photo::before{display:none!important}
+.about-clean-photo img{display:block;width:100%;height:auto;aspect-ratio:auto!important;border-radius:16px!important;box-shadow:none!important}
+.about-clean-copy{min-width:0;max-width:720px!important;margin:0!important}
+.about-clean-copy .about-kicker-v31{font-size:16px!important;letter-spacing:.08em;margin:0 0 10px!important}
+.about-clean-copy h1{font-size:clamp(34px,4vw,46px)!important;line-height:1.25!important;margin:0 0 12px!important;overflow-wrap:break-word}
+.about-clean-copy p{font-size:18px!important;line-height:1.8!important;text-align:left!important;margin:0 0 14px!important}
+.about-clean-copy .about-clean-role{font-size:19px!important;font-weight:600;line-height:1.6!important;margin-bottom:22px!important}
 .about-clean-copy p:last-child{margin-bottom:0!important}
-.teaching-grid-v31{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px!important}
-.teaching-grid-v31 article{min-width:0;padding:26px!important;text-align:left!important}
-.teaching-grid-v31 article p{line-height:1.8!important}
-.teaching-grid-v31 article h3{margin:14px 0 8px!important}
-.teaching-icon-v31{margin-left:0!important;margin-right:0!important}
-@media(max-width:900px){.about-clean-grid{grid-template-columns:230px minmax(0,1fr)!important;gap:28px!important}.about-clean-copy h1{font-size:38px!important}.about-clean-copy p{font-size:18px!important}}
-@media(max-width:620px){.about-clean-intro{padding:28px 0!important}.about-clean-grid{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}.about-clean-photo{max-width:240px!important;margin-inline:auto!important}.about-clean-copy h1{font-size:34px!important}.teaching-grid-v31{grid-template-columns:minmax(0,1fr)!important;gap:16px!important}.teaching-grid-v31 article{padding:22px!important}.section-heading h2{font-size:30px!important;line-height:1.4!important}.contact-strip-inner{flex-wrap:wrap;gap:8px}.contact-actions{flex-wrap:wrap}}
+.about-principles>.container{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr);gap:40px;align-items:start}
+.about-principles .section-heading{margin:0!important}
+.about-principles .section-heading .kicker{font-size:16px!important;letter-spacing:.06em}
+.about-principles .section-heading h2{font-size:32px!important;line-height:1.4!important;margin:10px 0 16px!important}
+.about-principles .section-heading p{font-size:18px!important;line-height:1.8!important}
+.teaching-grid-v31{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important}
+.teaching-grid-v31 article{display:grid;grid-template-columns:36px minmax(0,1fr);align-content:start;gap:8px 12px;min-width:0;min-height:0!important;padding:22px!important;text-align:left!important;border-radius:12px!important;box-shadow:none!important}
+.teaching-grid-v31 article h3{font-size:21px!important;line-height:1.5!important;margin:0!important;align-self:center}
+.teaching-grid-v31 article p{grid-column:1/-1;font-size:18px!important;line-height:1.75!important;margin:4px 0 0!important}
+.teaching-icon-v31{width:36px!important;height:36px!important;min-width:0!important;font-size:24px!important;margin:0!important;display:grid;place-items:center}
+@media(max-width:900px){.about-clean-grid{grid-template-columns:230px minmax(0,1fr)!important;gap:28px!important;align-items:start!important}.about-principles>.container{grid-template-columns:minmax(0,1fr);gap:24px}.about-principles .section-heading{max-width:760px!important}}
+@media(max-width:620px){.about-clean-intro{padding:28px 0!important}.about-clean-grid{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}.about-clean-photo{max-width:220px!important;margin-inline:auto!important}.about-clean-copy h1{font-size:34px!important}.teaching-grid-v31{grid-template-columns:minmax(0,1fr)!important;gap:14px!important}.teaching-grid-v31 article{padding:20px!important}.about-principles .section-heading h2{font-size:29px!important}.contact-strip-inner{flex-wrap:wrap;gap:8px}.contact-actions{flex-wrap:wrap}}

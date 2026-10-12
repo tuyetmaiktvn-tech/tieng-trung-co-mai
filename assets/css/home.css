@@ -19,3 +19,21 @@
 @media(max-width:620px){.hero-grid{padding:32px 0}.learning-paths{gap:24px}.learning-paths .roadmap-list{grid-template-columns:minmax(0,1fr)}.learning-paths .roadmap-item{gap:12px}}
 
 .hero-description,.roadmap-item p,.path-copy p,.path-heading p{font-weight:500}.roadmap-item h3,.path-copy h3{font-size:18px}.roadmap-title{font-size:24px}.path-heading h2{font-size:27px}.roadmap-icon{background:#dff1ea;color:#0b6558}.roadmap-icon.orange{background:#fff0d7;color:#9a5514}.roadmap-icon.purple{background:#eee8fa;color:#654191}.roadmap-icon.green{background:#e6f3fa;color:#245b7c}.enroll-btn{background:#ad502f}.enroll-btn:hover{background:#8e3d21}.hero-title,.brand-subline{font-weight:800}.secondary-btn{border-color:#548375;background:#fff}.path-footer{font-size:14px}@media(max-width:620px){.hero-description{font-size:17px}.path-copy p,.roadmap-item p{font-size:15px}.path-heading h2{font-size:25px}.logo-mark{width:56px;height:56px}.nav-wrap{gap:12px}.enroll-btn{font-size:14px}.eyebrow{font-size:13px;letter-spacing:0}.contact-phone{font-size:13px}}
+
+/* Compact, balanced resource tiles with consistent reading alignment. */
+.learning-hub{padding:36px 0 44px}
+.learning-paths{gap:24px}
+.learning-paths .roadmap-card{padding:24px;box-shadow:none}
+.learning-paths .roadmap-title{font-size:26px;line-height:1.4}
+.learning-paths .title-underline{margin:16px 0 20px}
+.learning-paths .roadmap-list{gap:14px;align-items:stretch}
+.learning-paths .roadmap-item,.learning-paths .roadmap-item:last-child{grid-template-columns:44px minmax(0,1fr) 16px;gap:14px;padding:20px;border:1px solid var(--line);border-radius:12px;align-items:start}
+.learning-paths .roadmap-item h3{font-size:19px;line-height:1.5;margin:0}
+.learning-paths .roadmap-item p{font-size:16px;line-height:1.7;margin-top:5px}
+.learning-paths .roadmap-icon{width:44px;height:44px}
+.learning-paths .roadmap-item .arrow{align-self:center}
+.learning-paths .roadmap-item:hover{border-color:var(--blue)}
+.learning-paths .path-heading{padding:22px 24px 18px}
+.learning-paths .path-heading h2{font-size:26px}
+.learning-paths .path-copy p{font-size:16px}
+@media(max-width:620px){.learning-hub{padding:24px 0 32px}.learning-paths .roadmap-card{padding:20px}.learning-paths .roadmap-title,.learning-paths .path-heading h2{font-size:24px}.learning-paths .roadmap-item,.learning-paths .roadmap-item:last-child{padding:16px 12px;gap:10px}.learning-paths .path-heading{padding:20px}.learning-paths .roadmap-item h3{font-size:18px}}
