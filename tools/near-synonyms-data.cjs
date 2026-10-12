@@ -4,7 +4,7 @@ const root = path.resolve(__dirname, '..');
 function loadTranslations() {
   const groups = new Map();
   let group, term;
-  const content = ['near-synonyms-faithful.txt', 'near-synonyms-th3.txt'].map(file => fs.readFileSync(path.join(root, 'data', file), 'utf8')).join('\n');
+  const content = ['near-synonyms-faithful.txt', 'near-synonyms-th3.txt', 'near-synonyms-th3-bai4.txt'].map(file => fs.readFileSync(path.join(root, 'data', file), 'utf8')).join('\n');
   for (const [index, raw] of content.split(/\r?\n/).entries()) {
     const line = raw.trim();
     if (!line) continue;

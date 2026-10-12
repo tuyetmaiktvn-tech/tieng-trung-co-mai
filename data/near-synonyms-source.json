@@ -1482,5 +1482,125 @@
     "source": "适应-顺应.jpg",
     "duplicate": null,
     "collection": "TH3"
+  },
+  {
+    "id": 161,
+    "terms": [
+      "参观",
+      "游览"
+    ],
+    "source": "参观-预览.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
+  },
+  {
+    "id": 162,
+    "terms": [
+      "安心",
+      "放心"
+    ],
+    "source": "安心-放心.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
+  },
+  {
+    "id": 163,
+    "terms": [
+      "所有",
+      "一切"
+    ],
+    "source": "所有-一切.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
+  },
+  {
+    "id": 164,
+    "terms": [
+      "搬",
+      "抬"
+    ],
+    "source": "搬-抬.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
+  },
+  {
+    "id": 165,
+    "terms": [
+      "改",
+      "改变"
+    ],
+    "source": "改-改变.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
+  },
+  {
+    "id": 166,
+    "terms": [
+      "改",
+      "改正"
+    ],
+    "source": "改-改正.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
+  },
+  {
+    "id": 167,
+    "terms": [
+      "改",
+      "更改"
+    ],
+    "source": "改-更改.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
+  },
+  {
+    "id": 168,
+    "terms": [
+      "旅游",
+      "游览"
+    ],
+    "source": "旅游-游览.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
+  },
+  {
+    "id": 169,
+    "terms": [
+      "旅行",
+      "游览"
+    ],
+    "source": "旅行-预览.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
+  },
+  {
+    "id": 170,
+    "terms": [
+      "讨厌",
+      "嫌"
+    ],
+    "source": "讨厌-嫌.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
+  },
+  {
+    "id": 171,
+    "terms": [
+      "记得",
+      "记住"
+    ],
+    "source": "记得-记住.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
+  },
+  {
+    "id": 172,
+    "terms": [
+      "闻",
+      "嗅"
+    ],
+    "source": "闻-臭.jpg",
+    "duplicate": null,
+    "collection": "TH3 Bai 4"
   }
 ]
