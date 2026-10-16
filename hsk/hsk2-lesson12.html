@@ -105,7 +105,7 @@ section h2,.section h2{font-size:32px !important;line-height:1.25 !important}
 <link rel="stylesheet" href="../assets/css/brand.css?v=1">
 </head><body>
 <header class="hero"><div class="container"><span class="kicker">NEW HSK 2 · BÀI 12</span><h1 class="cn">这里比北京冷多了</h1><p class="pinyin">Zhèlǐ bǐ Běijīng lěng duō le</p><p class="vi">Ở đây lạnh hơn Bắc Kinh nhiều</p></div></header>
-<nav class="nav"><a href="#tu">Từ vựng</a><a href="#nhan">Nhận từ</a><a href="#dien">Điền từ</a><a href="#xep">Sắp xếp</a><a href="#sua">Chữa câu</a><a href="#np">Ngữ pháp</a><a href="#dich">Dịch</a><a href="#noi">Nói</a><a href="#test">Kiểm tra</a></nav>
+<nav class="nav"><a href="#tu">Từ vựng</a><a href="#nhan">Nhận từ</a><a href="#np">Ngữ pháp</a><a href="#dien">Điền từ</a><a href="#xep">Sắp xếp</a><a href="#sua">Chữa câu</a><a href="#dich">Dịch</a><a href="#noi">Nói</a><a href="#test">Kiểm tra</a></nav>
 
 <section><div class="container"><span class="badge">Mục tiêu</span><h2>Bài 12 học gì?</h2><div class="grid2">
 <div class="card">Hiểu và nói về <b>thời tiết</b>: nắng, nhiều mây, tuyết và độ lạnh.</div>
@@ -135,7 +135,13 @@ section h2,.section h2{font-size:32px !important;line-height:1.25 !important}
 <div class="ex mcq" data-answer="B"><b>4. “阴” dùng để miêu tả:</b><label><input type="radio" name="a4" value="A"> trời nắng</label><br><label><input type="radio" name="a4" value="B"> trời âm u/nhiều mây</label><br><label><input type="radio" name="a4" value="C"> trời nóng</label><br><button class="btn primary" onclick="mcq(this)">Kiểm tra</button><div class="feedback"></div></div>
 </div></div></section>
 
-<section id="dien"><div class="container"><span class="badge">03</span><h2>Điền từ tương tác</h2><div class="ex fillset"><div class="bank"><button class="chip">事情</button><button class="chip">正</button><button class="chip">从小</button><button class="chip">外面</button><button class="chip">好</button></div>
+<section id="np"><div class="container"><span class="badge">03</span><h2>Ngữ pháp trọng tâm</h2>
+<div class="grammar"><h3>1. 比较句（4）：A 比 B + Adj + 多了 / 得多</h3><p><span class="cn">多了</span> hoặc <span class="cn">得多</span> đứng sau tính từ để biểu thị <b>mức chênh lệch lớn</b>.</p><div class="example cn">我这里比北京冷多了。<br>坐飞机比坐火车快得多。<br>他觉得红茶比绿茶好喝得多。</div></div>
+<div class="grammar"><h3>2. 比较句（5）：Động từ + bổ ngữ trạng thái</h3><p>Khi động từ có bổ ngữ trạng thái, <span class="cn">比</span> có thể đặt trước hoặc sau động từ.</p><div class="example cn">昨天比今天下得大。<br>妈妈比我睡得晚。<br>李文跑得比白家月快。</div></div>
+<div class="grammar"><h3>3. 比较句（6）：Động từ có tân ngữ + bổ ngữ trạng thái</h3><p>Khi động từ vừa có tân ngữ vừa có bổ ngữ trạng thái, có thể <b>đưa tân ngữ lên trước</b> hoặc <b>lặp lại động từ</b>. Với động từ ly hợp, cần lặp lại thành tố động từ.</p><div class="example cn">你跑步跑得比我快。<br>白家月汉字写得比陈天中好。<br>他踢足球比我踢得好。</div></div>
+</div></section>
+
+<section id="dien"><div class="container"><span class="badge">04</span><h2>Điền từ tương tác</h2><div class="ex fillset"><div class="bank"><button class="chip">事情</button><button class="chip">正</button><button class="chip">从小</button><button class="chip">外面</button><button class="chip">好</button></div>
 <p class="fq" data-answer="好">1. 你看，前边的那个人 <input class="fill"> 高啊！ <span class="feedback"></span></p>
 <p class="fq" data-answer="正">2. 今天的天气没有昨天好，<input class="fill"> 下着雨呢。 <span class="feedback"></span></p>
 <p class="fq" data-answer="事情">3. 对不起，公司这几天 <input class="fill"> 很多，太忙了，所以忘了你的生日。 <span class="feedback"></span></p>
@@ -143,22 +149,16 @@ section h2,.section h2{font-size:32px !important;line-height:1.25 !important}
 <p class="fq" data-answer="外面">5. A：小雪在做什么呢？ B：快要考试了，她 <input class="fill"> 看书呢。 <span class="feedback"></span></p>
 <button class="btn primary" onclick="fillcheck(this)">Kiểm tra tất cả</button> <button class="btn gray" onclick="fillreset(this)">Làm lại</button></div></div></section>
 
-<section id="xep"><div class="container"><span class="badge">04</span><h2>Sắp xếp từ thành câu</h2>
+<section id="xep"><div class="container"><span class="badge">05</span><h2>Sắp xếp từ thành câu</h2>
 <div class="ex sort" data-answer="我这里比北京冷多了。"><div class="bank"><button class="chip">冷多了</button><button class="chip">我这里</button><button class="chip">比北京</button></div><div class="answer"></div><button class="btn primary" onclick="sortcheck(this)">Kiểm tra</button> <button class="btn gray" onclick="sortreset(this)">Làm lại</button><div class="feedback"></div></div>
 <div class="ex sort" data-answer="昨天比今天雪下得大。"><div class="bank"><button class="chip">雪下得大</button><button class="chip">昨天</button><button class="chip">比今天</button></div><div class="answer"></div><button class="btn primary" onclick="sortcheck(this)">Kiểm tra</button> <button class="btn gray" onclick="sortreset(this)">Làm lại</button><div class="feedback"></div></div>
 <div class="ex sort" data-answer="你跑步跑得比我快。"><div class="bank"><button class="chip">比我快</button><button class="chip">你</button><button class="chip">跑步跑得</button></div><div class="answer"></div><button class="btn primary" onclick="sortcheck(this)">Kiểm tra</button> <button class="btn gray" onclick="sortreset(this)">Làm lại</button><div class="feedback"></div></div>
 </div></section>
 
-<section id="sua"><div class="container"><span class="badge">05</span><h2>Chữa câu sai</h2>
+<section id="sua"><div class="container"><span class="badge">06</span><h2>Chữa câu sai</h2>
 <div class="ex textq" data-answer="我这里比北京冷多了。"><b class="cn">1. Sai: 我这里比北京多了冷。</b><input class="input"><button class="btn primary" onclick="textcheck(this)">Kiểm tra</button><div class="feedback"></div></div>
 <div class="ex textq" data-answer="妈妈比我睡得晚。"><b class="cn">2. Sai: 妈妈睡得比我晚得。</b><input class="input"><button class="btn primary" onclick="textcheck(this)">Kiểm tra</button><div class="feedback"></div></div>
 <div class="ex textq" data-answer="他踢足球踢得比我好。"><b class="cn">3. Sai: 他踢足球比我踢得好足球。</b><input class="input"><button class="btn primary" onclick="textcheck(this)">Kiểm tra</button><div class="feedback"></div></div>
-</div></section>
-
-<section id="np"><div class="container"><span class="badge">06</span><h2>Ngữ pháp trọng tâm</h2>
-<div class="grammar"><h3>1. 比较句（4）：A 比 B + Adj + 多了 / 得多</h3><p><span class="cn">多了</span> hoặc <span class="cn">得多</span> đứng sau tính từ để biểu thị <b>mức chênh lệch lớn</b>.</p><div class="example cn">我这里比北京冷多了。<br>坐飞机比坐火车快得多。<br>他觉得红茶比绿茶好喝得多。</div></div>
-<div class="grammar"><h3>2. 比较句（5）：Động từ + bổ ngữ trạng thái</h3><p>Khi động từ có bổ ngữ trạng thái, <span class="cn">比</span> có thể đặt trước hoặc sau động từ.</p><div class="example cn">昨天比今天下得大。<br>妈妈比我睡得晚。<br>李文跑得比白家月快。</div></div>
-<div class="grammar"><h3>3. 比较句（6）：Động từ có tân ngữ + bổ ngữ trạng thái</h3><p>Khi động từ vừa có tân ngữ vừa có bổ ngữ trạng thái, có thể <b>đưa tân ngữ lên trước</b> hoặc <b>lặp lại động từ</b>. Với động từ ly hợp, cần lặp lại thành tố động từ.</p><div class="example cn">你跑步跑得比我快。<br>白家月汉字写得比陈天中好。<br>他踢足球比我踢得好。</div></div>
 </div></section>
 
 <section id="dich"><div class="container"><span class="badge">07</span><h2>Dịch Việt → Trung</h2>
