@@ -10,8 +10,9 @@
       brand.className = 'tcm-lesson-home';
       document.body.prepend(brand);
     }
+    brand.href = new URL('../../index.html', logoUrl).href;
     brand.classList.add('tcm-brand');
-    brand.setAttribute('aria-label', 'Tiếng Trung Cô Mai');
+    brand.setAttribute('aria-label', 'Tiếng Trung Cô Mai — Về trang chủ');
     const image = document.createElement('img');
     image.className = 'tcm-unified-logo';
     image.src = logoUrl;
