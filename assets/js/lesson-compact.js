@@ -12,7 +12,8 @@
     const first = selectors => selectors.map(s=>document.querySelector(s)).find(Boolean);
     const vocab = first(['#vocabulary','#tu-vung','#tuvung','#tu','#vocab']);
     const grammar = first(['#grammar','#mau-cau','#ngu-phap','#nguphap','#np']);
-    for (const [name,href] of [['Luyện từ',vocab && '#'+(vocab.closest('section')?.id || vocab.id)],['Ngữ pháp',grammar && '#'+(grammar.closest('section')?.id || grammar.id)],['Luyện dịch',`hsk${level}-translation.html`]]) {
+    const lesson = Number(location.pathname.match(/lesson(\d+)/)[1]);
+    for (const [name,href] of [['Luyện từ',vocab && '#'+(vocab.closest('section')?.id || vocab.id)],['Ngữ pháp',grammar && '#'+(grammar.closest('section')?.id || grammar.id)],['Luyện dịch',`hsk${level}-translation.html?lesson=${lesson}`]]) {
       if(!href) continue;
       const a=document.createElement('a');a.href=href;a.textContent=name;nav.append(a);
     }

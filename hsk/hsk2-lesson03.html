@@ -313,6 +313,6 @@ function checkMCQ(btn){const q=btn.closest('.mcq'),c=q.querySelector('input:chec
 function gradeFinal(){const qs=[...document.querySelectorAll('.final-q')];let score=0;qs.forEach(q=>{let ok=false;if(q.dataset.kind==='mcq'){const c=q.querySelector('input:checked');ok=c&&c.value===q.dataset.answer}else ok=norm(q.querySelector('input').value)===norm(q.dataset.answer);const f=q.querySelector('.feedback');f.className='feedback '+(ok?'ok':'bad');f.textContent=ok?'✅ Đúng':'❌ Đáp án: '+q.dataset.answer;if(ok)score++});document.getElementById('scoreText').textContent=score+'/'+qs.length;document.getElementById('progressBar').style.width=(score/qs.length*100)+'%'}
 function resetFinal(){document.querySelectorAll('#finalQuiz input[type=radio]').forEach(i=>i.checked=false);document.querySelectorAll('#finalQuiz .text-input').forEach(i=>i.value='');document.querySelectorAll('#finalQuiz .feedback').forEach(f=>{f.textContent='';f.className='feedback'});document.getElementById('scoreText').textContent='Chưa chấm';document.getElementById('progressBar').style.width='0%'}
 </script>
-<script src="../assets/js/lesson-compact.js?v=1"></script>
+<script src="../assets/js/lesson-compact.js?v=2"></script>
 </body>
 </html>

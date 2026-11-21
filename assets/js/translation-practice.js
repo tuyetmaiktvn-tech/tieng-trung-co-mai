@@ -6,12 +6,24 @@
   const answer = $('translation-answer');
   const topic = $('translation-topic');
   const direction = $('translation-direction');
+  const itemSelect = $('translation-item');
+  if (!lessons.length) {
+    $('practice-heading').textContent = 'Chưa có bài học để liên kết';
+    document.querySelector('.translation-filters').hidden = true;
+    $('translation-source').textContent = 'Phần luyện dịch sẽ được bổ sung theo từng bài khi học phần này có nội dung. Không sử dụng chủ đề rời rạc thay cho bài học.';
+    answer.hidden = true;
+    document.querySelector('label[for="translation-answer"]').hidden = true;
+    document.querySelector('.translation-actions').hidden = true;
+    return;
+  }
   let active = '0:vi-zh';
   let memory = {};
-  const storageKey = `tcm-translation-v1-hsk${level}`;
+  const storageKey = `tcm-translation-lessons-v2-hsk${level}`;
   try { const parsed = JSON.parse(localStorage.getItem(storageKey) || '{}'); if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) memory = parsed; } catch (_) {}
   const normalize = s => s.normalize('NFC').toLowerCase().replace(/[\p{P}\p{Z}\s]/gu, '');
-  const reference = () => lessons[Number(topic.value)][direction.value === 'vi-zh' ? 1 : 2];
+  const currentLesson = () => lessons.find(l => String(l.id) === topic.value);
+  const currentItem = () => currentLesson().items.find(i => i.id === itemSelect.value);
+  const reference = () => currentItem()[direction.value === 'vi-zh' ? 'zh' : 'vi'];
   function store(showMessage = true) {
     memory[active] = answer.value;
     try {
@@ -26,17 +38,28 @@
     document.querySelectorAll('.translation-rubric select').forEach(s => s.value = '');
   }
   function render() {
-    active = `${topic.value}:${direction.value}`;
-    const row = lessons[Number(topic.value)];
-    $('translation-source').textContent = row[direction.value === 'vi-zh' ? 2 : 1];
+    active = `${topic.value}:${itemSelect.value}:${direction.value}`;
+    const row = currentItem();
+    $('translation-source').textContent = row[direction.value === 'vi-zh' ? 'vi' : 'zh'];
     $('translation-source').lang = direction.value === 'vi-zh' ? 'vi' : 'zh-CN';
     answer.lang = direction.value === 'vi-zh' ? 'zh-CN' : 'vi';
     answer.value = typeof memory[active] === 'string' ? memory[active] : '';
     $('translation-status').textContent = answer.value ? 'Đã khôi phục bản nháp của bài này.' : 'Bản nháp được lưu riêng theo bài và chiều dịch trên trình duyệt này.';
     clearResult();
   }
-  lessons.forEach((row, index) => { const option = document.createElement('option'); option.value = index; option.textContent = `Bài ${index + 1} · ${row[0]}`; topic.append(option); });
-  [topic, direction].forEach(select => select.addEventListener('change', () => { store(false); render(); }));
+  lessons.forEach(row => { const option = document.createElement('option'); option.value = row.id; option.textContent = `Bài ${row.id} · ${row.title}`; topic.append(option); });
+  const requested = new URLSearchParams(location.search).get('lesson');
+  topic.value = String(lessons.find(l => String(l.id) === String(Number(requested)))?.id || lessons[0].id);
+  function populateItems() {
+    itemSelect.replaceChildren();
+    currentLesson().items.forEach((item,index) => { const option=document.createElement('option'); option.value=item.id; option.textContent=`${index+1}. ${item.kind}`; itemSelect.append(option); });
+    itemSelect.value=currentLesson().items[0].id;
+    $('translation-lesson-link').href=currentLesson().source;
+    $('translation-lesson-link').textContent=`Xem lại Bài ${currentLesson().id} · ${currentLesson().title}`;
+    $('translation-count').textContent=`${currentLesson().items.length} mục luyện lấy từ bài học này · Mỗi mục có hai chiều dịch`;
+  }
+  topic.addEventListener('change', () => { store(false); populateItems(); render(); });
+  [itemSelect, direction].forEach(select => select.addEventListener('change', () => { store(false); render(); }));
   answer.addEventListener('input', () => { clearResult(); $('translation-status').textContent = 'Có thay đổi chưa lưu. Bấm Lưu bản nháp để lưu bài.'; });
   $('translation-save').addEventListener('click', () => store());
   $('translation-reset').addEventListener('click', () => {
@@ -50,7 +73,7 @@
     const exact = normalize(answer.value) === normalize(reference());
     $('translation-reference').textContent = reference();
     $('translation-reference').lang = direction.value === 'vi-zh' ? 'zh-CN' : 'vi';
-    $('translation-hint').textContent = lessons[Number(topic.value)][3];
+    $('translation-hint').textContent = currentItem().hint;
     $('translation-score').textContent = exact ? '10/10 · Khớp bản dịch tham khảo' : 'Chưa có điểm tự động cho cách dịch này';
     $('translation-feedback').textContent = exact ? 'Bản dịch khớp mẫu sau khi bỏ qua dấu câu, khoảng trắng và chữ hoa/thường.' : 'Khác bản dịch mẫu không có nghĩa là sai. Đối chiếu ý nghĩa, ngữ pháp và cách diễn đạt, rồi chọn mức tự đánh giá bên dưới.';
     $('translation-rubric').hidden = exact;
@@ -63,5 +86,6 @@
   window.addEventListener('beforeunload', event => {
     if (answer.value !== (memory[active] || '')) { event.preventDefault(); event.returnValue = ''; }
   });
+  populateItems();
   render();
 })();
