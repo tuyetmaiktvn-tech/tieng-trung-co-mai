@@ -31,6 +31,17 @@
 .learning-paths .roadmap-item h3{font-size:19px;line-height:1.5;margin:0}
 .learning-paths .roadmap-item p{font-size:16px;line-height:1.7;margin-top:5px}
 .learning-paths .roadmap-icon{width:44px;height:44px}
+/* Bold, readable Han characters with a Kai-style face where available. */
+.roadmap-icon,.field-marker{
+  font-family:"Kaiti SC","STKaiti","KaiTi","DFKai-SB","Noto Serif CJK SC","Songti SC","SimSun",serif;
+  font-weight:900;
+  font-size:30px;
+  line-height:1;
+  letter-spacing:0;
+  -webkit-text-stroke:.35px currentColor;
+  text-shadow:.25px .25px 0 currentColor;
+}
+.field-marker{font-size:32px}
 .learning-paths .roadmap-item .arrow{align-self:center}
 .learning-paths .roadmap-item:hover{border-color:var(--blue)}
 .learning-paths .path-heading{padding:22px 24px 18px}
