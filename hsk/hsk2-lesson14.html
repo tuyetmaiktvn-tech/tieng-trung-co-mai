@@ -103,7 +103,7 @@ section h2,.section h2{font-size:32px !important;line-height:1.25 !important}
 
 <script defer src="../assets/js/focus-section.js?v=2"></script><link rel="icon" href="../assets/images/mai-logo-circle.png?v=6" type="image/png">
 <link rel="stylesheet" href="../assets/css/brand.css?v=1">
-<link rel="stylesheet" href="../assets/css/lesson-compact.css?v=1">
+<link rel="stylesheet" href="../assets/css/lesson-compact.css?v=4">
 </head><body>
 <header class="hero"><div class="container"><span class="kicker">NEW HSK 2 · BÀI 14</span><h1 class="cn">一个人过年多没意思啊</h1><p class="pinyin">Yí ge rén guònián duō méi yìsi a</p><p class="vi">Ăn Tết một mình thì buồn biết bao!</p></div></header>
 <nav class="nav"><a href="#tu">Từ vựng</a><a href="#nhan">Nhận từ</a><a href="#np">Ngữ pháp</a><a href="#dien">Điền từ</a><a href="#xep">Sắp xếp</a><a href="#sua">Chữa câu</a><a href="#dich">Dịch</a><a href="#noi">Nói</a><a href="#test">Kiểm tra</a></nav>
@@ -200,5 +200,5 @@ function sortreset(b){let q=b.closest('.sort'),bank=q.querySelector('.bank');[..
 function textcheck(b){let q=b.closest('.textq');fb(q.querySelector('.feedback'),n(q.querySelector('input').value)===n(q.dataset.answer),q.dataset.answer)}
 function grade(){let qs=[...document.querySelectorAll('.fq2')],s=0;qs.forEach(q=>{let ok;if(q.dataset.kind==='mcq'){let c=q.querySelector('input:checked');ok=c&&c.value===q.dataset.answer}else ok=n(q.querySelector('.input').value)===n(q.dataset.answer);if(ok)s++;fb(q.querySelector('.feedback'),ok,q.dataset.answer)});document.getElementById('score').textContent=s+'/'+qs.length;document.getElementById('bar').style.width=(s/qs.length*100)+'%'}
 function resetQuiz(){document.querySelectorAll('#quiz input[type=radio]').forEach(i=>i.checked=false);document.querySelectorAll('#quiz .input').forEach(i=>i.value='');document.querySelectorAll('#quiz .feedback').forEach(f=>{f.textContent='';f.className='feedback'});document.getElementById('score').textContent='Chưa chấm';document.getElementById('bar').style.width='0%'}
-</script><script src="../assets/js/lesson-compact.js?v=2"></script>
+</script><script src="../assets/js/lesson-compact.js?v=4"></script>
 </body></html>

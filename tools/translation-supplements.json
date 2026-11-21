@@ -1,0 +1,150 @@
+{
+  "2": {
+    "1": [
+      ["我们是昨天到北京的。", "Chúng tôi đến Bắc Kinh hôm qua."],
+      ["朋友来车站接我们。", "Bạn đến nhà ga đón chúng tôi."],
+      ["她请我们吃了北京烤鸭。", "Cô ấy đã mời chúng tôi ăn vịt quay Bắc Kinh."],
+      ["老师让我们介绍自己。", "Cô giáo bảo chúng tôi giới thiệu bản thân."],
+      ["我有时不懂老师的意思。", "Đôi khi tôi không hiểu ý của cô giáo."],
+      ["我想请同学帮个忙。", "Tôi muốn nhờ bạn cùng lớp giúp một việc."]
+    ],
+    "2": [
+      ["北京大学离这儿很远。", "Đại học Bắc Kinh cách đây rất xa."],
+      ["我们还是打车去吧。", "Hay là chúng ta đi taxi thì hơn."],
+      ["别在车站等我。", "Đừng đợi tôi ở nhà ga."],
+      ["这间教室里有二十多名学生。", "Trong phòng học này có hơn hai mươi học sinh."],
+      ["他们都是学中文的学生。", "Họ đều là học sinh học tiếng Trung."],
+      ["老师给他们买的书很有意思。", "Những cuốn sách cô giáo mua cho họ rất thú vị."]
+    ],
+    "3": [
+      ["我已经吃完饭了。", "Tôi đã ăn cơm xong rồi."],
+      ["我想出去走走。", "Tôi muốn ra ngoài đi dạo một chút."],
+      ["你跟我一起去吧。", "Bạn đi cùng tôi nhé."],
+      ["他昨天从西安回来了。", "Hôm qua anh ấy đã từ Tây An trở về."],
+      ["他看了看手机上的照片。", "Anh ấy xem qua những bức ảnh trên điện thoại."],
+      ["他觉得这次旅游很不错。", "Anh ấy thấy chuyến du lịch lần này rất tốt."]
+    ],
+    "4": [
+      ["我没去过这个商场。", "Tôi chưa từng đến trung tâm thương mại này."],
+      ["我想买一条裤子。", "Tôi muốn mua một chiếc quần."],
+      ["因为我喜欢黑色，所以想试试黑色的。", "Vì tôi thích màu đen nên muốn thử chiếc màu đen."],
+      ["这件红色的衣服很好看。", "Chiếc áo màu đỏ này rất đẹp."],
+      ["但是那件白色的更便宜。", "Nhưng chiếc màu trắng kia rẻ hơn."],
+      ["我还是买白色的吧。", "Hay là tôi mua chiếc màu trắng thì hơn."]
+    ],
+    "5": [
+      ["今天我第一次去中国朋友家。", "Hôm nay tôi lần đầu đến nhà một người bạn Trung Quốc."],
+      ["我给他准备了一份礼物。", "Tôi đã chuẩn bị một món quà cho anh ấy."],
+      ["他的奶奶让我进来坐一会儿。", "Bà nội của anh ấy mời tôi vào ngồi một lát."],
+      ["都八点了，我们走吧。", "Đã tám giờ rồi, chúng ta đi thôi."],
+      ["我在下面等你。", "Tôi đợi bạn ở phía dưới."],
+      ["你下来以后，我们一起回酒店。", "Sau khi bạn xuống, chúng ta cùng về khách sạn."]
+    ],
+    "6": [
+      ["今天是妹妹的生日。", "Hôm nay là sinh nhật em gái tôi."],
+      ["我给她买了一个大大的蛋糕。", "Tôi mua cho em ấy một chiếc bánh sinh nhật thật to."],
+      ["她高高兴兴地打开了礼物。", "Em ấy vui vẻ mở món quà."],
+      ["桌子上有鱼、肉和水果什么的。", "Trên bàn có cá, thịt, hoa quả và những thứ khác."],
+      ["我们一起给妹妹过生日。", "Chúng tôi cùng tổ chức sinh nhật cho em gái."],
+      ["大家都玩得很高兴。", "Mọi người đều chơi rất vui."]
+    ],
+    "7": [
+      ["他一下课就去打篮球。", "Anh ấy vừa tan học là đi chơi bóng rổ."],
+      ["他篮球打得很好。", "Anh ấy chơi bóng rổ rất giỏi."],
+      ["同学们都喜欢跟他一起运动。", "Các bạn cùng lớp đều thích chơi thể thao cùng anh ấy."],
+      ["我的爱好是游泳。", "Sở thích của tôi là bơi lội."],
+      ["我游泳游得不快。", "Tôi bơi không nhanh."],
+      ["但是我每次都游得很高兴。", "Nhưng lần nào tôi cũng bơi rất vui."]
+    ],
+    "8": [
+      ["我觉得左边的手表比右边的好看。", "Tôi thấy chiếc đồng hồ bên trái đẹp hơn chiếc bên phải."],
+      ["虽然它有点儿贵，但是我很喜欢。", "Mặc dù nó hơi đắt nhưng tôi rất thích."],
+      ["我想买给我的妻子。", "Tôi muốn mua tặng vợ tôi."],
+      ["今天我们去饭馆吃饭。", "Hôm nay chúng tôi đến nhà hàng ăn cơm."],
+      ["这家饭馆比那家更便宜。", "Nhà hàng này còn rẻ hơn nhà hàng kia."],
+      ["虽然没有花很多钱，但是我们吃得很高兴。", "Mặc dù không tiêu nhiều tiền nhưng chúng tôi ăn rất vui."]
+    ],
+    "9": [
+      ["咖啡店离学校很近。", "Quán cà phê cách trường rất gần."],
+      ["走路十分钟就到了。", "Đi bộ mười phút là tới."],
+      ["我在门口等了朋友半个小时。", "Tôi đã đợi bạn ở cửa nửa tiếng."],
+      ["旁边那个男孩儿是我弟弟。", "Cậu bé bên cạnh kia là em trai tôi."],
+      ["他没有我那么高。", "Em ấy không cao bằng tôi."],
+      ["我们一起去买奶茶。", "Chúng tôi cùng đi mua trà sữa."]
+    ],
+    "10": [
+      ["我们下星期就要考试了。", "Tuần sau chúng tôi sắp thi rồi."],
+      ["这些词你都记得吗？", "Những từ này bạn đều nhớ chứ?"],
+      ["我们一起看看做错的题吧。", "Chúng ta cùng xem những câu làm sai nhé."],
+      ["我的本子你看见了吗？", "Quyển vở của tôi bạn có nhìn thấy không?"],
+      ["是在书包里还是在桌子上？", "Nó ở trong cặp hay ở trên bàn?"],
+      ["快要上课了，请你帮我找找。", "Sắp vào học rồi, bạn giúp tôi tìm một chút nhé."]
+    ],
+    "11": [
+      ["今天外面下着雪。", "Hôm nay bên ngoài đang có tuyết rơi."],
+      ["我头疼，不想出去。", "Tôi đau đầu, không muốn ra ngoài."],
+      ["妈妈去药店给我买药。", "Mẹ đến hiệu thuốc mua thuốc cho tôi."],
+      ["饭馆的门开着。", "Cửa nhà hàng đang mở."],
+      ["里面坐着几个学生。", "Bên trong có mấy học sinh đang ngồi."],
+      ["他们最喜欢吃中国菜。", "Họ thích ăn món Trung Quốc nhất."]
+    ],
+    "12": [
+      ["这里比北京冷多了。", "Ở đây lạnh hơn Bắc Kinh nhiều."],
+      ["今天的雪下得比昨天大。", "Hôm nay tuyết rơi nhiều hơn hôm qua."],
+      ["我们还是在家休息吧。", "Hay là chúng ta nghỉ ở nhà thì hơn."],
+      ["哥哥跑步跑得比我快。", "Anh trai tôi chạy bộ nhanh hơn tôi."],
+      ["他每天起得比我早。", "Ngày nào anh ấy cũng dậy sớm hơn tôi."],
+      ["我想跟他一起去运动。", "Tôi muốn đi tập thể thao cùng anh ấy."]
+    ],
+    "13": [
+      ["老师拿给我一本中文书。", "Cô giáo đưa cho tôi một cuốn sách tiếng Trung."],
+      ["这本书比那本贵五块钱。", "Cuốn sách này đắt hơn cuốn kia năm tệ."],
+      ["但是里面的故事更有意思。", "Nhưng những câu chuyện bên trong thú vị hơn."],
+      ["今天的词比昨天多十个。", "Từ mới hôm nay nhiều hơn hôm qua mười từ."],
+      ["这间教室比那间大一点儿。", "Phòng học này rộng hơn phòng kia một chút."],
+      ["我们都爱上中文课。", "Chúng tôi đều thích học giờ tiếng Trung."]
+    ],
+    "14": [
+      ["我家楼下站着一个朋友。", "Dưới nhà tôi có một người bạn đang đứng."],
+      ["他手里拿着一些礼物。", "Trong tay anh ấy đang cầm một ít quà."],
+      ["我请他上来一起吃饭。", "Tôi mời anh ấy lên cùng ăn cơm."],
+      ["一个人过年多没意思啊！", "Đón Tết một mình thật buồn biết bao!"],
+      ["我们一起去朋友家吧。", "Chúng ta cùng đến nhà bạn nhé."],
+      ["吃完饭以后，我们可以出去走走。", "Sau khi ăn cơm xong, chúng ta có thể ra ngoài đi dạo."]
+    ],
+    "15": [
+      ["我去过两次中国。", "Tôi đã đến Trung Quốc hai lần."],
+      ["我想再吃一次北京烤鸭。", "Tôi muốn ăn vịt quay Bắc Kinh thêm một lần nữa."],
+      ["明年我还想去北京旅游。", "Năm sau tôi vẫn muốn đi du lịch Bắc Kinh."],
+      ["我给朋友打了两次电话。", "Tôi đã gọi điện cho bạn hai lần."],
+      ["他问我机票有没有八千块钱。", "Anh ấy hỏi tôi vé máy bay có đến tám nghìn tệ không."],
+      ["我说现在的机票没有那么贵。", "Tôi nói vé máy bay hiện nay không đắt đến thế."]
+    ]
+  },
+  "3": {
+    "1": [
+      ["我以为照片里的人是你的弟弟。", "Tôi tưởng người trong ảnh là em trai bạn."],
+      ["他看上去跟你有点儿像。", "Trông anh ấy hơi giống bạn."],
+      ["那个短头发的年轻人其实是我的朋友。", "Người trẻ tuổi tóc ngắn kia thực ra là bạn tôi."],
+      ["我的黑色行李箱不见了。", "Chiếc va-li màu đen của tôi không thấy đâu nữa."],
+      ["上面写着我的名字和电话号码。", "Trên đó có ghi tên và số điện thoại của tôi."],
+      ["我们拿着护照去服务台问问吧。", "Chúng ta mang hộ chiếu đến quầy dịch vụ hỏi thử nhé."]
+    ],
+    "2": [
+      ["这家饭馆的菜又便宜又好吃。", "Món ăn của nhà hàng này vừa rẻ vừa ngon."],
+      ["你想吃什么就点什么。", "Bạn muốn ăn gì thì gọi món đó."],
+      ["服务员马上给我们拿来了菜单。", "Nhân viên phục vụ lập tức mang thực đơn đến cho chúng tôi."],
+      ["今天我又忙又累，没有时间做饭。", "Hôm nay tôi vừa bận vừa mệt, không có thời gian nấu cơm."],
+      ["我在手机上选好了想吃的菜。", "Tôi đã chọn xong những món muốn ăn trên điện thoại."],
+      ["饭馆可以把饭菜送来，真方便。", "Nhà hàng có thể giao đồ ăn đến, thật tiện lợi."]
+    ],
+    "3": [
+      ["这个小区离地铁站挺近的。", "Khu dân cư này khá gần ga tàu điện ngầm."],
+      ["走路几分钟就能到。", "Đi bộ vài phút là có thể tới."],
+      ["我挺喜欢这里的环境的。", "Tôi khá thích môi trường ở đây."],
+      ["这几天准备搬家，我们忙坏了。", "Mấy hôm nay chuẩn bị chuyển nhà, chúng tôi bận tối mắt."],
+      ["新家的卫生间还没打扫好。", "Nhà vệ sinh của nhà mới vẫn chưa dọn xong."],
+      ["我们下个星期才能搬过去。", "Tuần sau chúng tôi mới có thể chuyển sang đó."]
+    ]
+  }
+}

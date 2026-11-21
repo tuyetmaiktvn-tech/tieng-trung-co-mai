@@ -89,6 +89,27 @@ window.translationLessons = {
           "vi": "Tạm biệt cô giáo!",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "e9e63b031888",
+          "zh": "AI小语，你好！",
+          "vi": "Xin chào AI Tiểu Ngữ!",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "249c9de6a2e9",
+          "zh": "王老师，你好！",
+          "vi": "Chào cô Vương!",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "32e30e443547",
+          "zh": "AI小语，你好！\n王老师，你好！\n大家好！\n老师，您好！\n你们好！\n你好，小语！\n谢谢！\n不客气！\n同学们，再见！\n老师，再见！",
+          "vi": "Xin chào AI Tiểu Ngữ!\nChào cô Vương!\nChào cả lớp!\nChào cô ạ!\nChào các bạn!\nChào Tiểu Ngữ!\nCảm ơn!\nKhông có gì!\nCác em, tạm biệt!\nTạm biệt cô ạ!",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     },
@@ -243,6 +264,27 @@ window.translationLessons = {
           "vi": "Không có gì.",
           "kind": "Hội thoại",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "1cfeec6cf017",
+          "zh": "你好！请问，你叫什么名字？\n我叫李文。你呢？\n我叫玛丽。\n很高兴认识你。",
+          "vi": "Xin chào! Xin hỏi, bạn tên là gì?\nTôi tên là Lý Văn. Còn bạn?\nTôi tên là Mary.\nRất vui được làm quen với bạn.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời trong hội thoại: Tình huống 1: Làm quen"
+        },
+        {
+          "id": "fbd56ed098f9",
+          "zh": "她是谁？\n她是我的同学，她叫王月。\n你好，王月！\n你好！",
+          "vi": "Cô ấy là ai?\nCô ấy là bạn học của tôi, cô ấy tên là Vương Nguyệt.\nXin chào, Vương Nguyệt!\nXin chào!",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời trong hội thoại: Tình huống 2: Giới thiệu bạn học"
+        },
+        {
+          "id": "63ac2dafa236",
+          "zh": "对不起，我来晚了。\n没关系。\n谢谢！\n不客气。",
+          "vi": "Xin lỗi, tôi đến muộn.\nKhông sao.\nCảm ơn!\nKhông có gì.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời trong hội thoại: Tình huống 3: Xin lỗi"
         }
       ]
     },
@@ -362,6 +404,76 @@ window.translationLessons = {
           "vi": "Bạn cũng là học sinh phải không?",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "5d3860b0baf3",
+          "zh": "我是法国人。我的中文老师也是中国人。",
+          "vi": "Mình là người Pháp. Giáo viên tiếng Trung của mình cũng là người Trung Quốc.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "9c8399fac976",
+          "zh": "我是中国人。\n我是法国人。我的中文老师也是中国人。",
+          "vi": "Mình là người Trung Quốc.\nMình là người Pháp. Giáo viên tiếng Trung của mình cũng là người Trung Quốc.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời: Bài khóa 1: Giới thiệu quốc tịch"
+        },
+        {
+          "id": "fa74d4de77ad",
+          "zh": "你女朋友是哪国人？",
+          "vi": "Bạn gái của bạn là người nước nào?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "96a2ec20f139",
+          "zh": "这是谁？\n这是我女朋友。\n你女朋友是哪国人？\n她也是泰国人。",
+          "vi": "Đây là ai vậy?\nĐây là bạn gái mình.\nBạn gái của bạn là người nước nào?\nCô ấy cũng là người Thái Lan.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời: Bài khóa 2: Hỏi về một người"
+        },
+        {
+          "id": "481a2f82a280",
+          "zh": "姐姐！",
+          "vi": "Vâng, chị!",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "ec62281ed878",
+          "zh": "你工作还忙吗？",
+          "vi": "Công việc của em vẫn bận lắm à?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "05930092fcd1",
+          "zh": "对，还很忙。你也很忙吗？",
+          "vi": "Vâng, vẫn rất bận. Chị cũng bận lắm phải không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "706f661f2136",
+          "zh": "我不太忙。我们很想你。",
+          "vi": "Chị không bận lắm. Mọi người rất nhớ em.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "2db03f7abef2",
+          "zh": "我也想你们。",
+          "vi": "Em cũng nhớ mọi người.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "bbf03833676c",
+          "zh": "喂，一飞！\n姐姐！\n你工作还忙吗？\n对，还很忙。你也很忙吗？\n我不太忙。我们很想你。\n我也想你们。",
+          "vi": "A lô, Nhất Phi!\nVâng, chị!\nCông việc của em vẫn bận lắm à?\nVâng, vẫn rất bận. Chị cũng bận lắm phải không?\nChị không bận lắm. Mọi người rất nhớ em.\nEm cũng nhớ mọi người.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời: Bài khóa 3: Gọi điện hỏi thăm"
         }
       ]
     },
@@ -495,6 +607,69 @@ window.translationLessons = {
           "vi": "Năm nay bạn bao nhiêu tuổi?",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "ca3d703ae485",
+          "zh": "一飞忙吗？",
+          "vi": "Nhất Phi có bận không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "bad31a8e22c0",
+          "zh": "她很忙。",
+          "vi": "Cô ấy rất bận.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "4982cb397f5a",
+          "zh": "一飞忙吗？\n她很忙。\n她有多少个学生？\n她有二十个学生。",
+          "vi": "Nhất Phi có bận không?\nCô ấy rất bận.\nCô ấy có bao nhiêu học sinh?\nCô ấy có hai mươi học sinh.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời: Bài khóa 1: Hỏi về số học sinh"
+        },
+        {
+          "id": "5ab024ab5c71",
+          "zh": "我家有四口人，爸爸、妈妈、妹妹和我。",
+          "vi": "Nhà em có bốn người: bố, mẹ, em gái và em.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "0b67ce50b2e6",
+          "zh": "我有两个哥哥，你呢？\n我没有哥哥。\n你家有几口人？\n我家有四口人，爸爸、妈妈、妹妹和我。",
+          "vi": "Chị có hai anh trai, còn em thì sao?\nEm không có anh trai.\nNhà em có mấy người?\nNhà em có bốn người: bố, mẹ, em gái và em.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời: Bài khóa 2: Giới thiệu gia đình"
+        },
+        {
+          "id": "79aff744fe06",
+          "zh": "这是您儿子吗？",
+          "vi": "Đây là con trai chị phải không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "4f5459d01c1b",
+          "zh": "是的。我有两个孩子，一个儿子，一个女儿。",
+          "vi": "Đúng vậy. Chị có hai con, một con trai và một con gái.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "92e689c85245",
+          "zh": "您儿子几岁？",
+          "vi": "Con trai chị mấy tuổi?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "e8701d2130cb",
+          "zh": "这是您儿子吗？\n是的。我有两个孩子，一个儿子，一个女儿。\n您儿子几岁？\n他今年五岁。\n您女儿多大？\n她今年十二岁。",
+          "vi": "Đây là con trai chị phải không?\nĐúng vậy. Chị có hai con, một con trai và một con gái.\nCon trai chị mấy tuổi?\nNăm nay cháu năm tuổi.\nCon gái chị bao nhiêu tuổi?\nNăm nay cháu mười hai tuổi.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời: Bài khóa 3: Hỏi tuổi các con"
         }
       ]
     },
@@ -649,6 +824,69 @@ window.translationLessons = {
           "vi": "Tôi cũng rất thích nó.",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "bdef235589dc",
+          "zh": "今天几号？",
+          "vi": "Hôm nay ngày mấy anh nhỉ?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "a220b1b1d3c8",
+          "zh": "星期几？",
+          "vi": "Thứ mấy vậy?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "6e29bf506d81",
+          "zh": "星期日。今天我休息。",
+          "vi": "Chủ nhật. Hôm nay anh được nghỉ.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "72b18436d6c5",
+          "zh": "我会做。",
+          "vi": "Em biết.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "ad83c2054d02",
+          "zh": "你会做什么？",
+          "vi": "Em biết nấu món gì?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "9372cdcf5381",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "vi": "Em biết làm mì, sủi cảo và cũng biết nấu một số món ăn. Chủ nhật em cũng nấu ăn.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "53a2ea6d0874",
+          "zh": "下班。",
+          "vi": "Em tan làm rồi.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "fb9b98581e5a",
+          "zh": "是的，是我的新电脑。",
+          "vi": "Đúng vậy, đây là máy tính mới của em.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "33b0dd39727b",
+          "zh": "今天几号？\n今天九月八号。\n星期几？\n星期日。今天我休息。\n你会做饭吗？\n我会做。\n你会做什么？\n我会做面条儿、饺子，也会做一些菜。星期天我也做饭。\n同乐，下班吗？\n下班。\n这是你的新电脑吗？\n是的，是我的新电脑。\n真好看！\n我也很喜欢它。",
+          "vi": "Hôm nay ngày mấy anh nhỉ?\nHôm nay là ngày 8 tháng 9.\nThứ mấy vậy?\nChủ nhật. Hôm nay anh được nghỉ.\nEm có biết nấu ăn không?\nEm biết.\nEm biết nấu món gì?\nEm biết làm mì, sủi cảo và cũng biết nấu một số món ăn. Chủ nhật em cũng nấu ăn.\nĐồng Lạc, em tan làm chưa?\nEm tan làm rồi.\nĐây là máy tính mới của em à?\nĐúng vậy, đây là máy tính mới của em.\nĐẹp thật đấy!\nEm cũng rất thích nó.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     },
@@ -810,6 +1048,90 @@ window.translationLessons = {
           "vi": "Chúng ta đi bằng taxi.",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "411014e85925",
+          "zh": "家月，你的手机号是多少？",
+          "vi": "Gia Nguyệt, số điện thoại di động của bạn là bao nhiêu?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "91ed6842d10c",
+          "zh": "我的手机号是加三三六零一四九三一九零。",
+          "vi": "Số điện thoại di động của mình là +33 601493190.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "c9162f751396",
+          "zh": "我的手机号是加八六一三五五二七二一一六零。",
+          "vi": "Số điện thoại của mình là +86 13552721160.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "8893db557c00",
+          "zh": "好的。",
+          "vi": "Được rồi.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "cd1d395b718e",
+          "zh": "家月，明天你去哪儿？",
+          "vi": "Gia Nguyệt, ngày mai bạn đi đâu?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "f44dee7068a4",
+          "zh": "你去超市买什么？",
+          "vi": "Bạn đi siêu thị mua gì?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "d32c0e94e2d9",
+          "zh": "星期天我们去哪儿吃晚饭？",
+          "vi": "Chủ nhật này nhà mình đi đâu ăn tối nhỉ?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "2cc0641cb188",
+          "zh": "我还想去西安饭店。",
+          "vi": "Bố vẫn muốn đến nhà hàng Tây An.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "affb5804204b",
+          "zh": "那边的包子非常好吃，我想吃包子。",
+          "vi": "Bánh bao ở đó rất ngon, con muốn ăn bánh bao.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "247b4e01c2bf",
+          "zh": "妈妈，我想吃米饭，不想吃包子。",
+          "vi": "Mẹ ơi, con muốn ăn cơm, không muốn ăn bánh bao.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "974130032770",
+          "zh": "好的。我们怎么去？",
+          "vi": "Được thôi. Chúng ta đi bằng cách nào?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "00595022e001",
+          "zh": "家月，你的手机号是多少？\n我的手机号是加三三六零一四九三一九零。\n我的手机号是加八六一三五五二七二一一六零。\n好的。\n家月，明天你去哪儿？\n我想去超市买东西。\n你去超市买什么？\n我想买些牛奶。\n星期天我们去哪儿吃晚饭？\n我还想去西安饭店。\n那边的包子非常好吃，我想吃包子。\n妈妈，我想吃米饭，不想吃包子。\n好的。我们怎么去？\n坐出租车去。",
+          "vi": "Gia Nguyệt, số điện thoại di động của bạn là bao nhiêu?\nSố điện thoại di động của mình là +33 601493190.\nSố điện thoại của mình là +86 13552721160.\nĐược rồi.\nGia Nguyệt, ngày mai bạn đi đâu?\nMình muốn đi siêu thị mua đồ.\nBạn đi siêu thị mua gì?\nMình muốn mua một ít sữa.\nChủ nhật này nhà mình đi đâu ăn tối nhỉ?\nBố vẫn muốn đến nhà hàng Tây An.\nBánh bao ở đó rất ngon, con muốn ăn bánh bao.\nMẹ ơi, con muốn ăn cơm, không muốn ăn bánh bao.\nĐược thôi. Chúng ta đi bằng cách nào?\nĐi bằng taxi.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     },
@@ -1006,6 +1328,83 @@ window.translationLessons = {
           "vi": "Mười phút nữa gặp nhé.",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "2e60c4988f1e",
+          "zh": "我上午十点十分有课。",
+          "vi": "Mình có tiết học lúc 10 giờ 10 phút sáng.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "8742a982f785",
+          "zh": "好的，我们下午两点见吧。",
+          "vi": "Được, vậy chúng ta gặp nhau lúc 2 giờ chiều nhé.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "ca8014c66316",
+          "zh": "下午我想去电影院看电影，你去吗？",
+          "vi": "Chiều nay mình muốn đi rạp xem phim, bạn có đi không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "cf3775bc7464",
+          "zh": "我不想去，下午还有事。",
+          "vi": "Mình không muốn đi, chiều nay mình còn có việc.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "359a03b245cf",
+          "zh": "好的。明天呢？",
+          "vi": "Được. Thế ngày mai thì sao?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "9c4dce217509",
+          "zh": "我明天下午两点还上课呢，四点半下课。",
+          "vi": "Ngày mai lúc 2 giờ chiều mình vẫn còn phải lên lớp, 4 giờ rưỡi tan học.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "6e6c3889cbdd",
+          "zh": "喂，你在哪儿呢？",
+          "vi": "A lô, anh đang ở đâu thế?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "717f5f0b3fa6",
+          "zh": "我八点去医院上班。",
+          "vi": "8 giờ anh đến bệnh viện làm việc.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "c2e96ae522ec",
+          "zh": "好的，你去店里买些菜吧。",
+          "vi": "Vâng, anh ra cửa hàng mua ít thức ăn nhé.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "a26418014cfc",
+          "zh": "好，我十分钟后去。",
+          "vi": "Được, mười phút nữa anh đi.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "d296de63620e",
+          "zh": "现在几点？\n早上八点四十。\n我上午十点十分有课。\n好的，我们下午两点见吧。\n下午我想去电影院看电影，你去吗？\n我不想去，下午还有事。\n好的。明天呢？\n我明天下午两点还上课呢，四点半下课。\n喂，你在哪儿呢？\n我在家里呢。\n我晚上六点半下班。\n我八点去医院上班。\n好的，你去店里买些菜吧。\n好，我十分钟后去。",
+          "vi": "Bây giờ là mấy giờ rồi?\n8 giờ 40 phút sáng.\nMình có tiết học lúc 10 giờ 10 phút sáng.\nĐược, vậy chúng ta gặp nhau lúc 2 giờ chiều nhé.\nChiều nay mình muốn đi rạp xem phim, bạn có đi không?\nMình không muốn đi, chiều nay mình còn có việc.\nĐược. Thế ngày mai thì sao?\nNgày mai lúc 2 giờ chiều mình vẫn còn phải lên lớp, 4 giờ rưỡi tan học.\nA lô, anh đang ở đâu thế?\nAnh đang ở nhà.\nEm tan làm lúc 6 giờ rưỡi tối.\n8 giờ anh đến bệnh viện làm việc.\nVâng, anh ra cửa hàng mua ít thức ăn nhé.\nĐược, mười phút nữa anh đi.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     },
@@ -1160,6 +1559,97 @@ window.translationLessons = {
           "vi": "Bố tôi cũng làm việc ở bệnh viện.",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "db2fa7d73ff1",
+          "zh": "我没看见，它在哪儿呢？",
+          "vi": "Mình không nhìn thấy, nó ở đâu thế?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "899da550a435",
+          "zh": "它在桌子下呢。",
+          "vi": "Nó ở dưới bàn đấy.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "eb526adf9013",
+          "zh": "我们在哪儿见呢？",
+          "vi": "Chúng mình gặp nhau ở đâu nhỉ?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "a04dc92e789b",
+          "zh": "在学校书店前见吧。",
+          "vi": "Gặp nhau trước hiệu sách của trường nhé.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "298ce8b75320",
+          "zh": "好的。下午两点，你能到吗？",
+          "vi": "Được. Hai giờ chiều bạn có thể đến không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "44ca8c12bed6",
+          "zh": "我能到。我在学校吃午饭。",
+          "vi": "Mình đến được. Mình ăn trưa ở trường.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "ce1f32890cb2",
+          "zh": "小胡，还没吃饭呢？",
+          "vi": "Tiểu Hồ, em vẫn chưa ăn cơm à?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "eb9a14275edf",
+          "zh": "没吃呢。",
+          "vi": "Em chưa ăn ạ.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "eb749e69b026",
+          "zh": "大医院病人多，医生非常忙。",
+          "vi": "Bệnh viện lớn có nhiều bệnh nhân, bác sĩ rất bận.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "0947a35703ab",
+          "zh": "是的。我爸爸也在医院工作，他也非常忙。",
+          "vi": "Vâng. Bố em cũng làm việc ở bệnh viện, ông ấy cũng rất bận.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "0fea4624d137",
+          "zh": "你家有两个医生？",
+          "vi": "Nhà em có hai bác sĩ à?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "36c53af01a0a",
+          "zh": "对。",
+          "vi": "Vâng.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "d74c79a1d989",
+          "zh": "房间外有一只小猫。\n我没看见，它在哪儿呢？\n它在桌子下呢。\n这只小猫真漂亮！\n我们在哪儿见呢？\n在学校书店前见吧。\n好的。下午两点，你能到吗？\n我能到。我在学校吃午饭。\n小胡，还没吃饭呢？\n没吃呢。\n大医院病人多，医生非常忙。\n是的。我爸爸也在医院工作，他也非常忙。\n你家有两个医生？\n对。",
+          "vi": "Bên ngoài phòng có một con mèo nhỏ.\nMình không nhìn thấy, nó ở đâu thế?\nNó ở dưới bàn đấy.\nCon mèo nhỏ này xinh thật!\nChúng mình gặp nhau ở đâu nhỉ?\nGặp nhau trước hiệu sách của trường nhé.\nĐược. Hai giờ chiều bạn có thể đến không?\nMình đến được. Mình ăn trưa ở trường.\nTiểu Hồ, em vẫn chưa ăn cơm à?\nEm chưa ăn ạ.\nBệnh viện lớn có nhiều bệnh nhân, bác sĩ rất bận.\nVâng. Bố em cũng làm việc ở bệnh viện, ông ấy cũng rất bận.\nNhà em có hai bác sĩ à?\nVâng.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     },
@@ -1314,6 +1804,83 @@ window.translationLessons = {
           "vi": "Hôm qua tôi học ở trường.",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "68c19683e5c5",
+          "zh": "你明天上午在哪儿学习？",
+          "vi": "Sáng mai bạn học ở đâu?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "b819f082d28b",
+          "zh": "下午呢？",
+          "vi": "Còn buổi chiều thì sao?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "1653f633ccf3",
+          "zh": "我下午在家里学英语。",
+          "vi": "Buổi chiều tôi học tiếng Anh ở nhà.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "368c8195108a",
+          "zh": "学校前边有什么？",
+          "vi": "Phía trước trường có gì?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "5c60fea0f2fd",
+          "zh": "学校后边呢？",
+          "vi": "Còn phía sau trường thì sao?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "a4ae31124691",
+          "zh": "后边是一个医院。",
+          "vi": "Phía sau là một bệnh viện.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "f3a8a8e7bdf5",
+          "zh": "椅子上有什么？",
+          "vi": "Trên ghế có gì?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "89274ad50969",
+          "zh": "椅子上有一本中文书。",
+          "vi": "Trên ghế có một quyển sách tiếng Trung.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "f7532ff9cb55",
+          "zh": "这是你的第一本中文书吗？",
+          "vi": "Đây có phải là quyển sách tiếng Trung đầu tiên của bạn không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "907728c45225",
+          "zh": "不是，这是我的第二本中文书。",
+          "vi": "Không phải, đây là quyển sách tiếng Trung thứ hai của tôi.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "949b88d81edd",
+          "zh": "你明天上午在哪儿学习？\n我明天上午在学校学习。\n下午呢？\n我下午在家里学英语。\n学校前边有什么？\n学校前边有一家书店。\n学校后边呢？\n后边是一个医院。\n椅子上有什么？\n椅子上有一本中文书。\n这是你的第一本中文书吗？\n不是，这是我的第二本中文书。",
+          "vi": "Sáng mai bạn học ở đâu?\nSáng mai tôi học ở trường.\nCòn buổi chiều thì sao?\nBuổi chiều tôi học tiếng Anh ở nhà.\nPhía trước trường có gì?\nPhía trước trường có một hiệu sách.\nCòn phía sau trường thì sao?\nPhía sau là một bệnh viện.\nTrên ghế có gì?\nTrên ghế có một quyển sách tiếng Trung.\nĐây có phải là quyển sách tiếng Trung đầu tiên của bạn không?\nKhông phải, đây là quyển sách tiếng Trung thứ hai của tôi.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     },
@@ -1475,6 +2042,118 @@ window.translationLessons = {
           "vi": "Quần áo bé trai ở đằng kia.",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "4176e3b9c530",
+          "zh": "请问，有杯子吗？",
+          "vi": "Xin hỏi, có cốc không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "afc2adfcaaa4",
+          "zh": "有，杯子在这边。",
+          "vi": "Có, cốc ở bên này.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "4936fbc01cbe",
+          "zh": "多少钱一个？",
+          "vi": "Bao nhiêu tiền một chiếc?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "25e137315051",
+          "zh": "这些五块钱一个，那些十块钱一个。",
+          "vi": "Những chiếc này năm tệ một chiếc, những chiếc kia mười tệ một chiếc.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "8954950d6bf9",
+          "zh": "我买这个吧。",
+          "vi": "Tôi mua chiếc này nhé.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "81396a11a256",
+          "zh": "您想买什么？",
+          "vi": "Bà muốn mua gì?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "844010c862d3",
+          "zh": "我想买两斤苹果。",
+          "vi": "Tôi muốn mua hai cân Trung Quốc táo.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "4d465fe7995a",
+          "zh": "苹果三块五一斤。这些七块二，七块钱吧。",
+          "vi": "Táo ba tệ rưỡi một cân. Chỗ này là bảy tệ hai, lấy bảy tệ thôi.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "1b33001c7b20",
+          "zh": "好的，这儿的苹果真便宜！",
+          "vi": "Được, táo ở đây rẻ thật!",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "a758a4dcba5c",
+          "zh": "这家商店衣服真多！这件一百元，怎么样？",
+          "vi": "Cửa hàng này nhiều quần áo thật! Bộ này một trăm tệ, thế nào?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "08117a60f06c",
+          "zh": "好看，也不贵。",
+          "vi": "Đẹp, cũng không đắt.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "3cb229df6363",
+          "zh": "小雪能穿，买一件吧。",
+          "vi": "Tiểu Tuyết mặc được, mua một bộ nhé.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "007a958dbd16",
+          "zh": "好的。小明能穿吗？",
+          "vi": "Được. Tiểu Minh có mặc được không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "53f6431ba88d",
+          "zh": "不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。",
+          "vi": "Không được. Đây là quần áo bé gái mặc, quần áo bé trai ở đằng kia.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "3a7e8511b68d",
+          "zh": "好的。",
+          "vi": "Được.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "2d68a758e322",
+          "zh": "请问，有杯子吗？\n有，杯子在这边。\n多少钱一个？\n这些五块钱一个，那些十块钱一个。\n我买这个吧。\n这儿的水果真不少！\n您想买什么？\n我想买两斤苹果。\n苹果三块五一斤。这些七块二，七块钱吧。\n好的，这儿的苹果真便宜！\n这家商店衣服真多！这件一百元，怎么样？\n好看，也不贵。\n小雪能穿，买一件吧。\n好的。小明能穿吗？\n不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。\n好的。",
+          "vi": "Xin hỏi, có cốc không?\nCó, cốc ở bên này.\nBao nhiêu tiền một chiếc?\nNhững chiếc này năm tệ một chiếc, những chiếc kia mười tệ một chiếc.\nTôi mua chiếc này nhé.\nHoa quả ở đây nhiều thật!\nBà muốn mua gì?\nTôi muốn mua hai cân Trung Quốc táo.\nTáo ba tệ rưỡi một cân. Chỗ này là bảy tệ hai, lấy bảy tệ thôi.\nĐược, táo ở đây rẻ thật!\nCửa hàng này nhiều quần áo thật! Bộ này một trăm tệ, thế nào?\nĐẹp, cũng không đắt.\nTiểu Tuyết mặc được, mua một bộ nhé.\nĐược. Tiểu Minh có mặc được không?\nKhông được. Đây là quần áo bé gái mặc, quần áo bé trai ở đằng kia.\nĐược.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     },
@@ -1657,6 +2336,104 @@ window.translationLessons = {
           "vi": "Các bạn nhỏ đang chơi.",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "59d44c2dc9ee",
+          "zh": "喂，李文，你什么时候能到饭店？",
+          "vi": "A lô, Lý Văn, khi nào bạn có thể đến nhà hàng?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "a45b453357e2",
+          "zh": "还不知道，正在找呢。它是不是在超市后边？",
+          "vi": "Tôi vẫn chưa biết, đang tìm đây. Nó có phải ở phía sau siêu thị không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "3d9697be55aa",
+          "zh": "是的。你开车没开车？",
+          "vi": "Đúng vậy. Bạn có lái xe không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "34763f85c642",
+          "zh": "我没开车，坐车呢。",
+          "vi": "Tôi không lái xe, đang đi xe.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "47f9cc0315b7",
+          "zh": "你还在读大学吗？",
+          "vi": "Bạn vẫn đang học đại học à?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "16f32d3af1fa",
+          "zh": "对，我读大学呢，还是大学生。",
+          "vi": "Đúng, tôi đang học đại học, vẫn còn là sinh viên.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "52c159b09d59",
+          "zh": "你们学习忙不忙？",
+          "vi": "Việc học của các bạn có bận không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "8a2288be96a2",
+          "zh": "非常忙，我学医，我们的课很多。",
+          "vi": "Rất bận, tôi học y, chúng tôi có rất nhiều tiết học.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "08c407d87783",
+          "zh": "没起床呢，还在睡觉。",
+          "vi": "Chưa dậy, vẫn đang ngủ.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "368dbb85552b",
+          "zh": "还睡呢？他今天去不去那里？",
+          "vi": "Vẫn ngủ à? Hôm nay cậu ấy có đến đó không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "02f0b348ee4e",
+          "zh": "去哪里？",
+          "vi": "Đi đâu?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "a13ab7aea0f7",
+          "zh": "去超市。",
+          "vi": "Đi siêu thị.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "6cbf796cb9dd",
+          "zh": "我昨天问他，他对我说，他不去，他今天要和小朋友玩。",
+          "vi": "Hôm qua tôi hỏi cậu ấy, cậu ấy nói với tôi rằng không đi; hôm nay cậu ấy muốn chơi với các bạn nhỏ.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "df487424fb5a",
+          "zh": "喂，李文，你什么时候能到饭店？\n还不知道，正在找呢。它是不是在超市后边？\n是的。你开车没开车？\n我没开车，坐车呢。\n你还在读大学吗？\n对，我读大学呢，还是大学生。\n你们学习忙不忙？\n非常忙，我学医，我们的课很多。\n弟弟起床没起床呢？\n没起床呢，还在睡觉。\n还睡呢？他今天去不去那里？\n去哪里？\n去超市。\n我昨天问他，他对我说，他不去，他今天要和小朋友玩。",
+          "vi": "A lô, Lý Văn, khi nào bạn có thể đến nhà hàng?\nTôi vẫn chưa biết, đang tìm đây. Nó có phải ở phía sau siêu thị không?\nĐúng vậy. Bạn có lái xe không?\nTôi không lái xe, đang đi xe.\nBạn vẫn đang học đại học à?\nĐúng, tôi đang học đại học, vẫn còn là sinh viên.\nViệc học của các bạn có bận không?\nRất bận, tôi học y, chúng tôi có rất nhiều tiết học.\nEm trai đã dậy chưa?\nChưa dậy, vẫn đang ngủ.\nVẫn ngủ à? Hôm nay cậu ấy có đến đó không?\nĐi đâu?\nĐi siêu thị.\nHôm qua tôi hỏi cậu ấy, cậu ấy nói với tôi rằng không đi; hôm nay cậu ấy muốn chơi với các bạn nhỏ.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     },
@@ -1832,6 +2609,76 @@ window.translationLessons = {
           "vi": "Mời uống một chút nước ấm.",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "fc27287a70fb",
+          "zh": "这里的天不太好，下雨了。",
+          "vi": "Thời tiết ở đây không được tốt lắm, trời mưa rồi.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "90427fe5826b",
+          "zh": "有点儿大，我觉得很冷。",
+          "vi": "Hơi lớn, tôi cảm thấy rất lạnh.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "374420b9f02d",
+          "zh": "是的，太冷了。",
+          "vi": "Đúng vậy, lạnh quá.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "8bcee10d1a83",
+          "zh": "你昨天没来公司，生病了？",
+          "vi": "Hôm qua anh không đến công ty, bị ốm à?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "68e5ff6ddddd",
+          "zh": "对，我昨天去医院看病了。",
+          "vi": "Đúng, hôm qua tôi đến bệnh viện khám bệnh.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "8ee51b3c53db",
+          "zh": "我看看。你觉得怎么样？",
+          "vi": "Để tôi xem. Anh cảm thấy thế nào?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "f675efd98051",
+          "zh": "我很冷。",
+          "vi": "Tôi rất lạnh.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "4e7ed9538912",
+          "zh": "好的，吃一点儿药，今天休息半天吧。",
+          "vi": "Được, uống một chút thuốc và hôm nay nghỉ nửa ngày nhé.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "6ddbd8034fa2",
+          "zh": "好的。",
+          "vi": "Vâng.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "4eb528dd6c83",
+          "zh": "今天天气怎么样？\n这里的天不太好，下雨了。\n雨大吗？\n有点儿大，我觉得很冷。\n昨天下雪了。\n是的，太冷了。\n你昨天没来公司，生病了？\n对，我昨天去医院看病了。\n医生，我病了。\n我看看。你觉得怎么样？\n我很冷。\n好的，吃一点儿药，今天休息半天吧。\n好的。\n回家后再喝些热水。",
+          "vi": "Hôm nay thời tiết thế nào?\nThời tiết ở đây không được tốt lắm, trời mưa rồi.\nMưa có lớn không?\nHơi lớn, tôi cảm thấy rất lạnh.\nHôm qua tuyết rơi rồi.\nĐúng vậy, lạnh quá.\nHôm qua anh không đến công ty, bị ốm à?\nĐúng, hôm qua tôi đến bệnh viện khám bệnh.\nBác sĩ, tôi bị ốm rồi.\nĐể tôi xem. Anh cảm thấy thế nào?\nTôi rất lạnh.\nĐược, uống một chút thuốc và hôm nay nghỉ nửa ngày nhé.\nVâng.\nSau khi về nhà hãy uống thêm một chút nước ấm.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     },
@@ -1979,6 +2826,104 @@ window.translationLessons = {
           "vi": "Cho tôi một cốc trà.",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "8596797e652b",
+          "zh": "王老师，我可以再问您一个问题吗？",
+          "vi": "Cô Vương, tôi có thể hỏi cô thêm một câu nữa không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "da9db2264fe8",
+          "zh": "可以。你有什么问题？",
+          "vi": "Được. Bạn có câu hỏi gì?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "3f1fe49d9b25",
+          "zh": "那个小店卖不卖手机？",
+          "vi": "Cửa hàng nhỏ đó có bán điện thoại không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "94aa43b6a94b",
+          "zh": "我不知道。你可以打电话问一下。",
+          "vi": "Tôi không biết. Bạn có thể gọi điện hỏi thử.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "65f7feedb83e",
+          "zh": "女士，请坐！您喝什么？",
+          "vi": "Thưa cô, mời ngồi! Cô uống gì?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "1c6f22fd4346",
+          "zh": "我看一下。请给我一杯牛奶。",
+          "vi": "Để tôi xem một chút. Cho tôi một cốc sữa.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "770a3908280c",
+          "zh": "好的。您还要什么？",
+          "vi": "Được. Cô còn muốn gì nữa?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "0341ac005f3b",
+          "zh": "我还没吃早饭，再要这个面包和鸡蛋吧。",
+          "vi": "Tôi vẫn chưa ăn sáng, cho thêm bánh mì này và trứng nhé.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "a7d71cbb81d7",
+          "zh": "先生，请坐！您要什么？",
+          "vi": "Thưa ông, mời ngồi! Ông muốn gì?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "54ba1879e688",
+          "zh": "好的。一斤饺子四十个。",
+          "vi": "Được. Một cân bánh chẻo có bốn mươi cái.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "06a1925be6c7",
+          "zh": "四十个太多了，我要一半吧。",
+          "vi": "Bốn mươi cái nhiều quá, tôi lấy một nửa thôi.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "7fa8421f3c6a",
+          "zh": "半斤二十个。您想喝什么？",
+          "vi": "Nửa cân có hai mươi cái. Ông muốn uống gì?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "f6b27a2d0962",
+          "zh": "请给我一杯茶吧。",
+          "vi": "Cho tôi một cốc trà nhé.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "539dee239f61",
+          "zh": "王老师，我可以再问您一个问题吗？\n可以。你有什么问题？\n那个小店卖不卖手机？\n我不知道。你可以打电话问一下。\n女士，请坐！您喝什么？\n我看一下。请给我一杯牛奶。\n好的。您还要什么？\n我还没吃早饭，再要这个面包和鸡蛋吧。\n先生，请坐！您要什么？\n我要一斤饺子。\n好的。一斤饺子四十个。\n四十个太多了，我要一半吧。\n半斤二十个。您想喝什么？\n请给我一杯茶吧。",
+          "vi": "Cô Vương, tôi có thể hỏi cô thêm một câu nữa không?\nĐược. Bạn có câu hỏi gì?\nCửa hàng nhỏ đó có bán điện thoại không?\nTôi không biết. Bạn có thể gọi điện hỏi thử.\nThưa cô, mời ngồi! Cô uống gì?\nĐể tôi xem một chút. Cho tôi một cốc sữa.\nĐược. Cô còn muốn gì nữa?\nTôi vẫn chưa ăn sáng, cho thêm bánh mì này và trứng nhé.\nThưa ông, mời ngồi! Ông muốn gì?\nTôi muốn một cân bánh chẻo.\nĐược. Một cân bánh chẻo có bốn mươi cái.\nBốn mươi cái nhiều quá, tôi lấy một nửa thôi.\nNửa cân có hai mươi cái. Ông muốn uống gì?\nCho tôi một cốc trà nhé.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     },
@@ -2168,6 +3113,97 @@ window.translationLessons = {
           "vi": "Muộn quá rồi, đi ngủ nhé.",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "bf26c76d8375",
+          "zh": "你们上火车后看见王老师了吗？",
+          "vi": "Sau khi lên tàu các bạn có nhìn thấy cô Vương không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "8e531ed0480a",
+          "zh": "没看见。中午车开后，有些人在看书，有些人睡觉了。",
+          "vi": "Không nhìn thấy. Sau khi tàu chạy buổi trưa, một số người đọc sách, một số người đã ngủ.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "6da54811d631",
+          "zh": "你呢？",
+          "vi": "Còn bạn thì sao?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "cd3869c3cbdf",
+          "zh": "你们会说汉语了，也会写汉字了吗？",
+          "vi": "Các bạn đã biết nói tiếng Trung rồi, cũng biết viết chữ Hán rồi phải không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "c2a5af3fd033",
+          "zh": "老师，我听不见。",
+          "vi": "Thưa cô, tôi không nghe thấy.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "607a03e2a252",
+          "zh": "请大家不要说话！请听老师的问题：你们都会写哪些汉字了？",
+          "vi": "Mọi người đừng nói chuyện! Hãy nghe câu hỏi của giáo viên: Các bạn đều đã biết viết những chữ Hán nào rồi?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "e099edce352d",
+          "zh": "我会写这些字了，您看！",
+          "vi": "Tôi đã biết viết những chữ này rồi, cô xem!",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "2bef7088180c",
+          "zh": "对。儿子也上小学了。",
+          "vi": "Đúng. Con trai cũng bắt đầu học tiểu học rồi.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "689c2868eea5",
+          "zh": "我们家有了一个中学生。",
+          "vi": "Nhà chúng ta có một học sinh trung học rồi.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "329d62fc7df9",
+          "zh": "还有了一个小学生。",
+          "vi": "Còn có thêm một học sinh tiểu học nữa.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "7248eb07ba97",
+          "zh": "上学后，他们都忙了。",
+          "vi": "Sau khi đi học, các con đều bận rồi.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "c33c4d51e8a8",
+          "zh": "是的。太晚了，睡觉吧。",
+          "vi": "Đúng vậy. Muộn quá rồi, đi ngủ nhé.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "244fc8e0625c",
+          "zh": "你们上火车后看见王老师了吗？\n没看见。中午车开后，有些人在看书，有些人睡觉了。\n你呢？\n我看了一个电影。\n你们会说汉语了，也会写汉字了吗？\n我们都会写了。\n老师，我听不见。\n请大家不要说话！请听老师的问题：你们都会写哪些汉字了？\n我会写这些字了，您看！\n明年女儿上中学。\n对。儿子也上小学了。\n我们家有了一个中学生。\n还有了一个小学生。\n上学后，他们都忙了。\n是的。太晚了，睡觉吧。",
+          "vi": "Sau khi lên tàu các bạn có nhìn thấy cô Vương không?\nKhông nhìn thấy. Sau khi tàu chạy buổi trưa, một số người đọc sách, một số người đã ngủ.\nCòn bạn thì sao?\nTôi đã xem một bộ phim.\nCác bạn đã biết nói tiếng Trung rồi, cũng biết viết chữ Hán rồi phải không?\nChúng tôi đều biết viết rồi.\nThưa cô, tôi không nghe thấy.\nMọi người đừng nói chuyện! Hãy nghe câu hỏi của giáo viên: Các bạn đều đã biết viết những chữ Hán nào rồi?\nTôi đã biết viết những chữ này rồi, cô xem!\nNăm sau con gái học trung học.\nĐúng. Con trai cũng bắt đầu học tiểu học rồi.\nNhà chúng ta có một học sinh trung học rồi.\nCòn có thêm một học sinh tiểu học nữa.\nSau khi đi học, các con đều bận rồi.\nĐúng vậy. Muộn quá rồi, đi ngủ nhé.",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     },
@@ -2308,6 +3344,111 @@ window.translationLessons = {
           "vi": "Hẹn gặp ở sân bay Đại Hưng!",
           "kind": "Câu từ vựng",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "356dd42f4555",
+          "zh": "你们爱吃哪个菜？",
+          "vi": "Các bạn thích ăn món nào?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "2a733b969d8a",
+          "zh": "我喜欢这个，也喜欢那个。",
+          "vi": "Tôi thích món này, cũng thích món kia.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "ba581da590bf",
+          "zh": "这些菜都好吃，还很好看。",
+          "vi": "Những món này đều ngon, lại còn rất đẹp mắt.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "f924a05a1f97",
+          "zh": "我爱吃中国菜，也喜欢做。大家多吃点儿。",
+          "vi": "Tôi thích ăn món Trung Quốc, cũng thích nấu. Mọi người ăn thêm một chút nhé.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "4403986acbb1",
+          "zh": "你们都想去哪儿？",
+          "vi": "Các bạn đều muốn đi đâu?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "aea8af2e0585",
+          "zh": "去年我和男朋友去了西安，今年我想去北京。",
+          "vi": "Năm ngoái tôi và bạn trai đã đi Tây An, năm nay tôi muốn đi Bắc Kinh.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "52bc25eb7855",
+          "zh": "前几年我去了西安，非常好玩儿。今年我也想去北京。",
+          "vi": "Vài năm trước tôi đã đi Tây An, rất thú vị. Năm nay tôi cũng muốn đi Bắc Kinh.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "291633f9adf8",
+          "zh": "我和王老师都是北京人，北京非常漂亮。",
+          "vi": "Tôi và cô Vương đều là người Bắc Kinh, Bắc Kinh rất đẹp.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "4cc7b565dde2",
+          "zh": "你们的飞机到北京要几个小时？",
+          "vi": "Chuyến bay của các bạn đến Bắc Kinh mất mấy tiếng?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "b49d2d67cff8",
+          "zh": "九个小时。",
+          "vi": "Chín tiếng.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "258caf87e416",
+          "zh": "我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。",
+          "vi": "Người nhà tôi đều ở Bắc Kinh, chủ nhật chị tôi cũng có thời gian, chị ấy có thể ra sân bay đón các bạn, các bạn cũng có thể ở nhà tôi.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "9063dd05d37e",
+          "zh": "我们星期日早上八点到大兴机场，早不早？",
+          "vi": "Chúng tôi đến sân bay Đại Hưng lúc tám giờ sáng chủ nhật, có sớm không?",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "506202ecb3fb",
+          "zh": "不早。",
+          "vi": "Không sớm.",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "6f05038cc162",
+          "zh": "谢谢老师！那我们和您姐姐在大兴机场见！",
+          "vi": "Cảm ơn cô! Vậy chúng tôi sẽ gặp chị cô ở sân bay Đại Hưng!",
+          "kind": "Hội thoại",
+          "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "b1f5167ef2b3",
+          "zh": "你们爱吃哪个菜？\n我喜欢这个，也喜欢那个。\n这些菜都好吃，还很好看。\n我爱吃中国菜，也喜欢做。大家多吃点儿。\n你们都想去哪儿？\n去年我和男朋友去了西安，今年我想去北京。\n前几年我去了西安，非常好玩儿。今年我也想去北京。\n我和王老师都是北京人，北京非常漂亮。\n你们的飞机到北京要几个小时？\n九个小时。\n我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。\n我们星期日早上八点到大兴机场，早不早？\n不早。\n谢谢老师！那我们和您姐姐在大兴机场见！",
+          "vi": "Các bạn thích ăn món nào?\nTôi thích món này, cũng thích món kia.\nNhững món này đều ngon, lại còn rất đẹp mắt.\nTôi thích ăn món Trung Quốc, cũng thích nấu. Mọi người ăn thêm một chút nhé.\nCác bạn đều muốn đi đâu?\nNăm ngoái tôi và bạn trai đã đi Tây An, năm nay tôi muốn đi Bắc Kinh.\nVài năm trước tôi đã đi Tây An, rất thú vị. Năm nay tôi cũng muốn đi Bắc Kinh.\nTôi và cô Vương đều là người Bắc Kinh, Bắc Kinh rất đẹp.\nChuyến bay của các bạn đến Bắc Kinh mất mấy tiếng?\nChín tiếng.\nNgười nhà tôi đều ở Bắc Kinh, chủ nhật chị tôi cũng có thời gian, chị ấy có thể ra sân bay đón các bạn, các bạn cũng có thể ở nhà tôi.\nChúng tôi đến sân bay Đại Hưng lúc tám giờ sáng chủ nhật, có sớm không?\nKhông sớm.\nCảm ơn cô! Vậy chúng tôi sẽ gặp chị cô ở sân bay Đại Hưng!",
+          "kind": "Hội thoại trọn bài",
+          "hint": "Dịch lần lượt từng lượt lời; giữ cách xưng hô và ý nghĩa của cuộc hội thoại."
         }
       ]
     }
@@ -2331,6 +3472,62 @@ window.translationLessons = {
           "vi": "Tôi muốn nhờ bạn giúp một việc.",
           "kind": "Dịch câu",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "ee68502262a7",
+          "zh": "我们是昨天到北京的。",
+          "vi": "Chúng tôi đến Bắc Kinh hôm qua.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "1d83543bc96f",
+          "zh": "朋友来车站接我们。",
+          "vi": "Bạn đến nhà ga đón chúng tôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "70e6bb76ec9a",
+          "zh": "她请我们吃了北京烤鸭。",
+          "vi": "Cô ấy đã mời chúng tôi ăn vịt quay Bắc Kinh.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "56ac746179ba",
+          "zh": "老师让我们介绍自己。",
+          "vi": "Cô giáo bảo chúng tôi giới thiệu bản thân.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "6fe379ab962b",
+          "zh": "我有时不懂老师的意思。",
+          "vi": "Đôi khi tôi không hiểu ý của cô giáo.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "57d0a9f14fd6",
+          "zh": "我想请同学帮个忙。",
+          "vi": "Tôi muốn nhờ bạn cùng lớp giúp một việc.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "d0387b5795b1",
+          "zh": "我们是昨天到北京的。朋友来车站接我们。她请我们吃了北京烤鸭。",
+          "vi": "Chúng tôi đến Bắc Kinh hôm qua. Bạn đến nhà ga đón chúng tôi. Cô ấy đã mời chúng tôi ăn vịt quay Bắc Kinh.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "90d035bf6bd3",
+          "zh": "老师让我们介绍自己。我有时不懂老师的意思。我想请同学帮个忙。",
+          "vi": "Cô giáo bảo chúng tôi giới thiệu bản thân. Đôi khi tôi không hiểu ý của cô giáo. Tôi muốn nhờ bạn cùng lớp giúp một việc.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         },
         {
           "id": "464c2ee9072c",
@@ -2464,6 +3661,62 @@ window.translationLessons = {
           "vi": "Vé xem phim mà họ bán cũng rất rẻ.",
           "kind": "Dịch câu",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "35f56bf3f048",
+          "zh": "北京大学离这儿很远。",
+          "vi": "Đại học Bắc Kinh cách đây rất xa.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "cadd36a7f759",
+          "zh": "我们还是打车去吧。",
+          "vi": "Hay là chúng ta đi taxi thì hơn.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "93b385fec102",
+          "zh": "别在车站等我。",
+          "vi": "Đừng đợi tôi ở nhà ga.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "18a71cddfeef",
+          "zh": "这间教室里有二十多名学生。",
+          "vi": "Trong phòng học này có hơn hai mươi học sinh.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "7f596f077425",
+          "zh": "他们都是学中文的学生。",
+          "vi": "Họ đều là học sinh học tiếng Trung.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "a74a73337ef6",
+          "zh": "老师给他们买的书很有意思。",
+          "vi": "Những cuốn sách cô giáo mua cho họ rất thú vị.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "965ad2496f6c",
+          "zh": "北京大学离这儿很远。我们还是打车去吧。别在车站等我。",
+          "vi": "Đại học Bắc Kinh cách đây rất xa. Hay là chúng ta đi taxi thì hơn. Đừng đợi tôi ở nhà ga.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "9922a60a5f89",
+          "zh": "这间教室里有二十多名学生。他们都是学中文的学生。老师给他们买的书很有意思。",
+          "vi": "Trong phòng học này có hơn hai mươi học sinh. Họ đều là học sinh học tiếng Trung. Những cuốn sách cô giáo mua cho họ rất thú vị.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         },
         {
           "id": "6db990cc3780",
@@ -2620,6 +3873,62 @@ window.translationLessons = {
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
         },
         {
+          "id": "d66990e33d37",
+          "zh": "我已经吃完饭了。",
+          "vi": "Tôi đã ăn cơm xong rồi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "ac1ed5a6b457",
+          "zh": "我想出去走走。",
+          "vi": "Tôi muốn ra ngoài đi dạo một chút.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "8e2376694ade",
+          "zh": "你跟我一起去吧。",
+          "vi": "Bạn đi cùng tôi nhé.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "8fb6dcc8d996",
+          "zh": "他昨天从西安回来了。",
+          "vi": "Hôm qua anh ấy đã từ Tây An trở về.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "e897420ef68c",
+          "zh": "他看了看手机上的照片。",
+          "vi": "Anh ấy xem qua những bức ảnh trên điện thoại.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "a92e7f05bb66",
+          "zh": "他觉得这次旅游很不错。",
+          "vi": "Anh ấy thấy chuyến du lịch lần này rất tốt.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "801224e9926f",
+          "zh": "我已经吃完饭了。我想出去走走。你跟我一起去吧。",
+          "vi": "Tôi đã ăn cơm xong rồi. Tôi muốn ra ngoài đi dạo một chút. Bạn đi cùng tôi nhé.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "ad88427f2147",
+          "zh": "他昨天从西安回来了。他看了看手机上的照片。他觉得这次旅游很不错。",
+          "vi": "Hôm qua anh ấy đã từ Tây An trở về. Anh ấy xem qua những bức ảnh trên điện thoại. Anh ấy thấy chuyến du lịch lần này rất tốt.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
           "id": "04c892cffaaf",
           "zh": "回来",
           "vi": "trở về, quay về",
@@ -2751,6 +4060,62 @@ window.translationLessons = {
           "vi": "Tôi cảm thấy cái màu xanh lá đẹp hơn.",
           "kind": "Dịch câu",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "29d6e634afcc",
+          "zh": "我没去过这个商场。",
+          "vi": "Tôi chưa từng đến trung tâm thương mại này.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "2668a4416b27",
+          "zh": "我想买一条裤子。",
+          "vi": "Tôi muốn mua một chiếc quần.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "44641d112254",
+          "zh": "因为我喜欢黑色，所以想试试黑色的。",
+          "vi": "Vì tôi thích màu đen nên muốn thử chiếc màu đen.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "15a827bfccc3",
+          "zh": "这件红色的衣服很好看。",
+          "vi": "Chiếc áo màu đỏ này rất đẹp.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "f7c297dc9027",
+          "zh": "但是那件白色的更便宜。",
+          "vi": "Nhưng chiếc màu trắng kia rẻ hơn.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "a5c5c2dd6369",
+          "zh": "我还是买白色的吧。",
+          "vi": "Hay là tôi mua chiếc màu trắng thì hơn.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "2bb3fee10aa6",
+          "zh": "我没去过这个商场。我想买一条裤子。因为我喜欢黑色，所以想试试黑色的。",
+          "vi": "Tôi chưa từng đến trung tâm thương mại này. Tôi muốn mua một chiếc quần. Vì tôi thích màu đen nên muốn thử chiếc màu đen.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "d7d3643f302f",
+          "zh": "这件红色的衣服很好看。但是那件白色的更便宜。我还是买白色的吧。",
+          "vi": "Chiếc áo màu đỏ này rất đẹp. Nhưng chiếc màu trắng kia rẻ hơn. Hay là tôi mua chiếc màu trắng thì hơn.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         },
         {
           "id": "147ea7a7dccd",
@@ -2898,6 +4263,55 @@ window.translationLessons = {
           "vi": "Đã 12 giờ rồi, chúng ta ăn cơm đi.",
           "kind": "Dịch câu",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "266b686356f7",
+          "zh": "今天我第一次去中国朋友家。",
+          "vi": "Hôm nay tôi lần đầu đến nhà một người bạn Trung Quốc.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "2aa8cc874745",
+          "zh": "我给他准备了一份礼物。",
+          "vi": "Tôi đã chuẩn bị một món quà cho anh ấy.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "a7ff1b6168de",
+          "zh": "他的奶奶让我进来坐一会儿。",
+          "vi": "Bà nội của anh ấy mời tôi vào ngồi một lát.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "89a548a756dd",
+          "zh": "都八点了，我们走吧。",
+          "vi": "Đã tám giờ rồi, chúng ta đi thôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "b7cd260b4078",
+          "zh": "你下来以后，我们一起回酒店。",
+          "vi": "Sau khi bạn xuống, chúng ta cùng về khách sạn.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "e5b8752b577d",
+          "zh": "今天我第一次去中国朋友家。我给他准备了一份礼物。他的奶奶让我进来坐一会儿。",
+          "vi": "Hôm nay tôi lần đầu đến nhà một người bạn Trung Quốc. Tôi đã chuẩn bị một món quà cho anh ấy. Bà nội của anh ấy mời tôi vào ngồi một lát.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "8625c7850b70",
+          "zh": "都八点了，我们走吧。我在下面等你。你下来以后，我们一起回酒店。",
+          "vi": "Đã tám giờ rồi, chúng ta đi thôi. Tôi đợi bạn ở phía dưới. Sau khi bạn xuống, chúng ta cùng về khách sạn.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         },
         {
           "id": "f6199b3d23d3",
@@ -3054,6 +4468,62 @@ window.translationLessons = {
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
         },
         {
+          "id": "66d015a5a6e7",
+          "zh": "今天是妹妹的生日。",
+          "vi": "Hôm nay là sinh nhật em gái tôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "076c8302c29e",
+          "zh": "我给她买了一个大大的蛋糕。",
+          "vi": "Tôi mua cho em ấy một chiếc bánh sinh nhật thật to.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "b5a8cdee5fa2",
+          "zh": "她高高兴兴地打开了礼物。",
+          "vi": "Em ấy vui vẻ mở món quà.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "b3df8b8d2bb4",
+          "zh": "桌子上有鱼、肉和水果什么的。",
+          "vi": "Trên bàn có cá, thịt, hoa quả và những thứ khác.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "90368b32b5d9",
+          "zh": "我们一起给妹妹过生日。",
+          "vi": "Chúng tôi cùng tổ chức sinh nhật cho em gái.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "8005207295ea",
+          "zh": "大家都玩得很高兴。",
+          "vi": "Mọi người đều chơi rất vui.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "738f1dd54d43",
+          "zh": "今天是妹妹的生日。我给她买了一个大大的蛋糕。她高高兴兴地打开了礼物。",
+          "vi": "Hôm nay là sinh nhật em gái tôi. Tôi mua cho em ấy một chiếc bánh sinh nhật thật to. Em ấy vui vẻ mở món quà.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "e63f0777aee7",
+          "zh": "桌子上有鱼、肉和水果什么的。我们一起给妹妹过生日。大家都玩得很高兴。",
+          "vi": "Trên bàn có cá, thịt, hoa quả và những thứ khác. Chúng tôi cùng tổ chức sinh nhật cho em gái. Mọi người đều chơi rất vui.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
           "id": "40e2a8f46d0f",
           "zh": "生日",
           "vi": "sinh nhật",
@@ -3185,6 +4655,55 @@ window.translationLessons = {
           "vi": "Hễ có thời gian là tôi đi vận động.",
           "kind": "Dịch câu",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "072f905a0ba6",
+          "zh": "他一下课就去打篮球。",
+          "vi": "Anh ấy vừa tan học là đi chơi bóng rổ.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "b748d6601915",
+          "zh": "同学们都喜欢跟他一起运动。",
+          "vi": "Các bạn cùng lớp đều thích chơi thể thao cùng anh ấy.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "cdf56c2ea6dd",
+          "zh": "我的爱好是游泳。",
+          "vi": "Sở thích của tôi là bơi lội.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "074f047e0b3e",
+          "zh": "我游泳游得不快。",
+          "vi": "Tôi bơi không nhanh.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "11a8c0c71d39",
+          "zh": "但是我每次都游得很高兴。",
+          "vi": "Nhưng lần nào tôi cũng bơi rất vui.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "42d37e712aed",
+          "zh": "他一下课就去打篮球。他篮球打得很好。同学们都喜欢跟他一起运动。",
+          "vi": "Anh ấy vừa tan học là đi chơi bóng rổ. Anh ấy chơi bóng rổ rất giỏi. Các bạn cùng lớp đều thích chơi thể thao cùng anh ấy.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "72bc3306d6a7",
+          "zh": "我的爱好是游泳。我游泳游得不快。但是我每次都游得很高兴。",
+          "vi": "Sở thích của tôi là bơi lội. Tôi bơi không nhanh. Nhưng lần nào tôi cũng bơi rất vui.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         },
         {
           "id": "003a59900924",
@@ -3325,6 +4844,62 @@ window.translationLessons = {
           "vi": "Hôm nay nóng hơn hôm qua.",
           "kind": "Dịch câu",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "70a655c5fda3",
+          "zh": "我觉得左边的手表比右边的好看。",
+          "vi": "Tôi thấy chiếc đồng hồ bên trái đẹp hơn chiếc bên phải.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "a25cde208027",
+          "zh": "虽然它有点儿贵，但是我很喜欢。",
+          "vi": "Mặc dù nó hơi đắt nhưng tôi rất thích.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "9a7415aee1df",
+          "zh": "我想买给我的妻子。",
+          "vi": "Tôi muốn mua tặng vợ tôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "83f4070f2434",
+          "zh": "今天我们去饭馆吃饭。",
+          "vi": "Hôm nay chúng tôi đến nhà hàng ăn cơm.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "d52fc8dba841",
+          "zh": "这家饭馆比那家更便宜。",
+          "vi": "Nhà hàng này còn rẻ hơn nhà hàng kia.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "886f6986646e",
+          "zh": "虽然没有花很多钱，但是我们吃得很高兴。",
+          "vi": "Mặc dù không tiêu nhiều tiền nhưng chúng tôi ăn rất vui.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "9fa46ec77919",
+          "zh": "我觉得左边的手表比右边的好看。虽然它有点儿贵，但是我很喜欢。我想买给我的妻子。",
+          "vi": "Tôi thấy chiếc đồng hồ bên trái đẹp hơn chiếc bên phải. Mặc dù nó hơi đắt nhưng tôi rất thích. Tôi muốn mua tặng vợ tôi.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "80f782771e52",
+          "zh": "今天我们去饭馆吃饭。这家饭馆比那家更便宜。虽然没有花很多钱，但是我们吃得很高兴。",
+          "vi": "Hôm nay chúng tôi đến nhà hàng ăn cơm. Nhà hàng này còn rẻ hơn nhà hàng kia. Mặc dù không tiêu nhiều tiền nhưng chúng tôi ăn rất vui.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         },
         {
           "id": "c5cd0138d8ee",
@@ -3474,6 +5049,62 @@ window.translationLessons = {
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
         },
         {
+          "id": "1af65bb07ee1",
+          "zh": "咖啡店离学校很近。",
+          "vi": "Quán cà phê cách trường rất gần.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "9ba2de27820f",
+          "zh": "走路十分钟就到了。",
+          "vi": "Đi bộ mười phút là tới.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "a7ffc1d17a53",
+          "zh": "我在门口等了朋友半个小时。",
+          "vi": "Tôi đã đợi bạn ở cửa nửa tiếng.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "8adaa4876734",
+          "zh": "旁边那个男孩儿是我弟弟。",
+          "vi": "Cậu bé bên cạnh kia là em trai tôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "dbe526b10844",
+          "zh": "他没有我那么高。",
+          "vi": "Em ấy không cao bằng tôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "26cb05c23d90",
+          "zh": "我们一起去买奶茶。",
+          "vi": "Chúng tôi cùng đi mua trà sữa.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "9dedcef66d37",
+          "zh": "咖啡店离学校很近。走路十分钟就到了。我在门口等了朋友半个小时。",
+          "vi": "Quán cà phê cách trường rất gần. Đi bộ mười phút là tới. Tôi đã đợi bạn ở cửa nửa tiếng.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "8b6f2440163a",
+          "zh": "旁边那个男孩儿是我弟弟。他没有我那么高。我们一起去买奶茶。",
+          "vi": "Cậu bé bên cạnh kia là em trai tôi. Em ấy không cao bằng tôi. Chúng tôi cùng đi mua trà sữa.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
           "id": "7980bf21093d",
           "zh": "坏",
           "vi": "hỏng, xấu",
@@ -3598,6 +5229,55 @@ window.translationLessons = {
           "vi": "Cơm sắp nấu xong rồi.",
           "kind": "Dịch câu",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "1e8e594bd528",
+          "zh": "这些词你都记得吗？",
+          "vi": "Những từ này bạn đều nhớ chứ?",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "2057a2881784",
+          "zh": "我们一起看看做错的题吧。",
+          "vi": "Chúng ta cùng xem những câu làm sai nhé.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "4643a43811da",
+          "zh": "我的本子你看见了吗？",
+          "vi": "Quyển vở của tôi bạn có nhìn thấy không?",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "8d6ae029889f",
+          "zh": "是在书包里还是在桌子上？",
+          "vi": "Nó ở trong cặp hay ở trên bàn?",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "b0803aab3a47",
+          "zh": "快要上课了，请你帮我找找。",
+          "vi": "Sắp vào học rồi, bạn giúp tôi tìm một chút nhé.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "fb4390a8c077",
+          "zh": "我们下星期就要考试了。这些词你都记得吗？我们一起看看做错的题吧。",
+          "vi": "Tuần sau chúng tôi sắp thi rồi. Những từ này bạn đều nhớ chứ? Chúng ta cùng xem những câu làm sai nhé.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "886b826b9113",
+          "zh": "我的本子你看见了吗？是在书包里还是在桌子上？快要上课了，请你帮我找找。",
+          "vi": "Quyển vở của tôi bạn có nhìn thấy không? Nó ở trong cặp hay ở trên bàn? Sắp vào học rồi, bạn giúp tôi tìm một chút nhé.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         },
         {
           "id": "67beaa0efbb4",
@@ -3733,6 +5413,62 @@ window.translationLessons = {
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
         },
         {
+          "id": "ed50af243ebe",
+          "zh": "今天外面下着雪。",
+          "vi": "Hôm nay bên ngoài đang có tuyết rơi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "c9325692a051",
+          "zh": "我头疼，不想出去。",
+          "vi": "Tôi đau đầu, không muốn ra ngoài.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "b17b48a3bdbb",
+          "zh": "妈妈去药店给我买药。",
+          "vi": "Mẹ đến hiệu thuốc mua thuốc cho tôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "b7ba6eb8b987",
+          "zh": "饭馆的门开着。",
+          "vi": "Cửa nhà hàng đang mở.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "495c59f6f9b3",
+          "zh": "里面坐着几个学生。",
+          "vi": "Bên trong có mấy học sinh đang ngồi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "dd69e1dc7a88",
+          "zh": "他们最喜欢吃中国菜。",
+          "vi": "Họ thích ăn món Trung Quốc nhất.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "3d9946f516a6",
+          "zh": "今天外面下着雪。我头疼，不想出去。妈妈去药店给我买药。",
+          "vi": "Hôm nay bên ngoài đang có tuyết rơi. Tôi đau đầu, không muốn ra ngoài. Mẹ đến hiệu thuốc mua thuốc cho tôi.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "b34c885fc834",
+          "zh": "饭馆的门开着。里面坐着几个学生。他们最喜欢吃中国菜。",
+          "vi": "Cửa nhà hàng đang mở. Bên trong có mấy học sinh đang ngồi. Họ thích ăn món Trung Quốc nhất.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
           "id": "a53123cca6a3",
           "zh": "头",
           "vi": "đầu",
@@ -3859,6 +5595,55 @@ window.translationLessons = {
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
         },
         {
+          "id": "e2632460bb3b",
+          "zh": "今天的雪下得比昨天大。",
+          "vi": "Hôm nay tuyết rơi nhiều hơn hôm qua.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "c77cd04f0abe",
+          "zh": "我们还是在家休息吧。",
+          "vi": "Hay là chúng ta nghỉ ở nhà thì hơn.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "09d71b09ada5",
+          "zh": "哥哥跑步跑得比我快。",
+          "vi": "Anh trai tôi chạy bộ nhanh hơn tôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "608f45a637c0",
+          "zh": "他每天起得比我早。",
+          "vi": "Ngày nào anh ấy cũng dậy sớm hơn tôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "36b5ed25120b",
+          "zh": "我想跟他一起去运动。",
+          "vi": "Tôi muốn đi tập thể thao cùng anh ấy.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "6503f9f2386c",
+          "zh": "这里比北京冷多了。今天的雪下得比昨天大。我们还是在家休息吧。",
+          "vi": "Ở đây lạnh hơn Bắc Kinh nhiều. Hôm nay tuyết rơi nhiều hơn hôm qua. Hay là chúng ta nghỉ ở nhà thì hơn.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "8fe77f0e9746",
+          "zh": "哥哥跑步跑得比我快。他每天起得比我早。我想跟他一起去运动。",
+          "vi": "Anh trai tôi chạy bộ nhanh hơn tôi. Ngày nào anh ấy cũng dậy sớm hơn tôi. Tôi muốn đi tập thể thao cùng anh ấy.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
           "id": "72734d3b00e3",
           "zh": "事情",
           "vi": "sự việc, việc",
@@ -3969,6 +5754,62 @@ window.translationLessons = {
           "vi": "Tôi mua trên mạng, không đắt đến thế.",
           "kind": "Dịch câu",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "e3b6451460d3",
+          "zh": "老师拿给我一本中文书。",
+          "vi": "Cô giáo đưa cho tôi một cuốn sách tiếng Trung.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "050e36fa93b3",
+          "zh": "这本书比那本贵五块钱。",
+          "vi": "Cuốn sách này đắt hơn cuốn kia năm tệ.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "9ed124b02cdd",
+          "zh": "但是里面的故事更有意思。",
+          "vi": "Nhưng những câu chuyện bên trong thú vị hơn.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "edcc73b774c6",
+          "zh": "今天的词比昨天多十个。",
+          "vi": "Từ mới hôm nay nhiều hơn hôm qua mười từ.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "3778f959f24e",
+          "zh": "这间教室比那间大一点儿。",
+          "vi": "Phòng học này rộng hơn phòng kia một chút.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "b4f73635599e",
+          "zh": "我们都爱上中文课。",
+          "vi": "Chúng tôi đều thích học giờ tiếng Trung.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "95e61698a7ed",
+          "zh": "老师拿给我一本中文书。这本书比那本贵五块钱。但是里面的故事更有意思。",
+          "vi": "Cô giáo đưa cho tôi một cuốn sách tiếng Trung. Cuốn sách này đắt hơn cuốn kia năm tệ. Nhưng những câu chuyện bên trong thú vị hơn.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "1d84ad4e23b8",
+          "zh": "今天的词比昨天多十个。这间教室比那间大一点儿。我们都爱上中文课。",
+          "vi": "Từ mới hôm nay nhiều hơn hôm qua mười từ. Phòng học này rộng hơn phòng kia một chút. Chúng tôi đều thích học giờ tiếng Trung.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         },
         {
           "id": "1a12701b7de1",
@@ -4097,6 +5938,62 @@ window.translationLessons = {
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
         },
         {
+          "id": "610b3400e68c",
+          "zh": "我家楼下站着一个朋友。",
+          "vi": "Dưới nhà tôi có một người bạn đang đứng.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "e38d7521436c",
+          "zh": "他手里拿着一些礼物。",
+          "vi": "Trong tay anh ấy đang cầm một ít quà.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "a71428b69d1b",
+          "zh": "我请他上来一起吃饭。",
+          "vi": "Tôi mời anh ấy lên cùng ăn cơm.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "30318015f461",
+          "zh": "一个人过年多没意思啊！",
+          "vi": "Đón Tết một mình thật buồn biết bao!",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "16445b45c291",
+          "zh": "我们一起去朋友家吧。",
+          "vi": "Chúng ta cùng đến nhà bạn nhé.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "3dcf5675fe33",
+          "zh": "吃完饭以后，我们可以出去走走。",
+          "vi": "Sau khi ăn cơm xong, chúng ta có thể ra ngoài đi dạo.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "fb8f473dfdb4",
+          "zh": "我家楼下站着一个朋友。他手里拿着一些礼物。我请他上来一起吃饭。",
+          "vi": "Dưới nhà tôi có một người bạn đang đứng. Trong tay anh ấy đang cầm một ít quà. Tôi mời anh ấy lên cùng ăn cơm.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "e5c09ed9c1be",
+          "zh": "一个人过年多没意思啊！我们一起去朋友家吧。吃完饭以后，我们可以出去走走。",
+          "vi": "Đón Tết một mình thật buồn biết bao! Chúng ta cùng đến nhà bạn nhé. Sau khi ăn cơm xong, chúng ta có thể ra ngoài đi dạo.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
           "id": "eedd56c480fd",
           "zh": "站",
           "vi": "đứng",
@@ -4214,6 +6111,62 @@ window.translationLessons = {
           "vi": "Vé máy bay đi Bắc Kinh có đến 8.000 tệ không?",
           "kind": "Dịch câu",
           "hint": "Đối chiếu câu mẫu trong bài học; giữ đúng ý nghĩa, cách xưng hô và trật tự câu."
+        },
+        {
+          "id": "69246f5d6ac7",
+          "zh": "我去过两次中国。",
+          "vi": "Tôi đã đến Trung Quốc hai lần.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "260b0640703b",
+          "zh": "我想再吃一次北京烤鸭。",
+          "vi": "Tôi muốn ăn vịt quay Bắc Kinh thêm một lần nữa.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "a92d8394158e",
+          "zh": "明年我还想去北京旅游。",
+          "vi": "Năm sau tôi vẫn muốn đi du lịch Bắc Kinh.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "4f0bf27f1b9d",
+          "zh": "我给朋友打了两次电话。",
+          "vi": "Tôi đã gọi điện cho bạn hai lần.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "db656bf8cbe3",
+          "zh": "他问我机票有没有八千块钱。",
+          "vi": "Anh ấy hỏi tôi vé máy bay có đến tám nghìn tệ không.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "c9449f9866a2",
+          "zh": "我说现在的机票没有那么贵。",
+          "vi": "Tôi nói vé máy bay hiện nay không đắt đến thế.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "29f1ed80a81b",
+          "zh": "我去过两次中国。我想再吃一次北京烤鸭。明年我还想去北京旅游。",
+          "vi": "Tôi đã đến Trung Quốc hai lần. Tôi muốn ăn vịt quay Bắc Kinh thêm một lần nữa. Năm sau tôi vẫn muốn đi du lịch Bắc Kinh.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "e9b26adcaa87",
+          "zh": "我给朋友打了两次电话。他问我机票有没有八千块钱。我说现在的机票没有那么贵。",
+          "vi": "Tôi đã gọi điện cho bạn hai lần. Anh ấy hỏi tôi vé máy bay có đến tám nghìn tệ không. Tôi nói vé máy bay hiện nay không đắt đến thế.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         },
         {
           "id": "1f9262749325",
@@ -4433,6 +6386,62 @@ window.translationLessons = {
           "vi": "Người chị trông rất trẻ của cô Vương.",
           "kind": "Câu ngữ pháp",
           "hint": "多项定语: Khi nhiều thành phần cùng bổ nghĩa cho một danh từ, các định ngữ được đặt trước danh từ trung tâm và thường nối bằng 的 theo quan hệ ngữ nghĩa。"
+        },
+        {
+          "id": "04c23cf87f1e",
+          "zh": "我以为照片里的人是你的弟弟。",
+          "vi": "Tôi tưởng người trong ảnh là em trai bạn.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "245efc491683",
+          "zh": "他看上去跟你有点儿像。",
+          "vi": "Trông anh ấy hơi giống bạn.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "2948db357d5d",
+          "zh": "那个短头发的年轻人其实是我的朋友。",
+          "vi": "Người trẻ tuổi tóc ngắn kia thực ra là bạn tôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "9acc5f930f16",
+          "zh": "我的黑色行李箱不见了。",
+          "vi": "Chiếc va-li màu đen của tôi không thấy đâu nữa.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "982c87d10c10",
+          "zh": "上面写着我的名字和电话号码。",
+          "vi": "Trên đó có ghi tên và số điện thoại của tôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "c02f54b4e3f4",
+          "zh": "我们拿着护照去服务台问问吧。",
+          "vi": "Chúng ta mang hộ chiếu đến quầy dịch vụ hỏi thử nhé.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "57fd85697bed",
+          "zh": "我以为照片里的人是你的弟弟。他看上去跟你有点儿像。那个短头发的年轻人其实是我的朋友。",
+          "vi": "Tôi tưởng người trong ảnh là em trai bạn. Trông anh ấy hơi giống bạn. Người trẻ tuổi tóc ngắn kia thực ra là bạn tôi.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "5d6af1b4a573",
+          "zh": "我的黑色行李箱不见了。上面写着我的名字和电话号码。我们拿着护照去服务台问问吧。",
+          "vi": "Chiếc va-li màu đen của tôi không thấy đâu nữa. Trên đó có ghi tên và số điện thoại của tôi. Chúng ta mang hộ chiếu đến quầy dịch vụ hỏi thử nhé.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         }
       ]
     },
@@ -4566,6 +6575,62 @@ window.translationLessons = {
           "vi": "Bạn muốn làm thế nào thì làm thế đó.",
           "kind": "Câu ngữ pháp",
           "hint": "疑问代词的非疑问用法（3）: Hai đại từ nghi vấn giống nhau có thể hô ứng, cùng chỉ một người, vật, cách thức, thời gian hoặc địa điểm. Mẫu thường gặp: 什么……就什么…… / 哪个……就哪个…… / 哪儿……就哪儿……"
+        },
+        {
+          "id": "d849397a3f65",
+          "zh": "这家饭馆的菜又便宜又好吃。",
+          "vi": "Món ăn của nhà hàng này vừa rẻ vừa ngon.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "389ea982c2f2",
+          "zh": "你想吃什么就点什么。",
+          "vi": "Bạn muốn ăn gì thì gọi món đó.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "23030aeac927",
+          "zh": "服务员马上给我们拿来了菜单。",
+          "vi": "Nhân viên phục vụ lập tức mang thực đơn đến cho chúng tôi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "48d7aea4f96a",
+          "zh": "今天我又忙又累，没有时间做饭。",
+          "vi": "Hôm nay tôi vừa bận vừa mệt, không có thời gian nấu cơm.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "d1f8bbbd0b7f",
+          "zh": "我在手机上选好了想吃的菜。",
+          "vi": "Tôi đã chọn xong những món muốn ăn trên điện thoại.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "8677c0959961",
+          "zh": "饭馆可以把饭菜送来，真方便。",
+          "vi": "Nhà hàng có thể giao đồ ăn đến, thật tiện lợi.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "81577bf8a078",
+          "zh": "这家饭馆的菜又便宜又好吃。你想吃什么就点什么。服务员马上给我们拿来了菜单。",
+          "vi": "Món ăn của nhà hàng này vừa rẻ vừa ngon. Bạn muốn ăn gì thì gọi món đó. Nhân viên phục vụ lập tức mang thực đơn đến cho chúng tôi.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "f32c7b147cea",
+          "zh": "今天我又忙又累，没有时间做饭。我在手机上选好了想吃的菜。饭馆可以把饭菜送来，真方便。",
+          "vi": "Hôm nay tôi vừa bận vừa mệt, không có thời gian nấu cơm. Tôi đã chọn xong những món muốn ăn trên điện thoại. Nhà hàng có thể giao đồ ăn đến, thật tiện lợi.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         }
       ]
     },
@@ -4699,6 +6764,62 @@ window.translationLessons = {
           "vi": "Nhiều việc như vậy ít nhất phải hai tuần mới làm xong.",
           "kind": "Câu ngữ pháp",
           "hint": "“就”和“才”: “就” cho thấy hành động xảy ra sớm, nhanh hoặc thuận lợi hơn dự kiến; “才” cho thấy hành động xảy ra muộn, chậm hoặc khó hơn dự kiến."
+        },
+        {
+          "id": "7475a41c8d7d",
+          "zh": "这个小区离地铁站挺近的。",
+          "vi": "Khu dân cư này khá gần ga tàu điện ngầm.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "02a506303d5e",
+          "zh": "走路几分钟就能到。",
+          "vi": "Đi bộ vài phút là có thể tới.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "db9868905338",
+          "zh": "我挺喜欢这里的环境的。",
+          "vi": "Tôi khá thích môi trường ở đây.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "3e2e67a34858",
+          "zh": "这几天准备搬家，我们忙坏了。",
+          "vi": "Mấy hôm nay chuẩn bị chuyển nhà, chúng tôi bận tối mắt.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "7c44b1a4bfc1",
+          "zh": "新家的卫生间还没打扫好。",
+          "vi": "Nhà vệ sinh của nhà mới vẫn chưa dọn xong.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "ff3550a372c4",
+          "zh": "我们下个星期才能搬过去。",
+          "vi": "Tuần sau chúng tôi mới có thể chuyển sang đó.",
+          "kind": "Câu vận dụng",
+          "hint": "Câu luyện biên soạn theo chủ đề và cấu trúc của bài học. Có thể dùng cách diễn đạt tương đương, miễn đúng và đủ ý."
+        },
+        {
+          "id": "f3ad83ff7555",
+          "zh": "这个小区离地铁站挺近的。走路几分钟就能到。我挺喜欢这里的环境的。",
+          "vi": "Khu dân cư này khá gần ga tàu điện ngầm. Đi bộ vài phút là có thể tới. Tôi khá thích môi trường ở đây.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
+        },
+        {
+          "id": "d242d08362c4",
+          "zh": "这几天准备搬家，我们忙坏了。新家的卫生间还没打扫好。我们下个星期才能搬过去。",
+          "vi": "Mấy hôm nay chuẩn bị chuyển nhà, chúng tôi bận tối mắt. Nhà vệ sinh của nhà mới vẫn chưa dọn xong. Tuần sau chúng tôi mới có thể chuyển sang đó.",
+          "kind": "Đoạn ngắn",
+          "hint": "Dịch đủ ba câu, giữ nhất quán người nói, thời gian và các từ nối. Đây là đoạn luyện vận dụng theo bài học."
         }
       ]
     }

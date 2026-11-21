@@ -2,7 +2,7 @@
   'use strict';
   const $ = id => document.getElementById(id);
   const level = Number(document.body.dataset.level);
-  const lessons = window.translationLessons[level];
+  const lessons = window.translationLessons?.[level] || [];
   const answer = $('translation-answer');
   const topic = $('translation-topic');
   const direction = $('translation-direction');
@@ -23,6 +23,12 @@
   const normalize = s => s.normalize('NFC').toLowerCase().replace(/[\p{P}\p{Z}\s]/gu, '');
   const currentLesson = () => lessons.find(l => String(l.id) === topic.value);
   const currentItem = () => currentLesson().items.find(i => i.id === itemSelect.value);
+  const category = item => item.kind === 'Từ / cụm từ' ? 'word' : /Đoạn|trọn bài/.test(item.kind) ? 'passage' : 'sentence';
+  const typeLabel = document.createElement('label');
+  typeLabel.htmlFor = 'translation-type'; typeLabel.textContent = 'Dạng luyện';
+  const typeSelect = document.createElement('select'); typeSelect.id = 'translation-type';
+  typeLabel.append(typeSelect);
+  itemSelect.parentNode.insertBefore(typeLabel, itemSelect.previousElementSibling);
   const reference = () => currentItem()[direction.value === 'vi-zh' ? 'zh' : 'vi'];
   function store(showMessage = true) {
     memory[active] = answer.value;
@@ -52,14 +58,25 @@
   topic.value = String(lessons.find(l => String(l.id) === String(Number(requested)))?.id || lessons[0].id);
   function populateItems() {
     itemSelect.replaceChildren();
-    currentLesson().items.forEach((item,index) => { const option=document.createElement('option'); option.value=item.id; option.textContent=`${index+1}. ${item.kind}`; itemSelect.append(option); });
-    itemSelect.value=currentLesson().items[0].id;
+    const items=currentLesson().items.filter(item=>typeSelect.value==='all'||category(item)===typeSelect.value);
+    items.forEach((item,index) => { const option=document.createElement('option'); option.value=item.id; const preview=item[direction.value==='vi-zh'?'vi':'zh'].replace(/\s+/g,' '); option.textContent=`${index+1}. ${item.kind} · ${preview.slice(0,65)}${preview.length>65?'…':''}`; itemSelect.append(option); });
+    itemSelect.value=items[0].id;
     $('translation-lesson-link').href=currentLesson().source;
     $('translation-lesson-link').textContent=`Xem lại Bài ${currentLesson().id} · ${currentLesson().title}`;
-    $('translation-count').textContent=`${currentLesson().items.length} mục luyện lấy từ bài học này · Mỗi mục có hai chiều dịch`;
+    $('translation-count').textContent=`${items.length} / ${currentLesson().items.length} mục luyện theo bài học này · Mỗi mục có hai chiều dịch`;
   }
-  topic.addEventListener('change', () => { store(false); populateItems(); render(); });
-  [itemSelect, direction].forEach(select => select.addEventListener('change', () => { store(false); render(); }));
+  function populateTypes() {
+    const previous=typeSelect.value; typeSelect.replaceChildren();
+    for(const [value,label] of [['all','Tất cả'],['sentence','Dịch câu'],['passage','Đoạn ngắn / Hội thoại trọn bài'],['word','Ôn từ / cụm từ']]) {
+      if(value!=='all'&&!currentLesson().items.some(item=>category(item)===value))continue;
+      const option=document.createElement('option');option.value=value;option.textContent=label;typeSelect.append(option);
+    }
+    typeSelect.value=[...typeSelect.options].some(o=>o.value===previous)?previous:'all';
+  }
+  topic.addEventListener('change', () => { store(false); populateTypes(); populateItems(); render(); });
+  typeSelect.addEventListener('change', () => { store(false); populateItems(); render(); });
+  itemSelect.addEventListener('change', () => { store(false); render(); });
+  direction.addEventListener('change', () => { store(false); const id=itemSelect.value; populateItems(); itemSelect.value=id; render(); });
   answer.addEventListener('input', () => { clearResult(); $('translation-status').textContent = 'Có thay đổi chưa lưu. Bấm Lưu bản nháp để lưu bài.'; });
   $('translation-save').addEventListener('click', () => store());
   $('translation-reset').addEventListener('click', () => {
@@ -86,6 +103,7 @@
   window.addEventListener('beforeunload', event => {
     if (answer.value !== (memory[active] || '')) { event.preventDefault(); event.returnValue = ''; }
   });
+  populateTypes();
   populateItems();
   render();
 })();
