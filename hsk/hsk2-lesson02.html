@@ -107,6 +107,7 @@ section h2,.section h2{font-size:32px !important;line-height:1.25 !important}
 <script defer src="../assets/js/focus-section.js?v=2"></script>
 <link rel="icon" href="../assets/images/mai-logo-circle.png?v=6" type="image/png">
 <link rel="stylesheet" href="../assets/css/brand.css?v=1">
+<link rel="stylesheet" href="../assets/css/lesson-compact.css?v=1">
 </head>
 <body>
 <header class="topbar"><div class="container topbar-inner"><a class="brand tcm-brand" href="../index.html"><img class="tcm-unified-logo" src="../assets/images/mai-logo-circle.png?v=6" alt="Tiếng Trung Cô Mai" width="64" height="64"></a><nav class="nav"><a href="hsk2.html">HSK 2</a><a href="#tu-vung">Từ vựng</a><a href="#ngu-phap">Ngữ pháp</a><a href="#dien-tu">Điền từ</a><a href="#sap-xep">Sắp xếp câu</a><a href="#chua-sai">Chữa câu sai</a><a href="#kiem-tra">Tự kiểm tra</a></nav></div></header>
@@ -180,7 +181,7 @@ section h2,.section h2{font-size:32px !important;line-height:1.25 !important}
 
 <section class="section"><div class="container"><h2>9. Hội thoại ngắn – hỏi đường</h2><div class="card"><p class="cn"><b>A：</b>请问，这儿有到新新电影院的公交车吗？</p><p class="cn"><b>B：</b><input class="text-input" style="max-width:520px" placeholder="Trả lời..."></p><p class="cn"><b>A：</b>车站远不远？</p><p class="cn"><b>B：</b><input class="text-input" style="max-width:520px" placeholder="Trả lời..."></p><div class="tip">Cố gắng dùng: 公交车、车站、远、打车、还是……吧.</div></div></div></section>
 
-<section class="section white"><div class="container"><h2>10. Mini Speaking</h2><div class="card"><p>Hãy nói 4–6 câu về cách đi đến một địa điểm. Có thể nói về trường học, rạp chiếu phim hoặc nơi du lịch.</p><ul><li>Dùng ít nhất 3 từ mới.</li><li>Dùng một câu với <b>还是……吧</b>.</li><li>Dùng một số lượng gần đúng với <b>多</b> nếu phù hợp.</li></ul><textarea class="text-input" placeholder="Ghi ý tưởng trước khi nói..."></textarea></div></div></section>
+<section data-retired-lesson-section class="section white"><div class="container"><h2>10. Mini Speaking</h2><div class="card"><p>Hãy nói 4–6 câu về cách đi đến một địa điểm. Có thể nói về trường học, rạp chiếu phim hoặc nơi du lịch.</p><ul><li>Dùng ít nhất 3 từ mới.</li><li>Dùng một câu với <b>还是……吧</b>.</li><li>Dùng một số lượng gần đúng với <b>多</b> nếu phù hợp.</li></ul><textarea class="text-input" placeholder="Ghi ý tưởng trước khi nói..."></textarea></div></div></section>
 
 <section class="section" id="kiem-tra"><div class="container"><h2>11. Tự kiểm tra cuối bài</h2><p class="section-intro">10 câu hỗn hợp. Nhấn “Chấm điểm” khi hoàn thành.</p><div id="finalQuiz">
 <div class="exercise final-q" data-kind="mcq" data-answer="B"><div class="qtext">1. “公交车” là:</div><label><input type="radio" name="f1" value="A"> A. Taxi</label><label><input type="radio" name="f1" value="B"> B. Xe buýt</label><label><input type="radio" name="f1" value="C"> C. Vé</label><div class="feedback"></div></div>
@@ -213,4 +214,5 @@ function checkMCQ(btn){const q=btn.closest('.mcq'),c=q.querySelector('input:chec
 function gradeFinal(){const qs=[...document.querySelectorAll('.final-q')];let score=0;qs.forEach(q=>{let ok=false;if(q.dataset.kind==='mcq'){const c=q.querySelector('input:checked');ok=c&&c.value===q.dataset.answer}else ok=norm(q.querySelector('input').value)===norm(q.dataset.answer);const f=q.querySelector('.feedback');f.className='feedback '+(ok?'ok':'bad');f.textContent=ok?'✅ Đúng':'❌ Đáp án: '+q.dataset.answer;if(ok)score++});document.getElementById('scoreText').textContent=score+'/'+qs.length;document.getElementById('progressBar').style.width=(score/qs.length*100)+'%'}
 function resetFinal(){document.querySelectorAll('#finalQuiz input[type=radio]').forEach(i=>i.checked=false);document.querySelectorAll('#finalQuiz input[type=text],#finalQuiz .text-input').forEach(i=>i.value='');document.querySelectorAll('#finalQuiz .feedback').forEach(f=>f.textContent='');document.getElementById('scoreText').textContent='Chưa chấm';document.getElementById('progressBar').style.width='0%'}
 </script>
+<script src="../assets/js/lesson-compact.js?v=1"></script>
 </body></html>

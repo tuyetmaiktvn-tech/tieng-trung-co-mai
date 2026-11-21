@@ -253,6 +253,7 @@ label{font-size:18px;line-height:1.55}
 
 <link rel="icon" href="../assets/images/mai-logo-circle.png?v=6" type="image/png">
 <link rel="stylesheet" href="../assets/css/brand.css?v=1">
+<link rel="stylesheet" href="../assets/css/lesson-compact.css?v=1">
 </head>
 
 <body>
@@ -1342,24 +1343,17 @@ label{font-size:18px;line-height:1.55}
               <span class="eyebrow">NEW HSK 1 · BÀI ${lessonData.lesson}</span>
               <h1>${esc(lessonData.title)}</h1>
               <p class="subtitle">${esc(lessonData.titleVi)}</p>
-              <p>${esc(lessonData.intro)}</p>
+
               <div class="hero-actions">
-                <a class="btn btn-primary" href="#objectives">Bắt đầu học</a>
+                <a class="btn btn-primary" href="#vocabulary">Bắt đầu học</a>
                 <a class="btn" href="#flashcards">Ôn flashcard</a>
               </div>
             </div>
-            <aside class="lesson-meta">
-              <div class="meta-grid">
-                <div class="meta-item"><strong>${esc(lessonData.topic)}</strong><span>Chủ đề</span></div>
-                <div class="meta-item"><strong>${esc(lessonData.duration)}</strong><span>Thời lượng</span></div>
-                <div class="meta-item"><strong>${lessonData.vocabulary.length}</strong><span>Từ mới</span></div>
-                <div class="meta-item"><strong>${esc(lessonData.difficulty)}</strong><span>Mức độ</span></div>
-              </div>
-            </aside>
+
           </div>
         </section>
-        ${objectives}${vocab}${memory}${grammar}${mistakes}${dialogue}
-        ${listening}${speaking}${exercises}${quiz}${flashcards}${summary}${notes}
+        ${vocab}${memory}${grammar}${mistakes}${dialogue}
+        ${exercises}${quiz}${flashcards}${summary}${notes}
         <section class="section">
           <div class="container">
             <div class="completion" id="completionBox">
@@ -1422,7 +1416,7 @@ label{font-size:18px;line-height:1.55}
     /* =========================================================
        6. TIẾN ĐỘ
        ========================================================= */
-    const trackedSections = ["objectives","vocabulary","memory","grammar","mistakes","dialogue","listening","speaking","exercises","quiz","flashcards","summary","notes"];
+    const trackedSections = ["vocabulary","memory","grammar","mistakes","dialogue","exercises","quiz","flashcards","summary","notes"];
 
     function updateProgress(){
       const count = trackedSections.filter(id=>state.completed.includes(id)).length;
@@ -1484,21 +1478,6 @@ label{font-size:18px;line-height:1.55}
         saveState();
         $$(".vi-line").forEach(el=>el.classList.toggle("hide",state.hideVi));
         $("#toggleVi").textContent=state.hideVi?"Hiện bản dịch":"Ẩn bản dịch";
-      };
-
-      $("#listenPlay").onclick=()=>{
-        const l = lessonData.listening;
-        if(l.audio) new Audio(l.audio).play().catch(()=>{});
-        else speak("大兴机场见！");
-      };
-
-      $("#checkListening").onclick=()=>{
-        const selected = document.querySelector('input[name="listenQ"]:checked');
-        const fb = $("#listeningFeedback");
-        if(!selected){fb.innerHTML='<span class="wrong">Hãy chọn một đáp án.</span>';return}
-        fb.innerHTML = Number(selected.value)===lessonData.listening.answer
-          ? '<span class="correct">✓ Chính xác</span>'
-          : '<span class="wrong">✘ Chưa đúng</span>';
       };
 
       $("#checkExercises").onclick=()=>{
@@ -1580,5 +1559,6 @@ label{font-size:18px;line-height:1.55}
     updateProgress();
   </script>
 <script src="../assets/js/focus-section.js?v=2"></script>
+<script src="../assets/js/lesson-compact.js?v=1"></script>
 </body>
 </html>

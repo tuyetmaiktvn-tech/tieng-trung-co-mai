@@ -109,10 +109,11 @@ section{padding:34px 0!important}
 
 <link rel="icon" href="../assets/images/mai-logo-circle.png?v=6" type="image/png">
 <link rel="stylesheet" href="../assets/css/brand.css?v=1">
+<link rel="stylesheet" href="../assets/css/lesson-compact.css?v=1">
 </head><body>
 <header class="hero"><div class="wrap"><b style="color:#c8753f">新HSK教程 3 · LESSON 3</b><h1 class="zh">这个小区挺好的</h1><h3>Khu dân cư này khá tốt</h3><div class="mission"><b>🎯 Nhiệm vụ cuối bài:</b> Miêu tả nơi ở, trao đổi về chuyển nhà và sử dụng đúng 挺、坏了、就、才 để diễn đạt mức độ, thời điểm và tốc độ của hành động.<div class="progress"><i id="bar"></i></div><small id="prog">0 / 6 chặng hoàn thành</small></div></div></header>
 <nav><div class="wrap"><a href="#warm">① Khởi động</a><a href="#vocab">② Từ vựng</a><a href="#text">③ Bài khóa</a><a href="#grammar">④ Ôn ngữ pháp</a><a href="#challenge">⑤ Tình huống</a><a href="#review">⑥ Ôn tập</a></div></nav>
-<section id="warm" class="warm"><div class="wrap"><h2 class="title">① 热身 · Khởi động</h2>
+<section data-retired-lesson-section id="warm" class="warm"><div class="wrap"><h2 class="title">① 热身 · Khởi động</h2>
 <p class="lead">Quan sát 6 chủ đề trước khi học. Với mỗi chủ đề, hãy thử nói 1–2 câu tiếng Trung theo gợi ý. Bấm vào thẻ sau khi bạn đã tự nói.</p>
 <div class="warmintro"><b>🎯 Mục tiêu khởi động:</b> kích hoạt vốn từ về <span class="zh">冰箱、空调、洗衣机、花园、卫生间、灯</span> và chuẩn bị cho chủ đề nhà ở – chuyển nhà.</div>
 <div class="warmgrid">
@@ -126,7 +127,7 @@ section{padding:34px 0!important}
 <section id="vocab"><div class="wrap"><h2 class="title">② 生词 · Học từ chủ động</h2><p class="lead">HSK3 mặc định chỉ hiện chữ Hán. Hãy tự nhớ trước rồi bấm thẻ để xem Pinyin và nghĩa.</p><div class="vgrid" id="vgrid"></div></div></section>
 <section id="text" class="texts"><div class="wrap"><h2 class="title">③ 课文 · Bài khóa</h2><p class="lead">Đọc nguyên bản trước. Bấm từng câu để mở nghĩa. Pinyin không hiển thị mặc định.</p><div class="tabs" id="tabs"></div><div class="card dialog" id="dialog"></div><div id="postTextPractice"></div></div></section>
 <section id="grammar"><div class="wrap"><h2 class="title">④ 语法复习 · Ôn tập ngữ pháp</h2><div class="ggrid" id="ggrid"></div></div></section>
-<section id="challenge" class="challenge"><div class="wrap"><h2 class="title">⑤ 情景练习 · Luyện tập tình huống</h2>
+<section data-retired-lesson-section id="challenge" class="challenge"><div class="wrap"><h2 class="title">⑤ 情景练习 · Luyện tập tình huống</h2>
 <p class="lead"><b>Luyện tập mở rộng:</b> hoàn thành 6 nhiệm vụ giao tiếp về chọn nhà, thiết bị trong nhà, chuyển nhà và làm thẻ ngân hàng. Hãy tự viết trước rồi mới mở câu mẫu.</p><div class="sitgrid">
 <div class="sitcard"><h3>情景一 · 介绍你住的小区</h3><p>Hãy giới thiệu khu dân cư bạn đang ở: môi trường, giao thông và điều bạn thích.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">小区 / 环境 / 挺</span></div><textarea id="sit1"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">我住的小区环境挺好的，离地铁站也不远，我挺喜欢这里的。</div></details><div class="sitcheck"><button onclick="checkSit(1,['小区','环境','挺'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres1"></div></div>
 <div class="sitcard"><h3>情景二 · 看新房</h3><p>Bạn đang xem một căn nhà mới. Hãy nhận xét về thiết bị và tầng của căn nhà.</p><div class="goal"><b>Phải dùng:</b> <span class="zh">房子 / 空调 / 洗衣机 / 层</span></div><textarea id="sit2"></textarea><details><summary>💡 Xem câu mẫu sau khi tự làm</summary><div class="model zh">这个房子挺好的，空调和洗衣机都是新的，但是我不太喜欢住一层。</div></details><div class="sitcheck"><button onclick="checkSit(2,['房子','空调','洗衣机','层'])">Tự kiểm tra từ khóa</button></div><div class="sitresult" id="sitres2"></div></div>
@@ -183,7 +184,7 @@ function checkCloze(){
 
 let S={seen:[],right:[],wrong:[],stages:[]},ct=0,bp=[],ap=[],sp=[];
 const uniq=a=>[...new Set(a)],sample=(a,n)=>[...a].sort(()=>Math.random()-.5).slice(0,n);function save(){S.seen=uniq(S.seen);S.right=uniq(S.right);S.wrong=uniq(S.wrong);S.stages=uniq(S.stages);localStorage.setItem("hsk3l3",JSON.stringify(S));update()}try{S=JSON.parse(localStorage.getItem("hsk3l3"))||S}catch(e){}
-function stage(n){S.stages.push(n);save()}function update(){seenN.textContent=S.seen.length;rightN.textContent=S.right.length;wrongN.textContent=S.wrong.length;let n=S.right.length+S.wrong.length;score.textContent=(n?Math.round(S.right.length/n*100):0)+"%";bar.style.width=Math.min(100,S.stages.length/6*100)+"%";prog.textContent=S.stages.length+" / 6 chặng hoàn thành"}
+function stage(n){S.stages.push(n);save()}function update(){seenN.textContent=S.seen.length;rightN.textContent=S.right.length;wrongN.textContent=S.wrong.length;let n=S.right.length+S.wrong.length;score.textContent=(n?Math.round(S.right.length/n*100):0)+"%";bar.style.width=Math.min(100,S.stages.filter(x=>[2,3,4,6].includes(x)).length/4*100)+"%";prog.textContent=S.stages.filter(x=>[2,3,4,6].includes(x)).length+" / 4 chặng hoàn thành"}
 function warm(b){b.classList.toggle("done");if(document.querySelectorAll(".warmgrid .done").length>=3)stage(1)}
 function vocab(){vgrid.innerHTML=V.map((v,i)=>`<div class="card vcard" onclick="flip(this,${i})"><div class="zh">${v[0]}</div><div class="hidden"><div class="py">${v[1]}</div><div>${v[2]}</div><button class="ghost" onclick="event.stopPropagation();hard(${i})">↻ Cần ôn</button></div></div>`).join("")}function flip(e,i){e.lastElementChild.classList.toggle("hidden");S.seen.push(i);if(S.seen.length>=10)stage(2);save()}function hard(i){S.wrong.push(i);save()}
 function showText(i){ct=i;tabs.innerHTML=T.map((x,j)=>`<button class="${i===j?'':'ghost'}" onclick="showText(${j})">${x[0]}</button>`).join("");dialog.innerHTML=`<b>📍 <span class="zh">${T[i][1]}</span></b>`+T[i][2].map(x=>`<div class="line"><div class="zh">${x}</div><button class="ghost" onclick="this.nextElementSibling.classList.toggle('hidden')">💡 Tự kiểm tra</button><small class="hidden">Hãy tự diễn đạt nghĩa câu này trước khi đối chiếu giáo trình.</small></div>`).join("");renderPostWork();if(i===3)stage(3)}
@@ -205,4 +206,5 @@ function checkSit(n,keys){
 const ST=[["✈️","到北京"],["🧳","行李不见了"],["ℹ️","去服务台"],["🚪","走出机场"],["🍜","吃中国菜"]];function resetStory(){sp=[];story.innerHTML=[...ST].sort(()=>Math.random()-.5).map(x=>`<div class="card" data-k="${x[1]}" onclick="if(!this.classList.contains('sel')){this.classList.add('sel');sp.push(this.dataset.k);this.innerHTML='<b>'+sp.length+'</b><br>'+this.innerHTML}"><b>${x[0]}</b><br><span class="zh">${x[1]}</span></div>`).join("");sresult.textContent=""}function checkStory(){let ok=sp.join("|")===ST.map(x=>x[1]).join("|");sresult.textContent=ok?"✓ Đúng trình tự!":"Chưa đúng, đọc lại 课文4.";if(ok)stage(5)}
 function q(){let i=Math.floor(Math.random()*V.length),o=[V[i],...sample(V.filter((x,j)=>j!==i),3)].sort(()=>Math.random()-.5);quiz.innerHTML=`<h2 class="zh">${V[i][0]}</h2><div class="py">${V[i][1]}</div><p>Chọn nghĩa đúng</p><div class="answers">${o.map(x=>`<button onclick="qa(${i},'${x[0]}')">${x[2]}</button>`).join("")}</div><p id="qr"></p><button class="ghost" onclick="q()">Câu tiếp →</button>`}function qa(i,x){let ok=x===V[i][0];qr.textContent=ok?"✓ Chính xác":"Chưa đúng: "+V[i][2];if(ok){S.right.push(i);S.wrong=S.wrong.filter(y=>y!==i)}else S.wrong.push(i);if(S.right.length>=5)stage(6);save()}
 vocab();showText(0);grammar();q();update();
-</script></body></html>
+</script><script src="../assets/js/lesson-compact.js?v=1"></script>
+</body></html>

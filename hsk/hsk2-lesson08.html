@@ -103,11 +103,12 @@ section h2,.section h2{font-size:32px !important;line-height:1.25 !important}
 
 <script defer src="../assets/js/focus-section.js?v=2"></script><link rel="icon" href="../assets/images/mai-logo-circle.png?v=6" type="image/png">
 <link rel="stylesheet" href="../assets/css/brand.css?v=1">
+<link rel="stylesheet" href="../assets/css/lesson-compact.css?v=1">
 </head><body>
 <header class="hero"><div class="container"><span class="kicker">NEW HSK 2 · BÀI 8</span><h1 class="cn">虽然你忘了，但是我记得</h1><p class="pinyin">Suīrán nǐ wàng le, dànshì wǒ jìde</p><p class="vi">Mặc dù bạn quên, nhưng tôi vẫn nhớ</p></div></header>
 <nav class="nav"><a href="#tu">Từ vựng</a><a href="#nhan">Nhận từ</a><a href="#np">Ngữ pháp</a><a href="#dien">Điền từ</a><a href="#xep">Sắp xếp</a><a href="#sua">Chữa câu</a><a href="#dich">Dịch</a><a href="#noi">Nói</a><a href="#test">Kiểm tra</a></nav>
 
-<section><div class="container"><span class="badge">Mục tiêu</span><h2>Bài 8 học gì?</h2><div class="grid2"><div class="card">Giao tiếp về <b>sinh nhật và các hoạt động chúc mừng sinh nhật</b>.</div><div class="card">Dùng câu so sánh với <b>比</b> để mô tả sự khác biệt giữa người/vật.</div><div class="card">Nắm quy tắc dùng <b>还 / 更</b> trong câu so sánh.</div><div class="card">Sử dụng câu chuyển ý <b>虽然……，但是……</b>.</div></div></div></section>
+<section data-retired-lesson-section><div class="container"><span class="badge">Mục tiêu</span><h2>Bài 8 học gì?</h2><div class="grid2"><div class="card">Giao tiếp về <b>sinh nhật và các hoạt động chúc mừng sinh nhật</b>.</div><div class="card">Dùng câu so sánh với <b>比</b> để mô tả sự khác biệt giữa người/vật.</div><div class="card">Nắm quy tắc dùng <b>还 / 更</b> trong câu so sánh.</div><div class="card">Sử dụng câu chuyển ý <b>虽然……，但是……</b>.</div></div></div></section>
 
 <section id="tu"><div class="container"><span class="badge">01</span><h2>Từ vựng trọng tâm</h2><table><thead><tr><th>#</th><th>Chữ Hán</th><th>Pinyin</th><th>Nghĩa</th><th>Nghe</th></tr></thead><tbody>
 <tr><td>1</td><td class="cn">手表</td><td>shǒubiǎo</td><td>đồng hồ đeo tay</td><td><button class="tts" data-say="手表">🔊</button></td></tr>
@@ -168,7 +169,7 @@ section h2,.section h2{font-size:32px !important;line-height:1.25 !important}
 <div class="ex textq" data-answer="今天比昨天更热。"><b>4. Hôm nay nóng hơn hôm qua.</b><input class="input"><button class="btn primary" onclick="textcheck(this)">Kiểm tra</button><div class="feedback"></div></div>
 </div></section>
 
-<section id="noi"><div class="container"><span class="badge">08</span><h2>Mini Speaking – Gọi món và so sánh</h2><div class="card"><p>Ba người một nhóm: một người đóng vai nhân viên phục vụ, hai người là khách. Hỏi giá, khẩu vị, gọi món và so sánh món ở nhà hàng với món tự nấu ở nhà.</p><ul><li class="cn">你好！我们点菜。</li><li class="cn">这个菜多少钱？</li><li class="cn">这个菜比那个菜便宜吗？</li><li class="cn">我觉得饭馆的菜比我做的更好吃。</li><li class="cn">虽然这个菜有点儿贵，但是很好吃。</li></ul><textarea class="input" rows="5" placeholder="Viết hội thoại ngắn trước khi luyện nói..."></textarea></div></div></section>
+<section data-retired-lesson-section id="noi"><div class="container"><span class="badge">08</span><h2>Mini Speaking – Gọi món và so sánh</h2><div class="card"><p>Ba người một nhóm: một người đóng vai nhân viên phục vụ, hai người là khách. Hỏi giá, khẩu vị, gọi món và so sánh món ở nhà hàng với món tự nấu ở nhà.</p><ul><li class="cn">你好！我们点菜。</li><li class="cn">这个菜多少钱？</li><li class="cn">这个菜比那个菜便宜吗？</li><li class="cn">我觉得饭馆的菜比我做的更好吃。</li><li class="cn">虽然这个菜有点儿贵，但是很好吃。</li></ul><textarea class="input" rows="5" placeholder="Viết hội thoại ngắn trước khi luyện nói..."></textarea></div></div></section>
 
 <section id="test"><div class="container"><span class="badge">09</span><h2>Tự kiểm tra cuối bài</h2><div id="quiz">
 <div class="ex fq2" data-kind="mcq" data-answer="B"><b>1. “手表” là:</b><label><input type="radio" name="q1" value="A"> điện thoại</label> <label><input type="radio" name="q1" value="B"> đồng hồ đeo tay</label><div class="feedback"></div></div>
@@ -198,4 +199,5 @@ function sortreset(b){let q=b.closest('.sort'),bank=q.querySelector('.bank');[..
 function textcheck(b){let q=b.closest('.textq');fb(q.querySelector('.feedback'),n(q.querySelector('input').value)===n(q.dataset.answer),q.dataset.answer)}
 function grade(){let qs=[...document.querySelectorAll('.fq2')],s=0;qs.forEach(q=>{let ok;if(q.dataset.kind==='mcq'){let c=q.querySelector('input:checked');ok=c&&c.value===q.dataset.answer}else ok=n(q.querySelector('.input').value)===n(q.dataset.answer);if(ok)s++;fb(q.querySelector('.feedback'),ok,q.dataset.answer)});document.getElementById('score').textContent=s+'/'+qs.length;document.getElementById('bar').style.width=(s/qs.length*100)+'%'}
 function resetQuiz(){document.querySelectorAll('#quiz input[type=radio]').forEach(i=>i.checked=false);document.querySelectorAll('#quiz .input').forEach(i=>i.value='');document.querySelectorAll('#quiz .feedback').forEach(f=>{f.textContent='';f.className='feedback'});document.getElementById('score').textContent='Chưa chấm';document.getElementById('bar').style.width='0%'}
-</script></body></html>
+</script><script src="../assets/js/lesson-compact.js?v=1"></script>
+</body></html>

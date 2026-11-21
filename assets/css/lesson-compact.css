@@ -1,0 +1,14 @@
+/* Compact lesson layout: preserve exercise content and the existing palette. */
+[data-retired-lesson-section]{display:none!important}
+.hero .hero-grid,.lesson-hero-grid-v32{grid-template-columns:1fr!important}
+.hero .lesson-meta,.lesson-progress-card-v32,.lesson-meta-v32,.hero .meta,
+.hero .subtitle,.hero .hero-card>p,.hero .hero-actions,
+.hero .pinyin-title,.hero .vi-title,.hero .pinyin,.hero .vi,.hero .wrap>h3,
+.lesson-title-vi-v32,#lessonTheme,.lesson-audio-info-v33{display:none!important}
+.hero .mission{display:none!important}
+.hero p,.lesson-grid .card>p{display:none!important}
+.section-heading>div>p,.lesson-heading-v32 small{display:none!important}
+.lesson-compact-links{display:flex;flex-wrap:wrap;gap:12px;padding:18px 0;margin:0 auto;max-width:1120px;width:93%}
+.lesson-compact-links a{font-family:inherit;font-size:18px;font-weight:600;line-height:1.5;color:inherit;padding:10px 16px;border:1px solid currentColor;border-radius:12px;text-decoration:none}
+.hero .hero-grid,.lesson-hero-grid-v32{padding-top:24px!important;padding-bottom:24px!important}
+@media(max-width:600px){.lesson-compact-links a{font-size:17px}.hero h1{overflow-wrap:anywhere}}
